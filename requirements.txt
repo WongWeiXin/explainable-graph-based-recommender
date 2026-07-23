@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+networkx
+scipy
+torch
+torch-geometric
+
+#pip install -r requirements.txt
