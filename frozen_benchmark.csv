@@ -1,0 +1,251 @@
+query_id,max_price,state,district,property_type,min_bedroom,min_bathroom,w_price,w_builtup,w_land,w_parking,w_train,w_mall,w_school,w_hospital,w_park,w_office,w_university
+Q001,600000,Selangor,petaling,Terrace House,4,3,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q002,600000,Selangor,petaling,Terrace House,4,3,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q003,600000,Selangor,petaling,Terrace House,4,3,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q004,600000,Selangor,petaling,Terrace House,4,3,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q005,600000,Selangor,petaling,Terrace House,4,3,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q006,600000,Selangor,petaling,Terrace House,4,3,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q007,600000,Selangor,petaling,Terrace House,4,3,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q008,600000,Selangor,petaling,Terrace House,4,3,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q009,600000,Selangor,petaling,Terrace House,4,3,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q010,600000,Selangor,petaling,Terrace House,4,3,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q011,500000,Selangor,petaling,Condominium,3,2,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q012,500000,Selangor,petaling,Condominium,3,2,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q013,500000,Selangor,petaling,Condominium,3,2,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q014,500000,Selangor,petaling,Condominium,3,2,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q015,500000,Selangor,petaling,Condominium,3,2,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q016,500000,Selangor,petaling,Condominium,3,2,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q017,500000,Selangor,petaling,Condominium,3,2,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q018,500000,Selangor,petaling,Condominium,3,2,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q019,500000,Selangor,petaling,Condominium,3,2,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q020,500000,Selangor,petaling,Condominium,3,2,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q021,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q022,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q023,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q024,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q025,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q026,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q027,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q028,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q029,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q030,2500000,Selangor,petaling,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q031,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q032,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q033,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q034,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q035,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q036,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q037,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q038,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q039,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q040,1200000,Selangor,petaling,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q041,250000,Selangor,petaling,Flat,2,1,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q042,250000,Selangor,petaling,Flat,2,1,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q043,250000,Selangor,petaling,Flat,2,1,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q044,250000,Selangor,petaling,Flat,2,1,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q045,250000,Selangor,petaling,Flat,2,1,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q046,250000,Selangor,petaling,Flat,2,1,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q047,250000,Selangor,petaling,Flat,2,1,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q048,250000,Selangor,petaling,Flat,2,1,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q049,250000,Selangor,petaling,Flat,2,1,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q050,250000,Selangor,petaling,Flat,2,1,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q051,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q052,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q053,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q054,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q055,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q056,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q057,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q058,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q059,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q060,600000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Terrace House,4,3,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q061,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q062,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q063,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q064,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q065,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q066,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q067,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q068,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q069,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q070,500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Condominium,3,2,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q071,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q072,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q073,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q074,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q075,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q076,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q077,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q078,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q079,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q080,2500000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q081,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q082,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q083,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q084,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q085,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q086,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q087,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q088,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q089,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q090,1200000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q091,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q092,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q093,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q094,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q095,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q096,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q097,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q098,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q099,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q100,250000,Wilayah Persekutuan Kuala Lumpur,kuala lumpur,Flat,2,1,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q101,600000,Johor,johor bahru,Terrace House,4,3,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q102,600000,Johor,johor bahru,Terrace House,4,3,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q103,600000,Johor,johor bahru,Terrace House,4,3,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q104,600000,Johor,johor bahru,Terrace House,4,3,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q105,600000,Johor,johor bahru,Terrace House,4,3,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q106,600000,Johor,johor bahru,Terrace House,4,3,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q107,600000,Johor,johor bahru,Terrace House,4,3,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q108,600000,Johor,johor bahru,Terrace House,4,3,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q109,600000,Johor,johor bahru,Terrace House,4,3,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q110,600000,Johor,johor bahru,Terrace House,4,3,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q111,500000,Johor,johor bahru,Condominium,3,2,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q112,500000,Johor,johor bahru,Condominium,3,2,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q113,500000,Johor,johor bahru,Condominium,3,2,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q114,500000,Johor,johor bahru,Condominium,3,2,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q115,500000,Johor,johor bahru,Condominium,3,2,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q116,500000,Johor,johor bahru,Condominium,3,2,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q117,500000,Johor,johor bahru,Condominium,3,2,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q118,500000,Johor,johor bahru,Condominium,3,2,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q119,500000,Johor,johor bahru,Condominium,3,2,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q120,500000,Johor,johor bahru,Condominium,3,2,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q121,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q122,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q123,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q124,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q125,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q126,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q127,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q128,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q129,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q130,2500000,Johor,johor bahru,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q131,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q132,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q133,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q134,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q135,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q136,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q137,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q138,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q139,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q140,1200000,Johor,johor bahru,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q141,250000,Johor,johor bahru,Flat,2,1,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q142,250000,Johor,johor bahru,Flat,2,1,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q143,250000,Johor,johor bahru,Flat,2,1,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q144,250000,Johor,johor bahru,Flat,2,1,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q145,250000,Johor,johor bahru,Flat,2,1,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q146,250000,Johor,johor bahru,Flat,2,1,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q147,250000,Johor,johor bahru,Flat,2,1,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q148,250000,Johor,johor bahru,Flat,2,1,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q149,250000,Johor,johor bahru,Flat,2,1,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q150,250000,Johor,johor bahru,Flat,2,1,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q151,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q152,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q153,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q154,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q155,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q156,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q157,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q158,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q159,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q160,600000,Pulau Pinang,timur laut,Terrace House,4,3,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q161,500000,Pulau Pinang,timur laut,Condominium,3,2,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q162,500000,Pulau Pinang,timur laut,Condominium,3,2,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q163,500000,Pulau Pinang,timur laut,Condominium,3,2,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q164,500000,Pulau Pinang,timur laut,Condominium,3,2,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q165,500000,Pulau Pinang,timur laut,Condominium,3,2,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q166,500000,Pulau Pinang,timur laut,Condominium,3,2,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q167,500000,Pulau Pinang,timur laut,Condominium,3,2,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q168,500000,Pulau Pinang,timur laut,Condominium,3,2,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q169,500000,Pulau Pinang,timur laut,Condominium,3,2,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q170,500000,Pulau Pinang,timur laut,Condominium,3,2,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q171,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q172,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q173,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q174,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q175,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q176,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q177,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q178,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q179,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q180,2500000,Pulau Pinang,timur laut,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q181,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q182,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q183,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q184,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q185,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q186,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q187,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q188,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q189,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q190,1200000,Pulau Pinang,timur laut,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q191,250000,Pulau Pinang,timur laut,Flat,2,1,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q192,250000,Pulau Pinang,timur laut,Flat,2,1,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q193,250000,Pulau Pinang,timur laut,Flat,2,1,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q194,250000,Pulau Pinang,timur laut,Flat,2,1,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q195,250000,Pulau Pinang,timur laut,Flat,2,1,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q196,250000,Pulau Pinang,timur laut,Flat,2,1,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q197,250000,Pulau Pinang,timur laut,Flat,2,1,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q198,250000,Pulau Pinang,timur laut,Flat,2,1,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q199,250000,Pulau Pinang,timur laut,Flat,2,1,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q200,250000,Pulau Pinang,timur laut,Flat,2,1,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q201,600000,Melaka,melaka tengah,Terrace House,4,3,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q202,600000,Melaka,melaka tengah,Terrace House,4,3,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q203,600000,Melaka,melaka tengah,Terrace House,4,3,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q204,600000,Melaka,melaka tengah,Terrace House,4,3,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q205,600000,Melaka,melaka tengah,Terrace House,4,3,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q206,600000,Melaka,melaka tengah,Terrace House,4,3,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q207,600000,Melaka,melaka tengah,Terrace House,4,3,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q208,600000,Melaka,melaka tengah,Terrace House,4,3,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q209,600000,Melaka,melaka tengah,Terrace House,4,3,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q210,600000,Melaka,melaka tengah,Terrace House,4,3,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q211,500000,Melaka,melaka tengah,Condominium,3,2,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q212,500000,Melaka,melaka tengah,Condominium,3,2,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q213,500000,Melaka,melaka tengah,Condominium,3,2,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q214,500000,Melaka,melaka tengah,Condominium,3,2,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q215,500000,Melaka,melaka tengah,Condominium,3,2,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q216,500000,Melaka,melaka tengah,Condominium,3,2,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q217,500000,Melaka,melaka tengah,Condominium,3,2,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q218,500000,Melaka,melaka tengah,Condominium,3,2,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q219,500000,Melaka,melaka tengah,Condominium,3,2,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q220,500000,Melaka,melaka tengah,Condominium,3,2,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q221,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q222,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q223,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q224,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q225,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q226,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q227,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q228,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q229,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q230,2500000,Melaka,melaka tengah,Bungalow / Detached House,5,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q231,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q232,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q233,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q234,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q235,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q236,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q237,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q238,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q239,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q240,1200000,Melaka,melaka tengah,Link Bungalow / Semi-Detached,4,4,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
+Q241,250000,Melaka,melaka tengah,Flat,2,1,0.333,0.200,0.000,0.133,0.000,0.000,0.267,0.000,0.067,0.000,0.000
+Q242,250000,Melaka,melaka tengah,Flat,2,1,0.000,0.300,0.400,0.200,0.000,0.100,0.000,0.000,0.000,0.000,0.000
+Q243,250000,Melaka,melaka tengah,Flat,2,1,0.000,0.000,0.000,0.000,0.500,0.167,0.000,0.000,0.000,0.333,0.000
+Q244,250000,Melaka,melaka tengah,Flat,2,1,0.333,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.000,0.000,0.500
+Q245,250000,Melaka,melaka tengah,Flat,2,1,0.200,0.000,0.000,0.000,0.000,0.100,0.000,0.400,0.300,0.000,0.000
+Q246,250000,Melaka,melaka tengah,Flat,2,1,0.333,0.267,0.000,0.133,0.200,0.067,0.000,0.000,0.000,0.000,0.000
+Q247,250000,Melaka,melaka tengah,Flat,2,1,0.200,0.300,0.000,0.100,0.400,0.000,0.000,0.000,0.000,0.000,0.000
+Q248,250000,Melaka,melaka tengah,Flat,2,1,0.000,0.000,0.000,0.167,0.000,0.000,0.000,0.500,0.000,0.333,0.000
+Q249,250000,Melaka,melaka tengah,Flat,2,1,0.133,0.000,0.200,0.000,0.000,0.000,0.333,0.067,0.267,0.000,0.000
+Q250,250000,Melaka,melaka tengah,Flat,2,1,0.200,0.000,0.000,0.000,0.300,0.100,0.000,0.000,0.000,0.400,0.000
