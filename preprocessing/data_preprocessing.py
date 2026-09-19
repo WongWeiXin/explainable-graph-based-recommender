@@ -13,7 +13,7 @@ from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 # Load Dataset
 # ==========================================
 
-df = pd.read_csv("Malaysia_property_data.csv")
+df = pd.read_csv("C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_property_data.csv")
 
 print("Original Dataset Shape:", df.shape)
 
@@ -109,6 +109,15 @@ df = df.reset_index(drop=True)
 print("After Cleaning:", df.shape)
 
 # ==========================================
+# SAVE CLEANED RAW DATA
+# ==========================================
+
+df.to_csv(
+    "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+    index=False
+)
+
+# ==========================================
 # 3.6.2 DATA TRANSFORMATION
 # ==========================================
 
@@ -152,6 +161,15 @@ df.insert(
 )
 
 print(df[["Property_ID"]].head())
+
+# ==========================================
+# SAVE CLEANED RAW DATA
+# ==========================================
+
+df.to_csv(
+    "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+    index=False
+)
 
 # ==========================================
 # 3.6.4 DATA SPLITTING
