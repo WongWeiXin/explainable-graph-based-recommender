@@ -4,4 +4,7 @@ This project presents an explainable graph-based recommender system for resident
 
 The system not only provides ranked property recommendations but also generates faithful explanations by leveraging observable comparable-property evidence, making the recommendation process more transparent and user-understandable.
 
-to run the app.py, should have an environment that include all libraries dependencies from requirements.txt
+to run the app.py, should
+
+1. have an environment that include all libraries dependencies from requirements.txt
+2. run the program in terminal using prompt: python app.py
