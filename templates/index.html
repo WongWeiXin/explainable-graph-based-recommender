@@ -1,0 +1,1800 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CPG | Explainable Property Search</title>
+    <style>
+      :root {
+        --navy: #172b4d;
+        --ink: #1e293b;
+        --muted: #64748b;
+        --line: #e2e8f0;
+        --bg: #f5f7fb;
+        --white: #fff;
+        --blue: #2864dc;
+        --blue-soft: #eaf1ff;
+        --teal: #0f766e;
+        --teal-soft: #e7f7f3;
+        --amber: #b45309;
+        --amber-soft: #fff5df;
+        --purple: #6d4acb;
+        --purple-soft: #f1edff;
+        --red: #b42318;
+        --shadow: 0 8px 28px rgba(30, 41, 59, 0.06);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        font:
+          14px/1.45 Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        color: var(--ink);
+      }
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+      button {
+        cursor: pointer;
+      }
+      .app {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 248px 1fr;
+      }
+      .sidebar {
+        background: #142541;
+        color: #dce6f8;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding: 0 8px;
+      }
+      .brandmark {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        background: #2d6cdf;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-weight: 900;
+        font-size: 18px;
+      }
+      .brand strong {
+        font-size: 15px;
+        display: block;
+        letter-spacing: 0.2px;
+      }
+      .brand small {
+        color: #9fb2d1;
+        font-size: 11px;
+      }
+      .navlabel {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        color: #8195b7;
+        padding: 0 12px;
+        margin-bottom: 7px;
+      }
+      .nav {
+        display: grid;
+        gap: 5px;
+      }
+      .nav button {
+        border: 0;
+        background: transparent;
+        color: #c8d5e9;
+        text-align: left;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .nav button.active,
+      .nav button:hover {
+        background: #243c60;
+        color: #fff;
+      }
+      .nav .ico {
+        width: 20px;
+        text-align: center;
+        font-size: 17px;
+      }
+      .side-note {
+        margin-top: auto;
+        border: 1px solid #34496a;
+        background: #1b3152;
+        border-radius: 13px;
+        padding: 13px;
+        font-size: 12px;
+        color: #b8c8df;
+      }
+      .side-note strong {
+        display: block;
+        color: #fff;
+        margin-bottom: 5px;
+      }
+      .main {
+        min-width: 0;
+      }
+      .topbar {
+        height: 72px;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        gap: 16px;
+      }
+      .crumb {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .crumb strong {
+        color: var(--ink);
+      }
+      .topright {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pill {
+        border-radius: 999px;
+        padding: 6px 10px;
+        font-size: 11px;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .pill.demo {
+        background: #fff2d7;
+        color: #8a4b08;
+      }
+      .avatar {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #dbeafe;
+        color: #1d4ed8;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+      }
+      .content {
+        padding: 28px 30px 44px;
+        max-width: 1500px;
+        margin: auto;
+      }
+      .pagehead {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+      .eyebrow {
+        font-size: 11px;
+        color: var(--blue);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        margin-bottom: 6px;
+      }
+      .pagehead h1 {
+        font-size: 27px;
+        letter-spacing: -0.7px;
+        margin: 0 0 7px;
+        color: #172b4d;
+      }
+      .pagehead p {
+        color: var(--muted);
+        margin: 0;
+        max-width: 760px;
+      }
+      .btn {
+        border: 1px solid var(--line);
+        border-radius: 9px;
+        background: #fff;
+        padding: 10px 14px;
+        font-weight: 700;
+        color: #334155;
+      }
+      .btn.primary {
+        background: var(--blue);
+        color: #fff;
+        border-color: var(--blue);
+      }
+      .btn.small {
+        padding: 7px 10px;
+        font-size: 12px;
+      }
+      .btn:hover {
+        filter: brightness(0.98);
+        transform: translateY(-1px);
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(310px, 0.75fr);
+        gap: 20px;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 15px;
+        box-shadow: var(--shadow);
+        min-width: 0;
+      }
+      .cardhead {
+        padding: 18px 20px;
+        border-bottom: 1px solid #edf0f5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      .cardhead h2,
+      .cardhead h3 {
+        margin: 0;
+        font-size: 15px;
+      }
+      .cardbody {
+        padding: 20px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .tiny {
+        font-size: 11px;
+      }
+      .section-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-weight: 800;
+        color: #52637d;
+        margin: 2px 0 13px;
+      }
+      .formgrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+      .field label {
+        font-size: 12px;
+        font-weight: 700;
+        color: #475569;
+      }
+      .field input,
+      .field select {
+        width: 100%;
+        border: 1px solid #d7deea;
+        border-radius: 9px;
+        padding: 10px 11px;
+        background: #fff;
+        color: #1e293b;
+        outline: none;
+      }
+      .field input:focus,
+      .field select:focus {
+        border-color: #78a0fa;
+        box-shadow: 0 0 0 3px #eaf1ff;
+      }
+      .checkgrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .check {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        border: 1px solid #e4eaf3;
+        border-radius: 9px;
+        padding: 10px;
+        font-size: 12px;
+      }
+      .check input {
+        accent-color: var(--blue);
+        margin-top: 3px;
+      }
+      .check strong {
+        display: block;
+        font-size: 12px;
+      }
+      .check span {
+        color: var(--muted);
+        font-size: 11px;
+      }
+      .divider {
+        border: 0;
+        border-top: 1px solid #edf0f5;
+        margin: 21px 0;
+      }
+      .subhead {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .subhead h3 {
+        font-size: 13px;
+        margin: 0;
+      }
+      .tag {
+        background: #f1f5f9;
+        color: #52637d;
+        padding: 4px 8px;
+        border-radius: 7px;
+        font-size: 10px;
+        font-weight: 800;
+      }
+      .tag.hard {
+        background: #eaf1ff;
+        color: #2456b8;
+      }
+      .tag.soft {
+        background: #e7f7f3;
+        color: #087568;
+      }
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      .notice {
+        padding: 11px 13px;
+        border-radius: 10px;
+        background: #f8fafc;
+        border: 1px solid var(--line);
+        font-size: 12px;
+        color: #52637d;
+      }
+      .notice.warn {
+        background: #fff8e8;
+        border-color: #f5deb0;
+        color: #85510c;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 13px;
+        margin-bottom: 20px;
+      }
+      .stat {
+        padding: 16px 18px;
+      }
+      .stat .label {
+        font-size: 11px;
+        color: var(--muted);
+        margin-bottom: 8px;
+      }
+      .stat .value {
+        font-size: 23px;
+        font-weight: 800;
+        letter-spacing: -0.6px;
+        color: #172b4d;
+      }
+      .stat .foot {
+        font-size: 11px;
+        color: #64748b;
+        margin-top: 4px;
+      }
+      .results-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(330px, 0.85fr);
+        gap: 18px;
+        align-items: start;
+      }
+      .listing-list {
+        display: grid;
+        gap: 12px;
+      }
+      .listing {
+        display: grid;
+        grid-template-columns: 132px minmax(0, 1fr);
+        gap: 14px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px;
+        transition: 0.15s;
+        cursor: pointer;
+      }
+      .listing:hover,
+      .listing.selected {
+        border-color: #8bb0ff;
+        box-shadow: 0 0 0 2px #eaf1ff;
+      }
+      .house-art {
+        min-height: 120px;
+        border-radius: 9px;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(145deg, #e8f1f9, #d5e4ef);
+        display: grid;
+        place-items: center;
+      }
+      .house-art:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 29%;
+        background: #c8dcc9;
+      }
+      .house-art .house {
+        position: relative;
+        z-index: 1;
+        font-size: 50px;
+        filter: drop-shadow(0 4px 2px #8aa0a655);
+      }
+      .house-art .loc {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        background: #fffdf0d9;
+        border-radius: 6px;
+        padding: 3px 6px;
+        font-size: 9px;
+        font-weight: 800;
+        color: #475569;
+        z-index: 2;
+      }
+      .listing h3 {
+        font-size: 14px;
+        margin: 1px 0 3px;
+      }
+      .listing .address {
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .price-row {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        margin: 7px 0;
+      }
+      .price {
+        font-size: 18px;
+        font-weight: 800;
+        color: #172b4d;
+      }
+      .facts {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        color: #475569;
+        font-size: 11px;
+      }
+      .facts span {
+        white-space: nowrap;
+      }
+      .listing-foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .score {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 12px;
+        font-weight: 800;
+        color: #0f766e;
+      }
+      .scorebar {
+        width: 64px;
+        height: 5px;
+        border-radius: 10px;
+        background: #e2e8f0;
+        overflow: hidden;
+      }
+      .scorebar i {
+        display: block;
+        height: 100%;
+        background: #14a38b;
+      }
+      .details {
+        position: sticky;
+        top: 18px;
+      }
+      .detail-title {
+        font-size: 19px;
+        letter-spacing: -0.4px;
+        margin: 0 0 4px;
+      }
+      .detail-price {
+        font-size: 23px;
+        font-weight: 850;
+        color: #172b4d;
+      }
+      .scorecircle {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        border: 5px solid #c7f0e5;
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+        color: #0f766e;
+        font-size: 17px;
+        flex-shrink: 0;
+      }
+      .detailtop {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+      }
+      .component {
+        margin: 13px 0;
+      }
+      .component-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      .bar {
+        height: 8px;
+        border-radius: 99px;
+        background: #edf1f7;
+        overflow: hidden;
+      }
+      .bar span {
+        display: block;
+        height: 100%;
+        border-radius: 99px;
+      }
+      .bar.blue span {
+        background: #3976e8;
+      }
+      .bar.teal span {
+        background: #13a18b;
+      }
+      .bar.purple span {
+        background: #9374e9;
+      }
+      .bar.amber span {
+        background: #e5a13a;
+      }
+      .evidence-box {
+        background: #f8fafc;
+        border: 1px solid #e6ebf3;
+        border-radius: 10px;
+        padding: 12px;
+        margin-top: 12px;
+      }
+      .evidence-box h4 {
+        font-size: 12px;
+        margin: 0 0 7px;
+      }
+      .evidence-box p {
+        font-size: 11px;
+        color: #52637d;
+        margin: 0;
+      }
+      .neighbour {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 9px 0;
+        border-bottom: 1px solid #e9eef5;
+      }
+      .neighbour:last-child {
+        border: 0;
+      }
+      .mini-house {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        background: #e6eef6;
+        display: grid;
+        place-items: center;
+        font-size: 21px;
+      }
+      .neighbour strong {
+        display: block;
+        font-size: 11px;
+      }
+      .neighbour small {
+        display: block;
+        color: var(--muted);
+        font-size: 10px;
+      }
+      .neighbor-score {
+        margin-left: auto;
+        font-size: 11px;
+        font-weight: 800;
+        color: #0f766e;
+      }
+      .tabs {
+        display: flex;
+        gap: 6px;
+        background: #edf2f8;
+        padding: 5px;
+        border-radius: 10px;
+        width: max-content;
+        max-width: 100%;
+        overflow: auto;
+      }
+      .tabs button {
+        border: 0;
+        background: transparent;
+        padding: 8px 12px;
+        border-radius: 7px;
+        color: #52637d;
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .tabs button.active {
+        background: #fff;
+        color: #1e293b;
+        box-shadow: 0 1px 4px #1e293b12;
+      }
+      .graphwrap {
+        background: #f8fafc;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .graphwrap svg {
+        width: 100%;
+        height: auto;
+        display: block;
+        min-height: 330px;
+      }
+      .graphnode {
+        cursor: pointer;
+        stroke: white;
+        stroke-width: 3;
+        transition: 0.15s;
+      }
+      .graphnode:hover {
+        stroke: #1d4ed8;
+        stroke-width: 5;
+      }
+      .graphnode.selected {
+        stroke: #172b4d;
+        stroke-width: 5;
+      }
+      .graphlegend {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 11px;
+        color: #64748b;
+        padding: 12px 15px;
+        border-top: 1px solid var(--line);
+        background: #fff;
+      }
+      .dot {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+      .table th {
+        text-align: left;
+        color: #64748b;
+        font-weight: 700;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        background: #f8fafc;
+      }
+      .table td,
+      .table th {
+        padding: 11px 12px;
+        border-bottom: 1px solid #edf0f5;
+      }
+      .table tr:last-child td {
+        border-bottom: 0;
+      }
+      .method-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid #edf0f5;
+      }
+      .method-row:last-child {
+        border-bottom: 0;
+      }
+      .method-row strong {
+        font-size: 12px;
+        display: block;
+      }
+      .method-row small {
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .empty {
+        padding: 30px;
+        text-align: center;
+        color: var(--muted);
+      }
+      .toast {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        background: #172b4d;
+        color: #fff;
+        padding: 13px 17px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        z-index: 20;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: 0.2s;
+        pointer-events: none;
+      }
+      .toast.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .footnote {
+        font-size: 11px;
+        color: #64748b;
+        margin-top: 18px;
+      }
+      .hidden {
+        display: none !important;
+      }
+      @media (max-width: 1050px) {
+        .app {
+          grid-template-columns: 76px 1fr;
+        }
+        .sidebar {
+          padding: 20px 10px;
+        }
+        .brand {
+          padding: 0;
+          justify-content: center;
+        }
+        .brandtext,
+        .navlabel,
+        .nav button .navtext,
+        .side-note {
+          display: none;
+        }
+        .nav button {
+          justify-content: center;
+          padding: 12px;
+        }
+        .layout,
+        .results-layout {
+          grid-template-columns: 1fr;
+        }
+        .details {
+          position: static;
+        }
+        .content {
+          padding: 22px 18px;
+        }
+        .topbar {
+          padding: 0 18px;
+        }
+      }
+      @media (max-width: 650px) {
+        .app {
+          display: block;
+        }
+        .sidebar {
+          height: auto;
+          padding: 10px;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .brand {
+          display: none;
+        }
+        .nav {
+          display: flex;
+          gap: 3px;
+        }
+        .nav button {
+          padding: 9px;
+        }
+        .nav button .ico {
+          font-size: 16px;
+        }
+        .topbar {
+          height: 58px;
+        }
+        .content {
+          padding: 18px 12px;
+        }
+        .pagehead {
+          display: block;
+        }
+        .pagehead .btn {
+          margin-top: 12px;
+        }
+        .pagehead h1 {
+          font-size: 23px;
+        }
+        .formgrid,
+        .checkgrid,
+        .stats {
+          grid-template-columns: 1fr;
+        }
+        .listing {
+          grid-template-columns: 100px minmax(0, 1fr);
+          gap: 10px;
+          padding: 9px;
+        }
+        .house-art .house {
+          font-size: 38px;
+        }
+        .listing .facts {
+          gap: 5px;
+        }
+        .price {
+          font-size: 16px;
+        }
+        .listing-foot {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .cardbody {
+          padding: 14px;
+        }
+        .cardhead {
+          padding: 14px;
+        }
+        .topright .pill {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brandmark">CP</div>
+          <div class="brandtext">
+            <strong>CPG Homes</strong><small>Research prototype</small>
+          </div>
+        </div>
+        <div>
+          <div class="navlabel">Workspace</div>
+          <nav class="nav">
+            <button class="active" data-page="search">
+              <span class="ico">⌕</span
+              ><span class="navtext">Property search</span>
+            </button>
+            <button data-page="results">
+              <span class="ico">▤</span
+              ><span class="navtext">Recommendations</span>
+            </button>
+            <button data-page="explanation">
+              <span class="ico">◉</span
+              ><span class="navtext">Score explanation</span>
+            </button>
+            <button data-page="graph">
+              <span class="ico">⌘</span
+              ><span class="navtext">Comparable graph</span>
+            </button>
+          </nav>
+        </div>
+        <div class="side-note">
+          <strong>Evidence-first recommendations</strong>Rankings use direct
+          preference matching and qualified comparable-neighbour support.
+          Explanations read retained scoring evidence.
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div class="crumb">
+            Research workspace&nbsp; / &nbsp;<strong id="crumb"
+              >Property search</strong
+            >
+          </div>
+          <div class="topright">
+            <span class="pill demo">● DEMO DATA · SIMULATED</span>
+            <div class="avatar">CP</div>
+          </div>
+        </header>
+        <div class="content">
+          <section id="page-search" class="page">
+            <div class="pagehead">
+              <div>
+                <div class="eyebrow">Malaysian residential search</div>
+                <h1>Find a property that fits your priorities</h1>
+                <p>
+                  Set non-negotiable constraints first, then rank eligible
+                  listings using your softer preferences and comparable-property
+                  evidence.
+                </p>
+              </div>
+              <span class="pill" style="background: #e7f7f3; color: #087568"
+                >CPG method preview</span
+              >
+            </div>
+            <div class="layout">
+              <div class="card">
+                <div class="cardhead">
+                  <h2>Search profile</h2>
+                  <span class="tag">Query-conditioned</span>
+                </div>
+                <div class="cardbody">
+                  <div class="subhead">
+                    <h3>Search context</h3>
+                    <span class="tag hard">HARD CONSTRAINTS</span>
+                  </div>
+                  <div class="formgrid">
+                    <div class="field">
+                      <label for="location">Preferred area</label
+                      ><select id="location">
+                        <option value="Any">Any area</option>
+                        <option value="Petaling Jaya" selected>
+                          Petaling Jaya, Selangor
+                        </option>
+                        <option value="Kuala Lumpur">Kuala Lumpur</option>
+                        <option value="Shah Alam">Shah Alam, Selangor</option>
+                        <option value="Subang Jaya">
+                          Subang Jaya, Selangor
+                        </option>
+                        <option value="Cheras">Cheras, Kuala Lumpur</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="budget">Maximum budget (RM)</label
+                      ><input
+                        id="budget"
+                        type="number"
+                        min="100000"
+                        step="50000"
+                        value="850000"
+                      />
+                    </div>
+                    <div class="field">
+                      <label for="type">Property type</label
+                      ><select id="type">
+                        <option value="Any">Any type</option>
+                        <option value="Condominium" selected>
+                          Condominium
+                        </option>
+                        <option value="Terrace">Terrace house</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Semi-D">Semi-detached</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="beds">Minimum bedrooms</label
+                      ><select id="beds">
+                        <option value="0">Any</option>
+                        <option value="2">2+</option>
+                        <option value="3" selected>3+</option>
+                        <option value="4">4+</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr class="divider" />
+                  <div class="subhead">
+                    <h3>Additional requirements</h3>
+                    <span class="tag hard">ELIGIBILITY GATES</span>
+                  </div>
+                  <div class="checkgrid">
+                    <label class="check"
+                      ><input type="checkbox" id="parking" />
+                      <div>
+                        <strong>Parking required</strong
+                        ><span>Must have at least one bay</span>
+                      </div></label
+                    >
+                    <label class="check"
+                      ><input type="checkbox" id="furnished" />
+                      <div>
+                        <strong>Furnished only</strong
+                        ><span>Listing must be furnished</span>
+                      </div></label
+                    >
+                  </div>
+                  <hr class="divider" />
+                  <div class="subhead">
+                    <h3>Ranking priorities</h3>
+                    <span class="tag soft">SOFT PREFERENCES</span>
+                  </div>
+                  <p
+                    class="muted tiny"
+                    style="margin-top: -5px; margin-bottom: 14px"
+                  >
+                    These influence order, not eligibility. The demo uses direct
+                    preference matching plus comparable-neighbour support.
+                  </p>
+                  <div class="formgrid">
+                    <div class="field">
+                      <label for="priority">Main priority</label
+                      ><select id="priority">
+                        <option value="balanced">Balanced match</option>
+                        <option value="location">Location</option>
+                        <option value="price">Lower asking price</option>
+                        <option value="facilities">Facilities</option>
+                        <option value="size">Built-up area</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="facilities">Nearby facilities</label
+                      ><select id="facilities">
+                        <option value="Any">No preference</option>
+                        <option value="Transit">Public transport</option>
+                        <option value="Schools">Schools</option>
+                        <option value="Retail">Retail & groceries</option>
+                        <option value="Parks">Parks & recreation</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="minsize"
+                        >Preferred built-up area (sq ft)</label
+                      ><input
+                        id="minsize"
+                        type="number"
+                        min="0"
+                        step="100"
+                        value="1000"
+                      />
+                    </div>
+                    <div class="field">
+                      <label for="recency">Listing recency preference</label
+                      ><select id="recency">
+                        <option value="any">Any date</option>
+                        <option value="recent" selected>
+                          Prefer recent listings
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="actions">
+                    <button class="btn" id="reset">Reset to defaults</button
+                    ><button class="btn primary" id="searchBtn">
+                      Find comparable properties&nbsp; →
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="cardhead">
+                  <h2>How this search is evaluated</h2>
+                  <span class="tag">Method overview</span>
+                </div>
+                <div class="cardbody">
+                  <div class="method-row">
+                    <div>
+                      <strong>1. Candidate eligibility</strong
+                      ><small>Apply hard constraints before ranking.</small>
+                    </div>
+                    <span class="tag hard">Gate</span>
+                  </div>
+                  <div class="method-row">
+                    <div>
+                      <strong>2. Direct preference matching (D)</strong
+                      ><small
+                        >Compare each eligible listing with active soft
+                        preferences.</small
+                      >
+                    </div>
+                    <span class="tag soft">Direct</span>
+                  </div>
+                  <div class="method-row">
+                    <div>
+                      <strong>3. Comparable-neighbour support (G)</strong
+                      ><small
+                        >Aggregate evidence from qualified neighbours in the
+                        property graph.</small
+                      >
+                    </div>
+                    <span
+                      class="tag"
+                      style="background: #f1edff; color: #6d4acb"
+                      >Graph</span
+                    >
+                  </div>
+                  <div class="method-row">
+                    <div>
+                      <strong>4. Retained score trace</strong
+                      ><small
+                        >Keep active components, contributions, neighbours and
+                        evidence resolution for explanations.</small
+                      >
+                    </div>
+                    <span class="tag">Audit</span>
+                  </div>
+                  <div class="notice warn" style="margin-top: 18px">
+                    <strong>Research integrity note</strong><br />All property
+                    listings, scores, graph edges and sample metrics in this
+                    standalone prototype are simulated for UI demonstration.
+                    They are not real listings or experimental results.
+                  </div>
+                  <div style="margin-top: 18px">
+                    <div class="section-label">
+                      Illustrative score structure
+                    </div>
+                    <div class="notice">
+                      Final score = normalised active contribution from direct
+                      preference matching + comparable-neighbour support (+
+                      optional valid market-context evidence).
+                    </div>
+                    <p class="tiny muted">
+                      Unavailable components are excluded and active weights are
+                      renormalised in the documented method. The UI does not
+                      claim that the method outperforms baselines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="page-results" class="page hidden">
+            <div class="pagehead">
+              <div>
+                <div class="eyebrow">Ranked shortlist</div>
+                <h1>Recommended properties</h1>
+                <p id="resultsSummary">
+                  Eligible candidates ranked by the illustrative CPG scoring
+                  flow.
+                </p>
+              </div>
+              <button class="btn" id="editSearch">← Edit search</button>
+            </div>
+            <div class="stats">
+              <div class="card stat">
+                <div class="label">Eligible candidates</div>
+                <div class="value" id="eligibleCount">—</div>
+                <div class="foot">After hard constraints</div>
+              </div>
+              <div class="card stat">
+                <div class="label">Graph evidence available</div>
+                <div class="value" id="graphCount">—</div>
+                <div class="foot">Qualified neighbours retained</div>
+              </div>
+              <div class="card stat">
+                <div class="label">Explanation coverage</div>
+                <div class="value" id="coverage">—</div>
+                <div class="foot">Demo candidates with traceable evidence</div>
+              </div>
+            </div>
+            <div class="results-layout">
+              <div class="card">
+                <div class="cardhead">
+                  <h2>Top matches</h2>
+                  <div style="display: flex; gap: 8px; align-items: center">
+                    <span class="tag">CPG · demo</span
+                    ><select
+                      id="sort"
+                      style="
+                        border: 1px solid #d7deea;
+                        border-radius: 7px;
+                        padding: 6px;
+                        font-size: 11px;
+                      "
+                    >
+                      <option value="score">Ranked score</option>
+                      <option value="price">Price: low to high</option>
+                      <option value="size">Built-up: high to low</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="cardbody">
+                  <div id="listingList" class="listing-list"></div>
+                  <div class="footnote">
+                    Ranking and scores are computed from the prototype's
+                    illustrative records. No real-market inference is implied.
+                  </div>
+                </div>
+              </div>
+              <div id="resultDetail" class="card details">
+                <div class="empty">
+                  Select a property to inspect retained evidence.
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="page-explanation" class="page hidden">
+            <div class="pagehead">
+              <div>
+                <div class="eyebrow">Score-linked evidence</div>
+                <h1>Why this property?</h1>
+                <p>
+                  Inspect the score components and comparable neighbours that
+                  contributed to the selected recommendation.
+                </p>
+              </div>
+              <button class="btn" id="backResults">← Back to results</button>
+            </div>
+            <div class="tabs" id="explainTabs">
+              <button class="active" data-condition="score">
+                Score-linked explanation</button
+              ><button data-condition="feature">Feature summary</button
+              ><button data-condition="none">No explanation</button>
+            </div>
+            <div id="explainContent" style="margin-top: 18px"></div>
+          </section>
+          <section id="page-graph" class="page hidden">
+            <div class="pagehead">
+              <div>
+                <div class="eyebrow">Explicit property relationships</div>
+                <h1>Comparable-property graph</h1>
+                <p>
+                  Explore a small illustrative graph of property nodes and
+                  retained similarity edges. Select a node to inspect its
+                  relationships.
+                </p>
+              </div>
+              <button class="btn" id="graphToResults">
+                View ranked list →
+              </button>
+            </div>
+            <div class="layout">
+              <div class="card">
+                <div class="cardhead">
+                  <h2>Property neighbourhood</h2>
+                  <span class="tag">G = (V, E)</span>
+                </div>
+                <div class="cardbody">
+                  <div class="graphwrap">
+                    <svg
+                      id="graphSvg"
+                      viewBox="0 0 700 440"
+                      role="img"
+                      aria-label="Interactive comparable property graph"
+                    ></svg>
+                    <div class="graphlegend">
+                      <span
+                        ><i class="dot" style="background: #3677e8"></i>Selected
+                        / recommended</span
+                      ><span
+                        ><i class="dot" style="background: #e5a18c"></i
+                        >Comparable neighbour</span
+                      ><span
+                        ><i class="dot" style="background: #94a3b8"></i>Other
+                        listing</span
+                      ><span
+                        >Edge thickness represents illustrative similarity
+                        weight</span
+                      >
+                    </div>
+                  </div>
+                  <p class="tiny muted">
+                    This visual is a simulated graph for demonstrating
+                    interaction. Edge values are illustrative and not derived
+                    from a real Malaysian listing dataset.
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="graphDetail">
+                <div class="cardhead"><h2>Selected node</h2></div>
+                <div class="cardbody">
+                  <div class="empty">Choose a node in the graph.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <script>
+      const properties = [
+        {
+          id: "CPG-001",
+          name: "Aster Residence",
+          area: "Petaling Jaya",
+          district: "Ara Damansara",
+          type: "Condominium",
+          price: 780000,
+          size: 1180,
+          beds: 3,
+          baths: 2,
+          parking: true,
+          furnished: true,
+          facilities: ["Transit", "Retail", "Parks"],
+          age: 12,
+          recency: "2026-09-14",
+          direct: 0.91,
+          graph: 0.83,
+          market: 0.72,
+          neighbors: ["CPG-002", "CPG-003", "CPG-006"],
+          locationEvidence: "Coordinate-level",
+          notes: "Strong match on location and preferred built-up area.",
+        },
+        {
+          id: "CPG-002",
+          name: "Mutiara Heights",
+          area: "Petaling Jaya",
+          district: "Kelana Jaya",
+          type: "Condominium",
+          price: 820000,
+          size: 1260,
+          beds: 3,
+          baths: 2,
+          parking: true,
+          furnished: false,
+          facilities: ["Transit", "Schools", "Retail"],
+          age: 8,
+          recency: "2026-10-02",
+          direct: 0.88,
+          graph: 0.79,
+          market: 0.69,
+          neighbors: ["CPG-001", "CPG-004", "CPG-006"],
+          locationEvidence: "Coordinate-level",
+          notes:
+            "Comparable support comes from properties with overlapping price bands and shared facilities.",
+        },
+        {
+          id: "CPG-003",
+          name: "Lakeview Suites",
+          area: "Petaling Jaya",
+          district: "Kota Damansara",
+          type: "Condominium",
+          price: 720000,
+          size: 1050,
+          beds: 3,
+          baths: 2,
+          parking: true,
+          furnished: true,
+          facilities: ["Parks", "Retail"],
+          age: 15,
+          recency: "2026-08-21",
+          direct: 0.84,
+          graph: 0.87,
+          market: 0.76,
+          neighbors: ["CPG-001", "CPG-005"],
+          locationEvidence: "District-level fallback",
+          notes:
+            "Location evidence is district-level in this demo; it must not be interpreted as exact distance.",
+        },
+        {
+          id: "CPG-004",
+          name: "The Grove Residences",
+          area: "Kuala Lumpur",
+          district: "Segambut",
+          type: "Condominium",
+          price: 850000,
+          size: 1320,
+          beds: 3,
+          baths: 2,
+          parking: true,
+          furnished: true,
+          facilities: ["Transit", "Schools", "Parks"],
+          age: 6,
+          recency: "2026-10-10",
+          direct: 0.81,
+          graph: 0.76,
+          market: 0.71,
+          neighbors: ["CPG-002", "CPG-005"],
+          locationEvidence: "Coordinate-level",
+          notes:
+            "Larger floor area and facility profile contribute to direct preference matching.",
+        },
+        {
+          id: "CPG-005",
+          name: "Seri Palma Apartment",
+          area: "Shah Alam",
+          district: "Seksyen 13",
+          type: "Apartment",
+          price: 460000,
+          size: 980,
+          beds: 3,
+          baths: 2,
+          parking: true,
+          furnished: false,
+          facilities: ["Schools", "Retail", "Parks"],
+          age: 18,
+          recency: "2026-07-03",
+          direct: 0.72,
+          graph: 0.68,
+          market: 0.81,
+          neighbors: ["CPG-003", "CPG-004"],
+          locationEvidence: "District-level fallback",
+          notes:
+            "Lower asking price, but area and property type differ from the current preference profile.",
+        },
+        {
+          id: "CPG-006",
+          name: "D'Rimba Condominium",
+          area: "Subang Jaya",
+          district: "USJ",
+          type: "Condominium",
+          price: 800000,
+          size: 1150,
+          beds: 3,
+          baths: 2,
+          parking: true,
+          furnished: true,
+          facilities: ["Transit", "Retail"],
+          age: 9,
+          recency: "2026-09-28",
+          direct: 0.86,
+          graph: 0.81,
+          market: 0.7,
+          neighbors: ["CPG-001", "CPG-002"],
+          locationEvidence: "Coordinate-level",
+          notes:
+            "Similar price band and facility overlap with two retained neighbours.",
+        },
+        {
+          id: "CPG-007",
+          name: "Taman Harmoni Terrace",
+          area: "Petaling Jaya",
+          district: "SS 3",
+          type: "Terrace",
+          price: 890000,
+          size: 1450,
+          beds: 4,
+          baths: 3,
+          parking: true,
+          furnished: false,
+          facilities: ["Schools", "Parks"],
+          age: 22,
+          recency: "2026-06-19",
+          direct: 0.69,
+          graph: 0.73,
+          market: 0.66,
+          neighbors: ["CPG-002"],
+          locationEvidence: "District-level fallback",
+          notes:
+            "Outside the illustrative budget ceiling; excluded when budget constraint is active.",
+        },
+      ];
+      let currentQuery = {},
+        eligible = [],
+        ranked = [],
+        selectedId = "CPG-001",
+        condition = "score";
+      const $ = (id) => document.getElementById(id);
+      const money = (n) => "RM " + Number(n).toLocaleString("en-MY");
+      const pct = (n) => Math.round(n * 100) + "%";
+      function toast(msg) {
+        const t = $("toast");
+        t.textContent = msg;
+        t.classList.add("show");
+        setTimeout(() => t.classList.remove("show"), 2400);
+      }
+      function go(page) {
+        document
+          .querySelectorAll(".page")
+          .forEach((p) => p.classList.add("hidden"));
+        $("page-" + page).classList.remove("hidden");
+        document
+          .querySelectorAll(".nav button")
+          .forEach((b) =>
+            b.classList.toggle("active", b.dataset.page === page),
+          );
+        $("crumb").textContent = {
+          search: "Property search",
+          results: "Recommendations",
+          explanation: "Score explanation",
+          graph: "Comparable graph",
+        }[page];
+        if (page === "graph") renderGraph();
+        if (page === "explanation") renderExplanation();
+      }
+      document
+        .querySelectorAll(".nav button")
+        .forEach((b) => b.addEventListener("click", () => go(b.dataset.page)));
+      function readQuery() {
+        return {
+          location: $("location").value,
+          budget: Number($("budget").value || 0),
+          type: $("type").value,
+          beds: Number($("beds").value || 0),
+          parking: $("parking").checked,
+          furnished: $("furnished").checked,
+          priority: $("priority").value,
+          facilities: $("facilities").value,
+          minsize: Number($("minsize").value || 0),
+          recency: $("recency").value,
+        };
+      }
+      function runSearch() {
+        currentQuery = readQuery();
+        if (currentQuery.budget <= 0) {
+          toast("Please enter a valid budget.");
+          $("budget").focus();
+          return;
+        }
+        eligible = properties.filter(
+          (p) =>
+            p.price <= currentQuery.budget &&
+            (currentQuery.location === "Any" ||
+              p.area === currentQuery.location) &&
+            (currentQuery.type === "Any" || p.type === currentQuery.type) &&
+            p.beds >= currentQuery.beds &&
+            (!currentQuery.parking || p.parking) &&
+            (!currentQuery.furnished || p.furnished),
+        );
+        eligible = eligible.map((p) => {
+          let d = p.direct;
+          const pref = currentQuery.priority;
+          if (pref === "location")
+            d = Math.min(1, d + (p.area === currentQuery.location ? 0.08 : 0));
+          if (pref === "price")
+            d = Math.min(1, d + (1 - p.price / currentQuery.budget) * 0.12);
+          if (pref === "facilities" && currentQuery.facilities !== "Any")
+            d = Math.min(
+              1,
+              d + (p.facilities.includes(currentQuery.facilities) ? 0.1 : 0),
+            );
+          if (pref === "size")
+            d = Math.min(1, d + (p.size >= currentQuery.minsize ? 0.1 : 0));
+          if (currentQuery.facilities !== "Any")
+            d = Math.max(
+              0,
+              Math.min(
+                1,
+                d +
+                  (p.facilities.includes(currentQuery.facilities)
+                    ? 0.04
+                    : -0.06),
+              ),
+            );
+          if (currentQuery.minsize > 0)
+            d = Math.max(
+              0,
+              Math.min(1, d + (p.size >= currentQuery.minsize ? 0.04 : -0.06)),
+            );
+          if (
+            currentQuery.recency === "recent" &&
+            new Date(p.recency) >= new Date("2026-09-01")
+          )
+            d = Math.min(1, d + 0.025);
+          const graph = p.neighbors.filter((id) =>
+            properties.some((n) => n.id === id),
+          ).length
+            ? p.graph
+            : null;
+          const score = graph === null ? d : 0.65 * d + 0.35 * graph;
+          return {
+            ...p,
+            displayDirect: d,
+            displayGraph: graph,
+            score,
+            trace: {
+              directWeight: graph === null ? 1 : 0.65,
+              graphWeight: graph === null ? 0 : 0.35,
+              contribD: graph === null ? d : 0.65 * d,
+              contribG: graph === null ? 0 : 0.35 * graph,
+            },
+          };
+        });
+        ranked = [...eligible].sort(
+          (a, b) =>
+            b.score - a.score ||
+            b.displayDirect - a.displayDirect ||
+            a.id.localeCompare(b.id),
+        );
+        selectedId = ranked[0]?.id || null;
+        renderResults();
+        go("results");
+        toast(eligible.length + " eligible demo listing(s) found");
+      }
+      $("searchBtn").addEventListener("click", runSearch);
+      $("editSearch").addEventListener("click", () => go("search"));
+      $("backResults").addEventListener("click", () => go("results"));
+      $("graphToResults").addEventListener("click", () => go("results"));
+      $("reset").addEventListener("click", () => {
+        $("location").value = "Petaling Jaya";
+        $("budget").value = 850000;
+        $("type").value = "Condominium";
+        $("beds").value = 3;
+        $("parking").checked = false;
+        $("furnished").checked = false;
+        $("priority").value = "balanced";
+        $("facilities").value = "Any";
+        $("minsize").value = 1000;
+        $("recency").value = "recent";
+        toast("Search fields reset");
+      });
+      function selected() {
+        return (
+          ranked.find((p) => p.id === selectedId) ||
+          ranked[0] ||
+          properties.find((p) => p.id === selectedId) ||
+          properties[0]
+        );
+      }
+      function listingHtml(p, i) {
+        return `<article class="listing ${p.id === selectedId ? "selected" : ""}" data-id="${p.id}" tabindex="0"><div class="house-art"><span class="loc">${p.area}</span><span class="house">🏡</span></div><div><div style="display:flex;justify-content:space-between;gap:6px;align-items:start"><div><h3>${p.name}</h3><div class="address">${p.district}, ${p.area}</div></div><span class="tag">#${i + 1}</span></div><div class="price-row"><span class="price">${money(p.price)}</span><span class="muted tiny">asking price · demo</span></div><div class="facts"><span>▦ ${p.size.toLocaleString()} sq ft</span><span>🛏 ${p.beds} bed</span><span>▣ ${p.baths} bath</span><span>${p.parking ? "✓ Parking" : "No parking"}</span></div><div class="listing-foot"><div class="score"><span>${pct(p.score)} match score</span><span class="scorebar"><i style="width:${pct(p.score)}"></i></span></div><span class="tiny muted">${p.neighbors.length} graph neighbours</span></div></div></article>`;
+      }
+      function renderResults() {
+        const count = ranked.length;
+        $("eligibleCount").textContent = count;
+        $("graphCount").textContent = ranked.filter(
+          (p) => p.displayGraph !== null && p.neighbors.length > 0,
+        ).length;
+        $("coverage").textContent = count
+          ? Math.round(
+              (ranked.filter((p) => p.displayGraph !== null).length / count) *
+                100,
+            ) + "%"
+          : "—";
+        $("resultsSummary").textContent =
+          `${count} simulated listing(s) pass the current hard constraints. Soft preferences influence order among eligible candidates.`;
+        const sort = $("sort").value;
+        let list = [...ranked];
+        if (sort === "price") list.sort((a, b) => a.price - b.price);
+        if (sort === "size") list.sort((a, b) => b.size - a.size);
+        $("listingList").innerHTML = list.length
+          ? list.map(listingHtml).join("")
+          : `<div class="empty"><div style="font-size:30px;margin-bottom:8px">⌕</div><strong>No properties meet every hard constraint.</strong><p>Try widening the budget, area, type or minimum bedroom requirement. Soft preferences will not be used to override hard constraints.</p><button class="btn primary" onclick="go('search')">Adjust search</button></div>`;
+        document.querySelectorAll(".listing").forEach((el) => {
+          const choose = () => {
+            selectedId = el.dataset.id;
+            renderResults();
+            renderGraph();
+          };
+          el.addEventListener("click", choose);
+          el.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") choose();
+          });
+        });
+        renderResultDetail();
+      }
+      $("sort").addEventListener("change", renderResults);
+      function component(name, value, color, desc) {
+        return `<div class="component"><div class="component-row"><span>${name}</span><strong>${pct(value)}</strong></div><div class="bar ${color}"><span style="width:${pct(value)}"></span></div><div class="tiny muted" style="margin-top:4px">${desc}</div></div>`;
+      }
+      function detailHtml(p, full = false) {
+        if (!p)
+          return `<div class="empty">No eligible property to inspect.</div>`;
+        const d = p.displayDirect ?? p.direct,
+          g = p.displayGraph ?? p.graph;
+        return `<div class="cardhead"><div><span class="tag">SELECTED PROPERTY</span><h2 style="margin-top:8px">${p.name}</h2><div class="muted tiny">${p.id} · ${p.district}, ${p.area}</div></div><div class="scorecircle">${pct(p.score ?? 0.65 * p.direct + 0.35 * p.graph)}</div></div><div class="cardbody"><div class="detailtop"><div><div class="detail-price">${money(p.price)}</div><div class="muted tiny">Illustrative asking price</div></div><span class="tag soft">Eligible</span></div><div class="facts" style="margin:12px 0 18px"><span>${p.size.toLocaleString()} sq ft</span><span>${p.beds} bed</span><span>${p.baths} bath</span><span>${p.parking ? "Parking" : "No parking"}</span></div><div class="section-label">Retained score components</div>${component("Direct preference matching · D", d, "blue", "Query-to-property attribute agreement.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Support aggregated from qualified neighbours retained during graph scoring.") : `<div class="notice warn">Comparable-neighbour support unavailable. The demo ranking uses the direct component only; no neighbour evidence is claimed.</div>`}<div class="notice"><strong>Illustrative score trace</strong><br>Normalised active contributions: direct ${pct(p.trace?.contribD ?? d)}${g !== null ? ` + graph ${pct(p.trace?.contribG ?? 0.35 * g)}` : ""}${g === null ? "" : " = " + pct(p.score)}. These values are demonstration calculations, not validated model outputs.</div><div class="evidence-box"><h4>Location evidence resolution</h4><p>${p.locationEvidence}. ${p.locationEvidence === "District-level fallback" ? "This identifies shared administrative area only; it does not establish exact geographic distance." : "Coordinate-level evidence is shown as a simulated data attribute in this prototype."}</p></div><div class="section-label" style="margin-top:18px">Qualified comparable neighbours</div>${neighborHtml(p)}<button class="btn primary" style="width:100%;margin-top:14px" onclick="selectedId='${p.id}';go('explanation')">Inspect score-linked explanation →</button></div>`;
+      }
+      function neighborHtml(p) {
+        const ids = (p.neighbors || []).filter((id) =>
+          properties.some((x) => x.id === id),
+        );
+        if (!ids.length)
+          return `<div class="notice warn">No qualified neighbours available for display. Sparse support is disclosed rather than inventing a comparable.</div>`;
+        return ids
+          .slice(0, 3)
+          .map((id) => {
+            const n = properties.find((x) => x.id === id);
+            return `<div class="neighbour"><div class="mini-house">🏠</div><div><strong>${n.name}</strong><small>${n.district} · ${money(n.price)}</small></div><span class="neighbor-score">${pct(n.direct)} sim.</span></div>`;
+          })
+          .join("");
+      }
+      function renderResultDetail() {
+        $("resultDetail").innerHTML = detailHtml(selected());
+      }
+      function renderExplanation() {
+        const p = selected();
+        if (!p) {
+          $("explainContent").innerHTML =
+            '<div class="card empty">Run a search with eligible listings first.</div>';
+          return;
+        }
+        const d = p.displayDirect ?? p.direct,
+          g = p.displayGraph ?? p.graph;
+        let body = "";
+        if (condition === "none") {
+          body = `<div class="card"><div class="cardbody"><div class="empty"><div style="font-size:30px">▤</div><h3>No explanation condition</h3><p>The ranked recommendation is shown without reasons. The underlying ranking is unchanged across explanation conditions for the same scenario.</p><button class="btn primary" onclick="setCondition('score')">Show score-linked explanation</button></div></div></div>`;
+        } else if (condition === "feature") {
+          body = `<div class="layout"><div class="card"><div class="cardhead"><h2>Feature-summary explanation</h2><span class="tag soft">Direct evidence only</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.district}, ${p.area}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle">${pct(d)}</div></div><p>Selected because its listing attributes align with the active search preferences. This condition shows direct query-to-property evidence only and excludes comparable-neighbour claims.</p>${component("Direct preference matching", d, "blue", "Derived from the current demo search profile.")}<div class="evidence-box"><h4>Attribute evidence</h4><p>${p.size} sq ft built-up area; ${p.beds} bedrooms; ${p.type}; asking price ${money(p.price)}; ${p.facilities.join(", ")} facilities in the demo feature profile.</p></div></div></div><div class="card"><div class="cardhead"><h2>Explanation boundary</h2></div><div class="cardbody"><div class="notice">This condition does not assert that comparable properties contributed to the displayed explanation. The list order is held constant for the same search and method.</div></div></div></div>`;
+        } else {
+          body = `<div class="layout"><div class="card"><div class="cardhead"><h2>Score-linked comparable-property explanation</h2><span class="tag" style="background:#e7f7f3;color:#087568">Retained evidence</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.id} · ${p.district}, ${p.area}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle">${pct(p.score ?? 0.65 * d + 0.35 * (g || 0))}</div></div><p style="margin-top:18px">The demo rank is supported by direct preference matching and, when available, qualified comparable-neighbour evidence retained for this candidate.</p>${component("Direct preference match · D", d, "blue", "Active query-to-property evidence.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Active graph-neighbour component; shown separately from direct matching.") : `<div class="notice warn">Graph support is unavailable for this candidate; no graph contribution is claimed.</div>`}<div class="evidence-box"><h4>Why it matches</h4><p>${p.notes}</p></div><div class="evidence-box"><h4>Location resolution disclosure</h4><p>${p.locationEvidence === "District-level fallback" ? "District-level fallback is lower-resolution evidence and does not mean two properties are geographically close." : "Coordinate-level evidence is recorded in this simulated listing profile."}</p></div></div></div><div class="card"><div class="cardhead"><h2>Comparable properties used</h2><span class="tag">Neighbourhood evidence</span></div><div class="cardbody">${neighborHtml(p)}<div class="notice" style="margin-top:12px">Only neighbours listed in this candidate's stored demo neighbourhood are shown. Neighbour similarity is not described as a percentage of overall recommendation quality.</div><button class="btn" style="width:100%;margin-top:14px" onclick="go('graph')">Explore graph relationships →</button></div></div></div>`;
+        }
+        $("explainContent").innerHTML = body;
+      }
+      function setCondition(c) {
+        condition = c;
+        document
+          .querySelectorAll("#explainTabs button")
+          .forEach((b) =>
+            b.classList.toggle("active", b.dataset.condition === c),
+          );
+        renderExplanation();
+      }
+      document
+        .querySelectorAll("#explainTabs button")
+        .forEach((b) =>
+          b.addEventListener("click", () => setCondition(b.dataset.condition)),
+        );
+      function renderGraph() {
+        const nodes = [
+          { id: "CPG-001", x: 330, y: 205 },
+          { id: "CPG-002", x: 490, y: 135 },
+          { id: "CPG-003", x: 165, y: 115 },
+          { id: "CPG-004", x: 545, y: 295 },
+          { id: "CPG-005", x: 165, y: 330 },
+          { id: "CPG-006", x: 360, y: 365 },
+          { id: "CPG-007", x: 70, y: 220 },
+        ];
+        const edges = [
+          ["CPG-001", "CPG-002", 0.82],
+          ["CPG-001", "CPG-003", 0.87],
+          ["CPG-001", "CPG-006", 0.81],
+          ["CPG-002", "CPG-004", 0.73],
+          ["CPG-002", "CPG-006", 0.79],
+          ["CPG-003", "CPG-005", 0.68],
+          ["CPG-004", "CPG-005", 0.64],
+          ["CPG-005", "CPG-006", 0.58],
+          ["CPG-001", "CPG-004", 0.51],
+          ["CPG-003", "CPG-007", 0.62],
+        ];
+        const svg = $("graphSvg");
+        let out = `<defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#e1e7f0"/></pattern></defs><rect width="700" height="440" fill="url(#dots)"/>`;
+        edges.forEach(([a, b, w]) => {
+          const A = nodes.find((n) => n.id === a),
+            B = nodes.find((n) => n.id === b);
+          const hot = a === selectedId || b === selectedId;
+          out += `<line x1="${A.x}" y1="${A.y}" x2="${B.x}" y2="${B.y}" stroke="${hot ? "#7198e8" : "#c3ccd9"}" stroke-width="${1 + w * 3}" opacity="${hot ? 0.95 : 0.7}"/><text x="${(A.x + B.x) / 2}" y="${(A.y + B.y) / 2 - 5}" font-size="10" text-anchor="middle" fill="#64748b">${w.toFixed(2)}</text>`;
+        });
+        nodes.forEach((n) => {
+          const p = properties.find((p) => p.id === n.id);
+          const isSelected = n.id === selectedId;
+          const isRecommended = ranked.some((x) => x.id === n.id);
+          const fill = isSelected
+            ? "#3677e8"
+            : isRecommended
+              ? "#e5a18c"
+              : "#94a3b8";
+          out += `<g class="graphnode ${isSelected ? "selected" : ""}" data-id="${n.id}"><circle cx="${n.x}" cy="${n.y}" r="${isSelected ? 27 : 22}" fill="${fill}"/><text x="${n.x}" y="${n.y + 4}" font-size="10" font-weight="800" text-anchor="middle" fill="${isSelected ? "#fff" : "#243247"}">${n.id.replace("CPG-", "")}</text><text x="${n.x}" y="${n.y + 39}" font-size="11" font-weight="700" text-anchor="middle" fill="#334155">${p.name.length > 17 ? p.name.slice(0, 16) + "…" : p.name}</text></g>`;
+        });
+        svg.innerHTML = out;
+        svg.querySelectorAll(".graphnode").forEach((g) =>
+          g.addEventListener("click", () => {
+            selectedId = g.dataset.id;
+            renderGraph();
+            renderGraphDetail();
+            renderResults();
+          }),
+        );
+        renderGraphDetail();
+      }
+      function renderGraphDetail() {
+        const p = properties.find((p) => p.id === selectedId) || properties[0];
+        const nbs = p.neighbors
+          .map((id) => properties.find((n) => n.id === id))
+          .filter(Boolean);
+        $("graphDetail").innerHTML =
+          `<div class="cardhead"><div><h2>${p.name}</h2><div class="muted tiny">${p.id} · ${p.district}</div></div><span class="tag">${nbs.length} edges</span></div><div class="cardbody"><div class="detail-price">${money(p.price)}</div><div class="muted tiny">${p.type} · ${p.size.toLocaleString()} sq ft · ${p.beds} bedrooms</div><hr class="divider"><div class="section-label">Retained neighbour list</div>${nbs.length ? nbs.map((n) => `<div class="neighbour"><div class="mini-house">🏠</div><div><strong>${n.name}</strong><small>${n.district} · ${money(n.price)}</small></div><span class="neighbor-score">${pct(n.direct)}</span></div>`).join("") : '<div class="notice warn">No qualified neighbours available in this demo graph.</div>'}<div class="evidence-box"><h4>Graph interpretation</h4><p>Nodes represent property listings. Edges represent retained comparable relationships. Similarity weights are simulated for interaction design and are not empirical findings.</p></div><button class="btn primary" style="width:100%;margin-top:14px" onclick="go('explanation')">View explanation evidence →</button></div>`;
+      }
+      $("searchBtn").click();
+    </script>
+  </body>
+</html>
