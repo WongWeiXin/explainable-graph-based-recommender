@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = ROOT.parent
 
 DATA_PATH = PROJECT_ROOT / "dataset" / "Malaysia_Property_Processed_Dataset.csv"
-OUTPUT_DIR = ROOT / "outputs"
+OUTPUT_DIR = PROJECT_ROOT / "outputs" / "comparable_property_graph"
 
 # Graph settings: tune these after checking the resulting graph.
 TOP_K_NEIGHBOURS = 8
