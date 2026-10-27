@@ -9,10 +9,24 @@ This baseline does not use graph support or market-context scores.
 from pathlib import Path
 import json, math, time
 import pandas as pd
+import argparse
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = PROJECT_ROOT / "dataset" / "Malaysia_Property_Cleaned_Raw.csv"
 OUTPUT_DIR = PROJECT_ROOT / "outputs" / "direct_preference_baseline"
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Run the direct-preference property baseline."
+    )
+    parser.add_argument("--input", type=Path, default=DATA_PATH)
+    parser.add_argument("--query-json", type=Path, default=None)
+    parser.add_argument(
+        "--skip-hard-constraints",
+        action="store_true",
+        help="Use only when input is already hard-filtered.",
+    )
+    return parser.parse_args()
 
 # Example profile only. Change values/category labels to match your cleaned CSV.
 QUERY = {
@@ -178,36 +192,58 @@ def score_row(row, cols, query):
 
 def main():
     start = time.perf_counter()
-    if not DATA_PATH.exists():
-        raise FileNotFoundError(f"Dataset not found: {DATA_PATH}. Update DATA_PATH to your actual cleaned CSV path/name.")
-    df = pd.read_csv(DATA_PATH)
+    args = parse_args()
+
+    query = QUERY
+    if args.query_json is not None:
+        if not args.query_json.exists():
+            raise FileNotFoundError(
+                f"Query JSON not found: {args.query_json}"
+            )
+        query = json.loads(
+            args.query_json.read_text(encoding="utf-8")
+        )
+
+    data_path = args.input
+    if not data_path.exists():
+        raise FileNotFoundError(
+            f"Dataset/input CSV not found: {data_path}"
+        )
+
+    df = pd.read_csv(data_path)
     cols = {k: col_for(df, k) for k in ALIASES if k != "id"}
     id_col = col_for(df, "id")
     if not cols["price"]: raise ValueError(f"Price column not found. Available columns: {list(df.columns)}")
     if not id_col:
         df["generated_property_id"] = [f"ROW_{i}" for i in range(len(df))]
         id_col = "generated_property_id"
-    eligible, constraint_audit = apply_hard_constraints(df, cols, QUERY["hard_constraints"])
+    if args.skip_hard_constraints:
+        eligible = df.copy()
+        constraint_audit = []
+    else:
+        eligible, constraint_audit = apply_hard_constraints(
+            df, cols, query["hard_constraints"]
+        )
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     if eligible.empty:
-        summary = {"query_id": QUERY["query_id"], "dataset_rows": len(df), "eligible_candidates": 0,
+        summary = {"query_id": query["query_id"], "dataset_rows": len(df), "eligible_candidates": 0,
                    "status": "empty_result_constraints_not_relaxed", "constraint_audit": constraint_audit,
                    "elapsed_seconds": round(time.perf_counter()-start, 4)}
         (OUTPUT_DIR / "run_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
         print("No properties satisfy all hard constraints. Constraints were not relaxed.")
         return
-    score_df = pd.DataFrame([score_row(row, cols, QUERY) for _, row in eligible.iterrows()], index=eligible.index)
+    score_df = pd.DataFrame([score_row(row, cols, query) for _, row in eligible.iterrows()], index=eligible.index)
     result = pd.concat([eligible, score_df], axis=1)
-    result["query_id"] = QUERY["query_id"]
+    result["query_id"] = query["query_id"]
     result = result.sort_values(["direct_preference_score", id_col], ascending=[False, True], na_position="last", kind="mergesort")
     result.insert(0, "rank", range(1, len(result)+1))
     result.to_csv(OUTPUT_DIR / "direct_preference_rankings.csv", index=False)
     result.head(10).to_csv(OUTPUT_DIR / "top10_direct_preference.csv", index=False)
-    summary = {"query_id": QUERY["query_id"], "dataset_path": str(DATA_PATH), "dataset_rows": len(df),
+    summary = {"query_id": query["query_id"], "dataset_path": str(data_path), "dataset_rows": len(df),
         "eligible_candidates": len(eligible), "scored_candidates": int(result["direct_preference_score"].notna().sum()),
-        "hard_constraint_violation_rate": 0.0, "columns_used": cols, "weights": QUERY["weights"],
+        "hard_constraint_violation_rate": 0.0, "columns_used": cols, "weights": query["weights"],
         "constraint_audit": constraint_audit, "elapsed_seconds": round(time.perf_counter()-start, 4),
-        "notes": ["Example QUERY must be replaced with validated benchmark profiles.",
+        "notes": ["Example query must be replaced with validated benchmark profiles.",
           "Verify numeric units and categorical labels in the cleaned CSV.",
           "Missing component evidence is excluded from the active-weight denominator.",
           "Location preference currently uses exact area/district/state matches, not geographic distance."]}

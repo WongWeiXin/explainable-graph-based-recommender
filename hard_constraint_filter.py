@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from html import parser
 import json
 import time
 from pathlib import Path
@@ -44,6 +45,10 @@ def parse_args():
     parser.add_argument("--property-type", type=str, default=None)
     parser.add_argument("--state", type=str, default=None)
     parser.add_argument("--tenure", type=str, default=None)
+    parser.add_argument("--max-built-up-area", type=float, default=None)
+    parser.add_argument("--max-land-area", type=float, default=None)
+    parser.add_argument("--area", type=str, default=None)
+    parser.add_argument("--district", type=str, default=None)
 
     return parser.parse_args()
 
@@ -68,6 +73,9 @@ def main():
         "min_built_up_area": (
             "built_up_area", args.min_built_up_area, "min"
         ),
+        "max_built_up_area": (
+            "built_up_area", args.max_built_up_area, "max"
+        ),
         "min_car_parks": ("car_parks", args.min_car_parks, "min"),
     }
 
@@ -82,6 +90,8 @@ def main():
         "property_type": args.property_type,
         "state": args.state,
         "tenure": args.tenure,
+        "area": args.area,
+        "district": args.district,
     }
     requested_categorical = {
         name: value
