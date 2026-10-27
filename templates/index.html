@@ -1529,87 +1529,54 @@
           recency: $("recency").value,
         };
       }
-      function runSearch() {
+      async function runSearch() {
         currentQuery = readQuery();
+
         if (currentQuery.budget <= 0) {
           toast("Please enter a valid budget.");
           $("budget").focus();
           return;
         }
-        eligible = properties.filter(
-          (p) =>
-            p.price <= currentQuery.budget &&
-            (currentQuery.location === "Any" ||
-              p.area === currentQuery.location) &&
-            (currentQuery.type === "Any" || p.type === currentQuery.type) &&
-            p.beds >= currentQuery.beds &&
-            (!currentQuery.parking || p.parking) &&
-            (!currentQuery.furnished || p.furnished),
-        );
-        eligible = eligible.map((p) => {
-          let d = p.direct;
-          const pref = currentQuery.priority;
-          if (pref === "location")
-            d = Math.min(1, d + (p.area === currentQuery.location ? 0.08 : 0));
-          if (pref === "price")
-            d = Math.min(1, d + (1 - p.price / currentQuery.budget) * 0.12);
-          if (pref === "facilities" && currentQuery.facilities !== "Any")
-            d = Math.min(
-              1,
-              d + (p.facilities.includes(currentQuery.facilities) ? 0.1 : 0),
-            );
-          if (pref === "size")
-            d = Math.min(1, d + (p.size >= currentQuery.minsize ? 0.1 : 0));
-          if (currentQuery.facilities !== "Any")
-            d = Math.max(
-              0,
-              Math.min(
-                1,
-                d +
-                  (p.facilities.includes(currentQuery.facilities)
-                    ? 0.04
-                    : -0.06),
-              ),
-            );
-          if (currentQuery.minsize > 0)
-            d = Math.max(
-              0,
-              Math.min(1, d + (p.size >= currentQuery.minsize ? 0.04 : -0.06)),
-            );
-          if (
-            currentQuery.recency === "recent" &&
-            new Date(p.recency) >= new Date("2026-09-01")
-          )
-            d = Math.min(1, d + 0.025);
-          const graph = p.neighbors.filter((id) =>
-            properties.some((n) => n.id === id),
-          ).length
-            ? p.graph
-            : null;
-          const score = graph === null ? d : 0.65 * d + 0.35 * graph;
-          return {
-            ...p,
-            displayDirect: d,
-            displayGraph: graph,
-            score,
-            trace: {
-              directWeight: graph === null ? 1 : 0.65,
-              graphWeight: graph === null ? 0 : 0.35,
-              contribD: graph === null ? d : 0.65 * d,
-              contribG: graph === null ? 0 : 0.35 * graph,
+
+        const searchBtn = $("searchBtn");
+        searchBtn.disabled = true;
+        searchBtn.textContent = "Searching...";
+
+        try {
+          const response = await fetch("/api/recommend", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
             },
-          };
-        });
-        ranked = [...eligible].sort(
-          (a, b) =>
-            b.score - a.score ||
-            b.displayDirect - a.displayDirect ||
-            a.id.localeCompare(b.id),
-        );
-        selectedId = ranked[0]?.id || null;
-        renderResults();
-        go("results");
-        toast(eligible.length + " eligible demo listing(s) found");
+            body: JSON.stringify(currentQuery),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw new Error(data.error || "Recommendation request failed.");
+          }
+
+          // These must come from the Python API, not the demo array.
+          eligible = data.properties || [];
+          ranked = [...eligible];
+          selectedId = ranked[0]?.id || null;
+
+          renderResults();
+          go("results");
+
+          toast(
+            data.status === "empty_result_constraints_not_relaxed"
+              ? "No properties meet all hard constraints."
+              : `${ranked.length} properties returned`,
+          );
+        } catch (error) {
+          console.error(error);
+          toast(error.message || "Unable to connect to the recommender.");
+        } finally {
+          searchBtn.disabled = false;
+          searchBtn.textContent = "Find comparable properties →";
+        }
       }
       $("searchBtn").addEventListener("click", runSearch);
       $("editSearch").addEventListener("click", () => go("search"));
