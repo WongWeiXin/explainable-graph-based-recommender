@@ -1,0 +1,50 @@
+{
+  "query_id": "Q001",
+  "dataset_path": "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+  "dataset_rows": 3361,
+  "eligible_candidates": 1913,
+  "scored_candidates": 1913,
+  "hard_constraint_violation_rate": 0.0,
+  "columns_used": {
+    "price": "price",
+    "property_type": "property_type",
+    "bedroom": "bedroom",
+    "bathroom": "bathroom",
+    "built_up_area": "built_up_area",
+    "tenure": "tenure",
+    "area": "area",
+    "district": "district",
+    "state": "state",
+    "furnishing": "furnishing"
+  },
+  "weights": {
+    "budget_fit": 0.25,
+    "property_type_fit": 0.1,
+    "bedroom_fit": 0.1,
+    "bathroom_fit": 0.05,
+    "size_fit": 0.2,
+    "location_fit": 0.15,
+    "tenure_fit": 0.05,
+    "furnishing_fit": 0.03,
+    "facility_fit": 0.07
+  },
+  "constraint_audit": [
+    {
+      "constraint": "max_price",
+      "passed_before_this_check": 3361,
+      "excluded_by_this_check": 1194
+    },
+    {
+      "constraint": "min_bedroom",
+      "passed_before_this_check": 2167,
+      "excluded_by_this_check": 254
+    }
+  ],
+  "elapsed_seconds": 0.4123,
+  "notes": [
+    "Example QUERY must be replaced with validated benchmark profiles.",
+    "Verify numeric units and categorical labels in the cleaned CSV.",
+    "Missing component evidence is excluded from the active-weight denominator.",
+    "Location preference currently uses exact area/district/state matches, not geographic distance."
+  ]
+}
