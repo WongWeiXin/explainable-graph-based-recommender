@@ -1,0 +1,32 @@
+{
+  "status": "success",
+  "input_file": "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+  "output_file": "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\outputs\\hard_constraint_filter\\eligible_properties.csv",
+  "candidate_count_before_filtering": 3361,
+  "eligible_candidates": 951,
+  "constraints_applied": {
+    "max_price": 500000.0,
+    "min_bedroom": 3.0
+  },
+  "constraint_audit": [
+    {
+      "constraint": "max_price",
+      "column": "price",
+      "operator": "<=",
+      "value": 500000.0,
+      "candidates_before": 3361,
+      "excluded_by_constraint": 2223,
+      "candidates_after": 1138
+    },
+    {
+      "constraint": "min_bedroom",
+      "column": "bedroom",
+      "operator": ">=",
+      "value": 3.0,
+      "candidates_before": 1138,
+      "excluded_by_constraint": 187,
+      "candidates_after": 951
+    }
+  ],
+  "elapsed_seconds": 0.1467
+}
