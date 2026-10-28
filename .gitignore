@@ -1,1 +1,6 @@
 .venv/
+graph/__pycache__/similarity_engine.cpython-310.pyc
+graph/__pycache__/similarity_engine.cpython-311.pyc
+graph/__pycache__/build_comparable_graph.cpython-310.pyc
+preprocessing/__pycache__/duplicate_handling.cpython-311.pyc
+preprocessing/__pycache__/duplicate_handling.cpython-310.pyc
