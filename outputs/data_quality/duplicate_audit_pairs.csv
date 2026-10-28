@@ -1,0 +1,904 @@
+Property_ID_a,Property_ID_b,match_block,signals,decision
+2674,2718,"Bungalow / Detached House|11900000|20000.0|6.0|11.0#xy:2.9366,101.6803",,flagged_unconfirmed
+1346,1347,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1346,1359,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1346,1360,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1347,1359,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1347,1360,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1359,1360,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1348,1349,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1348,1350,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1348,1355,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1349,1350,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1349,1355,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1350,1355,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1351,1352,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.266,102.3125",same_description|same_agent_phone,confirmed_duplicate
+1351,1356,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.266,102.3125",same_description|same_agent_phone,confirmed_duplicate
+1351,1357,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.266,102.3125",same_description|same_agent_phone,confirmed_duplicate
+1352,1356,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.266,102.3125",same_description|same_agent_phone,confirmed_duplicate
+1352,1357,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.266,102.3125",same_description|same_agent_phone,confirmed_duplicate
+1356,1357,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.266,102.3125",same_description|same_agent_phone,confirmed_duplicate
+1324,1325,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1324,1329,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1324,1354,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1325,1329,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1325,1354,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1329,1354,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1353,1358,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1353,1361,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1353,1362,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1358,1361,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1358,1362,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1361,1362,"Bungalow / Detached House|1588000|4786.0|6.0|8.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+941,953,"Bungalow / Detached House|1800000|3940.0|5.0|5.0#xy:3.0009,101.6339",same_agent_phone,confirmed_duplicate
+941,985,"Bungalow / Detached House|1800000|3940.0|5.0|5.0#xy:3.0009,101.6339",same_agent_phone,confirmed_duplicate
+953,985,"Bungalow / Detached House|1800000|3940.0|5.0|5.0#xy:3.0009,101.6339",same_description|same_agent_phone,confirmed_duplicate
+477,478,"Bungalow / Detached House|1900000|3720.0|6.0|7.0#xy:3.1165,101.4578",same_description|same_agent_phone,confirmed_duplicate
+477,655,"Bungalow / Detached House|1900000|3720.0|6.0|7.0#xy:3.1165,101.4578",same_description|same_agent_phone,confirmed_duplicate
+478,655,"Bungalow / Detached House|1900000|3720.0|6.0|7.0#xy:3.1165,101.4578",same_description|same_agent_phone,confirmed_duplicate
+2745,2762,"Bungalow / Detached House|2100000|4090.0|6.0|6.0#xy:2.9366,101.6803",same_agent_phone,confirmed_duplicate
+2252,2253,"Bungalow / Detached House|2200000|5508.0|6.0|5.0#xy:5.3484,100.4564",,flagged_unconfirmed
+2678,2735,"Bungalow / Detached House|2500000|4200.0|6.0|6.0#xy:2.9504,101.7205",,flagged_unconfirmed
+482,489,"Bungalow / Detached House|2698000|4942.0|6.0|7.0#xy:2.9924,101.5498",same_description|same_agent_phone,confirmed_duplicate
+482,498,"Bungalow / Detached House|2698000|4942.0|6.0|7.0#xy:2.9924,101.5498",same_description|same_agent_phone,confirmed_duplicate
+489,498,"Bungalow / Detached House|2698000|4942.0|6.0|7.0#xy:2.9924,101.5498",same_description|same_agent_phone,confirmed_duplicate
+627,631,"Bungalow / Detached House|3000000|3000.0|4.0|6.0#xy:3.1096,101.4784",same_description|same_agent_phone,confirmed_duplicate
+627,841,"Bungalow / Detached House|3000000|3000.0|4.0|6.0#xy:3.1096,101.4784",same_description|same_agent_phone,confirmed_duplicate
+631,841,"Bungalow / Detached House|3000000|3000.0|4.0|6.0#xy:3.1096,101.4784",same_description|same_agent_phone,confirmed_duplicate
+770,771,"Bungalow / Detached House|3500000|3101.0|6.0|6.0#xy:3.0937,101.4721",same_description|same_agent_phone,confirmed_duplicate
+770,772,"Bungalow / Detached House|3500000|3101.0|6.0|6.0#xy:3.0937,101.4721",same_description|same_agent_phone,confirmed_duplicate
+771,772,"Bungalow / Detached House|3500000|3101.0|6.0|6.0#xy:3.0937,101.4721",same_description|same_agent_phone,confirmed_duplicate
+1048,1158,"Bungalow / Detached House|3500000|4000.0|6.0|5.0#xy:3.0249,101.6161",same_agent_phone,confirmed_duplicate
+1311,1312,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3095,102.2785",same_description|same_agent_phone,confirmed_duplicate
+1299,1300,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1299,1301,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1300,1301,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1308,1309,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3186,102.2726",same_description|same_agent_phone,confirmed_duplicate
+1308,1310,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3186,102.2726",same_description|same_agent_phone,confirmed_duplicate
+1309,1310,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3186,102.2726",same_description|same_agent_phone,confirmed_duplicate
+1279,1280,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3212,102.2624",same_description|same_agent_phone,confirmed_duplicate
+1279,1281,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3212,102.2624",same_description|same_agent_phone,confirmed_duplicate
+1280,1281,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3212,102.2624",same_description|same_agent_phone,confirmed_duplicate
+1302,1303,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1302,1304,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1302,1305,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1302,1306,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1302,1307,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1303,1304,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1303,1305,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1303,1306,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1303,1307,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1304,1305,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1304,1306,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1304,1307,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1305,1306,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1305,1307,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+1306,1307,"Bungalow / Detached House|595000|2000.0|4.0|2.0#xy:2.3276,102.2494",same_description|same_agent_phone,confirmed_duplicate
+3346,3357,"Bungalow / Detached House|750000|2737.0|5.0|4.0#xy:4.2148,103.4363",same_agent_phone,confirmed_duplicate
+1326,1330,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1326,1331,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1326,1332,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1326,1333,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1326,1334,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1326,1335,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1326,1336,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1330,1331,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1330,1332,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1330,1333,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1330,1334,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1330,1335,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1330,1336,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1331,1332,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1331,1333,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1331,1334,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1331,1335,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1331,1336,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1332,1333,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1332,1334,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1332,1335,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1332,1336,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1333,1334,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1333,1335,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1333,1336,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1334,1335,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1334,1336,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1335,1336,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2887,102.184",same_description|same_agent_phone,confirmed_duplicate
+1321,1322,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1321,1323,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1321,1327,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1321,1328,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1322,1323,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1322,1327,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1322,1328,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1323,1327,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1323,1328,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1327,1328,"Bungalow / Detached House|802500|4500.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1443,1444,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1443,1445,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1443,1461,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1443,1462,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1444,1445,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1444,1461,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1444,1462,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1445,1461,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1445,1462,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1461,1462,"Cluster House|383800|3000.0|4.0|3.0#xy:2.215,102.3986",same_description|same_agent_phone,confirmed_duplicate
+1457,1458,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2732,102.3987",same_description|same_agent_phone,confirmed_duplicate
+1457,1459,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2732,102.3987",same_description|same_agent_phone,confirmed_duplicate
+1457,1460,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2732,102.3987",same_description|same_agent_phone,confirmed_duplicate
+1458,1459,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2732,102.3987",same_description|same_agent_phone,confirmed_duplicate
+1458,1460,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2732,102.3987",same_description|same_agent_phone,confirmed_duplicate
+1459,1460,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2732,102.3987",same_description|same_agent_phone,confirmed_duplicate
+1397,1425,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2752,102.3918",same_description|same_agent_phone,confirmed_duplicate
+1397,1426,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2752,102.3918",same_description|same_agent_phone,confirmed_duplicate
+1397,1427,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2752,102.3918",same_description|same_agent_phone,confirmed_duplicate
+1425,1426,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2752,102.3918",same_description|same_agent_phone,confirmed_duplicate
+1425,1427,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2752,102.3918",same_description|same_agent_phone,confirmed_duplicate
+1426,1427,"Cluster House|383800|3000.0|4.0|3.0#xy:2.2752,102.3918",same_description|same_agent_phone,confirmed_duplicate
+1398,1399,"Cluster House|383800|3000.0|4.0|3.0#xy:2.3172,102.4331",same_description|same_agent_phone,confirmed_duplicate
+1398,1428,"Cluster House|383800|3000.0|4.0|3.0#xy:2.3172,102.4331",same_description|same_agent_phone,confirmed_duplicate
+1398,1429,"Cluster House|383800|3000.0|4.0|3.0#xy:2.3172,102.4331",same_description|same_agent_phone,confirmed_duplicate
+1399,1428,"Cluster House|383800|3000.0|4.0|3.0#xy:2.3172,102.4331",same_description|same_agent_phone,confirmed_duplicate
+1399,1429,"Cluster House|383800|3000.0|4.0|3.0#xy:2.3172,102.4331",same_description|same_agent_phone,confirmed_duplicate
+1428,1429,"Cluster House|383800|3000.0|4.0|3.0#xy:2.3172,102.4331",same_description|same_agent_phone,confirmed_duplicate
+2286,2328,"Condominium|1000000|1033.0|2.0|3.0#xy:5.3676,100.3165",,flagged_unconfirmed
+2216,2217,"Condominium|1200000|2008.0|4.0|3.0#xy:5.3713,100.2738",,flagged_unconfirmed
+2216,2247,"Condominium|1200000|2008.0|4.0|3.0#xy:5.3713,100.2738",,flagged_unconfirmed
+2217,2247,"Condominium|1200000|2008.0|4.0|3.0#xy:5.3713,100.2738",,flagged_unconfirmed
+2888,2944,"Condominium|1250000|1438.0|3.0|2.0#xy:5.9943,116.0853",same_agent_phone,confirmed_duplicate
+2897,2902,"Condominium|1258000|1850.0|4.0|4.0#xy:5.9874,116.1069",same_agent_phone,confirmed_duplicate
+2261,2370,"Condominium|1300000|2670.0|4.0|4.0#xy:5.2883,100.246",,flagged_unconfirmed
+2381,2382,"Condominium|1500000|1185.0|3.0|2.0#xy:5.4459,100.3103",,flagged_unconfirmed
+2381,2383,"Condominium|1500000|1185.0|3.0|2.0#xy:5.4459,100.3103",,flagged_unconfirmed
+2382,2383,"Condominium|1500000|1185.0|3.0|2.0#xy:5.4459,100.3103",,flagged_unconfirmed
+2318,2351,"Condominium|1500000|1280.0|3.0|2.0#xy:5.3336,100.3098",,flagged_unconfirmed
+2258,2275,"Condominium|1720000|850.0|2.0|2.0#xy:5.4313,100.3174",same_description,confirmed_duplicate
+2258,2281,"Condominium|1720000|850.0|2.0|2.0#xy:5.4313,100.3174",,flagged_unconfirmed
+2275,2281,"Condominium|1720000|850.0|2.0|2.0#xy:5.4313,100.3174",,flagged_unconfirmed
+2257,2274,"Condominium|1720000|861.0|2.0|2.0#xy:5.4313,100.3174",same_description,confirmed_duplicate
+2793,2864,"Condominium|235000|700.0|3.0|2.0#xy:2.9619,101.6639",,flagged_unconfirmed
+2783,2829,"Condominium|250000|700.0|3.0|2.0#xy:2.9619,101.6639",,flagged_unconfirmed
+2783,2869,"Condominium|250000|700.0|3.0|2.0#xy:2.9619,101.6639",,flagged_unconfirmed
+2829,2869,"Condominium|250000|700.0|3.0|2.0#xy:2.9619,101.6639",,flagged_unconfirmed
+2817,2831,"Condominium|255000|700.0|3.0|2.0#xy:2.9619,101.6639",,flagged_unconfirmed
+518,539,"Condominium|300000|850.0|3.0|2.0#xy:3.1774,101.5507",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+518,540,"Condominium|300000|850.0|3.0|2.0#xy:3.1774,101.5507",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+539,540,"Condominium|300000|850.0|3.0|2.0#xy:3.1774,101.5507",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+2227,2301,"Condominium|305000|1100.0|4.0|2.0#xy:5.3715,100.4068",,flagged_unconfirmed
+37,81,"Condominium|318000|650.0|2.0|2.0#xy:1.5521,103.7631",same_agent_phone|same_agent_in_url,confirmed_duplicate
+1562,1591,"Condominium|320000|914.0|3.0|2.0#xy:2.6554,101.9241",,flagged_unconfirmed
+607,628,"Condominium|335000|980.0|3.0|2.0#xy:3.0788,101.5553",same_description|same_agent_phone,confirmed_duplicate
+607,629,"Condominium|335000|980.0|3.0|2.0#xy:3.0788,101.5553",same_description|same_agent_phone,confirmed_duplicate
+628,629,"Condominium|335000|980.0|3.0|2.0#xy:3.0788,101.5553",same_description|same_agent_phone,confirmed_duplicate
+2659,2813,"Condominium|340000|815.0|3.0|2.0#xy:2.9579,101.6762",,flagged_unconfirmed
+454,458,"Condominium|340000|912.0|3.0|2.0#xy:3.0685,101.5538",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+454,462,"Condominium|340000|912.0|3.0|2.0#xy:3.0685,101.5538",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+458,462,"Condominium|340000|912.0|3.0|2.0#xy:3.0685,101.5538",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+768,774,"Condominium|350000|850.0|3.0|2.0#xy:3.0685,101.5528",same_description|same_agent_phone,confirmed_duplicate
+618,626,"Condominium|360000|1167.0|3.0|2.0#xy:3.0506,101.4613",same_description,confirmed_duplicate
+779,781,"Condominium|360000|603.0|1.0|1.0#xy:3.0689,101.5645",same_description|same_agent_phone,confirmed_duplicate
+779,827,"Condominium|360000|603.0|1.0|1.0#xy:3.0689,101.5645",same_description|same_agent_phone,confirmed_duplicate
+781,827,"Condominium|360000|603.0|1.0|1.0#xy:3.0689,101.5645",same_description|same_agent_phone,confirmed_duplicate
+605,3183,"Condominium|360000|809.0|2.0|2.0#xy:3.0905,101.5479",,flagged_unconfirmed
+484,485,"Condominium|365000|903.0|3.0|2.0#xy:3.1106,101.5371",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+484,486,"Condominium|365000|903.0|3.0|2.0#xy:3.1106,101.5371",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+485,486,"Condominium|365000|903.0|3.0|2.0#xy:3.1106,101.5371",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+2326,2344,"Condominium|368000|703.0|2.0|2.0#xy:5.231,100.4344",,flagged_unconfirmed
+2326,2374,"Condominium|368000|703.0|2.0|2.0#xy:5.231,100.4344",,flagged_unconfirmed
+2344,2374,"Condominium|368000|703.0|2.0|2.0#xy:5.231,100.4344",,flagged_unconfirmed
+643,653,"Condominium|368000|816.0|2.0|2.0#xy:3.0702,101.5532",same_description|same_agent_phone,confirmed_duplicate
+643,676,"Condominium|368000|816.0|2.0|2.0#xy:3.0702,101.5532",same_description|same_agent_phone,confirmed_duplicate
+653,676,"Condominium|368000|816.0|2.0|2.0#xy:3.0702,101.5532",same_description|same_agent_phone,confirmed_duplicate
+844,866,"Condominium|380000|1009.0|3.0|2.0#xy:3.0717,101.5544",same_description|same_agent_phone,confirmed_duplicate
+646,664,"Condominium|385000|816.0|2.0|2.0#xy:3.0702,101.5527",same_description|same_agent_phone,confirmed_duplicate
+646,677,"Condominium|385000|816.0|2.0|2.0#xy:3.0702,101.5527",same_description|same_agent_phone,confirmed_duplicate
+664,677,"Condominium|385000|816.0|2.0|2.0#xy:3.0702,101.5527",same_description|same_agent_phone,confirmed_duplicate
+787,798,"Condominium|390000|466.0|1.0|1.0#xy:3.0636,101.4801",same_description|same_agent_phone,confirmed_duplicate
+787,807,"Condominium|390000|466.0|1.0|1.0#xy:3.0636,101.4801",same_description|same_agent_phone,confirmed_duplicate
+798,807,"Condominium|390000|466.0|1.0|1.0#xy:3.0636,101.4801",same_description|same_agent_phone,confirmed_duplicate
+790,800,"Condominium|390000|466.0|1.0|1.0#xy:3.0636,101.4808",same_description|same_agent_phone,confirmed_duplicate
+790,902,"Condominium|390000|466.0|1.0|1.0#xy:3.0636,101.4808",same_description|same_agent_phone,confirmed_duplicate
+800,902,"Condominium|390000|466.0|1.0|1.0#xy:3.0636,101.4808",same_description|same_agent_phone,confirmed_duplicate
+702,703,"Condominium|400000|614.0|1.0|1.0#xy:3.0781,101.5477",same_description|same_agent_phone,confirmed_duplicate
+702,704,"Condominium|400000|614.0|1.0|1.0#xy:3.0781,101.5477",same_description|same_agent_phone,confirmed_duplicate
+703,704,"Condominium|400000|614.0|1.0|1.0#xy:3.0781,101.5477",same_description|same_agent_phone,confirmed_duplicate
+3039,3125,"Condominium|401000|983.0|2.0|2.0#xy:1.4601,110.4279",,flagged_unconfirmed
+2197,2202,"Condominium|418000|982.0|3.0|2.0#xy:5.2873,100.2561",,flagged_unconfirmed
+2197,2220,"Condominium|418000|982.0|3.0|2.0#xy:5.2873,100.2561",,flagged_unconfirmed
+2202,2220,"Condominium|418000|982.0|3.0|2.0#xy:5.2873,100.2561",,flagged_unconfirmed
+2737,2740,"Condominium|420000|1836.0|4.0|3.0#xy:2.944,101.7205",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+845,863,"Condominium|420000|816.0|2.0|2.0#xy:3.0702,101.5532",same_description|same_agent_phone,confirmed_duplicate
+845,867,"Condominium|420000|816.0|2.0|2.0#xy:3.0702,101.5532",same_description|same_agent_phone,confirmed_duplicate
+863,867,"Condominium|420000|816.0|2.0|2.0#xy:3.0702,101.5532",same_description|same_agent_phone,confirmed_duplicate
+782,896,"Condominium|425000|938.0|3.0|2.0#xy:3.0969,101.5336",same_description|same_agent_phone,confirmed_duplicate
+782,907,"Condominium|425000|938.0|3.0|2.0#xy:3.0969,101.5336",same_agent_phone,confirmed_duplicate
+896,907,"Condominium|425000|938.0|3.0|2.0#xy:3.0969,101.5336",same_agent_phone,confirmed_duplicate
+795,899,"Condominium|430000|600.0|1.0|1.0#xy:3.0983,101.5373",same_description|same_agent_phone,confirmed_duplicate
+756,773,"Condominium|435000|1100.0|3.0|2.0#xy:3.032,101.5705",same_description|same_agent_phone,confirmed_duplicate
+756,875,"Condominium|435000|1100.0|3.0|2.0#xy:3.032,101.5705",same_description|same_agent_phone,confirmed_duplicate
+773,875,"Condominium|435000|1100.0|3.0|2.0#xy:3.032,101.5705",same_description|same_agent_phone,confirmed_duplicate
+562,576,"Condominium|440000|685.0|2.0|2.0#xy:3.0008,101.5265",same_description|same_agent_phone,confirmed_duplicate
+3121,3143,"Condominium|443865|699.0|2.0|1.0#xy:1.5097,110.3312",same_description,confirmed_duplicate
+2347,2348,"Condominium|448000|1183.0|4.0|2.0#xy:5.2871,100.2473",same_description|same_agent_phone,confirmed_duplicate
+764,769,"Condominium|450000|1114.0|3.0|2.0#xy:3.032,101.5705",same_description|same_agent_phone,confirmed_duplicate
+709,711,"Condominium|450000|1119.0|3.0|2.0#xy:3.0537,101.4855",same_description|same_agent_phone,confirmed_duplicate
+59,196,"Condominium|450000|1155.0|3.0|2.0#xy:1.5144,103.6292",same_agent_phone|same_agent_in_url,confirmed_duplicate
+743,762,"Condominium|450000|485.0|1.0|1.0#xy:3.0815,101.5626",same_description|same_agent_phone,confirmed_duplicate
+743,763,"Condominium|450000|485.0|1.0|1.0#xy:3.0815,101.5626",same_description|same_agent_phone,confirmed_duplicate
+762,763,"Condominium|450000|485.0|1.0|1.0#xy:3.0815,101.5626",same_description|same_agent_phone,confirmed_duplicate
+741,775,"Condominium|450000|690.0|1.0|1.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+741,776,"Condominium|450000|690.0|1.0|1.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+775,776,"Condominium|450000|690.0|1.0|1.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+822,823,"Condominium|460000|1096.0|2.0|2.0#xy:3.0748,101.5514",same_description|same_agent_phone,confirmed_duplicate
+601,620,"Condominium|460000|1124.0|3.0|3.0#xy:3.0702,101.5527",same_description|same_agent_phone,confirmed_duplicate
+601,621,"Condominium|460000|1124.0|3.0|3.0#xy:3.0702,101.5527",same_description|same_agent_phone,confirmed_duplicate
+620,621,"Condominium|460000|1124.0|3.0|3.0#xy:3.0702,101.5527",same_description|same_agent_phone,confirmed_duplicate
+789,793,"Condominium|460000|871.0|2.0|2.0#xy:3.0971,101.5392",same_description|same_agent_phone,confirmed_duplicate
+789,860,"Condominium|460000|871.0|2.0|2.0#xy:3.0971,101.5392",same_description|same_agent_phone,confirmed_duplicate
+793,860,"Condominium|460000|871.0|2.0|2.0#xy:3.0971,101.5392",same_description|same_agent_phone,confirmed_duplicate
+697,720,"Condominium|465000|1400.0|3.0|2.0#xy:3.0904,101.5344",same_description|same_agent_phone,confirmed_duplicate
+694,728,"Condominium|465000|696.0|1.0|1.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+707,708,"Condominium|475000|1149.0|4.0|2.0#xy:3.1358,101.5413",same_description|same_agent_phone,confirmed_duplicate
+707,713,"Condominium|475000|1149.0|4.0|2.0#xy:3.1358,101.5413",same_description|same_agent_phone,confirmed_duplicate
+708,713,"Condominium|475000|1149.0|4.0|2.0#xy:3.1358,101.5413",same_description|same_agent_phone,confirmed_duplicate
+705,714,"Condominium|480000|1914.0|4.0|4.0#xy:3.0872,101.5233",same_description|same_agent_phone,confirmed_duplicate
+705,732,"Condominium|480000|1914.0|4.0|4.0#xy:3.0872,101.5233",same_description|same_agent_phone,confirmed_duplicate
+714,732,"Condominium|480000|1914.0|4.0|4.0#xy:3.0872,101.5233",same_description|same_agent_phone,confirmed_duplicate
+809,817,"Condominium|480000|600.0|2.0|1.0#xy:3.0983,101.5373",same_description|same_agent_phone,confirmed_duplicate
+809,911,"Condominium|480000|600.0|2.0|1.0#xy:3.0983,101.5373",same_description|same_agent_phone,confirmed_duplicate
+817,911,"Condominium|480000|600.0|2.0|1.0#xy:3.0983,101.5373",same_description|same_agent_phone,confirmed_duplicate
+693,724,"Condominium|480000|695.0|1.0|1.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+693,725,"Condominium|480000|695.0|1.0|1.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+724,725,"Condominium|480000|695.0|1.0|1.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+523,548,"Condominium|480000|715.0|2.0|1.0#xy:3.1507,101.5823",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+523,908,"Condominium|480000|715.0|2.0|1.0#xy:3.1507,101.5823",same_description|same_agent_phone,confirmed_duplicate
+548,908,"Condominium|480000|715.0|2.0|1.0#xy:3.1507,101.5823",same_description|same_agent_phone,confirmed_duplicate
+2312,2319,"Condominium|480000|850.0|3.0|2.0#xy:5.395,100.3105",,flagged_unconfirmed
+716,717,"Condominium|485000|890.0|2.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+716,718,"Condominium|485000|890.0|2.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+717,718,"Condominium|485000|890.0|2.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+832,854,"Condominium|489000|1124.0|3.0|3.0#xy:3.0702,101.5532",same_description|same_agent_phone,confirmed_duplicate
+826,837,"Condominium|490000|890.0|2.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+826,901,"Condominium|490000|890.0|2.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+837,901,"Condominium|490000|890.0|2.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+735,892,"Condominium|495000|1025.0|2.0|2.0#xy:3.0748,101.5514",same_description|same_agent_phone,confirmed_duplicate
+2177,2185,"Condominium|498000|930.0|3.0|2.0#xy:5.3065,100.2721",same_description,confirmed_duplicate
+2177,2325,"Condominium|498000|930.0|3.0|2.0#xy:5.3065,100.2721",,flagged_unconfirmed
+2177,2340,"Condominium|498000|930.0|3.0|2.0#xy:5.3065,100.2721",,flagged_unconfirmed
+2185,2325,"Condominium|498000|930.0|3.0|2.0#xy:5.3065,100.2721",,flagged_unconfirmed
+2185,2340,"Condominium|498000|930.0|3.0|2.0#xy:5.3065,100.2721",,flagged_unconfirmed
+2325,2340,"Condominium|498000|930.0|3.0|2.0#xy:5.3065,100.2721",,flagged_unconfirmed
+749,751,"Condominium|540000|1365.0|3.0|2.0#xy:3.0905,101.5479",same_description|same_agent_phone,confirmed_duplicate
+749,778,"Condominium|540000|1365.0|3.0|2.0#xy:3.0905,101.5479",same_description|same_agent_phone,confirmed_duplicate
+751,778,"Condominium|540000|1365.0|3.0|2.0#xy:3.0905,101.5479",same_description|same_agent_phone,confirmed_duplicate
+2931,2978,"Condominium|558000|1428.0|3.0|2.0#xy:5.9798,116.1233",,flagged_unconfirmed
+2223,2299,"Condominium|560000|1162.0|3.0|2.0#xy:5.3722,100.4108",,flagged_unconfirmed
+606,622,"Condominium|560000|1385.0|3.0|2.0#xy:3.0904,101.5344",same_description|same_agent_phone,confirmed_duplicate
+606,839,"Condominium|560000|1385.0|3.0|2.0#xy:3.0904,101.5344",same_description|same_agent_phone,confirmed_duplicate
+622,839,"Condominium|560000|1385.0|3.0|2.0#xy:3.0904,101.5344",same_description|same_agent_phone,confirmed_duplicate
+700,701,"Condominium|565000|1066.0|3.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+700,722,"Condominium|565000|1066.0|3.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+701,722,"Condominium|565000|1066.0|3.0|2.0#xy:3.0901,101.5599",same_description|same_agent_phone,confirmed_duplicate
+733,753,"Condominium|570000|813.0|2.0|2.0#xy:3.0971,101.537",same_description|same_agent_phone,confirmed_duplicate
+733,761,"Condominium|570000|813.0|2.0|2.0#xy:3.0971,101.537",same_description|same_agent_phone,confirmed_duplicate
+753,761,"Condominium|570000|813.0|2.0|2.0#xy:3.0971,101.537",same_description|same_agent_phone,confirmed_duplicate
+856,857,"Condominium|570000|936.0|3.0|2.0#xy:3.0874,101.5712",same_description|same_agent_phone,confirmed_duplicate
+691,723,"Condominium|575000|936.0|3.0|2.0#xy:3.0874,101.5712",same_description|same_agent_phone,confirmed_duplicate
+691,794,"Condominium|575000|936.0|3.0|2.0#xy:3.0874,101.5712",same_description|same_agent_phone,confirmed_duplicate
+723,794,"Condominium|575000|936.0|3.0|2.0#xy:3.0874,101.5712",same_description|same_agent_phone,confirmed_duplicate
+619,840,"Condominium|580000|1300.0|3.0|2.0#xy:3.032,101.5705",same_description|same_agent_phone,confirmed_duplicate
+632,636,"Condominium|598000|645.0|1.0|1.0#xy:3.0724,101.5669",same_description|same_agent_phone,confirmed_duplicate
+632,639,"Condominium|598000|645.0|1.0|1.0#xy:3.0724,101.5669",same_description|same_agent_phone,confirmed_duplicate
+636,639,"Condominium|598000|645.0|1.0|1.0#xy:3.0724,101.5669",same_description|same_agent_phone,confirmed_duplicate
+846,848,"Condominium|600000|985.0|3.0|2.0#xy:3.0874,101.5712",same_description|same_agent_phone,confirmed_duplicate
+2884,2940,"Condominium|628000|1194.0|3.0|2.0#xy:5.9764,116.0694",,flagged_unconfirmed
+2248,2250,"Condominium|643000|1494.0|3.0|3.0#xy:5.4695,100.2551",same_description,confirmed_duplicate
+2248,2276,"Condominium|643000|1494.0|3.0|3.0#xy:5.4695,100.2551",same_description,confirmed_duplicate
+2250,2276,"Condominium|643000|1494.0|3.0|3.0#xy:5.4695,100.2551",same_description,confirmed_duplicate
+2267,2358,"Condominium|646000|1494.0|3.0|3.0#xy:5.4688,100.2536",,flagged_unconfirmed
+614,634,"Condominium|650000|916.0|2.0|2.0#xy:3.0716,101.5665",same_description|same_agent_phone,confirmed_duplicate
+614,668,"Condominium|650000|916.0|2.0|2.0#xy:3.0716,101.5665",same_description|same_agent_phone,confirmed_duplicate
+634,668,"Condominium|650000|916.0|2.0|2.0#xy:3.0716,101.5665",same_description|same_agent_phone,confirmed_duplicate
+710,726,"Condominium|685000|1033.0|3.0|2.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+710,729,"Condominium|685000|1033.0|3.0|2.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+726,729,"Condominium|685000|1033.0|3.0|2.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+783,802,"Condominium|688000|916.0|2.0|2.0#xy:3.0716,101.5665",same_description|same_agent_phone,confirmed_duplicate
+783,819,"Condominium|688000|916.0|2.0|2.0#xy:3.0716,101.5665",same_description|same_agent_phone,confirmed_duplicate
+802,819,"Condominium|688000|916.0|2.0|2.0#xy:3.0716,101.5665",same_description|same_agent_phone,confirmed_duplicate
+2129,2154,"Condominium|700000|1307.0|3.0|2.0#xy:5.468,100.2756",,flagged_unconfirmed
+493,547,"Condominium|700000|936.0|2.0|2.0#xy:3.093,101.587",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+493,719,"Condominium|700000|936.0|2.0|2.0#xy:3.093,101.587",same_description|same_agent_phone,confirmed_duplicate
+547,719,"Condominium|700000|936.0|2.0|2.0#xy:3.093,101.587",same_description|same_agent_phone,confirmed_duplicate
+2366,2368,"Condominium|730000|1050.0|3.0|2.0#xy:5.3535,100.3118",same_agent_in_url,confirmed_duplicate
+695,696,"Condominium|775000|1033.0|3.0|2.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+695,727,"Condominium|775000|1033.0|3.0|2.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+696,727,"Condominium|775000|1033.0|3.0|2.0#xy:3.1008,101.5344",same_description|same_agent_phone,confirmed_duplicate
+202,229,"Condominium|800000|1001.0|2.0|2.0#xy:1.4787,103.7605",,flagged_unconfirmed
+742,747,"Condominium|800000|1996.0|5.0|4.0#xy:3.0727,101.5428",same_description|same_agent_phone,confirmed_duplicate
+742,748,"Condominium|800000|1996.0|5.0|4.0#xy:3.0727,101.5428",same_description|same_agent_phone,confirmed_duplicate
+747,748,"Condominium|800000|1996.0|5.0|4.0#xy:3.0727,101.5428",same_description|same_agent_phone,confirmed_duplicate
+816,852,"Condominium|868000|1302.0|3.0|2.0#xy:3.0601,101.6045",same_description|same_agent_phone,confirmed_duplicate
+799,815,"Condominium|870000|1600.0|4.0|3.0#xy:3.0874,101.5712",same_description|same_agent_phone,confirmed_duplicate
+799,865,"Condominium|870000|1600.0|4.0|3.0#xy:3.0874,101.5712",,flagged_unconfirmed
+815,865,"Condominium|870000|1600.0|4.0|3.0#xy:3.0874,101.5712",,flagged_unconfirmed
+2892,2958,"Condominium|888000|1628.0|3.0|3.0#xy:5.9398,116.0801",same_agent_phone,confirmed_duplicate
+2268,2352,"Condominium|890000|950.0|3.0|2.0#xy:5.3338,100.3107",,flagged_unconfirmed
+2182,2183,"Condominium|950000|950.0|3.0|2.0#xy:5.3338,100.3107",same_description,confirmed_duplicate
+813,858,"Condominium|979000|1504.0|3.0|2.0#xy:3.0601,101.6045",same_description|same_agent_phone,confirmed_duplicate
+516,537,"Flat|350000|904.0|3.0|2.0#xy:2.9849,101.4268",same_description|same_agent_phone|same_agent_in_url,confirmed_duplicate
+516,555,"Flat|350000|904.0|3.0|2.0#xy:2.9849,101.4268",same_description|same_agent_phone,confirmed_duplicate
+537,555,"Flat|350000|904.0|3.0|2.0#xy:2.9849,101.4268",same_description|same_agent_phone,confirmed_duplicate
+803,808,"Flat|380000|1009.0|3.0|2.0#xy:3.0717,101.5544",same_description|same_agent_phone,confirmed_duplicate
+803,833,"Flat|380000|1009.0|3.0|2.0#xy:3.0717,101.5544",same_description|same_agent_phone,confirmed_duplicate
+808,833,"Flat|380000|1009.0|3.0|2.0#xy:3.0717,101.5544",same_description|same_agent_phone,confirmed_duplicate
+1363,1373,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1363,1374,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1373,1374,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2658,102.3231",same_description|same_agent_phone,confirmed_duplicate
+1368,1369,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1368,1370,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1368,1371,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1368,1372,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1369,1370,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1369,1371,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1369,1372,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1370,1371,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1370,1372,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1371,1372,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2717,102.3375",same_description|same_agent_phone,confirmed_duplicate
+1364,1365,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1364,1366,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1364,1367,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1365,1366,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1365,1367,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+1366,1367,"Link Bungalow / Semi-Detached|1108000|3595.0|5.0|6.0#xy:2.2746,102.3609",same_description|same_agent_phone,confirmed_duplicate
+2612,2646,"Link Bungalow / Semi-Detached|1200000|2900.0|5.0|5.0#xy:2.9504,101.7205",,flagged_unconfirmed
+2612,2686,"Link Bungalow / Semi-Detached|1200000|2900.0|5.0|5.0#xy:2.9504,101.7205",,flagged_unconfirmed
+2646,2686,"Link Bungalow / Semi-Detached|1200000|2900.0|5.0|5.0#xy:2.9504,101.7205",,flagged_unconfirmed
+2623,2734,"Link Bungalow / Semi-Detached|1240000|2559.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+784,796,"Link Bungalow / Semi-Detached|1280000|2300.0|4.0|4.0#xy:2.9878,101.5206",same_description|same_agent_phone,confirmed_duplicate
+784,804,"Link Bungalow / Semi-Detached|1280000|2300.0|4.0|4.0#xy:2.9878,101.5206",same_description|same_agent_phone,confirmed_duplicate
+796,804,"Link Bungalow / Semi-Detached|1280000|2300.0|4.0|4.0#xy:2.9878,101.5206",same_description|same_agent_phone,confirmed_duplicate
+2621,2691,"Link Bungalow / Semi-Detached|1300000|3500.0|6.0|6.0#xy:2.9366,101.6803",,flagged_unconfirmed
+2676,2860,"Link Bungalow / Semi-Detached|1350000|2800.0|5.0|5.0#xy:2.9379,101.7156",,flagged_unconfirmed
+2667,2669,"Link Bungalow / Semi-Detached|1350000|2800.0|6.0|5.0#xy:2.9379,101.7156",same_agent_phone,confirmed_duplicate
+2630,2744,"Link Bungalow / Semi-Detached|1350000|2800.0|8.0|5.0#xy:2.9379,101.7156",same_agent_phone,confirmed_duplicate
+2629,2631,"Link Bungalow / Semi-Detached|1380000|2800.0|7.0|5.0#xy:2.9379,101.7156",same_agent_phone,confirmed_duplicate
+2629,2741,"Link Bungalow / Semi-Detached|1380000|2800.0|7.0|5.0#xy:2.9379,101.7156",same_agent_phone,confirmed_duplicate
+2631,2741,"Link Bungalow / Semi-Detached|1380000|2800.0|7.0|5.0#xy:2.9379,101.7156",same_agent_phone,confirmed_duplicate
+2682,2776,"Link Bungalow / Semi-Detached|1400000|2700.0|5.0|5.0#xy:2.9366,101.6803",,flagged_unconfirmed
+2604,2858,"Link Bungalow / Semi-Detached|1400000|2800.0|6.0|5.0#xy:2.9379,101.7156",,flagged_unconfirmed
+2610,2742,"Link Bungalow / Semi-Detached|1400000|2800.0|7.0|5.0#xy:2.9379,101.7156",same_agent_phone,confirmed_duplicate
+541,542,"Link Bungalow / Semi-Detached|1400000|3200.0|6.0|5.0#xy:3.079,101.495",same_description|same_agent_phone,confirmed_duplicate
+541,544,"Link Bungalow / Semi-Detached|1400000|3200.0|6.0|5.0#xy:3.079,101.495",same_description|same_agent_phone,confirmed_duplicate
+542,544,"Link Bungalow / Semi-Detached|1400000|3200.0|6.0|5.0#xy:3.079,101.495",same_description|same_agent_phone,confirmed_duplicate
+650,652,"Link Bungalow / Semi-Detached|1450000|2700.0|4.0|3.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+508,530,"Link Bungalow / Semi-Detached|1450000|2700.0|5.0|4.0#xy:3.0946,101.4455",same_description|same_agent_phone,confirmed_duplicate
+2660,2825,"Link Bungalow / Semi-Detached|1480000|3000.0|4.0|3.0#xy:2.9324,101.7049",,flagged_unconfirmed
+2660,2855,"Link Bungalow / Semi-Detached|1480000|3000.0|4.0|3.0#xy:2.9324,101.7049",,flagged_unconfirmed
+2825,2855,"Link Bungalow / Semi-Detached|1480000|3000.0|4.0|3.0#xy:2.9324,101.7049",,flagged_unconfirmed
+511,529,"Link Bungalow / Semi-Detached|1500000|1957.0|4.0|3.0#xy:3.0882,101.4774",same_description|same_agent_phone,confirmed_duplicate
+511,575,"Link Bungalow / Semi-Detached|1500000|1957.0|4.0|3.0#xy:3.0882,101.4774",same_description|same_agent_phone,confirmed_duplicate
+529,575,"Link Bungalow / Semi-Detached|1500000|1957.0|4.0|3.0#xy:3.0882,101.4774",same_description|same_agent_phone,confirmed_duplicate
+2666,2725,"Link Bungalow / Semi-Detached|1500000|3300.0|5.0|5.0#xy:2.9504,101.7205",,flagged_unconfirmed
+522,545,"Link Bungalow / Semi-Detached|1600000|2500.0|5.0|4.0#xy:3.1253,101.459",same_description|same_agent_phone,confirmed_duplicate
+522,546,"Link Bungalow / Semi-Detached|1600000|2500.0|5.0|4.0#xy:3.1253,101.459",same_description|same_agent_phone,confirmed_duplicate
+545,546,"Link Bungalow / Semi-Detached|1600000|2500.0|5.0|4.0#xy:3.1253,101.459",same_description|same_agent_phone,confirmed_duplicate
+780,786,"Link Bungalow / Semi-Detached|1630000|3670.0|5.0|5.0#xy:2.9409,101.5262",same_description|same_agent_phone,confirmed_duplicate
+780,806,"Link Bungalow / Semi-Detached|1630000|3670.0|5.0|5.0#xy:2.9409,101.5262",same_description|same_agent_phone,confirmed_duplicate
+786,806,"Link Bungalow / Semi-Detached|1630000|3670.0|5.0|5.0#xy:2.9409,101.5262",same_description|same_agent_phone,confirmed_duplicate
+2733,2862,"Link Bungalow / Semi-Detached|1690000|3000.0|4.0|5.0#xy:2.9379,101.7156",,flagged_unconfirmed
+3078,3137,"Link Bungalow / Semi-Detached|1888000|3389.0|5.0|5.0#xy:1.5384,110.3132",same_description,confirmed_duplicate
+2878,2957,"Link Bungalow / Semi-Detached|1900000|2500.0|5.0|4.0#xy:5.9468,116.095",same_agent_phone,confirmed_duplicate
+2658,2679,"Link Bungalow / Semi-Detached|1900000|3200.0|6.0|4.0#xy:2.9483,101.6879",,flagged_unconfirmed
+830,861,"Link Bungalow / Semi-Detached|1970000|4663.0|6.0|6.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+2645,2790,"Link Bungalow / Semi-Detached|2100000|5347.0|6.0|6.0#xy:2.9349,101.6849",,flagged_unconfirmed
+3077,3136,"Link Bungalow / Semi-Detached|2138000|3500.0|5.0|5.0#xy:1.5384,110.3132",same_description,confirmed_duplicate
+2668,2809,"Link Bungalow / Semi-Detached|2150000|5348.0|6.0|6.0#xy:2.9349,101.6849",,flagged_unconfirmed
+1084,1089,"Link Bungalow / Semi-Detached|2380000|4111.0|6.0|6.0#xy:3.0351,101.6552",same_agent_phone,confirmed_duplicate
+286,287,"Link Bungalow / Semi-Detached|3100000|5300.0|6.0|6.0#xy:2.93,101.6804",same_agent_phone,confirmed_duplicate
+2723,2800,"Link Bungalow / Semi-Detached|3200000|4521.0|5.0|5.0#xy:2.93,101.6804",,flagged_unconfirmed
+736,740,"Link Bungalow / Semi-Detached|3250000|5000.0|6.0|7.0#xy:3.1096,101.4784",same_description|same_agent_phone,confirmed_duplicate
+736,759,"Link Bungalow / Semi-Detached|3250000|5000.0|6.0|7.0#xy:3.1096,101.4784",same_description|same_agent_phone,confirmed_duplicate
+740,759,"Link Bungalow / Semi-Detached|3250000|5000.0|6.0|7.0#xy:3.1096,101.4784",same_description|same_agent_phone,confirmed_duplicate
+1748,1780,"Link Bungalow / Semi-Detached|470008|3200.0|4.0|2.0#xy:2.6757,101.9314",same_description|same_agent_phone,confirmed_duplicate
+1532,1533,"Link Bungalow / Semi-Detached|798000|3500.0|4.0|3.0#xy:2.2395,102.2546",same_description|same_agent_phone,confirmed_duplicate
+1532,1534,"Link Bungalow / Semi-Detached|798000|3500.0|4.0|3.0#xy:2.2395,102.2546",same_description|same_agent_phone,confirmed_duplicate
+1533,1534,"Link Bungalow / Semi-Detached|798000|3500.0|4.0|3.0#xy:2.2395,102.2546",same_description|same_agent_phone,confirmed_duplicate
+1518,1519,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2148,102.277",same_description|same_agent_phone,confirmed_duplicate
+1518,1520,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2148,102.277",same_description|same_agent_phone,confirmed_duplicate
+1518,1521,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2148,102.277",same_description|same_agent_phone,confirmed_duplicate
+1519,1520,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2148,102.277",same_description|same_agent_phone,confirmed_duplicate
+1519,1521,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2148,102.277",same_description|same_agent_phone,confirmed_duplicate
+1520,1521,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2148,102.277",same_description|same_agent_phone,confirmed_duplicate
+1515,1516,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2249,102.2673",same_description|same_agent_phone,confirmed_duplicate
+1515,1517,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2249,102.2673",same_description|same_agent_phone,confirmed_duplicate
+1516,1517,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2249,102.2673",same_description|same_agent_phone,confirmed_duplicate
+1522,1523,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2333,102.2748",same_description|same_agent_phone,confirmed_duplicate
+1522,1524,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2333,102.2748",same_description|same_agent_phone,confirmed_duplicate
+1522,1525,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2333,102.2748",same_description|same_agent_phone,confirmed_duplicate
+1523,1524,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2333,102.2748",same_description|same_agent_phone,confirmed_duplicate
+1523,1525,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2333,102.2748",same_description|same_agent_phone,confirmed_duplicate
+1524,1525,"Link Bungalow / Semi-Detached|828000|2800.0|5.0|3.0#xy:2.2333,102.2748",same_description|same_agent_phone,confirmed_duplicate
+565,818,"Terrace House|1088000|2603.0|5.0|5.0#xy:2.9418,101.5458",same_description|same_agent_phone,confirmed_duplicate
+1037,1101,"Terrace House|1100000|2100.0|4.0|3.0#xy:3.0506,101.649",same_agent_phone,confirmed_duplicate
+1031,1102,"Terrace House|1150000|2100.0|4.0|3.0#xy:3.0506,101.649",same_agent_phone,confirmed_duplicate
+1165,1225,"Terrace House|1150000|2400.0|4.0|3.0#xy:2.9917,101.6156",same_agent_phone,confirmed_duplicate
+2620,2696,"Terrace House|1200000|2144.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+2620,2760,"Terrace House|1200000|2144.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+2696,2760,"Terrace House|1200000|2144.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+788,834,"Terrace House|1200000|2700.0|5.0|3.0#xy:3.0545,101.4867",same_description|same_agent_phone,confirmed_duplicate
+1138,1212,"Terrace House|1200000|3300.0|5.0|5.0#xy:3.0276,101.6688",same_agent_phone,confirmed_duplicate
+1090,1179,"Terrace House|1250000|2100.0|4.0|3.0#xy:3.0506,101.649",same_agent_phone,confirmed_duplicate
+2581,2804,"Terrace House|1250000|3000.0|6.0|4.0#xy:2.9324,101.7049",,flagged_unconfirmed
+1181,1217,"Terrace House|1350000|2300.0|4.0|4.0#xy:3.0147,101.6226",same_agent_phone,confirmed_duplicate
+2692,2731,"Terrace House|1400000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2642,2661,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2642,2719,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2642,2730,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2642,2781,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2661,2719,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2661,2730,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2661,2781,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2719,2730,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",same_agent_phone,confirmed_duplicate
+2719,2781,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2730,2781,"Terrace House|1500000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2722,2850,"Terrace House|1560000|3660.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+2616,2772,"Terrace House|1660000|3701.0|6.0|6.0#xy:2.9456,101.7142",,flagged_unconfirmed
+662,681,"Terrace House|1850000|3200.0|5.0|5.0#xy:3.1114,101.4615",same_description,confirmed_duplicate
+662,687,"Terrace House|1850000|3200.0|5.0|5.0#xy:3.1114,101.4615",same_description,confirmed_duplicate
+681,687,"Terrace House|1850000|3200.0|5.0|5.0#xy:3.1114,101.4615",same_description,confirmed_duplicate
+558,581,"Terrace House|1950000|3539.0|5.0|4.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+558,587,"Terrace House|1950000|3539.0|5.0|4.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+581,587,"Terrace House|1950000|3539.0|5.0|4.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+745,754,"Terrace House|2150000|2746.0|4.0|4.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+745,760,"Terrace House|2150000|2746.0|4.0|4.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+754,760,"Terrace House|2150000|2746.0|4.0|4.0#xy:3.0932,101.4653",same_description|same_agent_phone,confirmed_duplicate
+2342,2343,"Terrace House|326000|1004.0|4.0|2.0#xy:5.4985,100.5003",,flagged_unconfirmed
+2234,2260,"Terrace House|342000|1002.0|4.0|2.0#xy:5.4985,100.5003",,flagged_unconfirmed
+2234,2290,"Terrace House|342000|1002.0|4.0|2.0#xy:5.4985,100.5003",,flagged_unconfirmed
+2260,2290,"Terrace House|342000|1002.0|4.0|2.0#xy:5.4985,100.5003",same_description|same_agent_phone,confirmed_duplicate
+1476,1481,"Terrace House|346888|2212.0|5.0|3.0#xy:2.323,102.2117",same_description|same_agent_phone,confirmed_duplicate
+1477,1482,"Terrace House|346888|2212.0|5.0|3.0#xy:2.3324,102.2085",same_description|same_agent_phone,confirmed_duplicate
+1477,1483,"Terrace House|346888|2212.0|5.0|3.0#xy:2.3324,102.2085",same_description|same_agent_phone,confirmed_duplicate
+1482,1483,"Terrace House|346888|2212.0|5.0|3.0#xy:2.3324,102.2085",same_description|same_agent_phone,confirmed_duplicate
+3073,3127,"Terrace House|368000|1067.0|3.0|2.0#xy:1.5734,110.3361",same_description|same_agent_phone,confirmed_duplicate
+146,178,"Terrace House|415000|1170.0|3.0|2.0#xy:1.5743,103.5968",,flagged_unconfirmed
+1732,1779,"Terrace House|435008|2344.0|5.0|4.0#xy:2.741,101.8978",same_agent_phone,confirmed_duplicate
+244,341,"Terrace House|450000|809.0|3.0|2.0#xy:1.5341,103.6217",,flagged_unconfirmed
+1449,1450,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1449,1451,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1449,1452,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1449,1453,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1449,1454,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1449,1455,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1449,1456,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1450,1451,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1450,1452,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1450,1453,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1450,1454,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1450,1455,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1450,1456,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1451,1452,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1451,1453,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1451,1454,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1451,1455,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1451,1456,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1452,1453,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1452,1454,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1452,1455,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1452,1456,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1453,1454,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1453,1455,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1453,1456,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1454,1455,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1454,1456,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1455,1456,"Terrace House|458000|2800.0|4.0|3.0#xy:2.2567,102.402",same_description|same_agent_phone,confirmed_duplicate
+1283,1284,"Terrace House|468000|2700.0|4.0|3.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1283,1285,"Terrace House|468000|2700.0|4.0|3.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1283,1286,"Terrace House|468000|2700.0|4.0|3.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1284,1285,"Terrace House|468000|2700.0|4.0|3.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1284,1286,"Terrace House|468000|2700.0|4.0|3.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1285,1286,"Terrace House|468000|2700.0|4.0|3.0#xy:2.2581,102.2828",same_description|same_agent_phone,confirmed_duplicate
+1265,1267,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1265,1287,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1265,1289,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1265,1290,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1267,1287,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1267,1289,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1267,1290,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1287,1289,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1287,1290,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1289,1290,"Terrace House|468000|2700.0|4.0|3.0#xy:2.272,102.2807",same_description|same_agent_phone,confirmed_duplicate
+1266,1288,"Terrace House|468000|2700.0|4.0|3.0#xy:2.2757,102.2857",same_description|same_agent_phone,confirmed_duplicate
+1467,1468,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1467,1469,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1467,1470,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1468,1469,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1468,1470,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1469,1470,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1466,1471,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1466,1472,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1466,1473,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1471,1472,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1471,1473,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1472,1473,"Terrace House|475000|2800.0|4.0|3.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+234,349,"Terrace House|480000|1400.0|3.0|2.0#xy:1.5658,103.8083",,flagged_unconfirmed
+234,379,"Terrace House|480000|1400.0|3.0|2.0#xy:1.5658,103.8083",,flagged_unconfirmed
+349,379,"Terrace House|480000|1400.0|3.0|2.0#xy:1.5658,103.8083",,flagged_unconfirmed
+1434,1439,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2139,102.2999",same_description|same_agent_phone,confirmed_duplicate
+1431,1432,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2403,102.304",same_description|same_agent_phone,confirmed_duplicate
+1431,1433,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2403,102.304",same_description|same_agent_phone,confirmed_duplicate
+1431,1438,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2403,102.304",same_description|same_agent_phone,confirmed_duplicate
+1432,1433,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2403,102.304",same_description|same_agent_phone,confirmed_duplicate
+1432,1438,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2403,102.304",same_description|same_agent_phone,confirmed_duplicate
+1433,1438,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2403,102.304",same_description|same_agent_phone,confirmed_duplicate
+1396,1422,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1396,1435,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1396,1436,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1396,1440,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1422,1435,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1422,1436,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1422,1440,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1435,1436,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1435,1440,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1436,1440,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2432,102.3141",same_description|same_agent_phone,confirmed_duplicate
+1423,1424,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1423,1430,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1423,1437,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1423,1441,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1423,1442,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1424,1430,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1424,1437,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1424,1441,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1424,1442,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1430,1437,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1430,1441,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1430,1442,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1437,1441,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1437,1442,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+1441,1442,"Terrace House|482000|2800.0|6.0|3.0#xy:2.2455,102.321",same_description|same_agent_phone,confirmed_duplicate
+3072,3126,"Terrace House|488000|1982.0|3.0|2.0#xy:1.5734,110.3361",same_description|same_agent_phone,confirmed_duplicate
+3129,3142,"Terrace House|489000|1010.0|3.0|2.0#xy:1.5808,110.3245",same_description,confirmed_duplicate
+500,501,"Terrace House|499000|1800.0|4.0|3.0#xy:2.9825,101.5167",same_description|same_agent_phone,confirmed_duplicate
+500,573,"Terrace House|499000|1800.0|4.0|3.0#xy:2.9825,101.5167",same_description|same_agent_phone,confirmed_duplicate
+501,573,"Terrace House|499000|1800.0|4.0|3.0#xy:2.9825,101.5167",same_description|same_agent_phone,confirmed_duplicate
+1679,1681,"Terrace House|500000|1844.0|4.0|4.0#xy:2.8032,101.799",same_agent_phone,confirmed_duplicate
+1474,1478,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2802,102.2385",same_description|same_agent_phone,confirmed_duplicate
+1474,1479,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2802,102.2385",same_description|same_agent_phone,confirmed_duplicate
+1474,1480,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2802,102.2385",same_description|same_agent_phone,confirmed_duplicate
+1478,1479,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2802,102.2385",same_description|same_agent_phone,confirmed_duplicate
+1478,1480,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2802,102.2385",same_description|same_agent_phone,confirmed_duplicate
+1479,1480,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2802,102.2385",same_description|same_agent_phone,confirmed_duplicate
+1488,1489,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1488,1491,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1488,1493,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1488,1498,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1489,1491,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1489,1493,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1489,1498,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1491,1493,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1491,1498,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1493,1498,"Terrace House|520800|2800.0|4.0|3.0#xy:2.2965,102.238",same_description|same_agent_phone,confirmed_duplicate
+1492,1494,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1492,1495,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1492,1499,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1494,1495,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1494,1499,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1495,1499,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1490,1496,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1490,1497,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1490,1500,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1496,1497,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1496,1500,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1497,1500,"Terrace House|520800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+792,797,"Terrace House|530000|1554.0|4.0|3.0#xy:3.0032,101.4124",same_description|same_agent_phone,confirmed_duplicate
+659,680,"Terrace House|540000|1600.0|3.0|3.0#xy:3.0029,101.5454",same_description|same_agent_phone,confirmed_duplicate
+1527,1528,"Terrace House|545000|3000.0|4.0|3.0#xy:2.243,102.2566",same_description|same_agent_phone,confirmed_duplicate
+1529,1530,"Terrace House|545000|3000.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1383,1384,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1383,1386,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1383,1387,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1384,1386,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1384,1387,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1386,1387,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3037,102.249",same_description|same_agent_phone,confirmed_duplicate
+1385,1388,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1385,1389,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1385,1390,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1385,1391,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1388,1389,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1388,1390,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1388,1391,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1389,1390,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1389,1391,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1390,1391,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3043,102.2498",same_description|same_agent_phone,confirmed_duplicate
+1375,1376,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1375,1377,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1375,1378,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1376,1377,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1376,1378,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+1377,1378,"Terrace House|546800|2800.0|4.0|3.0#xy:2.3141,102.2451",same_description|same_agent_phone,confirmed_duplicate
+538,550,"Terrace House|550000|1500.0|4.0|3.0#xy:3.0966,101.5553",same_description|same_agent_phone,confirmed_duplicate
+471,476,"Terrace House|569000|1500.0|4.0|3.0#xy:3.0964,101.4529",same_description|same_agent_phone,confirmed_duplicate
+471,497,"Terrace House|569000|1500.0|4.0|3.0#xy:3.0964,101.4529",same_description|same_agent_phone,confirmed_duplicate
+476,497,"Terrace House|569000|1500.0|4.0|3.0#xy:3.0964,101.4529",same_description|same_agent_phone,confirmed_duplicate
+1414,1415,"Terrace House|570000|2800.0|4.0|3.0#xy:2.243,102.2566",same_description|same_agent_phone,confirmed_duplicate
+1414,1416,"Terrace House|570000|2800.0|4.0|3.0#xy:2.243,102.2566",same_description|same_agent_phone,confirmed_duplicate
+1414,1421,"Terrace House|570000|2800.0|4.0|3.0#xy:2.243,102.2566",same_description|same_agent_phone,confirmed_duplicate
+1415,1416,"Terrace House|570000|2800.0|4.0|3.0#xy:2.243,102.2566",same_description|same_agent_phone,confirmed_duplicate
+1415,1421,"Terrace House|570000|2800.0|4.0|3.0#xy:2.243,102.2566",same_description|same_agent_phone,confirmed_duplicate
+1416,1421,"Terrace House|570000|2800.0|4.0|3.0#xy:2.243,102.2566",same_description|same_agent_phone,confirmed_duplicate
+1392,1393,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1394,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1395,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1400,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1402,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1405,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1407,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1392,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1394,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1395,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1400,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1402,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1405,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1407,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1393,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1395,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1400,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1402,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1405,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1407,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1394,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1400,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1402,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1405,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1407,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1395,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1402,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1405,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1407,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1400,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1405,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1407,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1402,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1405,1407,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1405,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1405,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1405,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1405,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1405,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1405,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1407,1408,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1407,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1407,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1407,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1407,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1407,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1408,1409,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1408,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1408,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1408,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1408,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1409,1417,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1409,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1409,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1409,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1417,1418,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1417,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1417,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1418,1419,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1418,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1419,1420,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2707,102.263",same_description|same_agent_phone,confirmed_duplicate
+1401,1403,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1401,1404,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1401,1406,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1401,1410,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1401,1411,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1401,1412,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1401,1413,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1403,1404,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1403,1406,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1403,1410,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1403,1411,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1403,1412,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1403,1413,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1404,1406,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1404,1410,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1404,1411,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1404,1412,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1404,1413,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1406,1410,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1406,1411,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1406,1412,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1406,1413,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1410,1411,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1410,1412,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1410,1413,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1411,1412,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1411,1413,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1412,1413,"Terrace House|570000|2800.0|4.0|3.0#xy:2.2862,102.2647",same_description|same_agent_phone,confirmed_duplicate
+1313,1318,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2816,102.1958",same_description|same_agent_phone,confirmed_duplicate
+1313,1319,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2816,102.1958",same_description|same_agent_phone,confirmed_duplicate
+1313,1320,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2816,102.1958",same_description|same_agent_phone,confirmed_duplicate
+1318,1319,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2816,102.1958",same_description|same_agent_phone,confirmed_duplicate
+1318,1320,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2816,102.1958",same_description|same_agent_phone,confirmed_duplicate
+1319,1320,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2816,102.1958",same_description|same_agent_phone,confirmed_duplicate
+1314,1315,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1314,1316,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1314,1317,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1315,1316,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1315,1317,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1316,1317,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1272,1273,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1272,1274,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1273,1274,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2849,102.2087",same_description|same_agent_phone,confirmed_duplicate
+1275,1276,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1275,1277,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1275,1291,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1275,1292,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1276,1277,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1276,1291,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1276,1292,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1277,1291,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1277,1292,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1291,1292,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2936,102.174",same_description|same_agent_phone,confirmed_duplicate
+1268,1269,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2952,102.1904",same_description|same_agent_phone,confirmed_duplicate
+1268,1270,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2952,102.1904",same_description|same_agent_phone,confirmed_duplicate
+1268,1271,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2952,102.1904",same_description|same_agent_phone,confirmed_duplicate
+1269,1270,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2952,102.1904",same_description|same_agent_phone,confirmed_duplicate
+1269,1271,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2952,102.1904",same_description|same_agent_phone,confirmed_duplicate
+1270,1271,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2952,102.1904",same_description|same_agent_phone,confirmed_duplicate
+1293,1294,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1293,1295,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1293,1296,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1293,1297,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1293,1298,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1294,1295,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1294,1296,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1294,1297,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1294,1298,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1295,1296,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1295,1297,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1295,1298,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1296,1297,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1296,1298,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1297,1298,"Terrace House|580000|2936.0|4.0|4.0#xy:2.2998,102.1831",same_description|same_agent_phone,confirmed_duplicate
+1744,1750,"Terrace House|582008|2300.0|4.0|3.0#xy:2.7053,101.894",same_agent_phone,confirmed_duplicate
+3015,3027,"Terrace House|586200|1645.0|4.0|3.0#xy:1.5791,110.3223",same_description,confirmed_duplicate
+3015,3066,"Terrace House|586200|1645.0|4.0|3.0#xy:1.5791,110.3223",,flagged_unconfirmed
+3015,3076,"Terrace House|586200|1645.0|4.0|3.0#xy:1.5791,110.3223",same_description,confirmed_duplicate
+3027,3066,"Terrace House|586200|1645.0|4.0|3.0#xy:1.5791,110.3223",,flagged_unconfirmed
+3027,3076,"Terrace House|586200|1645.0|4.0|3.0#xy:1.5791,110.3223",same_description,confirmed_duplicate
+3066,3076,"Terrace House|586200|1645.0|4.0|3.0#xy:1.5791,110.3223",,flagged_unconfirmed
+1446,1447,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1446,1448,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1446,1463,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1446,1464,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1446,1465,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1447,1448,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1447,1463,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1447,1464,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1447,1465,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1448,1463,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1448,1464,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1448,1465,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1463,1464,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1463,1465,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+1464,1465,"Terrace House|598000|3000.0|4.0|3.0#xy:2.259,102.3027",same_description|same_agent_phone,confirmed_duplicate
+712,715,"Terrace House|600000|2370.0|4.0|3.0#xy:3.1445,101.4818",same_description|same_agent_phone,confirmed_duplicate
+3042,3071,"Terrace House|610000|1947.0|4.0|3.0#xy:1.5791,110.2742",same_agent_phone,confirmed_duplicate
+3088,3124,"Terrace House|614444|1680.0|4.0|3.0#xy:1.5875,110.306",same_agent_phone,confirmed_duplicate
+1509,1510,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2608,102.2231",same_description|same_agent_phone,confirmed_duplicate
+1509,1511,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2608,102.2231",same_description|same_agent_phone,confirmed_duplicate
+1509,1512,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2608,102.2231",same_description|same_agent_phone,confirmed_duplicate
+1510,1511,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2608,102.2231",same_description|same_agent_phone,confirmed_duplicate
+1510,1512,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2608,102.2231",same_description|same_agent_phone,confirmed_duplicate
+1511,1512,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2608,102.2231",same_description|same_agent_phone,confirmed_duplicate
+1501,1502,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1501,1503,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1501,1508,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1501,1513,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1502,1503,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1502,1508,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1502,1513,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1503,1508,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1503,1513,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1508,1513,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2694,102.2148",same_description|same_agent_phone,confirmed_duplicate
+1504,1505,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1504,1506,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1504,1507,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1505,1506,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1505,1507,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+1506,1507,"Terrace House|620000|1540.0|5.0|3.0#xy:2.2827,102.207",same_description|same_agent_phone,confirmed_duplicate
+528,536,"Terrace House|625000|1800.0|4.0|3.0#xy:3.0959,101.4565",same_description|same_agent_phone,confirmed_duplicate
+528,549,"Terrace House|625000|1800.0|4.0|3.0#xy:3.0959,101.4565",same_description|same_agent_phone,confirmed_duplicate
+536,549,"Terrace House|625000|1800.0|4.0|3.0#xy:3.0959,101.4565",same_description|same_agent_phone,confirmed_duplicate
+483,487,"Terrace House|628000|1700.0|4.0|3.0#xy:3.1071,101.5285",same_description|same_agent_phone,confirmed_duplicate
+483,602,"Terrace House|628000|1700.0|4.0|3.0#xy:3.1071,101.5285",same_description|same_agent_phone,confirmed_duplicate
+487,602,"Terrace House|628000|1700.0|4.0|3.0#xy:3.1071,101.5285",same_description|same_agent_phone,confirmed_duplicate
+3018,3075,"Terrace House|648341|1723.0|4.0|3.0#xy:1.5791,110.3223",same_description,confirmed_duplicate
+469,543,"Terrace House|690000|1715.0|4.0|3.0#xy:3.1298,101.4646",same_description|same_agent_phone,confirmed_duplicate
+503,504,"Terrace House|720000|1700.0|3.0|3.0#xy:2.9905,101.5289",same_description|same_agent_phone,confirmed_duplicate
+503,551,"Terrace House|720000|1700.0|3.0|3.0#xy:2.9905,101.5289",same_description|same_agent_phone,confirmed_duplicate
+504,551,"Terrace House|720000|1700.0|3.0|3.0#xy:2.9905,101.5289",same_description|same_agent_phone,confirmed_duplicate
+1554,1564,"Terrace House|750000|2300.0|4.0|4.0#xy:2.8381,101.8136",same_agent_phone,confirmed_duplicate
+1485,1486,"Terrace House|750000|3000.0|5.0|3.0#xy:2.2131,102.2334",same_description|same_agent_phone,confirmed_duplicate
+1485,1487,"Terrace House|750000|3000.0|5.0|3.0#xy:2.2131,102.2334",same_description|same_agent_phone,confirmed_duplicate
+1486,1487,"Terrace House|750000|3000.0|5.0|3.0#xy:2.2131,102.2334",same_description|same_agent_phone,confirmed_duplicate
+959,1190,"Terrace House|780000|1800.0|4.0|3.0#xy:2.9706,101.611",same_agent_phone,confirmed_duplicate
+488,490,"Terrace House|780000|2018.0|4.0|3.0#xy:3.0543,101.505",same_description|same_agent_phone,confirmed_duplicate
+488,491,"Terrace House|780000|2018.0|4.0|3.0#xy:3.0543,101.505",same_description|same_agent_phone,confirmed_duplicate
+490,491,"Terrace House|780000|2018.0|4.0|3.0#xy:3.0543,101.505",same_description|same_agent_phone,confirmed_duplicate
+95,345,"Terrace House|800000|1760.0|4.0|3.0#xy:1.4858,103.7196",,flagged_unconfirmed
+2859,2875,"Terrace House|800000|1905.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+738,744,"Terrace House|800000|2000.0|5.0|3.0#xy:3.0995,101.4621",same_description|same_agent_phone,confirmed_duplicate
+738,767,"Terrace House|800000|2000.0|5.0|3.0#xy:3.0995,101.4621",same_description|same_agent_phone,confirmed_duplicate
+744,767,"Terrace House|800000|2000.0|5.0|3.0#xy:3.0995,101.4621",same_description|same_agent_phone,confirmed_duplicate
+805,811,"Terrace House|850000|2640.0|4.0|4.0#xy:2.9917,101.5462",same_description|same_agent_phone,confirmed_duplicate
+805,814,"Terrace House|850000|2640.0|4.0|4.0#xy:2.9917,101.5462",same_description|same_agent_phone,confirmed_duplicate
+811,814,"Terrace House|850000|2640.0|4.0|4.0#xy:2.9917,101.5462",same_description|same_agent_phone,confirmed_duplicate
+246,306,"Terrace House|858000|1680.0|7.0|4.0#xy:1.5476,103.8204",same_description,confirmed_duplicate
+3043,3132,"Terrace House|865000|2339.0|4.0|3.0#xy:1.4858,110.4093",same_description,confirmed_duplicate
+451,460,"Terrace House|868000|3000.0|4.0|4.0#xy:2.9863,101.5316",same_description|same_agent_phone,confirmed_duplicate
+451,566,"Terrace House|868000|3000.0|4.0|4.0#xy:2.9863,101.5316",same_description|same_agent_phone,confirmed_duplicate
+460,566,"Terrace House|868000|3000.0|4.0|4.0#xy:2.9863,101.5316",same_description|same_agent_phone,confirmed_duplicate
+785,791,"Terrace House|880000|3000.0|4.0|4.0#xy:2.9857,101.5406",same_description|same_agent_phone,confirmed_duplicate
+785,801,"Terrace House|880000|3000.0|4.0|4.0#xy:2.9857,101.5406",same_description|same_agent_phone,confirmed_duplicate
+791,801,"Terrace House|880000|3000.0|4.0|4.0#xy:2.9857,101.5406",same_description|same_agent_phone,confirmed_duplicate
+2595,2657,"Terrace House|950000|1948.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+2595,2716,"Terrace House|950000|1948.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+2657,2716,"Terrace House|950000|1948.0|4.0|3.0#xy:2.9504,101.7205",,flagged_unconfirmed
+494,502,"Terrace House|950000|2000.0|4.0|3.0#xy:3.1291,101.4621",same_description|same_agent_phone,confirmed_duplicate
+494,675,"Terrace House|950000|2000.0|4.0|3.0#xy:3.1291,101.4621",same_description|same_agent_phone,confirmed_duplicate
+502,675,"Terrace House|950000|2000.0|4.0|3.0#xy:3.1291,101.4621",same_description|same_agent_phone,confirmed_duplicate
+448,450,"Terrace House|960000|2600.0|4.0|4.0#xy:3.1022,101.4605",same_description|same_agent_phone,confirmed_duplicate
+448,561,"Terrace House|960000|2600.0|4.0|4.0#xy:3.1022,101.4605",same_description|same_agent_phone,confirmed_duplicate
+450,561,"Terrace House|960000|2600.0|4.0|4.0#xy:3.1022,101.4605",same_description|same_agent_phone,confirmed_duplicate
+2640,2688,"Terrace House|995000|3000.0|6.0|5.0#xy:2.9196,101.696",,flagged_unconfirmed
+1343,1344,"Town House|330000|1300.0|3.0|2.0#xy:2.1952,102.2421",same_description|same_agent_phone,confirmed_duplicate
+1343,1345,"Town House|330000|1300.0|3.0|2.0#xy:2.1952,102.2421",same_description|same_agent_phone,confirmed_duplicate
+1344,1345,"Town House|330000|1300.0|3.0|2.0#xy:2.1952,102.2421",same_description|same_agent_phone,confirmed_duplicate
+1337,1338,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1337,1339,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1337,1340,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1337,1341,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1338,1339,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1338,1340,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1338,1341,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1339,1340,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1339,1341,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1340,1341,"Town House|330000|1300.0|3.0|2.0#xy:2.199,102.2418",same_description|same_agent_phone,confirmed_duplicate
+1379,1380,"Town House|350000|1300.0|3.0|2.0#xy:2.1959,102.2337",same_description|same_agent_phone,confirmed_duplicate
+1379,1382,"Town House|350000|1300.0|3.0|2.0#xy:2.1959,102.2337",same_description|same_agent_phone,confirmed_duplicate
+1380,1382,"Town House|350000|1300.0|3.0|2.0#xy:2.1959,102.2337",same_description|same_agent_phone,confirmed_duplicate
+648,660,"Town House|498000|1990.0|4.0|4.0#xy:3.0872,101.5233",same_description|same_agent_phone,confirmed_duplicate
+648,661,"Town House|498000|1990.0|4.0|4.0#xy:3.0872,101.5233",same_description|same_agent_phone,confirmed_duplicate
+660,661,"Town House|498000|1990.0|4.0|4.0#xy:3.0872,101.5233",same_description|same_agent_phone,confirmed_duplicate

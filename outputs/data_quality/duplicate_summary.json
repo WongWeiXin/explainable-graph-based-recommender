@@ -1,0 +1,15 @@
+{
+  "rule": "same type/price/size/bed/bath + same location (coords rounded to 4 dp, else area+district) + >=1 signal (same description | same agent phone | same agent in URL)",
+  "rows_in": 3361,
+  "candidate_pairs": 903,
+  "confirmed_pairs": 808,
+  "unconfirmed_pairs_kept": 95,
+  "duplicate_groups": 203,
+  "rows_removed": 410,
+  "rows_out": 2951,
+  "signal_counts": {
+    "same_agent_phone": 786,
+    "same_description": 772,
+    "same_agent_in_url": 16
+  }
+}
