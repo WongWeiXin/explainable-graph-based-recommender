@@ -1,0 +1,28 @@
+{
+  "config_id": "SIM-4fdc14c547",
+  "nodes": 2951,
+  "edges": 8495,
+  "density": 0.001952,
+  "isolated_nodes": 223,
+  "isolated_pct": 7.56,
+  "degree": {
+    "mean": 5.757,
+    "median": 6.0,
+    "max": 10
+  },
+  "connected_components_excluding_isolated": 182,
+  "largest_component_size": 233,
+  "largest_component_pct": 7.9,
+  "edge_similarity": {
+    "min": 0.75,
+    "median": 0.9032,
+    "max": 1.0
+  },
+  "edges_with_similarity_1": 94,
+  "edge_location_resolution": {
+    "coordinates": 8495
+  },
+  "dataset_path": "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+  "edges_path": "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\outputs\\similarity_engine\\comparable_edges.csv",
+  "build_seconds": 9.578
+}
