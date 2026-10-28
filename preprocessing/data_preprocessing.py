@@ -3,17 +3,27 @@
 # Malaysia Property Dataset
 # ==========================================
 
+import sys
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATASET_DIR = PROJECT_ROOT / "dataset"
+AUDIT_DIR = PROJECT_ROOT / "outputs" / "data_quality"
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from duplicate_handling import remove_near_duplicates, standardise_states  # noqa: E402
+
 # ==========================================
 # Load Dataset
 # ==========================================
 
-df = pd.read_csv("C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_property_data.csv")
+df = pd.read_csv(DATASET_DIR / "Malaysia_property_data.csv")
 
 print("Original Dataset Shape:", df.shape)
 
@@ -58,10 +68,10 @@ categorical_cols = [
 
 print("\n===== DATA CLEANING =====")
 
-# Remove duplicate rows
+# Stage 1: remove exact duplicate rows
 df = df.drop_duplicates()
 
-# Remove duplicate property listings
+# Stage 2: remove repeated listing links
 # original_link represents unique listing source
 
 df = df.drop_duplicates(
@@ -113,7 +123,7 @@ print("After Cleaning:", df.shape)
 # ==========================================
 
 df.to_csv(
-    "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+    DATASET_DIR / "Malaysia_Property_Cleaned_Raw.csv",
     index=False
 )
 
@@ -163,11 +173,35 @@ df.insert(
 print(df[["Property_ID"]].head())
 
 # ==========================================
+# 3.6.3a STATE NAMES + NEAR-DUPLICATES
+# Runs after Property_ID (kept rows keep their ID)
+# and before splitting (no copies across partitions)
+# ==========================================
+
+print("\n===== STATE STANDARDISATION =====")
+
+df, state_changes = standardise_states(df)
+
+for change, rows in state_changes.items():
+    print(f"  {change}: {rows}")
+
+print("\n===== STAGE 3: NEAR-DUPLICATE HANDLING =====")
+
+df, duplicate_summary = remove_near_duplicates(df, audit_dir=AUDIT_DIR)
+
+print("Candidate pairs:", duplicate_summary["candidate_pairs"])
+print("Confirmed duplicate groups:", duplicate_summary["duplicate_groups"])
+print("Rows removed:", duplicate_summary["rows_removed"])
+print("Unconfirmed pairs kept:", duplicate_summary["unconfirmed_pairs_kept"])
+print("After Near-Duplicate Handling:", df.shape)
+print("Audit files:", AUDIT_DIR)
+
+# ==========================================
 # SAVE CLEANED RAW DATA
 # ==========================================
 
 df.to_csv(
-    "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+    DATASET_DIR / "Malaysia_Property_Cleaned_Raw.csv",
     index=False
 )
 
@@ -364,17 +398,17 @@ print(feature_columns)
 # ==========================================
 
 train_df.to_csv(
-    "Malaysia_Property_Train.csv",
+    DATASET_DIR / "Malaysia_Property_Train.csv",
     index=False
 )
 
 validation_df.to_csv(
-    "Malaysia_Property_Validation.csv",
+    DATASET_DIR / "Malaysia_Property_Validation.csv",
     index=False
 )
 
 test_df.to_csv(
-    "Malaysia_Property_Test.csv",
+    DATASET_DIR / "Malaysia_Property_Test.csv",
     index=False
 )
 
