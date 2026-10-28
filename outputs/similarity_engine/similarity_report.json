@@ -1,0 +1,293 @@
+{
+  "component": "similarity_engine",
+  "config_id": "SIM-4fdc14c547",
+  "config": {
+    "weights": {
+      "location": 0.25,
+      "price": 0.2,
+      "size": 0.15,
+      "property_type": 0.15,
+      "bedroom": 0.075,
+      "bathroom": 0.075,
+      "facility": 0.1
+    },
+    "active_components": [
+      "location",
+      "price",
+      "size",
+      "property_type",
+      "bedroom",
+      "bathroom",
+      "facility"
+    ],
+    "mandatory_components": [
+      "location",
+      "price",
+      "size"
+    ],
+    "min_valid_components": 3,
+    "graph_threshold": 0.75,
+    "neighbour_limit": 10,
+    "retention_rule": "mutual_topk",
+    "location_mode": "coordinates",
+    "sigma_loc_km": 5.0,
+    "district_fallback_value": 0.5,
+    "coordinate_round_decimals": null,
+    "min_built_up_area": 150.0,
+    "max_built_up_area": 50000.0,
+    "max_room_count": 20.0,
+    "facility_columns": [
+      "train_station_count_3km",
+      "shopping_mall_count_3km",
+      "supermarket_count_3km",
+      "cafe_count_3km",
+      "school_count_3km",
+      "hospital_count_3km",
+      "pharmacy_count_3km",
+      "park_count_1km",
+      "office_count_3km",
+      "university_count_3km"
+    ],
+    "facility_scaling": "p95",
+    "eps": 1e-09,
+    "score_decimals": 10
+  },
+  "normalised_weights_when_all_valid": {
+    "location": 0.25,
+    "price": 0.2,
+    "size": 0.15,
+    "property_type": 0.15,
+    "bedroom": 0.075,
+    "bathroom": 0.075,
+    "facility": 0.1
+  },
+  "facility_columns_used": [
+    "train_station_count_3km",
+    "shopping_mall_count_3km",
+    "supermarket_count_3km",
+    "cafe_count_3km",
+    "school_count_3km",
+    "hospital_count_3km",
+    "pharmacy_count_3km",
+    "park_count_1km",
+    "office_count_3km",
+    "university_count_3km"
+  ],
+  "facility_scale_p95": {
+    "train_station_count_3km": 5.0,
+    "shopping_mall_count_3km": 9.0,
+    "supermarket_count_3km": 30.0,
+    "cafe_count_3km": 69.0,
+    "school_count_3km": 31.0,
+    "hospital_count_3km": 6.0,
+    "pharmacy_count_3km": 14.0,
+    "park_count_1km": 10.0,
+    "office_count_3km": 81.0,
+    "university_count_3km": 4.0
+  },
+  "input_path": "/sessions/rcw-01prrskmhpjrptkgtbtscrsw/mnt/FYP/explainable-graph-based-recommender/dataset/Malaysia_Property_Cleaned_Raw.csv",
+  "efficiency": {
+    "properties": 3361,
+    "unique_pairs_evaluated": 5646480,
+    "elapsed_seconds": 9.468,
+    "pairs_per_second": 596361,
+    "peak_traced_memory_mb": 56.34
+  },
+  "evidence": {
+    "node_validity": {
+      "price_valid": 3361,
+      "size_valid": 3359,
+      "coordinates_valid": 3361,
+      "district_valid": 3361,
+      "facility_vector_valid": 3344
+    },
+    "component_valid_pair_pct": {
+      "location": 100.0,
+      "price": 100.0,
+      "size": 99.88,
+      "property_type": 100.0,
+      "bedroom": 100.0,
+      "bathroom": 100.0,
+      "facility": 98.99
+    },
+    "location_resolution_pair_pct": {
+      "coordinates": 100.0,
+      "district": 0.0,
+      "unavailable": 0.0
+    },
+    "pairs_min_evidence_ok_pct": 100.0,
+    "pairs_at_or_above_threshold": 58982,
+    "pairs_at_or_above_threshold_pct": 1.0446
+  },
+  "graph": {
+    "directed_topk_candidates": 26718,
+    "retained_edges": 10057,
+    "density": 0.001781,
+    "isolated_nodes": 228,
+    "isolated_pct": 6.78,
+    "neighbour_count_distribution": {
+      "min": 0,
+      "p25": 3.0,
+      "median": 6.0,
+      "p75": 9.0,
+      "max": 10,
+      "mean": 5.985
+    },
+    "neighbour_count_histogram": {
+      "0": 228,
+      "1": 209,
+      "2": 207,
+      "3": 293,
+      "4": 240,
+      "5": 245,
+      "6": 270,
+      "7": 300,
+      "8": 349,
+      "9": 285,
+      "10": 735
+    },
+    "edge_similarity": {
+      "min": 0.75,
+      "median": 0.9222,
+      "max": 1.0
+    },
+    "edge_component_summary": {
+      "location": {
+        "available_pct": 100.0,
+        "mean_similarity": 0.859
+      },
+      "price": {
+        "available_pct": 100.0,
+        "mean_similarity": 0.8948
+      },
+      "size": {
+        "available_pct": 99.86,
+        "mean_similarity": 0.8953
+      },
+      "property_type": {
+        "available_pct": 100.0,
+        "mean_similarity": 0.985
+      },
+      "bedroom": {
+        "available_pct": 100.0,
+        "mean_similarity": 0.9287
+      },
+      "bathroom": {
+        "available_pct": 100.0,
+        "mean_similarity": 0.9279
+      },
+      "facility": {
+        "available_pct": 98.97,
+        "mean_similarity": 0.9527
+      }
+    },
+    "isolation_by_property_type": {
+      "House (Others)": {
+        "properties": 9,
+        "isolated_pct": 33.33
+      },
+      "Town House": {
+        "properties": 37,
+        "isolated_pct": 29.73
+      },
+      "Bungalow / Detached House": {
+        "properties": 303,
+        "isolated_pct": 18.48
+      },
+      "Flat": {
+        "properties": 11,
+        "isolated_pct": 18.18
+      },
+      "Low-Cost House": {
+        "properties": 17,
+        "isolated_pct": 11.76
+      },
+      "Link Bungalow / Semi-Detached": {
+        "properties": 524,
+        "isolated_pct": 10.69
+      },
+      "Cluster House": {
+        "properties": 34,
+        "isolated_pct": 5.88
+      },
+      "Terrace House": {
+        "properties": 1418,
+        "isolated_pct": 4.51
+      },
+      "Condominium": {
+        "properties": 1008,
+        "isolated_pct": 3.17
+      }
+    },
+    "isolation_by_state": {
+      "Perlis": {
+        "properties": 15,
+        "isolated_pct": 46.67
+      },
+      "Kedah": {
+        "properties": 54,
+        "isolated_pct": 33.33
+      },
+      "Terengganu": {
+        "properties": 107,
+        "isolated_pct": 14.02
+      },
+      "Pahang": {
+        "properties": 225,
+        "isolated_pct": 13.33
+      },
+      "Sabah": {
+        "properties": 116,
+        "isolated_pct": 11.21
+      },
+      "Wilayah Persekutuan Kuala Lumpur": {
+        "properties": 43,
+        "isolated_pct": 9.3
+      },
+      "Penang": {
+        "properties": 76,
+        "isolated_pct": 7.89
+      },
+      "Melaka": {
+        "properties": 211,
+        "isolated_pct": 7.58
+      },
+      "Sarawak": {
+        "properties": 184,
+        "isolated_pct": 7.07
+      },
+      "Negeri Sembilan": {
+        "properties": 305,
+        "isolated_pct": 6.89
+      },
+      "Johor Darul Ta'zim": {
+        "properties": 285,
+        "isolated_pct": 6.67
+      },
+      "Pulau Pinang": {
+        "properties": 413,
+        "isolated_pct": 4.84
+      },
+      "Putrajaya": {
+        "properties": 138,
+        "isolated_pct": 4.35
+      },
+      "Johor": {
+        "properties": 93,
+        "isolated_pct": 4.3
+      },
+      "Selangor": {
+        "properties": 841,
+        "isolated_pct": 3.33
+      },
+      "Wilayah Persekutuan Putrajaya": {
+        "properties": 163,
+        "isolated_pct": 2.45
+      },
+      "Malacca": {
+        "properties": 83,
+        "isolated_pct": 1.2
+      }
+    }
+  }
+}

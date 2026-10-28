@@ -1,0 +1,3362 @@
+Property_ID,neighbour_count,isolated,property_type,state,district
+0,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+1,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+2,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+3,10,False,Terrace House,Johor,johor bahru
+4,6,False,Low-Cost House,Johor,johor bahru
+5,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+6,7,False,Condominium,Johor Darul Ta'zim,johor bahru
+7,1,False,House (Others),Johor Darul Ta'zim,johor bahru
+8,7,False,Terrace House,Johor,johor bahru
+9,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+10,2,False,Terrace House,Johor Darul Ta'zim,kulai
+11,5,False,Condominium,Johor Darul Ta'zim,johor bahru
+12,1,False,Condominium,Johor,johor bahru
+13,7,False,Condominium,Johor Darul Ta'zim,johor bahru
+14,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+15,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+16,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+17,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+18,2,False,Cluster House,Johor Darul Ta'zim,johor bahru
+19,1,False,Terrace House,Johor Darul Ta'zim,kota tinggi
+20,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+21,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+22,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+23,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+24,4,False,Condominium,Johor Darul Ta'zim,johor bahru
+25,2,False,Terrace House,Johor Darul Ta'zim,kulai
+26,4,False,Terrace House,Johor Darul Ta'zim,johor bahru
+27,5,False,Low-Cost House,Johor,johor bahru
+28,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+29,10,False,Terrace House,Johor,johor bahru
+30,2,False,Terrace House,Johor Darul Ta'zim,kulai
+31,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+32,5,False,Terrace House,Johor,johor bahru
+33,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+34,0,True,Low-Cost House,Johor Darul Ta'zim,kulai
+35,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+36,6,False,Terrace House,Johor Darul Ta'zim,kulai
+37,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+38,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+39,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+40,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+41,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+42,10,False,Terrace House,Johor,johor bahru
+43,10,False,Terrace House,Johor,johor bahru
+44,3,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+45,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+46,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+47,7,False,Terrace House,Johor,johor bahru
+48,3,False,Terrace House,Johor Darul Ta'zim,johor bahru
+49,9,False,Terrace House,Johor,johor bahru
+50,3,False,Terrace House,Johor Darul Ta'zim,kulai
+51,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+52,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+53,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+54,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+55,0,True,Cluster House,Johor Darul Ta'zim,johor bahru
+56,3,False,Low-Cost House,Johor,johor bahru
+57,1,False,Terrace House,Johor Darul Ta'zim,johor bahru
+58,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+59,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+60,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+61,6,False,Terrace House,Johor,johor bahru
+62,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+63,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+64,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+65,5,False,Terrace House,Johor,johor bahru
+66,8,False,Terrace House,Johor,johor bahru
+67,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+68,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+69,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+70,7,False,Condominium,Johor,johor bahru
+71,5,False,Terrace House,Johor,johor bahru
+72,1,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+73,4,False,Terrace House,Johor,johor bahru
+74,9,False,Terrace House,Johor,johor bahru
+75,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+76,0,True,House (Others),Johor Darul Ta'zim,johor bahru
+77,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+78,7,False,Condominium,Johor Darul Ta'zim,johor bahru
+79,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+80,2,False,Terrace House,Johor Darul Ta'zim,johor bahru
+81,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+82,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+83,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+84,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+85,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+86,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+87,1,False,Terrace House,Johor Darul Ta'zim,johor bahru
+88,7,False,Terrace House,Johor,johor bahru
+89,1,False,Bungalow / Detached House,Johor,johor bahru
+90,0,True,Condominium,Johor Darul Ta'zim,johor bahru
+91,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+92,4,False,Low-Cost House,Johor,johor bahru
+93,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+94,4,False,Terrace House,Johor,johor bahru
+95,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+96,7,False,Condominium,Johor Darul Ta'zim,johor bahru
+97,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+98,6,False,Terrace House,Johor,kulai
+99,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+100,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+101,1,False,Terrace House,Johor Darul Ta'zim,johor bahru
+102,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+103,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+104,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+105,1,False,Bungalow / Detached House,Johor Darul Ta'zim,johor bahru
+106,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+107,4,False,Condominium,Johor Darul Ta'zim,johor bahru
+108,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+109,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+110,7,False,Condominium,Johor Darul Ta'zim,johor bahru
+111,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+112,0,True,Terrace House,Johor Darul Ta'zim,johor bahru
+113,7,False,Terrace House,Johor,johor bahru
+114,3,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+115,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+116,2,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+117,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+118,8,False,Terrace House,Johor,johor bahru
+119,4,False,Terrace House,Johor Darul Ta'zim,johor bahru
+120,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+121,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+122,3,False,Terrace House,Johor,kulai
+123,3,False,Terrace House,Johor Darul Ta'zim,kulai
+124,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+125,0,True,Low-Cost House,Johor,johor bahru
+126,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+127,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+128,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+129,10,False,Terrace House,Johor,johor bahru
+130,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+131,7,False,Terrace House,Johor Darul Ta'zim,kota tinggi
+132,6,False,Terrace House,Johor,johor bahru
+133,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+134,0,True,Terrace House,Johor Darul Ta'zim,johor bahru
+135,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+136,7,False,Terrace House,Johor Darul Ta'zim,kota tinggi
+137,6,False,Terrace House,Johor Darul Ta'zim,kulai
+138,1,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+139,3,False,Terrace House,Johor Darul Ta'zim,johor bahru
+140,2,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+141,3,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+142,7,False,Condominium,Johor Darul Ta'zim,johor bahru
+143,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+144,2,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+145,4,False,Terrace House,Johor Darul Ta'zim,kulai
+146,6,False,Terrace House,Johor Darul Ta'zim,kulai
+147,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+148,3,False,Terrace House,Johor Darul Ta'zim,johor bahru
+149,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+150,2,False,Terrace House,Johor,kulai
+151,1,False,Bungalow / Detached House,Johor Darul Ta'zim,johor bahru
+152,1,False,Low-Cost House,Johor Darul Ta'zim,kulai
+153,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+154,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+155,2,False,Terrace House,Johor,johor bahru
+156,0,True,Bungalow / Detached House,Johor Darul Ta'zim,johor bahru
+157,1,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+158,2,False,Terrace House,Johor Darul Ta'zim,johor bahru
+159,3,False,Terrace House,Johor Darul Ta'zim,kulai
+160,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+161,1,False,Terrace House,Johor Darul Ta'zim,kota tinggi
+162,1,False,Terrace House,Johor Darul Ta'zim,kota tinggi
+163,3,False,Terrace House,Johor,kulai
+164,9,False,Terrace House,Johor,johor bahru
+165,1,False,Low-Cost House,Johor,johor bahru
+166,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+167,10,False,Terrace House,Johor,johor bahru
+168,3,False,Condominium,Johor Darul Ta'zim,johor bahru
+169,7,False,Condominium,Johor Darul Ta'zim,johor bahru
+170,1,False,Link Bungalow / Semi-Detached,Johor,johor bahru
+171,1,False,Terrace House,Johor Darul Ta'zim,kulai
+172,9,False,Terrace House,Johor,johor bahru
+173,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+174,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+175,6,False,Terrace House,Johor,kulai
+176,3,False,Terrace House,Johor,johor bahru
+177,1,False,Condominium,Johor Darul Ta'zim,johor bahru
+178,5,False,Terrace House,Johor Darul Ta'zim,kulai
+179,7,False,Terrace House,Johor,kota tinggi
+180,5,False,Terrace House,Johor,johor bahru
+181,5,False,Terrace House,Johor,johor bahru
+182,7,False,Terrace House,Johor,kota tinggi
+183,1,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+184,6,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+185,0,True,Terrace House,Johor Darul Ta'zim,johor bahru
+186,10,False,Terrace House,Johor,johor bahru
+187,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+188,1,False,Town House,Johor Darul Ta'zim,johor bahru
+189,4,False,Condominium,Johor Darul Ta'zim,johor bahru
+190,8,False,Terrace House,Johor Darul Ta'zim,kota tinggi
+191,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+192,7,False,Terrace House,Johor,johor bahru
+193,3,False,Terrace House,Johor Darul Ta'zim,kulai
+194,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+195,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+196,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+197,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+198,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+199,2,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+200,0,True,Terrace House,Johor Darul Ta'zim,kulai
+201,5,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+202,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+203,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+204,10,False,Terrace House,Johor,johor bahru
+205,4,False,Terrace House,Johor Darul Ta'zim,johor bahru
+206,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+207,1,False,Terrace House,Johor Darul Ta'zim,johor bahru
+208,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+209,8,False,Terrace House,Johor,johor bahru
+210,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+211,4,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+212,3,False,Terrace House,Johor,kota tinggi
+213,7,False,Terrace House,Johor,kota tinggi
+214,8,False,Terrace House,Johor,kota tinggi
+215,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+216,1,False,Condominium,Johor Darul Ta'zim,johor bahru
+217,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+218,4,False,Terrace House,Johor,johor bahru
+219,1,False,Terrace House,Johor Darul Ta'zim,johor bahru
+220,3,False,Terrace House,Johor Darul Ta'zim,johor bahru
+221,0,True,Bungalow / Detached House,Johor,kota tinggi
+222,2,False,Cluster House,Johor,johor bahru
+223,5,False,Terrace House,Johor,johor bahru
+224,8,False,Terrace House,Johor,johor bahru
+225,7,False,Terrace House,Johor,johor bahru
+226,3,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+227,1,False,Terrace House,Johor Darul Ta'zim,johor bahru
+228,5,False,Condominium,Johor Darul Ta'zim,johor bahru
+229,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+230,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+231,2,False,Terrace House,Johor,johor bahru
+232,2,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+233,2,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+234,10,False,Terrace House,Johor,johor bahru
+235,10,False,Terrace House,Johor,johor bahru
+236,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+237,5,False,Condominium,Johor Darul Ta'zim,johor bahru
+238,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+239,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+240,3,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+241,2,False,Link Bungalow / Semi-Detached,Johor,johor bahru
+242,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+243,5,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+244,8,False,Terrace House,Johor,johor bahru
+245,2,False,Condominium,Johor Darul Ta'zim,johor bahru
+246,3,False,Terrace House,Johor Darul Ta'zim,johor bahru
+247,2,False,Terrace House,Johor Darul Ta'zim,johor bahru
+248,4,False,Terrace House,Johor,johor bahru
+249,2,False,Cluster House,Johor Darul Ta'zim,johor bahru
+250,1,False,Cluster House,Johor Darul Ta'zim,johor bahru
+251,3,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+252,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+253,1,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+254,4,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+255,5,False,Cluster House,Johor Darul Ta'zim,johor bahru
+256,6,False,Cluster House,Johor Darul Ta'zim,johor bahru
+257,2,False,Terrace House,Johor Darul Ta'zim,johor bahru
+258,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+259,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+260,0,True,Condominium,Johor Darul Ta'zim,johor bahru
+261,5,False,Condominium,Johor Darul Ta'zim,johor bahru
+262,0,True,Terrace House,Johor Darul Ta'zim,johor bahru
+263,4,False,Terrace House,Johor,kulai
+264,7,False,Cluster House,Johor Darul Ta'zim,johor bahru
+265,1,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+266,4,False,Terrace House,Johor Darul Ta'zim,johor bahru
+267,6,False,Terrace House,Johor,johor bahru
+268,2,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+269,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+270,10,False,Terrace House,Johor,johor bahru
+271,3,False,Low-Cost House,Johor Darul Ta'zim,johor bahru
+272,1,False,Cluster House,Johor Darul Ta'zim,johor bahru
+273,4,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+274,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+275,8,False,Terrace House,Johor,johor bahru
+276,5,False,Condominium,Johor Darul Ta'zim,johor bahru
+277,5,False,Terrace House,Johor,kulai
+278,1,False,Link Bungalow / Semi-Detached,Johor,johor bahru
+279,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+280,9,False,Terrace House,Johor,johor bahru
+281,1,False,Condominium,Johor Darul Ta'zim,johor bahru
+282,6,False,Cluster House,Johor Darul Ta'zim,johor bahru
+283,6,False,Cluster House,Johor Darul Ta'zim,johor bahru
+284,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+285,4,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+286,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+287,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+288,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+289,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+290,0,True,Bungalow / Detached House,Johor Darul Ta'zim,johor bahru
+291,0,True,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+292,0,True,Bungalow / Detached House,Johor Darul Ta'zim,johor bahru
+293,1,False,Cluster House,Johor Darul Ta'zim,johor bahru
+294,0,True,Condominium,Johor,johor bahru
+295,0,True,Link Bungalow / Semi-Detached,Johor,kulai
+296,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+297,1,False,Terrace House,Johor Darul Ta'zim,kota tinggi
+298,3,False,Condominium,Johor Darul Ta'zim,johor bahru
+299,0,True,Terrace House,Johor Darul Ta'zim,segamat
+300,6,False,Condominium,Johor Darul Ta'zim,johor bahru
+301,0,True,Terrace House,Johor Darul Ta'zim,pontian
+302,0,True,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+303,8,False,Condominium,Johor Darul Ta'zim,johor bahru
+304,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+305,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+306,3,False,Terrace House,Johor Darul Ta'zim,johor bahru
+307,8,False,Terrace House,Johor,johor bahru
+308,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+309,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+310,7,False,Terrace House,Johor,johor bahru
+311,8,False,Terrace House,Johor,kota tinggi
+312,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+313,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+314,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+315,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+316,10,False,Terrace House,Johor,johor bahru
+317,10,False,Terrace House,Johor,johor bahru
+318,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+319,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+320,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+321,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+322,7,False,Cluster House,Johor Darul Ta'zim,johor bahru
+323,5,False,Terrace House,Johor,johor bahru
+324,1,False,Bungalow / Detached House,Johor Darul Ta'zim,johor bahru
+325,4,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+326,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+327,8,False,Terrace House,Johor,johor bahru
+328,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+329,1,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+330,6,False,Terrace House,Johor,johor bahru
+331,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+332,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+333,10,False,Terrace House,Johor,johor bahru
+334,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+335,1,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+336,4,False,Terrace House,Johor Darul Ta'zim,johor bahru
+337,5,False,Terrace House,Johor Darul Ta'zim,johor bahru
+338,7,False,Cluster House,Johor,johor bahru
+339,8,False,Terrace House,Johor,johor bahru
+340,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+341,8,False,Terrace House,Johor,johor bahru
+342,0,True,Condominium,Johor Darul Ta'zim,johor bahru
+343,4,False,Link Bungalow / Semi-Detached,Johor Darul Ta'zim,johor bahru
+344,4,False,Link Bungalow / Semi-Detached,Johor,johor bahru
+345,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+346,3,False,Terrace House,Johor Darul Ta'zim,johor bahru
+347,1,False,Cluster House,Johor Darul Ta'zim,johor bahru
+348,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+349,10,False,Terrace House,Johor,johor bahru
+350,3,False,Condominium,Johor Darul Ta'zim,johor bahru
+351,3,False,Condominium,Johor Darul Ta'zim,johor bahru
+352,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+353,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+354,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+355,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+356,7,False,Terrace House,Johor Darul Ta'zim,johor bahru
+357,2,False,Terrace House,Johor Darul Ta'zim,johor bahru
+358,5,False,Terrace House,Johor,johor bahru
+359,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+360,9,False,Condominium,Johor Darul Ta'zim,johor bahru
+361,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+362,9,False,Terrace House,Johor Darul Ta'zim,johor bahru
+363,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+364,10,False,Terrace House,Johor Darul Ta'zim,johor bahru
+365,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+366,10,False,Condominium,Johor Darul Ta'zim,johor bahru
+367,9,False,Terrace House,Johor,johor bahru
+368,0,True,Cluster House,Johor Darul Ta'zim,johor bahru
+369,8,False,Terrace House,Johor,johor bahru
+370,7,False,Cluster House,Johor Darul Ta'zim,johor bahru
+371,2,False,Town House,Johor,johor bahru
+372,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+373,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+374,8,False,Terrace House,Johor Darul Ta'zim,johor bahru
+375,2,False,Terrace House,Johor,johor bahru
+376,6,False,Terrace House,Johor Darul Ta'zim,johor bahru
+377,4,False,Condominium,Johor Darul Ta'zim,johor bahru
+378,7,False,Terrace House,Johor,johor bahru
+379,10,False,Terrace House,Johor,johor bahru
+380,0,True,Link Bungalow / Semi-Detached,Kedah,kulim
+381,1,False,Bungalow / Detached House,Kedah,kota setar
+382,0,True,Condominium,Kedah,langkawi
+383,1,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+384,0,True,Condominium,Kedah,langkawi
+385,0,True,Town House,Kedah,langkawi
+386,1,False,Terrace House,Kedah,kuala muda
+387,1,False,Link Bungalow / Semi-Detached,Kedah,pokok sena
+388,1,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+389,3,False,Link Bungalow / Semi-Detached,Kedah,kubang pasu
+390,0,True,Link Bungalow / Semi-Detached,Kedah,kuala muda
+391,3,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+392,2,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+393,3,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+394,3,False,Link Bungalow / Semi-Detached,Kedah,kubang pasu
+395,4,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+396,0,True,Link Bungalow / Semi-Detached,Kedah,sik
+397,0,True,Terrace House,Kedah,pendang
+398,0,True,Bungalow / Detached House,Kedah,kuala muda
+399,0,True,Link Bungalow / Semi-Detached,Kedah,kuala muda
+400,1,False,Link Bungalow / Semi-Detached,Kedah,kubang pasu
+401,1,False,Bungalow / Detached House,Kedah,kubang pasu
+402,4,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+403,1,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+404,1,False,Link Bungalow / Semi-Detached,Kedah,kulim
+405,0,True,Bungalow / Detached House,Kedah,kuala muda
+406,0,True,Link Bungalow / Semi-Detached,Kedah,kuala muda
+407,1,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+408,1,False,Bungalow / Detached House,Kedah,kubang pasu
+409,1,False,Terrace House,Kedah,kubang pasu
+410,0,True,Terrace House,Kedah,kubang pasu
+411,1,False,Terrace House,Kedah,kuala muda
+412,0,True,Terrace House,Kedah,kuala muda
+413,0,True,Link Bungalow / Semi-Detached,Kedah,kota setar
+414,2,False,Terrace House,Kedah,kota setar
+415,3,False,Terrace House,Kedah,kota setar
+416,1,False,Link Bungalow / Semi-Detached,Kedah,kuala muda
+417,1,False,Bungalow / Detached House,Kedah,kubang pasu
+418,1,False,Link Bungalow / Semi-Detached,Kedah,kota setar
+419,1,False,Link Bungalow / Semi-Detached,Kedah,kulim
+420,1,False,Link Bungalow / Semi-Detached,Kedah,kuala muda
+421,0,True,Link Bungalow / Semi-Detached,Kedah,kuala muda
+422,1,False,Terrace House,Kedah,kuala muda
+423,1,False,Terrace House,Kedah,kuala muda
+424,2,False,Terrace House,Kedah,kota setar
+425,0,True,Terrace House,Kedah,kuala muda
+426,2,False,Terrace House,Kedah,kota setar
+427,0,True,Terrace House,Kedah,kulim
+428,1,False,Link Bungalow / Semi-Detached,Kedah,pokok sena
+429,3,False,Link Bungalow / Semi-Detached,Kedah,kubang pasu
+430,0,True,Bungalow / Detached House,Kedah,kubang pasu
+431,3,False,Link Bungalow / Semi-Detached,Kedah,kubang pasu
+432,1,False,Terrace House,Kedah,kubang pasu
+433,1,False,Bungalow / Detached House,Kedah,kota setar
+434,0,True,Bungalow / Detached House,Kelantan,tanah merah
+435,0,True,Bungalow / Detached House,Kelantan,tumpat
+436,6,False,Link Bungalow / Semi-Detached,Selangor,petaling
+437,6,False,Link Bungalow / Semi-Detached,Selangor,sepang
+438,5,False,Terrace House,Selangor,petaling
+439,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+440,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+441,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+442,1,False,Bungalow / Detached House,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+443,2,False,Terrace House,Selangor,kuala selangor
+444,2,False,Condominium,Selangor,kuala selangor
+445,2,False,Terrace House,Selangor,kuala selangor
+446,0,True,Terrace House,Selangor,kuala selangor
+447,7,False,Condominium,Selangor,petaling
+448,7,False,Terrace House,Selangor,petaling
+449,10,False,Condominium,Selangor,klang
+450,7,False,Terrace House,Selangor,petaling
+451,10,False,Terrace House,Selangor,klang
+452,3,False,Condominium,Selangor,petaling
+453,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+454,10,False,Condominium,Selangor,petaling
+455,8,False,Condominium,Selangor,klang
+456,0,True,Town House,Selangor,petaling
+457,4,False,Flat,Selangor,petaling
+458,10,False,Condominium,Selangor,petaling
+459,7,False,Terrace House,Selangor,petaling
+460,10,False,Terrace House,Selangor,klang
+461,4,False,Condominium,Selangor,petaling
+462,10,False,Condominium,Selangor,petaling
+463,3,False,Condominium,Selangor,petaling
+464,10,False,Terrace House,Selangor,klang
+465,7,False,Condominium,Selangor,petaling
+466,5,False,Condominium,Selangor,petaling
+467,10,False,Condominium,Selangor,petaling
+468,6,False,Terrace House,Selangor,petaling
+469,8,False,Terrace House,Selangor,petaling
+470,7,False,Condominium,Selangor,petaling
+471,9,False,Terrace House,Selangor,petaling
+472,9,False,Condominium,Selangor,petaling
+473,3,False,Condominium,Selangor,petaling
+474,3,False,Condominium,Selangor,petaling
+475,9,False,Condominium,Selangor,petaling
+476,9,False,Terrace House,Selangor,petaling
+477,7,False,Bungalow / Detached House,Selangor,petaling
+478,4,False,Bungalow / Detached House,Selangor,petaling
+479,10,False,Condominium,Selangor,petaling
+480,10,False,Terrace House,Selangor,klang
+481,9,False,Condominium,Selangor,petaling
+482,2,False,Bungalow / Detached House,Selangor,klang
+483,7,False,Terrace House,Selangor,petaling
+484,2,False,Condominium,Selangor,petaling
+485,2,False,Condominium,Selangor,petaling
+486,2,False,Condominium,Selangor,petaling
+487,7,False,Terrace House,Selangor,petaling
+488,8,False,Terrace House,Selangor,petaling
+489,2,False,Bungalow / Detached House,Selangor,klang
+490,7,False,Terrace House,Selangor,petaling
+491,6,False,Terrace House,Selangor,petaling
+492,6,False,Link Bungalow / Semi-Detached,Selangor,petaling
+493,3,False,Condominium,Selangor,petaling
+494,10,False,Terrace House,Selangor,petaling
+495,6,False,Condominium,Selangor,petaling
+496,7,False,Terrace House,Selangor,petaling
+497,9,False,Terrace House,Selangor,petaling
+498,2,False,Bungalow / Detached House,Selangor,klang
+499,10,False,Terrace House,Selangor,petaling
+500,6,False,Terrace House,Selangor,klang
+501,6,False,Terrace House,Selangor,klang
+502,10,False,Terrace House,Selangor,petaling
+503,8,False,Terrace House,Selangor,klang
+504,8,False,Terrace House,Selangor,klang
+505,10,False,Condominium,Selangor,klang
+506,6,False,Condominium,Selangor,petaling
+507,10,False,Condominium,Selangor,klang
+508,8,False,Link Bungalow / Semi-Detached,Selangor,petaling
+509,8,False,Terrace House,Selangor,petaling
+510,8,False,Link Bungalow / Semi-Detached,Selangor,petaling
+511,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+512,8,False,Terrace House,Selangor,petaling
+513,4,False,Condominium,Selangor,petaling
+514,0,True,Condominium,Selangor,petaling
+515,3,False,Condominium,Selangor,petaling
+516,2,False,Flat,Selangor,klang
+517,3,False,Condominium,Selangor,petaling
+518,2,False,Condominium,Selangor,petaling
+519,7,False,Link Bungalow / Semi-Detached,Selangor,petaling
+520,10,False,Condominium,Selangor,klang
+521,10,False,Condominium,Selangor,petaling
+522,6,False,Link Bungalow / Semi-Detached,Selangor,petaling
+523,6,False,Condominium,Selangor,petaling
+524,7,False,Condominium,Selangor,petaling
+525,3,False,Condominium,Selangor,klang
+526,1,False,Terrace House,Selangor,petaling
+527,9,False,Condominium,Selangor,klang
+528,10,False,Terrace House,Selangor,petaling
+529,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+530,8,False,Link Bungalow / Semi-Detached,Selangor,petaling
+531,8,False,Condominium,Selangor,petaling
+532,10,False,Terrace House,Selangor,petaling
+533,9,False,Terrace House,Selangor,petaling
+534,10,False,Terrace House,Selangor,klang
+535,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+536,10,False,Terrace House,Selangor,petaling
+537,2,False,Flat,Selangor,klang
+538,5,False,Terrace House,Selangor,petaling
+539,2,False,Condominium,Selangor,petaling
+540,2,False,Condominium,Selangor,petaling
+541,2,False,Link Bungalow / Semi-Detached,Selangor,petaling
+542,2,False,Link Bungalow / Semi-Detached,Selangor,petaling
+543,8,False,Terrace House,Selangor,petaling
+544,2,False,Link Bungalow / Semi-Detached,Selangor,petaling
+545,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+546,2,False,Link Bungalow / Semi-Detached,Selangor,petaling
+547,3,False,Condominium,Selangor,petaling
+548,6,False,Condominium,Selangor,petaling
+549,10,False,Terrace House,Selangor,petaling
+550,5,False,Terrace House,Selangor,petaling
+551,8,False,Terrace House,Selangor,klang
+552,4,False,Condominium,Selangor,petaling
+553,9,False,Terrace House,Selangor,klang
+554,6,False,Condominium,Selangor,petaling
+555,2,False,Flat,Selangor,klang
+556,3,False,Condominium,Selangor,petaling
+557,8,False,Condominium,Selangor,petaling
+558,8,False,Terrace House,Selangor,petaling
+559,9,False,Condominium,Selangor,petaling
+560,9,False,Terrace House,Selangor,klang
+561,7,False,Terrace House,Selangor,petaling
+562,8,False,Condominium,Selangor,klang
+563,3,False,Link Bungalow / Semi-Detached,Selangor,petaling
+564,4,False,Condominium,Selangor,petaling
+565,3,False,Terrace House,Selangor,kuala langat
+566,9,False,Terrace House,Selangor,klang
+567,8,False,Condominium,Selangor,klang
+568,3,False,Condominium,Selangor,petaling
+569,10,False,Condominium,Selangor,petaling
+570,8,False,Terrace House,Selangor,petaling
+571,10,False,Condominium,Selangor,petaling
+572,5,False,Terrace House,Selangor,petaling
+573,5,False,Terrace House,Selangor,klang
+574,10,False,Terrace House,Selangor,klang
+575,2,False,Link Bungalow / Semi-Detached,Selangor,petaling
+576,8,False,Condominium,Selangor,klang
+577,2,False,Condominium,Selangor,petaling
+578,2,False,Condominium,Selangor,petaling
+579,10,False,Condominium,Selangor,petaling
+580,10,False,Terrace House,Selangor,klang
+581,8,False,Terrace House,Selangor,petaling
+582,8,False,Condominium,Selangor,petaling
+583,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+584,6,False,Bungalow / Detached House,Selangor,petaling
+585,10,False,Terrace House,Selangor,petaling
+586,10,False,Condominium,Selangor,petaling
+587,8,False,Terrace House,Selangor,petaling
+588,8,False,Terrace House,Selangor,petaling
+589,8,False,Condominium,Selangor,petaling
+590,5,False,Terrace House,Selangor,petaling
+591,10,False,Condominium,Selangor,petaling
+592,4,False,Terrace House,Selangor,petaling
+593,4,False,Terrace House,Selangor,petaling
+594,10,False,Condominium,Selangor,petaling
+595,8,False,Condominium,Selangor,petaling
+596,5,False,Terrace House,Selangor,klang
+597,4,False,Flat,Selangor,petaling
+598,4,False,Condominium,Selangor,petaling
+599,8,False,Condominium,Selangor,klang
+600,8,False,Condominium,Selangor,petaling
+601,10,False,Condominium,Selangor,petaling
+602,7,False,Terrace House,Selangor,petaling
+603,8,False,Condominium,Selangor,petaling
+604,9,False,Condominium,Selangor,petaling
+605,3,False,Condominium,Selangor,petaling
+606,9,False,Condominium,Selangor,petaling
+607,8,False,Condominium,Selangor,petaling
+608,10,False,Condominium,Selangor,petaling
+609,10,False,Condominium,Selangor,petaling
+610,10,False,Condominium,Selangor,petaling
+611,8,False,Condominium,Selangor,petaling
+612,10,False,Condominium,Selangor,klang
+613,6,False,Condominium,Selangor,petaling
+614,10,False,Condominium,Selangor,petaling
+615,10,False,Condominium,Selangor,petaling
+616,8,False,Condominium,Selangor,petaling
+617,8,False,Condominium,Selangor,klang
+618,1,False,Condominium,Selangor,klang
+619,9,False,Condominium,Selangor,petaling
+620,10,False,Condominium,Selangor,petaling
+621,10,False,Condominium,Selangor,petaling
+622,9,False,Condominium,Selangor,petaling
+623,7,False,Condominium,Selangor,petaling
+624,8,False,Terrace House,Selangor,petaling
+625,8,False,Condominium,Selangor,petaling
+626,1,False,Condominium,Selangor,klang
+627,10,False,Bungalow / Detached House,Selangor,petaling
+628,8,False,Condominium,Selangor,petaling
+629,8,False,Condominium,Selangor,petaling
+630,10,False,Condominium,Selangor,petaling
+631,9,False,Bungalow / Detached House,Selangor,petaling
+632,6,False,Condominium,Selangor,petaling
+633,10,False,Condominium,Selangor,petaling
+634,10,False,Condominium,Selangor,petaling
+635,7,False,Condominium,Selangor,petaling
+636,6,False,Condominium,Selangor,petaling
+637,10,False,Terrace House,Selangor,klang
+638,8,False,Condominium,Selangor,petaling
+639,6,False,Condominium,Selangor,petaling
+640,3,False,Condominium,Selangor,petaling
+641,10,False,Condominium,Selangor,petaling
+642,3,False,Condominium,Selangor,petaling
+643,10,False,Condominium,Selangor,petaling
+644,10,False,Condominium,Selangor,petaling
+645,8,False,Terrace House,Selangor,klang
+646,10,False,Condominium,Selangor,petaling
+647,8,False,Condominium,Selangor,petaling
+648,5,False,Town House,Selangor,petaling
+649,7,False,Terrace House,Selangor,klang
+650,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+651,6,False,Terrace House,Selangor,petaling
+652,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+653,7,False,Condominium,Selangor,petaling
+654,2,False,Condominium,Selangor,petaling
+655,4,False,Bungalow / Detached House,Selangor,petaling
+656,7,False,Condominium,Selangor,petaling
+657,8,False,Condominium,Selangor,klang
+658,10,False,Condominium,Selangor,petaling
+659,10,False,Terrace House,Selangor,klang
+660,5,False,Town House,Selangor,petaling
+661,5,False,Town House,Selangor,petaling
+662,8,False,Terrace House,Selangor,petaling
+663,10,False,Condominium,Selangor,petaling
+664,10,False,Condominium,Selangor,petaling
+665,4,False,Terrace House,Selangor,petaling
+666,8,False,Condominium,Selangor,petaling
+667,5,False,Terrace House,Selangor,petaling
+668,10,False,Condominium,Selangor,petaling
+669,8,False,Condominium,Selangor,klang
+670,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+671,10,False,Condominium,Selangor,petaling
+672,10,False,Terrace House,Selangor,klang
+673,6,False,Condominium,Selangor,petaling
+674,5,False,Condominium,Selangor,petaling
+675,10,False,Terrace House,Selangor,petaling
+676,6,False,Condominium,Selangor,petaling
+677,10,False,Condominium,Selangor,petaling
+678,8,False,Condominium,Selangor,petaling
+679,10,False,Condominium,Selangor,petaling
+680,10,False,Terrace House,Selangor,klang
+681,8,False,Terrace House,Selangor,petaling
+682,8,False,Terrace House,Selangor,petaling
+683,6,False,Condominium,Selangor,petaling
+684,9,False,Link Bungalow / Semi-Detached,Selangor,petaling
+685,10,False,Condominium,Selangor,klang
+686,6,False,Condominium,Selangor,petaling
+687,8,False,Terrace House,Selangor,petaling
+688,6,False,Condominium,Selangor,petaling
+689,3,False,Terrace House,Selangor,petaling
+690,9,False,Condominium,Selangor,petaling
+691,10,False,Condominium,Selangor,petaling
+692,3,False,Condominium,Selangor,petaling
+693,9,False,Condominium,Selangor,petaling
+694,8,False,Condominium,Selangor,petaling
+695,7,False,Condominium,Selangor,petaling
+696,7,False,Condominium,Selangor,petaling
+697,10,False,Condominium,Selangor,petaling
+698,10,False,Condominium,Selangor,klang
+699,10,False,Terrace House,Selangor,petaling
+700,10,False,Condominium,Selangor,petaling
+701,4,False,Condominium,Selangor,petaling
+702,4,False,Condominium,Selangor,petaling
+703,4,False,Condominium,Selangor,petaling
+704,4,False,Condominium,Selangor,petaling
+705,5,False,Condominium,Selangor,petaling
+706,8,False,Condominium,Selangor,petaling
+707,6,False,Condominium,Selangor,petaling
+708,6,False,Condominium,Selangor,petaling
+709,10,False,Condominium,Selangor,klang
+710,8,False,Condominium,Selangor,petaling
+711,10,False,Condominium,Selangor,klang
+712,3,False,Terrace House,Selangor,petaling
+713,6,False,Condominium,Selangor,petaling
+714,5,False,Condominium,Selangor,petaling
+715,3,False,Terrace House,Selangor,petaling
+716,10,False,Condominium,Selangor,petaling
+717,10,False,Condominium,Selangor,petaling
+718,8,False,Condominium,Selangor,petaling
+719,3,False,Condominium,Selangor,petaling
+720,10,False,Condominium,Selangor,petaling
+721,10,False,Condominium,Selangor,petaling
+722,4,False,Condominium,Selangor,petaling
+723,10,False,Condominium,Selangor,petaling
+724,8,False,Condominium,Selangor,petaling
+725,8,False,Condominium,Selangor,petaling
+726,8,False,Condominium,Selangor,petaling
+727,7,False,Condominium,Selangor,petaling
+728,8,False,Condominium,Selangor,petaling
+729,8,False,Condominium,Selangor,petaling
+730,10,False,Condominium,Selangor,klang
+731,6,False,Condominium,Selangor,petaling
+732,5,False,Condominium,Selangor,petaling
+733,8,False,Condominium,Selangor,petaling
+734,10,False,Condominium,Selangor,petaling
+735,5,False,Condominium,Selangor,petaling
+736,3,False,Link Bungalow / Semi-Detached,Selangor,petaling
+737,5,False,Condominium,Selangor,petaling
+738,8,False,Terrace House,Selangor,petaling
+739,9,False,Condominium,Selangor,petaling
+740,3,False,Link Bungalow / Semi-Detached,Selangor,petaling
+741,10,False,Condominium,Selangor,petaling
+742,2,False,Condominium,Selangor,petaling
+743,5,False,Condominium,Selangor,petaling
+744,8,False,Terrace House,Selangor,petaling
+745,8,False,Terrace House,Selangor,petaling
+746,4,False,Condominium,Selangor,petaling
+747,2,False,Condominium,Selangor,petaling
+748,2,False,Condominium,Selangor,petaling
+749,9,False,Condominium,Selangor,petaling
+750,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+751,9,False,Condominium,Selangor,petaling
+752,6,False,Terrace House,Selangor,petaling
+753,8,False,Condominium,Selangor,petaling
+754,8,False,Terrace House,Selangor,petaling
+755,3,False,Condominium,Selangor,petaling
+756,9,False,Condominium,Selangor,petaling
+757,5,False,Condominium,Selangor,petaling
+758,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+759,3,False,Link Bungalow / Semi-Detached,Selangor,petaling
+760,8,False,Terrace House,Selangor,petaling
+761,8,False,Condominium,Selangor,petaling
+762,5,False,Condominium,Selangor,petaling
+763,5,False,Condominium,Selangor,petaling
+764,9,False,Condominium,Selangor,petaling
+765,5,False,Condominium,Selangor,petaling
+766,9,False,Terrace House,Selangor,petaling
+767,8,False,Terrace House,Selangor,petaling
+768,6,False,Condominium,Selangor,petaling
+769,9,False,Condominium,Selangor,petaling
+770,9,False,Bungalow / Detached House,Selangor,petaling
+771,9,False,Bungalow / Detached House,Selangor,petaling
+772,9,False,Bungalow / Detached House,Selangor,petaling
+773,9,False,Condominium,Selangor,petaling
+774,6,False,Condominium,Selangor,petaling
+775,8,False,Condominium,Selangor,petaling
+776,8,False,Condominium,Selangor,petaling
+777,9,False,Condominium,Selangor,petaling
+778,6,False,Condominium,Selangor,petaling
+779,10,False,Condominium,Selangor,petaling
+780,3,False,Link Bungalow / Semi-Detached,Selangor,kuala langat
+781,6,False,Condominium,Selangor,petaling
+782,8,False,Condominium,Selangor,petaling
+783,10,False,Condominium,Selangor,petaling
+784,4,False,Link Bungalow / Semi-Detached,Selangor,klang
+785,8,False,Terrace House,Selangor,klang
+786,3,False,Link Bungalow / Semi-Detached,Selangor,kuala langat
+787,10,False,Condominium,Selangor,klang
+788,7,False,Terrace House,Selangor,klang
+789,10,False,Condominium,Selangor,petaling
+790,10,False,Condominium,Selangor,petaling
+791,8,False,Terrace House,Selangor,klang
+792,2,False,Terrace House,Selangor,klang
+793,10,False,Condominium,Selangor,petaling
+794,10,False,Condominium,Selangor,petaling
+795,10,False,Condominium,Selangor,petaling
+796,4,False,Link Bungalow / Semi-Detached,Selangor,klang
+797,2,False,Terrace House,Selangor,klang
+798,10,False,Condominium,Selangor,klang
+799,5,False,Condominium,Selangor,petaling
+800,10,False,Condominium,Selangor,petaling
+801,8,False,Terrace House,Selangor,klang
+802,10,False,Condominium,Selangor,petaling
+803,4,False,Flat,Selangor,petaling
+804,4,False,Link Bungalow / Semi-Detached,Selangor,klang
+805,9,False,Terrace House,Selangor,klang
+806,3,False,Link Bungalow / Semi-Detached,Selangor,kuala langat
+807,10,False,Condominium,Selangor,klang
+808,4,False,Flat,Selangor,petaling
+809,7,False,Condominium,Selangor,petaling
+810,5,False,Condominium,Selangor,petaling
+811,9,False,Terrace House,Selangor,klang
+812,3,False,Terrace House,Selangor,kuala langat
+813,5,False,Condominium,Selangor,petaling
+814,9,False,Terrace House,Selangor,klang
+815,5,False,Condominium,Selangor,petaling
+816,5,False,Condominium,Selangor,petaling
+817,7,False,Condominium,Selangor,petaling
+818,3,False,Terrace House,Selangor,kuala langat
+819,10,False,Condominium,Selangor,petaling
+820,8,False,Terrace House,Selangor,klang
+821,10,False,Condominium,Selangor,petaling
+822,4,False,Condominium,Selangor,petaling
+823,4,False,Condominium,Selangor,petaling
+824,10,False,Condominium,Selangor,petaling
+825,3,False,Terrace House,Selangor,kuala langat
+826,10,False,Condominium,Selangor,petaling
+827,6,False,Condominium,Selangor,petaling
+828,6,False,Condominium,Selangor,petaling
+829,10,False,Condominium,Selangor,petaling
+830,7,False,Link Bungalow / Semi-Detached,Selangor,petaling
+831,10,False,Condominium,Selangor,petaling
+832,10,False,Condominium,Selangor,petaling
+833,4,False,Flat,Selangor,petaling
+834,7,False,Terrace House,Selangor,klang
+835,8,False,Condominium,Selangor,petaling
+836,9,False,Condominium,Selangor,petaling
+837,10,False,Condominium,Selangor,petaling
+838,10,False,Condominium,Selangor,petaling
+839,9,False,Condominium,Selangor,petaling
+840,9,False,Condominium,Selangor,petaling
+841,9,False,Bungalow / Detached House,Selangor,petaling
+842,10,False,Condominium,Selangor,petaling
+843,7,False,Link Bungalow / Semi-Detached,Selangor,klang
+844,8,False,Condominium,Selangor,petaling
+845,10,False,Condominium,Selangor,petaling
+846,10,False,Condominium,Selangor,petaling
+847,10,False,Condominium,Selangor,klang
+848,10,False,Condominium,Selangor,petaling
+849,10,False,Condominium,Selangor,petaling
+850,10,False,Condominium,Selangor,petaling
+851,1,False,Terrace House,Selangor,petaling
+852,5,False,Condominium,Selangor,petaling
+853,5,False,Condominium,Selangor,petaling
+854,10,False,Condominium,Selangor,petaling
+855,4,False,Link Bungalow / Semi-Detached,Selangor,klang
+856,10,False,Condominium,Selangor,petaling
+857,10,False,Condominium,Selangor,petaling
+858,5,False,Condominium,Selangor,petaling
+859,3,False,Link Bungalow / Semi-Detached,Selangor,petaling
+860,10,False,Condominium,Selangor,petaling
+861,7,False,Link Bungalow / Semi-Detached,Selangor,petaling
+862,7,False,Condominium,Selangor,petaling
+863,7,False,Condominium,Selangor,petaling
+864,8,False,Bungalow / Detached House,Selangor,petaling
+865,5,False,Condominium,Selangor,petaling
+866,7,False,Condominium,Selangor,petaling
+867,5,False,Condominium,Selangor,petaling
+868,10,False,Condominium,Selangor,petaling
+869,8,False,Condominium,Selangor,petaling
+870,8,False,Condominium,Selangor,petaling
+871,10,False,Condominium,Selangor,petaling
+872,5,False,Condominium,Selangor,petaling
+873,10,False,Condominium,Selangor,petaling
+874,10,False,Condominium,Selangor,petaling
+875,9,False,Condominium,Selangor,petaling
+876,4,False,Condominium,Selangor,petaling
+877,4,False,Condominium,Selangor,petaling
+878,6,False,Condominium,Selangor,petaling
+879,10,False,Terrace House,Selangor,klang
+880,9,False,Condominium,Selangor,petaling
+881,10,False,Condominium,Selangor,klang
+882,3,False,Condominium,Selangor,petaling
+883,4,False,Condominium,Selangor,petaling
+884,3,False,Condominium,Selangor,petaling
+885,5,False,Condominium,Selangor,petaling
+886,4,False,Condominium,Selangor,petaling
+887,3,False,Condominium,Selangor,petaling
+888,5,False,Condominium,Selangor,klang
+889,1,False,Condominium,Selangor,petaling
+890,10,False,Condominium,Selangor,petaling
+891,6,False,Condominium,Selangor,petaling
+892,5,False,Condominium,Selangor,petaling
+893,3,False,Condominium,Selangor,klang
+894,3,False,Terrace House,Selangor,petaling
+895,4,False,Condominium,Selangor,petaling
+896,5,False,Condominium,Selangor,petaling
+897,3,False,Condominium,Selangor,petaling
+898,10,False,Condominium,Selangor,petaling
+899,10,False,Condominium,Selangor,petaling
+900,1,False,Condominium,Selangor,kuala langat
+901,10,False,Condominium,Selangor,petaling
+902,10,False,Condominium,Selangor,petaling
+903,7,False,Condominium,Selangor,petaling
+904,7,False,Condominium,Selangor,petaling
+905,0,True,Terrace House,Selangor,gombak
+906,5,False,Condominium,Selangor,petaling
+907,5,False,Condominium,Selangor,petaling
+908,6,False,Condominium,Selangor,petaling
+909,6,False,Condominium,Selangor,petaling
+910,8,False,Condominium,Selangor,petaling
+911,6,False,Condominium,Selangor,petaling
+912,5,False,Condominium,Selangor,petaling
+913,3,False,Condominium,Selangor,klang
+914,10,False,Condominium,Selangor,petaling
+915,9,False,Condominium,Selangor,petaling
+916,5,False,Condominium,Selangor,petaling
+917,5,False,Terrace House,Selangor,petaling
+918,4,False,Terrace House,Selangor,petaling
+919,5,False,Terrace House,Selangor,petaling
+920,8,False,Link Bungalow / Semi-Detached,Selangor,petaling
+921,10,False,Bungalow / Detached House,Selangor,petaling
+922,6,False,Terrace House,Selangor,sepang
+923,5,False,Terrace House,Selangor,sepang
+924,4,False,Terrace House,Selangor,sepang
+925,5,False,Terrace House,Selangor,petaling
+926,5,False,Terrace House,Selangor,petaling
+927,5,False,Terrace House,Selangor,petaling
+928,5,False,Terrace House,Selangor,petaling
+929,7,False,Terrace House,Selangor,petaling
+930,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+931,6,False,Terrace House,Selangor,petaling
+932,7,False,Terrace House,Selangor,sepang
+933,8,False,Terrace House,Selangor,petaling
+934,6,False,Terrace House,Selangor,petaling
+935,3,False,Terrace House,Selangor,sepang
+936,9,False,Terrace House,Selangor,petaling
+937,4,False,Terrace House,Selangor,petaling
+938,9,False,Terrace House,Selangor,sepang
+939,4,False,Terrace House,Selangor,petaling
+940,10,False,Terrace House,Selangor,sepang
+941,10,False,Bungalow / Detached House,Selangor,petaling
+942,3,False,Terrace House,Selangor,sepang
+943,7,False,Terrace House,Selangor,petaling
+944,5,False,Terrace House,Selangor,sepang
+945,10,False,Terrace House,Selangor,sepang
+946,2,False,Condominium,Selangor,petaling
+947,5,False,Condominium,Selangor,petaling
+948,2,False,Terrace House,Selangor,sepang
+949,9,False,Terrace House,Selangor,petaling
+950,0,True,Bungalow / Detached House,Selangor,petaling
+951,6,False,Terrace House,Selangor,petaling
+952,3,False,Terrace House,Selangor,sepang
+953,10,False,Bungalow / Detached House,Selangor,petaling
+954,10,False,Bungalow / Detached House,Selangor,petaling
+955,10,False,Bungalow / Detached House,Selangor,petaling
+956,4,False,Terrace House,Selangor,petaling
+957,2,False,Terrace House,Selangor,kuala lumpur
+958,10,False,Terrace House,Selangor,sepang
+959,3,False,Terrace House,Selangor,sepang
+960,5,False,Terrace House,Selangor,petaling
+961,9,False,Terrace House,Selangor,sepang
+962,6,False,Terrace House,Selangor,petaling
+963,8,False,Bungalow / Detached House,Selangor,petaling
+964,10,False,Terrace House,Selangor,petaling
+965,4,False,Terrace House,Selangor,petaling
+966,4,False,Terrace House,Selangor,petaling
+967,10,False,Bungalow / Detached House,Selangor,petaling
+968,2,False,Town House,Selangor,petaling
+969,7,False,Terrace House,Selangor,petaling
+970,2,False,Town House,Selangor,petaling
+971,6,False,Terrace House,Selangor,petaling
+972,8,False,Terrace House,Selangor,sepang
+973,2,False,Terrace House,Selangor,petaling
+974,4,False,Link Bungalow / Semi-Detached,Selangor,petaling
+975,6,False,Terrace House,Selangor,petaling
+976,9,False,Terrace House,Selangor,petaling
+977,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+978,8,False,Terrace House,Selangor,petaling
+979,5,False,Terrace House,Selangor,petaling
+980,4,False,Link Bungalow / Semi-Detached,Selangor,petaling
+981,3,False,Terrace House,Selangor,petaling
+982,5,False,Terrace House,Selangor,sepang
+983,3,False,Terrace House,Selangor,petaling
+984,7,False,Terrace House,Selangor,petaling
+985,10,False,Bungalow / Detached House,Selangor,petaling
+986,10,False,Terrace House,Selangor,petaling
+987,7,False,Bungalow / Detached House,Selangor,sepang
+988,6,False,Terrace House,Selangor,sepang
+989,1,False,Terrace House,Selangor,petaling
+990,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+991,10,False,Terrace House,Selangor,petaling
+992,5,False,Terrace House,Selangor,petaling
+993,7,False,Terrace House,Selangor,petaling
+994,0,True,Link Bungalow / Semi-Detached,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+995,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+996,1,False,Terrace House,Selangor,petaling
+997,10,False,Terrace House,Selangor,petaling
+998,5,False,Bungalow / Detached House,Selangor,petaling
+999,6,False,Terrace House,Selangor,petaling
+1000,10,False,Terrace House,Selangor,petaling
+1001,6,False,Terrace House,Selangor,petaling
+1002,5,False,Terrace House,Selangor,petaling
+1003,6,False,Link Bungalow / Semi-Detached,Selangor,sepang
+1004,1,False,Terrace House,Selangor,petaling
+1005,2,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+1006,6,False,Terrace House,Selangor,petaling
+1007,9,False,Terrace House,Selangor,petaling
+1008,3,False,Terrace House,Selangor,petaling
+1009,5,False,Terrace House,Selangor,petaling
+1010,6,False,Terrace House,Selangor,petaling
+1011,10,False,Terrace House,Selangor,petaling
+1012,5,False,Terrace House,Selangor,petaling
+1013,7,False,Terrace House,Selangor,petaling
+1014,3,False,Terrace House,Selangor,sepang
+1015,8,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1016,6,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1017,10,False,Terrace House,Selangor,petaling
+1018,7,False,Terrace House,Selangor,petaling
+1019,8,False,Terrace House,Selangor,petaling
+1020,7,False,Terrace House,Selangor,petaling
+1021,0,True,Terrace House,Selangor,sepang
+1022,5,False,Terrace House,Selangor,sepang
+1023,10,False,Terrace House,Selangor,petaling
+1024,2,False,Condominium,Selangor,petaling
+1025,5,False,Terrace House,Selangor,sepang
+1026,10,False,Terrace House,Selangor,petaling
+1027,3,False,Bungalow / Detached House,Selangor,petaling
+1028,10,False,Terrace House,Selangor,petaling
+1029,10,False,Terrace House,Selangor,petaling
+1030,5,False,Terrace House,Selangor,petaling
+1031,10,False,Terrace House,Selangor,petaling
+1032,3,False,Condominium,Selangor,petaling
+1033,9,False,Terrace House,Selangor,sepang
+1034,2,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1035,1,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+1036,10,False,Terrace House,Selangor,petaling
+1037,10,False,Terrace House,Selangor,petaling
+1038,9,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1039,5,False,Terrace House,Selangor,sepang
+1040,2,False,Condominium,Selangor,petaling
+1041,2,False,Bungalow / Detached House,Selangor,petaling
+1042,6,False,Terrace House,Selangor,petaling
+1043,3,False,Terrace House,Selangor,petaling
+1044,10,False,Terrace House,Selangor,petaling
+1045,2,False,Condominium,Selangor,petaling
+1046,6,False,Terrace House,Selangor,petaling
+1047,7,False,Terrace House,Selangor,petaling
+1048,7,False,Bungalow / Detached House,Selangor,petaling
+1049,8,False,Terrace House,Selangor,petaling
+1050,5,False,Terrace House,Selangor,petaling
+1051,5,False,Terrace House,Selangor,petaling
+1052,8,False,Terrace House,Selangor,petaling
+1053,7,False,Terrace House,Selangor,petaling
+1054,10,False,Terrace House,Selangor,petaling
+1055,10,False,Terrace House,Selangor,petaling
+1056,6,False,Terrace House,Selangor,petaling
+1057,3,False,Terrace House,Selangor,petaling
+1058,0,True,Link Bungalow / Semi-Detached,Selangor,petaling
+1059,3,False,Terrace House,Selangor,sepang
+1060,3,False,Terrace House,Selangor,petaling
+1061,7,False,Terrace House,Selangor,sepang
+1062,3,False,Terrace House,Selangor,sepang
+1063,9,False,Terrace House,Selangor,sepang
+1064,8,False,Terrace House,Selangor,petaling
+1065,5,False,Terrace House,Selangor,petaling
+1066,4,False,Terrace House,Selangor,kuala lumpur
+1067,7,False,Terrace House,Selangor,petaling
+1068,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1069,10,False,Terrace House,Selangor,petaling
+1070,9,False,Terrace House,Selangor,petaling
+1071,4,False,Terrace House,Selangor,sepang
+1072,7,False,Terrace House,Selangor,petaling
+1073,8,False,Terrace House,Selangor,petaling
+1074,9,False,Terrace House,Selangor,petaling
+1075,2,False,Terrace House,Selangor,petaling
+1076,10,False,Terrace House,Selangor,petaling
+1077,8,False,Terrace House,Selangor,petaling
+1078,8,False,Terrace House,Selangor,petaling
+1079,5,False,Terrace House,Selangor,sepang
+1080,6,False,Terrace House,Selangor,petaling
+1081,3,False,Condominium,Selangor,petaling
+1082,10,False,Terrace House,Selangor,petaling
+1083,10,False,Terrace House,Selangor,petaling
+1084,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1085,7,False,Terrace House,Selangor,petaling
+1086,6,False,Terrace House,Selangor,sepang
+1087,10,False,Terrace House,Selangor,sepang
+1088,0,True,Terrace House,Selangor,klang
+1089,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1090,10,False,Terrace House,Selangor,petaling
+1091,6,False,Terrace House,Selangor,petaling
+1092,1,False,Terrace House,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+1093,8,False,Terrace House,Selangor,petaling
+1094,10,False,Terrace House,Selangor,sepang
+1095,10,False,Terrace House,Selangor,sepang
+1096,8,False,Terrace House,Selangor,petaling
+1097,10,False,Terrace House,Selangor,petaling
+1098,6,False,Terrace House,Selangor,petaling
+1099,6,False,Terrace House,Selangor,petaling
+1100,2,False,Terrace House,Selangor,petaling
+1101,10,False,Terrace House,Selangor,petaling
+1102,10,False,Terrace House,Selangor,petaling
+1103,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1104,5,False,Terrace House,Selangor,petaling
+1105,3,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1106,9,False,Terrace House,Selangor,sepang
+1107,10,False,Terrace House,Selangor,petaling
+1108,10,False,Terrace House,Selangor,sepang
+1109,3,False,Bungalow / Detached House,Selangor,petaling
+1110,3,False,Bungalow / Detached House,Selangor,petaling
+1111,5,False,Terrace House,Selangor,petaling
+1112,10,False,Terrace House,Selangor,petaling
+1113,6,False,Terrace House,Selangor,petaling
+1114,6,False,Terrace House,Selangor,petaling
+1115,10,False,Terrace House,Selangor,petaling
+1116,5,False,Link Bungalow / Semi-Detached,Selangor,sepang
+1117,10,False,Terrace House,Selangor,sepang
+1118,10,False,Terrace House,Selangor,petaling
+1119,7,False,Terrace House,Selangor,sepang
+1120,8,False,Terrace House,Selangor,petaling
+1121,2,False,Condominium,Selangor,petaling
+1122,9,False,Terrace House,Selangor,petaling
+1123,7,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1124,5,False,Terrace House,Selangor,petaling
+1125,10,False,Terrace House,Selangor,petaling
+1126,7,False,Terrace House,Selangor,petaling
+1127,10,False,Terrace House,Selangor,petaling
+1128,3,False,Town House,Selangor,petaling
+1129,3,False,Terrace House,Selangor,petaling
+1130,9,False,Terrace House,Selangor,petaling
+1131,6,False,Terrace House,Selangor,petaling
+1132,0,True,Town House,Selangor,petaling
+1133,0,True,Terrace House,Selangor,sepang
+1134,10,False,Terrace House,Selangor,petaling
+1135,8,False,Terrace House,Selangor,petaling
+1136,8,False,Terrace House,Selangor,sepang
+1137,9,False,Terrace House,Selangor,sepang
+1138,7,False,Terrace House,Selangor,petaling
+1139,9,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1140,9,False,Terrace House,Selangor,sepang
+1141,10,False,Bungalow / Detached House,Selangor,petaling
+1142,3,False,Terrace House,Selangor,petaling
+1143,7,False,Terrace House,Selangor,petaling
+1144,4,False,Terrace House,Selangor,sepang
+1145,10,False,Terrace House,Selangor,petaling
+1146,10,False,Terrace House,Selangor,petaling
+1147,8,False,Terrace House,Selangor,petaling
+1148,7,False,Terrace House,Selangor,petaling
+1149,4,False,Bungalow / Detached House,Selangor,petaling
+1150,1,False,Terrace House,Selangor,petaling
+1151,4,False,Terrace House,Selangor,petaling
+1152,3,False,Terrace House,Selangor,sepang
+1153,10,False,Terrace House,Selangor,petaling
+1154,10,False,Terrace House,Selangor,petaling
+1155,7,False,Terrace House,Selangor,petaling
+1156,3,False,Terrace House,Selangor,sepang
+1157,10,False,Terrace House,Selangor,sepang
+1158,7,False,Bungalow / Detached House,Selangor,petaling
+1159,6,False,Terrace House,Selangor,petaling
+1160,10,False,Terrace House,Selangor,sepang
+1161,10,False,Terrace House,Selangor,petaling
+1162,9,False,Terrace House,Selangor,sepang
+1163,4,False,Terrace House,Selangor,petaling
+1164,4,False,Terrace House,Selangor,sepang
+1165,8,False,Terrace House,Selangor,petaling
+1166,4,False,Terrace House,Selangor,kuala lumpur
+1167,8,False,Terrace House,Selangor,sepang
+1168,8,False,Terrace House,Selangor,petaling
+1169,6,False,Terrace House,Selangor,petaling
+1170,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1171,5,False,Terrace House,Selangor,sepang
+1172,2,False,Bungalow / Detached House,Selangor,petaling
+1173,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1174,8,False,Terrace House,Selangor,sepang
+1175,10,False,Terrace House,Selangor,petaling
+1176,10,False,Terrace House,Selangor,sepang
+1177,10,False,Terrace House,Selangor,petaling
+1178,5,False,Link Bungalow / Semi-Detached,Selangor,sepang
+1179,10,False,Terrace House,Selangor,petaling
+1180,8,False,Terrace House,Selangor,petaling
+1181,10,False,Terrace House,Selangor,petaling
+1182,7,False,Terrace House,Selangor,petaling
+1183,10,False,Terrace House,Selangor,petaling
+1184,5,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1185,6,False,Terrace House,Selangor,sepang
+1186,5,False,Terrace House,Selangor,petaling
+1187,7,False,Terrace House,Selangor,petaling
+1188,1,False,Terrace House,Selangor,petaling
+1189,7,False,Terrace House,Selangor,petaling
+1190,3,False,Terrace House,Selangor,sepang
+1191,9,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1192,6,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1193,2,False,Bungalow / Detached House,Selangor,petaling
+1194,2,False,Terrace House,Selangor,petaling
+1195,10,False,Terrace House,Selangor,petaling
+1196,7,False,Link Bungalow / Semi-Detached,Selangor,sepang
+1197,5,False,Terrace House,Selangor,sepang
+1198,6,False,Terrace House,Selangor,petaling
+1199,10,False,Terrace House,Selangor,sepang
+1200,4,False,Terrace House,Selangor,petaling
+1201,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1202,5,False,Terrace House,Federal Territory of Kuala Lumpur,kuala lumpur
+1203,10,False,Terrace House,Selangor,petaling
+1204,6,False,Terrace House,Selangor,petaling
+1205,0,True,Town House,Selangor,petaling
+1206,4,False,Terrace House,Selangor,petaling
+1207,9,False,Terrace House,Selangor,sepang
+1208,5,False,Terrace House,Selangor,petaling
+1209,2,False,Terrace House,Selangor,petaling
+1210,9,False,Terrace House,Selangor,petaling
+1211,6,False,Terrace House,Selangor,petaling
+1212,7,False,Terrace House,Selangor,petaling
+1213,10,False,Terrace House,Selangor,petaling
+1214,6,False,Terrace House,Selangor,petaling
+1215,9,False,Terrace House,Selangor,petaling
+1216,7,False,Terrace House,Selangor,petaling
+1217,9,False,Terrace House,Selangor,petaling
+1218,3,False,Terrace House,Selangor,sepang
+1219,8,False,Terrace House,Selangor,petaling
+1220,4,False,Terrace House,Selangor,petaling
+1221,8,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1222,9,False,Terrace House,Selangor,petaling
+1223,4,False,Terrace House,Selangor,kuala lumpur
+1224,3,False,Terrace House,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+1225,7,False,Terrace House,Selangor,petaling
+1226,3,False,Terrace House,Selangor,sepang
+1227,6,False,Terrace House,Selangor,petaling
+1228,6,False,Terrace House,Selangor,sepang
+1229,7,False,Terrace House,Selangor,petaling
+1230,10,False,Terrace House,Selangor,petaling
+1231,9,False,Terrace House,Selangor,petaling
+1232,8,False,Terrace House,Selangor,petaling
+1233,6,False,Terrace House,Selangor,petaling
+1234,3,False,Terrace House,Selangor,petaling
+1235,10,False,Terrace House,Selangor,petaling
+1236,7,False,Terrace House,Selangor,petaling
+1237,6,False,Terrace House,Selangor,petaling
+1238,10,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1239,7,False,Link Bungalow / Semi-Detached,Selangor,petaling
+1240,7,False,Terrace House,Selangor,petaling
+1241,5,False,Terrace House,Selangor,petaling
+1242,1,False,Terrace House,Selangor,petaling
+1243,0,True,Link Bungalow / Semi-Detached,Melaka,alor gajah
+1244,1,False,Bungalow / Detached House,Melaka,melaka tengah
+1245,3,False,Terrace House,Melaka,melaka tengah
+1246,1,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1247,0,True,Terrace House,Melaka,melaka tengah
+1248,0,True,Condominium,Melaka,melaka tengah
+1249,0,True,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1250,0,True,Bungalow / Detached House,Melaka,melaka tengah
+1251,0,True,Bungalow / Detached House,Melaka,alor gajah
+1252,8,False,Terrace House,Melaka,jasin
+1253,0,True,Link Bungalow / Semi-Detached,Melaka,alor gajah
+1254,1,False,Terrace House,Melaka,melaka tengah
+1255,1,False,Bungalow / Detached House,Melaka,melaka tengah
+1256,0,True,Terrace House,Melaka,melaka tengah
+1257,0,True,Terrace House,Melaka,melaka tengah
+1258,1,False,Condominium,Melaka,melaka tengah
+1259,1,False,Condominium,Melaka,melaka tengah
+1260,0,True,Condominium,Melaka,melaka tengah
+1261,0,True,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1262,5,False,Bungalow / Detached House,Melaka,melaka tengah
+1263,1,False,Terrace House,Melaka,melaka tengah
+1264,0,True,Bungalow / Detached House,Melaka,melaka tengah
+1265,10,False,Terrace House,Melaka,melaka tengah
+1266,10,False,Terrace House,Malacca,melaka tengah
+1267,10,False,Terrace House,Melaka,melaka tengah
+1268,6,False,Terrace House,Melaka,melaka tengah
+1269,6,False,Terrace House,Melaka,melaka tengah
+1270,6,False,Terrace House,Melaka,melaka tengah
+1271,6,False,Terrace House,Melaka,melaka tengah
+1272,10,False,Terrace House,Melaka,melaka tengah
+1273,10,False,Terrace House,Melaka,melaka tengah
+1274,10,False,Terrace House,Melaka,melaka tengah
+1275,10,False,Terrace House,Malacca,melaka tengah
+1276,8,False,Terrace House,Malacca,melaka tengah
+1277,8,False,Terrace House,Malacca,melaka tengah
+1278,6,False,Bungalow / Detached House,Melaka,alor gajah
+1279,10,False,Bungalow / Detached House,Melaka,alor gajah
+1280,10,False,Bungalow / Detached House,Melaka,alor gajah
+1281,10,False,Bungalow / Detached House,Melaka,alor gajah
+1282,10,False,Terrace House,Melaka,melaka tengah
+1283,10,False,Terrace House,Melaka,melaka tengah
+1284,10,False,Terrace House,Melaka,melaka tengah
+1285,10,False,Terrace House,Melaka,melaka tengah
+1286,4,False,Terrace House,Melaka,melaka tengah
+1287,10,False,Terrace House,Melaka,melaka tengah
+1288,6,False,Terrace House,Malacca,melaka tengah
+1289,10,False,Terrace House,Melaka,melaka tengah
+1290,10,False,Terrace House,Melaka,melaka tengah
+1291,8,False,Terrace House,Malacca,melaka tengah
+1292,8,False,Terrace House,Malacca,melaka tengah
+1293,10,False,Terrace House,Melaka,melaka tengah
+1294,10,False,Terrace House,Melaka,melaka tengah
+1295,9,False,Terrace House,Melaka,melaka tengah
+1296,5,False,Terrace House,Melaka,melaka tengah
+1297,5,False,Terrace House,Melaka,melaka tengah
+1298,5,False,Terrace House,Melaka,melaka tengah
+1299,8,False,Bungalow / Detached House,Malacca,melaka tengah
+1300,8,False,Bungalow / Detached House,Malacca,melaka tengah
+1301,2,False,Bungalow / Detached House,Malacca,melaka tengah
+1302,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1303,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1304,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1305,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1306,7,False,Bungalow / Detached House,Melaka,melaka tengah
+1307,7,False,Bungalow / Detached House,Melaka,melaka tengah
+1308,8,False,Bungalow / Detached House,Melaka,alor gajah
+1309,8,False,Bungalow / Detached House,Melaka,alor gajah
+1310,8,False,Bungalow / Detached House,Melaka,alor gajah
+1311,4,False,Bungalow / Detached House,Malacca,alor gajah
+1312,4,False,Bungalow / Detached House,Malacca,alor gajah
+1313,7,False,Terrace House,Melaka,melaka tengah
+1314,10,False,Terrace House,Melaka,melaka tengah
+1315,10,False,Terrace House,Melaka,melaka tengah
+1316,10,False,Terrace House,Melaka,melaka tengah
+1317,10,False,Terrace House,Melaka,melaka tengah
+1318,7,False,Terrace House,Melaka,melaka tengah
+1319,7,False,Terrace House,Melaka,melaka tengah
+1320,7,False,Terrace House,Melaka,melaka tengah
+1321,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1322,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1323,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1324,10,False,Bungalow / Detached House,Melaka,jasin
+1325,10,False,Bungalow / Detached House,Melaka,jasin
+1326,10,False,Bungalow / Detached House,Malacca,melaka tengah
+1327,4,False,Bungalow / Detached House,Melaka,melaka tengah
+1328,4,False,Bungalow / Detached House,Melaka,melaka tengah
+1329,10,False,Bungalow / Detached House,Melaka,jasin
+1330,10,False,Bungalow / Detached House,Malacca,melaka tengah
+1331,10,False,Bungalow / Detached House,Malacca,melaka tengah
+1332,10,False,Bungalow / Detached House,Malacca,melaka tengah
+1333,10,False,Bungalow / Detached House,Malacca,melaka tengah
+1334,10,False,Bungalow / Detached House,Malacca,melaka tengah
+1335,7,False,Bungalow / Detached House,Malacca,melaka tengah
+1336,7,False,Bungalow / Detached House,Malacca,melaka tengah
+1337,10,False,Town House,Melaka,melaka tengah
+1338,10,False,Town House,Melaka,melaka tengah
+1339,10,False,Town House,Melaka,melaka tengah
+1340,9,False,Town House,Melaka,melaka tengah
+1341,8,False,Town House,Melaka,melaka tengah
+1342,10,False,Town House,Malacca,melaka tengah
+1343,10,False,Town House,Malacca,melaka tengah
+1344,10,False,Town House,Malacca,melaka tengah
+1345,10,False,Town House,Malacca,melaka tengah
+1346,4,False,Bungalow / Detached House,Melaka,melaka tengah
+1347,4,False,Bungalow / Detached House,Melaka,melaka tengah
+1348,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1349,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1350,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1351,7,False,Bungalow / Detached House,Melaka,melaka tengah
+1352,7,False,Bungalow / Detached House,Melaka,melaka tengah
+1353,7,False,Bungalow / Detached House,Malacca,jasin
+1354,10,False,Bungalow / Detached House,Melaka,jasin
+1355,10,False,Bungalow / Detached House,Melaka,melaka tengah
+1356,7,False,Bungalow / Detached House,Melaka,melaka tengah
+1357,3,False,Bungalow / Detached House,Melaka,melaka tengah
+1358,7,False,Bungalow / Detached House,Malacca,jasin
+1359,4,False,Bungalow / Detached House,Melaka,melaka tengah
+1360,4,False,Bungalow / Detached House,Melaka,melaka tengah
+1361,7,False,Bungalow / Detached House,Malacca,jasin
+1362,3,False,Bungalow / Detached House,Malacca,jasin
+1363,10,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1364,10,False,Link Bungalow / Semi-Detached,Malacca,jasin
+1365,10,False,Link Bungalow / Semi-Detached,Malacca,jasin
+1366,10,False,Link Bungalow / Semi-Detached,Malacca,jasin
+1367,3,False,Link Bungalow / Semi-Detached,Malacca,jasin
+1368,10,False,Link Bungalow / Semi-Detached,Melaka,jasin
+1369,10,False,Link Bungalow / Semi-Detached,Melaka,jasin
+1370,10,False,Link Bungalow / Semi-Detached,Melaka,jasin
+1371,10,False,Link Bungalow / Semi-Detached,Melaka,jasin
+1372,10,False,Link Bungalow / Semi-Detached,Melaka,jasin
+1373,10,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1374,7,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1375,7,False,Terrace House,Malacca,melaka tengah
+1376,7,False,Terrace House,Malacca,melaka tengah
+1377,7,False,Terrace House,Malacca,melaka tengah
+1378,7,False,Terrace House,Malacca,melaka tengah
+1379,10,False,Town House,Melaka,melaka tengah
+1380,4,False,Town House,Melaka,melaka tengah
+1381,10,False,Town House,Melaka,melaka tengah
+1382,3,False,Town House,Melaka,melaka tengah
+1383,10,False,Terrace House,Malacca,melaka tengah
+1384,10,False,Terrace House,Malacca,melaka tengah
+1385,10,False,Terrace House,Malacca,melaka tengah
+1386,10,False,Terrace House,Malacca,melaka tengah
+1387,10,False,Terrace House,Malacca,melaka tengah
+1388,10,False,Terrace House,Malacca,melaka tengah
+1389,10,False,Terrace House,Malacca,melaka tengah
+1390,8,False,Terrace House,Malacca,melaka tengah
+1391,8,False,Terrace House,Malacca,melaka tengah
+1392,10,False,Terrace House,Melaka,melaka tengah
+1393,10,False,Terrace House,Melaka,melaka tengah
+1394,10,False,Terrace House,Melaka,melaka tengah
+1395,10,False,Terrace House,Melaka,melaka tengah
+1396,10,False,Terrace House,Melaka,melaka tengah
+1397,10,False,Cluster House,Malacca,jasin
+1398,3,False,Cluster House,Melaka,jasin
+1399,3,False,Cluster House,Melaka,jasin
+1400,10,False,Terrace House,Melaka,melaka tengah
+1401,7,False,Terrace House,Melaka,alor gajah
+1402,10,False,Terrace House,Melaka,melaka tengah
+1403,7,False,Terrace House,Melaka,alor gajah
+1404,7,False,Terrace House,Melaka,alor gajah
+1405,10,False,Terrace House,Melaka,melaka tengah
+1406,7,False,Terrace House,Melaka,alor gajah
+1407,10,False,Terrace House,Melaka,melaka tengah
+1408,10,False,Terrace House,Melaka,melaka tengah
+1409,10,False,Terrace House,Melaka,melaka tengah
+1410,7,False,Terrace House,Melaka,alor gajah
+1411,7,False,Terrace House,Melaka,alor gajah
+1412,7,False,Terrace House,Melaka,alor gajah
+1413,7,False,Terrace House,Melaka,alor gajah
+1414,6,False,Terrace House,Melaka,melaka tengah
+1415,6,False,Terrace House,Melaka,melaka tengah
+1416,6,False,Terrace House,Melaka,melaka tengah
+1417,10,False,Terrace House,Melaka,melaka tengah
+1418,0,True,Terrace House,Melaka,melaka tengah
+1419,0,True,Terrace House,Melaka,melaka tengah
+1420,0,True,Terrace House,Melaka,melaka tengah
+1421,6,False,Terrace House,Melaka,melaka tengah
+1422,10,False,Terrace House,Melaka,melaka tengah
+1423,10,False,Terrace House,Melaka,jasin
+1424,10,False,Terrace House,Melaka,jasin
+1425,10,False,Cluster House,Malacca,jasin
+1426,7,False,Cluster House,Malacca,jasin
+1427,7,False,Cluster House,Malacca,jasin
+1428,3,False,Cluster House,Melaka,jasin
+1429,3,False,Cluster House,Melaka,jasin
+1430,10,False,Terrace House,Melaka,jasin
+1431,3,False,Terrace House,Melaka,melaka tengah
+1432,3,False,Terrace House,Melaka,melaka tengah
+1433,3,False,Terrace House,Melaka,melaka tengah
+1434,1,False,Terrace House,Melaka,melaka tengah
+1435,10,False,Terrace House,Melaka,melaka tengah
+1436,10,False,Terrace House,Melaka,melaka tengah
+1437,10,False,Terrace House,Melaka,jasin
+1438,3,False,Terrace House,Melaka,melaka tengah
+1439,1,False,Terrace House,Melaka,melaka tengah
+1440,10,False,Terrace House,Melaka,melaka tengah
+1441,10,False,Terrace House,Melaka,jasin
+1442,10,False,Terrace House,Melaka,jasin
+1443,10,False,Cluster House,Melaka,jasin
+1444,10,False,Cluster House,Melaka,jasin
+1445,10,False,Cluster House,Melaka,jasin
+1446,5,False,Terrace House,Malacca,melaka tengah
+1447,5,False,Terrace House,Malacca,melaka tengah
+1448,5,False,Terrace House,Malacca,melaka tengah
+1449,8,False,Terrace House,Melaka,jasin
+1450,8,False,Terrace House,Melaka,jasin
+1451,8,False,Terrace House,Melaka,jasin
+1452,8,False,Terrace House,Melaka,jasin
+1453,8,False,Terrace House,Melaka,jasin
+1454,8,False,Terrace House,Melaka,jasin
+1455,8,False,Terrace House,Melaka,jasin
+1456,8,False,Terrace House,Melaka,jasin
+1457,10,False,Cluster House,Malacca,jasin
+1458,10,False,Cluster House,Malacca,jasin
+1459,10,False,Cluster House,Malacca,jasin
+1460,10,False,Cluster House,Malacca,jasin
+1461,4,False,Cluster House,Melaka,jasin
+1462,4,False,Cluster House,Melaka,jasin
+1463,5,False,Terrace House,Malacca,melaka tengah
+1464,5,False,Terrace House,Malacca,melaka tengah
+1465,5,False,Terrace House,Malacca,melaka tengah
+1466,8,False,Terrace House,Malacca,melaka tengah
+1467,6,False,Terrace House,Melaka,melaka tengah
+1468,6,False,Terrace House,Melaka,melaka tengah
+1469,6,False,Terrace House,Melaka,melaka tengah
+1470,6,False,Terrace House,Melaka,melaka tengah
+1471,8,False,Terrace House,Malacca,melaka tengah
+1472,8,False,Terrace House,Malacca,melaka tengah
+1473,8,False,Terrace House,Malacca,melaka tengah
+1474,3,False,Terrace House,Malacca,melaka tengah
+1475,6,False,Terrace House,Melaka,alor gajah
+1476,6,False,Terrace House,Melaka,alor gajah
+1477,6,False,Terrace House,Melaka,alor gajah
+1478,3,False,Terrace House,Malacca,melaka tengah
+1479,3,False,Terrace House,Malacca,melaka tengah
+1480,3,False,Terrace House,Malacca,melaka tengah
+1481,6,False,Terrace House,Melaka,alor gajah
+1482,6,False,Terrace House,Melaka,alor gajah
+1483,6,False,Terrace House,Melaka,alor gajah
+1484,6,False,Terrace House,Melaka,alor gajah
+1485,3,False,Terrace House,Melaka,melaka tengah
+1486,3,False,Terrace House,Melaka,melaka tengah
+1487,3,False,Terrace House,Melaka,melaka tengah
+1488,4,False,Terrace House,Melaka,melaka tengah
+1489,4,False,Terrace House,Melaka,melaka tengah
+1490,7,False,Terrace House,Malacca,melaka tengah
+1491,4,False,Terrace House,Melaka,melaka tengah
+1492,10,False,Terrace House,Malacca,melaka tengah
+1493,4,False,Terrace House,Melaka,melaka tengah
+1494,10,False,Terrace House,Malacca,melaka tengah
+1495,3,False,Terrace House,Malacca,melaka tengah
+1496,7,False,Terrace House,Malacca,melaka tengah
+1497,7,False,Terrace House,Malacca,melaka tengah
+1498,4,False,Terrace House,Melaka,melaka tengah
+1499,3,False,Terrace House,Malacca,melaka tengah
+1500,7,False,Terrace House,Malacca,melaka tengah
+1501,10,False,Terrace House,Melaka,melaka tengah
+1502,10,False,Terrace House,Melaka,melaka tengah
+1503,10,False,Terrace House,Melaka,melaka tengah
+1504,8,False,Terrace House,Melaka,melaka tengah
+1505,8,False,Terrace House,Melaka,melaka tengah
+1506,3,False,Terrace House,Melaka,melaka tengah
+1507,3,False,Terrace House,Melaka,melaka tengah
+1508,10,False,Terrace House,Melaka,melaka tengah
+1509,8,False,Terrace House,Melaka,melaka tengah
+1510,8,False,Terrace House,Melaka,melaka tengah
+1511,8,False,Terrace House,Melaka,melaka tengah
+1512,8,False,Terrace House,Melaka,melaka tengah
+1513,10,False,Terrace House,Melaka,melaka tengah
+1514,7,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1515,10,False,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1516,10,False,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1517,10,False,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1518,10,False,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1519,10,False,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1520,10,False,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1521,3,False,Link Bungalow / Semi-Detached,Malacca,melaka tengah
+1522,10,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1523,10,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1524,10,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1525,10,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1526,0,True,Terrace House,Melaka,jasin
+1527,6,False,Terrace House,Melaka,melaka tengah
+1528,6,False,Terrace House,Melaka,melaka tengah
+1529,1,False,Terrace House,Melaka,melaka tengah
+1530,1,False,Terrace House,Melaka,melaka tengah
+1531,3,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1532,3,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1533,3,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1534,3,False,Link Bungalow / Semi-Detached,Melaka,melaka tengah
+1535,6,False,Terrace House,Melaka,melaka tengah
+1536,7,False,Terrace House,Negeri Sembilan,seremban
+1537,8,False,Terrace House,Negeri Sembilan,seremban
+1538,4,False,Terrace House,Negeri Sembilan,seremban
+1539,7,False,Condominium,Negeri Sembilan,seremban
+1540,5,False,Terrace House,Negeri Sembilan,seremban
+1541,10,False,Terrace House,Negeri Sembilan,seremban
+1542,10,False,Terrace House,Negeri Sembilan,seremban
+1543,2,False,Terrace House,Negeri Sembilan,seremban
+1544,7,False,Terrace House,Negeri Sembilan,seremban
+1545,9,False,Terrace House,Negeri Sembilan,seremban
+1546,2,False,Terrace House,Negeri Sembilan,port dickson
+1547,0,True,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1548,5,False,Terrace House,Negeri Sembilan,seremban
+1549,1,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1550,0,True,Terrace House,Negeri Sembilan,seremban
+1551,1,False,Bungalow / Detached House,Selangor,hulu langat
+1552,7,False,Terrace House,Negeri Sembilan,seremban
+1553,10,False,Terrace House,Negeri Sembilan,seremban
+1554,10,False,Terrace House,Negeri Sembilan,seremban
+1555,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1556,3,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1557,3,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1558,1,False,Terrace House,Negeri Sembilan,seremban
+1559,10,False,Terrace House,Negeri Sembilan,seremban
+1560,4,False,Terrace House,Negeri Sembilan,seremban
+1561,4,False,Terrace House,Negeri Sembilan,seremban
+1562,5,False,Condominium,Negeri Sembilan,seremban
+1563,7,False,Terrace House,Negeri Sembilan,seremban
+1564,7,False,Terrace House,Negeri Sembilan,seremban
+1565,8,False,Terrace House,Negeri Sembilan,sepang
+1566,7,False,Terrace House,Negeri Sembilan,seremban
+1567,3,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1568,10,False,Terrace House,Negeri Sembilan,seremban
+1569,8,False,Terrace House,Negeri Sembilan,seremban
+1570,9,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1571,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1572,5,False,Terrace House,Negeri Sembilan,seremban
+1573,1,False,Bungalow / Detached House,Selangor,hulu langat
+1574,0,True,Condominium,Negeri Sembilan,port dickson
+1575,0,True,Bungalow / Detached House,Negeri Sembilan,seremban
+1576,5,False,Terrace House,Negeri Sembilan,seremban
+1577,8,False,Condominium,Negeri Sembilan,seremban
+1578,10,False,Terrace House,Negeri Sembilan,seremban
+1579,2,False,Terrace House,Negeri Sembilan,seremban
+1580,1,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1581,9,False,Terrace House,Negeri Sembilan,seremban
+1582,0,True,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1583,10,False,Terrace House,Negeri Sembilan,seremban
+1584,0,True,Bungalow / Detached House,Negeri Sembilan,port dickson
+1585,7,False,Terrace House,Negeri Sembilan,seremban
+1586,5,False,Terrace House,Negeri Sembilan,seremban
+1587,9,False,Terrace House,Negeri Sembilan,seremban
+1588,8,False,Terrace House,Negeri Sembilan,seremban
+1589,3,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1590,3,False,Terrace House,Negeri Sembilan,seremban
+1591,5,False,Condominium,Negeri Sembilan,seremban
+1592,4,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1593,0,True,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1594,6,False,Terrace House,Negeri Sembilan,seremban
+1595,10,False,Terrace House,Negeri Sembilan,seremban
+1596,10,False,Terrace House,Negeri Sembilan,seremban
+1597,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1598,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1599,4,False,Terrace House,Negeri Sembilan,seremban
+1600,8,False,Terrace House,Negeri Sembilan,seremban
+1601,0,True,Terrace House,Melaka,alor gajah
+1602,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1603,2,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1604,4,False,Terrace House,Negeri Sembilan,seremban
+1605,1,False,Terrace House,Negeri Sembilan,seremban
+1606,1,False,Terrace House,Negeri Sembilan,seremban
+1607,1,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1608,6,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1609,7,False,Terrace House,Negeri Sembilan,seremban
+1610,9,False,Terrace House,Negeri Sembilan,seremban
+1611,8,False,Terrace House,Negeri Sembilan,seremban
+1612,2,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1613,1,False,Terrace House,Negeri Sembilan,seremban
+1614,7,False,Terrace House,Negeri Sembilan,seremban
+1615,5,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1616,0,True,Bungalow / Detached House,Negeri Sembilan,kuala pilah
+1617,2,False,Terrace House,Negeri Sembilan,seremban
+1618,2,False,Terrace House,Negeri Sembilan,seremban
+1619,1,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1620,2,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1621,0,True,Terrace House,Selangor,hulu langat
+1622,6,False,Terrace House,Negeri Sembilan,seremban
+1623,10,False,Terrace House,Negeri Sembilan,seremban
+1624,5,False,Terrace House,Negeri Sembilan,seremban
+1625,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1626,1,False,Terrace House,Negeri Sembilan,seremban
+1627,5,False,Condominium,Selangor,sepang
+1628,1,False,Condominium,Negeri Sembilan,seremban
+1629,7,False,Terrace House,Negeri Sembilan,seremban
+1630,8,False,Terrace House,Negeri Sembilan,seremban
+1631,8,False,Terrace House,Negeri Sembilan,seremban
+1632,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1633,7,False,Terrace House,Negeri Sembilan,seremban
+1634,4,False,Terrace House,Negeri Sembilan,seremban
+1635,5,False,Condominium,Negeri Sembilan,seremban
+1636,6,False,Terrace House,Negeri Sembilan,seremban
+1637,6,False,Condominium,Negeri Sembilan,seremban
+1638,9,False,Terrace House,Negeri Sembilan,seremban
+1639,10,False,Terrace House,Negeri Sembilan,seremban
+1640,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1641,5,False,Terrace House,Negeri Sembilan,seremban
+1642,5,False,Terrace House,Negeri Sembilan,seremban
+1643,10,False,Terrace House,Negeri Sembilan,seremban
+1644,6,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1645,1,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1646,7,False,Terrace House,Negeri Sembilan,seremban
+1647,3,False,Terrace House,Negeri Sembilan,seremban
+1648,3,False,Terrace House,Negeri Sembilan,seremban
+1649,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1650,5,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1651,7,False,Terrace House,Negeri Sembilan,seremban
+1652,9,False,Terrace House,Negeri Sembilan,seremban
+1653,5,False,Condominium,Negeri Sembilan,seremban
+1654,5,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1655,6,False,Terrace House,Negeri Sembilan,seremban
+1656,4,False,Terrace House,Negeri Sembilan,seremban
+1657,8,False,Terrace House,Negeri Sembilan,seremban
+1658,6,False,Terrace House,Negeri Sembilan,seremban
+1659,9,False,Terrace House,Negeri Sembilan,seremban
+1660,9,False,Terrace House,Negeri Sembilan,seremban
+1661,5,False,Terrace House,Negeri Sembilan,seremban
+1662,7,False,Terrace House,Negeri Sembilan,seremban
+1663,5,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1664,5,False,Condominium,Negeri Sembilan,seremban
+1665,8,False,Terrace House,Negeri Sembilan,seremban
+1666,3,False,Terrace House,Negeri Sembilan,seremban
+1667,2,False,Condominium,Negeri Sembilan,seremban
+1668,9,False,Terrace House,Negeri Sembilan,seremban
+1669,5,False,Terrace House,Negeri Sembilan,seremban
+1670,10,False,Terrace House,Negeri Sembilan,seremban
+1671,4,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1672,9,False,Terrace House,Negeri Sembilan,seremban
+1673,10,False,Terrace House,Negeri Sembilan,seremban
+1674,2,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1675,9,False,Terrace House,Negeri Sembilan,seremban
+1676,3,False,Terrace House,Negeri Sembilan,seremban
+1677,10,False,Terrace House,Negeri Sembilan,seremban
+1678,3,False,Terrace House,Negeri Sembilan,seremban
+1679,9,False,Terrace House,Negeri Sembilan,seremban
+1680,10,False,Terrace House,Negeri Sembilan,seremban
+1681,9,False,Terrace House,Negeri Sembilan,seremban
+1682,7,False,Terrace House,Negeri Sembilan,seremban
+1683,7,False,Terrace House,Negeri Sembilan,seremban
+1684,3,False,Terrace House,Negeri Sembilan,port dickson
+1685,3,False,Terrace House,Negeri Sembilan,seremban
+1686,3,False,Terrace House,Negeri Sembilan,port dickson
+1687,8,False,Terrace House,Negeri Sembilan,seremban
+1688,7,False,Terrace House,Negeri Sembilan,seremban
+1689,9,False,Terrace House,Negeri Sembilan,seremban
+1690,10,False,Terrace House,Negeri Sembilan,seremban
+1691,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1692,6,False,Terrace House,Negeri Sembilan,seremban
+1693,10,False,Terrace House,Negeri Sembilan,seremban
+1694,7,False,Condominium,Negeri Sembilan,seremban
+1695,0,True,Link Bungalow / Semi-Detached,Negeri Sembilan,port dickson
+1696,8,False,Terrace House,Negeri Sembilan,seremban
+1697,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1698,8,False,Terrace House,Negeri Sembilan,seremban
+1699,9,False,Terrace House,Negeri Sembilan,seremban
+1700,8,False,Terrace House,Negeri Sembilan,seremban
+1701,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1702,8,False,Terrace House,Negeri Sembilan,seremban
+1703,3,False,Condominium,Negeri Sembilan,seremban
+1704,5,False,Terrace House,Negeri Sembilan,port dickson
+1705,5,False,Terrace House,Negeri Sembilan,seremban
+1706,10,False,Terrace House,Negeri Sembilan,seremban
+1707,9,False,Terrace House,Negeri Sembilan,seremban
+1708,3,False,Terrace House,Negeri Sembilan,seremban
+1709,8,False,Terrace House,Negeri Sembilan,seremban
+1710,8,False,Terrace House,Negeri Sembilan,seremban
+1711,5,False,Terrace House,Negeri Sembilan,port dickson
+1712,9,False,Terrace House,Negeri Sembilan,seremban
+1713,7,False,Terrace House,Negeri Sembilan,port dickson
+1714,1,False,Terrace House,Negeri Sembilan,seremban
+1715,5,False,Terrace House,Negeri Sembilan,seremban
+1716,8,False,Terrace House,Negeri Sembilan,seremban
+1717,8,False,Condominium,Negeri Sembilan,seremban
+1718,4,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1719,0,True,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1720,6,False,Terrace House,Negeri Sembilan,seremban
+1721,10,False,Terrace House,Negeri Sembilan,seremban
+1722,1,False,Terrace House,Negeri Sembilan,seremban
+1723,7,False,Terrace House,Negeri Sembilan,seremban
+1724,9,False,Terrace House,Negeri Sembilan,seremban
+1725,5,False,Terrace House,Negeri Sembilan,seremban
+1726,10,False,Terrace House,Negeri Sembilan,seremban
+1727,5,False,Terrace House,Negeri Sembilan,seremban
+1728,10,False,Terrace House,Negeri Sembilan,seremban
+1729,10,False,Terrace House,Negeri Sembilan,seremban
+1730,8,False,Terrace House,Negeri Sembilan,seremban
+1731,7,False,Terrace House,Negeri Sembilan,seremban
+1732,2,False,Terrace House,Negeri Sembilan,seremban
+1733,5,False,Terrace House,Negeri Sembilan,seremban
+1734,7,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1735,10,False,Terrace House,Negeri Sembilan,seremban
+1736,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1737,5,False,Terrace House,Negeri Sembilan,seremban
+1738,8,False,Terrace House,Negeri Sembilan,seremban
+1739,4,False,Terrace House,Negeri Sembilan,port dickson
+1740,7,False,Terrace House,Negeri Sembilan,seremban
+1741,10,False,Terrace House,Negeri Sembilan,seremban
+1742,10,False,Terrace House,Negeri Sembilan,seremban
+1743,10,False,Terrace House,Negeri Sembilan,seremban
+1744,10,False,Terrace House,Negeri Sembilan,seremban
+1745,8,False,Terrace House,Negeri Sembilan,seremban
+1746,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1747,0,True,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1748,2,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1749,6,False,Terrace House,Negeri Sembilan,seremban
+1750,10,False,Terrace House,Negeri Sembilan,seremban
+1751,0,True,Bungalow / Detached House,Negeri Sembilan,port dickson
+1752,7,False,Terrace House,Negeri Sembilan,seremban
+1753,4,False,Terrace House,Negeri Sembilan,seremban
+1754,0,True,Bungalow / Detached House,Negeri Sembilan,seremban
+1755,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1756,7,False,Terrace House,Negeri Sembilan,seremban
+1757,5,False,Terrace House,Negeri Sembilan,seremban
+1758,7,False,Terrace House,Negeri Sembilan,seremban
+1759,8,False,Terrace House,Negeri Sembilan,seremban
+1760,10,False,Terrace House,Negeri Sembilan,seremban
+1761,10,False,Terrace House,Negeri Sembilan,seremban
+1762,4,False,Terrace House,Negeri Sembilan,seremban
+1763,4,False,Terrace House,Negeri Sembilan,port dickson
+1764,5,False,Terrace House,Negeri Sembilan,port dickson
+1765,8,False,Terrace House,Negeri Sembilan,seremban
+1766,3,False,Link Bungalow / Semi-Detached,Selangor,seremban
+1767,6,False,Terrace House,Negeri Sembilan,seremban
+1768,8,False,Terrace House,Negeri Sembilan,seremban
+1769,8,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1770,8,False,Terrace House,Negeri Sembilan,seremban
+1771,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1772,0,True,Bungalow / Detached House,Negeri Sembilan,seremban
+1773,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1774,8,False,Terrace House,Negeri Sembilan,seremban
+1775,8,False,Terrace House,Negeri Sembilan,seremban
+1776,5,False,Terrace House,Negeri Sembilan,seremban
+1777,2,False,Terrace House,Negeri Sembilan,seremban
+1778,10,False,Terrace House,Negeri Sembilan,seremban
+1779,2,False,Terrace House,Negeri Sembilan,seremban
+1780,2,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1781,7,False,Terrace House,Negeri Sembilan,seremban
+1782,0,True,Link Bungalow / Semi-Detached,Negeri Sembilan,port dickson
+1783,5,False,Terrace House,Negeri Sembilan,seremban
+1784,4,False,Terrace House,Negeri Sembilan,seremban
+1785,2,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1786,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1787,10,False,Terrace House,Negeri Sembilan,seremban
+1788,0,True,Bungalow / Detached House,Negeri Sembilan,seremban
+1789,3,False,Terrace House,Negeri Sembilan,seremban
+1790,3,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1791,5,False,Terrace House,Negeri Sembilan,seremban
+1792,8,False,Terrace House,Negeri Sembilan,seremban
+1793,7,False,Terrace House,Negeri Sembilan,seremban
+1794,5,False,Condominium,Negeri Sembilan,seremban
+1795,9,False,Terrace House,Negeri Sembilan,seremban
+1796,5,False,Terrace House,Negeri Sembilan,seremban
+1797,5,False,Terrace House,Negeri Sembilan,port dickson
+1798,7,False,Terrace House,Negeri Sembilan,seremban
+1799,8,False,Condominium,Negeri Sembilan,seremban
+1800,5,False,Condominium,Negeri Sembilan,seremban
+1801,5,False,Terrace House,Negeri Sembilan,seremban
+1802,8,False,Terrace House,Negeri Sembilan,seremban
+1803,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1804,2,False,Terrace House,Negeri Sembilan,seremban
+1805,5,False,Terrace House,Negeri Sembilan,seremban
+1806,10,False,Terrace House,Negeri Sembilan,seremban
+1807,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1808,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1809,9,False,Terrace House,Negeri Sembilan,seremban
+1810,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1811,9,False,Terrace House,Negeri Sembilan,seremban
+1812,10,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1813,8,False,Terrace House,Negeri Sembilan,seremban
+1814,4,False,Terrace House,Negeri Sembilan,seremban
+1815,1,False,Terrace House,Negeri Sembilan,seremban
+1816,1,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1817,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1818,7,False,Condominium,Negeri Sembilan,seremban
+1819,4,False,Terrace House,Negeri Sembilan,seremban
+1820,10,False,Terrace House,Negeri Sembilan,seremban
+1821,5,False,Terrace House,Negeri Sembilan,seremban
+1822,0,True,Terrace House,Negeri Sembilan,port dickson
+1823,7,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1824,6,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1825,2,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1826,10,False,Terrace House,Negeri Sembilan,seremban
+1827,0,True,Bungalow / Detached House,Negeri Sembilan,port dickson
+1828,10,False,Terrace House,Negeri Sembilan,seremban
+1829,4,False,Terrace House,Negeri Sembilan,seremban
+1830,10,False,Terrace House,Negeri Sembilan,seremban
+1831,10,False,Terrace House,Negeri Sembilan,seremban
+1832,10,False,Terrace House,Negeri Sembilan,seremban
+1833,3,False,Condominium,Negeri Sembilan,seremban
+1834,10,False,Terrace House,Negeri Sembilan,seremban
+1835,3,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1836,0,True,Condominium,Negeri Sembilan,port dickson
+1837,4,False,Condominium,Negeri Sembilan,seremban
+1838,8,False,Terrace House,Negeri Sembilan,seremban
+1839,5,False,Terrace House,Negeri Sembilan,seremban
+1840,8,False,Bungalow / Detached House,Negeri Sembilan,seremban
+1841,0,True,Terrace House,Negeri Sembilan,seremban
+1842,2,False,Terrace House,Negeri Sembilan,seremban
+1843,4,False,Link Bungalow / Semi-Detached,Negeri Sembilan,seremban
+1844,10,False,Terrace House,Negeri Sembilan,seremban
+1845,3,False,Condominium,Negeri Sembilan,seremban
+1846,0,True,Bungalow / Detached House,Negeri Sembilan,seremban
+1847,10,False,Condominium,Pahang,kuantan
+1848,9,False,Terrace House,Pahang,kuantan
+1849,0,True,Condominium,Pahang,bentong
+1850,2,False,Bungalow / Detached House,Pahang,kuantan
+1851,4,False,Terrace House,Pahang,kuantan
+1852,0,True,Condominium,Pahang,cameron highlands
+1853,0,True,Condominium,Pahang,bentong
+1854,0,True,Condominium,Pahang,cameron highlands
+1855,5,False,Terrace House,Pahang,kuantan
+1856,2,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1857,4,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1858,8,False,Terrace House,Pahang,kuantan
+1859,10,False,Condominium,Pahang,kuantan
+1860,0,True,Bungalow / Detached House,Pahang,kuantan
+1861,5,False,Terrace House,Pahang,kuantan
+1862,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1863,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1864,6,False,Terrace House,Pahang,kuantan
+1865,8,False,Terrace House,Pahang,kuantan
+1866,10,False,Terrace House,Pahang,kuantan
+1867,1,False,Terrace House,Pahang,jerantut
+1868,2,False,Terrace House,Pahang,lipis
+1869,0,True,Condominium,Pahang,kuantan
+1870,7,False,Terrace House,Pahang,kuantan
+1871,10,False,Terrace House,Pahang,kuantan
+1872,3,False,Terrace House,Pahang,kuantan
+1873,5,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1874,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1875,9,False,Terrace House,Pahang,kuantan
+1876,7,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1877,2,False,Bungalow / Detached House,Pahang,kuantan
+1878,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1879,5,False,Terrace House,Pahang,kuantan
+1880,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1881,2,False,Terrace House,Pahang,temerloh
+1882,4,False,Terrace House,Pahang,kuantan
+1883,2,False,Link Bungalow / Semi-Detached,Pahang,temerloh
+1884,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1885,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1886,7,False,Terrace House,Pahang,kuantan
+1887,7,False,Terrace House,Pahang,kuantan
+1888,0,True,Bungalow / Detached House,Pahang,rompin
+1889,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1890,10,False,Terrace House,Pahang,kuantan
+1891,1,False,Terrace House,Pahang,jerantut
+1892,2,False,Terrace House,Pahang,lipis
+1893,6,False,Terrace House,Pahang,kuantan
+1894,10,False,Terrace House,Pahang,kuantan
+1895,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1896,7,False,Terrace House,Pahang,kuantan
+1897,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1898,6,False,Terrace House,Pahang,kuantan
+1899,10,False,Terrace House,Pahang,kuantan
+1900,1,False,Terrace House,Pahang,kuantan
+1901,7,False,Terrace House,Pahang,kuantan
+1902,10,False,Condominium,Pahang,kuantan
+1903,7,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1904,4,False,Terrace House,Pahang,kuantan
+1905,10,False,Terrace House,Pahang,kuantan
+1906,2,False,Terrace House,Pahang,lipis
+1907,3,False,Terrace House,Pahang,kuantan
+1908,0,True,Link Bungalow / Semi-Detached,Pahang,bera
+1909,0,True,Terrace House,Pahang,temerloh
+1910,4,False,Bungalow / Detached House,Pahang,kuantan
+1911,4,False,Bungalow / Detached House,Pahang,kuantan
+1912,10,False,Condominium,Pahang,kuantan
+1913,7,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1914,3,False,Terrace House,Pahang,temerloh
+1915,5,False,Terrace House,Pahang,kuantan
+1916,5,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1917,4,False,Terrace House,Pahang,kuantan
+1918,3,False,Bungalow / Detached House,Pahang,kuantan
+1919,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1920,3,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1921,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1922,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1923,10,False,Terrace House,Pahang,kuantan
+1924,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1925,3,False,Terrace House,Pahang,kuantan
+1926,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1927,0,True,Terrace House,Pahang,bera
+1928,8,False,Terrace House,Pahang,kuantan
+1929,7,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1930,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1931,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1932,10,False,Condominium,Pahang,kuantan
+1933,2,False,Link Bungalow / Semi-Detached,Pahang,pekan
+1934,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1935,1,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1936,1,False,Condominium,Pahang,kuantan
+1937,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1938,10,False,Condominium,Pahang,kuantan
+1939,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1940,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1941,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1942,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1943,7,False,Terrace House,Pahang,kuantan
+1944,0,True,Bungalow / Detached House,Pahang,kuantan
+1945,2,False,Bungalow / Detached House,Pahang,kuantan
+1946,10,False,Terrace House,Pahang,kuantan
+1947,9,False,Terrace House,Pahang,kuantan
+1948,9,False,Terrace House,Pahang,kuantan
+1949,0,True,Bungalow / Detached House,Pahang,kuantan
+1950,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1951,4,False,Link Bungalow / Semi-Detached,Pahang,pekan
+1952,0,True,Bungalow / Detached House,Pahang,kuantan
+1953,9,False,Terrace House,Pahang,kuantan
+1954,0,True,Link Bungalow / Semi-Detached,Pahang,kuantan
+1955,3,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1956,10,False,Condominium,Pahang,kuantan
+1957,6,False,Terrace House,Pahang,kuantan
+1958,3,False,Bungalow / Detached House,Pahang,kuantan
+1959,10,False,Terrace House,Pahang,kuantan
+1960,9,False,Terrace House,Pahang,kuantan
+1961,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1962,9,False,Terrace House,Pahang,kuantan
+1963,10,False,Terrace House,Pahang,kuantan
+1964,9,False,Terrace House,Pahang,kuantan
+1965,0,True,Link Bungalow / Semi-Detached,Pahang,jerantut
+1966,1,False,Link Bungalow / Semi-Detached,Pahang,rompin
+1967,5,False,Terrace House,Pahang,kuantan
+1968,3,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1969,4,False,Link Bungalow / Semi-Detached,Pahang,pekan
+1970,7,False,Terrace House,Pahang,kuantan
+1971,7,False,Terrace House,Pahang,kuantan
+1972,3,False,Link Bungalow / Semi-Detached,Pahang,pekan
+1973,4,False,Terrace House,Pahang,kuantan
+1974,3,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1975,2,False,Link Bungalow / Semi-Detached,Pahang,temerloh
+1976,2,False,Terrace House,Pahang,temerloh
+1977,7,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1978,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1979,1,False,Condominium,Pahang,kuantan
+1980,2,False,Bungalow / Detached House,Pahang,kuantan
+1981,1,False,Link Bungalow / Semi-Detached,Pahang,rompin
+1982,9,False,Terrace House,Pahang,kuantan
+1983,10,False,Terrace House,Pahang,kuantan
+1984,0,True,Bungalow / Detached House,Pahang,rompin
+1985,10,False,Terrace House,Pahang,kuantan
+1986,1,False,Link Bungalow / Semi-Detached,Pahang,temerloh
+1987,2,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1988,10,False,Condominium,Pahang,kuantan
+1989,0,True,Bungalow / Detached House,Pahang,kuantan
+1990,10,False,Terrace House,Pahang,kuantan
+1991,4,False,Terrace House,Pahang,temerloh
+1992,3,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1993,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1994,0,True,Bungalow / Detached House,Pahang,temerloh
+1995,0,True,Bungalow / Detached House,Pahang,rompin
+1996,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1997,3,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1998,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+1999,9,False,Terrace House,Pahang,kuantan
+2000,7,False,Terrace House,Pahang,kuantan
+2001,0,True,Terrace House,Pahang,temerloh
+2002,3,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2003,9,False,Terrace House,Pahang,kuantan
+2004,3,False,Bungalow / Detached House,Pahang,kuantan
+2005,0,True,Link Bungalow / Semi-Detached,Pahang,bentong
+2006,10,False,Terrace House,Pahang,kuantan
+2007,2,False,Link Bungalow / Semi-Detached,Pahang,temerloh
+2008,1,False,Link Bungalow / Semi-Detached,Pahang,temerloh
+2009,4,False,Bungalow / Detached House,Pahang,kuantan
+2010,10,False,Terrace House,Pahang,kuantan
+2011,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2012,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2013,10,False,Terrace House,Pahang,kuantan
+2014,0,True,Bungalow / Detached House,Pahang,kuantan
+2015,5,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2016,0,True,Link Bungalow / Semi-Detached,Pahang,temerloh
+2017,3,False,Link Bungalow / Semi-Detached,Pahang,pekan
+2018,10,False,Terrace House,Pahang,kuantan
+2019,2,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2020,0,True,Bungalow / Detached House,Pahang,pekan
+2021,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2022,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2023,9,False,Terrace House,Pahang,kuantan
+2024,0,True,Terrace House,Pahang,rompin
+2025,10,False,Terrace House,Pahang,kuantan
+2026,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2027,1,False,Terrace House,Pahang,temerloh
+2028,9,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2029,0,True,Terrace House,Pahang,kuantan
+2030,1,False,Terrace House,Pahang,kuantan
+2031,8,False,Terrace House,Pahang,kuantan
+2032,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2033,10,False,Terrace House,Pahang,kuantan
+2034,0,True,Bungalow / Detached House,Pahang,temerloh
+2035,10,False,Terrace House,Pahang,kuantan
+2036,2,False,Terrace House,Pahang,kuantan
+2037,10,False,Condominium,Pahang,kuantan
+2038,4,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2039,0,True,Bungalow / Detached House,Pahang,kuantan
+2040,8,False,Terrace House,Pahang,kuantan
+2041,3,False,Terrace House,Pahang,kuantan
+2042,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2043,5,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2044,2,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2045,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2046,5,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2047,7,False,Terrace House,Pahang,kuantan
+2048,8,False,Terrace House,Pahang,kuantan
+2049,7,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2050,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2051,2,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2052,7,False,Terrace House,Pahang,kuantan
+2053,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2054,6,False,Terrace House,Pahang,kuantan
+2055,8,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2056,0,True,Link Bungalow / Semi-Detached,Pahang,kuantan
+2057,9,False,Terrace House,Pahang,kuantan
+2058,5,False,Bungalow / Detached House,Pahang,kuantan
+2059,10,False,Condominium,Pahang,kuantan
+2060,6,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2061,1,False,Bungalow / Detached House,Pahang,kuantan
+2062,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2063,7,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2064,10,False,Condominium,Pahang,kuantan
+2065,10,False,Link Bungalow / Semi-Detached,Pahang,kuantan
+2066,0,True,Link Bungalow / Semi-Detached,Pahang,kuantan
+2067,4,False,Bungalow / Detached House,Pahang,kuantan
+2068,10,False,Terrace House,Pahang,kuantan
+2069,10,False,Terrace House,Pahang,kuantan
+2070,1,False,Terrace House,Pahang,kuantan
+2071,10,False,Terrace House,Pahang,kuantan
+2072,6,False,Condominium,Penang,timur laut
+2073,8,False,Condominium,Pulau Pinang,barat daya
+2074,5,False,Terrace House,Pulau Pinang,seberang perai tengah
+2075,2,False,Terrace House,Pulau Pinang,seberang perai selatan
+2076,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai tengah
+2077,4,False,Bungalow / Detached House,Pulau Pinang,seberang perai tengah
+2078,4,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2079,6,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2080,6,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2081,5,False,Condominium,Penang,barat daya
+2082,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2083,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,barat daya
+2084,0,True,Condominium,Pulau Pinang,timur laut
+2085,10,False,Condominium,Pulau Pinang,timur laut
+2086,2,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai utara
+2087,8,False,Condominium,Pulau Pinang,timur laut
+2088,9,False,Condominium,Pulau Pinang,timur laut
+2089,6,False,Condominium,Pulau Pinang,timur laut
+2090,1,False,Condominium,Pulau Pinang,timur laut
+2091,9,False,Condominium,Penang,barat daya
+2092,6,False,Condominium,Pulau Pinang,timur laut
+2093,10,False,Condominium,Penang,barat daya
+2094,2,False,Terrace House,Pulau Pinang,seberang perai selatan
+2095,10,False,Condominium,Pulau Pinang,timur laut
+2096,2,False,Terrace House,Pulau Pinang,barat daya
+2097,9,False,Condominium,Pulau Pinang,timur laut
+2098,0,True,Bungalow / Detached House,Pulau Pinang,timur laut
+2099,8,False,Condominium,Pulau Pinang,timur laut
+2100,3,False,Terrace House,Pulau Pinang,seberang perai selatan
+2101,2,False,Condominium,Pulau Pinang,timur laut
+2102,1,False,Bungalow / Detached House,Pulau Pinang,timur laut
+2103,2,False,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2104,6,False,Condominium,Pulau Pinang,timur laut
+2105,1,False,Condominium,Pulau Pinang,timur laut
+2106,5,False,Condominium,Pulau Pinang,timur laut
+2107,10,False,Terrace House,Pulau Pinang,seberang perai selatan
+2108,8,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2109,9,False,Condominium,Penang,barat daya
+2110,4,False,Condominium,Pulau Pinang,timur laut
+2111,3,False,Condominium,Pulau Pinang,timur laut
+2112,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2113,7,False,Condominium,Pulau Pinang,timur laut
+2114,7,False,Terrace House,Penang,seberang perai tengah
+2115,1,False,Bungalow / Detached House,Penang,seberang perai tengah
+2116,9,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2117,6,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2118,2,False,Condominium,Pulau Pinang,seberang perai tengah
+2119,2,False,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2120,0,True,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2121,3,False,Terrace House,Pulau Pinang,seberang perai selatan
+2122,7,False,Terrace House,Pulau Pinang,seberang perai tengah
+2123,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai selatan
+2124,10,False,Terrace House,Pulau Pinang,seberang perai tengah
+2125,6,False,Condominium,Pulau Pinang,seberang perai utara
+2126,7,False,Condominium,Pulau Pinang,timur laut
+2127,7,False,Terrace House,Penang,seberang perai selatan
+2128,10,False,Condominium,Pulau Pinang,timur laut
+2129,2,False,Condominium,Pulau Pinang,timur laut
+2130,6,False,Condominium,Pulau Pinang,timur laut
+2131,4,False,Condominium,Pulau Pinang,timur laut
+2132,2,False,Condominium,Pulau Pinang,timur laut
+2133,10,False,Condominium,Pulau Pinang,timur laut
+2134,6,False,Terrace House,Pulau Pinang,seberang perai tengah
+2135,8,False,Condominium,Pulau Pinang,timur laut
+2136,6,False,Condominium,Pulau Pinang,timur laut
+2137,3,False,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2138,2,False,Bungalow / Detached House,Pulau Pinang,seberang perai utara
+2139,7,False,Terrace House,Pulau Pinang,seberang perai utara
+2140,7,False,Terrace House,Pulau Pinang,seberang perai utara
+2141,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2142,6,False,Condominium,Pulau Pinang,timur laut
+2143,6,False,Condominium,Pulau Pinang,timur laut
+2144,9,False,Condominium,Penang,timur laut
+2145,3,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai utara
+2146,3,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai utara
+2147,10,False,Condominium,Pulau Pinang,timur laut
+2148,3,False,Terrace House,Pulau Pinang,seberang perai selatan
+2149,0,True,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2150,10,False,Condominium,Penang,timur laut
+2151,2,False,Condominium,Penang,barat daya
+2152,9,False,Condominium,Pulau Pinang,barat daya
+2153,8,False,Condominium,Pulau Pinang,timur laut
+2154,2,False,Condominium,Pulau Pinang,timur laut
+2155,2,False,Terrace House,Pulau Pinang,timur laut
+2156,7,False,Condominium,Penang,barat daya
+2157,8,False,Condominium,Pulau Pinang,seberang perai tengah
+2158,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2159,7,False,Condominium,Pulau Pinang,barat daya
+2160,8,False,Condominium,Pulau Pinang,timur laut
+2161,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2162,8,False,Condominium,Pulau Pinang,timur laut
+2163,0,True,Condominium,Pulau Pinang,timur laut
+2164,9,False,Condominium,Pulau Pinang,barat daya
+2165,9,False,Condominium,Pulau Pinang,timur laut
+2166,4,False,Condominium,Pulau Pinang,seberang perai utara
+2167,2,False,Terrace House,Pulau Pinang,timur laut
+2168,6,False,Terrace House,Pulau Pinang,seberang perai tengah
+2169,3,False,Condominium,Pulau Pinang,timur laut
+2170,9,False,Condominium,Pulau Pinang,seberang perai selatan
+2171,10,False,Condominium,Pulau Pinang,timur laut
+2172,10,False,Condominium,Pulau Pinang,timur laut
+2173,5,False,Condominium,Pulau Pinang,seberang perai tengah
+2174,9,False,Condominium,Penang,timur laut
+2175,10,False,Condominium,Pulau Pinang,barat daya
+2176,10,False,Condominium,Pulau Pinang,barat daya
+2177,6,False,Condominium,Pulau Pinang,barat daya
+2178,4,False,Condominium,Pulau Pinang,seberang perai tengah
+2179,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2180,1,False,Condominium,Penang,seberang perai selatan
+2181,1,False,Condominium,Penang,seberang perai selatan
+2182,10,False,Condominium,Penang,barat daya
+2183,10,False,Condominium,Penang,barat daya
+2184,10,False,Condominium,Pulau Pinang,barat daya
+2185,6,False,Condominium,Pulau Pinang,barat daya
+2186,8,False,Condominium,Pulau Pinang,timur laut
+2187,8,False,Condominium,Pulau Pinang,barat daya
+2188,9,False,Condominium,Pulau Pinang,timur laut
+2189,4,False,Condominium,Pulau Pinang,seberang perai tengah
+2190,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2191,5,False,Condominium,Pulau Pinang,barat daya
+2192,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2193,8,False,Condominium,Pulau Pinang,seberang perai selatan
+2194,4,False,Condominium,Pulau Pinang,seberang perai tengah
+2195,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2196,3,False,Condominium,Pulau Pinang,barat daya
+2197,10,False,Condominium,Pulau Pinang,barat daya
+2198,4,False,Condominium,Pulau Pinang,timur laut
+2199,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2200,2,False,Condominium,Pulau Pinang,seberang perai selatan
+2201,10,False,Condominium,Pulau Pinang,barat daya
+2202,10,False,Condominium,Pulau Pinang,barat daya
+2203,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2204,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2205,2,False,Bungalow / Detached House,Pulau Pinang,timur laut
+2206,0,True,Terrace House,Federal Territory of Kuala Lumpur,kuala lumpur
+2207,4,False,Terrace House,Penang,seberang perai utara
+2208,0,True,Link Bungalow / Semi-Detached,Penang,timur laut
+2209,10,False,Condominium,Pulau Pinang,timur laut
+2210,5,False,Condominium,Pulau Pinang,timur laut
+2211,5,False,Condominium,Pulau Pinang,timur laut
+2212,9,False,Condominium,Pulau Pinang,timur laut
+2213,5,False,Condominium,Pulau Pinang,timur laut
+2214,10,False,Condominium,Pulau Pinang,timur laut
+2215,7,False,Condominium,Pulau Pinang,seberang perai tengah
+2216,3,False,Condominium,Pulau Pinang,timur laut
+2217,3,False,Condominium,Pulau Pinang,timur laut
+2218,7,False,Condominium,Pulau Pinang,barat daya
+2219,7,False,Condominium,Pulau Pinang,barat daya
+2220,10,False,Condominium,Pulau Pinang,barat daya
+2221,10,False,Condominium,Pulau Pinang,barat daya
+2222,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2223,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2224,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2225,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2226,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2227,6,False,Condominium,Pulau Pinang,seberang perai tengah
+2228,8,False,Terrace House,Penang,seberang perai tengah
+2229,3,False,Condominium,Pulau Pinang,timur laut
+2230,10,False,Condominium,Pulau Pinang,timur laut
+2231,10,False,Condominium,Pulau Pinang,timur laut
+2232,8,False,Condominium,Pulau Pinang,barat daya
+2233,10,False,Condominium,Pulau Pinang,barat daya
+2234,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2235,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2236,6,False,Condominium,Pulau Pinang,seberang perai tengah
+2237,4,False,Terrace House,Penang,seberang perai utara
+2238,3,False,Terrace House,Pulau Pinang,seberang perai selatan
+2239,8,False,Condominium,Pulau Pinang,timur laut
+2240,10,False,Condominium,Pulau Pinang,timur laut
+2241,9,False,Condominium,Pulau Pinang,timur laut
+2242,7,False,Condominium,Pulau Pinang,barat daya
+2243,5,False,Condominium,Pulau Pinang,barat daya
+2244,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2245,9,False,Terrace House,Pulau Pinang,seberang perai utara
+2246,3,False,Condominium,Pulau Pinang,seberang perai utara
+2247,3,False,Condominium,Pulau Pinang,timur laut
+2248,10,False,Condominium,Pulau Pinang,timur laut
+2249,10,False,Condominium,Pulau Pinang,timur laut
+2250,10,False,Condominium,Pulau Pinang,timur laut
+2251,4,False,Bungalow / Detached House,Penang,seberang perai tengah
+2252,2,False,Bungalow / Detached House,Penang,seberang perai tengah
+2253,2,False,Bungalow / Detached House,Penang,seberang perai tengah
+2254,3,False,Condominium,Pulau Pinang,timur laut
+2255,9,False,Condominium,Pulau Pinang,timur laut
+2256,10,False,Condominium,Pulau Pinang,timur laut
+2257,10,False,Condominium,Pulau Pinang,timur laut
+2258,10,False,Condominium,Pulau Pinang,timur laut
+2259,7,False,Condominium,Pulau Pinang,timur laut
+2260,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2261,8,False,Condominium,Pulau Pinang,barat daya
+2262,7,False,Condominium,Pulau Pinang,barat daya
+2263,6,False,Condominium,Pulau Pinang,seberang perai tengah
+2264,9,False,Terrace House,Penang,seberang perai tengah
+2265,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2266,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2267,10,False,Condominium,Pulau Pinang,timur laut
+2268,10,False,Condominium,Penang,barat daya
+2269,10,False,Condominium,Pulau Pinang,barat daya
+2270,9,False,Condominium,Penang,barat daya
+2271,4,False,Terrace House,Penang,timur laut
+2272,2,False,Terrace House,Penang,timur laut
+2273,9,False,Condominium,Pulau Pinang,timur laut
+2274,10,False,Condominium,Pulau Pinang,timur laut
+2275,10,False,Condominium,Pulau Pinang,timur laut
+2276,10,False,Condominium,Pulau Pinang,timur laut
+2277,4,False,Condominium,Pulau Pinang,timur laut
+2278,8,False,Condominium,Pulau Pinang,seberang perai tengah
+2279,8,False,Condominium,Pulau Pinang,barat daya
+2280,10,False,Condominium,Pulau Pinang,timur laut
+2281,10,False,Condominium,Pulau Pinang,timur laut
+2282,9,False,Condominium,Pulau Pinang,timur laut
+2283,6,False,Condominium,Pulau Pinang,seberang perai selatan
+2284,9,False,Condominium,Pulau Pinang,timur laut
+2285,10,False,Condominium,Pulau Pinang,timur laut
+2286,9,False,Condominium,Pulau Pinang,timur laut
+2287,10,False,Condominium,Pulau Pinang,timur laut
+2288,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai selatan
+2289,7,False,Terrace House,Penang,seberang perai utara
+2290,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2291,7,False,Terrace House,Penang,seberang perai utara
+2292,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2293,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2294,6,False,Condominium,Pulau Pinang,seberang perai tengah
+2295,8,False,Condominium,Pulau Pinang,seberang perai tengah
+2296,8,False,Condominium,Pulau Pinang,seberang perai tengah
+2297,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2298,10,False,Condominium,Penang,seberang perai tengah
+2299,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2300,8,False,Condominium,Pulau Pinang,seberang perai tengah
+2301,6,False,Condominium,Pulau Pinang,seberang perai tengah
+2302,8,False,Condominium,Pulau Pinang,barat daya
+2303,10,False,Condominium,Pulau Pinang,timur laut
+2304,5,False,Condominium,Pulau Pinang,barat daya
+2305,8,False,Condominium,Pulau Pinang,timur laut
+2306,5,False,Condominium,Pulau Pinang,timur laut
+2307,8,False,Condominium,Pulau Pinang,barat daya
+2308,10,False,Condominium,Pulau Pinang,barat daya
+2309,10,False,Condominium,Pulau Pinang,seberang perai selatan
+2310,10,False,Condominium,Pulau Pinang,seberang perai tengah
+2311,8,False,Condominium,Pulau Pinang,seberang perai selatan
+2312,10,False,Condominium,Penang,timur laut
+2313,8,False,Condominium,Pulau Pinang,timur laut
+2314,10,False,Condominium,Pulau Pinang,timur laut
+2315,10,False,Condominium,Pulau Pinang,timur laut
+2316,10,False,Condominium,Pulau Pinang,timur laut
+2317,9,False,Condominium,Pulau Pinang,barat daya
+2318,8,False,Condominium,Pulau Pinang,barat daya
+2319,9,False,Condominium,Penang,timur laut
+2320,8,False,Condominium,Pulau Pinang,timur laut
+2321,8,False,Condominium,Pulau Pinang,timur laut
+2322,10,False,Condominium,Pulau Pinang,timur laut
+2323,4,False,Condominium,Penang,timur laut
+2324,6,False,Condominium,Pulau Pinang,barat daya
+2325,6,False,Condominium,Pulau Pinang,barat daya
+2326,6,False,Condominium,Pulau Pinang,seberang perai selatan
+2327,9,False,Condominium,Pulau Pinang,timur laut
+2328,9,False,Condominium,Pulau Pinang,timur laut
+2329,6,False,Condominium,Pulau Pinang,timur laut
+2330,10,False,Condominium,Pulau Pinang,seberang perai selatan
+2331,8,False,Condominium,Pulau Pinang,timur laut
+2332,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2333,8,False,Condominium,Pulau Pinang,timur laut
+2334,5,False,Condominium,Pulau Pinang,timur laut
+2335,9,False,Condominium,Pulau Pinang,timur laut
+2336,8,False,Condominium,Pulau Pinang,timur laut
+2337,9,False,Condominium,Pulau Pinang,timur laut
+2338,10,False,Condominium,Pulau Pinang,timur laut
+2339,9,False,Condominium,Pulau Pinang,timur laut
+2340,6,False,Condominium,Pulau Pinang,barat daya
+2341,5,False,Condominium,Pulau Pinang,seberang perai tengah
+2342,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2343,10,False,Terrace House,Pulau Pinang,seberang perai utara
+2344,6,False,Condominium,Pulau Pinang,seberang perai selatan
+2345,5,False,Condominium,Pulau Pinang,barat daya
+2346,8,False,Condominium,Pulau Pinang,barat daya
+2347,6,False,Condominium,Pulau Pinang,barat daya
+2348,5,False,Condominium,Pulau Pinang,barat daya
+2349,10,False,Condominium,Pulau Pinang,barat daya
+2350,10,False,Condominium,Pulau Pinang,barat daya
+2351,8,False,Condominium,Pulau Pinang,barat daya
+2352,10,False,Condominium,Penang,barat daya
+2353,9,False,Condominium,Penang,barat daya
+2354,7,False,Condominium,Penang,barat daya
+2355,10,False,Condominium,Pulau Pinang,timur laut
+2356,10,False,Condominium,Pulau Pinang,timur laut
+2357,10,False,Condominium,Pulau Pinang,timur laut
+2358,10,False,Condominium,Pulau Pinang,timur laut
+2359,6,False,Condominium,Penang,seberang perai tengah
+2360,8,False,Condominium,Pulau Pinang,seberang perai tengah
+2361,10,False,Condominium,Pulau Pinang,seberang perai selatan
+2362,10,False,Condominium,Pulau Pinang,seberang perai selatan
+2363,9,False,Condominium,Pulau Pinang,timur laut
+2364,8,False,Condominium,Pulau Pinang,timur laut
+2365,3,False,Condominium,Penang,seberang perai utara
+2366,8,False,Condominium,Penang,timur laut
+2367,8,False,Condominium,Pulau Pinang,timur laut
+2368,7,False,Condominium,Penang,timur laut
+2369,5,False,Condominium,Pulau Pinang,timur laut
+2370,8,False,Condominium,Pulau Pinang,barat daya
+2371,4,False,Flat,Pulau Pinang,barat daya
+2372,3,False,Terrace House,Penang,timur laut
+2373,1,False,Town House,Penang,timur laut
+2374,6,False,Condominium,Pulau Pinang,seberang perai selatan
+2375,6,False,Condominium,Pulau Pinang,seberang perai selatan
+2376,8,False,Terrace House,Penang,seberang perai utara
+2377,7,False,Condominium,Pulau Pinang,seberang perai tengah
+2378,10,False,Condominium,Pulau Pinang,timur laut
+2379,9,False,Condominium,Penang,barat daya
+2380,8,False,Condominium,Pulau Pinang,timur laut
+2381,10,False,Condominium,Pulau Pinang,timur laut
+2382,10,False,Condominium,Pulau Pinang,timur laut
+2383,8,False,Condominium,Pulau Pinang,timur laut
+2384,9,False,Condominium,Pulau Pinang,timur laut
+2385,8,False,Condominium,Pulau Pinang,timur laut
+2386,3,False,Terrace House,Pulau Pinang,timur laut
+2387,3,False,Terrace House,Pulau Pinang,timur laut
+2388,7,False,Condominium,Pulau Pinang,barat daya
+2389,10,False,Condominium,Pulau Pinang,timur laut
+2390,8,False,Condominium,Pulau Pinang,timur laut
+2391,0,True,Terrace House,Pulau Pinang,seberang perai tengah
+2392,3,False,Bungalow / Detached House,Pulau Pinang,seberang perai tengah
+2393,0,True,Condominium,Pulau Pinang,barat daya
+2394,0,True,Terrace House,Pulau Pinang,barat daya
+2395,9,False,Condominium,Pulau Pinang,seberang perai utara
+2396,6,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2397,2,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai tengah
+2398,3,False,Condominium,Pulau Pinang,seberang perai utara
+2399,6,False,Condominium,Pulau Pinang,seberang perai utara
+2400,4,False,Condominium,Pulau Pinang,seberang perai utara
+2401,0,True,Terrace House,Penang,timur laut
+2402,5,False,Terrace House,Pulau Pinang,seberang perai tengah
+2403,0,True,Bungalow / Detached House,Pulau Pinang,seberang perai utara
+2404,8,False,Terrace House,Pulau Pinang,seberang perai tengah
+2405,1,False,Terrace House,Pulau Pinang,seberang perai utara
+2406,6,False,Condominium,Pulau Pinang,timur laut
+2407,6,False,Terrace House,Pulau Pinang,seberang perai tengah
+2408,0,True,Condominium,Pulau Pinang,timur laut
+2409,4,False,Condominium,Pulau Pinang,timur laut
+2410,9,False,Condominium,Penang,timur laut
+2411,1,False,Condominium,Penang,timur laut
+2412,4,False,Condominium,Pulau Pinang,timur laut
+2413,10,False,Condominium,Pulau Pinang,timur laut
+2414,0,True,Terrace House,Penang,seberang perai utara
+2415,2,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai tengah
+2416,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2417,1,False,Condominium,Penang,seberang perai tengah
+2418,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2419,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2420,5,False,Condominium,Pulau Pinang,seberang perai tengah
+2421,4,False,Terrace House,Pulau Pinang,timur laut
+2422,2,False,Terrace House,Pulau Pinang,barat daya
+2423,9,False,Condominium,Pulau Pinang,seberang perai tengah
+2424,2,False,Condominium,Pulau Pinang,timur laut
+2425,5,False,Condominium,Penang,timur laut
+2426,6,False,Terrace House,Pulau Pinang,seberang perai tengah
+2427,3,False,Terrace House,Pulau Pinang,seberang perai tengah
+2428,10,False,Condominium,Penang,barat daya
+2429,8,False,Terrace House,Pulau Pinang,seberang perai tengah
+2430,7,False,Terrace House,Pulau Pinang,seberang perai tengah
+2431,8,False,Terrace House,Pulau Pinang,seberang perai tengah
+2432,2,False,Bungalow / Detached House,Pulau Pinang,seberang perai tengah
+2433,4,False,Condominium,Pulau Pinang,seberang perai utara
+2434,1,False,Condominium,Pulau Pinang,seberang perai tengah
+2435,7,False,Condominium,Pulau Pinang,seberang perai tengah
+2436,10,False,Terrace House,Pulau Pinang,seberang perai selatan
+2437,10,False,Terrace House,Pulau Pinang,seberang perai tengah
+2438,7,False,Terrace House,Pulau Pinang,seberang perai selatan
+2439,8,False,Terrace House,Pulau Pinang,seberang perai selatan
+2440,3,False,Terrace House,Pulau Pinang,seberang perai selatan
+2441,10,False,Terrace House,Pulau Pinang,seberang perai selatan
+2442,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai selatan
+2443,1,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai selatan
+2444,9,False,Terrace House,Pulau Pinang,seberang perai selatan
+2445,7,False,Terrace House,Pulau Pinang,seberang perai tengah
+2446,3,False,Link Bungalow / Semi-Detached,Penang,seberang perai tengah
+2447,1,False,Condominium,Penang,seberang perai selatan
+2448,8,False,Terrace House,Penang,seberang perai selatan
+2449,7,False,Terrace House,Pulau Pinang,seberang perai tengah
+2450,2,False,Terrace House,Pulau Pinang,seberang perai selatan
+2451,5,False,Terrace House,Pulau Pinang,seberang perai selatan
+2452,3,False,Condominium,Pulau Pinang,seberang perai tengah
+2453,9,False,Terrace House,Penang,seberang perai tengah
+2454,4,False,Condominium,Penang,seberang perai utara
+2455,9,False,Condominium,Pulau Pinang,seberang perai selatan
+2456,2,False,Terrace House,Pulau Pinang,seberang perai tengah
+2457,10,False,Terrace House,Pulau Pinang,seberang perai selatan
+2458,9,False,Terrace House,Pulau Pinang,seberang perai selatan
+2459,7,False,Condominium,Pulau Pinang,timur laut
+2460,3,False,Bungalow / Detached House,Pulau Pinang,seberang perai tengah
+2461,10,False,Terrace House,Pulau Pinang,seberang perai selatan
+2462,4,False,Terrace House,Pulau Pinang,seberang perai selatan
+2463,2,False,Terrace House,Penang,seberang perai selatan
+2464,6,False,Terrace House,Pulau Pinang,seberang perai selatan
+2465,10,False,Terrace House,Pulau Pinang,seberang perai tengah
+2466,8,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai tengah
+2467,4,False,Terrace House,Penang,seberang perai tengah
+2468,3,False,Terrace House,Pulau Pinang,seberang perai selatan
+2469,7,False,Condominium,Pulau Pinang,seberang perai selatan
+2470,10,False,Terrace House,Penang,seberang perai tengah
+2471,10,False,Condominium,Pulau Pinang,seberang perai selatan
+2472,2,False,Terrace House,Pulau Pinang,barat daya
+2473,2,False,Condominium,Pulau Pinang,seberang perai tengah
+2474,5,False,Terrace House,Pulau Pinang,seberang perai tengah
+2475,0,True,Town House,Pulau Pinang,seberang perai selatan
+2476,0,True,Bungalow / Detached House,Pulau Pinang,barat daya
+2477,1,False,Bungalow / Detached House,Pulau Pinang,seberang perai selatan
+2478,7,False,Condominium,Pulau Pinang,seberang perai selatan
+2479,7,False,Condominium,Pulau Pinang,seberang perai tengah
+2480,9,False,Condominium,Pulau Pinang,seberang perai selatan
+2481,7,False,Terrace House,Pulau Pinang,seberang perai tengah
+2482,2,False,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai tengah
+2483,3,False,Terrace House,Pulau Pinang,seberang perai selatan
+2484,7,False,Condominium,Pulau Pinang,barat daya
+2485,10,False,Terrace House,Pulau Pinang,seberang perai selatan
+2486,4,False,Bungalow / Detached House,Pulau Pinang,seberang perai tengah
+2487,5,False,Condominium,Pulau Pinang,timur laut
+2488,2,False,Condominium,Pulau Pinang,barat daya
+2489,3,False,Bungalow / Detached House,Pulau Pinang,seberang perai tengah
+2490,10,False,Condominium,Pulau Pinang,timur laut
+2491,6,False,Condominium,Pulau Pinang,seberang perai utara
+2492,0,True,Condominium,Pulau Pinang,timur laut
+2493,2,False,Condominium,Pulau Pinang,timur laut
+2494,6,False,Condominium,Pulau Pinang,timur laut
+2495,0,True,Link Bungalow / Semi-Detached,Penang,barat daya
+2496,3,False,Condominium,Pulau Pinang,barat daya
+2497,9,False,Condominium,Pulau Pinang,timur laut
+2498,3,False,Condominium,Pulau Pinang,timur laut
+2499,0,True,Condominium,Pulau Pinang,timur laut
+2500,9,False,Condominium,Pulau Pinang,timur laut
+2501,1,False,Condominium,Pulau Pinang,timur laut
+2502,0,True,Town House,Pulau Pinang,barat daya
+2503,9,False,Condominium,Penang,timur laut
+2504,5,False,Condominium,Penang,timur laut
+2505,3,False,Condominium,Pulau Pinang,barat daya
+2506,3,False,Condominium,Pulau Pinang,timur laut
+2507,6,False,Condominium,Pulau Pinang,timur laut
+2508,10,False,Condominium,Pulau Pinang,timur laut
+2509,6,False,Condominium,Pulau Pinang,timur laut
+2510,0,True,Condominium,Pulau Pinang,timur laut
+2511,3,False,Condominium,Pulau Pinang,barat daya
+2512,10,False,Condominium,Pulau Pinang,seberang perai selatan
+2513,7,False,Condominium,Pulau Pinang,timur laut
+2514,1,False,Condominium,Pulau Pinang,timur laut
+2515,6,False,Condominium,Pulau Pinang,barat daya
+2516,3,False,Condominium,Pulau Pinang,timur laut
+2517,6,False,Condominium,Pulau Pinang,timur laut
+2518,3,False,Condominium,Pulau Pinang,timur laut
+2519,3,False,Condominium,Pulau Pinang,barat daya
+2520,7,False,Condominium,Pulau Pinang,timur laut
+2521,5,False,Condominium,Pulau Pinang,barat daya
+2522,2,False,Condominium,Pulau Pinang,seberang perai utara
+2523,9,False,Condominium,Pulau Pinang,timur laut
+2524,3,False,Condominium,Pulau Pinang,timur laut
+2525,4,False,Condominium,Pulau Pinang,timur laut
+2526,9,False,Condominium,Pulau Pinang,seberang perai selatan
+2527,7,False,Condominium,Pulau Pinang,timur laut
+2528,3,False,Terrace House,Pulau Pinang,seberang perai utara
+2529,6,False,Terrace House,Pulau Pinang,seberang perai selatan
+2530,7,False,Terrace House,Pulau Pinang,seberang perai tengah
+2531,9,False,Terrace House,Pulau Pinang,seberang perai tengah
+2532,2,False,Link Bungalow / Semi-Detached,Pulau Pinang,timur laut
+2533,1,False,Terrace House,Pulau Pinang,timur laut
+2534,0,True,Terrace House,Pulau Pinang,timur laut
+2535,10,False,Condominium,Pulau Pinang,timur laut
+2536,3,False,Condominium,Pulau Pinang,timur laut
+2537,6,False,Condominium,Pulau Pinang,barat daya
+2538,3,False,Condominium,Pulau Pinang,timur laut
+2539,2,False,Terrace House,Pulau Pinang,seberang perai utara
+2540,8,False,Condominium,Pulau Pinang,timur laut
+2541,10,False,Condominium,Pulau Pinang,timur laut
+2542,10,False,Condominium,Pulau Pinang,timur laut
+2543,0,True,Link Bungalow / Semi-Detached,Penang,barat daya
+2544,4,False,Terrace House,Penang,seberang perai tengah
+2545,6,False,Condominium,Pulau Pinang,seberang perai utara
+2546,10,False,Condominium,Pulau Pinang,timur laut
+2547,0,True,Terrace House,Penang,seberang perai utara
+2548,6,False,Condominium,Pulau Pinang,seberang perai tengah
+2549,7,False,Terrace House,Pulau Pinang,seberang perai utara
+2550,4,False,Condominium,Pulau Pinang,timur laut
+2551,10,False,Condominium,Pulau Pinang,timur laut
+2552,10,False,Condominium,Pulau Pinang,barat daya
+2553,5,False,Condominium,Pulau Pinang,timur laut
+2554,0,True,Condominium,Pulau Pinang,timur laut
+2555,8,False,Condominium,Pulau Pinang,timur laut
+2556,7,False,Condominium,Penang,timur laut
+2557,4,False,Terrace House,Pulau Pinang,seberang perai utara
+2558,8,False,Terrace House,Penang,seberang perai selatan
+2559,0,True,Flat,Pulau Pinang,timur laut
+2560,2,False,Terrace House,Pulau Pinang,timur laut
+2561,0,True,Link Bungalow / Semi-Detached,Pulau Pinang,seberang perai utara
+2562,0,True,Terrace House,Perlis,perlis
+2563,0,True,Link Bungalow / Semi-Detached,Perlis,perlis
+2564,1,False,Terrace House,Perlis,perlis
+2565,1,False,Terrace House,Perlis,perlis
+2566,0,True,Link Bungalow / Semi-Detached,Perlis,perlis
+2567,1,False,Terrace House,Perlis,perlis
+2568,0,True,Link Bungalow / Semi-Detached,Perlis,perlis
+2569,1,False,Terrace House,Perlis,perlis
+2570,0,True,Bungalow / Detached House,Perlis,perlis
+2571,0,True,Bungalow / Detached House,Perlis,perlis
+2572,1,False,Terrace House,Perlis,perlis
+2573,1,False,Terrace House,Perlis,perlis
+2574,1,False,Terrace House,Perlis,perlis
+2575,1,False,Terrace House,Perlis,perlis
+2576,0,True,Link Bungalow / Semi-Detached,Perlis,perlis
+2577,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2578,7,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2579,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2580,3,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2581,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2582,10,False,Bungalow / Detached House,Putrajaya,putrajaya
+2583,10,False,Terrace House,Putrajaya,putrajaya
+2584,1,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2585,4,False,Condominium,Putrajaya,putrajaya
+2586,9,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2587,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2588,7,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2589,4,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2590,3,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2591,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2592,8,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2593,3,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2594,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2595,10,False,Terrace House,Putrajaya,putrajaya
+2596,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2597,4,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2598,5,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2599,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2600,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2601,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2602,8,False,Terrace House,Putrajaya,putrajaya
+2603,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2604,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2605,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2606,8,False,Terrace House,Putrajaya,putrajaya
+2607,9,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2608,10,False,Bungalow / Detached House,Putrajaya,putrajaya
+2609,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2610,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2611,9,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2612,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2613,10,False,Terrace House,Putrajaya,putrajaya
+2614,3,False,Terrace House,Putrajaya,putrajaya
+2615,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2616,4,False,Terrace House,Putrajaya,putrajaya
+2617,8,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2618,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2619,4,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2620,7,False,Terrace House,Putrajaya,putrajaya
+2621,7,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2622,10,False,Terrace House,Putrajaya,putrajaya
+2623,1,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2624,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2625,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2626,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2627,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2628,9,False,Terrace House,Putrajaya,putrajaya
+2629,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2630,6,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2631,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2632,4,False,Terrace House,Putrajaya,putrajaya
+2633,6,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2634,5,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2635,8,False,Terrace House,Putrajaya,putrajaya
+2636,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2637,9,False,Terrace House,Putrajaya,putrajaya
+2638,4,False,Terrace House,Putrajaya,putrajaya
+2639,10,False,Terrace House,Putrajaya,putrajaya
+2640,7,False,Terrace House,Putrajaya,putrajaya
+2641,8,False,Terrace House,Putrajaya,putrajaya
+2642,10,False,Terrace House,Putrajaya,putrajaya
+2643,5,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2644,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2645,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2646,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2647,10,False,Terrace House,Putrajaya,putrajaya
+2648,10,False,Terrace House,Putrajaya,putrajaya
+2649,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2650,4,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2651,3,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2652,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2653,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2654,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2655,4,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2656,2,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2657,10,False,Terrace House,Putrajaya,putrajaya
+2658,6,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2659,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2660,3,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2661,10,False,Terrace House,Putrajaya,putrajaya
+2662,10,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2663,3,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2664,6,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2665,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2666,7,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2667,6,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2668,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2669,6,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2670,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2671,7,False,Bungalow / Detached House,Putrajaya,putrajaya
+2672,6,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2673,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2674,3,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2675,0,True,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2676,6,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2677,8,False,Bungalow / Detached House,Putrajaya,putrajaya
+2678,10,False,Bungalow / Detached House,Putrajaya,putrajaya
+2679,6,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2680,7,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2681,9,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2682,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2683,7,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2684,7,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2685,0,True,Terrace House,Putrajaya,putrajaya
+2686,8,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2687,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2688,7,False,Terrace House,Putrajaya,putrajaya
+2689,6,False,Bungalow / Detached House,Putrajaya,putrajaya
+2690,0,True,Terrace House,Putrajaya,putrajaya
+2691,7,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2692,10,False,Terrace House,Putrajaya,putrajaya
+2693,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2694,8,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2695,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2696,7,False,Terrace House,Putrajaya,putrajaya
+2697,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2698,3,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2699,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2700,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2701,1,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2702,5,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2703,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2704,8,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2705,5,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2706,5,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2707,10,False,Terrace House,Putrajaya,putrajaya
+2708,8,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2709,10,False,Terrace House,Putrajaya,putrajaya
+2710,3,False,Condominium,Putrajaya,putrajaya
+2711,4,False,Condominium,Putrajaya,putrajaya
+2712,4,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2713,0,True,Terrace House,Putrajaya,putrajaya
+2714,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2715,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2716,10,False,Terrace House,Putrajaya,putrajaya
+2717,2,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2718,3,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2719,10,False,Terrace House,Putrajaya,putrajaya
+2720,1,False,Bungalow / Detached House,Putrajaya,putrajaya
+2721,4,False,Terrace House,Putrajaya,putrajaya
+2722,10,False,Terrace House,Putrajaya,putrajaya
+2723,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2724,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2725,5,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2726,3,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2727,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2728,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2729,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2730,10,False,Terrace House,Putrajaya,putrajaya
+2731,10,False,Terrace House,Putrajaya,putrajaya
+2732,6,False,Bungalow / Detached House,Putrajaya,putrajaya
+2733,5,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2734,1,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2735,9,False,Bungalow / Detached House,Putrajaya,putrajaya
+2736,5,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2737,4,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2738,6,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2739,7,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2740,4,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2741,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2742,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2743,9,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2744,5,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2745,9,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2746,10,False,Terrace House,Putrajaya,putrajaya
+2747,9,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2748,8,False,Terrace House,Putrajaya,putrajaya
+2749,5,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2750,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2751,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2752,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2753,4,False,Terrace House,Putrajaya,putrajaya
+2754,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2755,3,False,House (Others),Putrajaya,putrajaya
+2756,9,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2757,9,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2758,3,False,House (Others),Putrajaya,putrajaya
+2759,6,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2760,7,False,Terrace House,Putrajaya,putrajaya
+2761,3,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2762,9,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2763,7,False,Terrace House,Putrajaya,putrajaya
+2764,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2765,9,False,Terrace House,Putrajaya,putrajaya
+2766,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2767,2,False,Bungalow / Detached House,Putrajaya,putrajaya
+2768,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2769,10,False,Terrace House,Putrajaya,putrajaya
+2770,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2771,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2772,4,False,Terrace House,Putrajaya,putrajaya
+2773,1,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2774,7,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2775,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2776,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2777,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2778,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2779,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2780,9,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2781,10,False,Terrace House,Putrajaya,putrajaya
+2782,0,True,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2783,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2784,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2785,10,False,Terrace House,Putrajaya,putrajaya
+2786,10,False,Terrace House,Putrajaya,putrajaya
+2787,10,False,Terrace House,Putrajaya,putrajaya
+2788,0,True,Terrace House,Putrajaya,putrajaya
+2789,8,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2790,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2791,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2792,10,False,Terrace House,Putrajaya,putrajaya
+2793,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2794,10,False,Terrace House,Putrajaya,putrajaya
+2795,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2796,5,False,Terrace House,Putrajaya,putrajaya
+2797,1,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2798,0,True,Terrace House,Putrajaya,putrajaya
+2799,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2800,8,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2801,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2802,0,True,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2803,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2804,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2805,10,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2806,3,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2807,9,False,Terrace House,Putrajaya,putrajaya
+2808,0,True,Flat,Wilayah Persekutuan Putrajaya,putrajaya
+2809,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2810,3,False,Terrace House,Putrajaya,putrajaya
+2811,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2812,3,False,Terrace House,Putrajaya,putrajaya
+2813,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2814,7,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2815,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2816,9,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2817,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2818,9,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2819,3,False,Terrace House,Putrajaya,putrajaya
+2820,2,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2821,6,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2822,3,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2823,4,False,Terrace House,Putrajaya,putrajaya
+2824,4,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2825,3,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2826,5,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2827,2,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2828,10,False,Terrace House,Putrajaya,putrajaya
+2829,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2830,7,False,Terrace House,Putrajaya,putrajaya
+2831,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2832,7,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2833,1,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2834,7,False,Bungalow / Detached House,Putrajaya,putrajaya
+2835,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2836,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2837,2,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2838,4,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2839,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2840,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2841,9,False,Terrace House,Putrajaya,putrajaya
+2842,8,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2843,10,False,Terrace House,Putrajaya,putrajaya
+2844,9,False,Terrace House,Putrajaya,putrajaya
+2845,6,False,Terrace House,Putrajaya,putrajaya
+2846,3,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2847,6,False,Terrace House,Putrajaya,putrajaya
+2848,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2849,4,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2850,10,False,Terrace House,Putrajaya,putrajaya
+2851,10,False,Terrace House,Putrajaya,putrajaya
+2852,2,False,House (Others),Putrajaya,putrajaya
+2853,4,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2854,0,True,Town House,Putrajaya,putrajaya
+2855,3,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2856,10,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2857,7,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2858,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2859,10,False,Terrace House,Putrajaya,putrajaya
+2860,6,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2861,10,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2862,5,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2863,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2864,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2865,10,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2866,9,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Putrajaya,putrajaya
+2867,3,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2868,7,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2869,10,False,Condominium,Wilayah Persekutuan Putrajaya,putrajaya
+2870,4,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2871,10,False,Bungalow / Detached House,Putrajaya,putrajaya
+2872,10,False,Bungalow / Detached House,Wilayah Persekutuan Putrajaya,putrajaya
+2873,2,False,Link Bungalow / Semi-Detached,Putrajaya,putrajaya
+2874,1,False,Terrace House,Wilayah Persekutuan Putrajaya,putrajaya
+2875,10,False,Terrace House,Putrajaya,putrajaya
+2876,10,False,Condominium,Sabah,kota kinabalu
+2877,6,False,Link Bungalow / Semi-Detached,Sabah,kota kinabalu
+2878,5,False,Link Bungalow / Semi-Detached,Sabah,kota kinabalu
+2879,1,False,Terrace House,Sabah,penampang
+2880,6,False,Link Bungalow / Semi-Detached,Sabah,penampang
+2881,10,False,Condominium,Sabah,kota kinabalu
+2882,6,False,Condominium,Sabah,kota kinabalu
+2883,3,False,Condominium,Sabah,kota kinabalu
+2884,10,False,Condominium,Sabah,kota kinabalu
+2885,2,False,Condominium,Sabah,kota kinabalu
+2886,8,False,Condominium,Sabah,penampang
+2887,4,False,Condominium,Sabah,kota kinabalu
+2888,7,False,Condominium,Sabah,kota kinabalu
+2889,10,False,Condominium,Sabah,kota kinabalu
+2890,1,False,Condominium,Sabah,putatan
+2891,6,False,Condominium,Sabah,kota kinabalu
+2892,7,False,Condominium,Sabah,penampang
+2893,4,False,Condominium,Sabah,kota kinabalu
+2894,9,False,Condominium,Sabah,kota kinabalu
+2895,6,False,Condominium,Sabah,kota kinabalu
+2896,0,True,Link Bungalow / Semi-Detached,Sabah,penampang
+2897,6,False,Condominium,Sabah,kota kinabalu
+2898,7,False,Condominium,Sabah,penampang
+2899,9,False,Condominium,Sabah,kota kinabalu
+2900,4,False,Terrace House,Sabah,kota kinabalu
+2901,2,False,Terrace House,Sabah,kota kinabalu
+2902,4,False,Condominium,Sabah,kota kinabalu
+2903,6,False,Condominium,Sabah,penampang
+2904,4,False,Link Bungalow / Semi-Detached,Sabah,kota kinabalu
+2905,10,False,Condominium,Sabah,kota kinabalu
+2906,4,False,Condominium,Sabah,kota kinabalu
+2907,6,False,Link Bungalow / Semi-Detached,Sabah,penampang
+2908,2,False,Condominium,Sabah,kota kinabalu
+2909,10,False,Condominium,Sabah,kota kinabalu
+2910,0,True,Link Bungalow / Semi-Detached,Sabah,kota kinabalu
+2911,9,False,Condominium,Sabah,kota kinabalu
+2912,2,False,Terrace House,Sabah,kota kinabalu
+2913,7,False,Condominium,Sabah,kota kinabalu
+2914,4,False,Condominium,Sabah,kota kinabalu
+2915,7,False,Condominium,Sabah,kota kinabalu
+2916,1,False,Condominium,Sabah,kota kinabalu
+2917,2,False,Condominium,Sabah,kota kinabalu
+2918,9,False,Condominium,Sabah,penampang
+2919,3,False,Condominium,Sabah,kota kinabalu
+2920,0,True,Terrace House,Sabah,penampang
+2921,0,True,Bungalow / Detached House,Sabah,penampang
+2922,4,False,Condominium,Sabah,kota kinabalu
+2923,0,True,Bungalow / Detached House,Sabah,kota kinabalu
+2924,3,False,Condominium,Sabah,kota kinabalu
+2925,0,True,Terrace House,Sabah,tuaran
+2926,7,False,Condominium,Sabah,penampang
+2927,10,False,Condominium,Sabah,kota kinabalu
+2928,5,False,Condominium,Sabah,kota kinabalu
+2929,9,False,Condominium,Sabah,kota kinabalu
+2930,0,True,Terrace House,Sabah,kota kinabalu
+2931,10,False,Condominium,Sabah,kota kinabalu
+2932,3,False,Condominium,Sabah,kota kinabalu
+2933,0,True,Link Bungalow / Semi-Detached,Sabah,kota kinabalu
+2934,3,False,Condominium,Sabah,kota kinabalu
+2935,4,False,Terrace House,Sabah,penampang
+2936,0,True,Terrace House,Sabah,kota kinabalu
+2937,8,False,Condominium,Sabah,kota kinabalu
+2938,3,False,Terrace House,Sabah,kota kinabalu
+2939,3,False,Terrace House,Sabah,kota kinabalu
+2940,10,False,Condominium,Sabah,kota kinabalu
+2941,8,False,Condominium,Sabah,kota kinabalu
+2942,1,False,Link Bungalow / Semi-Detached,Federal Territory of Kuala Lumpur,kuala lumpur
+2943,1,False,House (Others),Sabah,penampang
+2944,7,False,Condominium,Sabah,kota kinabalu
+2945,0,True,House (Others),Sabah,penampang
+2946,5,False,Condominium,Sabah,kota kinabalu
+2947,10,False,Condominium,Sabah,kota kinabalu
+2948,1,False,Condominium,Sabah,kota kinabalu
+2949,10,False,Condominium,Sabah,kota kinabalu
+2950,10,False,Condominium,Sabah,kota kinabalu
+2951,6,False,Link Bungalow / Semi-Detached,Sabah,penampang
+2952,1,False,Bungalow / Detached House,Sabah,kota kinabalu
+2953,4,False,Condominium,Sabah,kota kinabalu
+2954,1,False,Condominium,Sabah,kota kinabalu
+2955,6,False,Condominium,Sabah,kota kinabalu
+2956,2,False,Bungalow / Detached House,Sabah,kota kinabalu
+2957,5,False,Link Bungalow / Semi-Detached,Sabah,kota kinabalu
+2958,7,False,Condominium,Sabah,penampang
+2959,2,False,House (Others),Sabah,kota kinabalu
+2960,9,False,Condominium,Sabah,kota kinabalu
+2961,7,False,Condominium,Sabah,kota kinabalu
+2962,10,False,Condominium,Sabah,kota kinabalu
+2963,5,False,Condominium,Sabah,kota kinabalu
+2964,4,False,Condominium,Sabah,penampang
+2965,9,False,Condominium,Sabah,kota kinabalu
+2966,0,True,Bungalow / Detached House,Sabah,tuaran
+2967,0,True,Bungalow / Detached House,Sabah,kota kinabalu
+2968,0,True,Condominium,Sabah,kota kinabalu
+2969,5,False,Condominium,Sabah,kota kinabalu
+2970,4,False,Condominium,Sabah,kota kinabalu
+2971,10,False,Condominium,Sabah,kota kinabalu
+2972,7,False,Condominium,Sabah,kota kinabalu
+2973,10,False,Condominium,Sabah,kota kinabalu
+2974,5,False,Condominium,Sabah,kota kinabalu
+2975,4,False,Condominium,Sabah,kota kinabalu
+2976,9,False,Condominium,Sabah,kota kinabalu
+2977,7,False,Condominium,Sabah,penampang
+2978,10,False,Condominium,Sabah,kota kinabalu
+2979,8,False,Condominium,Sabah,kota kinabalu
+2980,2,False,Condominium,Sabah,kota kinabalu
+2981,7,False,Condominium,Sabah,penampang
+2982,2,False,Terrace House,Sabah,kota kinabalu
+2983,7,False,Condominium,Sabah,penampang
+2984,6,False,Terrace House,Sabah,kota kinabalu
+2985,4,False,Condominium,Sabah,kota kinabalu
+2986,9,False,Condominium,Sabah,kota kinabalu
+2987,8,False,Condominium,Sabah,kota kinabalu
+2988,10,False,Condominium,Sabah,kota kinabalu
+2989,7,False,Condominium,Sabah,penampang
+2990,8,False,Condominium,Sabah,kota kinabalu
+2991,5,False,Condominium,Sabah,penampang
+2992,7,False,Condominium,Sabah,penampang
+2993,4,False,Condominium,Sarawak,kuching
+2994,4,False,Condominium,Sarawak,kuching
+2995,4,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+2996,1,False,Terrace House,Sarawak,kuching
+2997,8,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+2998,0,True,Town House,Sarawak,kuching
+2999,4,False,Terrace House,Sarawak,samarahan
+3000,2,False,Condominium,Sarawak,kuching
+3001,0,True,Town House,Sarawak,kuching
+3002,6,False,Condominium,Sarawak,kuching
+3003,9,False,Condominium,Sarawak,kuching
+3004,9,False,Condominium,Sarawak,kuching
+3005,0,True,Link Bungalow / Semi-Detached,Sarawak,sibu
+3006,1,False,Town House,Sarawak,kuching
+3007,2,False,Bungalow / Detached House,Sarawak,kuching
+3008,8,False,Condominium,Sarawak,kuching
+3009,10,False,Condominium,Sarawak,kuching
+3010,10,False,Terrace House,Sarawak,kuching
+3011,6,False,Terrace House,Sarawak,kuching
+3012,9,False,Terrace House,Sarawak,kuching
+3013,7,False,Terrace House,Sarawak,kuching
+3014,10,False,Terrace House,Sarawak,kuching
+3015,10,False,Terrace House,Sarawak,kuching
+3016,2,False,Link Bungalow / Semi-Detached,Sarawak,miri
+3017,2,False,Link Bungalow / Semi-Detached,Sarawak,miri
+3018,9,False,Terrace House,Sarawak,kuching
+3019,8,False,Terrace House,Sarawak,kuching
+3020,4,False,Condominium,Sarawak,kuching
+3021,8,False,Terrace House,Sarawak,kuching
+3022,3,False,Terrace House,Sarawak,kuching
+3023,3,False,Terrace House,Sarawak,kuching
+3024,6,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3025,1,False,Town House,Sarawak,kuching
+3026,7,False,Terrace House,Sarawak,kuching
+3027,10,False,Terrace House,Sarawak,kuching
+3028,0,True,Link Bungalow / Semi-Detached,Sarawak,kuching
+3029,2,False,Link Bungalow / Semi-Detached,Sarawak,miri
+3030,9,False,Terrace House,Sarawak,samarahan
+3031,10,False,Terrace House,Sarawak,kuching
+3032,3,False,Terrace House,Sarawak,samarahan
+3033,2,False,Town House,Sarawak,samarahan
+3034,7,False,Terrace House,Sarawak,kuching
+3035,1,False,Terrace House,Sarawak,kuching
+3036,2,False,Terrace House,Sarawak,kuching
+3037,0,True,Link Bungalow / Semi-Detached,Sarawak,samarahan
+3038,6,False,Terrace House,Sarawak,kuching
+3039,3,False,Condominium,Sarawak,samarahan
+3040,10,False,Terrace House,Sarawak,kuching
+3041,7,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3042,5,False,Terrace House,Sarawak,kuching
+3043,4,False,Terrace House,Sarawak,samarahan
+3044,3,False,Condominium,Sarawak,samarahan
+3045,7,False,Terrace House,Sarawak,kuching
+3046,9,False,Condominium,Sarawak,kuching
+3047,0,True,Terrace House,Sarawak,kuching
+3048,6,False,Condominium,Sarawak,kuching
+3049,2,False,Terrace House,Sarawak,kuching
+3050,9,False,Terrace House,Sarawak,kuching
+3051,2,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3052,10,False,Condominium,Sarawak,kuching
+3053,7,False,Condominium,Sarawak,kuching
+3054,2,False,Terrace House,Sarawak,samarahan
+3055,1,False,Link Bungalow / Semi-Detached,Sarawak,samarahan
+3056,8,False,Condominium,Sarawak,kuching
+3057,4,False,Condominium,Sarawak,kuching
+3058,5,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3059,5,False,Condominium,Sarawak,kuching
+3060,0,True,Condominium,Sarawak,samarahan
+3061,7,False,Terrace House,Sarawak,kuching
+3062,4,False,Condominium,Sarawak,kuching
+3063,4,False,Condominium,Sarawak,kuching
+3064,8,False,Terrace House,Sarawak,kuching
+3065,6,False,Terrace House,Sarawak,kuching
+3066,10,False,Terrace House,Sarawak,kuching
+3067,5,False,Terrace House,Sarawak,kuching
+3068,6,False,Terrace House,Sarawak,samarahan
+3069,8,False,Terrace House,Sarawak,samarahan
+3070,10,False,Terrace House,Sarawak,samarahan
+3071,5,False,Terrace House,Sarawak,kuching
+3072,4,False,Terrace House,Sarawak,kuching
+3073,7,False,Terrace House,Sarawak,kuching
+3074,4,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3075,9,False,Terrace House,Sarawak,kuching
+3076,10,False,Terrace House,Sarawak,kuching
+3077,7,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3078,6,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3079,8,False,Terrace House,Sarawak,kuching
+3080,2,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3081,9,False,Terrace House,Sarawak,kuching
+3082,3,False,Condominium,Sarawak,kuching
+3083,6,False,Condominium,Sarawak,kuching
+3084,10,False,Condominium,Sarawak,kuching
+3085,10,False,Condominium,Sarawak,kuching
+3086,7,False,Terrace House,Sarawak,kuching
+3087,8,False,Terrace House,Sarawak,kuching
+3088,6,False,Terrace House,Sarawak,kuching
+3089,4,False,Terrace House,Sarawak,kuching
+3090,4,False,Terrace House,Sarawak,kuching
+3091,2,False,Terrace House,Sarawak,kuching
+3092,3,False,Condominium,Sarawak,kuching
+3093,8,False,Terrace House,Sarawak,kuching
+3094,5,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3095,3,False,Terrace House,Sarawak,kuching
+3096,7,False,Terrace House,Sarawak,kuching
+3097,5,False,Terrace House,Sarawak,samarahan
+3098,4,False,Condominium,Sarawak,kuching
+3099,3,False,Condominium,Sarawak,kuching
+3100,10,False,Condominium,Sarawak,kuching
+3101,2,False,Terrace House,Sarawak,kuching
+3102,8,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3103,6,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3104,2,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3105,0,True,Bungalow / Detached House,Sarawak,kuching
+3106,0,True,Link Bungalow / Semi-Detached,Sarawak,samarahan
+3107,4,False,Condominium,Sarawak,kuching
+3108,7,False,Condominium,Sarawak,kuching
+3109,5,False,Terrace House,Sarawak,kuching
+3110,8,False,Condominium,Sarawak,kuching
+3111,1,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3112,0,True,Bungalow / Detached House,Sarawak,kuching
+3113,10,False,Condominium,Sarawak,kuching
+3114,4,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3115,1,False,Condominium,Sarawak,kuching
+3116,5,False,Terrace House,Sarawak,kuching
+3117,6,False,Terrace House,Sarawak,kuching
+3118,10,False,Terrace House,Sarawak,samarahan
+3119,10,False,Condominium,Sarawak,kuching
+3120,10,False,Condominium,Sarawak,kuching
+3121,6,False,Condominium,Sarawak,kuching
+3122,3,False,Condominium,Sarawak,samarahan
+3123,0,True,Link Bungalow / Semi-Detached,Sarawak,kuching
+3124,5,False,Terrace House,Sarawak,kuching
+3125,3,False,Condominium,Sarawak,samarahan
+3126,4,False,Terrace House,Sarawak,kuching
+3127,7,False,Terrace House,Sarawak,kuching
+3128,9,False,Terrace House,Sarawak,kuching
+3129,5,False,Terrace House,Sarawak,kuching
+3130,10,False,Terrace House,Sarawak,kuching
+3131,7,False,Terrace House,Sarawak,kuching
+3132,4,False,Terrace House,Sarawak,samarahan
+3133,10,False,Terrace House,Sarawak,kuching
+3134,10,False,Terrace House,Sarawak,kuching
+3135,10,False,Terrace House,Sarawak,kuching
+3136,7,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3137,6,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3138,6,False,Terrace House,Sarawak,kuching
+3139,3,False,Terrace House,Sarawak,serian
+3140,3,False,Terrace House,Sarawak,serian
+3141,7,False,Terrace House,Sarawak,kuching
+3142,4,False,Terrace House,Sarawak,kuching
+3143,6,False,Condominium,Sarawak,kuching
+3144,0,True,Terrace House,Sarawak,kuching
+3145,3,False,Link Bungalow / Semi-Detached,Sarawak,serian
+3146,3,False,Terrace House,Sarawak,serian
+3147,6,False,Condominium,Sarawak,kuching
+3148,5,False,Condominium,Sarawak,kuching
+3149,1,False,Condominium,Sarawak,sibu
+3150,1,False,Condominium,Sarawak,sibu
+3151,10,False,Condominium,Sarawak,kuching
+3152,3,False,Condominium,Sarawak,kuching
+3153,0,True,Terrace House,Sarawak,miri
+3154,5,False,Condominium,Sarawak,kuching
+3155,3,False,Condominium,Sarawak,kuching
+3156,2,False,Terrace House,Sarawak,kuching
+3157,5,False,Condominium,Sarawak,kuching
+3158,5,False,Condominium,Sarawak,kuching
+3159,9,False,Condominium,Sarawak,kuching
+3160,4,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3161,4,False,Terrace House,Sarawak,kuching
+3162,7,False,Terrace House,Sarawak,kuching
+3163,5,False,Link Bungalow / Semi-Detached,Sarawak,kuching
+3164,3,False,Condominium,Sarawak,kuching
+3165,8,False,Condominium,Sarawak,kuching
+3166,2,False,Terrace House,Sarawak,kuching
+3167,4,False,Terrace House,Sarawak,kuching
+3168,6,False,Terrace House,Sarawak,kuching
+3169,5,False,Terrace House,Sarawak,kuching
+3170,5,False,Terrace House,Sarawak,kuching
+3171,1,False,Link Bungalow / Semi-Detached,Sarawak,samarahan
+3172,4,False,Condominium,Sarawak,kuching
+3173,3,False,Condominium,Sarawak,kuching
+3174,8,False,Condominium,Sarawak,kuching
+3175,6,False,Condominium,Sarawak,kuching
+3176,9,False,Condominium,Sarawak,kuching
+3177,1,False,Bungalow / Detached House,Selangor,petaling
+3178,0,True,Condominium,Selangor,hulu langat
+3179,0,True,Terrace House,Selangor,kuala langat
+3180,2,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3181,7,False,Condominium,Selangor,petaling
+3182,0,True,Link Bungalow / Semi-Detached,Selangor,gombak
+3183,3,False,Condominium,Selangor,petaling
+3184,1,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3185,0,True,Bungalow / Detached House,Selangor,gombak
+3186,0,True,Link Bungalow / Semi-Detached,Selangor,hulu langat
+3187,4,False,Terrace House,Selangor,petaling
+3188,0,True,Terrace House,Selangor,petaling
+3189,0,True,Terrace House,Selangor,hulu langat
+3190,2,False,Terrace House,Selangor,klang
+3191,1,False,Terrace House,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3192,1,False,Terrace House,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3193,1,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3194,0,True,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3195,6,False,Condominium,Selangor,petaling
+3196,2,False,Terrace House,Selangor,petaling
+3197,10,False,Bungalow / Detached House,Selangor,petaling
+3198,0,True,Terrace House,Selangor,gombak
+3199,0,True,Bungalow / Detached House,Selangor,hulu langat
+3200,1,False,Bungalow / Detached House,Selangor,sepang
+3201,3,False,Town House,Selangor,petaling
+3202,0,True,Condominium,Selangor,petaling
+3203,9,False,Terrace House,Selangor,petaling
+3204,0,True,Terrace House,Selangor,hulu langat
+3205,1,False,Bungalow / Detached House,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3206,0,True,Town House,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3207,1,False,Terrace House,Selangor,petaling
+3208,0,True,Condominium,Selangor,petaling
+3209,2,False,Terrace House,Selangor,petaling
+3210,0,True,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3211,1,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3212,1,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3213,8,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3214,3,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3215,3,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3216,8,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3217,10,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3218,8,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3219,10,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3220,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3221,10,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3222,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3223,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3224,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3225,10,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3226,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3227,9,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3228,8,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3229,4,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3230,3,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3231,2,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3232,10,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3233,6,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3234,7,False,Link Bungalow / Semi-Detached,Selangor,petaling
+3235,4,False,Terrace House,Selangor,petaling
+3236,7,False,Terrace House,Selangor,petaling
+3237,8,False,Terrace House,Selangor,petaling
+3238,10,False,Terrace House,Selangor,petaling
+3239,1,False,Link Bungalow / Semi-Detached,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
+3240,1,False,Link Bungalow / Semi-Detached,Selangor,hulu langat
+3241,5,False,Terrace House,Selangor,klang
+3242,0,True,Link Bungalow / Semi-Detached,Selangor,petaling
+3243,1,False,Bungalow / Detached House,Selangor,petaling
+3244,1,False,Link Bungalow / Semi-Detached,Selangor,hulu langat
+3245,1,False,Condominium,Federal Territory of Kuala Lumpur,kuala lumpur
+3246,0,True,Town House,Selangor,hulu langat
+3247,6,False,Terrace House,Selangor,klang
+3248,0,True,Condominium,Selangor,klang
+3249,0,True,Terrace House,Selangor,klang
+3250,1,False,Bungalow / Detached House,Terengganu,kuala terengganu
+3251,9,False,Bungalow / Detached House,Terengganu,kuala nerus
+3252,7,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3253,4,False,Link Bungalow / Semi-Detached,Terengganu,kuala nerus
+3254,6,False,Bungalow / Detached House,Terengganu,kuala nerus
+3255,6,False,Bungalow / Detached House,Terengganu,kuala nerus
+3256,0,True,Link Bungalow / Semi-Detached,Terengganu,marang
+3257,3,False,Link Bungalow / Semi-Detached,Terengganu,kuala terengganu
+3258,1,False,Link Bungalow / Semi-Detached,Terengganu,kuala terengganu
+3259,8,False,Link Bungalow / Semi-Detached,Paka,dungun
+3260,7,False,Bungalow / Detached House,Terengganu,dungun
+3261,7,False,Bungalow / Detached House,Terengganu,kuala nerus
+3262,3,False,Terrace House,Terengganu,kemaman
+3263,3,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3264,0,True,Bungalow / Detached House,Terengganu,dungun
+3265,2,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3266,1,False,Terrace House,Terengganu,kemaman
+3267,3,False,Terrace House,Terengganu,kemaman
+3268,8,False,Link Bungalow / Semi-Detached,Paka,dungun
+3269,3,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3270,1,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3271,2,False,Link Bungalow / Semi-Detached,Terengganu,kuala nerus
+3272,3,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3273,1,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3274,1,False,Terrace House,Terengganu,kemaman
+3275,5,False,Link Bungalow / Semi-Detached,Terengganu,kuala nerus
+3276,3,False,Link Bungalow / Semi-Detached,Terengganu,kuala terengganu
+3277,4,False,Link Bungalow / Semi-Detached,Terengganu,kuala terengganu
+3278,7,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3279,3,False,Bungalow / Detached House,Terengganu,kuala terengganu
+3280,4,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3281,0,True,Bungalow / Detached House,Terengganu,kemaman
+3282,8,False,Link Bungalow / Semi-Detached,Paka,dungun
+3283,7,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3284,3,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3285,0,True,House (Others),Terengganu,kuala terengganu
+3286,2,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3287,4,False,Link Bungalow / Semi-Detached,Terengganu,kuala terengganu
+3288,0,True,Bungalow / Detached House,Terengganu,besut
+3289,5,False,Bungalow / Detached House,Terengganu,dungun
+3290,7,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3291,3,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3292,2,False,Bungalow / Detached House,Terengganu,kuala terengganu
+3293,0,True,Link Bungalow / Semi-Detached,Terengganu,kuala terengganu
+3294,2,False,Bungalow / Detached House,Terengganu,kuala nerus
+3295,1,False,Bungalow / Detached House,Terengganu,marang
+3296,4,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3297,1,False,Bungalow / Detached House,Terengganu,kemaman
+3298,3,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3299,6,False,Bungalow / Detached House,Terengganu,dungun
+3300,0,True,Bungalow / Detached House,Terengganu,kemaman
+3301,2,False,Bungalow / Detached House,Terengganu,kuala nerus
+3302,4,False,Bungalow / Detached House,Terengganu,dungun
+3303,8,False,Bungalow / Detached House,Terengganu,dungun
+3304,7,False,Bungalow / Detached House,Terengganu,dungun
+3305,5,False,Bungalow / Detached House,Terengganu,dungun
+3306,7,False,Bungalow / Detached House,Terengganu,dungun
+3307,7,False,Bungalow / Detached House,Terengganu,dungun
+3308,0,True,Bungalow / Detached House,Terengganu,marang
+3309,2,False,Bungalow / Detached House,Terengganu,kuala terengganu
+3310,0,True,Terrace House,Terengganu,kemaman
+3311,2,False,Bungalow / Detached House,Terengganu,kemaman
+3312,4,False,Bungalow / Detached House,Terengganu,dungun
+3313,3,False,Bungalow / Detached House,Terengganu,dungun
+3314,4,False,Bungalow / Detached House,Terengganu,kuala nerus
+3315,3,False,Bungalow / Detached House,Terengganu,dungun
+3316,6,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3317,4,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3318,4,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3319,2,False,Bungalow / Detached House,Terengganu,kuala terengganu
+3320,6,False,Bungalow / Detached House,Terengganu,kuala nerus
+3321,9,False,Bungalow / Detached House,Terengganu,kuala nerus
+3322,0,True,Terrace House,Terengganu,marang
+3323,0,True,Bungalow / Detached House,Terengganu,kuala terengganu
+3324,10,False,Bungalow / Detached House,Terengganu,kuala nerus
+3325,10,False,Bungalow / Detached House,Terengganu,kuala nerus
+3326,1,False,Bungalow / Detached House,Terengganu,kuala terengganu
+3327,2,False,Bungalow / Detached House,Terengganu,marang
+3328,1,False,Bungalow / Detached House,Terengganu,kemaman
+3329,2,False,Terrace House,Terengganu,kemaman
+3330,1,False,Terrace House,Terengganu,kemaman
+3331,6,False,Bungalow / Detached House,Terengganu,dungun
+3332,3,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3333,0,True,Bungalow / Detached House,Terengganu,kuala nerus
+3334,1,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3335,1,False,Bungalow / Detached House,Terengganu,kuala terengganu
+3336,3,False,Bungalow / Detached House,Terengganu,kemaman
+3337,0,True,Link Bungalow / Semi-Detached,Terengganu,dungun
+3338,2,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3339,3,False,Bungalow / Detached House,Terengganu,dungun
+3340,1,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3341,3,False,Terrace House,Terengganu,kemaman
+3342,5,False,Bungalow / Detached House,Terengganu,kemaman
+3343,6,False,Bungalow / Detached House,Terengganu,kuala nerus
+3344,2,False,Terrace House,Terengganu,kemaman
+3345,7,False,Bungalow / Detached House,Terengganu,dungun
+3346,2,False,Bungalow / Detached House,Terengganu,kemaman
+3347,3,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3348,3,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3349,0,True,Link Bungalow / Semi-Detached,Terengganu,dungun
+3350,2,False,Link Bungalow / Semi-Detached,Terengganu,marang
+3351,1,False,Bungalow / Detached House,Terengganu,dungun
+3352,1,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3353,0,True,Terrace House,Terengganu,kemaman
+3354,6,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3355,2,False,Bungalow / Detached House,Terengganu,kemaman
+3356,4,False,Link Bungalow / Semi-Detached,Terengganu,kemaman
+3357,2,False,Bungalow / Detached House,Terengganu,kemaman
+3358,1,False,Bungalow / Detached House,Terengganu,kemaman
+3359,3,False,Link Bungalow / Semi-Detached,Terengganu,dungun
+3360,1,False,Condominium,Wilayah Persekutuan Kuala Lumpur,kuala lumpur
