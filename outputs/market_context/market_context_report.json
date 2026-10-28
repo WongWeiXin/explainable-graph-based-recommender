@@ -1,0 +1,58 @@
+{
+  "component": "market_context",
+  "config_id": "MC-56289c464d",
+  "config": {
+    "z_method": "mean_std",
+    "eps": 1e-09,
+    "min_built_up_area": 150.0,
+    "max_built_up_area": 50000.0,
+    "min_ppsf": 30.0,
+    "max_ppsf": 5000.0,
+    "min_reference_std": 5.0,
+    "require_positive_iqr": true,
+    "reference_level": "area",
+    "z_clip": null
+  },
+  "input_path": "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender\\dataset\\Malaysia_Property_Cleaned_Raw.csv",
+  "properties": 2951,
+  "available": 2898,
+  "unavailable": 53,
+  "availability_rate": 0.982,
+  "unavailable_reasons": {
+    "reference_std_missing_single_or_unknown_group": 33,
+    "reference_std_below_minimum_degenerate_group": 18,
+    "built_up_area_missing_or_implausible": 2
+  },
+  "position_vs_reference": {
+    "above_reference_q3": 1930,
+    "within_reference_iqr": 752,
+    "below_reference_q1": 216
+  },
+  "z_summary": {
+    "mean": 2.668,
+    "p05": -0.8603,
+    "p25": 0.2146,
+    "median": 1.4349,
+    "p75": 3.1144,
+    "p95": 9.846
+  },
+  "score_summary": {
+    "mean": 0.3143,
+    "p25": 0.0442,
+    "median": 0.2192,
+    "p75": 0.541
+  },
+  "diagnostics": {
+    "distinct_reference_groups": 871,
+    "areas_with_single_reference_group_pct": 99.37,
+    "reference_groups_shared_by_multiple_property_types": 208
+  },
+  "elapsed_seconds": 0.1883,
+  "limitations": [
+    "Listing prices are asking prices; the reference columns summarise completed transactions.",
+    "The dataset has no transaction count or period column, so minimum reference-group size and temporal alignment cannot be verified directly; missing/near-zero std and zero IQR are used as proxies for an ineligible group.",
+    "Reference statistics are attached at area level and may mix property types, so a terrace house and a condominium in the same area can share one reference distribution.",
+    "The candidate's own transaction cannot be excluded because listings are not linked to individual transaction records.",
+    "M_i is a consistency score, not a valuation, under-pricing claim or investment advice."
+  ]
+}
