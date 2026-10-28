@@ -11,6 +11,9 @@ ROOT = Path(__file__).resolve().parent
 DATA_PATH = ROOT / "dataset" / "Malaysia_Property_Cleaned_Raw.csv"
 FILTER_SCRIPT = ROOT / "hard_constraint_filter.py"
 BASELINE_SCRIPT = ROOT / "baseline_models" / "direct_preference_baseline.py"
+RANKER_SCRIPT = ROOT / "ranking" / "cpg_ranker.py"
+GRAPH_EDGES = ROOT / "outputs" / "comparable_property_graph" / "comparable_property_edges.csv"
+CPG_DIR = ROOT / "outputs" / "cpg_ranking"
 
 FILTER_DIR = ROOT / "outputs" / "hard_constraint_filter"
 FILTERED_CSV = FILTER_DIR / "eligible_properties.csv"
@@ -41,7 +44,7 @@ def ask_number(prompt):
 
 
 def main():
-    for path in (DATA_PATH, FILTER_SCRIPT, BASELINE_SCRIPT):
+    for path in (DATA_PATH, FILTER_SCRIPT, BASELINE_SCRIPT, RANKER_SCRIPT, GRAPH_EDGES):
         if not path.exists():
             print(f"Required file not found: {path}")
             return
@@ -156,7 +159,7 @@ def main():
         if value is not None:
             filter_cmd.extend([flag, str(value)])
 
-    print("\nStep 1/2: Applying hard constraints...")
+    print("\nStep 1/3: Applying hard constraints...")
     result = subprocess.run(filter_cmd, cwd=ROOT)
 
     if result.returncode != 0:
@@ -190,14 +193,27 @@ def main():
         "--skip-hard-constraints",
     ]
 
-    print("\nStep 2/2: Scoring and ranking eligible properties...")
+    print("\nStep 2/3: Scoring direct preferences...")
     result = subprocess.run(baseline_cmd, cwd=ROOT)
 
     if result.returncode != 0:
         print("Direct-preference baseline failed.")
         return
 
+    # 5. CPG: comparable-neighbour support + final score + deterministic ranking
+    print("\nStep 3/3: Comparable-property graph ranking...")
+    result = subprocess.run(
+        [sys.executable, str(RANKER_SCRIPT), "--variant", "full"],
+        cwd=ROOT,
+    )
+
+    if result.returncode != 0:
+        print("CPG ranking failed.")
+        return
+
     print("\nRecommendation workflow completed.")
+    print("CPG rankings:", CPG_DIR / "cpg_rankings.csv")
+    print("CPG evidence (Top 10):", CPG_DIR / "cpg_evidence_top10.json")
     print(
         "Rankings:",
         ROOT / "outputs" / "direct_preference_baseline"
