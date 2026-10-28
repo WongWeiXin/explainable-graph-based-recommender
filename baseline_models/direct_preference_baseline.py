@@ -154,6 +154,18 @@ def score_row(row, cols, query):
             "target": target, "score": score}, ensure_ascii=False)
     price_target = p.get("target_price")
     add("budget_fit", "price", price_target, tolerance=max(10000, abs(float(price_target)) * .30) if price_target is not None else None)
+    # Price value within budget: lower asking price relative to the stated budget
+    # scores higher (m = 1 - price / budget). Active only when reference_budget is given.
+    budget_ref = num(p.get("reference_budget"))
+    price_col = cols.get("price")
+    if budget_ref and price_col:
+        v = num(row[price_col])
+        scores["price_value_fit"] = None if v is None else max(0.0, min(1.0, 1.0 - v / budget_ref))
+        evidence["evidence_price_value_fit"] = json.dumps({"column": price_col, "value": None if v is None else v,
+            "reference_budget": budget_ref, "score": scores["price_value_fit"]})
+    else:
+        scores["price_value_fit"] = None
+        evidence["evidence_price_value_fit"] = "inactive: no reference budget"
     add("property_type_fit", "property_type", p.get("preferred_property_type"), True)
     add("bedroom_fit", "bedroom", p.get("target_bedroom"), tolerance=2)
     add("bathroom_fit", "bathroom", p.get("target_bathroom"), tolerance=2)
