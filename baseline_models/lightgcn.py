@@ -1,3 +1,24 @@
+"""LightGCN baseline: train on the benchmark and export Top-5 recommendations per query.
+
+Run from the project root:
+    python baseline_models/lightgcn.py
+
+What it does (per seed 42, 43, 44):
+  1. Train LightGCN on the TRAIN partition of frozen_queries_set_v2.csv. Training positives
+     are the properties that satisfy each query's hard constraints (the only interaction
+     signal available). Early stopping uses validation NDCG@5 on the same eligibility
+     signal: a training diagnostic, not a reported result.
+  2. For EVERY benchmark query, rank only the query's eligible properties (all hard
+     constraints applied first, as for CBR and CPG) and export the Top-5.
+
+This script does NOT compute Precision / Recall / NDCG / MRR results. All methods are
+evaluated together, on the same Top-5 lists, against the graded relevance labels.
+
+Outputs (baseline_models/lightgcn_outputs/):
+    lightgcn_top5_recommendations.csv   Top-5 per query x seed (eligible candidates only)
+    lightgcn_training_log.csv           epochs run, early stopping, best validation diagnostic
+    lightgcn_model_seed<seed>.pt        trained model per seed
+"""
 import os
 import random
 from pathlib import Path
@@ -67,14 +88,9 @@ MODEL_PATH = os.path.join(
     "lightgcn_model.pt"
 )
 
-RESULT_PATH = os.path.join(
+TRAINING_LOG_PATH = os.path.join(
     OUTPUT_DIR,
-    "lightgcn_results.csv"
-)
-
-RECOMMENDATION_PATH = os.path.join(
-    OUTPUT_DIR,
-    "Q001_recommendations.csv"
+    "lightgcn_training_log.csv"
 )
 
 # Top-5 recommendations for every benchmark query (all seeds in one file)
@@ -89,9 +105,8 @@ TOP5_PATH = os.path.join(
 # EXPERIMENT SETTINGS
 # ============================================================
 
-TRAIN_SIZE = 0.70
+TRAIN_SIZE = 0.70   # used only if the benchmark has no partition column
 VAL_SIZE = 0.10
-TEST_SIZE = 0.20
 
 SEEDS = [42, 43, 44]
 
@@ -107,8 +122,7 @@ MIN_EPOCHS = 30     # no early stopping before this epoch
 
 NEGATIVES_PER_POSITIVE = 1
 
-TOP_K_VALUES = [5]
-EVAL_K = 5          # primary metric NDCG@5 (validation selection and test)
+EVAL_K = 5          # validation NDCG@5: early-stopping signal only (training diagnostic)
 
 DEVICE = torch.device(
     "cuda" if torch.cuda.is_available() else "cpu"
@@ -1726,6 +1740,14 @@ def train_model(
             best_state
         )
 
+    model.training_log = {
+        "epochs_run": epoch,
+        "early_stopped": bool(epoch < EPOCHS),
+        "best_val_ndcg5_eligibility": (
+            float(best_val_ndcg) if np.isfinite(best_val_ndcg) else None
+        ),
+    }
+
     return model
 
 
@@ -1957,104 +1979,6 @@ def get_query(
 
 
 # ============================================================
-# GET TEST RELEVANT PROPERTY SET
-# ============================================================
-
-def get_relevant_ids(
-    query_id,
-    benchmark,
-    raw_properties
-):
-
-    query = get_query(
-        benchmark,
-        query_id
-    )
-
-    relevant = get_relevant_properties(
-        query,
-        raw_properties
-    )
-
-    return set(
-        relevant["property_id"]
-        .astype(int)
-        .tolist()
-    )
-
-
-# ============================================================
-# PRECISION@K
-# ============================================================
-
-def precision_at_k(
-    ranked_ids,
-    relevant_ids,
-    k
-):
-
-    top_k = ranked_ids[:k]
-
-    if len(top_k) == 0:
-        return 0.0
-
-    hits = sum(
-        1
-        for p in top_k
-        if p in relevant_ids
-    )
-
-    return hits / k
-
-
-# ============================================================
-# RECALL@K
-# ============================================================
-
-def recall_at_k(
-    ranked_ids,
-    relevant_ids,
-    k
-):
-
-    if len(relevant_ids) == 0:
-        return None
-
-    top_k = ranked_ids[:k]
-
-    hits = sum(
-        1
-        for p in top_k
-        if p in relevant_ids
-    )
-
-    return hits / len(
-        relevant_ids
-    )
-
-
-# ============================================================
-# MRR
-# ============================================================
-
-def reciprocal_rank(
-    ranked_ids,
-    relevant_ids
-):
-
-    for rank, property_id in enumerate(
-        ranked_ids,
-        start=1
-    ):
-
-        if property_id in relevant_ids:
-
-            return 1.0 / rank
-
-    return 0.0
-
-
-# ============================================================
 # NDCG@K
 # ============================================================
 
@@ -2193,390 +2117,6 @@ def evaluate_validation(
 
 
 # ============================================================
-# FINAL TEST EVALUATION
-# ============================================================
-
-@torch.no_grad()
-def evaluate_test(
-    model,
-    benchmark,
-    raw_properties,
-    test_query_ids,
-    test_interactions,
-    property_ids,
-    property_to_idx,
-    adjacency,
-    processor,
-    train_query_ids
-):
-
-    print("\n===== FINAL TEST EVALUATION =====")
-
-    property_embeddings = (
-        get_property_embeddings(
-            model,
-            benchmark,
-            train_query_ids,
-            adjacency,
-            processor
-        )
-    )
-
-    idx_to_property = {
-        idx: property_id
-        for property_id, idx
-        in property_to_idx.items()
-    }
-
-    p5_values = []
-    recall5_values = []
-    ndcg5_values = []
-    mrr_values = []
-
-    evaluated_queries = []
-
-    recommended_property_ids = set()
-
-    total_response_time = 0.0
-
-    for query_id in test_query_ids:
-
-        query = get_query(
-            benchmark,
-            query_id
-        )
-
-        relevant_ids = set(
-            test_interactions[
-                test_interactions["query_id"]
-                .astype(str)
-                == str(query_id)
-            ]["property_id"]
-            .astype(int)
-            .tolist()
-        )
-
-        # ----------------------------------------------------
-        # Only "ranking" queries (>= 5 eligible properties)
-        # enter ranking metrics (eligibility rule ELIG-v1).
-        # ----------------------------------------------------
-
-        if len(relevant_ids) == 0 or str(query_id) not in RANKING_QUERY_IDS:
-
-            continue
-
-        start_time = time.perf_counter()
-
-        ranked = rank_properties(
-            model,
-            query,
-            property_embeddings,
-            idx_to_property,
-            processor
-        )
-
-        end_time = time.perf_counter()
-
-        total_response_time += (
-            end_time - start_time
-        )
-
-        ranked_ids = [
-            x[0]
-            for x in ranked
-        ]
-
-        p5 = precision_at_k(
-            ranked_ids,
-            relevant_ids,
-            EVAL_K
-        )
-
-        recall5 = recall_at_k(
-            ranked_ids,
-            relevant_ids,
-            EVAL_K
-        )
-
-        ndcg5 = ndcg_at_k(
-            ranked_ids,
-            relevant_ids,
-            EVAL_K
-        )
-
-        mrr = reciprocal_rank(
-            ranked_ids,
-            relevant_ids
-        )
-
-        p5_values.append(p5)
-
-        if recall5 is not None:
-            recall5_values.append(
-                recall5
-            )
-
-        if ndcg5 is not None:
-            ndcg5_values.append(
-                ndcg5
-            )
-
-        mrr_values.append(mrr)
-
-        recommended_property_ids.update(
-            ranked_ids[:EVAL_K]
-        )
-
-        evaluated_queries.append(
-            query_id
-        )
-
-    # --------------------------------------------------------
-    # Coverage
-    # --------------------------------------------------------
-
-    if len(property_ids) > 0:
-
-        coverage5 = (
-            len(recommended_property_ids)
-            /
-            len(property_ids)
-        )
-
-    else:
-
-        coverage5 = 0.0
-
-    # --------------------------------------------------------
-    # Response time
-    # --------------------------------------------------------
-
-    if len(evaluated_queries) > 0:
-
-        avg_response_time_ms = (
-            total_response_time
-            /
-            len(evaluated_queries)
-            * 1000
-        )
-
-    else:
-
-        avg_response_time_ms = 0.0
-
-    results = {
-
-        "P@5": (
-            float(np.mean(p5_values))
-            if p5_values
-            else 0.0
-        ),
-
-        "Recall@5": (
-            float(np.mean(recall5_values))
-            if recall5_values
-            else 0.0
-        ),
-
-        "NDCG@5": (
-            float(np.mean(ndcg5_values))
-            if ndcg5_values
-            else 0.0
-        ),
-
-        "MRR": (
-            float(np.mean(mrr_values))
-            if mrr_values
-            else 0.0
-        ),
-
-        "Coverage@5": float(
-            coverage5
-        ),
-
-        "ResponseTime_ms": float(
-            avg_response_time_ms
-        ),
-
-        "EvaluatedQueries": len(
-            evaluated_queries
-        ),
-
-        "TestQueries": len(
-            test_query_ids
-        ),
-    }
-
-    print(
-        f"Evaluated queries: "
-        f"{results['EvaluatedQueries']}/"
-        f"{results['TestQueries']}"
-    )
-
-    print(
-        f"P@5        : {results['P@5']:.6f}"
-    )
-
-    print(
-        f"Recall@5   : {results['Recall@5']:.6f}"
-    )
-
-    print(
-        f"NDCG@5     : {results['NDCG@5']:.6f}"
-    )
-
-    print(
-        f"MRR        : {results['MRR']:.6f}"
-    )
-
-    print(
-        f"Coverage@5 : {results['Coverage@5']:.6f}"
-    )
-
-    print(
-        f"Response   : "
-        f"{results['ResponseTime_ms']:.4f} ms"
-    )
-
-    return results
-
-
-# ============================================================
-# Q001 DEMONSTRATION
-# ============================================================
-
-@torch.no_grad()
-def show_q001_recommendations(
-    model,
-    benchmark,
-    raw_properties,
-    property_embeddings,
-    property_to_idx,
-    top_k=15
-):
-
-    query_id = "Q001"
-
-    query = get_query(
-        benchmark,
-        query_id
-    )
-
-    idx_to_property = {
-        idx: property_id
-        for property_id, idx
-        in property_to_idx.items()
-    }
-
-    ranked = rank_properties(
-        model,
-        query,
-        property_embeddings,
-        idx_to_property,
-        PROCESSOR_GLOBAL
-    )
-
-    top_results = ranked[
-        :top_k
-    ]
-
-    result_rows = []
-
-    for rank, (
-        property_id,
-        score
-    ) in enumerate(
-        top_results,
-        start=1
-    ):
-
-        property_rows = raw_properties[
-            raw_properties["property_id"]
-            .astype(int)
-            == int(property_id)
-        ]
-
-        if len(property_rows) == 0:
-            continue
-
-        property_row = (
-            property_rows.iloc[0]
-        )
-
-        result_rows.append({
-
-            "rank": rank,
-
-            "property_id": int(
-                property_id
-            ),
-
-            "score": float(
-                score
-            ),
-
-            "price": property_row.get(
-                "price",
-                np.nan
-            ),
-
-            "property_type":
-                property_row.get(
-                    "property_type",
-                    ""
-                ),
-
-            "state":
-                property_row.get(
-                    "state",
-                    ""
-                ),
-
-            "district":
-                property_row.get(
-                    "district",
-                    ""
-                ),
-
-            "bedroom":
-                property_row.get(
-                    "bedroom",
-                    np.nan
-                ),
-
-            "bathroom":
-                property_row.get(
-                    "bathroom",
-                    np.nan
-                ),
-        })
-
-    result_df = pd.DataFrame(
-        result_rows
-    )
-
-    result_df.to_csv(
-        RECOMMENDATION_PATH,
-        index=False
-    )
-
-    print("\n===== Q001 RECOMMENDATIONS =====")
-
-    print(
-        result_df.to_string(
-            index=False
-        )
-    )
-
-    print(
-        f"\nSaved to: "
-        f"{RECOMMENDATION_PATH}"
-    )
-
-    return result_df
-
-
-# ============================================================
 # MAIN EXPERIMENT
 # ============================================================
 
@@ -2624,7 +2164,7 @@ def run_experiment():
         property_to_idx.keys()
     )
 
-    all_seed_results = []
+    training_log = []
     all_top_recommendations = []
 
     manifest_df = pd.read_csv(ELIGIBILITY_MANIFEST_PATH)
@@ -2793,28 +2333,7 @@ def run_experiment():
             val_interactions=val_interactions
         )
 
-        # ----------------------------------------------------
-        # Final test evaluation
-        # ----------------------------------------------------
-
-        test_results = evaluate_test(
-            model=model,
-            benchmark=benchmark,
-            raw_properties=raw_properties,
-            test_query_ids=test_query_ids,
-            test_interactions=test_interactions,
-            property_ids=property_ids,
-            property_to_idx=property_to_idx,
-            adjacency=adjacency,
-            processor=processor,
-            train_query_ids=train_query_ids
-        )
-
-        test_results["seed"] = seed
-
-        all_seed_results.append(
-            test_results
-        )
+        training_log.append({"seed": seed, **model.training_log})
 
         # ----------------------------------------------------
         # Save best model
@@ -2831,12 +2350,6 @@ def run_experiment():
             f"{seed_model_path}"
         )
 
-        # ----------------------------------------------------
-        # Q001 demonstration
-        #
-        # This is demonstration only, NOT test evidence.
-        # ----------------------------------------------------
-
         property_embeddings = (
             get_property_embeddings(
                 model,
@@ -2845,17 +2358,6 @@ def run_experiment():
                 adjacency,
                 processor
             )
-        )
-
-        show_q001_recommendations(
-            model=model,
-            benchmark=benchmark,
-            raw_properties=raw_properties,
-            property_embeddings=
-                property_embeddings,
-            property_to_idx=
-                property_to_idx,
-            top_k=15
         )
 
         # ----------------------------------------------------
@@ -2876,7 +2378,9 @@ def run_experiment():
         )
 
     # ========================================================
-    # MULTI-SEED SUMMARY
+    # OUTPUTS: Top-5 recommendations + training log
+    # (no test metrics here: all methods are evaluated together
+    #  against the graded relevance labels)
     # ========================================================
 
     top_df = pd.DataFrame(all_top_recommendations)
@@ -2887,166 +2391,11 @@ def run_experiment():
         f"{top_df['seed'].nunique()} seed(s) saved to:\n{TOP5_PATH}"
     )
 
-    results_df = pd.DataFrame(
-        all_seed_results
-    )
-
-    results_df.to_csv(
-        RESULT_PATH,
-        index=False
-    )
-
-    metric_columns = [
-        "NDCG@5",
-        "P@5",
-        "Recall@5",
-        "MRR",
-        "Coverage@5",
-        "ResponseTime_ms",
-    ]
-
-    summary_rows = []
-
-    for metric in metric_columns:
-
-        summary_rows.append({
-
-            "metric": metric,
-
-            "mean": results_df[
-                metric
-            ].mean(),
-
-            "std": results_df[
-                metric
-            ].std(),
-
-            "min": results_df[
-                metric
-            ].min(),
-
-            "max": results_df[
-                metric
-            ].max(),
-        })
-
-    summary_df = pd.DataFrame(
-        summary_rows
-    )
-
-    summary_path = os.path.join(
-        OUTPUT_DIR,
-        "lightgcn_summary.csv"
-    )
-
-    summary_df.to_csv(
-        summary_path,
-        index=False
-    )
-
-    print("\n")
-    print("=" * 70)
-    print("FINAL MULTI-SEED SUMMARY")
-    print("=" * 70)
-
-    print(
-        summary_df.to_string(
-            index=False
-        )
-    )
-
-    print(
-        f"\nDetailed results saved to:"
-        f"\n{RESULT_PATH}"
-    )
-
-    print(
-        f"\nSummary saved to:"
-        f"\n{summary_path}"
-    )
-
-
-# ============================================================
-# DEBUG INFORMATION
-# ============================================================
-
-def debug_dataset(
-    benchmark,
-    properties,
-    raw_properties,
-    interactions
-):
-
-    print("\n")
-    print("=" * 70)
-    print("DATASET DEBUG")
-    print("=" * 70)
-
-    print(
-        f"Benchmark queries: "
-        f"{benchmark['query_id'].nunique()}"
-    )
-
-    print(
-        f"Processed properties: "
-        f"{properties['property_id'].nunique()}"
-    )
-
-    print(
-        f"Raw properties: "
-        f"{raw_properties['property_id'].nunique()}"
-    )
-
-    processed_ids = set(
-        properties["property_id"]
-        .astype(int)
-    )
-
-    raw_ids = set(
-        raw_properties["property_id"]
-        .astype(int)
-    )
-
-    print(
-        f"Common property IDs: "
-        f"{len(processed_ids & raw_ids)}"
-    )
-
-    print(
-        f"Missing processed IDs: "
-        f"{len(raw_ids - processed_ids)}"
-    )
-
-    print(
-        f"Missing raw IDs: "
-        f"{len(processed_ids - raw_ids)}"
-    )
-
-    print(
-        f"Positive interactions: "
-        f"{len(interactions)}"
-    )
-
-    q001 = interactions[
-        interactions["query_id"]
-        .astype(str)
-        == "Q001"
-    ]
-
-    print(
-        f"Q001 positive properties: "
-        f"{len(q001)}"
-    )
-
-    print(
-        "Q001 property IDs:"
-    )
-
-    print(
-        q001["property_id"]
-        .astype(int)
-        .tolist()
-    )
+    log_df = pd.DataFrame(training_log)
+    log_df.to_csv(TRAINING_LOG_PATH, index=False)
+    print("\nTraining log (validation NDCG@5 = eligibility diagnostic, not a result):")
+    print(log_df.to_string(index=False))
+    print(f"Saved to: {TRAINING_LOG_PATH}")
 
 
 # ============================================================

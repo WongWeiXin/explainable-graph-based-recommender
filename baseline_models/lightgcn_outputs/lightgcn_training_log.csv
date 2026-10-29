@@ -1,0 +1,4 @@
+seed,epochs_run,early_stopped,best_val_ndcg5_eligibility
+42,271,True,0.39367724644557534
+43,300,False,0.4402753803606918
+44,300,False,0.4641175105867051
