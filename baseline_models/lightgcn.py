@@ -1,5 +1,6 @@
 import os
 import random
+from pathlib import Path
 import time
 import copy
 import numpy as np
@@ -15,22 +16,51 @@ import torch.nn.functional as F
 # CONFIGURATION
 # ============================================================
 
-BENCHMARK_PATH = (
-    "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender"
-    "\\frozen_benchmark.csv"
-)
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent
 
-PROPERTY_PATH = (
-    "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender"
-    "\\dataset\\Malaysia_Property_Processed_Dataset.csv"
-)
+# Official benchmark: one search profile per row (frozen_queries_set.csv).
+BENCHMARK_PATH = str(PROJECT_ROOT / "frozen_queries_set.csv")
 
-RAW_PROPERTY_PATH = (
-    "C:\\Users\\tehzq\\FYP\\explainable-graph-based-recommender"
-    "\\dataset\\Malaysia_Property_Cleaned_Raw.csv"
-)
+# Current deduplicated catalogue. LightGCN only needs the property ID set
+# (property embeddings are learned), so both paths point to the same file;
+# this keeps the ID set identical to the one used by CBR and CPG.
+PROPERTY_PATH = str(PROJECT_ROOT / "dataset" / "Malaysia_Property_Cleaned_Raw.csv")
+RAW_PROPERTY_PATH = PROPERTY_PATH
 
-OUTPUT_DIR = "lightgcn_outputs"
+OUTPUT_DIR = str(SCRIPT_DIR / "lightgcn_outputs")
+
+# Hard-constraint fields of a search profile used as query features.
+QUERY_NUMERIC_COLUMNS = [
+    "max_price",
+    "min_bedroom",
+    "min_bathroom",
+    "parking_required",
+    "furnished_only",
+    "tenure_freehold",
+    "tenure_leasehold",
+]
+FURNISHED_VALUES = {"partially furnished", "fully furnished"}
+
+# Candidate-sufficiency rule (benchmark/apply_eligibility_rule.py).
+# Only queries with benchmark_role == "ranking" (>= 5 eligible properties)
+# enter ranking metrics; empty and sparse queries are excluded.
+ELIGIBILITY_MANIFEST_PATH = str(PROJECT_ROOT / "benchmark_eligibility_manifest.csv")
+RANKING_QUERY_IDS = set()
+
+
+def load_ranking_query_ids():
+    if not os.path.exists(ELIGIBILITY_MANIFEST_PATH):
+        raise FileNotFoundError(
+            "benchmark_eligibility_manifest.csv not found. Run:\n"
+            "    python benchmark/apply_eligibility_rule.py"
+        )
+    manifest = pd.read_csv(ELIGIBILITY_MANIFEST_PATH)
+    return set(
+        manifest.loc[
+            manifest["benchmark_role"] == "ranking", "query_id"
+        ].astype(str)
+    )
 
 MODEL_PATH = os.path.join(
     OUTPUT_DIR,
@@ -100,6 +130,66 @@ print(f"Device: {DEVICE}")
 
 
 # ============================================================
+# BENCHMARK SCHEMA (frozen_queries_set.csv)
+# ============================================================
+
+def standardise_benchmark(
+    queries,
+    catalogue
+):
+    """Map frozen_queries_set.csv columns to the fields this model uses.
+
+    preferred_area -> district (hard constraint), max_budget_rm -> max_price,
+    min_bedrooms/min_bathrooms -> min_bedroom/min_bathroom, plus parking,
+    furnishing and tenure requirements. The queries file has no state column,
+    so state is derived from the catalogue (majority state of the district);
+    it is only a query feature, never a relevance filter.
+    """
+
+    required = [
+        "query_id", "preferred_area", "max_budget_rm", "property_type",
+        "min_bedrooms", "min_bathrooms", "parking_required",
+        "furnished_only", "tenure",
+    ]
+    missing = [c for c in required if c not in queries.columns]
+    if missing:
+        raise ValueError(
+            "frozen_queries_set.csv is missing columns: " + ", ".join(missing)
+        )
+
+    district_state = (
+        catalogue.assign(
+            _d=catalogue["district"].astype(str).str.strip().str.lower()
+        )
+        .groupby("_d")["state"]
+        .agg(lambda s: s.value_counts().index[0])
+    )
+
+    out = pd.DataFrame({
+        "query_id": queries["query_id"].astype(str).str.strip(),
+        "district": queries["preferred_area"].astype(str).str.strip().str.lower(),
+        "property_type": queries["property_type"].astype(str).str.strip(),
+        "max_price": pd.to_numeric(queries["max_budget_rm"], errors="coerce"),
+        "min_bedroom": pd.to_numeric(queries["min_bedrooms"], errors="coerce"),
+        "min_bathroom": pd.to_numeric(queries["min_bathrooms"], errors="coerce"),
+        "parking_required": pd.to_numeric(
+            queries["parking_required"], errors="coerce").fillna(0).astype(int),
+        "furnished_only": pd.to_numeric(
+            queries["furnished_only"], errors="coerce").fillna(0).astype(int),
+        "tenure": queries["tenure"].astype(str).str.strip(),
+    })
+    out["state"] = out["district"].map(district_state).fillna("unknown")
+    tenure_key = out["tenure"].str.lower()
+    out["tenure_freehold"] = (tenure_key == "freehold").astype(int)
+    out["tenure_leasehold"] = (tenure_key == "leasehold").astype(int)
+
+    unknown = sorted(set(out.loc[out["state"] == "unknown", "district"]))
+    if unknown:
+        print(f"WARNING: districts not in catalogue: {unknown}")
+    return out
+
+
+# ============================================================
 # DATA LOADING
 # ============================================================
 
@@ -107,12 +197,15 @@ def load_data():
 
     print("\n===== LOADING DATA =====")
 
-    benchmark = pd.read_csv(BENCHMARK_PATH)
-
-    properties = pd.read_csv(PROPERTY_PATH)
-
     raw_properties = pd.read_csv(
         RAW_PROPERTY_PATH
+    )
+
+    properties = raw_properties.copy()
+
+    benchmark = standardise_benchmark(
+        pd.read_csv(BENCHMARK_PATH),
+        raw_properties
     )
 
     print(
@@ -249,74 +342,50 @@ def get_relevant_properties(
 
     candidates = raw_properties.copy()
 
-    # --------------------------------------------------------
     # Price
-    # --------------------------------------------------------
-
     candidates = candidates[
         candidates["price"] <= query["max_price"]
     ]
 
-    # --------------------------------------------------------
-    # State
-    # --------------------------------------------------------
-
+    # District (preferred_area is a hard constraint in the benchmark)
     candidates = candidates[
-        candidates["state"]
-        .astype(str)
-        .str.strip()
-        .str.lower()
-        ==
-        str(query["state"])
-        .strip()
-        .lower()
+        candidates["district"].astype(str).str.strip().str.lower()
+        == str(query["district"]).strip().lower()
     ]
 
-    # --------------------------------------------------------
-    # District
-    # --------------------------------------------------------
-
-    candidates = candidates[
-        candidates["district"]
-        .astype(str)
-        .str.strip()
-        .str.lower()
-        ==
-        str(query["district"])
-        .strip()
-        .lower()
-    ]
-
-    # --------------------------------------------------------
     # Property type
-    # --------------------------------------------------------
-
     candidates = candidates[
-        candidates["property_type"]
-        .astype(str)
-        .str.strip()
-        .str.lower()
-        ==
-        str(query["property_type"])
-        .strip()
-        .lower()
+        candidates["property_type"].astype(str).str.strip().str.lower()
+        == str(query["property_type"]).strip().lower()
     ]
 
-    # --------------------------------------------------------
-    # Bedrooms
-    # --------------------------------------------------------
-
+    # Bedrooms / bathrooms
     candidates = candidates[
         candidates["bedroom"] >= query["min_bedroom"]
     ]
-
-    # --------------------------------------------------------
-    # Bathrooms
-    # --------------------------------------------------------
-
     candidates = candidates[
         candidates["bathroom"] >= query["min_bathroom"]
     ]
+
+    # Parking required: at least one parking space
+    if int(query["parking_required"]) == 1:
+        candidates = candidates[
+            candidates["car_parks"] >= 1
+        ]
+
+    # Furnished only: partially or fully furnished
+    if int(query["furnished_only"]) == 1:
+        candidates = candidates[
+            candidates["furnishing"].astype(str).str.strip().str.lower()
+            .isin(FURNISHED_VALUES)
+        ]
+
+    # Tenure (skipped when "No preference")
+    if str(query["tenure"]).strip().lower() in {"freehold", "leasehold"}:
+        candidates = candidates[
+            candidates["tenure"].astype(str).str.strip().str.lower()
+            == str(query["tenure"]).strip().lower()
+        ]
 
     return candidates
 
@@ -587,13 +656,7 @@ class QueryFeatureProcessor:
             )
         )
 
-        numeric_columns = [
-            "max_price",
-            "min_bedroom",
-            "min_bathroom",
-        ]
-
-        for column in numeric_columns:
+        for column in QUERY_NUMERIC_COLUMNS:
 
             values = pd.to_numeric(
                 train_benchmark[column],
@@ -668,11 +731,7 @@ class QueryFeatureProcessor:
 
         numeric_values = []
 
-        for column in [
-            "max_price",
-            "min_bedroom",
-            "min_bathroom",
-        ]:
+        for column in QUERY_NUMERIC_COLUMNS:
 
             value = float(
                 pd.to_numeric(
@@ -750,7 +809,7 @@ class QueryEncoder(nn.Module):
         )
 
         self.numeric_network = nn.Sequential(
-            nn.Linear(3, 16),
+            nn.Linear(len(QUERY_NUMERIC_COLUMNS), 16),
             nn.ReLU(),
             nn.Linear(16, 16)
         )
@@ -1981,7 +2040,7 @@ def evaluate_validation(
             .tolist()
         )
 
-        if len(relevant_ids) == 0:
+        if len(relevant_ids) == 0 or str(query_id) not in RANKING_QUERY_IDS:
             continue
 
         ranked = rank_properties(
@@ -2083,11 +2142,11 @@ def evaluate_test(
         )
 
         # ----------------------------------------------------
-        # Queries with no relevant properties cannot be
-        # evaluated for ranking metrics.
+        # Only "ranking" queries (>= 5 eligible properties)
+        # enter ranking metrics (eligibility rule ELIG-v1).
         # ----------------------------------------------------
 
-        if len(relevant_ids) == 0:
+        if len(relevant_ids) == 0 or str(query_id) not in RANKING_QUERY_IDS:
 
             continue
 
@@ -2427,6 +2486,10 @@ def run_experiment():
 
     global TRAIN_QUERY_IDS_GLOBAL
     global PROCESSOR_GLOBAL
+    global RANKING_QUERY_IDS
+
+    RANKING_QUERY_IDS = load_ranking_query_ids()
+    print(f"Ranking-eligible queries (ELIG-v1): {len(RANKING_QUERY_IDS)}")
 
     os.makedirs(
         OUTPUT_DIR,
