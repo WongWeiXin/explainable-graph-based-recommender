@@ -1,0 +1,26 @@
+{
+  "method": "cpg",
+  "variant": "full",
+  "ranking_config_id": "RANK-2cac770876",
+  "graph_config_id": "SIM-4fdc14c547",
+  "queries_file": "frozen_queries_set_v2.csv",
+  "queries": 250,
+  "status_counts_rows": {
+    "ok": 675,
+    "empty_result_constraints_not_relaxed": 89,
+    "fewer_than_top_n_eligible": 57
+  },
+  "queries_by_role": {
+    "ranking": 135,
+    "empty_result_test": 89,
+    "sparse_candidate": 26
+  },
+  "recommendation_rows": 732,
+  "graph_support_available_in_top5_pct": 88.25,
+  "integrity": {
+    "hard_constraint_violations_in_top5": 0,
+    "invalid_queries": [],
+    "eligible_count_matches_manifest": true
+  },
+  "elapsed_seconds": 6.7
+}
