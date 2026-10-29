@@ -1,0 +1,81 @@
+{
+  "queries": 250,
+  "auto_status": {
+    "OK (info)": 89,
+    "OK": 85,
+    "REVIEW": 76
+  },
+  "auto_status_by_role": {
+    "empty_result_test": {
+      "OK": 13,
+      "OK (info)": 1,
+      "REVIEW": 75
+    },
+    "ranking": {
+      "OK": 60,
+      "OK (info)": 75,
+      "REVIEW": 0
+    },
+    "sparse_candidate": {
+      "OK": 12,
+      "OK (info)": 13,
+      "REVIEW": 1
+    }
+  },
+  "flags": {
+    "B1 WARNING": 2,
+    "C3 WARNING": 32,
+    "C4 WARNING": 36,
+    "D2 INFO": 4,
+    "R1 WARNING": 35,
+    "R2 WARNING": 7,
+    "S1 INFO": 8,
+    "S2 INFO": 106,
+    "S3 INFO": 1
+  },
+  "coverage": {
+    "districts": 29,
+    "property_types": {
+      "Terrace House": 66,
+      "Condominium": 62,
+      "Link Bungalow / Semi-Detached": 43,
+      "Bungalow / Detached House": 36,
+      "Cluster House": 22,
+      "Town House": 12,
+      "Low-Cost House": 4,
+      "House (Others)": 4,
+      "Flat": 1
+    },
+    "main_priority": {
+      "balanced": 70,
+      "facilities": 65,
+      "price": 60,
+      "size": 55
+    },
+    "facility_groups_per_query": {
+      "0": 39,
+      "1": 152,
+      "2": 53,
+      "3": 6
+    },
+    "partition": {
+      "test": {
+        "hard": 20,
+        "standard": 30
+      },
+      "train": {
+        "hard": 70,
+        "standard": 105
+      },
+      "validation": {
+        "hard": 10,
+        "standard": 15
+      }
+    }
+  },
+  "global_notes": [
+    "parking_required: car_parks was median-imputed for missing values in preprocessing, so the requirement currently excludes no property.",
+    "tenure: missing tenure was mode-imputed (Freehold), so a Freehold requirement accepts listings with unknown tenure.",
+    "Automated checks do not replace the independent human review (Section 3.7)."
+  ]
+}

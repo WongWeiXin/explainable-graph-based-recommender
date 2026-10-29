@@ -9,50 +9,51 @@
   },
   "inputs": {
     "queries_file": "frozen_queries_set_v2.csv",
-    "queries_sha256_16": "bbff48ac73778242",
+    "queries_sha256_16": "c75818b5318d5902",
     "catalogue_file": "Malaysia_Property_Cleaned_Raw.csv",
     "catalogue_sha256_16": "fc159544cb2e3485",
     "catalogue_rows": 2951,
     "queries": 250
   },
   "role_counts": {
-    "ranking": 205,
-    "sparse_candidate": 17,
-    "empty_result_test": 28
+    "ranking": 135,
+    "sparse_candidate": 26,
+    "empty_result_test": 89
   },
   "role_counts_edge_case": {
-    "empty_result_test": 25,
-    "sparse_candidate": 3,
-    "ranking": 2
+    "empty_result_test": 87,
+    "sparse_candidate": 10,
+    "ranking": 3
   },
   "role_counts_ordinary": {
-    "ranking": 203,
-    "sparse_candidate": 14,
-    "empty_result_test": 3
+    "ranking": 132,
+    "sparse_candidate": 16,
+    "empty_result_test": 2
   },
   "role_counts_by_partition": {
     "test": {
-      "empty_result_test": 4,
-      "ranking": 42,
-      "sparse_candidate": 4
+      "empty_result_test": 18,
+      "ranking": 27,
+      "sparse_candidate": 5
     },
     "train": {
-      "empty_result_test": 20,
-      "ranking": 143,
-      "sparse_candidate": 12
+      "empty_result_test": 60,
+      "ranking": 96,
+      "sparse_candidate": 19
     },
     "validation": {
-      "empty_result_test": 4,
-      "ranking": 20,
-      "sparse_candidate": 1
+      "empty_result_test": 11,
+      "ranking": 12,
+      "sparse_candidate": 2
     }
   },
   "empty_sets_by_first_emptying_constraint": {
-    "property_type": 15,
-    "max_budget_rm": 5,
-    "furnished_only": 3,
-    "min_bedrooms": 2,
-    "preferred_area (district)": 2,
-    "tenure": 1
+    "property_type": 50,
+    "max_budget_rm": 12,
+    "min_bedrooms": 11,
+    "preferred_area (district)": 6,
+    "furnished_only": 5,
+    "tenure": 3,
+    "min_bathrooms": 2
   }
 }

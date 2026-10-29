@@ -8,7 +8,7 @@ leaving only 55 profiles usable for ranking metrics. v2 grounds ordinary profile
 catalogue actually contains. No model score, ranking, graph output or relevance label is used.
 
 Composition (250 profiles, seed 2026):
-  * 220 ORDINARY profiles, catalogue-grounded
+  * 150 ORDINARY profiles, catalogue-grounded
       - Strata: (district, property_type) combinations with >= MIN_STRATUM_SIZE listings.
       - Profiles per stratum: proportional to sqrt(stratum size), capped at MAX_PER_STRATUM
         (largest-remainder rounding), so large strata do not dominate.
@@ -21,10 +21,12 @@ Composition (250 profiles, seed 2026):
           tenure            "No preference" with p = 0.5, else a tenure present in the subset
       - Soft preferences:
           preferred size    built-up quantile ~ U(0.25, 0.75) of the subset, rounded to 50 sq ft
-          main priority     balanced / price / size / facilities, 55 each (shuffled)
+          main priority     balanced / price / size / facilities, as equal as possible
+                            (38 / 38 / 37 / 37, shuffled)
           nearby facilities 0-3 of the 4 groups (P = .25/.40/.30/.05); >= 1 if priority = facilities
       - Constraints are NOT forced to leave >= 5 properties; the eligibility rule decides roles.
-  * 30 EDGE-CASE profiles carried over from v1 (simple random sample of the 100 v1 edge
+  * 100 EDGE-CASE profiles: all 100 v1 edge cases (experiment plan: 150 scenarios + 100 edge cases)
+    (formerly a simple random sample of the 100 v1 edge
     cases, seed 2026), converted to the v2 column format.
 
 Preferred area is always a hard constraint (the property must be in that district).
@@ -56,8 +58,8 @@ REVIEW_CHANGELOG = ROOT / "frozen_queries" / "v2_review_changelog.csv"
 
 VERSION = "v2"
 SEED = 2026
-N_ORDINARY = 220   # divisible by 4 -> equal main-priority counts
-N_EDGE = 30        # reduced from 50: most v1 edge cases are empty-result tests
+N_ORDINARY = 150   # experiment plan: 150 scenarios + 100 edge cases = 250
+N_EDGE = 100       # all v1 edge cases
 MIN_STRATUM_SIZE = 10
 MAX_PER_STRATUM = 8
 PRIORITIES = ["balanced", "price", "size", "facilities"]
@@ -113,7 +115,9 @@ def make_ordinary(cat: pd.DataFrame, rng: np.random.Generator) -> list[dict]:
     strata = sizes[sizes >= MIN_STRATUM_SIZE].sort_index()
     alloc = allocate(strata, N_ORDINARY, MAX_PER_STRATUM)
 
-    priorities = [p for p in PRIORITIES for _ in range(N_ORDINARY // len(PRIORITIES))]
+    # as equal as possible; the first PRIORITIES get the remainder (150 -> 38/38/37/37)
+    base, extra = divmod(N_ORDINARY, len(PRIORITIES))
+    priorities = [p for i, p in enumerate(PRIORITIES) for _ in range(base + (1 if i < extra else 0))]
     rng.shuffle(priorities)
 
     rows, i = [], 0
@@ -211,7 +215,15 @@ def assign_partitions(df: pd.DataFrame, rng: np.random.Generator) -> pd.Series:
 
 
 def main() -> None:
-    # v2 has been reviewed: regenerating would silently undo the logged review decisions.
+    # v2 has been reviewed/approved: regenerating would silently undo that.
+    approved = False
+    if OUT_PATH.exists():
+        existing = pd.read_csv(OUT_PATH, dtype=str, keep_default_na=False)
+        approved = (existing.get("adjudication_status", pd.Series(dtype=str)) != "pending").any()
+    if approved and "--force" not in sys.argv:
+        raise SystemExit(
+            f"{OUT_PATH.name} has approved profiles (adjudication_status != pending). "
+            "Regenerating would discard the review. Use --force only to restart v2.")
     if REVIEW_CHANGELOG.exists() and "--force" not in sys.argv:
         raise SystemExit(
             f"{REVIEW_CHANGELOG.name} exists: v2 has review changes applied. Regenerating would "
