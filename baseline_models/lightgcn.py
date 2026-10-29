@@ -20,7 +20,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 
 # Official benchmark: one search profile per row (frozen_queries_set.csv).
-BENCHMARK_PATH = str(PROJECT_ROOT / "frozen_queries_set.csv")
+BENCHMARK_PATH = str(PROJECT_ROOT / "frozen_queries" / "frozen_queries_set_v2.csv")
 
 # Current deduplicated catalogue. LightGCN only needs the property ID set
 # (property embeddings are learned), so both paths point to the same file;
@@ -45,7 +45,7 @@ FURNISHED_VALUES = {"partially furnished", "fully furnished"}
 # Candidate-sufficiency rule (benchmark/apply_eligibility_rule.py).
 # Only queries with benchmark_role == "ranking" (>= 5 eligible properties)
 # enter ranking metrics; empty and sparse queries are excluded.
-ELIGIBILITY_MANIFEST_PATH = str(PROJECT_ROOT / "benchmark_eligibility_manifest.csv")
+ELIGIBILITY_MANIFEST_PATH = str(PROJECT_ROOT / "benchmark" / "eligibility_manifest_v2.csv")
 RANKING_QUERY_IDS = set()
 
 
@@ -77,6 +77,13 @@ RECOMMENDATION_PATH = os.path.join(
     "Q001_recommendations.csv"
 )
 
+# Top-5 recommendations for every benchmark query (all seeds in one file)
+TOP_N_EXPORT = 5
+TOP5_PATH = os.path.join(
+    OUTPUT_DIR,
+    "lightgcn_top5_recommendations.csv"
+)
+
 
 # ============================================================
 # EXPERIMENT SETTINGS
@@ -94,12 +101,14 @@ N_LAYERS = 3
 LEARNING_RATE = 0.001
 REG_WEIGHT = 1e-4
 
-EPOCHS = 100
-PATIENCE = 15
+EPOCHS = 300        # seed 42 was still improving at epoch 100
+PATIENCE = 40       # validation has few ranking queries -> noisy; 15 stopped too early
+MIN_EPOCHS = 30     # no early stopping before this epoch
 
 NEGATIVES_PER_POSITIVE = 1
 
-TOP_K_VALUES = [5, 10]
+TOP_K_VALUES = [5]
+EVAL_K = 5          # primary metric NDCG@5 (validation selection and test)
 
 DEVICE = torch.device(
     "cuda" if torch.cuda.is_available() else "cpu"
@@ -177,6 +186,11 @@ def standardise_benchmark(
         "furnished_only": pd.to_numeric(
             queries["furnished_only"], errors="coerce").fillna(0).astype(int),
         "tenure": queries["tenure"].astype(str).str.strip(),
+        # fixed benchmark partition (v2); empty -> seeded random split
+        "partition": (
+            queries["partition"].astype(str).str.strip()
+            if "partition" in queries.columns else ""
+        ),
     })
     out["state"] = out["district"].map(district_state).fillna("unknown")
     tenure_key = out["tenure"].str.lower()
@@ -347,7 +361,7 @@ def get_relevant_properties(
         candidates["price"] <= query["max_price"]
     ]
 
-    # District (preferred_area is a hard constraint in the benchmark)
+    # District: preferred area is always a hard constraint
     candidates = candidates[
         candidates["district"].astype(str).str.strip().str.lower()
         == str(query["district"]).strip().lower()
@@ -485,6 +499,21 @@ def split_scenarios(
         .unique()
         .tolist()
     )
+
+    # Fixed benchmark partition (v2): every method evaluates the same profiles;
+    # seeds then vary only model initialisation and negative sampling.
+    if "partition" in benchmark.columns and set(
+        benchmark["partition"].astype(str)
+    ) >= {"train", "validation", "test"}:
+        part = benchmark.set_index(benchmark["query_id"].astype(str))["partition"]
+        train_ids = part[part == "train"].index.tolist()
+        val_ids = part[part == "validation"].index.tolist()
+        test_ids = part[part == "test"].index.tolist()
+        print("\n===== SCENARIO SPLIT (fixed benchmark partition) =====")
+        print(f"Train scenarios: {len(train_ids)}")
+        print(f"Validation scenarios: {len(val_ids)}")
+        print(f"Test scenarios: {len(test_ids)}")
+        return train_ids, val_ids, test_ids
 
     rng = np.random.RandomState(seed)
 
@@ -1652,12 +1681,17 @@ def train_model(
             print(
                 f"Epoch {epoch:03d} | "
                 f"Loss: {loss.item():.6f} | "
-                f"Val NDCG@10: {val_ndcg:.6f}"
+                f"Val NDCG@{EVAL_K}: {val_ndcg:.6f}"
             )
 
         # ----------------------------------------------------
         # Early stopping
         # ----------------------------------------------------
+
+        # Warm-up: epochs before MIN_EPOCHS are never kept as "best", so a lucky
+        # score on an untrained model cannot win early stopping.
+        if epoch < MIN_EPOCHS:
+            continue
 
         if val_ndcg > best_val_ndcg:
 
@@ -1673,7 +1707,7 @@ def train_model(
 
             patience_counter += 1
 
-        if patience_counter >= PATIENCE:
+        if epoch >= MIN_EPOCHS and patience_counter >= PATIENCE:
 
             print(
                 f"Early stopping at epoch "
@@ -1815,6 +1849,88 @@ def rank_properties(
         )
 
     return results
+
+
+# ============================================================
+# TOP-5 EXPORT FOR EVERY BENCHMARK QUERY
+# ============================================================
+
+def export_top_recommendations(
+    model,
+    benchmark,
+    raw_properties,
+    property_embeddings,
+    property_to_idx,
+    processor,
+    seed,
+    manifest,
+    top_n=TOP_N_EXPORT
+):
+    """Top-N LightGCN recommendations per query, ranked ONLY among the query's
+    eligible properties (all hard constraints applied first, as for CBR and CPG).
+
+    Ties: higher score first, then ascending Property_ID.
+    Empty candidate set: one row with status empty_result_constraints_not_relaxed
+    (constraints are never relaxed).
+    unrestricted_top{N}_violations: how many of the model's top-N over the WHOLE
+    catalogue would break the query's hard constraints (diagnostic only).
+    """
+
+    idx_to_property = {
+        idx: property_id
+        for property_id, idx
+        in property_to_idx.items()
+    }
+    info = raw_properties.set_index("property_id")
+    detail_cols = [
+        "price", "property_type", "district", "bedroom", "bathroom",
+        "built_up_area", "car_parks", "furnishing", "tenure",
+    ]
+
+    rows = []
+    for _, query in benchmark.iterrows():
+        query_id = str(query["query_id"])
+        eligible_ids = set(
+            get_relevant_properties(query, raw_properties)["property_id"].astype(int)
+        )
+        ranked = rank_properties(
+            model, query, property_embeddings, idx_to_property, processor
+        )
+        unrestricted_violations = sum(
+            1 for pid, _ in ranked[:top_n] if int(pid) not in eligible_ids
+        )
+        eligible_ranked = sorted(
+            ((int(pid), score) for pid, score in ranked if int(pid) in eligible_ids),
+            key=lambda x: (-x[1], x[0])
+        )[:top_n]
+
+        meta = manifest.get(query_id, {})
+        base = {
+            "seed": seed,
+            "query_id": query_id,
+            "partition": query.get("partition", ""),
+            "seen_in_training": str(query.get("partition", "")) == "train",
+            "benchmark_role": meta.get("benchmark_role", ""),
+            "eligible_count": len(eligible_ids),
+            f"unrestricted_top{top_n}_violations": unrestricted_violations,
+        }
+
+        if not eligible_ranked:
+            rows.append({**base, "rank": None, "Property_ID": None, "score": None,
+                         "status": "empty_result_constraints_not_relaxed"})
+            continue
+
+        for rank, (pid, score) in enumerate(eligible_ranked, start=1):
+            details = info.loc[pid, detail_cols].to_dict() if pid in info.index else {}
+            rows.append({
+                **base,
+                "rank": rank,
+                "Property_ID": pid,
+                "score": round(score, 6),
+                "status": "ok" if len(eligible_ids) >= top_n else "fewer_than_top_n_eligible",
+                **details,
+            })
+    return rows
 
 
 # ============================================================
@@ -2059,7 +2175,7 @@ def evaluate_validation(
         score = ndcg_at_k(
             ranked_ids,
             relevant_ids,
-            10
+            EVAL_K
         )
 
         if score is not None:
@@ -2113,9 +2229,8 @@ def evaluate_test(
     }
 
     p5_values = []
-    p10_values = []
-    recall10_values = []
-    ndcg10_values = []
+    recall5_values = []
+    ndcg5_values = []
     mrr_values = []
 
     evaluated_queries = []
@@ -2174,25 +2289,19 @@ def evaluate_test(
         p5 = precision_at_k(
             ranked_ids,
             relevant_ids,
-            5
+            EVAL_K
         )
 
-        p10 = precision_at_k(
+        recall5 = recall_at_k(
             ranked_ids,
             relevant_ids,
-            10
+            EVAL_K
         )
 
-        recall10 = recall_at_k(
+        ndcg5 = ndcg_at_k(
             ranked_ids,
             relevant_ids,
-            10
-        )
-
-        ndcg10 = ndcg_at_k(
-            ranked_ids,
-            relevant_ids,
-            10
+            EVAL_K
         )
 
         mrr = reciprocal_rank(
@@ -2201,22 +2310,21 @@ def evaluate_test(
         )
 
         p5_values.append(p5)
-        p10_values.append(p10)
 
-        if recall10 is not None:
-            recall10_values.append(
-                recall10
+        if recall5 is not None:
+            recall5_values.append(
+                recall5
             )
 
-        if ndcg10 is not None:
-            ndcg10_values.append(
-                ndcg10
+        if ndcg5 is not None:
+            ndcg5_values.append(
+                ndcg5
             )
 
         mrr_values.append(mrr)
 
         recommended_property_ids.update(
-            ranked_ids[:10]
+            ranked_ids[:EVAL_K]
         )
 
         evaluated_queries.append(
@@ -2229,7 +2337,7 @@ def evaluate_test(
 
     if len(property_ids) > 0:
 
-        coverage10 = (
+        coverage5 = (
             len(recommended_property_ids)
             /
             len(property_ids)
@@ -2237,7 +2345,7 @@ def evaluate_test(
 
     else:
 
-        coverage10 = 0.0
+        coverage5 = 0.0
 
     # --------------------------------------------------------
     # Response time
@@ -2264,21 +2372,15 @@ def evaluate_test(
             else 0.0
         ),
 
-        "P@10": (
-            float(np.mean(p10_values))
-            if p10_values
+        "Recall@5": (
+            float(np.mean(recall5_values))
+            if recall5_values
             else 0.0
         ),
 
-        "Recall@10": (
-            float(np.mean(recall10_values))
-            if recall10_values
-            else 0.0
-        ),
-
-        "NDCG@10": (
-            float(np.mean(ndcg10_values))
-            if ndcg10_values
+        "NDCG@5": (
+            float(np.mean(ndcg5_values))
+            if ndcg5_values
             else 0.0
         ),
 
@@ -2288,8 +2390,8 @@ def evaluate_test(
             else 0.0
         ),
 
-        "Coverage@10": float(
-            coverage10
+        "Coverage@5": float(
+            coverage5
         ),
 
         "ResponseTime_ms": float(
@@ -2316,15 +2418,11 @@ def evaluate_test(
     )
 
     print(
-        f"P@10       : {results['P@10']:.6f}"
+        f"Recall@5   : {results['Recall@5']:.6f}"
     )
 
     print(
-        f"Recall@10  : {results['Recall@10']:.6f}"
-    )
-
-    print(
-        f"NDCG@10    : {results['NDCG@10']:.6f}"
+        f"NDCG@5     : {results['NDCG@5']:.6f}"
     )
 
     print(
@@ -2332,7 +2430,7 @@ def evaluate_test(
     )
 
     print(
-        f"Coverage@10: {results['Coverage@10']:.6f}"
+        f"Coverage@5 : {results['Coverage@5']:.6f}"
     )
 
     print(
@@ -2527,6 +2625,13 @@ def run_experiment():
     )
 
     all_seed_results = []
+    all_top_recommendations = []
+
+    manifest_df = pd.read_csv(ELIGIBILITY_MANIFEST_PATH)
+    manifest_by_query = {
+        str(r["query_id"]): r
+        for r in manifest_df.to_dict(orient="records")
+    }
 
     # ========================================================
     # RUN EACH RANDOM SEED
@@ -2715,14 +2820,15 @@ def run_experiment():
         # Save best model
         # ----------------------------------------------------
 
+        seed_model_path = MODEL_PATH.replace(".pt", f"_seed{seed}.pt")
         torch.save(
             model.state_dict(),
-            MODEL_PATH
+            seed_model_path
         )
 
         print(
             f"\nModel saved to: "
-            f"{MODEL_PATH}"
+            f"{seed_model_path}"
         )
 
         # ----------------------------------------------------
@@ -2752,9 +2858,34 @@ def run_experiment():
             top_k=15
         )
 
+        # ----------------------------------------------------
+        # Top-5 for every benchmark query (eligible candidates only)
+        # ----------------------------------------------------
+
+        all_top_recommendations.extend(
+            export_top_recommendations(
+                model=model,
+                benchmark=benchmark,
+                raw_properties=raw_properties,
+                property_embeddings=property_embeddings,
+                property_to_idx=property_to_idx,
+                processor=processor,
+                seed=seed,
+                manifest=manifest_by_query,
+            )
+        )
+
     # ========================================================
     # MULTI-SEED SUMMARY
     # ========================================================
+
+    top_df = pd.DataFrame(all_top_recommendations)
+    top_df.to_csv(TOP5_PATH, index=False)
+    print(
+        f"\nTop-{TOP_N_EXPORT} recommendations for "
+        f"{top_df['query_id'].nunique()} queries x "
+        f"{top_df['seed'].nunique()} seed(s) saved to:\n{TOP5_PATH}"
+    )
 
     results_df = pd.DataFrame(
         all_seed_results
@@ -2766,12 +2897,11 @@ def run_experiment():
     )
 
     metric_columns = [
+        "NDCG@5",
         "P@5",
-        "P@10",
-        "Recall@10",
-        "NDCG@10",
+        "Recall@5",
         "MRR",
-        "Coverage@10",
+        "Coverage@5",
         "ResponseTime_ms",
     ]
 
