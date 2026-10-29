@@ -8,7 +8,7 @@ leaving only 55 profiles usable for ranking metrics. v2 grounds ordinary profile
 catalogue actually contains. No model score, ranking, graph output or relevance label is used.
 
 Composition (250 profiles, seed 2026):
-  * 200 ORDINARY profiles, catalogue-grounded
+  * 220 ORDINARY profiles, catalogue-grounded
       - Strata: (district, property_type) combinations with >= MIN_STRATUM_SIZE listings.
       - Profiles per stratum: proportional to sqrt(stratum size), capped at MAX_PER_STRATUM
         (largest-remainder rounding), so large strata do not dominate.
@@ -21,10 +21,10 @@ Composition (250 profiles, seed 2026):
           tenure            "No preference" with p = 0.5, else a tenure present in the subset
       - Soft preferences:
           preferred size    built-up quantile ~ U(0.25, 0.75) of the subset, rounded to 50 sq ft
-          main priority     balanced / price / size / facilities, 50 each (shuffled)
+          main priority     balanced / price / size / facilities, 55 each (shuffled)
           nearby facilities 0-3 of the 4 groups (P = .25/.40/.30/.05); >= 1 if priority = facilities
       - Constraints are NOT forced to leave >= 5 properties; the eligibility rule decides roles.
-  * 50 EDGE-CASE profiles carried over from v1 (simple random sample of the 100 v1 edge
+  * 30 EDGE-CASE profiles carried over from v1 (simple random sample of the 100 v1 edge
     cases, seed 2026), converted to the v2 column format.
 
 Preferred area is always a hard constraint (the property must be in that district).
@@ -41,6 +41,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -51,11 +52,12 @@ CATALOGUE_PATH = ROOT / "dataset" / "Malaysia_Property_Cleaned_Raw.csv"
 V1_PATH = ROOT / "frozen_queries" / "frozen_queries_set_v1.csv"
 OUT_PATH = ROOT / "frozen_queries" / "frozen_queries_set_v2.csv"
 REPORT_PATH = ROOT / "benchmark" / "generation_v2_report.json"
+REVIEW_CHANGELOG = ROOT / "frozen_queries" / "v2_review_changelog.csv"
 
 VERSION = "v2"
 SEED = 2026
-N_ORDINARY = 200
-N_EDGE = 50
+N_ORDINARY = 220   # divisible by 4 -> equal main-priority counts
+N_EDGE = 30        # reduced from 50: most v1 edge cases are empty-result tests
 MIN_STRATUM_SIZE = 10
 MAX_PER_STRATUM = 8
 PRIORITIES = ["balanced", "price", "size", "facilities"]
@@ -209,6 +211,12 @@ def assign_partitions(df: pd.DataFrame, rng: np.random.Generator) -> pd.Series:
 
 
 def main() -> None:
+    # v2 has been reviewed: regenerating would silently undo the logged review decisions.
+    if REVIEW_CHANGELOG.exists() and "--force" not in sys.argv:
+        raise SystemExit(
+            f"{REVIEW_CHANGELOG.name} exists: v2 has review changes applied. Regenerating would "
+            "undo them. Use --force only if you intend to restart the review, then rerun "
+            "benchmark/apply_review_v2.py.")
     rng = np.random.default_rng(SEED)
     cat = pd.read_csv(CATALOGUE_PATH)
     v1 = pd.read_csv(V1_PATH)
