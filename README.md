@@ -6,5 +6,6 @@ The system not only provides ranked property recommendations but also generates 
 
 to run the app.py, should
 
-1. have an environment that include all libraries dependencies from requirements.txt
-2. run the program in terminal using prompt: python app.py
+1. have a virtual environment that include all libraries dependencies from requirements.txt
+2. activate the virtual environment using prompt: .\.venv\Scripts\Activate.ps1
+3. run the program in terminal using prompt: python app.py
