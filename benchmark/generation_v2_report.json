@@ -1,0 +1,106 @@
+{
+  "benchmark_version": "v2",
+  "seed": 2026,
+  "inputs": {
+    "catalogue": "Malaysia_Property_Cleaned_Raw.csv",
+    "catalogue_sha256_16": "fc159544cb2e3485",
+    "catalogue_rows": 2951,
+    "v1_queries": "frozen_queries_set_v1.csv",
+    "v1_sha256_16": "3e0a90f3ee34bb4d"
+  },
+  "parameters": {
+    "n_ordinary": 200,
+    "n_edge": 50,
+    "min_stratum_size": 10,
+    "max_per_stratum": 8,
+    "split": {
+      "train": 0.7,
+      "validation": 0.1,
+      "test": 0.2
+    }
+  },
+  "strata_used": 56,
+  "districts_covered": 25,
+  "property_types_covered": 6,
+  "profiles_per_stratum": {
+    "barat daya | Condominium": 5,
+    "dungun | Bungalow / Detached House": 2,
+    "dungun | Link Bungalow / Semi-Detached": 2,
+    "johor bahru | Cluster House": 2,
+    "johor bahru | Condominium": 5,
+    "johor bahru | Link Bungalow / Semi-Detached": 3,
+    "johor bahru | Low-Cost House": 2,
+    "johor bahru | Terrace House": 8,
+    "kemaman | Bungalow / Detached House": 2,
+    "kemaman | Link Bungalow / Semi-Detached": 3,
+    "kemaman | Terrace House": 2,
+    "klang | Condominium": 3,
+    "klang | Terrace House": 3,
+    "kota kinabalu | Condominium": 5,
+    "kota setar | Link Bungalow / Semi-Detached": 2,
+    "kota tinggi | Terrace House": 2,
+    "kuala lumpur | Condominium": 3,
+    "kuala lumpur | Terrace House": 2,
+    "kuala nerus | Bungalow / Detached House": 2,
+    "kuantan | Bungalow / Detached House": 3,
+    "kuantan | Condominium": 2,
+    "kuantan | Link Bungalow / Semi-Detached": 5,
+    "kuantan | Terrace House": 5,
+    "kuching | Condominium": 4,
+    "kuching | Link Bungalow / Semi-Detached": 3,
+    "kuching | Terrace House": 5,
+    "kulai | Terrace House": 3,
+    "melaka tengah | Bungalow / Detached House": 2,
+    "melaka tengah | Link Bungalow / Semi-Detached": 2,
+    "melaka tengah | Terrace House": 4,
+    "penampang | Condominium": 2,
+    "petaling | Bungalow / Detached House": 3,
+    "petaling | Condominium": 8,
+    "petaling | Link Bungalow / Semi-Detached": 4,
+    "petaling | Terrace House": 8,
+    "port dickson | Terrace House": 2,
+    "putrajaya | Bungalow / Detached House": 3,
+    "putrajaya | Condominium": 5,
+    "putrajaya | Link Bungalow / Semi-Detached": 6,
+    "putrajaya | Terrace House": 6,
+    "samarahan | Terrace House": 2,
+    "seberang perai selatan | Condominium": 3,
+    "seberang perai selatan | Terrace House": 3,
+    "seberang perai tengah | Bungalow / Detached House": 2,
+    "seberang perai tengah | Condominium": 4,
+    "seberang perai tengah | Link Bungalow / Semi-Detached": 2,
+    "seberang perai tengah | Terrace House": 3,
+    "seberang perai utara | Condominium": 2,
+    "seberang perai utara | Terrace House": 3,
+    "sepang | Terrace House": 5,
+    "seremban | Bungalow / Detached House": 4,
+    "seremban | Condominium": 3,
+    "seremban | Link Bungalow / Semi-Detached": 3,
+    "seremban | Terrace House": 8,
+    "timur laut | Condominium": 8,
+    "timur laut | Terrace House": 2
+  },
+  "main_priority_counts": {
+    "balanced": 67,
+    "price": 63,
+    "facilities": 61,
+    "size": 59
+  },
+  "partition_counts": {
+    "hard": {
+      "test": 10,
+      "train": 35,
+      "validation": 5
+    },
+    "standard": {
+      "test": 40,
+      "train": 140,
+      "validation": 20
+    }
+  },
+  "notes": [
+    "No model output, graph output or relevance label was used to generate profiles.",
+    "Ordinary constraints are drawn from each stratum's own listing distribution; they are not forced to leave a minimum number of eligible properties.",
+    "Run benchmark/apply_eligibility_rule.py on this file to assign benchmark roles."
+  ]
+}
