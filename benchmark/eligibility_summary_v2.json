@@ -1,0 +1,59 @@
+{
+  "rule_version": "ELIG-v1",
+  "benchmark_version": "v2",
+  "min_ranking_candidates": 5,
+  "roles": {
+    "empty_result_test": "E_q = 0; checks explicit empty-result handling only",
+    "sparse_candidate": "1 <= E_q < 5; excluded from primary ranking metrics",
+    "ranking": "E_q >= 5; used for P@K, Recall@K, NDCG@K, MRR"
+  },
+  "inputs": {
+    "queries_file": "frozen_queries_set_v2.csv",
+    "queries_sha256_16": "1aa3f6c84aa1fccd",
+    "catalogue_file": "Malaysia_Property_Cleaned_Raw.csv",
+    "catalogue_sha256_16": "fc159544cb2e3485",
+    "catalogue_rows": 2951,
+    "queries": 250
+  },
+  "role_counts": {
+    "ranking": 176,
+    "sparse_candidate": 25,
+    "empty_result_test": 49
+  },
+  "role_counts_edge_case": {
+    "empty_result_test": 45,
+    "sparse_candidate": 4,
+    "ranking": 1
+  },
+  "role_counts_ordinary": {
+    "ranking": 175,
+    "sparse_candidate": 21,
+    "empty_result_test": 4
+  },
+  "role_counts_by_partition": {
+    "test": {
+      "empty_result_test": 11,
+      "ranking": 36,
+      "sparse_candidate": 3
+    },
+    "train": {
+      "empty_result_test": 33,
+      "ranking": 123,
+      "sparse_candidate": 19
+    },
+    "validation": {
+      "empty_result_test": 5,
+      "ranking": 17,
+      "sparse_candidate": 3
+    }
+  },
+  "empty_sets_by_first_emptying_constraint": {
+    "property_type": 22,
+    "max_budget_rm": 9,
+    "min_bedrooms": 6,
+    "furnished_only": 5,
+    "preferred_area (district)": 4,
+    "tenure": 2,
+    "min_bathrooms": 1
+  }
+}

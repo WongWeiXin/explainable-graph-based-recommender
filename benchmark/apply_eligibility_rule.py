@@ -1,7 +1,8 @@
 """Benchmark candidate-sufficiency rule (thesis Section 3.7).
 
 Run from the project root, BEFORE relevance annotation and before any model output is seen:
-    python benchmark/apply_eligibility_rule.py
+    python benchmark/apply_eligibility_rule.py                                   # v2 (default)
+    python benchmark/apply_eligibility_rule.py --queries frozen_queries/frozen_queries_set_v1.csv  # v1
 
 For every search profile q in frozen_queries_set.csv, the eligible candidate set C_q is
 built from the frozen catalogue with the SAME hard-constraint function the recommender
@@ -20,12 +21,13 @@ Top-5 list. Roles are fixed once per (benchmark version, catalogue version) and 
 changed after looking at method results. If either input changes, rerun this script and
 record a new manifest version.
 
-Outputs (project root):
-    benchmark_eligibility_manifest.csv   query_id, eligible_count, benchmark_role, ...
-    benchmark_eligibility_summary.json   rule, versions (hashes), role counts
+Outputs (benchmark/, one pair per benchmark version):
+    eligibility_manifest_<version>.csv   query_id, partition, eligible_count, benchmark_role, ...
+    eligibility_summary_<version>.json   rule, input hashes, role counts
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import sys
@@ -38,10 +40,9 @@ sys.path.insert(0, str(ROOT))
 
 from recommender_service import apply_hard_constraints  # noqa: E402  (single source of truth)
 
-QUERIES_PATH = ROOT / "frozen_queries_set.csv"
+DEFAULT_QUERIES = ROOT / "frozen_queries" / "frozen_queries_set_v2.csv"
 CATALOGUE_PATH = ROOT / "dataset" / "Malaysia_Property_Cleaned_Raw.csv"
-MANIFEST_PATH = ROOT / "benchmark_eligibility_manifest.csv"
-SUMMARY_PATH = ROOT / "benchmark_eligibility_summary.json"
+OUT_DIR = ROOT / "benchmark"
 
 RULE_VERSION = "ELIG-v1"
 MIN_RANKING_CANDIDATES = 5
@@ -55,12 +56,11 @@ def _sha(path: Path) -> str:
 
 
 def hard_profile(row: pd.Series) -> dict:
-    """Hard-constraint part of a benchmark profile (preferred_area is mandatory)."""
+    """Hard-constraint part of a benchmark profile (preferred area is always a hard constraint)."""
     tenure = str(row["tenure"]).strip()
     return {
         "max_budget_rm": float(row["max_budget_rm"]),
         "preferred_area": str(row["preferred_area"]).strip(),
-        "location_mandatory": True,
         "property_type": str(row["property_type"]).strip(),
         "min_bedrooms": float(row["min_bedrooms"]) or None,
         "min_bathrooms": float(row["min_bathrooms"]) or None,
@@ -79,8 +79,16 @@ def assign_role(n: int) -> str:
 
 
 def main() -> None:
-    queries = pd.read_csv(QUERIES_PATH)
+    ap = argparse.ArgumentParser(description="Assign benchmark roles (rule ELIG-v1).")
+    ap.add_argument("--queries", type=Path, default=DEFAULT_QUERIES)
+    args = ap.parse_args()
+    queries_path = args.queries if args.queries.is_absolute() else ROOT / args.queries
+    queries = pd.read_csv(queries_path)
     catalogue = pd.read_csv(CATALOGUE_PATH)
+    version = (str(queries["benchmark_version"].iloc[0]) if "benchmark_version" in queries
+               else "v1")
+    manifest_path = OUT_DIR / f"eligibility_manifest_{version}.csv"
+    summary_path = OUT_DIR / f"eligibility_summary_{version}.json"
 
     rows = []
     for _, q in queries.iterrows():
@@ -90,19 +98,23 @@ def main() -> None:
         emptied_by = next((a["constraint"] for a in audit if a["candidates_after"] == 0), None)
         rows.append({
             "query_id": q["query_id"],
+            "benchmark_version": version,
+            "partition": q.get("partition", ""),
             "eligible_count": n,
             "benchmark_role": assign_role(n),
             "emptied_by_constraint": emptied_by,
-            "is_edge_case": pd.notna(q.get("edge_case_difference")),
+            "is_edge_case": pd.notna(q.get("edge_case_difference"))
+            and str(q.get("edge_case_difference")).strip() != "",
             "rule_version": RULE_VERSION,
         })
     manifest = pd.DataFrame(rows)
-    manifest.to_csv(MANIFEST_PATH, index=False)
+    manifest.to_csv(manifest_path, index=False)
 
     counts = manifest["benchmark_role"].value_counts().reindex(
         [ROLE_RANKING, ROLE_SPARSE, ROLE_EMPTY], fill_value=0)
     summary = {
         "rule_version": RULE_VERSION,
+        "benchmark_version": version,
         "min_ranking_candidates": MIN_RANKING_CANDIDATES,
         "roles": {
             ROLE_EMPTY: "E_q = 0; checks explicit empty-result handling only",
@@ -110,7 +122,7 @@ def main() -> None:
             ROLE_RANKING: f"E_q >= {MIN_RANKING_CANDIDATES}; used for P@K, Recall@K, NDCG@K, MRR",
         },
         "inputs": {
-            "queries_file": QUERIES_PATH.name, "queries_sha256_16": _sha(QUERIES_PATH),
+            "queries_file": queries_path.name, "queries_sha256_16": _sha(queries_path),
             "catalogue_file": CATALOGUE_PATH.name, "catalogue_sha256_16": _sha(CATALOGUE_PATH),
             "catalogue_rows": int(len(catalogue)), "queries": int(len(queries)),
         },
@@ -119,17 +131,19 @@ def main() -> None:
         .value_counts().to_dict(),
         "role_counts_ordinary": manifest[~manifest["is_edge_case"]]["benchmark_role"]
         .value_counts().to_dict(),
+        "role_counts_by_partition": manifest.groupby(["partition", "benchmark_role"]).size()
+        .unstack(fill_value=0).to_dict(orient="index") if "partition" in manifest else {},
         "empty_sets_by_first_emptying_constraint": manifest["emptied_by_constraint"]
         .value_counts().to_dict(),
     }
-    SUMMARY_PATH.write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    summary_path.write_text(json.dumps(summary, indent=2, default=str), encoding="utf-8")
 
-    print(f"Eligibility rule {RULE_VERSION} applied to {len(queries)} queries "
+    print(f"Eligibility rule {RULE_VERSION} on benchmark {version}: {len(queries)} queries "
           f"({len(catalogue):,} catalogue properties).")
     for role, n in counts.items():
         print(f"  {role:18s} {n}")
-    print(f"Manifest: {MANIFEST_PATH}")
-    print(f"Summary:  {SUMMARY_PATH}")
+    print(f"Manifest: {manifest_path}")
+    print(f"Summary:  {summary_path}")
 
 
 if __name__ == "__main__":
