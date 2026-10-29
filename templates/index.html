@@ -1018,9 +1018,8 @@
                   </div>
                   <div class="formgrid">
                     <div class="field">
-                      <label for="location">Preferred area (district) *</label
+                      <label for="location">Preferred area (district)</label
                       ><select id="location">
-                        <option value="Any">Any area</option>
                         <optgroup label="Johor">
                           <option value="johor bahru">Johor Bahru</option>
                           <option value="kota tinggi">Kota Tinggi</option>
@@ -1176,24 +1175,12 @@
                       </select>
                     </div>
                   </div>
-                  <p class="muted tiny" style="margin: 10px 0 0">
-                    * Preferred area is a hard constraint only when "Area is
-                    mandatory" is ticked. Otherwise it is used as a ranking
-                    preference.
-                  </p>
                   <hr class="divider" />
                   <div class="subhead">
                     <h3>Additional requirements</h3>
                     <span class="tag hard">ELIGIBILITY GATES</span>
                   </div>
                   <div class="checkgrid">
-                    <label class="check"
-                      ><input type="checkbox" id="locationMandatory" checked />
-                      <div>
-                        <strong>Area is mandatory</strong
-                        ><span>Property must be in the selected district</span>
-                      </div></label
-                    >
                     <label class="check"
                       ><input type="checkbox" id="parking" />
                       <div>
@@ -1226,7 +1213,6 @@
                       <label for="priority">Main priority</label
                       ><select id="priority">
                         <option value="balanced" selected>Balanced match</option>
-                        <option value="location">Location</option>
                         <option value="price">Lower asking price</option>
                         <option value="size">Built-up area</option>
                         <option value="facilities">Facilities</option>
@@ -1553,7 +1539,6 @@
         return {
           // Hard constraints
           preferred_area: $("location").value,
-          location_mandatory: $("locationMandatory").checked,
           max_budget_rm: Number($("budget").value || 0),
           property_type: $("type").value,
           min_bedrooms: Number($("beds").value || 0),
@@ -1633,18 +1618,11 @@
         }
       }
       $("searchBtn").addEventListener("click", runSearch);
-      function syncLocationMandatory() {
-        const any = $("location").value === "Any";
-        $("locationMandatory").disabled = any;
-        if (any) $("locationMandatory").checked = false;
-      }
-      $("location").addEventListener("change", syncLocationMandatory);
       $("editSearch").addEventListener("click", () => go("search"));
       $("backResults").addEventListener("click", () => go("results"));
       $("graphToResults").addEventListener("click", () => go("results"));
       $("reset").addEventListener("click", () => {
         $("location").value = "petaling";
-        $("locationMandatory").checked = true;
         $("budget").value = 850000;
         $("type").value = "Condominium";
         $("beds").value = 3;
@@ -1657,7 +1635,6 @@
           .querySelectorAll('input[name="facility"]')
           .forEach((el) => (el.checked = false));
         $("minsize").value = 1000;
-        syncLocationMandatory();
         toast("Search fields reset");
       });
       function selected() {

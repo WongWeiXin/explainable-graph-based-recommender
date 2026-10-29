@@ -9,7 +9,7 @@ and the experiments share one implementation:
     graph + ranking   : ranking/cpg_ranker.py                          (rank_candidates)
 
 Search profile (field names follow frozen_queries_set.csv):
-    preferred_area, location_mandatory, max_budget_rm, property_type, min_bedrooms,
+    preferred_area (always a hard constraint), max_budget_rm, property_type, min_bedrooms,
     min_bathrooms, parking_required, furnished_only, tenure,
     main_priority, nearby_facilities (list), preferred_built_up_sqft
 """
@@ -56,14 +56,12 @@ FURNISHED_VALUES = {"partially furnished", "fully furnished"}
 BASE_WEIGHTS = {
     "price_value_fit": 0.25,   # lower asking price relative to budget
     "size_fit": 0.25,          # closeness to preferred built-up area
-    "location_fit": 0.20,      # preferred district (active only when area is not mandatory)
     "facility_fit": 0.15,      # selected nearby facilities (active only when any selected)
     # the remaining baseline components stay inactive: those attributes are hard constraints
 }
 PRIORITY_COMPONENT = {
     "price": "price_value_fit",
     "size": "size_fit",
-    "location": "location_fit",
     "facilities": "facility_fit",
 }
 PRIORITY_MULTIPLIER = 2.0  # main priority doubles that component's weight
@@ -118,7 +116,8 @@ def _number(v, name, minimum=0.0):
 def _facilities(v) -> list[str]:
     if v in (None, "", "No preference", "Any"):
         return []
-    items = [v] if isinstance(v, str) else list(v)
+    # benchmark files store several facilities as "A;B"; the web form sends a list
+    items = [x.strip() for x in v.split(";") if x.strip()] if isinstance(v, str) else list(v)
     unknown = [x for x in items if x not in FACILITY_COLUMNS]
     if unknown:
         raise QueryError(f"Unknown nearby facility: {', '.join(map(str, unknown))}")
@@ -129,8 +128,9 @@ def parse_profile(raw: dict) -> dict:
     budget = _number(raw.get("max_budget_rm"), "Maximum budget", minimum=1)
     if budget is None:
         raise QueryError("Maximum budget is required.")
-    area = str(raw.get("preferred_area") or "Any").strip()
-    area = None if area.casefold() in {"any", ""} else area
+    area = str(raw.get("preferred_area") or "").strip()
+    if not area or area.casefold() == "any":
+        raise QueryError("Preferred area (district) is required.")
     ptype = str(raw.get("property_type") or "Any").strip()
     tenure = str(raw.get("tenure") or "No preference").strip()
     priority = str(raw.get("main_priority") or "balanced").strip().casefold()
@@ -142,7 +142,6 @@ def parse_profile(raw: dict) -> dict:
     size = _number(raw.get("preferred_built_up_sqft"), "Preferred built-up area")
     return {
         "preferred_area": area,
-        "location_mandatory": bool(area) and _bool(raw.get("location_mandatory", True)),
         "max_budget_rm": budget,
         "property_type": None if ptype.casefold() == "any" else ptype,
         "min_bedrooms": _number(raw.get("min_bedrooms"), "Minimum bedrooms") or None,
@@ -173,9 +172,8 @@ def apply_hard_constraints(df: pd.DataFrame, prof: dict) -> tuple[pd.DataFrame, 
     txt = lambda c: eligible[c].astype("string").str.strip().str.casefold()  # noqa: E731
 
     gate("max_budget_rm", prof["max_budget_rm"], num("price") <= prof["max_budget_rm"])
-    if prof["location_mandatory"]:
-        gate("preferred_area (district)", prof["preferred_area"],
-             txt("district") == prof["preferred_area"].casefold())
+    gate("preferred_area (district)", prof["preferred_area"],
+         txt("district") == prof["preferred_area"].casefold())
     if prof["property_type"]:
         gate("property_type", prof["property_type"], txt("property_type") == prof["property_type"].casefold())
     if prof["min_bedrooms"]:
@@ -208,8 +206,8 @@ def build_direct_query(prof: dict) -> dict:
             "target_bathroom": None,
             "target_built_up_area": prof["preferred_built_up_sqft"],
             "preferred_area": None,
-            # a mandatory district is already a hard constraint -> not scored again
-            "preferred_district": None if prof["location_mandatory"] else prof["preferred_area"],
+            # preferred area is a hard constraint -> not scored again as a preference
+            "preferred_district": None,
             "preferred_state": None,
             "preferred_tenure": None,
             "preferred_furnishing": None,
