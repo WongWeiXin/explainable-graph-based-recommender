@@ -484,6 +484,10 @@
         padding: 6px;
         font-size: 11px;
       }
+      .more-section.collapsed {
+        border-top: 0;
+        padding-top: 0;
+      }
       .more-actions {
         display: flex;
         justify-content: center;
@@ -1352,7 +1356,7 @@
                 <div class="cardbody">
                   <div id="listingList" class="listing-list"></div>
                   <div id="moreSection" class="more-section hidden">
-                    <div class="more-head">
+                    <div class="more-head hidden" id="moreHead">
                       <div>
                         <h3 id="moreTitle">Other eligible properties</h3>
                         <p class="tiny muted" id="moreNote">
@@ -1693,7 +1697,9 @@
             ? `View more (${rest.length})`
             : `View more (${remaining} remaining)`;
         $("viewLess").classList.toggle("hidden", moreVisible === 0);
-        $("sort").disabled = moreVisible === 0;
+        // Collapsed: only the "View more" button is shown.
+        $("moreHead").classList.toggle("hidden", moreVisible === 0);
+        $("moreSection").classList.toggle("collapsed", moreVisible === 0);
         renderResultDetail();
       }
       $("viewMore").addEventListener("click", () => {
