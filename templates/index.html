@@ -98,7 +98,8 @@
         display: grid;
         gap: 5px;
       }
-      .nav button {
+      .nav button,
+      .nav .side-eval {
         border: 0;
         background: transparent;
         color: #c8d5e9;
@@ -108,11 +109,21 @@
         display: flex;
         gap: 12px;
         align-items: center;
+        font: inherit;
+        cursor: pointer;
+        text-decoration: none;
       }
       .nav button.active,
-      .nav button:hover {
+      .nav button:hover,
+      .nav .side-eval:hover {
         background: #243c60;
         color: #fff;
+      }
+      .nav .side-eval {
+        margin-top: 6px;
+        border-top: 1px solid #2a4064;
+        border-radius: 0 0 10px 10px;
+        color: #9fd9c9;
       }
       .nav .ico {
         width: 20px;
@@ -594,6 +605,25 @@
         gap: 8px;
         margin-top: 10px;
       }
+      .listing-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .listing-open {
+        font-size: 11px;
+        font-weight: 800;
+        color: #2456b8;
+        text-decoration: none;
+        white-space: nowrap;
+        border-bottom: 1px solid #b9cdf3;
+        line-height: 1.3;
+      }
+      .listing-open:hover {
+        color: #16389c;
+        border-bottom-color: #16389c;
+      }
       .score {
         display: flex;
         align-items: center;
@@ -695,6 +725,609 @@
         color: #52637d;
         margin: 0;
       }
+      .mainreason {
+        margin-top: 16px;
+        border-left: 3px solid #3976e8;
+        background: #f4f8ff;
+        border-radius: 0 9px 9px 0;
+        padding: 11px 14px;
+      }
+      .mainreason .mrlabel {
+        display: block;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+        color: #2456b8;
+        margin-bottom: 4px;
+      }
+      .mainreason p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #1e293b;
+      }
+      .compgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+        align-items: start;
+        gap: 12px;
+        margin-top: 4px;
+      }
+      .compcard {
+        border: 1px solid #e6ebf3;
+        border-radius: 12px;
+        background: #fff;
+        padding: 12px 13px;
+      }
+      .cc-sum {
+        display: block;
+        list-style: none;
+        cursor: pointer;
+      }
+      .cc-sum::-webkit-details-marker {
+        display: none;
+      }
+      .cc-chev {
+        margin-left: auto;
+        flex: none;
+        font-size: 10px;
+        color: #94a3b8;
+      }
+      .cc-chev::after {
+        content: "\25B8";
+      }
+      .compcard[open] .cc-chev::after {
+        content: "\25BE";
+      }
+      .compcard[open] {
+        border-color: #cbd9ea;
+      }
+      .cc-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .cc-glyph {
+        width: 32px;
+        height: 32px;
+        border-radius: 9px;
+        background: #eef4fb;
+        display: grid;
+        place-items: center;
+        font-size: 17px;
+        flex: none;
+      }
+      .cc-name {
+        font-size: 12px;
+        font-weight: 800;
+        color: #172b4d;
+        padding-top: 7px;
+      }
+      .cc-sub {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 4px;
+      }
+      .cc-meta {
+        flex: 1;
+        min-width: 0;
+        font-size: 10.5px;
+        color: #64748b;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .cc-badge {
+        flex: none;
+        font-size: 10.5px;
+        font-weight: 800;
+        color: #0b6b5f;
+        background: #e7f7f3;
+        border-radius: 999px;
+        padding: 4px 8px;
+        white-space: nowrap;
+      }
+      .cc-edges {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 7px 14px;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px dashed #e6ebf3;
+      }
+      .edge .elabel {
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+        font-size: 10px;
+        color: #64748b;
+        margin-bottom: 3px;
+      }
+      .edge .eval {
+        font-weight: 800;
+        color: #334155;
+      }
+      .ebar {
+        display: block;
+        height: 3px;
+        border-radius: 99px;
+        background: #edf1f7;
+        overflow: hidden;
+      }
+      .ebar i {
+        display: block;
+        height: 100%;
+        border-radius: 99px;
+        background: #3aa79b;
+      }
+      .compsum {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(118px, 100%), 1fr));
+        gap: 9px;
+        margin: 2px 0 12px;
+      }
+      .compsum > div {
+        border: 1px solid #e6ebf3;
+        border-radius: 10px;
+        background: #f8fafc;
+        padding: 8px 11px;
+      }
+      .compsum b {
+        display: block;
+        font-size: 15px;
+        font-weight: 800;
+        color: #172b4d;
+        line-height: 1.15;
+      }
+      .compsum span {
+        display: block;
+        font-size: 9.5px;
+        color: #64748b;
+        margin-top: 2px;
+        line-height: 1.3;
+      }
+      .compfoot {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 9px;
+        font-size: 10px;
+        color: #64748b;
+      }
+      .compfoot.top {
+        color: #0b5f57;
+        font-weight: 700;
+      }
+      .gddetail {
+        border: 1px solid #e6ebf3;
+        border-radius: 10px;
+        background: #fff;
+        margin-bottom: 8px;
+      }
+      .gddetail > summary {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 8px 10px;
+        cursor: pointer;
+        list-style: none;
+      }
+      .gddetail > summary::-webkit-details-marker {
+        display: none;
+      }
+      .gddetail.top {
+        border-color: #b7ddd6;
+        background: #f4fbf9;
+      }
+      .gddetail .gdname {
+        min-width: 0;
+        font-size: 11px;
+        font-weight: 700;
+        color: #172b4d;
+      }
+      .gddetail .gdname small {
+        display: block;
+        font-size: 9.5px;
+        font-weight: 400;
+        color: #64748b;
+      }
+      .gddetail .gdscore {
+        margin-left: auto;
+        text-align: right;
+        font-size: 12px;
+        font-weight: 800;
+        color: #0f766e;
+        white-space: nowrap;
+      }
+      .gddetail .gdscore small {
+        display: block;
+        font-size: 9px;
+        font-weight: 600;
+        color: #64748b;
+      }
+      .gddetail .gdbody {
+        padding: 0 10px 10px;
+      }
+      .gddetail .gdmeta {
+        margin-top: 9px;
+        padding-top: 8px;
+        border-top: 1px dashed #e6ebf3;
+        font-size: 9.5px;
+        line-height: 1.45;
+        color: #64748b;
+      }
+      .mainreasons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+      }
+      .mainreasons > li {
+        display: block;
+      }
+      .reasonfold {
+        border: 1px solid #e6ebf3;
+        border-radius: 12px;
+        background: #fbfdff;
+      }
+      .reasonfold > summary {
+        display: grid;
+        grid-template-columns: 26px minmax(0, 1fr) auto 14px;
+        gap: 11px;
+        align-items: center;
+        padding: 12px 14px;
+        cursor: pointer;
+        list-style: none;
+      }
+      .reasonfold > summary::-webkit-details-marker {
+        display: none;
+      }
+      .reasonfold .num {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: #eaf1ff;
+        color: #2456b8;
+        display: grid;
+        place-items: center;
+        font-size: 12px;
+        font-weight: 800;
+      }
+      .reasonfold .rhead {
+        font-size: 12.5px;
+        font-weight: 700;
+        color: #172b4d;
+      }
+      .reasonfold .rnote {
+        font-size: 10px;
+        font-weight: 700;
+        color: #0b6b5f;
+        background: #e7f7f3;
+        border-radius: 999px;
+        padding: 3px 8px;
+        white-space: nowrap;
+      }
+      .reasonfold .rchev {
+        color: #94a3b8;
+        font-size: 11px;
+        transition: transform 0.15s;
+      }
+      .reasonfold[open] .rchev {
+        transform: rotate(90deg);
+      }
+      .reasonfold .rbody {
+        padding: 0 14px 12px 51px;
+      }
+      .reasonfold .reasonlist li:first-child {
+        border-top: 1px dashed #e6ebf3;
+        padding-top: 9px;
+      }
+      .reasonlist {
+        list-style: none;
+        margin: 8px 0 0;
+        padding: 0;
+      }
+      .reasonlist li {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 4px 10px;
+        padding: 7px 0;
+        border-top: 1px dashed #e6ebf3;
+        font-size: 11.5px;
+      }
+      .reasonlist li:first-child {
+        border-top: 0;
+      }
+      .reasonlist .rt {
+        font-weight: 800;
+        color: #334155;
+        font-size: 11px;
+      }
+      .reasonlist .rd {
+        grid-column: 1;
+        color: #52637d;
+        line-height: 1.5;
+      }
+      .reasonlist .rmatch {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: start;
+        color: #0b6b5f;
+        font-weight: 800;
+        font-size: 10.5px;
+        white-space: nowrap;
+      }
+      .reasonlist li.lead {
+        background: #f4f8ff;
+        border-radius: 8px;
+        padding: 8px 9px;
+        border-top: 0;
+      }
+      .reasonlist li.lead .rt:after {
+        content: " · strongest match";
+        font-weight: 600;
+        color: #2456b8;
+        font-size: 10px;
+        letter-spacing: 0.2px;
+      }
+      .pgrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 18px;
+        border: 1px solid #e6ebf3;
+        border-radius: 10px;
+        padding: 4px 14px;
+      }
+      .pitem {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid #eef2f7;
+        font-size: 11.5px;
+      }
+      .pitem span {
+        color: #64748b;
+      }
+      .pitem strong {
+        color: #1e293b;
+        text-align: right;
+      }
+      .pfacilities {
+        margin-top: 12px;
+      }
+      .plabel {
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        font-weight: 800;
+        color: #52637d;
+        margin-bottom: 6px;
+      }
+      .pchips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .pchip {
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        color: #475569;
+        border-radius: 999px;
+        padding: 4px 9px;
+        font-size: 10.5px;
+        font-weight: 600;
+      }
+      @media (max-width: 650px) {
+        .pgrid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .chiprow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 12px;
+      }
+      .chip-ok,
+      .chip-warn {
+        border-radius: 999px;
+        padding: 4px 9px;
+        font-size: 11px;
+        font-weight: 700;
+        border: 1px solid transparent;
+      }
+      .chip-ok {
+        background: #e7f7f3;
+        color: #0b6b5f;
+        border-color: #bfe6dd;
+      }
+      .chip-warn {
+        background: #fff5df;
+        color: #8a5108;
+        border-color: #f0dcae;
+      }
+      .chip-soft {
+        background: #eef2f8;
+        color: #41536b;
+        border-color: #dae3ef;
+      }
+      .anatomy {
+        display: flex;
+        height: 16px;
+        border-radius: 99px;
+        overflow: hidden;
+        background: #edf1f7;
+        margin: 10px 0 8px;
+      }
+      .anatomy span {
+        display: block;
+        height: 100%;
+      }
+      .anatomy .direct {
+        background: #3976e8;
+      }
+      .anatomy .graph {
+        background: #13a18b;
+      }
+      .anatomy .market {
+        background: #6d4acb;
+      }
+      .anatomy-legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        font-size: 11px;
+        color: #52637d;
+      }
+      .anatomy-legend i {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 2px;
+        margin-right: 5px;
+      }
+      .why {
+        list-style: none;
+        margin: 4px 0 0;
+        padding: 0;
+      }
+      .why li {
+        display: flex;
+        gap: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #eef2f7;
+        font-size: 12.5px;
+        line-height: 1.5;
+      }
+      .why li:last-child {
+        border-bottom: 0;
+      }
+      .why .n {
+        flex: none;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        background: #eaf1ff;
+        color: #2456b8;
+        display: grid;
+        place-items: center;
+        font-size: 10px;
+        font-weight: 800;
+      }
+      details.fold {
+        margin-top: 12px;
+        border: 1px solid #e6ebf3;
+        border-radius: 10px;
+        background: #f8fafc;
+      }
+      details.fold > summary {
+        cursor: pointer;
+        padding: 10px 12px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #334155;
+        list-style: none;
+      }
+      details.fold > summary::-webkit-details-marker {
+        display: none;
+      }
+      details.fold > summary:before {
+        content: "▸";
+        margin-right: 7px;
+        color: #64748b;
+      }
+      details.fold[open] > summary:before {
+        content: "▾";
+      }
+      .fold-body {
+        padding: 0 12px 12px;
+        font-size: 11.5px;
+        color: #52637d;
+      }
+      .foldhint {
+        margin-left: 7px;
+        font-size: 10.5px;
+        font-weight: 500;
+        color: #94a3b8;
+      }
+      details.fold .fold-body .pgrid {
+        margin-top: 4px;
+      }
+      .fold-body ul {
+        margin: 6px 0 0;
+        padding-left: 16px;
+      }
+      .fold-body li {
+        margin-bottom: 5px;
+        line-height: 1.5;
+      }
+      .evsummary {
+        margin: 0 0 10px;
+        font-size: 10.5px;
+        color: #94a3b8;
+      }
+      .evgroup {
+        margin-bottom: 14px;
+      }
+      .evgroup:last-of-type {
+        margin-bottom: 2px;
+      }
+      .evhead {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        color: #52637d;
+        margin-bottom: 4px;
+      }
+      .evhead i {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        flex: none;
+      }
+      .evhead .n {
+        margin-left: auto;
+        color: #94a3b8;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+      .evlist {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .evlist li {
+        position: relative;
+        margin: 0;
+        padding: 8px 0 8px 17px;
+        border-bottom: 1px dashed #eef2f7;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #3f4f66;
+      }
+      .evlist li:last-child {
+        border-bottom: 0;
+        padding-bottom: 2px;
+      }
+      .evlist li:before {
+        content: "";
+        position: absolute;
+        left: 3px;
+        top: 14px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--dot, #cbd5e1);
+      }
       .neighbour {
         display: flex;
         align-items: center;
@@ -771,8 +1404,35 @@
         stroke: white;
         stroke-width: 3;
         transition: 0.15s;
+        transform-box: fill-box;
+        transform-origin: 50% 50%;
+      }
+      .graphnode.flash {
+        animation: nodeflash 1.15s ease-out;
+      }
+      @keyframes nodeflash {
+        0% {
+          transform: scale(1);
+          filter: drop-shadow(0 0 0 rgba(23, 43, 77, 0));
+        }
+        30% {
+          transform: scale(1.3);
+          filter: drop-shadow(0 0 11px rgba(23, 43, 77, 0.55));
+        }
+        65% {
+          transform: scale(1.06);
+          filter: drop-shadow(0 0 5px rgba(23, 43, 77, 0.28));
+        }
+        100% {
+          transform: scale(1);
+          filter: drop-shadow(0 0 0 rgba(23, 43, 77, 0));
+        }
       }
       .graphnode:hover {
+        stroke: #1d4ed8;
+        stroke-width: 5;
+      }
+      .graphnode.linked circle {
         stroke: #1d4ed8;
         stroke-width: 5;
       }
@@ -798,6 +1458,27 @@
         padding: 12px 15px;
         border-top: 1px solid var(--line);
         background: #fff;
+      }
+      .graphlegend .ring {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        border: 2.5px solid #172b4d;
+        background: #fff;
+        margin-right: 5px;
+        vertical-align: -1px;
+      }
+      .graphlegend .scalenote {
+        margin-left: auto;
+        color: #94a3b8;
+      }
+      .graphnode:focus {
+        outline: none;
+      }
+      .graphnode:focus-visible circle {
+        stroke: #1d4ed8;
+        stroke-width: 5;
       }
       .dot {
         display: inline-block;
@@ -1016,6 +1697,16 @@
               <span class="ico">⌘</span
               ><span class="navtext">Comparable graph</span>
             </button>
+            <a
+              class="side-eval"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSek-Tix96a-ELvuE6xmPK50ihqMcuyGzuM9TiW6Y_fk2HmVpw/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener"
+              title="Open the evaluation form in a new tab"
+            >
+              <span class="ico">✎</span
+              ><span class="navtext">Evaluation form</span>
+            </a>
           </nav>
         </div>
         <div class="side-note">
@@ -1460,12 +2151,11 @@
           <section id="page-graph" class="page hidden">
             <div class="pagehead">
               <div>
-                <div class="eyebrow">Explicit property relationships</div>
-                <h1>Comparable-property graph</h1>
+                <div class="eyebrow">How listings relate to each other</div>
+                <h1>Comparable listings</h1>
                 <p>
-                  The selected recommendation and its qualified comparable
-                  neighbours from the frozen comparable-property graph. Select a
-                  node to inspect it.
+                  This shows the property you picked and the similar listings used to
+                  compare it. Pick any circle to see why it is considered similar.
                 </p>
               </div>
               <button class="btn" id="graphToResults">
@@ -1476,7 +2166,7 @@
               <div class="card">
                 <div class="cardhead">
                   <h2>Property neighbourhood</h2>
-                  <span class="tag">G = (V, E)</span>
+                  <span class="tag">Similar listings</span>
                 </div>
                 <div class="cardbody">
                   <div class="graphwrap">
@@ -1488,25 +2178,26 @@
                     ></svg>
                     <div class="graphlegend">
                       <span
-                        ><i class="dot" style="background: #3677e8"></i>Selected
-                        property</span
+                        ><i class="dot" style="background: #3677e8"></i>Property you
+                        are viewing</span
                       ><span
-                        ><i class="dot" style="background: #e5a18c"></i
-                        >Neighbour in shortlist</span
+                        ><i class="dot" style="background: #0b5f57"></i>97&ndash;100% alike</span
                       ><span
-                        ><i class="dot" style="background: #94a3b8"></i>Eligible
-                        neighbour outside shortlist</span
+                        ><i class="dot" style="background: #11897c"></i>93&ndash;97% alike</span
                       ><span
-                        >Edge thickness represents retained similarity S<sub
-                          >ij</sub
-                        ></span
-                      >
+                        ><i class="dot" style="background: #3aa79b"></i>90&ndash;93% alike</span
+                      ><span
+                        ><i class="dot" style="background: #a8bcc6"></i>under 90% alike</span
+                      ><span><i class="ring"></i>Dark ring = also in your results</span
+                      ><span class="scalenote">Colour = how alike &middot; line thickness = how much it supports the score</span>
                     </div>
                   </div>
                   <p class="tiny muted">
-                    Only neighbours that also satisfy the current hard
-                    constraints are shown. Edge labels are combined similarity
-                    values retained during graph construction.
+                    Each circle is a similar listing used to support this score, ordered
+                    like the cards in the score explanation: biggest contributor first,
+                    then clockwise. Hover or tap a circle to see all seven comparisons
+                    (location, price, size, type, bedrooms, bathrooms, facilities) behind
+                    its link.
                   </p>
                 </div>
               </div>
@@ -1623,22 +2314,41 @@
         searchBtn.textContent = "Searching...";
 
         try {
-          const response = await fetch("/api/recommend", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(currentQuery),
-          });
+          const attempt = async () => {
+            const response = await fetch("/api/recommend", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(currentQuery),
+            });
 
-          const contentType = response.headers.get("content-type") || "";
-          if (!contentType.includes("application/json")) {
+            const contentType = response.headers.get("content-type") || "";
+            if (!contentType.includes("application/json")) {
+              throw new Error(
+                `Server returned ${response.status} ${response.statusText} instead of JSON. Is app.py running the /api/recommend route?`,
+              );
+            }
+            // Read the body once: a dev-server reload or a dropped connection can
+            // cut it short, which surfaces as "Unexpected end of JSON input".
+            const text = await response.text();
+            if (!text) return { response, data: null, cut: true };
+            try {
+              return { response, data: JSON.parse(text), cut: false };
+            } catch {
+              return { response, data: null, cut: true };
+            }
+          };
+
+          let result = await attempt();
+          if (result.cut) result = await attempt(); // one silent retry
+          if (result.cut) {
             throw new Error(
-              `Server returned ${response.status} ${response.statusText} instead of JSON. Is app.py running the /api/recommend route?`,
+              "The response was cut off before it finished. The server may have restarted or the connection dropped — click search again, and restart app.py if it keeps happening.",
             );
           }
-          const data = await response.json();
 
+          const { response, data } = result;
           if (!response.ok) {
             throw new Error(data.error || "Recommendation request failed.");
           }
@@ -1696,7 +2406,7 @@
         const badge = p.recommended
           ? `<span class="tag recommended">★ Recommended · #${rank}</span>`
           : `<span class="tag">#${rank}</span>`;
-        return `<article class="listing ${p.id === selectedId ? "selected" : ""}" data-id="${p.id}" tabindex="0"><div class="house-art"><span class="loc">${p.district}</span><span class="house">🏡</span></div><div><div style="display:flex;justify-content:space-between;gap:6px;align-items:start"><div><h3>${p.name}</h3><div class="address">${p.area}, ${p.district} · ${p.type}</div></div>${badge}</div><div class="price-row"><span class="price">${money(p.price)}</span><span class="muted tiny">asking price</span></div><div class="facts"><span>▦ ${p.size.toLocaleString()} sq ft</span><span>🛏 ${p.beds} bed</span><span>▣ ${p.baths} bath</span><span>${p.parking ? "✓ Parking" : "No parking"}</span></div><div class="listing-foot"><div class="score"><span>${pct(p.score)} match score</span><span class="scorebar"><i style="width:${pct(p.score)}"></i></span></div><span class="tiny muted">${p.neighbors.length} graph neighbours</span></div></div></article>`;
+        return `<article class="listing ${p.id === selectedId ? "selected" : ""}" data-id="${p.id}" tabindex="0"><div class="house-art"><span class="loc">${p.district}</span><span class="house">🏡</span></div><div><div style="display:flex;justify-content:space-between;gap:6px;align-items:start"><div><h3>${p.name}</h3><div class="address">${p.area}, ${p.district} · ${p.type}</div></div>${badge}</div><div class="price-row"><span class="price">${money(p.price)}</span><span class="muted tiny">asking price</span></div><div class="facts"><span>▦ ${p.size.toLocaleString()} sq ft</span><span>🛏 ${p.beds} bed</span><span>▣ ${p.baths} bath</span><span>${p.parking ? "✓ Parking" : "No parking"}</span></div><div class="listing-foot"><div class="score"><span>${pct(p.score)} match score</span><span class="scorebar"><i style="width:${pct(p.score)}"></i></span></div><div class="listing-actions"><span class="tiny muted">${p.neighbors.length} graph neighbours</span>${p.url ? `<a class="listing-open" href="${p.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Open original listing &#8599;</a>` : ""}</div></div></div></article>`;
       }
       const MORE_STEP = 20; // "View more" reveals all returned (max 20) at once
       let moreVisible = 0;
@@ -1861,23 +2571,438 @@
               `<li>${r.label}: match ${pct(r.match)} (weight ${pct(r.weight)}, contributes ${pct(r.contribution)} to D)</li>`,
           )
           .join("");
-        return `<div class="cardhead"><div><span class="tag">SELECTED PROPERTY · #${p.rank ?? ""}</span><h2 style="margin-top:8px">${p.name}</h2><div class="muted tiny">ID ${p.id} · ${p.area}, ${p.district}, ${p.state ?? ""}</div></div><div class="scorecircle">${pct(p.score)}</div></div><div class="cardbody"><div class="detailtop"><div><div class="detail-price">${money(p.price)}</div><div class="muted tiny">Asking price · ${p.type} · ${p.tenure ?? ""} · ${p.furnishing ?? ""}</div></div><span class="tag soft">Eligible</span></div><div class="facts" style="margin:12px 0 18px"><span>${p.size.toLocaleString()} sq ft</span><span>${p.beds} bed</span><span>${p.baths} bath</span><span>${p.parking ? `${p.carParks ?? ""} parking` : "No parking"}</span></div><div class="section-label">Retained score components</div>${component("Direct preference matching · D", d, "blue", "Query-to-property attribute agreement.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Similarity-weighted direct scores of qualified neighbours.") : `<div class="notice warn">Comparable-neighbour support unavailable (${(p.graphStatus || "").replaceAll("_", " ")}). The ranking uses the remaining components only; no neighbour evidence is claimed.</div>`}${marketComponent(p)}<div class="notice"><strong>Score trace</strong><br>${traceText}</div>${reasons ? `<div class="evidence-box"><h4>Direct preference evidence</h4><ul style="margin:6px 0 0;padding-left:18px">${reasons}</ul></div>` : ""}<div class="evidence-box"><h4>Location evidence resolution</h4><p>${p.locationEvidence}. ${p.locationEvidence === "District-level fallback" ? "This identifies shared administrative area only; it does not establish exact geographic distance." : "Neighbour location similarity uses listing coordinates (Haversine distance)."}</p></div>${marketHtml(p)}<div class="section-label" style="margin-top:18px">Qualified comparable neighbours</div>${neighborHtml(p)}${p.url ? `<a class="btn" style="display:block;text-align:center;margin-top:14px;text-decoration:none" href="${p.url}" target="_blank" rel="noopener">Open original listing ↗</a>` : ""}<button class="btn primary" style="width:100%;margin-top:10px" onclick="selectedId='${p.id}';go('explanation')">Inspect score-linked explanation →</button></div>`;
+        return `<div class="cardhead"><div><span class="tag">SELECTED PROPERTY · #${p.rank ?? ""}</span><h2 style="margin-top:8px">${p.name}</h2><div class="muted tiny">${p.area}, ${p.district}, ${p.state ?? ""}</div></div><div class="scorecircle">${pct(p.score)}</div></div><div class="cardbody"><div class="detailtop"><div><div class="detail-price">${money(p.price)}</div><div class="muted tiny">Asking price · ${p.type} · ${p.tenure ?? ""} · ${p.furnishing ?? ""}</div></div><span class="tag soft">Eligible</span></div><div class="facts" style="margin:12px 0 18px"><span>${p.size.toLocaleString()} sq ft</span><span>${p.beds} bed</span><span>${p.baths} bath</span><span>${p.parking ? `${p.carParks ?? ""} parking` : "No parking"}</span></div><div class="section-label">Retained score components</div>${component("Direct preference matching · D", d, "blue", "Query-to-property attribute agreement.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Similarity-weighted direct scores of qualified neighbours.") : `<div class="notice warn">Comparable-neighbour support unavailable (${(p.graphStatus || "").replaceAll("_", " ")}). The ranking uses the direct component only; no neighbour evidence is claimed.</div>`}<div class="notice"><strong>Score trace</strong><br>${traceText}</div>${reasons ? `<div class="evidence-box"><h4>Direct preference evidence</h4><ul style="margin:6px 0 0;padding-left:18px">${reasons}</ul></div>` : ""}<div class="evidence-box"><h4>Location evidence resolution</h4><p>${p.locationEvidence}. ${p.locationEvidence === "District-level fallback" ? "This identifies shared administrative area only; it does not establish exact geographic distance." : "Neighbour location similarity uses listing coordinates (Haversine distance)."}</p></div><div class="section-label" style="margin-top:18px">Qualified comparable neighbours</div>${neighborHtml(p)}${p.url ? `<a class="btn" style="display:block;text-align:center;margin-top:14px;text-decoration:none" href="${p.url}" target="_blank" rel="noopener">Open original listing ↗</a>` : ""}<button class="btn primary" style="width:100%;margin-top:10px" onclick="openExplanation('${p.id}')">Inspect score-linked explanation →</button></div>`;
       }
+      const plainDetail = (text) => {
+        if (!text) return "";
+        const cut = text.indexOf(": ");
+        return cut > 0 ? text.slice(cut + 2) : text;
+      };
       function neighborHtml(p, limit = 3) {
         const nbs = p.neighbourDetails || [];
         if (!nbs.length)
-          return `<div class="notice warn">No qualified neighbours available for display. Sparse support is disclosed rather than inventing a comparable.</div>`;
+          return `<div class="notice warn">No similar listings were found for this property, so there is no comparison evidence to show.</div>`;
         return nbs
           .slice(0, limit)
           .map(
             (n) =>
-              `<div class="neighbour"><div class="mini-house">🏠</div><div><strong>${n.name}</strong><small>${n.district} · ${money(n.price)}${n.distanceKm != null ? ` · ${n.distanceKm} km` : ""} · ${pct(n.supportShare)} of neighbour support</small></div><span class="neighbor-score">S ${n.similarity.toFixed(2)}</span></div>`,
+              `<div class="neighbour"><div class="mini-house">🏠</div><div><strong>${n.name}</strong><small>${plainDetail(n.plain) || `${n.district} &middot; ${money(n.price)}`}</small></div><span class="neighbor-score">${Math.round((n.similarity || 0) * 100)}% alike</span></div>`,
           )
           .join("");
       }
       function renderResultDetail() {
         const panel = $("resultDetail");
         if (panel) panel.innerHTML = detailHtml(selected());
+      }
+      const fmtW = (x) => (x === null || x === undefined ? "n/a" : Number(x).toFixed(2));
+      function scoreAnatomyHtml(e) {
+        const trace = e.score_trace || {};
+        const weights = trace.weights || {};
+        const contrib = trace.contributions || {};
+        const cd = contrib.direct ?? 0;
+        const cg = contrib.graph ?? 0;
+        const cm = contrib.market ?? 0;
+        const total = cd + cg + cm;
+        const share = (v) => (total > 0 ? Math.round((v / total) * 100) : 0);
+        const shareDirect = total > 0 ? share(cd) : 100;
+        const shareGraph = share(cg);
+        const shareMarket = Math.max(0, 100 - shareDirect - shareGraph);
+        const dVal = weights.direct ? cd / weights.direct : null;
+        const gVal = (e.graph_score_component || {}).value;
+        const mVal = (e.market_score_component || {}).value;
+        const dLabel = dVal === null ? "n/a" : dVal.toFixed(3);
+        const gLabel = gVal === null || gVal === undefined ? "n/a" : Number(gVal).toFixed(3);
+        const mLabel = mVal === null || mVal === undefined ? "n/a" : Number(mVal).toFixed(3);
+        const parts = [`Direct match ${shareDirect} percent`];
+        if (shareGraph > 0) parts.push(`comparable support ${shareGraph} percent`);
+        if (shareMarket > 0) parts.push(`market context ${shareMarket} percent`);
+        const bar =
+          `<div class="anatomy" role="img" aria-label="${parts.join(", ")} of the final score">` +
+          `<span class="direct" style="width:${shareDirect}%" title="Direct match: ${shareDirect}% of the score"></span>` +
+          (shareGraph > 0
+            ? `<span class="graph" style="width:${shareGraph}%" title="Comparable support: ${shareGraph}% of the score"></span>`
+            : "") +
+          (shareMarket > 0
+            ? `<span class="market" style="width:${shareMarket}%" title="Market context: ${shareMarket}% of the score"></span>`
+            : "") +
+          `</div>`;
+        const legend =
+          `<div class="anatomy-legend"><span><i style="background:#3976e8"></i>Direct match <strong>${shareDirect}%</strong> <span class="muted">(${fmtW(weights.direct)} x ${dLabel} = ${cd.toFixed(3)})</span></span>` +
+          (shareGraph > 0
+            ? `<span><i style="background:#13a18b"></i>Comparable support <strong>${shareGraph}%</strong> <span class="muted">(${fmtW(weights.graph)} x ${gLabel} = ${cg.toFixed(3)})</span></span>`
+            : "") +
+          (shareMarket > 0
+            ? `<span><i style="background:#6d4acb"></i>Market context <strong>${shareMarket}%</strong> <span class="muted">(${fmtW(weights.market)} x ${mLabel} = ${cm.toFixed(3)})</span></span>`
+            : "") +
+          `</div>`;
+        const missing = [];
+        if (shareGraph === 0) missing.push("comparable-neighbour evidence");
+        if (shareMarket === 0 && (weights.market ?? null) === null && (e.market_context_status || {}).available)
+          missing.push("market context");
+        const fallback = missing.length
+          ? `<div class="notice warn" style="margin-top:10px">No ${missing.join(" or ")} was available, so the remaining weights are renormalised over what the score did use.</div>`
+          : "";
+        return bar + legend + fallback;
+      }
+      const EVIDENCE_GROUPS = [
+        { label: "Your preferences", color: "#3976e8", one: "preference", many: "preferences",
+          kinds: ["constraint", "direct_reason"] },
+        { label: "Market context", color: "#6d4acb", one: "price comparison",
+          many: "price comparisons", kinds: ["market_context"] },
+        { label: "How the score is built", color: "#64748b", one: "score detail",
+          many: "score details", kinds: ["score", "ranking"] },
+        { label: "What we could not use", color: "#b45309", one: "limitation",
+          many: "limitations", kinds: ["market", "location", "disclosure"] },
+      ];
+      function evidenceStatementsHtml(sents) {
+        if (!sents.length) return "";
+        const groups = EVIDENCE_GROUPS
+          .map((g) => ({ ...g, items: sents.filter((s) => g.kinds.includes(s.kind)) }))
+          .filter((g) => g.items.length);
+        const total = groups.reduce((n, g) => n + g.items.length, 0);
+        const counts = groups
+          .map((g) => `${g.items.length} ${g.items.length === 1 ? g.one : g.many}`)
+          .join(" &middot; ");
+        const body = groups
+          .map(
+            (g) =>
+              `<div class="evgroup"><div class="evhead"><i style="background:${g.color}"></i>${g.label}<span class="n">${g.items.length}</span></div><ul class="evlist">${g.items
+                .map(
+                  (s) =>
+                    `<li style="--dot:${g.color}" title="${(s.text || "").replace(/"/g, "&quot;")}">${s.plain || s.text}</li>`,
+                )
+                .join("")}</ul></div>`,
+          )
+          .join("");
+        return `<details class="fold evidence"><summary>More evidence used for this result (${total})</summary><div class="fold-body"><p class="evsummary">${counts}</p>${body}<p class="tiny muted" style="margin-top:6px">Hover a line to see the exact wording kept in the score record.</p></div></details>`;
+      }
+      const FILTER_NAMES = {
+        max_budget_rm: "Budget",
+        "preferred_area (district)": "District",
+        property_type: "Property type",
+        min_bedrooms: "Bedrooms",
+        min_bathrooms: "Bathrooms",
+        parking_required: "Parking",
+        furnished_only: "Furnishing",
+        tenure: "Tenure",
+      };
+      function filterAsked(c) {
+        const v = c.requirement;
+        const text = v === null || v === undefined ? "—" : String(v);
+        switch (c.constraint) {
+          case "max_budget_rm":
+            return `up to ${money(v)}`;
+          case "min_bedrooms":
+          case "min_bathrooms":
+            return `${Number(v)} or more`;
+          case "parking_required":
+            return "at least 1 space";
+          case "furnished_only":
+            return "partly or fully furnished";
+          case "preferred_area (district)":
+          case "property_type":
+          case "tenure":
+            return text.charAt(0).toUpperCase() + text.slice(1);
+          default:
+            return text;
+        }
+      }
+      function filterListing(c) {
+        const v = c.property_value;
+        if (v === null || v === undefined) return "this value is not recorded";
+        switch (c.constraint) {
+          case "max_budget_rm":
+            return `asks ${money(v)}`;
+          case "min_bedrooms":
+            return `has ${Number(v)} bedroom${Number(v) === 1 ? "" : "s"}`;
+          case "min_bathrooms":
+            return `has ${Number(v)} bathroom${Number(v) === 1 ? "" : "s"}`;
+          case "parking_required":
+            return `has ${Number(v)} parking space${Number(v) === 1 ? "" : "s"}`;
+          case "furnished_only":
+            return `is ${v}`;
+          case "preferred_area (district)":
+            return `is in ${v}`;
+          case "property_type":
+            return `is a ${v}`;
+          case "tenure":
+            return `is ${v}`;
+          default:
+            return `has ${v}`;
+        }
+      }
+      const SOFT_NAMES = {
+        size_fit: "Built-up area",
+        price_value_fit: "Asking price",
+        facility_fit: "Nearby facilities",
+        budget_fit: "Price vs target",
+        location_fit: "Location",
+        property_type_fit: "Property type",
+        bedroom_fit: "Bedrooms",
+        bathroom_fit: "Bathrooms",
+        tenure_fit: "Tenure",
+        furnishing_fit: "Furnishing",
+      };
+      function propertyDetailsHtml(p, opts = {}) {
+        const showLabel = opts.label !== false;
+        const showLink = opts.link !== false;
+        const row = (label, value) =>
+          value === null || value === undefined || value === ""
+            ? ""
+            : `<div class="pitem"><span>${label}</span><strong>${value}</strong></div>`;
+        const rows = [
+          opts.hidePrice ? "" : row("Asking price", money(p.price)),
+          row("Built-up area", `${Number(p.size).toLocaleString()} sq ft`),
+          row("Bedrooms", p.beds),
+          row("Bathrooms", p.baths),
+          row("Parking", p.parking ? `${p.carParks ?? 1} car park${Number(p.carParks) === 1 ? "" : "s"}` : "None"),
+          row("Property type", p.type),
+          row("Tenure", p.tenure),
+          row("Furnishing", p.furnishing),
+          row("Area", p.area),
+          row("District", p.district),
+          row("State", p.state),
+        ].join("");
+        const facilities = (p.facilities || []).length
+          ? `<div class="pfacilities"><span class="plabel">Nearby facilities</span><div class="pchips">${p.facilities
+              .map((f) => `<span class="pchip">${f}</span>`)
+              .join("")}</div></div>`
+          : "";
+        const link = showLink && p.url
+          ? `<a class="btn" style="display:block;text-align:center;margin-top:14px;text-decoration:none" href="${p.url}" target="_blank" rel="noopener">Open the original listing</a>`
+          : "";
+        return `${showLabel ? '<div class="section-label" style="margin-top:20px">Property details</div>' : ""}<div class="pgrid">${rows}</div>${facilities}${link}`;
+      }
+      const EDGE_COMPONENTS = [
+        ["location", "Location"],
+        ["price", "Price"],
+        ["size", "Size"],
+        ["property_type", "Type"],
+        ["bedroom", "Bedrooms"],
+        ["bathroom", "Bathrooms"],
+        ["facility", "Facilities"],
+      ];
+      function edgeRowsHtml(n) {
+        const c = n.components || {};
+        return EDGE_COMPONENTS.map(([key, label]) => {
+          const v = c[key];
+          if (v === null || v === undefined) return "";
+          const isType = key === "property_type";
+          const text = isType ? (v >= 0.99 ? "same" : "differs") : `${Math.round(v * 100)}%`;
+          const width = Math.max(4, Math.round(v * 100));
+          const color = simBand(v).color;
+          return `<div class="edge"><span class="elabel"><span>${label}</span><span class="eval">${text}</span></span><span class="ebar"><i style="width:${width}%;background:${color}"></i></span></div>`;
+        }).join("");
+      }
+      function edgeText(n) {
+        const c = n.components || {};
+        return EDGE_COMPONENTS.map(([key, label]) => {
+          const v = c[key];
+          if (v === null || v === undefined) return null;
+          return `${label} ${key === "property_type" ? (v >= 0.99 ? "same" : "differs") : Math.round(v * 100) + "%"}`;
+        })
+          .filter(Boolean)
+          .join(", ");
+      }
+      function comparableStats(p) {
+        const ordered = [...(p.neighbourDetails || [])].sort(
+          (a, b) =>
+            (b.supportShare ?? -1) - (a.supportShare ?? -1) ||
+            (b.similarity || 0) - (a.similarity || 0),
+        );
+        const shares = ordered.map((n) => n.supportShare || 0);
+        const dists = ordered
+          .map((n) => n.distanceKm)
+          .filter((d) => d !== null && d !== undefined);
+        return {
+          ordered,
+          maxShare: shares.length ? Math.max(...shares) : 0,
+          topId: shares.length && Math.max(...shares) > 0 ? ordered[0].id : null,
+          avgSimilarity: ordered.length
+            ? ordered.reduce((a, n) => a + (n.similarity || 0), 0) / ordered.length
+            : 0,
+          closestKm: dists.length ? Math.min(...dists) : null,
+        };
+      }
+      const kmLabel = (d) =>
+        d === null || d === undefined ? null : d < 0.1 ? "<0.1 km" : `${Number(d).toFixed(1)} km`;
+      function openExplanation(id) {
+        selectedId = id;
+        renderResults();
+        go("explanation");
+      }
+      function comparableCardsHtml(p) {
+        const { ordered, maxShare, topId } = comparableStats(p);
+        if (!ordered.length) {
+          return `<div class="notice warn">No similar listings were found for this property under your filters.</div>`;
+        }
+        return `<div class="compgrid">${ordered
+          .map((n) => {
+            const dist = kmLabel(n.distanceKm);
+            const meta = [n.district, money(n.price), dist ? `${dist} away` : null]
+              .filter(Boolean)
+              .join(" &middot; ");
+            const isTop = n.id === topId;
+            const sharePct = Math.round((n.supportShare || 0) * 100);
+            const foot = isTop
+              ? `Biggest: ${sharePct}% of neighbour support`
+              : `${sharePct}% of neighbour support`;
+            return `<details class="compcard"><summary class="cc-sum"><div class="cc-head"><span class="cc-glyph">&#127968;</span><div class="cc-name">${n.name}</div><span class="cc-chev"></span></div><div class="cc-sub"><span class="cc-meta">${meta}</span><span class="cc-badge">${Math.round((n.similarity || 0) * 100)}% alike</span></div><div class="compfoot ${isTop ? "top" : ""}"><span>${foot}</span></div></summary><div class="cc-edges">${edgeRowsHtml(n)}</div></details>`;
+          })
+          .join("")}</div>`;
+      }
+      function scoreLinkedExplanation(p) {
+        const e = p.explanation;
+        if (!e) {
+          return `<div class="card"><div class="cardbody"><div class="notice warn">No explanation record was returned for this listing. Re-run the search against the current recommender service.</div></div></div>`;
+        }
+        const gen = e.generated_explanation || {};
+        const sents = gen.sentences || [];
+        const gs = e.graph_score_component || {};
+        const loc = e.location_resolution_status || {};
+        const market = e.market_context_status || {};
+        const gates = e.hard_constraint_evidence || [];
+        const soft = sents.filter((s) => s.kind === "direct_reason");
+        const neighbourNoun = `similar listing${(gs.neighbours_used || 0) === 1 ? "" : "s"}`;
+
+        const chips = [];
+        if (gates.length) {
+          chips.push(`<span class="chip-ok">Meets all ${gates.length} filters you set</span>`);
+        }
+        chips.push(
+          gs.available
+            ? `<span class="chip-ok">Supported by ${gs.neighbours_used} ${neighbourNoun}</span>`
+            : `<span class="chip-warn">No comparable evidence for this listing</span>`,
+        );
+        if (loc.status === "coordinate_level") {
+          chips.push(`<span class="chip-ok">Location from listing coordinates</span>`);
+        } else if (loc.status === "district_level_fallback") {
+          chips.push(`<span class="chip-warn">Location only district-level</span>`);
+        }
+        if (market.available) {
+          const mWeight = (e.score_trace || {}).weights || {};
+          chips.push(
+            mWeight.market !== null && mWeight.market !== undefined
+              ? `<span class="chip-ok">Market comparison counted in the score</span>`
+              : `<span class="chip-ok">Market comparison available</span>`,
+          );
+        }
+
+        const gateList = gates.length
+          ? `<ul class="reasonlist">${gates
+              .map(
+                (g) =>
+                  `<li><span class="rt">${FILTER_NAMES[g.constraint] || g.constraint}</span><span class="rd">You asked for ${filterAsked(g)} &middot; this listing ${filterListing(g)} &check;</span></li>`,
+              )
+              .join("")}</ul>`
+          : `<div class="notice warn">No hard filters were applied to this search.</div>`;
+
+        const softList = soft.length
+          ? `<ul class="reasonlist">${soft
+              .map(
+                (s, i) =>
+                  `<li class="${i === 0 ? "lead" : ""}"><span class="rt">${SOFT_NAMES[s.preference] || s.label || "Preference"}</span><span class="rd">${s.plain || s.text}</span>${s.match !== null && s.match !== undefined ? `<span class="rmatch">${Math.round(s.match * 100)}% match</span>` : ""}</li>`,
+              )
+              .join("")}</ul>`
+          : `<div class="notice">You did not state any soft preferences for this search, so the ranking rests on your filters and the comparable evidence.</div>`;
+
+        const supportList = gs.available
+          ? `<ul class="reasonlist"><li><span class="rt">Comparable support</span><span class="rd">${gs.neighbours_used} ${neighbourNoun} that also meet your filters score well, and their evidence supports this position.</span><span class="rmatch">neighbours average ${Math.round((gs.value || 0) * 100)}%</span></li></ul>`
+          : `<div class="notice warn">No similar listings were available for this property, so its score rests on your own preferences alone.</div>`;
+
+        const rest = sents.filter((s) => s.kind !== "direct_reason" && s.kind !== "constraint");
+
+        const scoreBlock = `<div class="section-label" style="margin-top:22px">How the score is built</div>${scoreAnatomyHtml(e)}`;
+        const mstatus = e.market_context_status || {};
+        const marketSentence = (sents.find((s) => s.kind === "market_context") || {}).plain || "";
+        const marketBlock =
+          mstatus.available && p.marketContext
+            ? `<div class="section-label" style="margin-top:22px">Market context</div><div class="evidence-box"><p style="margin:0 0 8px">${marketSentence}</p><p class="tiny muted" style="margin:0">Asking price <strong>${money(p.marketContext.askingPpsf)}/sq ft</strong> against an area average of ${money(p.marketContext.refMean)}/sq ft${p.marketContext.refQ1 ? ` (typical range ${money(p.marketContext.refQ1)}&ndash;${money(p.marketContext.refQ3)})` : ""}. Reference is area-level transaction data, so most asking prices sit above it.</p></div>`
+            : "";
+        const topMatch = soft.length && soft[0].match !== null && soft[0].match !== undefined
+          ? `top match ${Math.round(soft[0].match * 100)}%`
+          : "";
+        const reasonCard = (n, title, note, body) =>
+          `<li><details class="reasonfold"><summary><span class="num">${n}</span><span class="rhead">${title}</span>${note ? `<span class="rnote">${note}</span>` : ""}<span class="rchev">&#9656;</span></summary><div class="rbody">${body}</div></details></li>`;
+        const reasonsBlock = `<div class="section-label" style="margin-top:22px">Main reasons</div><ol class="mainreasons">${reasonCard(1, `It meets all ${gates.length} filter${gates.length === 1 ? "" : "s"} you set`, `${gates.length} checks`, gateList)}${reasonCard(2, "It matches your stated preferences", topMatch, softList)}${reasonCard(3, `${gs.neighbours_used || 0} ${neighbourNoun} support this ranking`, gs.available ? `avg support ${Math.round((gs.value || 0) * 100)}%` : "", supportList)}</ol>`;
+        const detailsFold = `<details class="fold"><summary>Property details <span class="foldhint">${p.beds} bed &middot; ${p.baths} bath &middot; ${Number(p.size).toLocaleString()} sq ft &middot; ${p.tenure}</span></summary><div class="fold-body">${propertyDetailsHtml(p, { label: false })}</div></details>`;
+                const cstats = comparableStats(p);
+                const summaryLine =
+                  ((sents.find((s) => s.kind === "comparable_summary") || {}).plain) || "";
+                const comparableSection = `<details class="fold" style="margin-top:22px"><summary>Similar listings used <span class="foldhint">${cstats.ordered.length ? `${cstats.ordered.length} listings &middot; ${Math.round(cstats.avgSimilarity * 100)}% average alike` : "none found"}</span></summary><div class="fold-body">${
+                  cstats.ordered.length
+                    ? `<div class="compsum"><div><b>${cstats.ordered.length}</b><span>similar listings compared</span></div><div><b>${Math.round(cstats.avgSimilarity * 100)}%</b><span>average alike</span></div></div>${summaryLine ? `<p style="margin:0 0 10px;font-size:12.5px;line-height:1.55">${summaryLine}</p>` : ""}<p class="tiny muted" style="margin:0 0 10px">Each card shows how alike one similar listing is overall. Tap a card to open its seven separate comparisons: a full bar means the two homes are almost identical on that point, a short bar marks the biggest difference. The order follows how much each listing supports this ranking.</p>`
+                    : ""
+                }${comparableCardsHtml(p)}${cstats.ordered.length ? `<div class="notice" style="margin-top:12px">Only neighbours retained in this listing&rsquo;s score record are shown. Similarity is not a valuation and is not a share of the final score.</div>` : ""}<button class="btn" style="width:100%;margin-top:14px" onclick="go('graph')">See the comparable graph</button></div></details>`;
+return `<div class="card"><div class="cardhead"><h2>Why this property ranks here</h2><span class="tag" style="background:#e7f7f3;color:#087568">Retained evidence</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.district}, ${p.area}, ${p.state}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle" title="CPG final score">${pct(e.final_score ?? 0)}</div></div><div class="chiprow">${chips.join("")}</div>${gen.plain_summary ? `<p style="margin:16px 0 0;font-size:13px;line-height:1.55">${gen.plain_summary}</p>` : ""}${detailsFold}${scoreBlock}${marketBlock}${reasonsBlock}${comparableSection}${evidenceStatementsHtml(rest)}</div></div>`;
+      }
+
+      function matchBarColor(value) {
+        return value >= 0.8 ? "#3976e8" : value >= 0.5 ? "#7f9fe8" : "#b7c6de";
+      }
+      function featureSummaryHtml(p, d) {
+        const reasons = (p.directReasons || []).filter(
+          (r) => r.match !== null && r.match !== undefined,
+        );
+        const matchRows = reasons
+          .map(
+            (r) =>
+              `<div class="edge"><span class="elabel"><span>${r.label || r.preference}</span><span class="eval">${Math.round(r.match * 100)}%</span></span><span class="ebar"><i style="width:${Math.max(4, Math.round(r.match * 100))}%;background:${matchBarColor(r.match)}"></i></span></div>`,
+          )
+          .join("");
+        const chips = [
+          p.type,
+          p.tenure,
+          p.furnishing,
+          p.parking ? `${p.carParks ?? 1} parking` : "No parking",
+        ]
+          .filter(Boolean)
+          .map((c) => `<span class="chip-soft">${c}</span>`)
+          .join("");
+        const gateCount = ((p.explanation || {}).hard_constraint_evidence || []).length;
+        const topMatches = reasons
+          .slice(0, 2)
+          .map((r) => `${(SOFT_NAMES[r.preference] || r.label || r.preference).toLowerCase()} ${Math.round(r.match * 100)}%`)
+          .join(" and ");
+        const whySentences = [
+          `It is a ${p.beds}-bedroom ${String(p.type).toLowerCase()} in ${p.district}, asking ${money(p.price)}.`,
+        ];
+        if (gateCount)
+          whySentences.push(`It meets all ${gateCount} filter${gateCount === 1 ? "" : "s"} you set.`);
+        if (topMatches)
+          whySentences.push(`Its own attributes are close to what you asked for: ${topMatches} match.`);
+        whySentences.push(
+          `Overall, its attributes match ${pct(d)} of the preferences in this search.`,
+        );
+        const whyRecommended = `<div class="mainreason"><span class="mrlabel">Why this was recommended</span><p>${whySentences.join(" ")}</p></div>`;
+        const detailsFold = `<details class="fold" style="margin-top:20px"><summary>Property details <span class="foldhint">${p.beds} bed &middot; ${p.baths} bath &middot; ${Number(p.size).toLocaleString()} sq ft &middot; ${p.tenure}</span></summary><div class="fold-body">${propertyDetailsHtml(p, { label: false, hidePrice: true })}</div></details>`;
+        return `<div class="card">
+          <div class="cardhead"><h2>Feature-summary explanation</h2><span class="tag soft">Attribute evidence only</span></div>
+          <div class="cardbody">
+            <div class="detailtop">
+              <div>
+                <h2 class="detail-title">${p.name}</h2>
+                <div class="muted tiny">${p.district}, ${p.area}, ${p.state}</div>
+                <div class="detail-price">${money(p.price)}</div>
+              </div>
+              <div style="text-align:center">
+                <div class="scorecircle">${pct(d)}</div>
+                <div class="muted tiny" style="margin-top:6px">attribute match</div>
+              </div>
+            </div>
+            <div class="chiprow">${chips}</div>
+            ${whyRecommended}
+            <div class="section-label" style="margin-top:22px">How well it matches your search</div>
+            <p class="tiny muted" style="margin:0 0 10px">A plain comparison of this listing's attributes against the preferences you entered. Each bar shows one comparison on its own.</p>
+            ${
+              matchRows
+                ? `<div class="cc-edges" style="border-top:0;padding-top:0">${matchRows}</div>`
+                : `<div class="notice">No scored preferences to compare against.</div>`
+            }
+            ${detailsFold}
+            <div class="notice" style="margin-top:18px">This summary uses the listing's own attributes only. It makes no claim about similar listings, and no claim that market data contributed to the ranking.</div>
+          </div>
+        </div>`;
       }
       function renderExplanation() {
         const p = selected();
@@ -1890,11 +3015,11 @@
           g = p.displayGraph ?? p.graph;
         let body = "";
         if (condition === "none") {
-          body = `<div class="card"><div class="cardbody"><div class="empty"><div style="font-size:30px">▤</div><h3>No explanation condition</h3><p>The ranked recommendation is shown without reasons. The underlying ranking is unchanged across explanation conditions for the same scenario.</p><button class="btn primary" onclick="setCondition('score')">Show score-linked explanation</button></div></div></div>`;
+          body = `<div class="card"><div class="cardhead"><div><h2>${p.name}</h2><div class="muted tiny">${p.district}, ${p.area}, ${p.state}</div></div><span class="tag">${p.type}</span></div><div class="cardbody"><div class="detail-price">${money(p.price)}</div>${propertyDetailsHtml(p, { label: false, link: true, hidePrice: true })}</div></div>`;
         } else if (condition === "feature") {
-          body = `<div class="layout"><div class="card"><div class="cardhead"><h2>Feature-summary explanation</h2><span class="tag soft">Direct evidence only</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.district}, ${p.area}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle">${pct(d)}</div></div><p>Selected because its listing attributes align with the active search preferences. This condition shows direct query-to-property evidence only and excludes comparable-neighbour claims.</p>${component("Direct preference matching", d, "blue", "Derived from the current search profile.")}<div class="evidence-box"><h4>Attribute evidence</h4><p>${p.size.toLocaleString()} sq ft built-up area; ${p.beds} bedrooms; ${p.baths} bathrooms; ${p.type}; asking price ${money(p.price)}.${p.facilities.length ? " Nearby: " + p.facilities.join(", ") + "." : ""}</p></div></div></div><div class="card"><div class="cardhead"><h2>Explanation boundary</h2></div><div class="cardbody"><div class="notice">This condition does not assert that comparable properties contributed to the displayed explanation. The list order is held constant for the same search and method.</div></div></div></div>`;
+          body = featureSummaryHtml(p, d);
         } else {
-          body = `<div class="layout"><div class="card"><div class="cardhead"><h2>Score-linked comparable-property explanation</h2><span class="tag" style="background:#e7f7f3;color:#087568">Retained evidence</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.id} · ${p.district}, ${p.area}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle">${pct(p.score ?? 0.65 * d + 0.35 * (g || 0))}</div></div><p style="margin-top:18px">The rank is supported by direct preference matching and, when available, qualified comparable-neighbour evidence retained for this candidate.</p>${component("Direct preference match · D", d, "blue", "Active query-to-property evidence.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Active graph-neighbour component; shown separately from direct matching.") : `<div class="notice warn">Graph support is unavailable for this candidate; no graph contribution is claimed.</div>`}${marketComponent(p)}<div class="evidence-box"><h4>Why it matches</h4><p>${p.notes}</p></div><div class="evidence-box"><h4>Location resolution disclosure</h4><p>${p.locationEvidence === "District-level fallback" ? "District-level fallback is lower-resolution evidence and does not mean two properties are geographically close." : "Neighbour location similarity uses listing coordinates."}</p></div></div></div><div class="card"><div class="cardhead"><h2>Comparable properties used</h2><span class="tag">Neighbourhood evidence</span></div><div class="cardbody">${neighborHtml(p, 8)}<div class="notice" style="margin-top:12px">Only qualified neighbours retained in this candidate's score record are shown. Neighbour similarity is not described as a percentage of overall recommendation quality.</div><button class="btn" style="width:100%;margin-top:14px" onclick="go('graph')">Explore graph relationships →</button></div></div></div>`;
+          body = scoreLinkedExplanation(p);
         }
         $("explainContent").innerHTML = body;
       }
@@ -1912,73 +3037,160 @@
         .forEach((b) =>
           b.addEventListener("click", () => setCondition(b.dataset.condition)),
         );
+      // Sequential palette: darker teal = more alike, so the eye reads strength first.
+      const SIM_BANDS = [
+        { min: 0.97, color: "#0b5f57", edge: "#0b5f57", label: "97–100% alike" },
+        { min: 0.93, color: "#11897c", edge: "#11897c", label: "93–97% alike" },
+        { min: 0.90, color: "#3aa79b", edge: "#3aa79b", label: "90–93% alike" },
+        { min: 0, color: "#a8bcc6", edge: "#a8bcc6", label: "under 90% alike" },
+      ];
+      const simBand = (s) => SIM_BANDS.find((b) => (s || 0) >= b.min) || SIM_BANDS[SIM_BANDS.length - 1];
       function renderGraph() {
         const svg = $("graphSvg");
         const p = selected();
-        let out = `<defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#e1e7f0"/></pattern></defs><rect width="700" height="440" fill="url(#dots)"/>`;
+        const W = 700, H = 460;
+        const cx = W / 2, cy = H / 2 - 6;
+        const short = (s) => (!s ? "" : s.length > 19 ? s.slice(0, 18) + "…" : s);
+        let out = `<defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#e4eaf3"/></pattern></defs><rect width="${W}" height="${H}" fill="url(#dots)"/>`;
         if (!p) {
-          svg.innerHTML =
-            out +
-            `<text x="350" y="220" text-anchor="middle" fill="#64748b">Run a search to see a property's neighbourhood.</text>`;
+          svg.innerHTML = out + `<text x="${cx}" y="${cy}" text-anchor="middle" fill="#64748b" font-size="13">Run a search to compare a property with similar listings.</text>`;
           renderGraphDetail();
           return;
         }
         const nbs = p.neighbourDetails || [];
-        const cx = 350,
-          cy = 210,
-          R = 160;
-        const short = (s) => (s.length > 17 ? s.slice(0, 16) + "…" : s);
-        const pos = nbs.map((n, i) => {
-          const a = -Math.PI / 2 + (2 * Math.PI * i) / Math.max(nbs.length, 1);
-          return {
-            ...n,
-            x: cx + R * Math.cos(a),
-            y: cy + R * 0.82 * Math.sin(a),
-          };
+        const rx = 250, ry = 138;
+
+        if (!nbs.length) {
+          out += `<g><circle cx="${cx}" cy="${cy}" r="34" fill="#3677e8" stroke="#172b4d" stroke-width="4"/><text x="${cx}" y="${cy + 7}" font-size="20" text-anchor="middle">🏡</text></g>`;
+          out += `<text x="${cx}" y="${cy + 62}" font-size="12" font-weight="800" text-anchor="middle" fill="#172b4d">${short(p.name)}</text>`;
+          out += `<text x="${cx}" y="${cy + 96}" font-size="12" text-anchor="middle" fill="#b45309">No similar listings found for this property under your filters.</text>`;
+          out += `<text x="${cx}" y="${cy + 116}" font-size="11" text-anchor="middle" fill="#94a3b8">Its score therefore rests on your stated preferences alone.</text>`;
+          svg.innerHTML = out;
+          renderGraphDetail();
+          return;
+        }
+
+        // Same order as the supporting-listing cards: biggest contributor to the
+        // score first, then clockwise. Thickness encodes that contribution.
+        const stats = comparableStats(p);
+        const ordered = stats.ordered;
+        const pos = ordered.map((n, i) => {
+          const a = -Math.PI / 2 + (2 * Math.PI * i) / ordered.length;
+          return { ...n, x: cx + rx * Math.cos(a), y: cy + ry * Math.sin(a) };
         });
+
+        out += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="#e2e8f0" stroke-dasharray="3 8"/>`;
+
         pos.forEach((n) => {
-          out += `<line x1="${cx}" y1="${cy}" x2="${n.x}" y2="${n.y}" stroke="#7198e8" stroke-width="${1 + n.similarity * 3}" opacity="0.85"/><text x="${(cx + n.x) / 2}" y="${(cy + n.y) / 2 - 5}" font-size="10" text-anchor="middle" fill="#64748b">${n.similarity.toFixed(2)}</text>`;
+          const band = simBand(n.similarity);
+          const rel = stats.maxShare > 0 ? (n.supportShare || 0) / stats.maxShare : 0.5;
+          const width = (1.4 + rel * 5).toFixed(2);
+          out += `<line x1="${cx}" y1="${cy}" x2="${n.x}" y2="${n.y}" stroke="${band.edge}" stroke-width="${width}" stroke-linecap="round" opacity="${(0.32 + rel * 0.33).toFixed(2)}"><title>${n.name} — ${Math.round((n.similarity || 0) * 100)}% alike (${edgeText(n)}), contributing ${Math.round((n.supportShare || 0) * 100)}% of the neighbour support.</title></line>`;
         });
+
         pos.forEach((n) => {
+          const band = simBand(n.similarity);
           const inList = ranked.some((x) => x.id === n.id);
-          out += `<g class="graphnode" data-id="${n.id}"><circle cx="${n.x}" cy="${n.y}" r="22" fill="${inList ? "#e5a18c" : "#94a3b8"}"/><text x="${n.x}" y="${n.y + 4}" font-size="10" font-weight="800" text-anchor="middle" fill="#243247">${n.id}</text><text x="${n.x}" y="${n.y + 39}" font-size="11" font-weight="700" text-anchor="middle" fill="#334155">${short(n.name)}</text></g>`;
+          const pctAlike = Math.round((n.similarity || 0) * 100);
+          const why = plainDetail(n.plain) || `${n.district} · ${money(n.price)}`;
+          const sharePct = Math.round((n.supportShare || 0) * 100);
+          const isTop = n.id === stats.topId;
+          out += `<g class="graphnode" data-id="${n.id}" tabindex="0" role="button" aria-label="${short(n.name)}, ${pctAlike} percent alike, contributing ${sharePct} percent of the neighbour support${inList ? ", also in your results" : ""}">` +
+            `<title>${n.name} — ${pctAlike}% alike${why ? ": " + why : ""}. Supports ${sharePct}% of the neighbour evidence. ${edgeText(n)}.</title>` +
+            `<circle cx="${n.x}" cy="${n.y}" r="${isTop ? 28 : 26}" fill="${band.color}" stroke="${inList ? "#172b4d" : isTop ? "#0b5f57" : "#ffffff"}" stroke-width="${inList ? 3.5 : isTop ? 3 : 2.5}"/>` +
+            `<text x="${n.x}" y="${n.y + 6}" font-size="15" text-anchor="middle">🏠</text>` +
+            `<text x="${n.x}" y="${n.y + 44}" font-size="11.5" font-weight="800" text-anchor="middle" fill="${band.color}">${pctAlike}% alike</text>` +
+            `<text x="${n.x}" y="${n.y + 58}" font-size="10" text-anchor="middle" fill="#475569">${short(n.name)}</text>` +
+            `<text x="${n.x}" y="${n.y + 71}" font-size="9.5" text-anchor="middle" fill="#64748b">supports ${sharePct}%</text>` +
+            `</g>`;
         });
-        out += `<g class="graphnode selected" data-id="${p.id}"><circle cx="${cx}" cy="${cy}" r="28" fill="#3677e8"/><text x="${cx}" y="${cy + 4}" font-size="10" font-weight="800" text-anchor="middle" fill="#fff">${p.id}</text><text x="${cx}" y="${cy + 46}" font-size="11" font-weight="700" text-anchor="middle" fill="#334155">${short(p.name)}</text></g>`;
-        if (!nbs.length)
-          out += `<text x="350" y="330" text-anchor="middle" fill="#b45309" font-size="12">No qualified neighbours: graph support unavailable for this property.</text>`;
+
+        out += `<g class="graphnode selected" data-id="${p.id}" tabindex="0" role="button" aria-label="${p.name}, the property you are viewing">` +
+          `<title>${p.name} — ${money(p.price)}</title>` +
+          `<circle cx="${cx}" cy="${cy}" r="36" fill="#3677e8" stroke="#172b4d" stroke-width="4"/>` +
+          `<text x="${cx}" y="${cy + 7}" font-size="20" text-anchor="middle">🏡</text>` +
+          `<text x="${cx}" y="${cy + 58}" font-size="12" font-weight="800" text-anchor="middle" fill="#172b4d">${short(p.name)}</text>` +
+          `<text x="${cx}" y="${cy + 73}" font-size="10" text-anchor="middle" fill="#64748b">You are viewing this one</text>` +
+          `</g>`;
+
         svg.innerHTML = out;
-        svg.querySelectorAll(".graphnode").forEach((g) =>
-          g.addEventListener("click", () => {
+        svg.querySelectorAll(".graphnode").forEach((g) => {
+          const choose = () => {
             if (!ranked.some((x) => x.id === g.dataset.id)) {
-              toast(
-                "This neighbour is eligible but outside the shown shortlist.",
-              );
+              toast("That listing is not in the results shown, so it has no explanation page.");
               return;
             }
             selectedId = g.dataset.id;
             renderGraph();
             renderResults();
-          }),
-        );
+          };
+          g.addEventListener("click", choose);
+          g.addEventListener("keydown", (ev) => {
+            if (ev.key === "Enter" || ev.key === " ") {
+              ev.preventDefault();
+              choose();
+            }
+          });
+        });
         renderGraphDetail();
+      }
+
+      function clearNodeFocus() {
+        document
+          .querySelectorAll("#graphSvg .graphnode.linked")
+          .forEach((n) => n.classList.remove("linked"));
+      }
+      function flashNode(id) {
+        const node = document.querySelector(`#graphSvg .graphnode[data-id="${id}"]`);
+        if (!node) return;
+        clearNodeFocus();
+        node.classList.add("linked");
+        node.classList.remove("flash");
+        void node.getBoundingClientRect();
+        node.classList.add("flash");
+        setTimeout(() => node.classList.remove("flash"), 1200);
+        const box = node.getBoundingClientRect();
+        const inView = box.top >= 0 && box.bottom <= window.innerHeight;
+        if (!inView) node.scrollIntoView({ block: "center", behavior: "smooth" });
       }
       function renderGraphDetail() {
         const p = selected();
         if (!p) {
-          $("graphDetail").innerHTML =
-            `<div class="cardhead"><h2>Selected node</h2></div><div class="cardbody"><div class="empty">Run a search first.</div></div>`;
+          $("graphDetail").innerHTML = `<div class="cardhead"><h2>Selected property</h2></div><div class="cardbody"><div class="empty">Run a search first.</div></div>`;
           return;
         }
         const nbs = p.neighbourDetails || [];
-        const rows = nbs
-          .map(
-            (n) =>
-              `<div class="neighbour"><div class="mini-house">🏠</div><div><strong>${n.name}</strong><small>ID ${n.id} · ${n.district} · ${money(n.price)} · loc ${pct(n.components.location ?? 0)}, price ${pct(n.components.price ?? 0)}, size ${pct(n.components.size ?? 0)}</small></div><span class="neighbor-score">S ${n.similarity.toFixed(2)}</span></div>`,
-          )
+        const e = p.explanation;
+        const plainSummary = (e && e.generated_explanation && e.generated_explanation.plain_summary) || "";
+        const stats = comparableStats(p);
+        const rows = stats.ordered
+          .map((n) => {
+            const inList = ranked.find((x) => x.id === n.id);
+            const sharePct = Math.round((n.supportShare || 0) * 100);
+            const isTop = n.id === stats.topId;
+            const dist = kmLabel(n.distanceKm);
+            const meta = [n.district, money(n.price), dist ? `${dist} away` : null]
+              .filter(Boolean)
+              .join(" &middot; ");
+            return `<details class="gddetail${isTop ? " top" : ""}" data-node="${n.id}"><summary><span class="mini-house">🏠</span><span class="gdname">${n.name}<small>${meta} &middot; supports ${sharePct}%</small></span><span class="gdscore">${Math.round((n.similarity || 0) * 100)}%<small>alike</small></span></summary><div class="gdbody"><div class="cc-edges">${edgeRowsHtml(n)}</div><div class="gdmeta">${isTop ? "Biggest contributor &middot; " : ""}supports ${sharePct}% of the neighbour evidence${inList ? ` &middot; also in your results${inList.rank ? ` (#${inList.rank})` : ""}` : ""}</div></div></details>`;
+          })
           .join("");
+        const summaryStrip = stats.ordered.length
+          ? `<div class="compsum" style="margin-top:10px"><div><b>${stats.ordered.length}</b><span>supporting listings</span></div><div><b>${Math.round(stats.avgSimilarity * 100)}%</b><span>average alike</span></div></div>`
+          : "";
+        const meaning = `<div class="evidence-box"><h4>What this means for your results</h4><p>${plainSummary || "This listing's recommendation rests on the evidence listed here."}${nbs.length ? ` These ${nbs.length} similar listing${nbs.length === 1 ? "" : "s"} are what the comparison is based on.` : ""}</p></div>`;
+        const caution = `<div class="notice warn" style="margin-top:12px"><strong>What it does not mean</strong><br />A line does not mean two homes are worth the same, and it is not a prediction that prices will rise. It only means their location, price, size and features are similar enough to compare.</div>`;
         $("graphDetail").innerHTML =
-          `<div class="cardhead"><div><h2>${p.name}</h2><div class="muted tiny">ID ${p.id} · ${p.district}</div></div><span class="tag">${nbs.length} qualified edges</span></div><div class="cardbody"><div class="detail-price">${money(p.price)}</div><div class="muted tiny">${p.type} · ${p.size.toLocaleString()} sq ft · ${p.beds} bedrooms</div><hr class="divider"><div class="section-label">Qualified neighbour list</div>${rows || '<div class="notice warn">No qualified neighbours for this property under the current hard constraints.</div>'}<div class="evidence-box"><h4>Graph interpretation</h4><p>Nodes are property listings. Edges are retained comparable relationships (mutual Top-k, similarity ≥ threshold). Only neighbours that satisfy the current hard constraints are shown and used for graph support.</p></div><button class="btn primary" style="width:100%;margin-top:14px" onclick="go('explanation')">View explanation evidence →</button></div>`;
-      }
+          `<div class="cardhead"><div><h2>${p.name}</h2><div class="muted tiny">${p.district}${p.rank ? ` &middot; ranked #${p.rank}` : ""}</div></div><span class="tag">${nbs.length} similar listing${nbs.length === 1 ? "" : "s"}</span></div><div class="cardbody"><div class="detail-price">${money(p.price)}</div><div class="muted tiny">${p.type} &middot; ${p.size.toLocaleString()} sq ft &middot; ${p.beds} bed &middot; ${p.baths} bath</div>${summaryStrip}<hr class="divider" />${stats.ordered.length ? `<div class="section-label">Supporting listings &amp; what they share</div><p class="tiny muted" style="margin:0 0 8px">Open a listing to see the seven comparisons behind its link in the graph.</p>${rows}` : `<div class="section-label">Supporting listings</div><div class="notice warn">No similar listings were found for this property under your filters, so there is no comparable evidence to show.</div>`}${meaning}${stats.ordered.length ? caution : ""}<div class="section-label" style="margin-top:18px">Next step</div><button class="btn primary" style="width:100%" onclick="go('explanation')">See the full explanation</button></div>`;
+                  $("graphDetail").querySelectorAll(".gddetail").forEach((row) => {
+                    row.querySelector("summary").addEventListener("click", () => {
+                      setTimeout(() => {
+                        if (row.open) flashNode(row.dataset.node);
+                        else clearNodeFocus();
+                      }, 0);
+                    });
+                  });
+                }
       $("searchBtn").click();
     </script>
   </body>

@@ -25,12 +25,19 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
-for sub in ("baseline_models", "graph", "market_context", "ranking"):
+for sub in ("", "baseline_models", "graph", "market_context", "ranking"):
     sys.path.insert(0, str(ROOT / sub))
 
 import direct_preference_baseline as dpb  # noqa: E402
 from build_comparable_graph import ComparableGraph  # noqa: E402
-from cpg_ranker import G_AVAILABLE, RankingConfig, rank_candidates  # noqa: E402
+from cpg_ranker import G_AVAILABLE, RankingConfig, build_evidence, rank_candidates  # noqa: E402
+from explanation_engine import (  # noqa: E402
+    DIRECT_LABELS,
+    ENGINE_VERSION,
+    build_explanation,
+    normalise_property_id,
+    summarise_explanations,
+)
 
 DATA_PATH = ROOT / "dataset" / "Malaysia_Property_Cleaned_Raw.csv"
 MARKET_PATH = ROOT / "outputs" / "market_context" / "market_context_scores.csv"
@@ -69,6 +76,24 @@ RECOMMENDED_K = 5          # Top-K shown as "Recommended" (= evaluated K)
 VIEW_MORE_LIMIT = 20       # at most 20 further eligible properties under "View more"
 TOP_N_RETURNED = RECOMMENDED_K + VIEW_MORE_LIMIT   # None = return every eligible property
 MAX_NEIGHBOURS_RETURNED = 8
+# Hard constraint -> catalogue column whose value shows the constraint is met.
+CONSTRAINT_VALUE_COLUMNS = {
+    "max_budget_rm": "price",
+    "preferred_area (district)": "district",
+    "property_type": "property_type",
+    "min_bedrooms": "bedroom",
+    "min_bathrooms": "bathroom",
+    "parking_required": "car_parks",
+    "furnished_only": "furnishing",
+    "tenure": "tenure",
+}
+TITLE_CASE_COLUMNS = {"district", "property_type", "furnishing", "tenure"}
+# Location-resolution status -> label shown next to the score evidence.
+LOCATION_EVIDENCE_LABELS = {
+    "coordinate_level": "Coordinate-level",
+    "district_level_fallback": "District-level fallback",
+    "not_applicable_no_neighbour_evidence": "No neighbour evidence",
+}
 
 
 class QueryError(ValueError):
@@ -251,28 +276,64 @@ def _facility_list(row) -> list[str]:
     return out
 
 
-DIRECT_LABELS = {
-    "price_value_fit": "Asking price relative to budget",
-    "size_fit": "Built-up area vs preferred size",
-    "location_fit": "Preferred district",
-    "facility_fit": "Selected nearby facilities",
-}
+def _constraint_value(row, constraint) -> str | int | None:
+    """The listing's own value for a hard constraint, for the explanation record."""
+    column = CONSTRAINT_VALUE_COLUMNS.get(constraint)
+    if not column or column not in row.index:
+        return None
+    value = row.get(column)
+    if pd.isna(value):
+        return None
+    if column in TITLE_CASE_COLUMNS:
+        return str(value).title()
+    number = pd.to_numeric(value, errors="coerce")
+    if pd.isna(number):
+        return str(value)
+    return int(number) if float(number).is_integer() else round(float(number), 2)
 
 
-def _direct_reasons(row, weights) -> list[dict]:
-    """Direct-preference evidence ordered by weighted contribution (Section 4.8.2)."""
-    active = {k: row.get(f"score_{k}") for k in weights if pd.notna(row.get(f"score_{k}"))}
-    denom = sum(weights[k] for k in active)
-    reasons = []
-    for k, m in active.items():
-        ev = row.get(f"evidence_{k}")
-        try:
-            ev = json.loads(ev) if isinstance(ev, str) and ev.startswith("{") else ev
-        except json.JSONDecodeError:
-            pass
-        reasons.append({"preference": k, "label": DIRECT_LABELS.get(k, k), "match": _f(m),
-                        "weight": _f(weights[k] / denom), "contribution": _f(weights[k] * m / denom),
-                        "evidence": ev})
+def _property_audit(audit: list, row) -> list:
+    """Constraint audit annotated with this listing's value (proof of the match)."""
+    return [{**gate, "property_value": _constraint_value(row, gate["constraint"])}
+            for gate in audit]
+
+
+def _direct_reasons(source, weights=None) -> list[dict]:
+    """Direct-preference evidence ordered by weighted contribution.
+
+    ``source`` is the Stage 8 explanation record (the web path). The legacy call in
+    ranking/generate_top5.py passes (evidence row, query weights) instead.
+    """
+    if weights is not None:
+        row = source
+        active = {k: row.get(f"score_{k}") for k in weights if pd.notna(row.get(f"score_{k}"))}
+        denom = sum(weights[k] for k in active) or 0.0
+        legacy = []
+        for name, match in active.items():
+            evidence = row.get(f"evidence_{name}")
+            try:
+                evidence = (json.loads(evidence)
+                            if isinstance(evidence, str) and evidence.startswith("{") else evidence)
+            except json.JSONDecodeError:
+                pass
+            legacy.append({
+                "preference": name,
+                "label": DIRECT_LABELS.get(name, name),
+                "match": _f(match),
+                "weight": _f(weights[name] / denom) if denom else None,
+                "contribution": _f(weights[name] * match / denom) if denom else None,
+                "evidence": evidence,
+            })
+        return sorted(legacy, key=lambda r: -(r["contribution"] or 0))
+    explanation = source
+    reasons = [{
+        "preference": name,
+        "label": component["label"],
+        "match": component["match"],
+        "weight": component["weight_share"],
+        "contribution": _f((component["weight_share"] or 0.0) * component["match"]),
+        "evidence": component["evidence"],
+    } for name, component in (explanation["direct_score_components"] or {}).items()]
     return sorted(reasons, key=lambda r: -(r["contribution"] or 0))
 
 
@@ -337,6 +398,12 @@ def recommend(raw_profile: dict) -> dict:
     cfg = RankingConfig(variant="full_market" if use_market else "full", top_k=RECOMMENDED_K)
     ranked, nb_evidence = rank_candidates(direct, cfg, cpg, market)
 
+    # Stage 8 reads only these evidence records: rank, score components, retained
+    # neighbours and disclosure statuses. Nothing else reaches the explanation.
+    evidence_by_id = {str(rec["Property_ID"]): rec
+                      for rec in build_evidence(ranked, nb_evidence, cfg, cpg.config_id,
+                                                query["query_id"], limit=TOP_N_RETURNED)}
+
     nb_by = {pid: g for pid, g in nb_evidence.groupby("Property_ID")} if not nb_evidence.empty else {}
     info = catalogue.set_index("Property_ID")
     mkt = market.set_index("Property_ID") if market is not None else None
@@ -345,13 +412,12 @@ def recommend(raw_profile: dict) -> dict:
     for _, r in shown.iterrows():
         pid = r["Property_ID"]
         c = info.loc[pid]
-        reasons = _direct_reasons(r, query["weights"])
         nbs = []
         if pid in nb_by:
             for _, n in nb_by[pid].head(MAX_NEIGHBOURS_RETURNED).iterrows():
                 nc = info.loc[n["neighbour_Property_ID"]]
                 nbs.append({
-                    "id": str(n["neighbour_Property_ID"]),
+                    "id": normalise_property_id(n["neighbour_Property_ID"]),
                     "name": _name(nc),
                     "district": str(nc["district"]).title(),
                     "price": _f(nc["price"], 0),
@@ -364,7 +430,22 @@ def recommend(raw_profile: dict) -> dict:
                 })
         graph_ok = r["graph_support_status"] == G_AVAILABLE
         market_ok = use_market and r.get("market_context_status") == "available"
-        resolutions = {n["locationResolution"] for n in nbs}
+        explanation = build_explanation(
+            evidence_by_id.get(str(pid)),
+            profile=prof,
+            direct_weights=query["weights"],
+            hard_constraints=_property_audit(audit, c),
+            display={"name": _name(c), "district": str(c["district"]).title(),
+                     "price": _f(c["price"], 0)},
+            neighbour_display={n["id"]: {"name": n["name"], "district": n["district"],
+                                         "price": n["price"]} for n in nbs},
+            max_neighbours=MAX_NEIGHBOURS_RETURNED,
+        )
+        plain_by_id = {n["id"]: n.get("plain")
+                       for n in explanation["comparable_neighbours_shown"]}
+        for neighbour in nbs:
+            neighbour["plain"] = plain_by_id.get(neighbour["id"])
+        reasons = _direct_reasons(explanation)
         props.append({
             "id": str(pid),
             "rank": int(r["cpg_rank"]),
@@ -401,9 +482,10 @@ def recommend(raw_profile: dict) -> dict:
             "neighbors": [n["id"] for n in nbs],
             "neighbourDetails": nbs,
             "qualifiedNeighbours": int(r["qualified_neighbours"]),
-            "locationEvidence": ("District-level fallback" if "district" in resolutions
-                                 else "Coordinate-level"),
+            "locationEvidence": LOCATION_EVIDENCE_LABELS.get(
+                explanation["location_resolution_status"]["status"], "No neighbour evidence"),
             "marketContext": {**_market_context(mkt, pid), "usedInRanking": bool(market_ok)},
+            "explanation": explanation,
         })
 
     return {**base, "status": "success", "properties": props,
@@ -415,4 +497,6 @@ def recommend(raw_profile: dict) -> dict:
             "recommended_k": RECOMMENDED_K,
             "view_more_limit": VIEW_MORE_LIMIT,
             "direct_weights": query["weights"],
+            "explanation_engine_version": ENGINE_VERSION,
+            "explanation_summary": summarise_explanations([p["explanation"] for p in props]),
             "elapsed_seconds": round(time.perf_counter() - started, 3)}

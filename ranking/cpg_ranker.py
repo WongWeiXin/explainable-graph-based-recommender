@@ -223,12 +223,17 @@ def _clean(v):
 
 
 def build_evidence(ranked: pd.DataFrame, evidence: pd.DataFrame, cfg: RankingConfig,
-                   graph_config_id: str | None, query_id: str | None) -> list[dict]:
-    """Nested evidence record per Top-K candidate: the explanation engine's only fact source."""
+                   graph_config_id: str | None, query_id: str | None,
+                   limit: int | None = None) -> list[dict]:
+    """Nested evidence record per candidate: the explanation engine's only fact source.
+
+    ``limit`` lets a caller explain more candidates than the evaluated Top-K without
+    changing the frozen ranking configuration (``cfg.config_id()`` stays the same).
+    """
     direct_cols = [c for c in ranked.columns if c.startswith("score_") and c != "score_status"]
     nb = evidence.groupby("Property_ID") if not evidence.empty else None
     records = []
-    for _, r in ranked.head(cfg.top_k).iterrows():
+    for _, r in ranked.head(limit or cfg.top_k).iterrows():
         pid = r["Property_ID"]
         direct_matches = []
         for c in direct_cols:
