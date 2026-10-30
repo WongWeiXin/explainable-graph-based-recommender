@@ -1101,7 +1101,9 @@
                         <optgroup label="Pahang">
                           <option value="bentong">Bentong</option>
                           <option value="bera">Bera</option>
-                          <option value="cameron highlands">Cameron Highlands</option>
+                          <option value="cameron highlands">
+                            Cameron Highlands
+                          </option>
                           <option value="jerantut">Jerantut</option>
                           <option value="kuantan">Kuantan</option>
                           <option value="lipis">Lipis</option>
@@ -1114,9 +1116,15 @@
                         </optgroup>
                         <optgroup label="Pulau Pinang">
                           <option value="barat daya">Barat Daya</option>
-                          <option value="seberang perai selatan">Seberang Perai Selatan</option>
-                          <option value="seberang perai tengah">Seberang Perai Tengah</option>
-                          <option value="seberang perai utara">Seberang Perai Utara</option>
+                          <option value="seberang perai selatan">
+                            Seberang Perai Selatan
+                          </option>
+                          <option value="seberang perai tengah">
+                            Seberang Perai Tengah
+                          </option>
+                          <option value="seberang perai utara">
+                            Seberang Perai Utara
+                          </option>
                           <option value="timur laut">Timur Laut</option>
                         </optgroup>
                         <optgroup label="Sabah">
@@ -1146,7 +1154,9 @@
                           <option value="dungun">Dungun</option>
                           <option value="kemaman">Kemaman</option>
                           <option value="kuala nerus">Kuala Nerus</option>
-                          <option value="kuala terengganu">Kuala Terengganu</option>
+                          <option value="kuala terengganu">
+                            Kuala Terengganu
+                          </option>
                           <option value="marang">Marang</option>
                         </optgroup>
                         <optgroup label="Wilayah Persekutuan Kuala Lumpur">
@@ -1172,7 +1182,9 @@
                       ><select id="type">
                         <option value="Any">Any type</option>
                         <option value="Terrace House">Terrace House</option>
-                        <option value="Condominium" selected>Condominium</option>
+                        <option value="Condominium" selected>
+                          Condominium
+                        </option>
                         <option value="Link Bungalow / Semi-Detached">
                           Link Bungalow / Semi-Detached
                         </option>
@@ -1252,14 +1264,15 @@
                     class="muted tiny"
                     style="margin-top: -5px; margin-bottom: 14px"
                   >
-                    These influence order, not eligibility. Ranking uses direct
-                    preference matching plus comparable-neighbour support.
+                    These influence order, not eligibility.
                   </p>
                   <div class="formgrid">
                     <div class="field">
                       <label for="priority">Main priority</label
                       ><select id="priority">
-                        <option value="balanced" selected>Balanced match</option>
+                        <option value="balanced" selected>
+                          Balanced match
+                        </option>
                         <option value="price">Lower asking price</option>
                         <option value="size">Built-up area</option>
                         <option value="facilities">Facilities</option>
@@ -1283,32 +1296,70 @@
                     style="border: 0; padding: 0; margin: 14px 0 0"
                   >
                     <legend
-                      style="font-size: 12px; font-weight: 700; padding: 0; margin-bottom: 6px"
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        padding: 0;
+                        margin-bottom: 6px;
+                      "
                     >
                       Nearby facilities
                     </legend>
                     <div class="chipgroup">
                       <label class="chip"
-                        ><input type="checkbox" name="facility" value="Public transport" />
+                        ><input
+                          type="checkbox"
+                          name="facility"
+                          value="Public transport"
+                        />
                         Public transport</label
                       >
                       <label class="chip"
-                        ><input type="checkbox" name="facility" value="Schools" />
+                        ><input
+                          type="checkbox"
+                          name="facility"
+                          value="Schools"
+                        />
                         Schools</label
                       >
                       <label class="chip"
-                        ><input type="checkbox" name="facility" value="Retail & groceries" />
+                        ><input
+                          type="checkbox"
+                          name="facility"
+                          value="Retail & groceries"
+                        />
                         Retail &amp; groceries</label
                       >
                       <label class="chip"
-                        ><input type="checkbox" name="facility" value="Parks & recreation" />
+                        ><input
+                          type="checkbox"
+                          name="facility"
+                          value="Parks & recreation"
+                        />
                         Parks &amp; recreation</label
                       >
                     </div>
                     <span class="field-hint"
-                      >Select any number. Leave all unticked for no preference.</span
+                      >Select any. Leave all unticked for no preference.</span
                     >
                   </fieldset>
+                  <hr class="divider" />
+                  <div class="subhead">
+                    <h3>Optional evidence</h3>
+                    <span class="tag soft">EXPERIMENTAL</span>
+                  </div>
+                  <div class="checkgrid">
+                    <label class="check"
+                      ><input type="checkbox" id="marketctx" />
+                      <div>
+                        <strong>Include market context</strong
+                        ><span
+                          >Also rank by how close the price per sq ft is to past
+                          sales in the area.</span
+                        >
+                      </div></label
+                    >
+                  </div>
                   <div class="actions">
                     <button class="btn" id="reset">Reset to defaults</button
                     ><button class="btn primary" id="searchBtn">
@@ -1360,7 +1411,8 @@
                       <div>
                         <h3 id="moreTitle">Other eligible properties</h3>
                         <p class="tiny muted" id="moreNote">
-                          Also meet every hard constraint, ranked below the Top 5.
+                          Also meet every hard constraint, ranked below the Top
+                          5.
                         </p>
                       </div>
                       <select id="sort" class="more-sort">
@@ -1372,7 +1424,9 @@
                     <div id="moreList" class="listing-list"></div>
                     <div class="more-actions">
                       <button class="btn" id="viewMore">View more</button
-                      ><button class="btn hidden" id="viewLess">Show less</button>
+                      ><button class="btn hidden" id="viewLess">
+                        Show less
+                      </button>
                     </div>
                   </div>
                   <div class="footnote">
@@ -1410,8 +1464,8 @@
                 <h1>Comparable-property graph</h1>
                 <p>
                   The selected recommendation and its qualified comparable
-                  neighbours from the frozen comparable-property graph. Select
-                  a node to inspect it.
+                  neighbours from the frozen comparable-property graph. Select a
+                  node to inspect it.
                 </p>
               </div>
               <button class="btn" id="graphToResults">
@@ -1443,7 +1497,9 @@
                         ><i class="dot" style="background: #94a3b8"></i>Eligible
                         neighbour outside shortlist</span
                       ><span
-                        >Edge thickness represents retained similarity S<sub>ij</sub></span
+                        >Edge thickness represents retained similarity S<sub
+                          >ij</sub
+                        ></span
                       >
                     </div>
                   </div>
@@ -1527,6 +1583,8 @@
           // Array of selected facilities; [] means no preference.
           nearby_facilities: selectedFacilities(),
           preferred_built_up_sqft: Number($("minsize").value || 0),
+          // Optional evidence
+          include_market_context: $("marketctx").checked,
         };
       }
       // Toast after a search, matching the Top-5 + "View more" layout.
@@ -1534,9 +1592,12 @@
         const total = data.eligible_count ?? 0;
         const k = data.recommended_k ?? 5;
         const limit = data.view_more_limit ?? 20;
-        if (total <= k) return `${total} eligible · all shown`;
+        const mc = data.market_context_used_in_ranking
+          ? " · market context included"
+          : "";
+        if (total <= k) return `${total} eligible · all shown${mc}`;
         const more = Math.min(total - k, limit);
-        return `${total.toLocaleString()} eligible · ${k} recommended + ${more} more`;
+        return `${total.toLocaleString()} eligible · ${k} recommended + ${more} more${mc}`;
       }
       async function runSearch() {
         currentQuery = readQuery();
@@ -1545,7 +1606,9 @@
           currentQuery.main_priority === "facilities" &&
           currentQuery.nearby_facilities.length === 0
         ) {
-          toast("Select at least one nearby facility, or change the main priority.");
+          toast(
+            "Select at least one nearby facility, or change the main priority.",
+          );
           return;
         }
 
@@ -1584,6 +1647,7 @@
           lastResult = data;
           moreVisible = 0;
           eligible = data.properties || [];
+          marketUsed = !!data.market_context_used_in_ranking;
           ranked = [...eligible];
           selectedId = ranked[0]?.id || null;
 
@@ -1616,6 +1680,7 @@
         $("tenure").value = "No preference";
         $("parking").checked = false;
         $("furnished").checked = false;
+        $("marketctx").checked = false;
         $("priority").value = "balanced";
         document
           .querySelectorAll('input[name="facility"]')
@@ -1669,7 +1734,9 @@
             ? `Only ${total} listing(s) meet every hard constraint, so all are shown. Soft preferences and comparable-neighbour support decide the order.`
             : `${total.toLocaleString()} listings meet every hard constraint. The top ${k} are recommended; ${Math.min(total - k, lastResult?.view_more_limit ?? 20)} more are under "View more". Soft preferences and comparable-neighbour support decide the order.`;
         $("recommendedTitle").textContent =
-          total && total < k ? `All ${total} eligible properties` : "Recommended for you";
+          total && total < k
+            ? `All ${total} eligible properties`
+            : "Recommended for you";
         $("listingList").innerHTML = top.length
           ? top.map(listingHtml).join("")
           : `<div class="empty"><div style="font-size:30px;margin-bottom:8px">⌕</div><strong>No properties meet every hard constraint.</strong><p>Try widening the budget, area, type or minimum bedroom requirement. Soft preferences will not be used to override hard constraints.</p><button class="btn primary" onclick="go('search')">Adjust search</button></div>`;
@@ -1715,23 +1782,86 @@
       function component(name, value, color, desc) {
         return `<div class="component"><div class="component-row"><span>${name}</span><strong>${pct(value)}</strong></div><div class="bar ${color}"><span style="width:${pct(value)}"></span></div><div class="tiny muted" style="margin-top:4px">${desc}</div></div>`;
       }
+      const MC_POSITION = {
+        above_reference_q3: "above the typical range (above Q3) of",
+        within_reference_iqr: "within the typical range (Q1–Q3) of",
+        below_reference_q1: "below the typical range (below Q1) of",
+      };
+      const MC_REASON = {
+        reference_std_missing_single_or_unknown_group:
+          "the area has no transaction spread to compare against",
+        reference_std_below_minimum_degenerate_group:
+          "the area's transaction prices are too uniform to compare against",
+        built_up_area_missing_or_implausible:
+          "this listing's built-up area is missing or implausible",
+        no_market_context_record:
+          "no market-context record exists for this listing",
+      };
+      function marketHtml(p) {
+        const m = p.marketContext;
+        if (!m) return "";
+        const tag = m.usedInRanking
+          ? `Included in ranking score · contributes ${pct((p.trace || {}).contribM)}`
+          : marketUsed
+            ? "Not in this property's score"
+            : "Information only · not in ranking score";
+        const head = `<h4>Market context <span class="tag soft" style="margin-left:6px">${tag}</span></h4>`;
+        if (m.status !== "available")
+          return `<div class="evidence-box">${head}<p>Market context unavailable: ${MC_REASON[m.reason] || (m.reason || "").replaceAll("_", " ")}. No market comparison is claimed${marketUsed ? "; its weight is removed and the other weights are renormalised" : ""}.</p></div>`;
+        const rm = (v) => `RM ${Number(v).toLocaleString()}`;
+        return `<div class="evidence-box">${head}<p>Asking price is <strong>${rm(m.askingPpsf)}/sq ft</strong>, ${MC_POSITION[m.position] || "compared with"} past transactions in ${p.area} (mean ${rm(m.refMean)}/sq ft, typical ${rm(m.refQ1)}–${rm(m.refQ3)}/sq ft; ${m.ratio}× the mean, z = ${m.z}).</p>${m.usedInRanking ? "" : component("Consistency with area transactions · M", m.score, "teal", "exp(−|z|): 100% = at the area mean; lower = further above or below it. Not a measure of value.")}<div class="tiny muted" style="margin-top:6px">Reference is area-level transaction data across all property types; asking prices are compared with completed transaction prices, so most listings sit above the reference.</div></div>`;
+      }
+      let marketUsed = false; // true when the last search included market context in the score
+      function marketComponent(p) {
+        const m = p.marketContext || {};
+        return m.usedInRanking
+          ? component(
+              "Market context · M",
+              m.score,
+              "teal",
+              "Consistency with area transaction prices, exp(−|z|). Included because “Include market context” is ticked.",
+            )
+          : "";
+      }
+      function scoreTrace(p) {
+        const t = p.trace || {};
+        const d = p.displayDirect ?? p.direct,
+          g = p.displayGraph ?? p.graph;
+        const mUsed = !!(p.marketContext || {}).usedInRanking;
+        const parts = [[t.weightD, "direct", d, t.contribD]];
+        if (g !== null && g !== undefined)
+          parts.push([t.weightG, "graph", g, t.contribG]);
+        if (mUsed)
+          parts.push([t.weightM, "market", p.marketContext.score, t.contribM]);
+        const missing = [];
+        if (g === null || g === undefined) missing.push("Graph support");
+        if (marketUsed && !mUsed) missing.push("market context");
+        const lhs = parts
+          .map(([w, n, v]) => `${pct(w)} × ${n} ${pct(v)}`)
+          .join(" + ");
+        const mid =
+          parts.length > 1
+            ? ` = ${parts.map((x) => pct(x[3])).join(" + ")}`
+            : "";
+        const note = missing.length
+          ? `${missing.join(" and ")} unavailable, so the remaining weights are renormalised: `
+          : "";
+        return `${note}${lhs}${mid} = <strong>${pct(p.score)}</strong>`;
+      }
       function detailHtml(p, full = false) {
         if (!p)
           return `<div class="empty">No eligible property to inspect.</div>`;
         const d = p.displayDirect ?? p.direct,
           g = p.displayGraph ?? p.graph;
         const t = p.trace || {};
-        const traceText =
-          g !== null
-            ? `${pct(t.weightD)} × direct ${pct(d)} + ${pct(t.weightG)} × graph ${pct(g)} = ${pct(t.contribD)} + ${pct(t.contribG)} = <strong>${pct(p.score)}</strong>`
-            : `Graph support unavailable, so the direct weight is renormalised to 100%: direct ${pct(d)} = <strong>${pct(p.score)}</strong>`;
+        const traceText = scoreTrace(p);
         const reasons = (p.directReasons || [])
           .map(
             (r) =>
               `<li>${r.label}: match ${pct(r.match)} (weight ${pct(r.weight)}, contributes ${pct(r.contribution)} to D)</li>`,
           )
           .join("");
-        return `<div class="cardhead"><div><span class="tag">SELECTED PROPERTY · #${p.rank ?? ""}</span><h2 style="margin-top:8px">${p.name}</h2><div class="muted tiny">ID ${p.id} · ${p.area}, ${p.district}, ${p.state ?? ""}</div></div><div class="scorecircle">${pct(p.score)}</div></div><div class="cardbody"><div class="detailtop"><div><div class="detail-price">${money(p.price)}</div><div class="muted tiny">Asking price · ${p.type} · ${p.tenure ?? ""} · ${p.furnishing ?? ""}</div></div><span class="tag soft">Eligible</span></div><div class="facts" style="margin:12px 0 18px"><span>${p.size.toLocaleString()} sq ft</span><span>${p.beds} bed</span><span>${p.baths} bath</span><span>${p.parking ? `${p.carParks ?? ""} parking` : "No parking"}</span></div><div class="section-label">Retained score components</div>${component("Direct preference matching · D", d, "blue", "Query-to-property attribute agreement.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Similarity-weighted direct scores of qualified neighbours.") : `<div class="notice warn">Comparable-neighbour support unavailable (${(p.graphStatus || "").replaceAll("_", " ")}). The ranking uses the direct component only; no neighbour evidence is claimed.</div>`}<div class="notice"><strong>Score trace</strong><br>${traceText}</div>${reasons ? `<div class="evidence-box"><h4>Direct preference evidence</h4><ul style="margin:6px 0 0;padding-left:18px">${reasons}</ul></div>` : ""}<div class="evidence-box"><h4>Location evidence resolution</h4><p>${p.locationEvidence}. ${p.locationEvidence === "District-level fallback" ? "This identifies shared administrative area only; it does not establish exact geographic distance." : "Neighbour location similarity uses listing coordinates (Haversine distance)."}</p></div><div class="section-label" style="margin-top:18px">Qualified comparable neighbours</div>${neighborHtml(p)}${p.url ? `<a class="btn" style="display:block;text-align:center;margin-top:14px;text-decoration:none" href="${p.url}" target="_blank" rel="noopener">Open original listing ↗</a>` : ""}<button class="btn primary" style="width:100%;margin-top:10px" onclick="selectedId='${p.id}';go('explanation')">Inspect score-linked explanation →</button></div>`;
+        return `<div class="cardhead"><div><span class="tag">SELECTED PROPERTY · #${p.rank ?? ""}</span><h2 style="margin-top:8px">${p.name}</h2><div class="muted tiny">ID ${p.id} · ${p.area}, ${p.district}, ${p.state ?? ""}</div></div><div class="scorecircle">${pct(p.score)}</div></div><div class="cardbody"><div class="detailtop"><div><div class="detail-price">${money(p.price)}</div><div class="muted tiny">Asking price · ${p.type} · ${p.tenure ?? ""} · ${p.furnishing ?? ""}</div></div><span class="tag soft">Eligible</span></div><div class="facts" style="margin:12px 0 18px"><span>${p.size.toLocaleString()} sq ft</span><span>${p.beds} bed</span><span>${p.baths} bath</span><span>${p.parking ? `${p.carParks ?? ""} parking` : "No parking"}</span></div><div class="section-label">Retained score components</div>${component("Direct preference matching · D", d, "blue", "Query-to-property attribute agreement.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Similarity-weighted direct scores of qualified neighbours.") : `<div class="notice warn">Comparable-neighbour support unavailable (${(p.graphStatus || "").replaceAll("_", " ")}). The ranking uses the remaining components only; no neighbour evidence is claimed.</div>`}${marketComponent(p)}<div class="notice"><strong>Score trace</strong><br>${traceText}</div>${reasons ? `<div class="evidence-box"><h4>Direct preference evidence</h4><ul style="margin:6px 0 0;padding-left:18px">${reasons}</ul></div>` : ""}<div class="evidence-box"><h4>Location evidence resolution</h4><p>${p.locationEvidence}. ${p.locationEvidence === "District-level fallback" ? "This identifies shared administrative area only; it does not establish exact geographic distance." : "Neighbour location similarity uses listing coordinates (Haversine distance)."}</p></div>${marketHtml(p)}<div class="section-label" style="margin-top:18px">Qualified comparable neighbours</div>${neighborHtml(p)}${p.url ? `<a class="btn" style="display:block;text-align:center;margin-top:14px;text-decoration:none" href="${p.url}" target="_blank" rel="noopener">Open original listing ↗</a>` : ""}<button class="btn primary" style="width:100%;margin-top:10px" onclick="selectedId='${p.id}';go('explanation')">Inspect score-linked explanation →</button></div>`;
       }
       function neighborHtml(p, limit = 3) {
         const nbs = p.neighbourDetails || [];
@@ -1764,7 +1894,7 @@
         } else if (condition === "feature") {
           body = `<div class="layout"><div class="card"><div class="cardhead"><h2>Feature-summary explanation</h2><span class="tag soft">Direct evidence only</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.district}, ${p.area}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle">${pct(d)}</div></div><p>Selected because its listing attributes align with the active search preferences. This condition shows direct query-to-property evidence only and excludes comparable-neighbour claims.</p>${component("Direct preference matching", d, "blue", "Derived from the current search profile.")}<div class="evidence-box"><h4>Attribute evidence</h4><p>${p.size.toLocaleString()} sq ft built-up area; ${p.beds} bedrooms; ${p.baths} bathrooms; ${p.type}; asking price ${money(p.price)}.${p.facilities.length ? " Nearby: " + p.facilities.join(", ") + "." : ""}</p></div></div></div><div class="card"><div class="cardhead"><h2>Explanation boundary</h2></div><div class="cardbody"><div class="notice">This condition does not assert that comparable properties contributed to the displayed explanation. The list order is held constant for the same search and method.</div></div></div></div>`;
         } else {
-          body = `<div class="layout"><div class="card"><div class="cardhead"><h2>Score-linked comparable-property explanation</h2><span class="tag" style="background:#e7f7f3;color:#087568">Retained evidence</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.id} · ${p.district}, ${p.area}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle">${pct(p.score ?? 0.65 * d + 0.35 * (g || 0))}</div></div><p style="margin-top:18px">The rank is supported by direct preference matching and, when available, qualified comparable-neighbour evidence retained for this candidate.</p>${component("Direct preference match · D", d, "blue", "Active query-to-property evidence.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Active graph-neighbour component; shown separately from direct matching.") : `<div class="notice warn">Graph support is unavailable for this candidate; no graph contribution is claimed.</div>`}<div class="evidence-box"><h4>Why it matches</h4><p>${p.notes}</p></div><div class="evidence-box"><h4>Location resolution disclosure</h4><p>${p.locationEvidence === "District-level fallback" ? "District-level fallback is lower-resolution evidence and does not mean two properties are geographically close." : "Neighbour location similarity uses listing coordinates."}</p></div></div></div><div class="card"><div class="cardhead"><h2>Comparable properties used</h2><span class="tag">Neighbourhood evidence</span></div><div class="cardbody">${neighborHtml(p, 8)}<div class="notice" style="margin-top:12px">Only qualified neighbours retained in this candidate's score record are shown. Neighbour similarity is not described as a percentage of overall recommendation quality.</div><button class="btn" style="width:100%;margin-top:14px" onclick="go('graph')">Explore graph relationships →</button></div></div></div>`;
+          body = `<div class="layout"><div class="card"><div class="cardhead"><h2>Score-linked comparable-property explanation</h2><span class="tag" style="background:#e7f7f3;color:#087568">Retained evidence</span></div><div class="cardbody"><div class="detailtop"><div><h2 class="detail-title">${p.name}</h2><div class="muted tiny">${p.id} · ${p.district}, ${p.area}</div><div class="detail-price">${money(p.price)}</div></div><div class="scorecircle">${pct(p.score ?? 0.65 * d + 0.35 * (g || 0))}</div></div><p style="margin-top:18px">The rank is supported by direct preference matching and, when available, qualified comparable-neighbour evidence retained for this candidate.</p>${component("Direct preference match · D", d, "blue", "Active query-to-property evidence.")}${g !== null ? component("Comparable-neighbour support · G", g, "teal", "Active graph-neighbour component; shown separately from direct matching.") : `<div class="notice warn">Graph support is unavailable for this candidate; no graph contribution is claimed.</div>`}${marketComponent(p)}<div class="evidence-box"><h4>Why it matches</h4><p>${p.notes}</p></div><div class="evidence-box"><h4>Location resolution disclosure</h4><p>${p.locationEvidence === "District-level fallback" ? "District-level fallback is lower-resolution evidence and does not mean two properties are geographically close." : "Neighbour location similarity uses listing coordinates."}</p></div></div></div><div class="card"><div class="cardhead"><h2>Comparable properties used</h2><span class="tag">Neighbourhood evidence</span></div><div class="cardbody">${neighborHtml(p, 8)}<div class="notice" style="margin-top:12px">Only qualified neighbours retained in this candidate's score record are shown. Neighbour similarity is not described as a percentage of overall recommendation quality.</div><button class="btn" style="width:100%;margin-top:14px" onclick="go('graph')">Explore graph relationships →</button></div></div></div>`;
         }
         $("explainContent").innerHTML = body;
       }
@@ -1787,16 +1917,24 @@
         const p = selected();
         let out = `<defs><pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#e1e7f0"/></pattern></defs><rect width="700" height="440" fill="url(#dots)"/>`;
         if (!p) {
-          svg.innerHTML = out + `<text x="350" y="220" text-anchor="middle" fill="#64748b">Run a search to see a property's neighbourhood.</text>`;
+          svg.innerHTML =
+            out +
+            `<text x="350" y="220" text-anchor="middle" fill="#64748b">Run a search to see a property's neighbourhood.</text>`;
           renderGraphDetail();
           return;
         }
         const nbs = p.neighbourDetails || [];
-        const cx = 350, cy = 210, R = 160;
+        const cx = 350,
+          cy = 210,
+          R = 160;
         const short = (s) => (s.length > 17 ? s.slice(0, 16) + "…" : s);
         const pos = nbs.map((n, i) => {
           const a = -Math.PI / 2 + (2 * Math.PI * i) / Math.max(nbs.length, 1);
-          return { ...n, x: cx + R * Math.cos(a), y: cy + R * 0.82 * Math.sin(a) };
+          return {
+            ...n,
+            x: cx + R * Math.cos(a),
+            y: cy + R * 0.82 * Math.sin(a),
+          };
         });
         pos.forEach((n) => {
           out += `<line x1="${cx}" y1="${cy}" x2="${n.x}" y2="${n.y}" stroke="#7198e8" stroke-width="${1 + n.similarity * 3}" opacity="0.85"/><text x="${(cx + n.x) / 2}" y="${(cy + n.y) / 2 - 5}" font-size="10" text-anchor="middle" fill="#64748b">${n.similarity.toFixed(2)}</text>`;
@@ -1812,7 +1950,9 @@
         svg.querySelectorAll(".graphnode").forEach((g) =>
           g.addEventListener("click", () => {
             if (!ranked.some((x) => x.id === g.dataset.id)) {
-              toast("This neighbour is eligible but outside the shown shortlist.");
+              toast(
+                "This neighbour is eligible but outside the shown shortlist.",
+              );
               return;
             }
             selectedId = g.dataset.id;
@@ -1825,7 +1965,8 @@
       function renderGraphDetail() {
         const p = selected();
         if (!p) {
-          $("graphDetail").innerHTML = `<div class="cardhead"><h2>Selected node</h2></div><div class="cardbody"><div class="empty">Run a search first.</div></div>`;
+          $("graphDetail").innerHTML =
+            `<div class="cardhead"><h2>Selected node</h2></div><div class="cardbody"><div class="empty">Run a search first.</div></div>`;
           return;
         }
         const nbs = p.neighbourDetails || [];

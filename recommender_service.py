@@ -154,6 +154,8 @@ def parse_profile(raw: dict) -> dict:
         "main_priority": priority,
         "nearby_facilities": facilities,
         "preferred_built_up_sqft": size or None,
+        # Optional, user-selected: include market context in the final score (full_market variant).
+        "include_market_context": _bool(raw.get("include_market_context", False)),
     }
 
 
@@ -292,6 +294,29 @@ def _notes(reasons, row) -> str:
         "No soft preference could be scored for this property."
 
 
+def _market_context(mkt, pid) -> dict:
+    """Market-context evidence for display only (not used by the "full" ranking)."""
+    if mkt is None or pid not in mkt.index:
+        return {"status": "unavailable", "reason": "no_market_context_record"}
+    m = mkt.loc[pid]
+    if m["market_context_status"] != "available":
+        return {"status": "unavailable", "reason": str(m["market_context_unavailable_reason"])}
+    return {
+        "status": "available",
+        "score": _f(m["market_context_score"]),
+        "z": _f(m["market_z"], 2),
+        "askingPpsf": _f(m["asking_ppsf"], 0),
+        "refMean": _f(m["ref_ppsf_mean"], 0),
+        "refStd": _f(m["ref_ppsf_std"], 0),
+        "refQ1": _f(m["ref_ppsf_q1"], 0),
+        "refQ3": _f(m["ref_ppsf_q3"], 0),
+        "ratio": _f(m["ppsf_ratio_to_reference_mean"], 2),
+        "position": str(m["ppsf_position_vs_reference"]),
+        "refLevel": str(m["ref_level"]),
+        "configId": str(m["market_context_config_id"]),
+    }
+
+
 def recommend(raw_profile: dict) -> dict:
     started = time.perf_counter()
     prof = parse_profile(raw_profile)
@@ -306,11 +331,15 @@ def recommend(raw_profile: dict) -> dict:
 
     query = build_direct_query(prof)
     direct = score_direct(eligible, query)
-    cfg = RankingConfig(variant="full", top_k=RECOMMENDED_K)
+    # Default = evaluated CPG ("full"). If the user ticks "Include market context", the separately
+    # reported "full_market" variant is used: M joins the final score when valid (Eq. 4.21).
+    use_market = prof["include_market_context"] and market is not None
+    cfg = RankingConfig(variant="full_market" if use_market else "full", top_k=RECOMMENDED_K)
     ranked, nb_evidence = rank_candidates(direct, cfg, cpg, market)
 
     nb_by = {pid: g for pid, g in nb_evidence.groupby("Property_ID")} if not nb_evidence.empty else {}
     info = catalogue.set_index("Property_ID")
+    mkt = market.set_index("Property_ID") if market is not None else None
     props = []
     shown = ranked if TOP_N_RETURNED is None else ranked.head(TOP_N_RETURNED)
     for _, r in shown.iterrows():
@@ -334,6 +363,7 @@ def recommend(raw_profile: dict) -> dict:
                     "components": {k[4:]: _f(n[k]) for k in n.index if k.startswith("sim_")},
                 })
         graph_ok = r["graph_support_status"] == G_AVAILABLE
+        market_ok = use_market and r.get("market_context_status") == "available"
         resolutions = {n["locationResolution"] for n in nbs}
         props.append({
             "id": str(pid),
@@ -363,7 +393,9 @@ def recommend(raw_profile: dict) -> dict:
             "trace": {"contribD": _f(r["contribution_direct"]),
                       "contribG": _f(r["contribution_graph"]) if graph_ok else None,
                       "weightD": _f(r["weight_direct_normalised"]),
-                      "weightG": _f(r["weight_graph_normalised"]) if graph_ok else None},
+                      "weightG": _f(r["weight_graph_normalised"]) if graph_ok else None,
+                      "contribM": _f(r["contribution_market"]) if market_ok else None,
+                      "weightM": _f(r["weight_market_normalised"]) if market_ok else None},
             "directReasons": reasons,
             "notes": _notes(reasons, c),
             "neighbors": [n["id"] for n in nbs],
@@ -371,11 +403,15 @@ def recommend(raw_profile: dict) -> dict:
             "qualifiedNeighbours": int(r["qualified_neighbours"]),
             "locationEvidence": ("District-level fallback" if "district" in resolutions
                                  else "Coordinate-level"),
+            "marketContext": {**_market_context(mkt, pid), "usedInRanking": bool(market_ok)},
         })
 
     return {**base, "status": "success", "properties": props,
             "graph_support_available": int(ranked["graph_support_status"].eq(G_AVAILABLE).sum()),
             "ranking_config_id": cfg.config_id(),
+            "market_context_used_in_ranking": "market" in cfg.components,
+            "market_context_requested": prof["include_market_context"],
+            "ranking_variant": cfg.variant,
             "recommended_k": RECOMMENDED_K,
             "view_more_limit": VIEW_MORE_LIMIT,
             "direct_weights": query["weights"],
