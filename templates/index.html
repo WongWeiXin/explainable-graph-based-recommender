@@ -450,6 +450,49 @@
         color: #64748b;
         margin-top: 4px;
       }
+      .single-col {
+        display: grid;
+        gap: 20px;
+        max-width: 1040px;
+      }
+      .listing {
+        cursor: pointer;
+      }
+      .tag.recommended {
+        background: #e7f7f3;
+        color: #087568;
+      }
+      .more-section {
+        margin-top: 22px;
+        padding-top: 18px;
+        border-top: 1px solid #edf0f5;
+      }
+      .more-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .more-head h3 {
+        margin: 0 0 2px;
+        font-size: 14px;
+      }
+      .more-sort {
+        border: 1px solid #d7deea;
+        border-radius: 7px;
+        padding: 6px;
+        font-size: 11px;
+      }
+      .more-actions {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      .hidden.btn {
+        display: none;
+      }
       .results-layout {
         display: grid;
         grid-template-columns: minmax(0, 1.15fr) minmax(330px, 0.85fr);
@@ -1005,7 +1048,7 @@
                 >CPG method preview</span
               >
             </div>
-            <div class="layout">
+            <div class="single-col">
               <div class="card">
                 <div class="cardhead">
                   <h2>Search profile</h2>
@@ -1270,77 +1313,6 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="cardhead">
-                  <h2>How this search is evaluated</h2>
-                  <span class="tag">Method overview</span>
-                </div>
-                <div class="cardbody">
-                  <div class="method-row">
-                    <div>
-                      <strong>1. Candidate eligibility</strong
-                      ><small>Apply hard constraints before ranking.</small>
-                    </div>
-                    <span class="tag hard">Gate</span>
-                  </div>
-                  <div class="method-row">
-                    <div>
-                      <strong>2. Direct preference matching (D)</strong
-                      ><small
-                        >Compare each eligible listing with active soft
-                        preferences.</small
-                      >
-                    </div>
-                    <span class="tag soft">Direct</span>
-                  </div>
-                  <div class="method-row">
-                    <div>
-                      <strong>3. Comparable-neighbour support (G)</strong
-                      ><small
-                        >Aggregate evidence from qualified neighbours in the
-                        property graph.</small
-                      >
-                    </div>
-                    <span
-                      class="tag"
-                      style="background: #f1edff; color: #6d4acb"
-                      >Graph</span
-                    >
-                  </div>
-                  <div class="method-row">
-                    <div>
-                      <strong>4. Retained score trace</strong
-                      ><small
-                        >Keep active components, contributions, neighbours and
-                        evidence resolution for explanations.</small
-                      >
-                    </div>
-                    <span class="tag">Audit</span>
-                  </div>
-                  <div class="notice warn" style="margin-top: 18px">
-                    <strong>Research integrity note</strong><br />Listings come
-                    from the prepared EdgeProp catalogue and scores are computed
-                    by the CPG pipeline. Asking prices are not valuations, and
-                    the prototype does not claim the method outperforms
-                    baselines.
-                  </div>
-                  <div style="margin-top: 18px">
-                    <div class="section-label">
-                      Score structure
-                    </div>
-                    <div class="notice">
-                      Final score = normalised active contribution from direct
-                      preference matching + comparable-neighbour support (+
-                      optional valid market-context evidence).
-                    </div>
-                    <p class="tiny muted">
-                      Unavailable components are excluded and active weights are
-                      renormalised in the documented method. The UI does not
-                      claim that the method outperforms baselines.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
           <section id="page-results" class="page hidden">
@@ -1371,38 +1343,38 @@
                 <div class="foot">Shown candidates with graph evidence</div>
               </div>
             </div>
-            <div class="results-layout">
+            <div class="single-col">
               <div class="card">
                 <div class="cardhead">
-                  <h2>Top matches</h2>
-                  <div style="display: flex; gap: 8px; align-items: center">
-                    <span class="tag">CPG</span
-                    ><select
-                      id="sort"
-                      style="
-                        border: 1px solid #d7deea;
-                        border-radius: 7px;
-                        padding: 6px;
-                        font-size: 11px;
-                      "
-                    >
-                      <option value="score">Ranked score</option>
-                      <option value="price">Price: low to high</option>
-                      <option value="size">Built-up: high to low</option>
-                    </select>
-                  </div>
+                  <h2 id="recommendedTitle">Recommended for you</h2>
+                  <span class="tag">CPG · Top 5</span>
                 </div>
                 <div class="cardbody">
                   <div id="listingList" class="listing-list"></div>
+                  <div id="moreSection" class="more-section hidden">
+                    <div class="more-head">
+                      <div>
+                        <h3 id="moreTitle">Other eligible properties</h3>
+                        <p class="tiny muted" id="moreNote">
+                          Also meet every hard constraint, ranked below the Top 5.
+                        </p>
+                      </div>
+                      <select id="sort" class="more-sort">
+                        <option value="score">Ranked score</option>
+                        <option value="price">Price: low to high</option>
+                        <option value="size">Built-up: high to low</option>
+                      </select>
+                    </div>
+                    <div id="moreList" class="listing-list"></div>
+                    <div class="more-actions">
+                      <button class="btn" id="viewMore">View more</button
+                      ><button class="btn hidden" id="viewLess">Show less</button>
+                    </div>
+                  </div>
                   <div class="footnote">
                     Scores are recommendation scores from the CPG pipeline, not
                     valuations or predictions of a purchase.
                   </div>
-                </div>
-              </div>
-              <div id="resultDetail" class="card details">
-                <div class="empty">
-                  Select a property to inspect retained evidence.
                 </div>
               </div>
             </div>
@@ -1553,6 +1525,15 @@
           preferred_built_up_sqft: Number($("minsize").value || 0),
         };
       }
+      // Toast after a search, matching the Top-5 + "View more" layout.
+      function resultToast(data) {
+        const total = data.eligible_count ?? 0;
+        const k = data.recommended_k ?? 5;
+        const limit = data.view_more_limit ?? 20;
+        if (total <= k) return `${total} eligible · all shown`;
+        const more = Math.min(total - k, limit);
+        return `${total.toLocaleString()} eligible · ${k} recommended + ${more} more`;
+      }
       async function runSearch() {
         currentQuery = readQuery();
 
@@ -1597,6 +1578,7 @@
 
           // These must come from the Python API, not the demo array.
           lastResult = data;
+          moreVisible = 0;
           eligible = data.properties || [];
           ranked = [...eligible];
           selectedId = ranked[0]?.id || null;
@@ -1607,7 +1589,7 @@
           toast(
             data.status === "empty_result_constraints_not_relaxed"
               ? "No properties meet all hard constraints."
-              : `${data.eligible_count} eligible · top ${ranked.length} shown`,
+              : resultToast(data),
           );
         } catch (error) {
           console.error(error);
@@ -1642,11 +1624,29 @@
       }
       function listingHtml(p, i) {
         const rank = p.rank ?? i + 1;
-        return `<article class="listing ${p.id === selectedId ? "selected" : ""}" data-id="${p.id}" tabindex="0"><div class="house-art"><span class="loc">${p.district}</span><span class="house">🏡</span></div><div><div style="display:flex;justify-content:space-between;gap:6px;align-items:start"><div><h3>${p.name}</h3><div class="address">${p.area}, ${p.district} · ${p.type}</div></div><span class="tag">#${rank}</span></div><div class="price-row"><span class="price">${money(p.price)}</span><span class="muted tiny">asking price</span></div><div class="facts"><span>▦ ${p.size.toLocaleString()} sq ft</span><span>🛏 ${p.beds} bed</span><span>▣ ${p.baths} bath</span><span>${p.parking ? "✓ Parking" : "No parking"}</span></div><div class="listing-foot"><div class="score"><span>${pct(p.score)} match score</span><span class="scorebar"><i style="width:${pct(p.score)}"></i></span></div><span class="tiny muted">${p.neighbors.length} graph neighbours</span></div></div></article>`;
+        const badge = p.recommended
+          ? `<span class="tag recommended">★ Recommended · #${rank}</span>`
+          : `<span class="tag">#${rank}</span>`;
+        return `<article class="listing ${p.id === selectedId ? "selected" : ""}" data-id="${p.id}" tabindex="0"><div class="house-art"><span class="loc">${p.district}</span><span class="house">🏡</span></div><div><div style="display:flex;justify-content:space-between;gap:6px;align-items:start"><div><h3>${p.name}</h3><div class="address">${p.area}, ${p.district} · ${p.type}</div></div>${badge}</div><div class="price-row"><span class="price">${money(p.price)}</span><span class="muted tiny">asking price</span></div><div class="facts"><span>▦ ${p.size.toLocaleString()} sq ft</span><span>🛏 ${p.beds} bed</span><span>▣ ${p.baths} bath</span><span>${p.parking ? "✓ Parking" : "No parking"}</span></div><div class="listing-foot"><div class="score"><span>${pct(p.score)} match score</span><span class="scorebar"><i style="width:${pct(p.score)}"></i></span></div><span class="tiny muted">${p.neighbors.length} graph neighbours</span></div></div></article>`;
+      }
+      const MORE_STEP = 20; // "View more" reveals all returned (max 20) at once
+      let moreVisible = 0;
+      function bindListings(container) {
+        container.querySelectorAll(".listing").forEach((el) => {
+          const choose = () => {
+            selectedId = el.dataset.id;
+            go("explanation");
+          };
+          el.addEventListener("click", choose);
+          el.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") choose();
+          });
+        });
       }
       function renderResults() {
         const count = ranked.length;
         const total = lastResult?.eligible_count ?? count;
+        const k = lastResult?.recommended_k ?? 5;
         $("eligibleCount").textContent = total.toLocaleString();
         $("graphCount").textContent = ranked.filter(
           (p) => p.displayGraph !== null && p.neighbors.length > 0,
@@ -1657,28 +1657,54 @@
                 100,
             ) + "%"
           : "—";
-        $("resultsSummary").textContent =
-          `${total.toLocaleString()} listing(s) pass every hard constraint; the top ${count} are shown. Soft preferences and comparable-neighbour support decide the order.`;
-        const sort = $("sort").value;
-        let list = [...ranked];
-        if (sort === "price") list.sort((a, b) => a.price - b.price);
-        if (sort === "size") list.sort((a, b) => b.size - a.size);
-        $("listingList").innerHTML = list.length
-          ? list.map(listingHtml).join("")
+        const top = ranked.filter((p, i) => p.recommended ?? i < k);
+        const rest = ranked.filter((p, i) => !(p.recommended ?? i < k));
+        $("resultsSummary").textContent = !total
+          ? "No listing passes every hard constraint. Constraints are never relaxed automatically."
+          : total <= k
+            ? `Only ${total} listing(s) meet every hard constraint, so all are shown. Soft preferences and comparable-neighbour support decide the order.`
+            : `${total.toLocaleString()} listings meet every hard constraint. The top ${k} are recommended; ${Math.min(total - k, lastResult?.view_more_limit ?? 20)} more are under "View more". Soft preferences and comparable-neighbour support decide the order.`;
+        $("recommendedTitle").textContent =
+          total && total < k ? `All ${total} eligible properties` : "Recommended for you";
+        $("listingList").innerHTML = top.length
+          ? top.map(listingHtml).join("")
           : `<div class="empty"><div style="font-size:30px;margin-bottom:8px">⌕</div><strong>No properties meet every hard constraint.</strong><p>Try widening the budget, area, type or minimum bedroom requirement. Soft preferences will not be used to override hard constraints.</p><button class="btn primary" onclick="go('search')">Adjust search</button></div>`;
-        document.querySelectorAll(".listing").forEach((el) => {
-          const choose = () => {
-            selectedId = el.dataset.id;
-            renderResults();
-            renderGraph();
-          };
-          el.addEventListener("click", choose);
-          el.addEventListener("keydown", (e) => {
-            if (e.key === "Enter") choose();
-          });
-        });
+        bindListings($("listingList"));
+        // ---- "View more": remaining eligible properties, revealed MORE_STEP at a time
+        const sort = $("sort").value;
+        const sorted = [...rest];
+        if (sort === "price") sorted.sort((a, b) => a.price - b.price);
+        if (sort === "size") sorted.sort((a, b) => b.size - a.size);
+        $("moreSection").classList.toggle("hidden", rest.length === 0);
+        const hiddenCount = Math.max(0, total - k - rest.length);
+        $("moreTitle").textContent = hiddenCount
+          ? `Other eligible properties (next ${rest.length} of ${(total - k).toLocaleString()})`
+          : `Other eligible properties (${rest.length})`;
+        $("moreNote").textContent = hiddenCount
+          ? `Also meet every hard constraint, ranked #${k + 1}–#${k + rest.length}. ${hiddenCount.toLocaleString()} more eligible properties are not shown; add preferences or narrow the search to see others.`
+          : `Also meet every hard constraint, ranked below the Top ${k}.`;
+        const shown = sorted.slice(0, moreVisible);
+        $("moreList").innerHTML = shown.map(listingHtml).join("");
+        bindListings($("moreList"));
+        const remaining = rest.length - shown.length;
+        $("viewMore").classList.toggle("hidden", remaining <= 0);
+        $("viewMore").textContent =
+          moreVisible === 0
+            ? `View more (${rest.length})`
+            : `View more (${remaining} remaining)`;
+        $("viewLess").classList.toggle("hidden", moreVisible === 0);
+        $("sort").disabled = moreVisible === 0;
         renderResultDetail();
       }
+      $("viewMore").addEventListener("click", () => {
+        moreVisible += MORE_STEP;
+        renderResults();
+      });
+      $("viewLess").addEventListener("click", () => {
+        moreVisible = 0;
+        renderResults();
+        $("listingList").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
       $("sort").addEventListener("change", renderResults);
       function component(name, value, color, desc) {
         return `<div class="component"><div class="component-row"><span>${name}</span><strong>${pct(value)}</strong></div><div class="bar ${color}"><span style="width:${pct(value)}"></span></div><div class="tiny muted" style="margin-top:4px">${desc}</div></div>`;
@@ -1714,7 +1740,8 @@
           .join("");
       }
       function renderResultDetail() {
-        $("resultDetail").innerHTML = detailHtml(selected());
+        const panel = $("resultDetail");
+        if (panel) panel.innerHTML = detailHtml(selected());
       }
       function renderExplanation() {
         const p = selected();
