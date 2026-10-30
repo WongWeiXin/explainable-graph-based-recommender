@@ -2319,6 +2319,7 @@ def run_experiment():
         # Train
         # ----------------------------------------------------
 
+        train_started = time.perf_counter()
         model = train_model(
             model=model,
             benchmark=benchmark,
@@ -2333,7 +2334,10 @@ def run_experiment():
             val_interactions=val_interactions
         )
 
-        training_log.append({"seed": seed, **model.training_log})
+        train_seconds = time.perf_counter() - train_started
+        training_log.append({"seed": seed, **model.training_log,
+                             "training_seconds": round(train_seconds, 2),
+                             "seconds_per_epoch": round(train_seconds / max(model.training_log["epochs_run"], 1), 4)})
 
         # ----------------------------------------------------
         # Save best model
@@ -2350,6 +2354,7 @@ def run_experiment():
             f"{seed_model_path}"
         )
 
+        infer_started = time.perf_counter()
         property_embeddings = (
             get_property_embeddings(
                 model,
@@ -2376,6 +2381,10 @@ def run_experiment():
                 manifest=manifest_by_query,
             )
         )
+        infer_seconds = time.perf_counter() - infer_started
+        training_log[-1]["inference_seconds_all_queries"] = round(infer_seconds, 3)
+        training_log[-1]["inference_ms_per_query"] = round(
+            infer_seconds * 1000 / max(len(benchmark), 1), 3)
 
     # ========================================================
     # OUTPUTS: Top-5 recommendations + training log
