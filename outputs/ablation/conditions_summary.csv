@@ -1,0 +1,12 @@
+condition,group,removed_component,ranking_variant,similarity_config_id,edges,density,isolated_nodes,isolated_pct,degree_mean,degree_median,degree_max,connected_components,largest_component_pct,edges_with_similarity_1,graph_build_seconds,all_top5_rows,all_graph_supported_pct,all_mean_qualified_neighbours,all_queries_all_top5_graph_supported_pct,ranking_top5_rows,ranking_graph_supported_pct,ranking_mean_qualified_neighbours,ranking_queries_all_top5_graph_supported_pct,top5_overlap_with_full,identical_top5_order_pct,queries_with_changed_set,condition_seconds
+full,reference,,full,SIM-4fdc14c547,8495.0,0.001952,223.0,7.56,5.757,6.0,10.0,182.0,7.9,94.0,2.09,732,88.25,4.268,60.87,675,91.7,4.557,68.89,1.0,100.0,0,5.68
+no_location,component_ablation,location,full,SIM-d3aacc2b5f,9448.0,0.002171,59.0,2.0,6.403,7.0,10.0,24.0,40.05,110.0,1.79,732,76.91,2.754,42.86,675,80.15,2.939,48.15,0.8335,26.71,85,5.62
+no_price,component_ablation,price,full,SIM-ce675513a5,8292.0,0.001905,250.0,8.47,5.62,6.0,10.0,218.0,7.08,795.0,1.97,732,86.07,3.928,54.66,675,89.33,4.194,61.48,0.8894,42.86,60,5.61
+no_size,component_ablation,size,full,SIM-cd966961f5,8399.0,0.00193,227.0,7.69,5.692,6.0,10.0,191.0,9.69,183.0,1.99,732,86.34,4.092,55.28,675,89.48,4.363,61.48,0.9093,47.2,58,5.69
+no_property_type,component_ablation,property_type,full,SIM-328b62934e,8981.0,0.002063,178.0,6.03,6.087,7.0,10.0,132.0,10.17,106.0,1.99,732,83.33,3.648,48.45,675,86.67,3.899,54.07,0.9491,58.39,34,5.64
+no_bedroom,component_ablation,bedroom,full,SIM-880e1fe021,8337.0,0.001915,243.0,8.23,5.65,6.0,10.0,200.0,7.39,131.0,2.01,732,87.7,4.089,59.01,675,91.11,4.363,66.67,0.954,57.76,35,5.69
+no_bathroom,component_ablation,bathroom,full,SIM-488f8382fb,8432.0,0.001937,217.0,7.35,5.715,6.0,10.0,195.0,7.66,105.0,1.97,732,87.84,4.158,58.39,675,91.41,4.441,65.93,0.9453,66.46,33,5.66
+no_facility,component_ablation,facility,full,SIM-0d032f1631,8399.0,0.00193,240.0,8.13,5.692,6.0,10.0,180.0,7.35,94.0,1.97,732,87.43,4.146,58.39,675,90.96,4.431,65.93,0.9453,60.25,38,5.67
+district_only,location_robustness,,full,SIM-b74bed1a7b,8516.0,0.001956,213.0,7.22,5.772,6.0,10.0,154.0,7.59,0.0,1.57,732,92.49,5.02,72.67,675,95.41,5.361,80.74,0.8398,28.57,80,5.28
+rank_direct_only,ranking_ablation,,direct_only,,,,,,,,,,,,,732,0.0,0.0,0.0,675,0.0,0.0,0.0,0.8559,29.19,79,2.52
+rank_full_market,ranking_variant,,full_market,SIM-4fdc14c547,8495.0,0.001952,223.0,7.56,5.757,6.0,10.0,182.0,7.9,94.0,2.09,732,90.3,4.367,66.46,675,93.93,4.665,75.56,0.718,18.63,101,3.67

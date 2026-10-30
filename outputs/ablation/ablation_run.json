@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    "full",
+    "no_location",
+    "no_price",
+    "no_size",
+    "no_property_type",
+    "no_bedroom",
+    "no_bathroom",
+    "no_facility",
+    "district_only",
+    "rank_direct_only",
+    "rank_full_market"
+  ],
+  "grids": null,
+  "checks": {
+    "full_matches_frozen_graph": true,
+    "full_similarity_config_id": "SIM-4fdc14c547",
+    "queries_ranked": 161,
+    "empty_queries_skipped": 89,
+    "existing_pool_pairs": 1697,
+    "labelling_pool_additions": 79
+  },
+  "elapsed_seconds": 58.8
+}
