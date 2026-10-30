@@ -65,7 +65,9 @@ PRIORITY_COMPONENT = {
     "facilities": "facility_fit",
 }
 PRIORITY_MULTIPLIER = 2.0  # main priority doubles that component's weight
-TOP_N_RETURNED = 20
+RECOMMENDED_K = 5          # Top-K shown as "Recommended" (= evaluated K)
+VIEW_MORE_LIMIT = 20       # at most 20 further eligible properties under "View more"
+TOP_N_RETURNED = RECOMMENDED_K + VIEW_MORE_LIMIT   # None = return every eligible property
 MAX_NEIGHBOURS_RETURNED = 8
 
 
@@ -304,13 +306,14 @@ def recommend(raw_profile: dict) -> dict:
 
     query = build_direct_query(prof)
     direct = score_direct(eligible, query)
-    cfg = RankingConfig(variant="full", top_k=TOP_N_RETURNED)
+    cfg = RankingConfig(variant="full", top_k=RECOMMENDED_K)
     ranked, nb_evidence = rank_candidates(direct, cfg, cpg, market)
 
     nb_by = {pid: g for pid, g in nb_evidence.groupby("Property_ID")} if not nb_evidence.empty else {}
     info = catalogue.set_index("Property_ID")
     props = []
-    for _, r in ranked.head(TOP_N_RETURNED).iterrows():
+    shown = ranked if TOP_N_RETURNED is None else ranked.head(TOP_N_RETURNED)
+    for _, r in shown.iterrows():
         pid = r["Property_ID"]
         c = info.loc[pid]
         reasons = _direct_reasons(r, query["weights"])
@@ -335,6 +338,7 @@ def recommend(raw_profile: dict) -> dict:
         props.append({
             "id": str(pid),
             "rank": int(r["cpg_rank"]),
+            "recommended": int(r["cpg_rank"]) <= RECOMMENDED_K,
             "name": _name(c),
             "area": str(c["area"]).title(),
             "district": str(c["district"]).title(),
@@ -372,5 +376,7 @@ def recommend(raw_profile: dict) -> dict:
     return {**base, "status": "success", "properties": props,
             "graph_support_available": int(ranked["graph_support_status"].eq(G_AVAILABLE).sum()),
             "ranking_config_id": cfg.config_id(),
+            "recommended_k": RECOMMENDED_K,
+            "view_more_limit": VIEW_MORE_LIMIT,
             "direct_weights": query["weights"],
             "elapsed_seconds": round(time.perf_counter() - started, 3)}
