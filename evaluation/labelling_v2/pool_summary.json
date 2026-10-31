@@ -1,0 +1,45 @@
+{
+  "benchmark": "v2",
+  "seed": 2026,
+  "partitions": [
+    "validation",
+    "test"
+  ],
+  "queries": 39,
+  "queries_by_partition": {
+    "test": 27,
+    "validation": 12
+  },
+  "pairs_to_label": 610,
+  "pairs_per_query": {
+    "mean": 15.64,
+    "min": 5,
+    "max": 28
+  },
+  "pairs_from_methods_only": 559,
+  "pairs_added_by_ablation_only": 51,
+  "pairs_returned_per_source": {
+    "cpg": 195,
+    "content_based": 195,
+    "rule_based": 195,
+    "lightgcn_seed42": 195,
+    "lightgcn_seed43": 195,
+    "lightgcn_seed44": 195
+  },
+  "second_assessor": {
+    "share_of_queries": 0.25,
+    "queries": [
+      "Q014",
+      "Q017",
+      "Q039",
+      "Q092",
+      "Q114",
+      "Q117",
+      "Q121",
+      "Q035",
+      "Q077",
+      "Q100"
+    ],
+    "pairs": 145
+  }
+}
