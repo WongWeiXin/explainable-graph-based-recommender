@@ -13,7 +13,7 @@ score the prototype uses as its direct component, with the graph and market swit
     size_fit          closeness of built-up area to preferred_built_up_sqft
     facility_fit      share of the selected facility types present nearby
 
-Base weights 0.25 / 0.25 / 0.15, multiplied by PRIORITY_MULTIPLIER (2.5) for the query's
+Base weights 0.25 / 0.25 / 0.15, doubled (PRIORITY_MULTIPLIER = 2.0) for the query's
 main_priority, then normalised over the active weights. No comparable-property graph, no
 similarity measure, no neighbour evidence.
 
