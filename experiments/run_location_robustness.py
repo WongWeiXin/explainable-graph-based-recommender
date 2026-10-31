@@ -388,6 +388,20 @@ def verify_against_frozen(cond_top: dict) -> float | None:
     return round(matched / total * 100, 2) if total else None
 
 
+def load_frozen_labels() -> tuple[dict, dict]:
+    """Frozen pooled labels plus provenance; a missing file warns instead of reporting silent zeros."""
+    if not LABELS.exists():
+        print(f"WARNING: {LABELS.name} not found in frozen_queries/ - the pooled-label cross-checks "
+              f"will read 0% coverage. Rebuild it from outputs/baseline/*_top5.csv with "
+              f"baseline_models.rule_based_baseline.build_labels(queries, catalogue).")
+        return {}, {"path": str(LABELS), "found": False, "pairs": 0}
+    frame = pd.read_csv(LABELS)
+    labels = {(r["query_id"], int(r["Property_ID"])): int(r["relevance"])
+              for r in frame.to_dict("records")}
+    return labels, {"path": str(LABELS), "found": True, "pairs": len(frame),
+                    "splits": {str(k): int(v) for k, v in frame["split"].value_counts().items()}}
+
+
 def write_labelling_pool(pairs: set, labelled: set, profiles: dict, catalogue: pd.DataFrame,
                          query_split: dict, path: Path) -> pd.DataFrame:
     """Blind, ungraded pairs the frozen label file does not cover, in its own column schema."""
@@ -458,10 +472,7 @@ def main() -> None:
             rubric = _context(eligible, prof)
             grades[ctx.query_id] = {int(pid): grade_pair(rubric, listing_info.loc[pid])[0]
                                     for pid in eligible["Property_ID"]}
-    labels = {}
-    if LABELS.exists():
-        labels = {(r["query_id"], int(r["Property_ID"])): int(r["relevance"])
-                  for r in pd.read_csv(LABELS).to_dict("records")}
+    labels, label_info = load_frozen_labels()
 
     role_counts = pd.Series(roles).value_counts().to_dict()
     split_role = pd.crosstab(pd.Series(splits, name="partition"), pd.Series(roles, name="role"))
@@ -651,6 +662,7 @@ def main() -> None:
         "label_coverage": {
             "grader": "REL-v1 rubric applied to every retrieved pair",
             "grader_coverage_pct": 100.0,
+            "label_file": label_info,
             "frozen_label_file": LABELS.name,
             "frozen_label_pairs": len(labels),
             "retrieved_pairs_per_condition": [int(v) for v in out["label_pairs_retrieved"]],
