@@ -5,7 +5,7 @@ matplotlib
 networkx
 scipy
 torch
-torch-geometric
 Flask
+openpyxl 
 
 #pip install -r requirements.txt
