@@ -1,0 +1,63 @@
+{
+  "protocol": "REL-v2-1",
+  "a1_grades_used_for_agreement": "current A1 sheet (now frozen as A1_original_double_labelled.csv)",
+  "a1_revised_after_seeing_a2": 0,
+  "double_labelled_pairs": 145,
+  "queries": 10,
+  "kappa_linear_weighted": 0.653,
+  "kappa_unweighted": 0.5293,
+  "kappa_binary_relevant_ge2": 0.6094,
+  "exact_agreement_pct": 68.28,
+  "within_one_grade_pct": 99.31,
+  "disagreements": 46,
+  "disagreements_after_a1_revision": 46,
+  "after_a1_revision_NOT_independent_agreement": {
+    "note": "A1's latest grades, which include revisions made after A1 saw A2's grades. Not an inter-assessor agreement statistic; report the original-label figures above.",
+    "kappa_linear_weighted": 0.653,
+    "exact_agreement_pct": 68.28
+  },
+  "disagreements_by_gap": {
+    "1": 45,
+    "2": 1
+  },
+  "confusion_matrix_rows_A1_cols_A2": [
+    [
+      7,
+      2,
+      0,
+      0
+    ],
+    [
+      3,
+      11,
+      6,
+      0
+    ],
+    [
+      1,
+      13,
+      42,
+      16
+    ],
+    [
+      0,
+      0,
+      5,
+      39
+    ]
+  ],
+  "grade_counts_A1_all_pairs": {
+    "0": 14,
+    "1": 95,
+    "2": 284,
+    "3": 217
+  },
+  "grade_counts_A2": {
+    "0": 11,
+    "1": 26,
+    "2": 53,
+    "3": 55
+  },
+  "target_kappa": 0.6,
+  "meets_target": true
+}
