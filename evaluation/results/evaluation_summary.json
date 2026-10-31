@@ -1,0 +1,13 @@
+{
+  "label_source": "relevance_labels_v2_final.csv",
+  "protocol": "REL-v2-1",
+  "k": 5,
+  "relevant_min_grade": 2,
+  "queries": {
+    "test": 27,
+    "validation": 12
+  },
+  "methods_incomplete_query_coverage": {},
+  "unlabelled_items_in_top5_total": 0,
+  "queries_without_relevant_pooled_item": []
+}
