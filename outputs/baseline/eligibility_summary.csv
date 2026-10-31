@@ -1,0 +1,252 @@
+query_id,split,eligible_count,enough_for_top5,emptied_by_constraint,rule_based_returned,rule_based_check,content_based_returned,content_based_check,note
+Q001,test,47,yes,,5,ok,5,ok,
+Q002,train,41,yes,,5,ok,5,ok,
+Q003,train,39,yes,,5,ok,5,ok,
+Q004,train,47,yes,,5,ok,5,ok,
+Q005,validation,8,yes,,5,ok,5,ok,
+Q006,train,11,yes,,5,ok,5,ok,
+Q007,train,10,yes,,5,ok,5,ok,
+Q008,train,14,yes,,5,ok,5,ok,
+Q009,test,7,yes,,5,ok,5,ok,
+Q010,train,7,yes,,5,ok,5,ok,
+Q011,train,14,yes,,5,ok,5,ok,
+Q012,validation,24,yes,,5,ok,5,ok,
+Q013,validation,13,yes,,5,ok,5,ok,
+Q014,test,35,yes,,5,ok,5,ok,
+Q015,train,24,yes,,5,ok,5,ok,
+Q016,train,22,yes,,5,ok,5,ok,
+Q017,test,7,yes,,5,ok,5,ok,
+Q018,test,5,yes,,5,ok,5,ok,
+Q019,test,143,yes,,5,ok,5,ok,
+Q020,validation,144,yes,,5,ok,5,ok,
+Q021,test,28,yes,,5,ok,5,ok,
+Q022,train,112,yes,,5,ok,5,ok,
+Q023,train,127,yes,,5,ok,5,ok,
+Q024,train,97,yes,,5,ok,5,ok,
+Q025,train,5,yes,,5,ok,5,ok,
+Q026,train,11,yes,,5,ok,5,ok,
+Q027,test,13,yes,,5,ok,5,ok,
+Q028,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q029,train,9,yes,,5,ok,5,ok,
+Q030,train,8,yes,,5,ok,5,ok,
+Q031,train,13,yes,,5,ok,5,ok,
+Q032,train,16,yes,,5,ok,5,ok,
+Q033,train,6,yes,,5,ok,5,ok,
+Q034,train,18,yes,,5,ok,5,ok,
+Q035,validation,27,yes,,5,ok,5,ok,
+Q036,test,33,yes,,5,ok,5,ok,
+Q037,validation,0,no,furnished_only,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by furnished_only)
+Q038,train,6,yes,,5,ok,5,ok,
+Q039,test,10,yes,,5,ok,5,ok,
+Q040,train,21,yes,,5,ok,5,ok,
+Q041,test,9,yes,,5,ok,5,ok,
+Q042,test,15,yes,,5,ok,5,ok,
+Q043,test,8,yes,,5,ok,5,ok,
+Q044,train,5,yes,,5,ok,5,ok,
+Q045,train,4,no,,4,fewer_than_top5,4,fewer_than_top5,only 4 eligible (Top-5 incomplete)
+Q046,train,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+Q047,train,6,yes,,5,ok,5,ok,
+Q048,train,10,yes,,5,ok,5,ok,
+Q049,validation,10,yes,,5,ok,5,ok,
+Q050,train,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+Q051,train,0,no,furnished_only,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by furnished_only)
+Q052,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q053,train,18,yes,,5,ok,5,ok,
+Q054,train,25,yes,,5,ok,5,ok,
+Q055,validation,20,yes,,5,ok,5,ok,
+Q056,train,32,yes,,5,ok,5,ok,
+Q057,test,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q058,train,38,yes,,5,ok,5,ok,
+Q059,train,32,yes,,5,ok,5,ok,
+Q060,train,38,yes,,5,ok,5,ok,
+Q061,train,11,yes,,5,ok,5,ok,
+Q062,train,14,yes,,5,ok,5,ok,
+Q063,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q064,train,45,yes,,5,ok,5,ok,
+Q065,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q066,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q067,train,12,yes,,5,ok,5,ok,
+Q068,train,12,yes,,5,ok,5,ok,
+Q069,train,6,yes,,5,ok,5,ok,
+Q070,validation,3,no,,3,fewer_than_top5,3,fewer_than_top5,only 3 eligible (Top-5 incomplete)
+Q071,validation,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+Q072,train,6,yes,,5,ok,5,ok,
+Q073,train,10,yes,,5,ok,5,ok,
+Q074,train,5,yes,,5,ok,5,ok,
+Q075,test,4,no,,4,fewer_than_top5,4,fewer_than_top5,only 4 eligible (Top-5 incomplete)
+Q076,train,8,yes,,5,ok,5,ok,
+Q077,validation,15,yes,,5,ok,5,ok,
+Q078,train,16,yes,,5,ok,5,ok,
+Q079,validation,37,yes,,5,ok,5,ok,
+Q080,train,116,yes,,5,ok,5,ok,
+Q081,train,86,yes,,5,ok,5,ok,
+Q082,train,22,yes,,5,ok,5,ok,
+Q083,train,47,yes,,5,ok,5,ok,
+Q084,test,99,yes,,5,ok,5,ok,
+Q085,train,33,yes,,5,ok,5,ok,
+Q086,train,19,yes,,5,ok,5,ok,
+Q087,test,35,yes,,5,ok,5,ok,
+Q088,train,106,yes,,5,ok,5,ok,
+Q089,train,82,yes,,5,ok,5,ok,
+Q090,train,153,yes,,5,ok,5,ok,
+Q091,train,82,yes,,5,ok,5,ok,
+Q092,test,140,yes,,5,ok,5,ok,
+Q093,train,172,yes,,5,ok,5,ok,
+Q094,test,151,yes,,5,ok,5,ok,
+Q095,train,8,yes,,5,ok,5,ok,
+Q096,train,15,yes,,5,ok,5,ok,
+Q097,train,7,yes,,5,ok,5,ok,
+Q098,train,24,yes,,5,ok,5,ok,
+Q099,train,27,yes,,5,ok,5,ok,
+Q100,validation,18,yes,,5,ok,5,ok,
+Q101,train,42,yes,,5,ok,5,ok,
+Q102,train,81,yes,,5,ok,5,ok,
+Q103,train,48,yes,,5,ok,5,ok,
+Q104,train,23,yes,,5,ok,5,ok,
+Q105,train,42,yes,,5,ok,5,ok,
+Q106,test,78,yes,,5,ok,5,ok,
+Q107,test,73,yes,,5,ok,5,ok,
+Q108,train,84,yes,,5,ok,5,ok,
+Q109,train,77,yes,,5,ok,5,ok,
+Q110,train,4,no,,4,fewer_than_top5,4,fewer_than_top5,only 4 eligible (Top-5 incomplete)
+Q111,train,7,yes,,5,ok,5,ok,
+Q112,train,12,yes,,5,ok,5,ok,
+Q113,train,17,yes,,5,ok,5,ok,
+Q114,test,11,yes,,5,ok,5,ok,
+Q115,train,4,no,,4,fewer_than_top5,4,fewer_than_top5,only 4 eligible (Top-5 incomplete)
+Q116,train,27,yes,,5,ok,5,ok,
+Q117,test,41,yes,,5,ok,5,ok,
+Q118,train,25,yes,,5,ok,5,ok,
+Q119,train,7,yes,,5,ok,5,ok,
+Q120,train,6,yes,,5,ok,5,ok,
+Q121,test,20,yes,,5,ok,5,ok,
+Q122,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q123,train,5,yes,,5,ok,5,ok,
+Q124,test,3,no,,3,fewer_than_top5,3,fewer_than_top5,only 3 eligible (Top-5 incomplete)
+Q125,train,14,yes,,5,ok,5,ok,
+Q126,train,13,yes,,5,ok,5,ok,
+Q127,train,35,yes,,5,ok,5,ok,
+Q128,test,57,yes,,5,ok,5,ok,
+Q129,train,20,yes,,5,ok,5,ok,
+Q130,test,18,yes,,5,ok,5,ok,
+Q131,train,21,yes,,5,ok,5,ok,
+Q132,test,21,yes,,5,ok,5,ok,
+Q133,validation,13,yes,,5,ok,5,ok,
+Q134,train,10,yes,,5,ok,5,ok,
+Q135,train,15,yes,,5,ok,5,ok,
+Q136,train,19,yes,,5,ok,5,ok,
+Q137,train,58,yes,,5,ok,5,ok,
+Q138,train,77,yes,,5,ok,5,ok,
+Q139,test,73,yes,,5,ok,5,ok,
+Q140,train,70,yes,,5,ok,5,ok,
+Q141,test,29,yes,,5,ok,5,ok,
+Q142,validation,88,yes,,5,ok,5,ok,
+Q143,train,38,yes,,5,ok,5,ok,
+Q144,train,49,yes,,5,ok,5,ok,
+Q145,train,81,yes,,5,ok,5,ok,
+Q146,train,57,yes,,5,ok,5,ok,
+Q147,train,65,yes,,5,ok,5,ok,
+Q148,train,107,yes,,5,ok,5,ok,
+Q149,train,10,yes,,5,ok,5,ok,
+Q150,train,8,yes,,5,ok,5,ok,
+Q151,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q152,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q153,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q154,test,0,no,preferred_area (district),0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by preferred_area (district))
+Q155,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q156,test,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q157,train,0,no,min_bathrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bathrooms)
+Q158,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q159,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q160,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q161,test,0,no,preferred_area (district),0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by preferred_area (district))
+Q162,train,4,no,,4,fewer_than_top5,4,fewer_than_top5,only 4 eligible (Top-5 incomplete)
+Q163,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q164,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q165,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q166,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q167,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q168,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q169,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q170,train,0,no,tenure,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by tenure)
+Q171,validation,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q172,test,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q173,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q174,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q175,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q176,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q177,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q178,validation,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q179,test,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+Q180,train,3,no,,3,fewer_than_top5,3,fewer_than_top5,only 3 eligible (Top-5 incomplete)
+Q181,train,0,no,preferred_area (district),0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by preferred_area (district))
+Q182,train,175,yes,,5,ok,5,ok,
+Q183,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q184,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q185,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q186,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q187,test,0,no,min_bathrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bathrooms)
+Q188,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q189,validation,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q190,train,0,no,furnished_only,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by furnished_only)
+Q191,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q192,train,0,no,tenure,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by tenure)
+Q193,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q194,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q195,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q196,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q197,train,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+Q198,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q199,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q200,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q201,train,0,no,preferred_area (district),0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by preferred_area (district))
+Q202,train,1,no,,1,fewer_than_top5,1,fewer_than_top5,only 1 eligible (Top-5 incomplete)
+Q203,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q204,test,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q205,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q206,validation,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q207,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q208,train,0,no,preferred_area (district),0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by preferred_area (district))
+Q209,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q210,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q211,test,0,no,preferred_area (district),0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by preferred_area (district))
+Q212,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q213,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q214,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q215,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q216,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q217,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q218,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q219,validation,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q220,train,0,no,furnished_only,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by furnished_only)
+Q221,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q222,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q223,validation,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q224,train,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+Q225,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q226,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q227,test,3,no,,3,fewer_than_top5,3,fewer_than_top5,only 3 eligible (Top-5 incomplete)
+Q228,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q229,validation,0,no,furnished_only,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by furnished_only)
+Q230,train,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+Q231,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q232,train,22,yes,,5,ok,5,ok,
+Q233,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q234,validation,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q235,validation,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q236,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q237,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q238,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q239,train,35,yes,,5,ok,5,ok,
+Q240,test,0,no,tenure,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by tenure)
+Q241,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q242,train,0,no,min_bedrooms,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by min_bedrooms)
+Q243,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q244,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q245,test,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q246,train,0,no,max_budget_rm,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by max_budget_rm)
+Q247,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q248,train,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q249,validation,0,no,property_type,0,empty_eligible_set,0,empty_eligible_set,no listing passes every constraint (emptied by property_type)
+Q250,train,2,no,,2,fewer_than_top5,2,fewer_than_top5,only 2 eligible (Top-5 incomplete)
+TOTAL,all,5208,135 of 250,,732,135 ok / 26 short / 89 empty,732,135 ok / 26 short / 89 empty,"eligible_count is computed once with recommender_service.apply_hard_constraints and used by both models, so the counts are identical by construction; 'ok' needs at least 5 candidates to fill a Top-5"

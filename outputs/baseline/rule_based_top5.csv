@@ -1,0 +1,822 @@
+method,query_id,split,eligible_count,rank,Property_ID,listing,district,property_type,asking_price_rm,built_up_sqft,bedrooms,bathrooms,score,criterion,status
+rule_based,Q001,test,47,1.0,2093.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,913000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q001,test,47,2.0,2182.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,950000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q001,test,47,3.0,2268.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,890000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q001,test,47,4.0,2269.0,Queens Residences Q2,Barat Daya,Condominium,900000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q001,test,47,5.0,2352.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,890000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q002,train,41,1.0,2093.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,913000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q002,train,41,2.0,2268.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,890000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q002,train,41,3.0,2269.0,Queens Residences Q2,Barat Daya,Condominium,900000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q002,train,41,4.0,2352.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,890000.0,950.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q002,train,41,5.0,2177.0,Maldives Residences,Barat Daya,Condominium,498000.0,930.0,3.0,2.0,0.9789,closest built-up area to the preferred size,ok
+rule_based,Q003,train,39,1.0,2073.0,Sunway Dora,Barat Daya,Condominium,765000.0,1055.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q003,train,39,2.0,2156.0,Setia Sky Vista,Barat Daya,Condominium,620000.0,1194.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q003,train,39,3.0,2159.0,Maldives Residences,Barat Daya,Condominium,428000.0,850.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q003,train,39,4.0,2177.0,Maldives Residences,Barat Daya,Condominium,498000.0,930.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q003,train,39,5.0,2268.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,890000.0,950.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q004,train,47,1.0,2073.0,Sunway Dora,Barat Daya,Condominium,765000.0,1055.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q004,train,47,2.0,2093.0,Queens Residences @ Queens Waterfront,Barat Daya,Condominium,913000.0,950.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q004,train,47,3.0,2109.0,One Foresta,Barat Daya,Condominium,420000.0,900.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q004,train,47,4.0,2151.0,M Vista,Barat Daya,Condominium,899000.0,1201.0,4.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q004,train,47,5.0,2156.0,Setia Sky Vista,Barat Daya,Condominium,620000.0,1194.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q005,validation,8,1.0,3299.0,Paka,Dungun,Bungalow / Detached House,375000.0,1607.0,4.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q005,validation,8,2.0,3302.0,Dungun,Dungun,Bungalow / Detached House,360000.0,1120.0,3.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q005,validation,8,3.0,3303.0,Paka,Dungun,Bungalow / Detached House,340000.0,1477.0,3.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q005,validation,8,4.0,3304.0,Dungun,Dungun,Bungalow / Detached House,380000.0,1800.0,4.0,3.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q005,validation,8,5.0,3305.0,Dungun,Dungun,Bungalow / Detached House,365000.0,1300.0,3.0,3.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q006,train,11,1.0,3299.0,Paka,Dungun,Bungalow / Detached House,375000.0,1607.0,4.0,2.0,0.9956,closest built-up area to the preferred size,ok
+rule_based,Q006,train,11,2.0,3313.0,Dungun,Dungun,Bungalow / Detached House,400000.0,1557.0,6.0,4.0,0.9731,closest built-up area to the preferred size,ok
+rule_based,Q006,train,11,3.0,3345.0,Pulau Serai,Dungun,Bungalow / Detached House,370000.0,1500.0,3.0,3.0,0.9375,closest built-up area to the preferred size,ok
+rule_based,Q006,train,11,4.0,3303.0,Paka,Dungun,Bungalow / Detached House,340000.0,1477.0,3.0,2.0,0.9231,closest built-up area to the preferred size,ok
+rule_based,Q006,train,11,5.0,3304.0,Dungun,Dungun,Bungalow / Detached House,380000.0,1800.0,4.0,3.0,0.875,closest built-up area to the preferred size,ok
+rule_based,Q007,train,10,1.0,3349.0,Kampung Kuala Abang,Dungun,Link Bungalow / Semi-Detached,310000.0,1100.0,3.0,2.0,0.1143,lowest asking price within budget,ok
+rule_based,Q007,train,10,2.0,3359.0,Kuala Dungun,Dungun,Link Bungalow / Semi-Detached,318000.0,1100.0,3.0,2.0,0.0914,lowest asking price within budget,ok
+rule_based,Q007,train,10,3.0,3278.0,Paka,Dungun,Link Bungalow / Semi-Detached,330000.0,1100.0,3.0,2.0,0.0571,lowest asking price within budget,ok
+rule_based,Q007,train,10,4.0,3283.0,Dungun,Dungun,Link Bungalow / Semi-Detached,330000.0,1500.0,3.0,2.0,0.0571,lowest asking price within budget,ok
+rule_based,Q007,train,10,5.0,3282.0,Paka,Dungun,Link Bungalow / Semi-Detached,338400.0,1350.0,4.0,2.0,0.0331,lowest asking price within budget,ok
+rule_based,Q008,train,14,1.0,3252.0,Taman Laut 1,Dungun,Link Bungalow / Semi-Detached,350000.0,1022.0,3.0,2.0,0.3333,most of the selected facility types present nearby,ok
+rule_based,Q008,train,14,2.0,3259.0,Paka,Dungun,Link Bungalow / Semi-Detached,380000.0,1500.0,4.0,3.0,0.3333,most of the selected facility types present nearby,ok
+rule_based,Q008,train,14,3.0,3268.0,Paka,Dungun,Link Bungalow / Semi-Detached,375000.0,1700.0,5.0,2.0,0.3333,most of the selected facility types present nearby,ok
+rule_based,Q008,train,14,4.0,3278.0,Paka,Dungun,Link Bungalow / Semi-Detached,330000.0,1100.0,3.0,2.0,0.3333,most of the selected facility types present nearby,ok
+rule_based,Q008,train,14,5.0,3282.0,Paka,Dungun,Link Bungalow / Semi-Detached,338400.0,1350.0,4.0,2.0,0.3333,most of the selected facility types present nearby,ok
+rule_based,Q009,test,7,1.0,282.0,Opal @ Mutiara Mas,Johor Bahru,Cluster House,980000.0,2080.0,5.0,5.0,0.4586,lowest asking price within budget,ok
+rule_based,Q009,test,7,2.0,264.0,Taman Skudai Indah,Johor Bahru,Cluster House,1120000.0,2380.0,5.0,5.0,0.3812,lowest asking price within budget,ok
+rule_based,Q009,test,7,3.0,249.0,Taman Seri Austin,Johor Bahru,Cluster House,1250000.0,2600.0,5.0,5.0,0.3094,lowest asking price within budget,ok
+rule_based,Q009,test,7,4.0,368.0,Emerald Residence @ Sunway Iskandar,Johor Bahru,Cluster House,1250000.0,1760.0,5.0,5.0,0.3094,lowest asking price within budget,ok
+rule_based,Q009,test,7,5.0,256.0,Opal @ Mutiara Mas,Johor Bahru,Cluster House,1300000.0,1650.0,5.0,5.0,0.2818,lowest asking price within budget,ok
+rule_based,Q010,train,7,1.0,322.0,Taman Mutiara Mas,Johor Bahru,Cluster House,1080000.0,2300.0,4.0,4.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q010,train,7,2.0,338.0,Taman Ungku Tun Aminah,Johor Bahru,Cluster House,1300000.0,2240.0,5.0,4.0,0.9739,closest built-up area to the preferred size,ok
+rule_based,Q010,train,7,3.0,264.0,Taman Skudai Indah,Johor Bahru,Cluster House,1120000.0,2380.0,5.0,5.0,0.9652,closest built-up area to the preferred size,ok
+rule_based,Q010,train,7,4.0,282.0,Opal @ Mutiara Mas,Johor Bahru,Cluster House,980000.0,2080.0,5.0,5.0,0.9043,closest built-up area to the preferred size,ok
+rule_based,Q010,train,7,5.0,249.0,Taman Seri Austin,Johor Bahru,Cluster House,1250000.0,2600.0,5.0,5.0,0.8696,closest built-up area to the preferred size,ok
+rule_based,Q011,train,14,1.0,321.0,The Aliff Residences,Johor Bahru,Condominium,420000.0,1098.0,3.0,2.0,0.9982,closest built-up area to the preferred size,ok
+rule_based,Q011,train,14,2.0,198.0,M Condominium,Johor Bahru,Condominium,468000.0,1068.0,5.0,2.0,0.9709,closest built-up area to the preferred size,ok
+rule_based,Q011,train,14,3.0,312.0,The Raffles Suites,Johor Bahru,Condominium,450000.0,1068.0,3.0,2.0,0.9709,closest built-up area to the preferred size,ok
+rule_based,Q011,train,14,4.0,33.0,Impian Senibong,Johor Bahru,Condominium,438000.0,1144.0,4.0,2.0,0.96,closest built-up area to the preferred size,ok
+rule_based,Q011,train,14,5.0,106.0,Impian Senibong,Johor Bahru,Condominium,448000.0,1150.0,3.0,2.0,0.9545,closest built-up area to the preferred size,ok
+rule_based,Q012,validation,24,1.0,168.0,Sky Gardens Residences,Johor Bahru,Condominium,400000.0,900.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q012,validation,24,2.0,303.0,Dedaun Hijau (Greenfield Regency),Johor Bahru,Condominium,470000.0,900.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q012,validation,24,3.0,320.0,Austin Suites,Johor Bahru,Condominium,395000.0,906.0,2.0,2.0,0.9933,closest built-up area to the preferred size,ok
+rule_based,Q012,validation,24,4.0,97.0,Royal Strand @ Country Garden Danga Bay,Johor Bahru,Condominium,470000.0,881.0,2.0,2.0,0.9789,closest built-up area to the preferred size,ok
+rule_based,Q012,validation,24,5.0,67.0,Arc Austin Hill,Johor Bahru,Condominium,398000.0,850.0,3.0,2.0,0.9444,closest built-up area to the preferred size,ok
+rule_based,Q013,validation,13,1.0,53.0,Sri Wangi Apartment,Johor Bahru,Condominium,330000.0,1004.0,3.0,2.0,0.4,lowest asking price within budget,ok
+rule_based,Q013,validation,13,2.0,121.0,M'Tiara Apartment @ Larkin Idaman,Johor Bahru,Condominium,408000.0,1005.0,3.0,2.0,0.2582,lowest asking price within budget,ok
+rule_based,Q013,validation,13,3.0,321.0,The Aliff Residences,Johor Bahru,Condominium,420000.0,1098.0,3.0,2.0,0.2364,lowest asking price within budget,ok
+rule_based,Q013,validation,13,4.0,33.0,Impian Senibong,Johor Bahru,Condominium,438000.0,1144.0,4.0,2.0,0.2036,lowest asking price within budget,ok
+rule_based,Q013,validation,13,5.0,106.0,Impian Senibong,Johor Bahru,Condominium,448000.0,1150.0,3.0,2.0,0.1855,lowest asking price within budget,ok
+rule_based,Q014,test,35,1.0,300.0,Selesa Puteri Condominium,Johor Bahru,Condominium,300000.0,1001.0,3.0,2.0,0.589,lowest asking price within budget,ok
+rule_based,Q014,test,35,2.0,37.0,The Arc At Austin Hill,Johor Bahru,Condominium,318000.0,650.0,2.0,2.0,0.5644,lowest asking price within budget,ok
+rule_based,Q014,test,35,3.0,289.0,Villa Krystal,Johor Bahru,Condominium,320000.0,990.0,4.0,2.0,0.5616,lowest asking price within budget,ok
+rule_based,Q014,test,35,4.0,360.0,Arc Austin Hill,Johor Bahru,Condominium,320000.0,650.0,2.0,2.0,0.5616,lowest asking price within budget,ok
+rule_based,Q014,test,35,5.0,245.0,Mewah View Luxurious Apartments,Johor Bahru,Condominium,328000.0,1216.0,4.0,3.0,0.5507,lowest asking price within budget,ok
+rule_based,Q015,train,24,1.0,184.0,Taman Johor Jaya,Johor Bahru,Link Bungalow / Semi-Detached,1100000.0,3000.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q015,train,24,2.0,273.0,Horizon Hills,Johor Bahru,Link Bungalow / Semi-Detached,1850000.0,3000.0,5.0,5.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q015,train,24,3.0,335.0,Taman Nong Chik,Johor Bahru,Link Bungalow / Semi-Detached,1400000.0,3000.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q015,train,24,4.0,265.0,Taman Perling,Johor Bahru,Link Bungalow / Semi-Detached,975000.0,2975.0,5.0,4.0,0.9917,closest built-up area to the preferred size,ok
+rule_based,Q015,train,24,5.0,253.0,Taman Mutiara Mas,Johor Bahru,Link Bungalow / Semi-Detached,1430000.0,3080.0,5.0,5.0,0.9733,closest built-up area to the preferred size,ok
+rule_based,Q016,train,22,1.0,144.0,Taman Melawati,Johor Bahru,Link Bungalow / Semi-Detached,740000.0,3500.0,4.0,3.0,0.7605,lowest asking price within budget,ok
+rule_based,Q016,train,22,2.0,268.0,Taman Sierra Perdana,Johor Bahru,Link Bungalow / Semi-Detached,788000.0,3337.0,4.0,3.0,0.745,lowest asking price within budget,ok
+rule_based,Q016,train,22,3.0,329.0,Taman Perling,Johor Bahru,Link Bungalow / Semi-Detached,938000.0,2535.0,4.0,3.0,0.6964,lowest asking price within budget,ok
+rule_based,Q016,train,22,4.0,325.0,Taman Bukit Tropika,Johor Bahru,Link Bungalow / Semi-Detached,950000.0,3780.0,5.0,4.0,0.6926,lowest asking price within budget,ok
+rule_based,Q016,train,22,5.0,265.0,Taman Perling,Johor Bahru,Link Bungalow / Semi-Detached,975000.0,2975.0,5.0,4.0,0.6845,lowest asking price within budget,ok
+rule_based,Q017,test,7,1.0,211.0,Taman Rinting,Johor Bahru,Low-Cost House,358000.0,840.0,3.0,2.0,0.9882,closest built-up area to the preferred size,ok
+rule_based,Q017,test,7,2.0,27.0,Taman Scientex,Johor Bahru,Low-Cost House,345000.0,800.0,3.0,2.0,0.9412,closest built-up area to the preferred size,ok
+rule_based,Q017,test,7,3.0,92.0,Taman Pasir Putih,Johor Bahru,Low-Cost House,328000.0,900.0,3.0,2.0,0.9412,closest built-up area to the preferred size,ok
+rule_based,Q017,test,7,4.0,138.0,Jalan Tenang,Johor Bahru,Low-Cost House,368000.0,770.0,2.0,2.0,0.9059,closest built-up area to the preferred size,ok
+rule_based,Q017,test,7,5.0,199.0,Taman Bukit Tiram,Johor Bahru,Low-Cost House,335000.0,770.0,2.0,2.0,0.9059,closest built-up area to the preferred size,ok
+rule_based,Q018,test,5,1.0,44.0,Taman Nusa Damai,Johor Bahru,Low-Cost House,310000.0,1100.0,3.0,2.0,0.1143,lowest asking price within budget,ok
+rule_based,Q018,test,5,2.0,4.0,Taman Desa Cemerlang,Johor Bahru,Low-Cost House,328000.0,700.0,2.0,2.0,0.0629,lowest asking price within budget,ok
+rule_based,Q018,test,5,3.0,92.0,Taman Pasir Putih,Johor Bahru,Low-Cost House,328000.0,900.0,3.0,2.0,0.0629,lowest asking price within budget,ok
+rule_based,Q018,test,5,4.0,199.0,Taman Bukit Tiram,Johor Bahru,Low-Cost House,335000.0,770.0,2.0,2.0,0.0429,lowest asking price within budget,ok
+rule_based,Q018,test,5,5.0,27.0,Taman Scientex,Johor Bahru,Low-Cost House,345000.0,800.0,3.0,2.0,0.0143,lowest asking price within budget,ok
+rule_based,Q019,test,143,1.0,3.0,Eco Tropics,Johor Bahru,Terrace House,590000.0,1600.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q019,test,143,2.0,5.0,Taman Desa Jaya,Johor Bahru,Terrace House,699000.0,3000.0,5.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q019,test,143,3.0,8.0,Taman Bestari Indah,Johor Bahru,Terrace House,610000.0,1450.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q019,test,143,4.0,9.0,Jalan Kemuliaan,Johor Bahru,Terrace House,450000.0,809.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q019,test,143,5.0,14.0,Bandar Seri Alam,Johor Bahru,Terrace House,580000.0,1210.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q020,validation,144,1.0,327.0,Taman Desa Cemerlang,Johor Bahru,Terrace House,320000.0,728.0,3.0,2.0,0.619,lowest asking price within budget,ok
+rule_based,Q020,validation,144,2.0,319.0,Taman Bukit Jaya,Johor Bahru,Terrace House,335000.0,770.0,3.0,2.0,0.6012,lowest asking price within budget,ok
+rule_based,Q020,validation,144,3.0,180.0,Taman Scientex,Johor Bahru,Terrace House,345000.0,780.0,3.0,2.0,0.5893,lowest asking price within budget,ok
+rule_based,Q020,validation,144,4.0,32.0,Taman Bestari Indah,Johor Bahru,Terrace House,350000.0,775.0,3.0,2.0,0.5833,lowest asking price within budget,ok
+rule_based,Q020,validation,144,5.0,326.0,Taman Bestari Indah,Johor Bahru,Terrace House,350000.0,770.0,3.0,2.0,0.5833,lowest asking price within budget,ok
+rule_based,Q021,test,28,1.0,43.0,Eco Tropics,Johor Bahru,Terrace House,580000.0,1400.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q021,test,28,2.0,209.0,Eco Tropics,Johor Bahru,Terrace House,690000.0,1400.0,3.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q021,test,28,3.0,252.0,Taman Bukit Indah,Johor Bahru,Terrace House,600000.0,1400.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q021,test,28,4.0,267.0,Taman Kota Masai,Johor Bahru,Terrace House,428000.0,1400.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q021,test,28,5.0,304.0,Taman Setia Indah,Johor Bahru,Terrace House,545000.0,1400.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q022,train,112,1.0,327.0,Taman Desa Cemerlang,Johor Bahru,Terrace House,320000.0,728.0,3.0,2.0,0.5429,lowest asking price within budget,ok
+rule_based,Q022,train,112,2.0,319.0,Taman Bukit Jaya,Johor Bahru,Terrace House,335000.0,770.0,3.0,2.0,0.5214,lowest asking price within budget,ok
+rule_based,Q022,train,112,3.0,180.0,Taman Scientex,Johor Bahru,Terrace House,345000.0,780.0,3.0,2.0,0.5071,lowest asking price within budget,ok
+rule_based,Q022,train,112,4.0,32.0,Taman Bestari Indah,Johor Bahru,Terrace House,350000.0,775.0,3.0,2.0,0.5,lowest asking price within budget,ok
+rule_based,Q022,train,112,5.0,326.0,Taman Bestari Indah,Johor Bahru,Terrace House,350000.0,770.0,3.0,2.0,0.5,lowest asking price within budget,ok
+rule_based,Q023,train,127,1.0,45.0,Taman Bestari Perdana,Johor Bahru,Terrace House,499000.0,1540.0,4.0,3.0,0.9935,closest built-up area to the preferred size,ok
+rule_based,Q023,train,127,2.0,52.0,Taman Puteri Wangsa,Johor Bahru,Terrace House,598000.0,1540.0,4.0,3.0,0.9935,closest built-up area to the preferred size,ok
+rule_based,Q023,train,127,3.0,68.0,Taman Nusa Perintis 1,Johor Bahru,Terrace House,688000.0,1540.0,4.0,3.0,0.9935,closest built-up area to the preferred size,ok
+rule_based,Q023,train,127,4.0,108.0,Jalan Kosa,Johor Bahru,Terrace House,595000.0,1540.0,3.0,2.0,0.9935,closest built-up area to the preferred size,ok
+rule_based,Q023,train,127,5.0,120.0,Taman Damai Jaya,Johor Bahru,Terrace House,650000.0,1540.0,4.0,2.0,0.9935,closest built-up area to the preferred size,ok
+rule_based,Q024,train,97,1.0,327.0,Taman Desa Cemerlang,Johor Bahru,Terrace House,320000.0,728.0,3.0,2.0,0.5152,lowest asking price within budget,ok
+rule_based,Q024,train,97,2.0,319.0,Taman Bukit Jaya,Johor Bahru,Terrace House,335000.0,770.0,3.0,2.0,0.4924,lowest asking price within budget,ok
+rule_based,Q024,train,97,3.0,180.0,Taman Scientex,Johor Bahru,Terrace House,345000.0,780.0,3.0,2.0,0.4773,lowest asking price within budget,ok
+rule_based,Q024,train,97,4.0,32.0,Taman Bestari Indah,Johor Bahru,Terrace House,350000.0,775.0,3.0,2.0,0.4697,lowest asking price within budget,ok
+rule_based,Q024,train,97,5.0,326.0,Taman Bestari Indah,Johor Bahru,Terrace House,350000.0,770.0,3.0,2.0,0.4697,lowest asking price within budget,ok
+rule_based,Q025,train,5,1.0,3311.0,Cukai,Kemaman,Bungalow / Detached House,450000.0,2250.0,7.0,4.0,0.6667,most of the selected facility types present nearby,ok
+rule_based,Q025,train,5,2.0,3342.0,Chukai,Kemaman,Bungalow / Detached House,680000.0,2700.0,4.0,3.0,0.6667,most of the selected facility types present nearby,ok
+rule_based,Q025,train,5,3.0,3346.0,Chukai,Kemaman,Bungalow / Detached House,750000.0,2737.0,5.0,4.0,0.6667,most of the selected facility types present nearby,ok
+rule_based,Q025,train,5,4.0,3297.0,Kampung Baru Kerteh,Kemaman,Bungalow / Detached House,555000.0,1938.0,4.0,3.0,0.3333,most of the selected facility types present nearby,ok
+rule_based,Q025,train,5,5.0,3336.0,Chukai,Kemaman,Bungalow / Detached House,448000.0,1819.0,4.0,3.0,0.3333,most of the selected facility types present nearby,ok
+rule_based,Q026,train,11,1.0,3347.0,Kampung Baru Kertih,Kemaman,Link Bungalow / Semi-Detached,300000.0,1497.0,3.0,3.0,0.9307,closest built-up area to the preferred size,ok
+rule_based,Q026,train,11,2.0,3269.0,Kemaman,Kemaman,Link Bungalow / Semi-Detached,358000.0,1300.0,4.0,2.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q026,train,11,3.0,3273.0,Kemaman,Kemaman,Link Bungalow / Semi-Detached,320000.0,1500.0,4.0,2.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q026,train,11,4.0,3340.0,Chukai,Kemaman,Link Bungalow / Semi-Detached,330000.0,1500.0,3.0,2.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q026,train,11,5.0,3348.0,Kijal,Kemaman,Link Bungalow / Semi-Detached,350000.0,1500.0,4.0,3.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q027,test,13,1.0,3356.0,Kampung Baru Kertih,Kemaman,Link Bungalow / Semi-Detached,315000.0,1800.0,3.0,2.0,0.2674,lowest asking price within budget,ok
+rule_based,Q027,test,13,2.0,3273.0,Kemaman,Kemaman,Link Bungalow / Semi-Detached,320000.0,1500.0,4.0,2.0,0.2558,lowest asking price within budget,ok
+rule_based,Q027,test,13,3.0,3338.0,Meraga Beris,Kemaman,Link Bungalow / Semi-Detached,330000.0,1000.0,3.0,2.0,0.2326,lowest asking price within budget,ok
+rule_based,Q027,test,13,4.0,3340.0,Chukai,Kemaman,Link Bungalow / Semi-Detached,330000.0,1500.0,3.0,2.0,0.2326,lowest asking price within budget,ok
+rule_based,Q027,test,13,5.0,3284.0,Kemasik,Kemaman,Link Bungalow / Semi-Detached,340000.0,1540.0,3.0,2.0,0.2093,lowest asking price within budget,ok
+rule_based,Q028,train,1,1.0,3274.0,Kampung Baru Kerteh,Kemaman,Terrace House,300000.0,900.0,5.0,3.0,0.25,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q029,train,9,1.0,3248.0,Pangsapuri Damai,Klang,Condominium,350000.0,971.0,3.0,2.0,0.2045,lowest asking price within budget,ok
+rule_based,Q029,train,9,2.0,618.0,Pelangi Heights,Klang,Condominium,360000.0,1167.0,3.0,2.0,0.1818,lowest asking price within budget,ok
+rule_based,Q029,train,9,3.0,507.0,Ken Rimba Condominium 1,Klang,Condominium,415000.0,1180.0,3.0,2.0,0.0568,lowest asking price within budget,ok
+rule_based,Q029,train,9,4.0,698.0,Ken Rimba Condominium 1,Klang,Condominium,423000.0,1076.0,3.0,2.0,0.0386,lowest asking price within budget,ok
+rule_based,Q029,train,9,5.0,505.0,Ken Rimba Condominium 1,Klang,Condominium,425000.0,1180.0,3.0,2.0,0.0341,lowest asking price within budget,ok
+rule_based,Q030,train,8,1.0,617.0,Gaya Resort Homes,Klang,Condominium,360000.0,751.0,2.0,2.0,0.1628,lowest asking price within budget,ok
+rule_based,Q030,train,8,2.0,618.0,Pelangi Heights,Klang,Condominium,360000.0,1167.0,3.0,2.0,0.1628,lowest asking price within budget,ok
+rule_based,Q030,train,8,3.0,455.0,Gaya Resort Homes,Klang,Condominium,395000.0,751.0,2.0,2.0,0.0814,lowest asking price within budget,ok
+rule_based,Q030,train,8,4.0,507.0,Ken Rimba Condominium 1,Klang,Condominium,415000.0,1180.0,3.0,2.0,0.0349,lowest asking price within budget,ok
+rule_based,Q030,train,8,5.0,698.0,Ken Rimba Condominium 1,Klang,Condominium,423000.0,1076.0,3.0,2.0,0.0163,lowest asking price within budget,ok
+rule_based,Q031,train,13,1.0,3249.0,Taman Meru Aman,Klang,Terrace House,420000.0,1000.0,4.0,3.0,0.4545,lowest asking price within budget,ok
+rule_based,Q031,train,13,2.0,500.0,Berjaya Park (Taman Berjaya),Klang,Terrace House,499000.0,1800.0,4.0,3.0,0.3519,lowest asking price within budget,ok
+rule_based,Q031,train,13,3.0,3247.0,Kampung Jalan Kebun,Klang,Terrace House,545000.0,1884.0,4.0,3.0,0.2922,lowest asking price within budget,ok
+rule_based,Q031,train,13,4.0,560.0,Ken Rimba,Klang,Terrace House,650000.0,1840.0,4.0,3.0,0.1558,lowest asking price within budget,ok
+rule_based,Q031,train,13,5.0,553.0,Ken Rimba,Klang,Terrace House,660000.0,1840.0,4.0,3.0,0.1429,lowest asking price within budget,ok
+rule_based,Q032,train,16,1.0,464.0,Ken Rimba,Klang,Terrace House,720000.0,1840.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q032,train,16,2.0,480.0,Sungai Burung,Klang,Terrace House,760000.0,2100.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q032,train,16,3.0,500.0,Berjaya Park (Taman Berjaya),Klang,Terrace House,499000.0,1800.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q032,train,16,4.0,503.0,Bukit Rimau,Klang,Terrace House,720000.0,1700.0,3.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q032,train,16,5.0,553.0,Ken Rimba,Klang,Terrace House,660000.0,1840.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q033,train,6,1.0,2948.0,Waikiki Condominium,Kota Kinabalu,Condominium,620000.0,1262.0,3.0,2.0,0.9708,closest built-up area to the preferred size,ok
+rule_based,Q033,train,6,2.0,2906.0,Waikiki Condominium,Kota Kinabalu,Condominium,680000.0,1235.0,3.0,3.0,0.95,closest built-up area to the preferred size,ok
+rule_based,Q033,train,6,3.0,2946.0,Tropicana Landmark,Kota Kinabalu,Condominium,850000.0,1213.0,3.0,2.0,0.9331,closest built-up area to the preferred size,ok
+rule_based,Q033,train,6,4.0,2884.0,Marina Court,Kota Kinabalu,Condominium,628000.0,1194.0,3.0,2.0,0.9185,closest built-up area to the preferred size,ok
+rule_based,Q033,train,6,5.0,2893.0,1Sulaman Platinum Tower,Kota Kinabalu,Condominium,400000.0,1100.0,3.0,2.0,0.8462,closest built-up area to the preferred size,ok
+rule_based,Q034,train,18,1.0,2971.0,The Loft @ Kk Times Square,Kota Kinabalu,Condominium,728888.0,892.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q034,train,18,2.0,2876.0,Likas Square,Kota Kinabalu,Condominium,630000.0,1352.0,3.0,2.0,0.6667,most of the selected facility types present nearby,ok
+rule_based,Q034,train,18,3.0,2881.0,The Suritz,Kota Kinabalu,Condominium,599000.0,1346.0,3.0,2.0,0.6667,most of the selected facility types present nearby,ok
+rule_based,Q034,train,18,4.0,2882.0,Radiant Tower B,Kota Kinabalu,Condominium,700000.0,1317.0,4.0,2.0,0.6667,most of the selected facility types present nearby,ok
+rule_based,Q034,train,18,5.0,2884.0,Marina Court,Kota Kinabalu,Condominium,628000.0,1194.0,3.0,2.0,0.6667,most of the selected facility types present nearby,ok
+rule_based,Q035,validation,27,1.0,2937.0,Ashton Tower,Kota Kinabalu,Condominium,395000.0,870.0,3.0,2.0,0.5183,lowest asking price within budget,ok
+rule_based,Q035,validation,27,2.0,2922.0,Api-Api Apartment,Kota Kinabalu,Condominium,396000.0,762.0,2.0,2.0,0.5171,lowest asking price within budget,ok
+rule_based,Q035,validation,27,3.0,2968.0,Nexus Residence,Kota Kinabalu,Condominium,405000.0,927.0,1.0,2.0,0.5061,lowest asking price within budget,ok
+rule_based,Q035,validation,27,4.0,2988.0,Likas Square,Kota Kinabalu,Condominium,520000.0,1352.0,3.0,2.0,0.3659,lowest asking price within budget,ok
+rule_based,Q035,validation,27,5.0,2899.0,Alam Damai Condominium,Kota Kinabalu,Condominium,538000.0,1070.0,3.0,2.0,0.3439,lowest asking price within budget,ok
+rule_based,Q036,test,33,1.0,2887.0,1Sulaman Platinum Tower,Kota Kinabalu,Condominium,498000.0,1000.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q036,test,33,2.0,2905.0,Bukit Bantayan Residences,Kota Kinabalu,Condominium,583800.0,1007.0,3.0,2.0,0.993,closest built-up area to the preferred size,ok
+rule_based,Q036,test,33,3.0,2950.0,Alam Damai Condominium,Kota Kinabalu,Condominium,683000.0,979.0,3.0,2.0,0.979,closest built-up area to the preferred size,ok
+rule_based,Q036,test,33,4.0,2913.0,Alam Damai Condominium,Kota Kinabalu,Condominium,575000.0,976.0,3.0,2.0,0.976,closest built-up area to the preferred size,ok
+rule_based,Q036,test,33,5.0,2986.0,Alam Damai Kondominium,Kota Kinabalu,Condominium,580000.0,976.0,3.0,2.0,0.976,closest built-up area to the preferred size,ok
+rule_based,Q037,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q038,train,6,1.0,19.0,Taman Sri Saujana,Kota Tinggi,Terrace House,358000.0,1450.0,3.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q038,train,6,2.0,136.0,Taman Kota Jaya 2,Kota Tinggi,Terrace House,368000.0,1173.0,4.0,3.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q038,train,6,3.0,161.0,Taman Sri Saujana,Kota Tinggi,Terrace House,360000.0,1400.0,3.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q038,train,6,4.0,179.0,Taman Kota Jaya,Kota Tinggi,Terrace House,430000.0,3000.0,3.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q038,train,6,5.0,182.0,Taman Kota Jaya,Kota Tinggi,Terrace House,429000.0,2600.0,4.0,3.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q039,test,10,1.0,19.0,Taman Sri Saujana,Kota Tinggi,Terrace House,358000.0,1450.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q039,test,10,2.0,131.0,Taman Sri Lalang,Kota Tinggi,Terrace House,330000.0,1400.0,2.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q039,test,10,3.0,161.0,Taman Sri Saujana,Kota Tinggi,Terrace House,360000.0,1400.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q039,test,10,4.0,179.0,Taman Kota Jaya,Kota Tinggi,Terrace House,430000.0,3000.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q039,test,10,5.0,182.0,Taman Kota Jaya,Kota Tinggi,Terrace House,429000.0,2600.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q040,train,21,1.0,3180.0,Residensi Platinum Teratai,Kuala Lumpur,Condominium,410000.0,928.0,3.0,2.0,0.9035,lowest asking price within budget,ok
+rule_based,Q040,train,21,2.0,1035.0,Casa Ria,Kuala Lumpur,Condominium,430000.0,1116.0,3.0,2.0,0.8988,lowest asking price within budget,ok
+rule_based,Q040,train,21,3.0,3184.0,Tuan Residency (Residensi Selingsing),Kuala Lumpur,Condominium,450000.0,861.0,3.0,2.0,0.8941,lowest asking price within budget,ok
+rule_based,Q040,train,21,4.0,3245.0,Setapak Green,Kuala Lumpur,Condominium,570000.0,1362.0,4.0,3.0,0.8659,lowest asking price within budget,ok
+rule_based,Q040,train,21,5.0,3228.0,Dc Residensi (Damansara City),Kuala Lumpur,Condominium,1880000.0,1668.0,4.0,3.0,0.5576,lowest asking price within budget,ok
+rule_based,Q041,test,9,1.0,3360.0,Nan,Kuala Lumpur,Condominium,379000.0,960.0,3.0,2.0,0.8204,lowest asking price within budget,ok
+rule_based,Q041,test,9,2.0,3180.0,Residensi Platinum Teratai,Kuala Lumpur,Condominium,410000.0,928.0,3.0,2.0,0.8057,lowest asking price within budget,ok
+rule_based,Q041,test,9,3.0,1035.0,Casa Ria,Kuala Lumpur,Condominium,430000.0,1116.0,3.0,2.0,0.7962,lowest asking price within budget,ok
+rule_based,Q041,test,9,4.0,3184.0,Tuan Residency (Residensi Selingsing),Kuala Lumpur,Condominium,450000.0,861.0,3.0,2.0,0.7867,lowest asking price within budget,ok
+rule_based,Q041,test,9,5.0,3245.0,Setapak Green,Kuala Lumpur,Condominium,570000.0,1362.0,4.0,3.0,0.7299,lowest asking price within budget,ok
+rule_based,Q042,test,15,1.0,3245.0,Setapak Green,Kuala Lumpur,Condominium,570000.0,1362.0,4.0,3.0,0.8496,lowest asking price within budget,ok
+rule_based,Q042,test,15,2.0,3228.0,Dc Residensi (Damansara City),Kuala Lumpur,Condominium,1880000.0,1668.0,4.0,3.0,0.504,lowest asking price within budget,ok
+rule_based,Q042,test,15,3.0,3227.0,Dc Residensi (Damansara City),Kuala Lumpur,Condominium,1980000.0,1750.0,4.0,3.0,0.4776,lowest asking price within budget,ok
+rule_based,Q042,test,15,4.0,3212.0,Aria Luxury Residence,Kuala Lumpur,Condominium,2100000.0,1502.0,3.0,3.0,0.4459,lowest asking price within budget,ok
+rule_based,Q042,test,15,5.0,3226.0,Dc Residensi (Damansara City),Kuala Lumpur,Condominium,2150000.0,1862.0,4.0,3.0,0.4327,lowest asking price within budget,ok
+rule_based,Q043,test,8,1.0,3192.0,Taman Cheras,Kuala Lumpur,Terrace House,650000.0,1800.0,4.0,3.0,0.5486,lowest asking price within budget,ok
+rule_based,Q043,test,8,2.0,3191.0,Taman Connaught (Sri Cendekia),Kuala Lumpur,Terrace House,785000.0,1800.0,5.0,3.0,0.4549,lowest asking price within budget,ok
+rule_based,Q043,test,8,3.0,1066.0,Taman Impian Indah (Paragon Heights),Kuala Lumpur,Terrace House,1080000.0,3388.0,5.0,5.0,0.25,lowest asking price within budget,ok
+rule_based,Q043,test,8,4.0,1224.0,Mutiara Bukit Jalil,Kuala Lumpur,Terrace House,1080000.0,3300.0,6.0,4.0,0.25,lowest asking price within budget,ok
+rule_based,Q043,test,8,5.0,1166.0,Taman Impian Indah (Paragon Heights),Kuala Lumpur,Terrace House,1130000.0,3388.0,6.0,5.0,0.2153,lowest asking price within budget,ok
+rule_based,Q044,train,5,1.0,3251.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,865000.0,2150.0,5.0,5.0,0.5,most of the selected facility types present nearby,ok
+rule_based,Q044,train,5,2.0,3261.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,900000.0,2500.0,5.0,5.0,0.5,most of the selected facility types present nearby,ok
+rule_based,Q044,train,5,3.0,3320.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,830000.0,3000.0,5.0,5.0,0.5,most of the selected facility types present nearby,ok
+rule_based,Q044,train,5,4.0,3324.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,615000.0,1800.0,4.0,3.0,0.5,most of the selected facility types present nearby,ok
+rule_based,Q044,train,5,5.0,3325.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,774000.0,2200.0,4.0,3.0,0.5,most of the selected facility types present nearby,ok
+rule_based,Q045,train,4,1.0,3333.0,Kampung Pengkalan Maras,Kuala Nerus,Bungalow / Detached House,320000.0,946.0,4.0,3.0,0.6444,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q045,train,4,2.0,3314.0,Kuala Terengganu,Kuala Nerus,Bungalow / Detached House,480000.0,2275.0,4.0,3.0,0.4667,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q045,train,4,3.0,3301.0,Kuala Terengganu,Kuala Nerus,Bungalow / Detached House,550000.0,1650.0,5.0,3.0,0.3889,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q045,train,4,4.0,3343.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,850000.0,3700.0,5.0,5.0,0.0556,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q046,train,2,1.0,2067.0,Taman Bukit@ Forest & Hill,Kuantan,Bungalow / Detached House,1800000.0,3000.0,6.0,4.0,0.9655,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q046,train,2,2.0,2014.0,Taman Pelindung,Kuantan,Bungalow / Detached House,980000.0,8000.0,6.0,6.0,0.0,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q047,train,6,1.0,2004.0,Sungai Isap Damai,Kuantan,Bungalow / Detached House,300000.0,1100.0,3.0,2.0,0.375,lowest asking price within budget,ok
+rule_based,Q047,train,6,2.0,1910.0,Permatang Badak,Kuantan,Bungalow / Detached House,330000.0,1600.0,3.0,4.0,0.3125,lowest asking price within budget,ok
+rule_based,Q047,train,6,3.0,1952.0,Tanjung Lumpur/Kampung Kempadang/Kampung Soi,Kuantan,Bungalow / Detached House,335000.0,1800.0,3.0,2.0,0.3021,lowest asking price within budget,ok
+rule_based,Q047,train,6,4.0,1944.0,Pantai Selamat,Kuantan,Bungalow / Detached House,370000.0,1800.0,3.0,3.0,0.2292,lowest asking price within budget,ok
+rule_based,Q047,train,6,5.0,2009.0,Sungai Isap Damai,Kuantan,Bungalow / Detached House,380000.0,1500.0,4.0,4.0,0.2083,lowest asking price within budget,ok
+rule_based,Q048,train,10,1.0,1902.0,Timurbay Seafront Residence,Kuantan,Condominium,408000.0,541.0,1.0,1.0,0.9836,closest built-up area to the preferred size,ok
+rule_based,Q048,train,10,2.0,1912.0,Timurbay Seafront Residence,Kuantan,Condominium,368000.0,541.0,1.0,1.0,0.9836,closest built-up area to the preferred size,ok
+rule_based,Q048,train,10,3.0,1956.0,Timurbay Seafront Residence,Kuantan,Condominium,385000.0,541.0,1.0,1.0,0.9836,closest built-up area to the preferred size,ok
+rule_based,Q048,train,10,4.0,1988.0,Timurbay Seafront Residence,Kuantan,Condominium,420000.0,541.0,1.0,1.0,0.9836,closest built-up area to the preferred size,ok
+rule_based,Q048,train,10,5.0,2037.0,Timur Bay,Kuantan,Condominium,380000.0,541.0,1.0,1.0,0.9836,closest built-up area to the preferred size,ok
+rule_based,Q049,validation,10,1.0,1912.0,Timurbay Seafront Residence,Kuantan,Condominium,368000.0,541.0,1.0,1.0,0.1238,lowest asking price within budget,ok
+rule_based,Q049,validation,10,2.0,1847.0,Timurbay Seafront Residence,Kuantan,Condominium,375000.0,514.0,1.0,1.0,0.1071,lowest asking price within budget,ok
+rule_based,Q049,validation,10,3.0,2037.0,Timur Bay,Kuantan,Condominium,380000.0,541.0,1.0,1.0,0.0952,lowest asking price within budget,ok
+rule_based,Q049,validation,10,4.0,2059.0,Timur Bay,Kuantan,Condominium,380000.0,536.0,1.0,1.0,0.0952,lowest asking price within budget,ok
+rule_based,Q049,validation,10,5.0,1956.0,Timurbay Seafront Residence,Kuantan,Condominium,385000.0,541.0,1.0,1.0,0.0833,lowest asking price within budget,ok
+rule_based,Q050,train,2,1.0,1885.0,Balok Makmur,Kuantan,Link Bungalow / Semi-Detached,430000.0,1500.0,4.0,2.0,1.0,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q050,train,2,2.0,1856.0,Bandar Putra,Kuantan,Link Bungalow / Semi-Detached,680000.0,2100.0,4.0,5.0,0.6,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q051,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q052,train,1,1.0,1885.0,Balok Makmur,Kuantan,Link Bungalow / Semi-Detached,430000.0,1500.0,4.0,2.0,0.2456,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q053,train,18,1.0,1862.0,Alam Perdana,Kuantan,Link Bungalow / Semi-Detached,460000.0,2000.0,4.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q053,train,18,2.0,1874.0,Indera Mahkota 15,Kuantan,Link Bungalow / Semi-Detached,490000.0,1500.0,5.0,4.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q053,train,18,3.0,1895.0,Permatang Badak,Kuantan,Link Bungalow / Semi-Detached,370000.0,1500.0,4.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q053,train,18,4.0,1922.0,Perumahan Astana Permai,Kuantan,Link Bungalow / Semi-Detached,450000.0,1500.0,4.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q053,train,18,5.0,1924.0,Kotasas,Kuantan,Link Bungalow / Semi-Detached,400000.0,1800.0,4.0,2.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q054,train,25,1.0,1865.0,Bukit Setongkol,Kuantan,Terrace House,450000.0,1200.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q054,train,25,2.0,1886.0,Bukit Ubi,Kuantan,Terrace House,470000.0,900.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q054,train,25,3.0,1893.0,Air Putih,Kuantan,Terrace House,460000.0,1200.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q054,train,25,4.0,1905.0,Perumahan Atabara Perdana,Kuantan,Terrace House,428000.0,1000.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q054,train,25,5.0,1925.0,Seri Teruntum,Kuantan,Terrace House,450000.0,1320.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q055,validation,20,1.0,2003.0,Bandar Damansara Kuantan,Kuantan,Terrace House,300000.0,1100.0,4.0,2.0,0.2105,lowest asking price within budget,ok
+rule_based,Q055,validation,20,2.0,2029.0,Mahkota Permai,Kuantan,Terrace House,300000.0,1000.0,4.0,4.0,0.2105,lowest asking price within budget,ok
+rule_based,Q055,validation,20,3.0,1971.0,Taman Sri Mahkota Jaya,Kuantan,Terrace House,315000.0,1100.0,5.0,3.0,0.1711,lowest asking price within budget,ok
+rule_based,Q055,validation,20,4.0,2036.0,Indera Mahkota 15,Kuantan,Terrace House,320000.0,1657.0,4.0,2.0,0.1579,lowest asking price within budget,ok
+rule_based,Q055,validation,20,5.0,1947.0,Taman Psj Sungai Karang Damai,Kuantan,Terrace House,325000.0,900.0,5.0,4.0,0.1447,lowest asking price within budget,ok
+rule_based,Q056,train,32,1.0,1871.0,Taman Perumahan Sungai Soi Jaya (P/Lot 134832),Kuantan,Terrace House,380000.0,1200.0,4.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q056,train,32,2.0,1907.0,Balok Makmur,Kuantan,Terrace House,370000.0,1200.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q056,train,32,3.0,1917.0,Semambu I,Kuantan,Terrace House,398000.0,1200.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q056,train,32,4.0,2025.0,Taman Pandan Damai 1,Kuantan,Terrace House,350000.0,1200.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q056,train,32,5.0,2030.0,Bandar Putra,Kuantan,Terrace House,365000.0,1200.0,5.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q057,test,1,1.0,1917.0,Semambu I,Kuantan,Terrace House,398000.0,1200.0,4.0,3.0,0.005,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q058,train,38,1.0,3154.0,Mjc-Courtyard Sanctuary Apartment,Kuching,Condominium,315000.0,806.0,3.0,2.0,0.6205,lowest asking price within budget,ok
+rule_based,Q058,train,38,2.0,3152.0,Kuching,Kuching,Condominium,330000.0,978.0,3.0,2.0,0.6024,lowest asking price within budget,ok
+rule_based,Q058,train,38,3.0,3092.0,Taman Matang Jaya,Kuching,Condominium,340000.0,915.0,3.0,2.0,0.5904,lowest asking price within budget,ok
+rule_based,Q058,train,38,4.0,3004.0,Mjc-Upper Sanctuary Condominium,Kuching,Condominium,380000.0,986.0,3.0,2.0,0.5422,lowest asking price within budget,ok
+rule_based,Q058,train,38,5.0,3003.0,Skyvilla Condominium,Kuching,Condominium,420000.0,1110.0,3.0,2.0,0.494,lowest asking price within budget,ok
+rule_based,Q059,train,32,1.0,3046.0,Skyvilla Condominium,Kuching,Condominium,589911.0,1152.0,3.0,2.0,0.9983,closest built-up area to the preferred size,ok
+rule_based,Q059,train,32,2.0,3063.0,The Charlotte @Pending,Kuching,Condominium,581000.0,1162.0,3.0,2.0,0.9896,closest built-up area to the preferred size,ok
+rule_based,Q059,train,32,3.0,3062.0,The Charlotte @Pending,Kuching,Condominium,527151.0,1127.0,3.0,2.0,0.98,closest built-up area to the preferred size,ok
+rule_based,Q059,train,32,4.0,3113.0,Kuching,Kuching,Condominium,650000.0,1127.0,3.0,2.0,0.98,closest built-up area to the preferred size,ok
+rule_based,Q059,train,32,5.0,3003.0,Skyvilla Condominium,Kuching,Condominium,420000.0,1110.0,3.0,2.0,0.9652,closest built-up area to the preferred size,ok
+rule_based,Q060,train,38,1.0,3154.0,Mjc-Courtyard Sanctuary Apartment,Kuching,Condominium,315000.0,806.0,3.0,2.0,0.7308,lowest asking price within budget,ok
+rule_based,Q060,train,38,2.0,3152.0,Kuching,Kuching,Condominium,330000.0,978.0,3.0,2.0,0.7179,lowest asking price within budget,ok
+rule_based,Q060,train,38,3.0,3092.0,Taman Matang Jaya,Kuching,Condominium,340000.0,915.0,3.0,2.0,0.7094,lowest asking price within budget,ok
+rule_based,Q060,train,38,4.0,3004.0,Mjc-Upper Sanctuary Condominium,Kuching,Condominium,380000.0,986.0,3.0,2.0,0.6752,lowest asking price within budget,ok
+rule_based,Q060,train,38,5.0,3003.0,Skyvilla Condominium,Kuching,Condominium,420000.0,1110.0,3.0,2.0,0.641,lowest asking price within budget,ok
+rule_based,Q061,train,11,1.0,3051.0,Taman Siburan 2,Kuching,Link Bungalow / Semi-Detached,798000.0,2321.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q061,train,11,2.0,3080.0,Taman Wangsa 3,Kuching,Link Bungalow / Semi-Detached,699000.0,1378.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q061,train,11,3.0,3104.0,Taman Stapok,Kuching,Link Bungalow / Semi-Detached,870000.0,2800.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q061,train,11,4.0,3024.0,Holmes Avenue @Matang,Kuching,Link Bungalow / Semi-Detached,498000.0,1383.0,3.0,3.0,0.5,most of the selected facility types present nearby,ok
+rule_based,Q061,train,11,5.0,3028.0,Taman Desa Moyan,Kuching,Link Bungalow / Semi-Detached,888000.0,3911.0,5.0,4.0,0.5,most of the selected facility types present nearby,ok
+rule_based,Q062,train,14,1.0,3123.0,Sunset Villa Tabuan Park,Kuching,Link Bungalow / Semi-Detached,1688000.0,2095.0,4.0,3.0,0.9976,closest built-up area to the preferred size,ok
+rule_based,Q062,train,14,2.0,3051.0,Taman Siburan 2,Kuching,Link Bungalow / Semi-Detached,798000.0,2321.0,4.0,4.0,0.8948,closest built-up area to the preferred size,ok
+rule_based,Q062,train,14,3.0,3094.0,Taman Kopodims,Kuching,Link Bungalow / Semi-Detached,625000.0,1560.0,3.0,2.0,0.7429,closest built-up area to the preferred size,ok
+rule_based,Q062,train,14,4.0,3058.0,Taman Bigawa,Kuching,Link Bungalow / Semi-Detached,1355800.0,2679.0,4.0,4.0,0.7243,closest built-up area to the preferred size,ok
+rule_based,Q062,train,14,5.0,3111.0,Jalan Dogan,Kuching,Link Bungalow / Semi-Detached,828000.0,1500.0,4.0,2.0,0.7143,closest built-up area to the preferred size,ok
+rule_based,Q063,train,1,1.0,3101.0,Taman Matang Jaya,Kuching,Terrace House,498000.0,1600.0,4.0,3.0,0.2986,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q064,train,45,1.0,2996.0,Kuching,Kuching,Terrace House,460000.0,2016.0,5.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q064,train,45,2.0,3010.0,Batu Kawa,Kuching,Terrace House,630000.0,1690.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q064,train,45,3.0,3011.0,Batu Kawa,Kuching,Terrace House,530000.0,1507.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q064,train,45,4.0,3012.0,Jalan Stephen Yong,Kuching,Terrace House,720000.0,2040.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q064,train,45,5.0,3014.0,Jalan Stephen Yong,Kuching,Terrace House,625000.0,2040.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q065,train,1,1.0,3101.0,Taman Matang Jaya,Kuching,Terrace House,498000.0,1600.0,4.0,3.0,0.2886,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q066,train,1,1.0,3067.0,Westhill Villa @ Matang,Kuching,Terrace House,428000.0,1393.0,3.0,2.0,0.995,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q067,train,12,1.0,98.0,Bandar Putra Kulai,Kulai,Terrace House,468000.0,1400.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q067,train,12,2.0,200.0,Taman Wawasan Kelapa Sawit,Kulai,Terrace House,345000.0,1400.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q067,train,12,3.0,193.0,Taman Scientex Utama,Kulai,Terrace House,460000.0,1540.0,4.0,3.0,0.9,closest built-up area to the preferred size,ok
+rule_based,Q067,train,12,4.0,36.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1180.0,3.0,2.0,0.8429,closest built-up area to the preferred size,ok
+rule_based,Q067,train,12,5.0,137.0,Taman Scientex Utama,Kulai,Terrace House,455000.0,1170.0,4.0,3.0,0.8357,closest built-up area to the preferred size,ok
+rule_based,Q068,train,12,1.0,137.0,Taman Scientex Utama,Kulai,Terrace House,455000.0,1170.0,4.0,3.0,0.9826,closest built-up area to the preferred size,ok
+rule_based,Q068,train,12,2.0,171.0,Taman Scientex Jaya,Kulai,Terrace House,480000.0,1170.0,4.0,3.0,0.9826,closest built-up area to the preferred size,ok
+rule_based,Q068,train,12,3.0,98.0,Bandar Putra Kulai,Kulai,Terrace House,468000.0,1400.0,3.0,2.0,0.7826,closest built-up area to the preferred size,ok
+rule_based,Q068,train,12,4.0,175.0,Bandar Putra Kulai,Kulai,Terrace House,475000.0,1400.0,4.0,2.0,0.7826,closest built-up area to the preferred size,ok
+rule_based,Q068,train,12,5.0,200.0,Taman Wawasan Kelapa Sawit,Kulai,Terrace House,345000.0,1400.0,3.0,2.0,0.7826,closest built-up area to the preferred size,ok
+rule_based,Q069,train,6,1.0,1264.0,Taman Tanjung Minyak Setia (P.Lot Pt 7199),Melaka Tengah,Bungalow / Detached House,393600.0,1500.0,4.0,3.0,0.5141,lowest asking price within budget,ok
+rule_based,Q069,train,6,2.0,1299.0,One Krubong Lake Garden,Melaka Tengah,Bungalow / Detached House,595000.0,2000.0,4.0,2.0,0.2654,lowest asking price within budget,ok
+rule_based,Q069,train,6,3.0,1302.0,Taman Krubong Perdana,Melaka Tengah,Bungalow / Detached House,595000.0,2000.0,4.0,2.0,0.2654,lowest asking price within budget,ok
+rule_based,Q069,train,6,4.0,1244.0,Taman Paya Rumput Perdana,Melaka Tengah,Bungalow / Detached House,600000.0,4000.0,4.0,2.0,0.2593,lowest asking price within budget,ok
+rule_based,Q069,train,6,5.0,1321.0,Taman Bertam Height,Melaka Tengah,Bungalow / Detached House,802500.0,4500.0,4.0,4.0,0.0093,lowest asking price within budget,ok
+rule_based,Q070,validation,3,1.0,1262.0,Taman Ayer Keroh Heights I (Puncak Bukit Bru,Melaka Tengah,Bungalow / Detached House,2400008.0,5600.0,7.0,7.0,1.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q070,validation,3,2.0,1250.0,Taman Belia Antarabangsa,Melaka Tengah,Bungalow / Detached House,1250000.0,1258.0,5.0,3.0,0.5,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q070,validation,3,3.0,1255.0,Taman Belia Antarabangsa,Melaka Tengah,Bungalow / Detached House,2400000.0,5600.0,7.0,7.0,0.5,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q071,validation,2,1.0,1249.0,Crystal Bay,Melaka Tengah,Link Bungalow / Semi-Detached,400000.0,3757.0,4.0,2.0,0.5122,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q071,validation,2,2.0,1261.0,Taman Tasik Utama,Melaka Tengah,Link Bungalow / Semi-Detached,440000.0,1650.0,5.0,3.0,0.4634,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q072,train,6,1.0,1466.0,Taman Desa Bertam,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,0.1364,lowest asking price within budget,ok
+rule_based,Q072,train,6,2.0,1467.0,Taman Paya Emas,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,0.1364,lowest asking price within budget,ok
+rule_based,Q072,train,6,3.0,1263.0,Batu Berendam,Melaka Tengah,Terrace House,480000.0,1540.0,4.0,3.0,0.1273,lowest asking price within budget,ok
+rule_based,Q072,train,6,4.0,1527.0,Taman Batu Berendam Putra,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.0091,lowest asking price within budget,ok
+rule_based,Q072,train,6,5.0,1529.0,Taman Sutera Wangi,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.0091,lowest asking price within budget,ok
+rule_based,Q073,train,10,1.0,1466.0,Taman Desa Bertam,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q073,train,10,2.0,1467.0,Taman Paya Emas,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q073,train,10,3.0,1527.0,Taman Batu Berendam Putra,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q073,train,10,4.0,1529.0,Taman Sutera Wangi,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q073,train,10,5.0,1535.0,Taman Ara Indah,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q074,train,5,1.0,1396.0,Taman Bukit Katil Damai 2,Melaka Tengah,Terrace House,482000.0,2800.0,6.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q074,train,5,2.0,1265.0,Taman Tasik Utama,Melaka Tengah,Terrace House,468000.0,2700.0,4.0,3.0,0.9643,closest built-up area to the preferred size,ok
+rule_based,Q074,train,5,3.0,1266.0,Taman Tasik Utama,Melaka Tengah,Terrace House,468000.0,2700.0,4.0,3.0,0.9643,closest built-up area to the preferred size,ok
+rule_based,Q074,train,5,4.0,1283.0,Taman Ayer Keroh Heights I (Puncak Bukit Bru,Melaka Tengah,Terrace House,468000.0,2700.0,4.0,3.0,0.9643,closest built-up area to the preferred size,ok
+rule_based,Q074,train,5,5.0,1254.0,Taman Bachang Baru,Melaka Tengah,Terrace House,340000.0,1850.0,5.0,3.0,0.6607,closest built-up area to the preferred size,ok
+rule_based,Q075,test,4,1.0,2886.0,Taman Penampang Apartment Phase 2T,Penampang,Condominium,320000.0,1043.0,3.0,2.0,0.1795,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q075,test,4,2.0,2981.0,Beverly Hills 3,Penampang,Condominium,350000.0,860.0,3.0,2.0,0.1026,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q075,test,4,3.0,2918.0,Rainfield Court Apartment,Penampang,Condominium,360000.0,1063.0,3.0,2.0,0.0769,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q075,test,4,4.0,2983.0,Taman Penampang,Penampang,Condominium,360000.0,1043.0,3.0,2.0,0.0769,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q076,train,8,1.0,2886.0,Taman Penampang Apartment Phase 2T,Penampang,Condominium,320000.0,1043.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q076,train,8,2.0,2898.0,The Gardens Condominium,Penampang,Condominium,460000.0,848.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q076,train,8,3.0,2918.0,Rainfield Court Apartment,Penampang,Condominium,360000.0,1063.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q076,train,8,4.0,2926.0,The Gardens Condominium,Penampang,Condominium,470000.0,848.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q076,train,8,5.0,2977.0,The Light Residence,Penampang,Condominium,700000.0,1329.0,3.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q077,validation,15,1.0,1172.0,Elevia Residences,Petaling,Bungalow / Detached House,1000000.0,2703.0,4.0,4.0,0.6904,lowest asking price within budget,ok
+rule_based,Q077,validation,15,2.0,1110.0,Elevia Residences,Petaling,Bungalow / Detached House,1199000.0,2703.0,4.0,4.0,0.6288,lowest asking price within budget,ok
+rule_based,Q077,validation,15,3.0,963.0,Taman Tasik Prima,Petaling,Bungalow / Detached House,1600000.0,4000.0,6.0,6.0,0.5046,lowest asking price within budget,ok
+rule_based,Q077,validation,15,4.0,941.0,Laman Granview,Petaling,Bungalow / Detached House,1800000.0,3940.0,5.0,5.0,0.4427,lowest asking price within budget,ok
+rule_based,Q077,validation,15,5.0,584.0,Casa Idaman,Petaling,Bungalow / Detached House,1860000.0,3760.0,6.0,5.0,0.4241,lowest asking price within budget,ok
+rule_based,Q078,train,16,1.0,1172.0,Elevia Residences,Petaling,Bungalow / Detached House,1000000.0,2703.0,4.0,4.0,0.705,lowest asking price within budget,ok
+rule_based,Q078,train,16,2.0,1110.0,Elevia Residences,Petaling,Bungalow / Detached House,1199000.0,2703.0,4.0,4.0,0.6463,lowest asking price within budget,ok
+rule_based,Q078,train,16,3.0,963.0,Taman Tasik Prima,Petaling,Bungalow / Detached House,1600000.0,4000.0,6.0,6.0,0.528,lowest asking price within budget,ok
+rule_based,Q078,train,16,4.0,941.0,Laman Granview,Petaling,Bungalow / Detached House,1800000.0,3940.0,5.0,5.0,0.469,lowest asking price within budget,ok
+rule_based,Q078,train,16,5.0,584.0,Casa Idaman,Petaling,Bungalow / Detached House,1860000.0,3760.0,6.0,5.0,0.4513,lowest asking price within budget,ok
+rule_based,Q079,validation,37,1.0,518.0,Pangsapuri Damai,Petaling,Condominium,300000.0,850.0,3.0,2.0,0.4545,lowest asking price within budget,ok
+rule_based,Q079,validation,37,2.0,531.0,Prima U1,Petaling,Condominium,320000.0,980.0,3.0,2.0,0.4182,lowest asking price within budget,ok
+rule_based,Q079,validation,37,3.0,595.0,Prima U1 Condominium,Petaling,Condominium,320000.0,980.0,3.0,2.0,0.4182,lowest asking price within budget,ok
+rule_based,Q079,validation,37,4.0,1024.0,Koi Tropika,Petaling,Condominium,330000.0,1018.0,3.0,2.0,0.4,lowest asking price within budget,ok
+rule_based,Q079,validation,37,5.0,607.0,Prima U1 Condominium,Petaling,Condominium,335000.0,980.0,3.0,2.0,0.3909,lowest asking price within budget,ok
+rule_based,Q080,train,116,1.0,518.0,Pangsapuri Damai,Petaling,Condominium,300000.0,850.0,3.0,2.0,0.4643,lowest asking price within budget,ok
+rule_based,Q080,train,116,2.0,506.0,Indah Alam,Petaling,Condominium,305000.0,838.0,2.0,1.0,0.4554,lowest asking price within budget,ok
+rule_based,Q080,train,116,3.0,897.0,Alam Idaman,Petaling,Condominium,310000.0,807.0,2.0,2.0,0.4464,lowest asking price within budget,ok
+rule_based,Q080,train,116,4.0,554.0,Alam Idaman,Petaling,Condominium,318000.0,881.0,2.0,2.0,0.4321,lowest asking price within budget,ok
+rule_based,Q080,train,116,5.0,556.0,Alam Idaman,Petaling,Condominium,318000.0,807.0,2.0,2.0,0.4321,lowest asking price within budget,ok
+rule_based,Q081,train,86,1.0,1121.0,Trefoil,Petaling,Condominium,399000.0,799.0,2.0,2.0,0.9988,closest built-up area to the preferred size,ok
+rule_based,Q081,train,86,2.0,556.0,Alam Idaman,Petaling,Condominium,318000.0,807.0,2.0,2.0,0.9912,closest built-up area to the preferred size,ok
+rule_based,Q081,train,86,3.0,897.0,Alam Idaman,Petaling,Condominium,310000.0,807.0,2.0,2.0,0.9912,closest built-up area to the preferred size,ok
+rule_based,Q081,train,86,4.0,578.0,Trefoil,Petaling,Condominium,418000.0,791.0,1.0,1.0,0.9888,closest built-up area to the preferred size,ok
+rule_based,Q081,train,86,5.0,605.0,Metia Residence,Petaling,Condominium,360000.0,809.0,2.0,2.0,0.9888,closest built-up area to the preferred size,ok
+rule_based,Q082,train,22,1.0,447.0,Sri Permata,Petaling,Condominium,385000.0,1100.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q082,train,22,2.0,465.0,Kemuncak Shah Alam,Petaling,Condominium,365000.0,1033.0,2.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q082,train,22,3.0,479.0,Prima U1 Condominium,Petaling,Condominium,390000.0,980.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q082,train,22,4.0,518.0,Pangsapuri Damai,Petaling,Condominium,300000.0,850.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q082,train,22,5.0,524.0,Sri Permata,Petaling,Condominium,390000.0,1052.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q083,train,47,1.0,897.0,Alam Idaman,Petaling,Condominium,310000.0,807.0,2.0,2.0,0.3542,lowest asking price within budget,ok
+rule_based,Q083,train,47,2.0,554.0,Alam Idaman,Petaling,Condominium,318000.0,881.0,2.0,2.0,0.3375,lowest asking price within budget,ok
+rule_based,Q083,train,47,3.0,556.0,Alam Idaman,Petaling,Condominium,318000.0,807.0,2.0,2.0,0.3375,lowest asking price within budget,ok
+rule_based,Q083,train,47,4.0,739.0,Alam Prima,Petaling,Condominium,330000.0,850.0,3.0,2.0,0.3125,lowest asking price within budget,ok
+rule_based,Q083,train,47,5.0,454.0,Alam Sanjung Serviced Apartment,Petaling,Condominium,340000.0,912.0,3.0,2.0,0.2917,lowest asking price within budget,ok
+rule_based,Q084,test,99,1.0,897.0,Alam Idaman,Petaling,Condominium,310000.0,807.0,2.0,2.0,0.6125,lowest asking price within budget,ok
+rule_based,Q084,test,99,2.0,554.0,Alam Idaman,Petaling,Condominium,318000.0,881.0,2.0,2.0,0.6025,lowest asking price within budget,ok
+rule_based,Q084,test,99,3.0,556.0,Alam Idaman,Petaling,Condominium,318000.0,807.0,2.0,2.0,0.6025,lowest asking price within budget,ok
+rule_based,Q084,test,99,4.0,739.0,Alam Prima,Petaling,Condominium,330000.0,850.0,3.0,2.0,0.5875,lowest asking price within budget,ok
+rule_based,Q084,test,99,5.0,454.0,Alam Sanjung Serviced Apartment,Petaling,Condominium,340000.0,912.0,3.0,2.0,0.575,lowest asking price within budget,ok
+rule_based,Q085,train,33,1.0,541.0,Seksyen 7,Petaling,Link Bungalow / Semi-Detached,1400000.0,3200.0,6.0,5.0,0.5796,lowest asking price within budget,ok
+rule_based,Q085,train,33,2.0,3242.0,Avanti Residences,Petaling,Link Bungalow / Semi-Detached,1450000.0,3250.0,8.0,6.0,0.5646,lowest asking price within budget,ok
+rule_based,Q085,train,33,3.0,535.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1500000.0,3200.0,4.0,5.0,0.5495,lowest asking price within budget,ok
+rule_based,Q085,train,33,4.0,920.0,Laman Granview,Petaling,Link Bungalow / Semi-Detached,1550000.0,3800.0,7.0,5.0,0.5345,lowest asking price within budget,ok
+rule_based,Q085,train,33,5.0,1191.0,Laman Granview,Petaling,Link Bungalow / Semi-Detached,1550000.0,3800.0,6.0,5.0,0.5345,lowest asking price within budget,ok
+rule_based,Q086,train,19,1.0,453.0,Setia Utama 4,Petaling,Link Bungalow / Semi-Detached,1550000.0,2700.0,6.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q086,train,19,2.0,508.0,Setia Utama 4,Petaling,Link Bungalow / Semi-Detached,1450000.0,2700.0,5.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q086,train,19,3.0,510.0,Setia Utama 4,Petaling,Link Bungalow / Semi-Detached,1450000.0,2700.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q086,train,19,4.0,519.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1900000.0,4700.0,4.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q086,train,19,5.0,522.0,Setia Utama 4,Petaling,Link Bungalow / Semi-Detached,1600000.0,2500.0,5.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q087,test,35,1.0,1058.0,Taman Mutiara Indah,Petaling,Link Bungalow / Semi-Detached,738000.0,2000.0,4.0,3.0,0.7151,lowest asking price within budget,ok
+rule_based,Q087,test,35,2.0,541.0,Seksyen 7,Petaling,Link Bungalow / Semi-Detached,1400000.0,3200.0,6.0,5.0,0.4595,lowest asking price within budget,ok
+rule_based,Q087,test,35,3.0,758.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1400000.0,2700.0,4.0,3.0,0.4595,lowest asking price within budget,ok
+rule_based,Q087,test,35,4.0,508.0,Setia Utama 4,Petaling,Link Bungalow / Semi-Detached,1450000.0,2700.0,5.0,4.0,0.4402,lowest asking price within budget,ok
+rule_based,Q087,test,35,5.0,510.0,Setia Utama 4,Petaling,Link Bungalow / Semi-Detached,1450000.0,2700.0,4.0,4.0,0.4402,lowest asking price within budget,ok
+rule_based,Q088,train,106,1.0,3187.0,Taman Puchong Utama,Petaling,Terrace House,470000.0,1400.0,4.0,3.0,0.5727,lowest asking price within budget,ok
+rule_based,Q088,train,106,2.0,918.0,Taman Tasik Prima,Petaling,Terrace House,538000.0,1650.0,4.0,4.0,0.5109,lowest asking price within budget,ok
+rule_based,Q088,train,106,3.0,919.0,Cascadia Lake Vista,Petaling,Terrace House,538000.0,1650.0,4.0,4.0,0.5109,lowest asking price within budget,ok
+rule_based,Q088,train,106,4.0,1051.0,Taman Puchong Tekali,Petaling,Terrace House,538000.0,1400.0,4.0,3.0,0.5109,lowest asking price within budget,ok
+rule_based,Q088,train,106,5.0,496.0,Setia Impian,Petaling,Terrace House,539000.0,1500.0,4.0,3.0,0.51,lowest asking price within budget,ok
+rule_based,Q089,train,82,1.0,459.0,Setia Impian,Petaling,Terrace House,699000.0,1500.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q089,train,82,2.0,468.0,Taman Ttdi Jaya,Petaling,Terrace House,630000.0,1700.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q089,train,82,3.0,469.0,Setia Permai 1,Petaling,Terrace House,690000.0,1715.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q089,train,82,4.0,471.0,Setia Impian,Petaling,Terrace House,569000.0,1500.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q089,train,82,5.0,483.0,Jalan Arca,Petaling,Terrace House,628000.0,1700.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q090,train,153,1.0,494.0,Setia Permai 2,Petaling,Terrace House,950000.0,2000.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q090,train,153,2.0,499.0,Setia Impian,Petaling,Terrace House,780000.0,2000.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q090,train,153,3.0,667.0,Setia Indah,Petaling,Terrace House,790000.0,2000.0,5.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q090,train,153,4.0,738.0,Setia Indah 12,Petaling,Terrace House,800000.0,2000.0,5.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q090,train,153,5.0,934.0,Bandar Puteri Puchong,Petaling,Terrace House,910000.0,2000.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q091,train,82,1.0,468.0,Taman Ttdi Jaya,Petaling,Terrace House,630000.0,1700.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q091,train,82,2.0,488.0,Alam D'16,Petaling,Terrace House,780000.0,2018.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q091,train,82,3.0,509.0,Seksyen 7,Petaling,Terrace House,690000.0,1875.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q091,train,82,4.0,538.0,Taman Ttdi Jaya,Petaling,Terrace House,550000.0,1500.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q091,train,82,5.0,651.0,Alam D'16,Petaling,Terrace House,625000.0,2116.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q092,test,140,1.0,3187.0,Taman Puchong Utama,Petaling,Terrace House,470000.0,1400.0,4.0,3.0,0.7063,lowest asking price within budget,ok
+rule_based,Q092,test,140,2.0,1051.0,Taman Puchong Tekali,Petaling,Terrace House,538000.0,1400.0,4.0,3.0,0.6638,lowest asking price within budget,ok
+rule_based,Q092,test,140,3.0,496.0,Setia Impian,Petaling,Terrace House,539000.0,1500.0,4.0,3.0,0.6631,lowest asking price within budget,ok
+rule_based,Q092,test,140,4.0,538.0,Taman Ttdi Jaya,Petaling,Terrace House,550000.0,1500.0,4.0,3.0,0.6562,lowest asking price within budget,ok
+rule_based,Q092,test,140,5.0,471.0,Setia Impian,Petaling,Terrace House,569000.0,1500.0,4.0,3.0,0.6444,lowest asking price within budget,ok
+rule_based,Q093,train,172,1.0,3187.0,Taman Puchong Utama,Petaling,Terrace House,470000.0,1400.0,4.0,3.0,0.6867,lowest asking price within budget,ok
+rule_based,Q093,train,172,2.0,918.0,Taman Tasik Prima,Petaling,Terrace House,538000.0,1650.0,4.0,4.0,0.6413,lowest asking price within budget,ok
+rule_based,Q093,train,172,3.0,919.0,Cascadia Lake Vista,Petaling,Terrace House,538000.0,1650.0,4.0,4.0,0.6413,lowest asking price within budget,ok
+rule_based,Q093,train,172,4.0,1051.0,Taman Puchong Tekali,Petaling,Terrace House,538000.0,1400.0,4.0,3.0,0.6413,lowest asking price within budget,ok
+rule_based,Q093,train,172,5.0,496.0,Setia Impian,Petaling,Terrace House,539000.0,1500.0,4.0,3.0,0.6407,lowest asking price within budget,ok
+rule_based,Q094,test,151,1.0,3187.0,Taman Puchong Utama,Petaling,Terrace House,470000.0,1400.0,4.0,3.0,0.759,lowest asking price within budget,ok
+rule_based,Q094,test,151,2.0,1051.0,Taman Puchong Tekali,Petaling,Terrace House,538000.0,1400.0,4.0,3.0,0.7241,lowest asking price within budget,ok
+rule_based,Q094,test,151,3.0,496.0,Setia Impian,Petaling,Terrace House,539000.0,1500.0,4.0,3.0,0.7236,lowest asking price within budget,ok
+rule_based,Q094,test,151,4.0,538.0,Taman Ttdi Jaya,Petaling,Terrace House,550000.0,1500.0,4.0,3.0,0.7179,lowest asking price within budget,ok
+rule_based,Q094,test,151,5.0,471.0,Setia Impian,Petaling,Terrace House,569000.0,1500.0,4.0,3.0,0.7082,lowest asking price within budget,ok
+rule_based,Q095,train,8,1.0,1704.0,Park Residence Springhill,Port Dickson,Terrace House,380008.0,2200.0,4.0,3.0,0.2963,lowest asking price within budget,ok
+rule_based,Q095,train,8,2.0,1764.0,Park Residence Springhill,Port Dickson,Terrace House,390008.0,1500.0,4.0,3.0,0.2778,lowest asking price within budget,ok
+rule_based,Q095,train,8,3.0,1739.0,Taman Impian Putra (Taman Crystal),Port Dickson,Terrace House,400008.0,1760.0,4.0,3.0,0.2592,lowest asking price within budget,ok
+rule_based,Q095,train,8,4.0,1711.0,Bandar Springhill,Port Dickson,Terrace House,410054.0,1650.0,4.0,3.0,0.2406,lowest asking price within budget,ok
+rule_based,Q095,train,8,5.0,1684.0,Taman Bayu Indera,Port Dickson,Terrace House,450008.0,2000.0,4.0,3.0,0.1667,lowest asking price within budget,ok
+rule_based,Q096,train,15,1.0,2745.0,Presint 8,Putrajaya,Bungalow / Detached House,2100000.0,4090.0,6.0,6.0,0.593,lowest asking price within budget,ok
+rule_based,Q096,train,15,2.0,2611.0,Presint 8,Putrajaya,Bungalow / Detached House,2200000.0,4090.0,6.0,6.0,0.5736,lowest asking price within budget,ok
+rule_based,Q096,train,15,3.0,2757.0,Astana Residence,Putrajaya,Bungalow / Detached House,2250000.0,5348.0,6.0,6.0,0.564,lowest asking price within budget,ok
+rule_based,Q096,train,15,4.0,2756.0,Astana Residence,Putrajaya,Bungalow / Detached House,2330000.0,5763.0,6.0,6.0,0.5484,lowest asking price within budget,ok
+rule_based,Q096,train,15,5.0,2678.0,Presint 14,Putrajaya,Bungalow / Detached House,2500000.0,4200.0,6.0,6.0,0.5155,lowest asking price within budget,ok
+rule_based,Q097,train,7,1.0,2611.0,Presint 8,Putrajaya,Bungalow / Detached House,2200000.0,4090.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q097,train,7,2.0,2745.0,Presint 8,Putrajaya,Bungalow / Detached House,2100000.0,4090.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q097,train,7,3.0,2607.0,Presint 16,Putrajaya,Bungalow / Detached House,2550000.0,4218.0,6.0,6.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q097,train,7,4.0,2608.0,Presint 14,Putrajaya,Bungalow / Detached House,2600000.0,4690.0,6.0,6.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q097,train,7,5.0,2678.0,Presint 14,Putrajaya,Bungalow / Detached House,2500000.0,4200.0,6.0,6.0,0.0,most of the selected facility types present nearby,ok
+rule_based,Q098,train,24,1.0,2793.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.4405,lowest asking price within budget,ok
+rule_based,Q098,train,24,2.0,2864.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.4405,lowest asking price within budget,ok
+rule_based,Q098,train,24,3.0,2665.0,Pangsapuri Putra Damai,Putrajaya,Condominium,245000.0,700.0,3.0,2.0,0.4167,lowest asking price within budget,ok
+rule_based,Q098,train,24,4.0,2783.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.4048,lowest asking price within budget,ok
+rule_based,Q098,train,24,5.0,2829.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.4048,lowest asking price within budget,ok
+rule_based,Q099,train,27,1.0,2793.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.4891,lowest asking price within budget,ok
+rule_based,Q099,train,27,2.0,2864.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.4891,lowest asking price within budget,ok
+rule_based,Q099,train,27,3.0,2665.0,Pangsapuri Putra Damai,Putrajaya,Condominium,245000.0,700.0,3.0,2.0,0.4674,lowest asking price within budget,ok
+rule_based,Q099,train,27,4.0,2783.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.4565,lowest asking price within budget,ok
+rule_based,Q099,train,27,5.0,2829.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.4565,lowest asking price within budget,ok
+rule_based,Q100,validation,18,1.0,2864.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.5727,lowest asking price within budget,ok
+rule_based,Q100,validation,18,2.0,2829.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.5455,lowest asking price within budget,ok
+rule_based,Q100,validation,18,3.0,2869.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.5455,lowest asking price within budget,ok
+rule_based,Q100,validation,18,4.0,2831.0,Pangsapuri Putra Damai,Putrajaya,Condominium,255000.0,700.0,3.0,2.0,0.5364,lowest asking price within budget,ok
+rule_based,Q100,validation,18,5.0,2848.0,Pangsapuri Putra Damai,Putrajaya,Condominium,260000.0,700.0,3.0,2.0,0.5273,lowest asking price within budget,ok
+rule_based,Q101,train,42,1.0,2587.0,Presint 18,Putrajaya,Link Bungalow / Semi-Detached,1350000.0,3200.0,6.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q101,train,42,2.0,2621.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1300000.0,3500.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q101,train,42,3.0,2680.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1500000.0,2250.0,6.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q101,train,42,4.0,2682.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,2700.0,5.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q101,train,42,5.0,2687.0,Presint 9,Putrajaya,Link Bungalow / Semi-Detached,1100000.0,3399.0,7.0,7.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q102,train,81,1.0,2594.0,Presint 18,Putrajaya,Link Bungalow / Semi-Detached,2000000.0,3600.0,6.0,6.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q102,train,81,2.0,2778.0,Presint 18,Putrajaya,Link Bungalow / Semi-Detached,1700000.0,3600.0,6.0,5.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q102,train,81,3.0,2621.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1300000.0,3500.0,6.0,6.0,0.9722,closest built-up area to the preferred size,ok
+rule_based,Q102,train,81,4.0,2691.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1300000.0,3500.0,6.0,6.0,0.9722,closest built-up area to the preferred size,ok
+rule_based,Q102,train,81,5.0,2806.0,Presint 16,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,3500.0,7.0,5.0,0.9722,closest built-up area to the preferred size,ok
+rule_based,Q103,train,48,1.0,2687.0,Presint 9,Putrajaya,Link Bungalow / Semi-Detached,1100000.0,3399.0,7.0,7.0,0.6452,lowest asking price within budget,ok
+rule_based,Q103,train,48,2.0,2612.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.6129,lowest asking price within budget,ok
+rule_based,Q103,train,48,3.0,2686.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.6129,lowest asking price within budget,ok
+rule_based,Q103,train,48,4.0,2727.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1250000.0,2900.0,5.0,5.0,0.5968,lowest asking price within budget,ok
+rule_based,Q103,train,48,5.0,2768.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1270000.0,2998.0,5.0,5.0,0.5903,lowest asking price within budget,ok
+rule_based,Q104,train,23,1.0,2597.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1450000.0,2800.0,8.0,5.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q104,train,23,2.0,2603.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1390000.0,2800.0,7.0,5.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q104,train,23,3.0,2604.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,2800.0,6.0,5.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q104,train,23,4.0,2610.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,2800.0,7.0,5.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q104,train,23,5.0,2618.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1380000.0,2800.0,6.0,5.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q105,train,42,1.0,2617.0,Presint 10,Putrajaya,Link Bungalow / Semi-Detached,1100000.0,2929.0,5.0,3.0,0.3491,lowest asking price within budget,ok
+rule_based,Q105,train,42,2.0,2687.0,Presint 9,Putrajaya,Link Bungalow / Semi-Detached,1100000.0,3399.0,7.0,7.0,0.3491,lowest asking price within budget,ok
+rule_based,Q105,train,42,3.0,2612.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.2899,lowest asking price within budget,ok
+rule_based,Q105,train,42,4.0,2686.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.2899,lowest asking price within budget,ok
+rule_based,Q105,train,42,5.0,2791.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,4.0,5.0,0.2899,lowest asking price within budget,ok
+rule_based,Q106,test,78,1.0,2580.0,Precinct 11,Putrajaya,Terrace House,1080000.0,2098.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q106,test,78,2.0,2581.0,Presint 16,Putrajaya,Terrace House,1250000.0,3000.0,6.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q106,test,78,3.0,2583.0,Presint 14,Putrajaya,Terrace House,800000.0,1903.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q106,test,78,4.0,2590.0,Precinct 11,Putrajaya,Terrace House,850000.0,2100.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q106,test,78,5.0,2593.0,Precinct 11,Putrajaya,Terrace House,850000.0,1836.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q107,test,73,1.0,2830.0,Presint 9,Putrajaya,Terrace House,725000.0,1900.0,5.0,3.0,0.4821,lowest asking price within budget,ok
+rule_based,Q107,test,73,2.0,2845.0,Presint 9,Putrajaya,Terrace House,725000.0,1900.0,4.0,3.0,0.4821,lowest asking price within budget,ok
+rule_based,Q107,test,73,3.0,2748.0,Presint 9,Putrajaya,Terrace House,750000.0,2100.0,5.0,3.0,0.4643,lowest asking price within budget,ok
+rule_based,Q107,test,73,4.0,2822.0,Precinct 11,Putrajaya,Terrace House,750000.0,1564.0,4.0,3.0,0.4643,lowest asking price within budget,ok
+rule_based,Q107,test,73,5.0,2843.0,Presint 9,Putrajaya,Terrace House,780000.0,1601.0,5.0,3.0,0.4429,lowest asking price within budget,ok
+rule_based,Q108,train,84,1.0,2787.0,Presint 18,Putrajaya,Terrace House,969000.0,2200.0,5.0,4.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q108,train,84,2.0,2789.0,Putrajaya,Putrajaya,Terrace House,799000.0,2200.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q108,train,84,3.0,2620.0,Presint 14,Putrajaya,Terrace House,1200000.0,2144.0,4.0,3.0,0.9745,closest built-up area to the preferred size,ok
+rule_based,Q108,train,84,4.0,2696.0,Presint 14,Putrajaya,Terrace House,1200000.0,2144.0,4.0,3.0,0.9745,closest built-up area to the preferred size,ok
+rule_based,Q108,train,84,5.0,2760.0,Presint 14,Putrajaya,Terrace House,1200000.0,2144.0,4.0,3.0,0.9745,closest built-up area to the preferred size,ok
+rule_based,Q109,train,77,1.0,2590.0,Precinct 11,Putrajaya,Terrace House,850000.0,2100.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q109,train,77,2.0,2637.0,Presint 9,Putrajaya,Terrace House,840000.0,2100.0,5.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q109,train,77,3.0,2748.0,Presint 9,Putrajaya,Terrace House,750000.0,2100.0,5.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q109,train,77,4.0,2785.0,Presint 9,Putrajaya,Terrace House,850000.0,2100.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q109,train,77,5.0,2580.0,Precinct 11,Putrajaya,Terrace House,1080000.0,2098.0,4.0,3.0,0.999,closest built-up area to the preferred size,ok
+rule_based,Q110,train,4,1.0,2999.0,Uni Garden,Samarahan,Terrace House,620000.0,1.0,4.0,3.0,0.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q110,train,4,2.0,3030.0,Taman Merlin,Samarahan,Terrace House,688000.0,1841.0,4.0,3.0,0.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q110,train,4,3.0,3068.0,Taman Stakan Jaya,Samarahan,Terrace House,657800.0,1875.0,4.0,4.0,0.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q110,train,4,4.0,3069.0,Taman Holmestown,Samarahan,Terrace House,638000.0,1950.0,4.0,4.0,0.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q111,train,7,1.0,2283.0,Ceria D\' Eco Horizon,Seberang Perai Selatan,Condominium,443800.0,1000.0,3.0,2.0,0.2842,lowest asking price within budget,ok
+rule_based,Q111,train,7,2.0,2170.0,Batu Kawan,Seberang Perai Selatan,Condominium,470000.0,1000.0,3.0,2.0,0.2419,lowest asking price within budget,ok
+rule_based,Q111,train,7,3.0,2200.0,Batu Kawan,Seberang Perai Selatan,Condominium,525000.0,912.0,3.0,2.0,0.1532,lowest asking price within budget,ok
+rule_based,Q111,train,7,4.0,2309.0,Vertu Resort,Seberang Perai Selatan,Condominium,530000.0,1030.0,3.0,2.0,0.1452,lowest asking price within budget,ok
+rule_based,Q111,train,7,5.0,2471.0,Vertu Resort,Seberang Perai Selatan,Condominium,550000.0,1030.0,3.0,2.0,0.1129,lowest asking price within budget,ok
+rule_based,Q112,train,12,1.0,2375.0,Versa By Aspen,Seberang Perai Selatan,Condominium,350000.0,703.0,2.0,2.0,0.3396,lowest asking price within budget,ok
+rule_based,Q112,train,12,2.0,2326.0,Versa By Aspen,Seberang Perai Selatan,Condominium,368000.0,703.0,2.0,2.0,0.3057,lowest asking price within budget,ok
+rule_based,Q112,train,12,3.0,2344.0,Versa By Aspen,Seberang Perai Selatan,Condominium,368000.0,703.0,2.0,2.0,0.3057,lowest asking price within budget,ok
+rule_based,Q112,train,12,4.0,2374.0,Versa By Aspen,Seberang Perai Selatan,Condominium,368000.0,703.0,2.0,2.0,0.3057,lowest asking price within budget,ok
+rule_based,Q112,train,12,5.0,2193.0,Batu Kawan,Seberang Perai Selatan,Condominium,378000.0,703.0,2.0,2.0,0.2868,lowest asking price within budget,ok
+rule_based,Q113,train,17,1.0,2444.0,Taman Tangling Jaya,Seberang Perai Selatan,Terrace House,750000.0,1920.0,4.0,3.0,0.96,closest built-up area to the preferred size,ok
+rule_based,Q113,train,17,2.0,2441.0,Taman Perdana,Seberang Perai Selatan,Terrace House,750000.0,1805.0,4.0,4.0,0.9025,closest built-up area to the preferred size,ok
+rule_based,Q113,train,17,3.0,2100.0,Taman Sintar Indah,Seberang Perai Selatan,Terrace House,530000.0,1800.0,4.0,3.0,0.9,closest built-up area to the preferred size,ok
+rule_based,Q113,train,17,4.0,2439.0,Taman Puteri Emas,Seberang Perai Selatan,Terrace House,525000.0,2215.0,4.0,3.0,0.8925,closest built-up area to the preferred size,ok
+rule_based,Q113,train,17,5.0,2448.0,Bandar Tasek Mutiara,Seberang Perai Selatan,Terrace House,530000.0,1760.0,4.0,3.0,0.88,closest built-up area to the preferred size,ok
+rule_based,Q114,test,11,1.0,2107.0,Taman Kasawari,Seberang Perai Selatan,Terrace House,350000.0,1600.0,4.0,3.0,0.3519,lowest asking price within budget,ok
+rule_based,Q114,test,11,2.0,2464.0,Taman Kasawari,Seberang Perai Selatan,Terrace House,350000.0,700.0,4.0,3.0,0.3519,lowest asking price within budget,ok
+rule_based,Q114,test,11,3.0,2485.0,Taman Jentayu,Seberang Perai Selatan,Terrace House,465000.0,1100.0,4.0,3.0,0.1389,lowest asking price within budget,ok
+rule_based,Q114,test,11,4.0,2458.0,Taman Merpati Indah,Seberang Perai Selatan,Terrace House,470000.0,1600.0,4.0,3.0,0.1296,lowest asking price within budget,ok
+rule_based,Q114,test,11,5.0,2457.0,Taman Idaman,Seberang Perai Selatan,Terrace House,485000.0,1380.0,4.0,3.0,0.1019,lowest asking price within budget,ok
+rule_based,Q115,train,4,1.0,2432.0,Taman Alma Ria,Seberang Perai Tengah,Bungalow / Detached House,750000.0,1760.0,4.0,3.0,0.4,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q115,train,4,2.0,2486.0,Taman Seri Juru,Seberang Perai Tengah,Bungalow / Detached House,900000.0,2000.0,5.0,4.0,0.28,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q115,train,4,3.0,2392.0,Juru Heights,Seberang Perai Tengah,Bungalow / Detached House,1200000.0,3680.0,5.0,4.0,0.04,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q115,train,4,4.0,2489.0,Juru Heights,Seberang Perai Tengah,Bungalow / Detached House,1250000.0,3360.0,5.0,3.0,0.0,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q116,train,27,1.0,2236.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,300000.0,1100.0,4.0,2.0,0.3478,lowest asking price within budget,ok
+rule_based,Q116,train,27,2.0,2227.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.337,lowest asking price within budget,ok
+rule_based,Q116,train,27,3.0,2301.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.337,lowest asking price within budget,ok
+rule_based,Q116,train,27,4.0,2359.0,Seberang Jaya,Seberang Perai Tengah,Condominium,310000.0,1010.0,4.0,2.0,0.3261,lowest asking price within budget,ok
+rule_based,Q116,train,27,5.0,2548.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,315000.0,1100.0,4.0,2.0,0.3152,lowest asking price within budget,ok
+rule_based,Q117,test,41,1.0,2118.0,Glisten Hill Condominium @ Juru,Seberang Perai Tengah,Condominium,428084.0,1312.0,4.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q117,test,41,2.0,2141.0,Meritus Residensi,Seberang Perai Tengah,Condominium,450000.0,1000.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q117,test,41,3.0,2157.0,Prominence,Seberang Perai Tengah,Condominium,530000.0,1508.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q117,test,41,4.0,2158.0,Casa Residence,Seberang Perai Tengah,Condominium,490000.0,1280.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q117,test,41,5.0,2189.0,Bukit Mertajam,Seberang Perai Tengah,Condominium,380000.0,900.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q118,train,25,1.0,2236.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,300000.0,1100.0,4.0,2.0,0.3478,lowest asking price within budget,ok
+rule_based,Q118,train,25,2.0,2227.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.337,lowest asking price within budget,ok
+rule_based,Q118,train,25,3.0,2301.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.337,lowest asking price within budget,ok
+rule_based,Q118,train,25,4.0,2359.0,Seberang Jaya,Seberang Perai Tengah,Condominium,310000.0,1010.0,4.0,2.0,0.3261,lowest asking price within budget,ok
+rule_based,Q118,train,25,5.0,2548.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,315000.0,1100.0,4.0,2.0,0.3152,lowest asking price within budget,ok
+rule_based,Q119,train,7,1.0,2079.0,Taman Desa Impian,Seberang Perai Tengah,Link Bungalow / Semi-Detached,700000.0,1200.0,3.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q119,train,7,2.0,2080.0,Taman Impian Murni,Seberang Perai Tengah,Link Bungalow / Semi-Detached,625000.0,1200.0,3.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q119,train,7,3.0,2108.0,Taman Impian,Seberang Perai Tengah,Link Bungalow / Semi-Detached,688000.0,2500.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q119,train,7,4.0,2116.0,Taman Desa Impian,Seberang Perai Tengah,Link Bungalow / Semi-Detached,850000.0,2878.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q119,train,7,5.0,2397.0,Taman Emas,Seberang Perai Tengah,Link Bungalow / Semi-Detached,450000.0,1600.0,5.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q120,train,6,1.0,2080.0,Taman Impian Murni,Seberang Perai Tengah,Link Bungalow / Semi-Detached,625000.0,1200.0,3.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q120,train,6,2.0,2108.0,Taman Impian,Seberang Perai Tengah,Link Bungalow / Semi-Detached,688000.0,2500.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q120,train,6,3.0,2396.0,Taman Impian Jaya,Seberang Perai Tengah,Link Bungalow / Semi-Detached,680000.0,1360.0,4.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q120,train,6,4.0,2397.0,Taman Emas,Seberang Perai Tengah,Link Bungalow / Semi-Detached,450000.0,1600.0,5.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q120,train,6,5.0,2415.0,Taman Senangin,Seberang Perai Tengah,Link Bungalow / Semi-Detached,510000.0,1000.0,3.0,1.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q121,test,20,1.0,2114.0,Taman Desa Impian,Seberang Perai Tengah,Terrace House,710000.0,2348.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q121,test,20,2.0,2124.0,Royale Nova @ Tambun Royale City,Seberang Perai Tengah,Terrace House,650000.0,1600.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q121,test,20,3.0,2168.0,D'Courtyard,Seberang Perai Tengah,Terrace House,728000.0,1892.0,5.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q121,test,20,4.0,2404.0,Taman Sutera,Seberang Perai Tengah,Terrace House,540000.0,1600.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q121,test,20,5.0,2407.0,Taman Pauh Jaya,Seberang Perai Tengah,Terrace House,600000.0,2200.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q122,train,1,1.0,2402.0,Jalan Tenggiri,Seberang Perai Tengah,Terrace House,450000.0,2000.0,6.0,3.0,0.1818,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q123,train,5,1.0,2125.0,Sea View Tower,Seberang Perai Utara,Condominium,330000.0,1022.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q123,train,5,2.0,2395.0,Kondominium Cassia,Seberang Perai Utara,Condominium,380000.0,1166.0,4.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q123,train,5,3.0,2399.0,Park View Tower,Seberang Perai Utara,Condominium,340000.0,1077.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q123,train,5,4.0,2454.0,Taman Bagan Lalang Apartment,Seberang Perai Utara,Condominium,318000.0,856.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q123,train,5,5.0,2491.0,Ocean View Residences,Seberang Perai Utara,Condominium,355000.0,938.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q124,test,3,1.0,2399.0,Park View Tower,Seberang Perai Utara,Condominium,340000.0,1077.0,3.0,2.0,0.1282,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q124,test,3,2.0,2491.0,Ocean View Residences,Seberang Perai Utara,Condominium,355000.0,938.0,3.0,2.0,0.0897,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q124,test,3,3.0,2395.0,Kondominium Cassia,Seberang Perai Utara,Condominium,380000.0,1166.0,4.0,2.0,0.0256,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q125,train,14,1.0,2161.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q125,train,14,2.0,2266.0,Bukit Mertajam,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q125,train,14,3.0,2332.0,Taman Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q125,train,14,4.0,2528.0,Taman Perda Indah,Seberang Perai Utara,Terrace House,420000.0,1000.0,4.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q125,train,14,5.0,2235.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1001.0,4.0,2.0,0.999,closest built-up area to the preferred size,ok
+rule_based,Q126,train,13,1.0,2342.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,326000.0,1004.0,4.0,2.0,0.3064,lowest asking price within budget,ok
+rule_based,Q126,train,13,2.0,2343.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,326000.0,1004.0,4.0,2.0,0.3064,lowest asking price within budget,ok
+rule_based,Q126,train,13,3.0,2265.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,327800.0,1001.0,3.0,2.0,0.3026,lowest asking price within budget,ok
+rule_based,Q126,train,13,4.0,2161.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,0.2723,lowest asking price within budget,ok
+rule_based,Q126,train,13,5.0,2234.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1002.0,4.0,2.0,0.2723,lowest asking price within budget,ok
+rule_based,Q127,train,35,1.0,922.0,Taman Putra Prima,Sepang,Terrace House,880000.0,3000.0,6.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q127,train,35,2.0,923.0,Taman Putra Prima,Sepang,Terrace House,1160000.0,2200.0,5.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q127,train,35,3.0,924.0,Taman Putra Prima,Sepang,Terrace House,685000.0,1900.0,5.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q127,train,35,4.0,932.0,Taman Putra Prima,Sepang,Terrace House,718000.0,1900.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q127,train,35,5.0,945.0,Taman Putra Prima,Sepang,Terrace House,750000.0,2100.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q128,test,57,1.0,1226.0,Taman Putra Impiana,Sepang,Terrace House,550000.0,2100.0,4.0,3.0,0.6071,lowest asking price within budget,ok
+rule_based,Q128,test,57,2.0,1565.0,Acacia Park,Sepang,Terrace House,568000.0,1540.0,4.0,3.0,0.5943,lowest asking price within budget,ok
+rule_based,Q128,test,57,3.0,1185.0,Taman Putra Prima,Sepang,Terrace House,650000.0,2000.0,4.0,3.0,0.5357,lowest asking price within budget,ok
+rule_based,Q128,test,57,4.0,1033.0,Taman Putra Impiana,Sepang,Terrace House,668000.0,1800.0,4.0,3.0,0.5229,lowest asking price within budget,ok
+rule_based,Q128,test,57,5.0,924.0,Taman Putra Prima,Sepang,Terrace House,685000.0,1900.0,5.0,3.0,0.5107,lowest asking price within budget,ok
+rule_based,Q129,train,20,1.0,922.0,Taman Putra Prima,Sepang,Terrace House,880000.0,3000.0,6.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q129,train,20,2.0,924.0,Taman Putra Prima,Sepang,Terrace House,685000.0,1900.0,5.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q129,train,20,3.0,932.0,Taman Putra Prima,Sepang,Terrace House,718000.0,1900.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q129,train,20,4.0,945.0,Taman Putra Prima,Sepang,Terrace House,750000.0,2100.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q129,train,20,5.0,1063.0,Taman Putra Prima,Sepang,Terrace House,880000.0,3000.0,5.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q130,test,18,1.0,1645.0,Taman Bukti,Seremban,Bungalow / Detached House,650000.0,2800.0,9.0,6.0,0.6579,lowest asking price within budget,ok
+rule_based,Q130,test,18,2.0,1803.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,745008.0,3600.0,6.0,4.0,0.6079,lowest asking price within budget,ok
+rule_based,Q130,test,18,3.0,1570.0,Rasah Kemayan,Seremban,Bungalow / Detached House,750000.0,2800.0,5.0,4.0,0.6053,lowest asking price within budget,ok
+rule_based,Q130,test,18,4.0,1755.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,750008.0,3000.0,6.0,4.0,0.6053,lowest asking price within budget,ok
+rule_based,Q130,test,18,5.0,1812.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,760008.0,3160.0,6.0,5.0,0.6,lowest asking price within budget,ok
+rule_based,Q131,train,21,1.0,1580.0,Mahkota Hills,Seremban,Bungalow / Detached House,414912.0,1913.0,4.0,2.0,0.5231,lowest asking price within budget,ok
+rule_based,Q131,train,21,2.0,1650.0,Taman Bukit Senawang Perdana,Seremban,Bungalow / Detached House,580000.0,1500.0,4.0,2.0,0.3333,lowest asking price within budget,ok
+rule_based,Q131,train,21,3.0,1663.0,Taman Bukit Senawang Perdana,Seremban,Bungalow / Detached House,580000.0,1800.0,4.0,2.0,0.3333,lowest asking price within budget,ok
+rule_based,Q131,train,21,4.0,1773.0,Impiana Villa @Taman Tuanku Jaafar,Seremban,Bungalow / Detached House,600008.0,4499.0,4.0,2.0,0.3103,lowest asking price within budget,ok
+rule_based,Q131,train,21,5.0,1808.0,Taman Bukit Senawang Perdana,Seremban,Bungalow / Detached House,620008.0,4750.0,4.0,2.0,0.2873,lowest asking price within budget,ok
+rule_based,Q132,test,21,1.0,1580.0,Mahkota Hills,Seremban,Bungalow / Detached House,414912.0,1913.0,4.0,2.0,0.5175,lowest asking price within budget,ok
+rule_based,Q132,test,21,2.0,1650.0,Taman Bukit Senawang Perdana,Seremban,Bungalow / Detached House,580000.0,1500.0,4.0,2.0,0.3256,lowest asking price within budget,ok
+rule_based,Q132,test,21,3.0,1663.0,Taman Bukit Senawang Perdana,Seremban,Bungalow / Detached House,580000.0,1800.0,4.0,2.0,0.3256,lowest asking price within budget,ok
+rule_based,Q132,test,21,4.0,1773.0,Impiana Villa @Taman Tuanku Jaafar,Seremban,Bungalow / Detached House,600008.0,4499.0,4.0,2.0,0.3023,lowest asking price within budget,ok
+rule_based,Q132,test,21,5.0,1808.0,Taman Bukit Senawang Perdana,Seremban,Bungalow / Detached House,620008.0,4750.0,4.0,2.0,0.2791,lowest asking price within budget,ok
+rule_based,Q133,validation,13,1.0,1577.0,Safira Apartment,Seremban,Condominium,300000.0,873.0,3.0,2.0,0.2105,lowest asking price within budget,ok
+rule_based,Q133,validation,13,2.0,1562.0,Kalista Residence,Seremban,Condominium,320000.0,914.0,3.0,2.0,0.1579,lowest asking price within budget,ok
+rule_based,Q133,validation,13,3.0,1591.0,Kalista Residence,Seremban,Condominium,320000.0,914.0,3.0,2.0,0.1579,lowest asking price within budget,ok
+rule_based,Q133,validation,13,4.0,1664.0,Kondominium Tasik Mewah,Seremban,Condominium,330000.0,1120.0,3.0,2.0,0.1316,lowest asking price within budget,ok
+rule_based,Q133,validation,13,5.0,1539.0,Residensi Lili,Seremban,Condominium,344444.0,735.0,3.0,2.0,0.0936,lowest asking price within budget,ok
+rule_based,Q134,train,10,1.0,1577.0,Safira Apartment,Seremban,Condominium,300000.0,873.0,3.0,2.0,0.1667,lowest asking price within budget,ok
+rule_based,Q134,train,10,2.0,1562.0,Kalista Residence,Seremban,Condominium,320000.0,914.0,3.0,2.0,0.1111,lowest asking price within budget,ok
+rule_based,Q134,train,10,3.0,1591.0,Kalista Residence,Seremban,Condominium,320000.0,914.0,3.0,2.0,0.1111,lowest asking price within budget,ok
+rule_based,Q134,train,10,4.0,1664.0,Kondominium Tasik Mewah,Seremban,Condominium,330000.0,1120.0,3.0,2.0,0.0833,lowest asking price within budget,ok
+rule_based,Q134,train,10,5.0,1694.0,Mesahill,Seremban,Condominium,340008.0,720.0,2.0,2.0,0.0555,lowest asking price within budget,ok
+rule_based,Q135,train,15,1.0,1649.0,Taman Bukit Intan,Seremban,Link Bungalow / Semi-Detached,1250000.0,2800.0,5.0,4.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q135,train,15,2.0,1557.0,Laman Lavenda,Seremban,Link Bungalow / Semi-Detached,740000.0,2774.0,5.0,3.0,0.9907,closest built-up area to the preferred size,ok
+rule_based,Q135,train,15,3.0,1697.0,Taman Ampangan,Seremban,Link Bungalow / Semi-Detached,751500.0,2731.0,6.0,6.0,0.9754,closest built-up area to the preferred size,ok
+rule_based,Q135,train,15,4.0,1598.0,Acacia Seremban 2,Seremban,Link Bungalow / Semi-Detached,1300000.0,3000.0,5.0,3.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q135,train,15,5.0,1719.0,Taman Jayamas I,Seremban,Link Bungalow / Semi-Detached,430008.0,3000.0,7.0,5.0,0.9286,closest built-up area to the preferred size,ok
+rule_based,Q136,train,19,1.0,1719.0,Taman Jayamas I,Seremban,Link Bungalow / Semi-Detached,430008.0,3000.0,7.0,5.0,0.7312,lowest asking price within budget,ok
+rule_based,Q136,train,19,2.0,1766.0,Vision Homes @ Seremban 2,Seremban,Link Bungalow / Semi-Detached,430008.0,1797.0,4.0,3.0,0.7312,lowest asking price within budget,ok
+rule_based,Q136,train,19,3.0,1674.0,Vision Homes (Seremban 2),Seremban,Link Bungalow / Semi-Detached,480000.0,1800.0,4.0,3.0,0.7,lowest asking price within budget,ok
+rule_based,Q136,train,19,4.0,1786.0,Taman Nusa Intan,Seremban,Link Bungalow / Semi-Detached,658008.0,1500.0,6.0,6.0,0.5887,lowest asking price within budget,ok
+rule_based,Q136,train,19,5.0,1567.0,Taman Desa Saga,Seremban,Link Bungalow / Semi-Detached,680000.0,2588.0,5.0,3.0,0.575,lowest asking price within budget,ok
+rule_based,Q137,train,58,1.0,1733.0,Garden Avenue,Seremban,Terrace House,338008.0,1440.0,4.0,3.0,0.3622,lowest asking price within budget,ok
+rule_based,Q137,train,58,2.0,1604.0,Taman Pinggiran Senawang,Seremban,Terrace House,340000.0,1400.0,4.0,3.0,0.3585,lowest asking price within budget,ok
+rule_based,Q137,train,58,3.0,1553.0,Taman Rasah Jaya (Fasa 5),Seremban,Terrace House,350000.0,2007.0,4.0,3.0,0.3396,lowest asking price within budget,ok
+rule_based,Q137,train,58,4.0,1765.0,Bandar Seremban Selatan,Seremban,Terrace House,350008.0,2000.0,5.0,3.0,0.3396,lowest asking price within budget,ok
+rule_based,Q137,train,58,5.0,1623.0,Taman Kemuning,Seremban,Terrace House,360000.0,2000.0,4.0,3.0,0.3208,lowest asking price within budget,ok
+rule_based,Q138,train,77,1.0,1541.0,Taman Senangin,Seremban,Terrace House,363000.0,1400.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q138,train,77,2.0,1544.0,Taman Bukit Chedang,Seremban,Terrace House,450000.0,1430.0,5.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q138,train,77,3.0,1553.0,Taman Rasah Jaya (Fasa 5),Seremban,Terrace House,350000.0,2007.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q138,train,77,4.0,1559.0,Taman Desa Melor,Seremban,Terrace House,420000.0,1440.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q138,train,77,5.0,1596.0,Taman Kemuning,Seremban,Terrace House,390000.0,1273.0,5.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q139,test,73,1.0,1656.0,Taman Desa Cempaka,Seremban,Terrace House,300000.0,1680.0,3.0,2.0,0.3617,lowest asking price within budget,ok
+rule_based,Q139,test,73,2.0,1630.0,Taman Senawang Indah,Seremban,Terrace House,310000.0,1400.0,3.0,2.0,0.3404,lowest asking price within budget,ok
+rule_based,Q139,test,73,3.0,1660.0,Taman Thivy Jaya,Seremban,Terrace House,320000.0,1760.0,4.0,2.0,0.3191,lowest asking price within budget,ok
+rule_based,Q139,test,73,4.0,1774.0,Taman Cempaka (Senawang),Seremban,Terrace House,330008.0,2200.0,3.0,2.0,0.2979,lowest asking price within budget,ok
+rule_based,Q139,test,73,5.0,1789.0,Taman Orkid,Seremban,Terrace House,330008.0,1200.0,3.0,3.0,0.2979,lowest asking price within budget,ok
+rule_based,Q140,train,70,1.0,1656.0,Taman Desa Cempaka,Seremban,Terrace House,300000.0,1680.0,3.0,2.0,0.375,lowest asking price within budget,ok
+rule_based,Q140,train,70,2.0,1660.0,Taman Thivy Jaya,Seremban,Terrace House,320000.0,1760.0,4.0,2.0,0.3333,lowest asking price within budget,ok
+rule_based,Q140,train,70,3.0,1538.0,Taman Desa Cempaka,Seremban,Terrace House,335000.0,1210.0,3.0,2.0,0.3021,lowest asking price within budget,ok
+rule_based,Q140,train,70,4.0,1540.0,Taman Tasik Jaya,Seremban,Terrace House,335000.0,1200.0,4.0,2.0,0.3021,lowest asking price within budget,ok
+rule_based,Q140,train,70,5.0,1721.0,Taman Punca Emas,Seremban,Terrace House,338008.0,1650.0,3.0,2.0,0.2958,lowest asking price within budget,ok
+rule_based,Q141,test,29,1.0,1668.0,Taman Oakland,Seremban,Terrace House,400000.0,1800.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q141,test,29,2.0,1715.0,Taman Kekwa,Seremban,Terrace House,410008.0,1800.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q141,test,29,3.0,1730.0,Taman Iringan Bayu,Seremban,Terrace House,460008.0,1800.0,4.0,3.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q141,test,29,4.0,1576.0,Laman Sendayan,Seremban,Terrace House,425000.0,1815.0,4.0,3.0,0.9917,closest built-up area to the preferred size,ok
+rule_based,Q141,test,29,5.0,1712.0,Taman Iringan Bayu,Seremban,Terrace House,459008.0,1850.0,4.0,3.0,0.9722,closest built-up area to the preferred size,ok
+rule_based,Q142,validation,88,1.0,1660.0,Taman Thivy Jaya,Seremban,Terrace House,320000.0,1760.0,4.0,2.0,0.4182,lowest asking price within budget,ok
+rule_based,Q142,validation,88,2.0,1721.0,Taman Punca Emas,Seremban,Terrace House,338008.0,1650.0,3.0,2.0,0.3854,lowest asking price within budget,ok
+rule_based,Q142,validation,88,3.0,1733.0,Garden Avenue,Seremban,Terrace House,338008.0,1440.0,4.0,3.0,0.3854,lowest asking price within budget,ok
+rule_based,Q142,validation,88,4.0,1759.0,Taman Layang Layang,Seremban,Terrace House,338052.0,1400.0,3.0,2.0,0.3854,lowest asking price within budget,ok
+rule_based,Q142,validation,88,5.0,1792.0,Taman Lavender Heights (Senawang),Seremban,Terrace House,340008.0,1500.0,5.0,2.0,0.3818,lowest asking price within budget,ok
+rule_based,Q143,train,38,1.0,2072.0,Quaywest Residence,Timur Laut,Condominium,788000.0,1217.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q143,train,38,2.0,2087.0,Pearl Regency,Timur Laut,Condominium,800000.0,1561.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q143,train,38,3.0,2095.0,Harmony View,Timur Laut,Condominium,420000.0,665.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q143,train,38,4.0,2104.0,Villa Ria,Timur Laut,Condominium,810000.0,1163.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q143,train,38,5.0,2105.0,Miami Green,Timur Laut,Condominium,850000.0,2260.0,5.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q144,train,49,1.0,2490.0,Relau Vista Apartment,Timur Laut,Condominium,350000.0,850.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q144,train,49,2.0,2425.0,All Seasons Park,Timur Laut,Condominium,490000.0,856.0,3.0,2.0,0.9929,closest built-up area to the preferred size,ok
+rule_based,Q144,train,49,3.0,2153.0,Granito @ Permai,Timur Laut,Condominium,470000.0,864.0,3.0,2.0,0.9835,closest built-up area to the preferred size,ok
+rule_based,Q144,train,49,4.0,2412.0,Eden Seaview,Timur Laut,Condominium,342000.0,883.0,3.0,2.0,0.9612,closest built-up area to the preferred size,ok
+rule_based,Q144,train,49,5.0,2171.0,Jelutong,Timur Laut,Condominium,488000.0,900.0,3.0,2.0,0.9412,closest built-up area to the preferred size,ok
+rule_based,Q145,train,81,1.0,2501.0,Taman Desa Relau Ii,Timur Laut,Condominium,300000.0,7000.0,3.0,2.0,0.8571,lowest asking price within budget,ok
+rule_based,Q145,train,81,2.0,2524.0,Gambier Heights,Timur Laut,Condominium,330000.0,950.0,3.0,2.0,0.8429,lowest asking price within budget,ok
+rule_based,Q145,train,81,3.0,2487.0,Sinar Bukit Dumbar,Timur Laut,Condominium,340000.0,700.0,3.0,2.0,0.8381,lowest asking price within budget,ok
+rule_based,Q145,train,81,4.0,2211.0,N Park,Timur Laut,Condominium,350000.0,800.0,3.0,2.0,0.8333,lowest asking price within budget,ok
+rule_based,Q145,train,81,5.0,2212.0,Desa Alor Vista,Timur Laut,Condominium,360000.0,750.0,3.0,2.0,0.8286,lowest asking price within budget,ok
+rule_based,Q146,train,57,1.0,2501.0,Taman Desa Relau Ii,Timur Laut,Condominium,300000.0,7000.0,3.0,2.0,0.8256,lowest asking price within budget,ok
+rule_based,Q146,train,57,2.0,2524.0,Gambier Heights,Timur Laut,Condominium,330000.0,950.0,3.0,2.0,0.8081,lowest asking price within budget,ok
+rule_based,Q146,train,57,3.0,2487.0,Sinar Bukit Dumbar,Timur Laut,Condominium,340000.0,700.0,3.0,2.0,0.8023,lowest asking price within budget,ok
+rule_based,Q146,train,57,4.0,2211.0,N Park,Timur Laut,Condominium,350000.0,800.0,3.0,2.0,0.7965,lowest asking price within budget,ok
+rule_based,Q146,train,57,5.0,2212.0,Desa Alor Vista,Timur Laut,Condominium,360000.0,750.0,3.0,2.0,0.7907,lowest asking price within budget,ok
+rule_based,Q147,train,65,1.0,2126.0,Mont Residence @ Tanjung Tokong,Timur Laut,Condominium,608000.0,1100.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q147,train,65,2.0,2409.0,Island Resort,Timur Laut,Condominium,425150.0,1100.0,3.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q147,train,65,3.0,2525.0,Miami Green,Timur Laut,Condominium,380000.0,1100.0,4.0,2.0,1.0,closest built-up area to the preferred size,ok
+rule_based,Q147,train,65,4.0,2320.0,Scots Pavilion,Timur Laut,Condominium,690000.0,1081.0,3.0,2.0,0.9827,closest built-up area to the preferred size,ok
+rule_based,Q147,train,65,5.0,2313.0,Scots Pavilion,Timur Laut,Condominium,690000.0,1080.0,3.0,2.0,0.9818,closest built-up area to the preferred size,ok
+rule_based,Q148,train,107,1.0,2072.0,Quaywest Residence,Timur Laut,Condominium,788000.0,1217.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q148,train,107,2.0,2087.0,Pearl Regency,Timur Laut,Condominium,800000.0,1561.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q148,train,107,3.0,2089.0,Mont Residence @ Tanjung Tokong,Timur Laut,Condominium,650000.0,972.0,2.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q148,train,107,4.0,2095.0,Harmony View,Timur Laut,Condominium,420000.0,665.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q148,train,107,5.0,2104.0,Villa Ria,Timur Laut,Condominium,810000.0,1163.0,3.0,2.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q149,train,10,1.0,2421.0,Bukit Dumbar Residences,Timur Laut,Terrace House,1790000.0,2792.0,5.0,4.0,0.9847,closest built-up area to the preferred size,ok
+rule_based,Q149,train,10,2.0,2272.0,8 Babington Residence,Timur Laut,Terrace House,2149000.0,2622.0,5.0,5.0,0.9535,closest built-up area to the preferred size,ok
+rule_based,Q149,train,10,3.0,2560.0,Minden Heights,Timur Laut,Terrace House,1900000.0,2621.0,4.0,4.0,0.9531,closest built-up area to the preferred size,ok
+rule_based,Q149,train,10,4.0,2271.0,8 Babington Residence,Timur Laut,Terrace House,2300000.0,2615.0,5.0,4.0,0.9509,closest built-up area to the preferred size,ok
+rule_based,Q149,train,10,5.0,2372.0,Tanjung Tokong,Timur Laut,Terrace House,2750000.0,2983.0,4.0,4.0,0.9153,closest built-up area to the preferred size,ok
+rule_based,Q150,train,8,1.0,2401.0,Butterworth,Timur Laut,Terrace House,660000.0,1720.0,4.0,3.0,0.693,lowest asking price within budget,ok
+rule_based,Q150,train,8,2.0,2533.0,Jalan Chee Seng 1,Timur Laut,Terrace House,1100000.0,3000.0,7.0,6.0,0.4884,lowest asking price within budget,ok
+rule_based,Q150,train,8,3.0,2534.0,South Homes,Timur Laut,Terrace House,1100000.0,3750.0,5.0,6.0,0.4884,lowest asking price within budget,ok
+rule_based,Q150,train,8,4.0,2167.0,Ferringhi Hills,Timur Laut,Terrace House,1350000.0,3255.0,6.0,5.0,0.3721,lowest asking price within budget,ok
+rule_based,Q150,train,8,5.0,2421.0,Bukit Dumbar Residences,Timur Laut,Terrace House,1790000.0,2792.0,5.0,4.0,0.1674,lowest asking price within budget,ok
+rule_based,Q151,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q152,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q153,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q154,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q155,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q156,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q157,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q158,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q159,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q160,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q161,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q162,train,4,1.0,648.0,Sri Mahligai,Petaling,Town House,498000.0,1990.0,4.0,4.0,0.796,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q162,train,4,2.0,970.0,Summer Homes,Petaling,Town House,588000.0,1650.0,3.0,3.0,0.66,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q162,train,4,3.0,1128.0,Cascadia Lake Vista,Petaling,Town House,550000.0,1650.0,3.0,4.0,0.66,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q162,train,4,4.0,3201.0,Taman Tasik Prima,Petaling,Town House,1200000.0,3935.0,5.0,4.0,0.426,closest built-up area to the preferred size,fewer_than_top_n_eligible
+rule_based,Q163,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q164,train,1,1.0,2005.0,Taman Karak Indah,Bentong,Link Bungalow / Semi-Detached,438000.0,1400.0,5.0,3.0,0.635,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q165,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q166,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q167,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q168,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q169,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q170,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q171,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q172,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q173,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q174,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q175,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q176,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q177,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q178,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q179,test,2,1.0,1531.0,Taman Batu Berendam Putra,Melaka Tengah,Link Bungalow / Semi-Detached,798000.0,3500.0,4.0,3.0,1.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q179,test,2,2.0,1532.0,Taman Melaka Baru,Melaka Tengah,Link Bungalow / Semi-Detached,798000.0,3500.0,4.0,3.0,1.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q180,train,3,1.0,36.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1180.0,3.0,2.0,0.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q180,train,3,2.0,146.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1170.0,3.0,2.0,0.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q180,train,3,3.0,178.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1170.0,3.0,2.0,0.0,most of the selected facility types present nearby,fewer_than_top_n_eligible
+rule_based,Q181,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q182,train,175,1.0,438.0,Bk8,Petaling,Terrace House,2680000.0,3005.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q182,train,175,2.0,448.0,Setia Indah 9,Petaling,Terrace House,960000.0,2600.0,4.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q182,train,175,3.0,459.0,Setia Impian,Petaling,Terrace House,699000.0,1500.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q182,train,175,4.0,468.0,Taman Ttdi Jaya,Petaling,Terrace House,630000.0,1700.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q182,train,175,5.0,469.0,Setia Permai 1,Petaling,Terrace House,690000.0,1715.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q183,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q184,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q185,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q186,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q187,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q188,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q189,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q190,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q191,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q192,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q193,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q194,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q195,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q196,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q197,train,2,1.0,188.0,Taman Nusa Bestari Jaya,Johor Bahru,Town House,598000.0,1765.0,3.0,2.0,0.2965,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q197,train,2,2.0,371.0,Leisure Farm,Johor Bahru,Town House,680000.0,1968.0,4.0,3.0,0.2,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q198,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q199,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q200,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q201,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q202,train,1,1.0,1853.0,Selesa Hillhomes @ Bukit Tinggi,Bentong,Condominium,370000.0,1200.0,2.0,2.0,0.9383,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q203,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q204,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q205,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q206,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q207,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q208,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q209,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q210,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q211,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q212,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q213,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q214,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q215,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q216,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q217,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q218,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q219,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q220,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q221,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q222,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q223,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q224,train,2,1.0,2414.0,Taman Bayu Aman,Seberang Perai Utara,Terrace House,800000.0,2640.0,5.0,4.0,0.68,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q224,train,2,2.0,2547.0,Bandar Butterworth,Seberang Perai Utara,Terrace House,1200000.0,2680.0,5.0,4.0,0.52,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q225,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q226,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q227,test,3,1.0,2149.0,Ayer Itam,Timur Laut,Link Bungalow / Semi-Detached,1100000.0,1300.0,3.0,2.0,0.56,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q227,test,3,2.0,2119.0,Tanjung Bungah,Timur Laut,Link Bungalow / Semi-Detached,1450000.0,1500.0,4.0,2.0,0.42,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q227,test,3,3.0,2112.0,Ferringhi Park,Timur Laut,Link Bungalow / Semi-Detached,1900000.0,3745.0,5.0,4.0,0.24,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q228,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q229,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q230,train,2,1.0,1551.0,Nilai Impian,Hulu Langat,Bungalow / Detached House,1200000.0,250.0,5.0,5.0,0.52,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q230,train,2,2.0,3199.0,Taman 1080 Residences,Hulu Langat,Bungalow / Detached House,1780000.0,4600.0,7.0,8.0,0.288,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q231,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q232,train,22,1.0,2582.0,Presint 14,Putrajaya,Bungalow / Detached House,2600000.0,4688.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q232,train,22,2.0,2589.0,Presint 16,Putrajaya,Bungalow / Detached House,4000000.0,5146.0,7.0,5.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q232,train,22,3.0,2607.0,Presint 16,Putrajaya,Bungalow / Detached House,2550000.0,4218.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q232,train,22,4.0,2608.0,Presint 14,Putrajaya,Bungalow / Detached House,2600000.0,4690.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q232,train,22,5.0,2611.0,Presint 8,Putrajaya,Bungalow / Detached House,2200000.0,4090.0,6.0,6.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q233,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q234,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q235,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q236,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q237,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q238,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q239,train,35,1.0,0.0,Taman Sutera,Johor Bahru,Terrace House,1000000.0,2950.0,5.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q239,train,35,2.0,1.0,Taman Sutera,Johor Bahru,Terrace House,920000.0,2950.0,5.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q239,train,35,3.0,2.0,Taman Sutera,Johor Bahru,Terrace House,980000.0,1920.0,5.0,4.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q239,train,35,4.0,43.0,Eco Tropics,Johor Bahru,Terrace House,580000.0,1400.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q239,train,35,5.0,74.0,Eco Tropics,Johor Bahru,Terrace House,700000.0,2450.0,4.0,3.0,1.0,most of the selected facility types present nearby,ok
+rule_based,Q240,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q241,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q242,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q243,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q244,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q245,test,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q246,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q247,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q248,train,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q249,validation,0,,,,,,,,,,,,no_eligible_property
+rule_based,Q250,train,2,1.0,1116.0,Bromelia Bukit Puchong,Sepang,Link Bungalow / Semi-Detached,1280000.0,2113.0,5.0,5.0,0.2889,lowest asking price within budget,fewer_than_top_n_eligible
+rule_based,Q250,train,2,2.0,1178.0,Bromelia Bukit Puchong,Sepang,Link Bungalow / Semi-Detached,1380000.0,2113.0,5.0,5.0,0.2333,lowest asking price within budget,fewer_than_top_n_eligible

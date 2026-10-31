@@ -1,0 +1,822 @@
+method,query_id,split,eligible_count,rank,Property_ID,listing,district,property_type,asking_price_rm,built_up_sqft,bedrooms,bathrooms,score,criterion,status
+content_based,Q001,test,47,1.0,2308.0,London Pavilion,Barat Daya,Condominium,417990.0,982.0,3.0,2.0,0.8383,weighted attribute match (price / size / facility fit),ok
+content_based,Q001,test,47,2.0,2175.0,London Pavilion,Barat Daya,Condominium,417999.0,982.0,3.0,2.0,0.8383,weighted attribute match (price / size / facility fit),ok
+content_based,Q001,test,47,3.0,2197.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.8383,weighted attribute match (price / size / facility fit),ok
+content_based,Q001,test,47,4.0,2202.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.8383,weighted attribute match (price / size / facility fit),ok
+content_based,Q001,test,47,5.0,2220.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.8383,weighted attribute match (price / size / facility fit),ok
+content_based,Q002,train,41,1.0,2308.0,London Pavilion,Barat Daya,Condominium,417990.0,982.0,3.0,2.0,0.745,weighted attribute match (price / size / facility fit),ok
+content_based,Q002,train,41,2.0,2175.0,London Pavilion,Barat Daya,Condominium,417999.0,982.0,3.0,2.0,0.745,weighted attribute match (price / size / facility fit),ok
+content_based,Q002,train,41,3.0,2197.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.745,weighted attribute match (price / size / facility fit),ok
+content_based,Q002,train,41,4.0,2202.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.745,weighted attribute match (price / size / facility fit),ok
+content_based,Q002,train,41,5.0,2220.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.745,weighted attribute match (price / size / facility fit),ok
+content_based,Q003,train,39,1.0,2552.0,Imperial Grande,Barat Daya,Condominium,535000.0,1000.0,3.0,2.0,0.7432,weighted attribute match (price / size / facility fit),ok
+content_based,Q003,train,39,2.0,2156.0,Setia Sky Vista,Barat Daya,Condominium,620000.0,1194.0,3.0,2.0,0.718,weighted attribute match (price / size / facility fit),ok
+content_based,Q003,train,39,3.0,2324.0,Maldives Residences,Barat Daya,Condominium,488000.0,930.0,3.0,2.0,0.7098,weighted attribute match (price / size / facility fit),ok
+content_based,Q003,train,39,4.0,2177.0,Maldives Residences,Barat Daya,Condominium,498000.0,930.0,3.0,2.0,0.7063,weighted attribute match (price / size / facility fit),ok
+content_based,Q003,train,39,5.0,2325.0,Maldives Residences,Barat Daya,Condominium,498000.0,930.0,3.0,2.0,0.7063,weighted attribute match (price / size / facility fit),ok
+content_based,Q004,train,47,1.0,2308.0,London Pavilion,Barat Daya,Condominium,417990.0,982.0,3.0,2.0,0.8693,weighted attribute match (price / size / facility fit),ok
+content_based,Q004,train,47,2.0,2175.0,London Pavilion,Barat Daya,Condominium,417999.0,982.0,3.0,2.0,0.8693,weighted attribute match (price / size / facility fit),ok
+content_based,Q004,train,47,3.0,2197.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.8693,weighted attribute match (price / size / facility fit),ok
+content_based,Q004,train,47,4.0,2202.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.8693,weighted attribute match (price / size / facility fit),ok
+content_based,Q004,train,47,5.0,2220.0,London Pavilion,Barat Daya,Condominium,418000.0,982.0,3.0,2.0,0.8693,weighted attribute match (price / size / facility fit),ok
+content_based,Q005,validation,8,1.0,3303.0,Paka,Dungun,Bungalow / Detached House,340000.0,1477.0,3.0,2.0,0.3334,weighted attribute match (price / size / facility fit),ok
+content_based,Q005,validation,8,2.0,3345.0,Pulau Serai,Dungun,Bungalow / Detached House,370000.0,1500.0,3.0,3.0,0.3207,weighted attribute match (price / size / facility fit),ok
+content_based,Q005,validation,8,3.0,3299.0,Paka,Dungun,Bungalow / Detached House,375000.0,1607.0,4.0,2.0,0.2609,weighted attribute match (price / size / facility fit),ok
+content_based,Q005,validation,8,4.0,3306.0,Dungun,Dungun,Bungalow / Detached House,320000.0,1256.0,3.0,2.0,0.2348,weighted attribute match (price / size / facility fit),ok
+content_based,Q005,validation,8,5.0,3305.0,Dungun,Dungun,Bungalow / Detached House,365000.0,1300.0,3.0,3.0,0.2207,weighted attribute match (price / size / facility fit),ok
+content_based,Q006,train,11,1.0,3299.0,Paka,Dungun,Bungalow / Detached House,375000.0,1607.0,4.0,2.0,0.5792,weighted attribute match (price / size / facility fit),ok
+content_based,Q006,train,11,2.0,3313.0,Dungun,Dungun,Bungalow / Detached House,400000.0,1557.0,6.0,4.0,0.5315,weighted attribute match (price / size / facility fit),ok
+content_based,Q006,train,11,3.0,3345.0,Pulau Serai,Dungun,Bungalow / Detached House,370000.0,1500.0,3.0,3.0,0.5018,weighted attribute match (price / size / facility fit),ok
+content_based,Q006,train,11,4.0,3303.0,Paka,Dungun,Bungalow / Detached House,340000.0,1477.0,3.0,2.0,0.5017,weighted attribute match (price / size / facility fit),ok
+content_based,Q006,train,11,5.0,3305.0,Dungun,Dungun,Bungalow / Detached House,365000.0,1300.0,3.0,3.0,0.4982,weighted attribute match (price / size / facility fit),ok
+content_based,Q007,train,10,1.0,3332.0,Kuala Dungun,Dungun,Link Bungalow / Semi-Detached,340000.0,1200.0,3.0,2.0,0.377,weighted attribute match (price / size / facility fit),ok
+content_based,Q007,train,10,2.0,3278.0,Paka,Dungun,Link Bungalow / Semi-Detached,330000.0,1100.0,3.0,2.0,0.335,weighted attribute match (price / size / facility fit),ok
+content_based,Q007,train,10,3.0,3282.0,Paka,Dungun,Link Bungalow / Semi-Detached,338400.0,1350.0,4.0,2.0,0.2927,weighted attribute match (price / size / facility fit),ok
+content_based,Q007,train,10,4.0,3349.0,Kampung Kuala Abang,Dungun,Link Bungalow / Semi-Detached,310000.0,1100.0,3.0,2.0,0.2834,weighted attribute match (price / size / facility fit),ok
+content_based,Q007,train,10,5.0,3270.0,Dungun,Dungun,Link Bungalow / Semi-Detached,350000.0,1200.0,3.0,2.0,0.2778,weighted attribute match (price / size / facility fit),ok
+content_based,Q008,train,14,1.0,3283.0,Dungun,Dungun,Link Bungalow / Semi-Detached,330000.0,1500.0,3.0,2.0,0.5625,weighted attribute match (price / size / facility fit),ok
+content_based,Q008,train,14,2.0,3259.0,Paka,Dungun,Link Bungalow / Semi-Detached,380000.0,1500.0,4.0,3.0,0.5341,weighted attribute match (price / size / facility fit),ok
+content_based,Q008,train,14,3.0,3291.0,Kampung Sura Hujung,Dungun,Link Bungalow / Semi-Detached,348000.0,1600.0,3.0,2.0,0.5002,weighted attribute match (price / size / facility fit),ok
+content_based,Q008,train,14,4.0,3290.0,Kuala Paka,Dungun,Link Bungalow / Semi-Detached,365000.0,1600.0,4.0,3.0,0.4905,weighted attribute match (price / size / facility fit),ok
+content_based,Q008,train,14,5.0,3298.0,Kampung Sura Hujung,Dungun,Link Bungalow / Semi-Detached,350000.0,1380.0,4.0,2.0,0.4886,weighted attribute match (price / size / facility fit),ok
+content_based,Q009,test,7,1.0,282.0,Opal @ Mutiara Mas,Johor Bahru,Cluster House,980000.0,2080.0,5.0,5.0,0.5297,weighted attribute match (price / size / facility fit),ok
+content_based,Q009,test,7,2.0,338.0,Taman Ungku Tun Aminah,Johor Bahru,Cluster House,1300000.0,2240.0,5.0,4.0,0.4527,weighted attribute match (price / size / facility fit),ok
+content_based,Q009,test,7,3.0,264.0,Taman Skudai Indah,Johor Bahru,Cluster House,1120000.0,2380.0,5.0,5.0,0.4284,weighted attribute match (price / size / facility fit),ok
+content_based,Q009,test,7,4.0,293.0,Eco Botanic,Johor Bahru,Cluster House,1700000.0,2140.0,5.0,5.0,0.4035,weighted attribute match (price / size / facility fit),ok
+content_based,Q009,test,7,5.0,368.0,Emerald Residence @ Sunway Iskandar,Johor Bahru,Cluster House,1250000.0,1760.0,5.0,5.0,0.3292,weighted attribute match (price / size / facility fit),ok
+content_based,Q010,train,7,1.0,322.0,Taman Mutiara Mas,Johor Bahru,Cluster House,1080000.0,2300.0,4.0,4.0,0.7692,weighted attribute match (price / size / facility fit),ok
+content_based,Q010,train,7,2.0,264.0,Taman Skudai Indah,Johor Bahru,Cluster House,1120000.0,2380.0,5.0,5.0,0.7124,weighted attribute match (price / size / facility fit),ok
+content_based,Q010,train,7,3.0,338.0,Taman Ungku Tun Aminah,Johor Bahru,Cluster House,1300000.0,2240.0,5.0,4.0,0.686,weighted attribute match (price / size / facility fit),ok
+content_based,Q010,train,7,4.0,282.0,Opal @ Mutiara Mas,Johor Bahru,Cluster House,980000.0,2080.0,5.0,5.0,0.6577,weighted attribute match (price / size / facility fit),ok
+content_based,Q010,train,7,5.0,249.0,Taman Seri Austin,Johor Bahru,Cluster House,1250000.0,2600.0,5.0,5.0,0.5517,weighted attribute match (price / size / facility fit),ok
+content_based,Q011,train,14,1.0,312.0,The Raffles Suites,Johor Bahru,Condominium,450000.0,1068.0,3.0,2.0,0.6103,weighted attribute match (price / size / facility fit),ok
+content_based,Q011,train,14,2.0,198.0,M Condominium,Johor Bahru,Condominium,468000.0,1068.0,5.0,2.0,0.5997,weighted attribute match (price / size / facility fit),ok
+content_based,Q011,train,14,3.0,289.0,Villa Krystal,Johor Bahru,Condominium,320000.0,990.0,4.0,2.0,0.5887,weighted attribute match (price / size / facility fit),ok
+content_based,Q011,train,14,4.0,321.0,The Aliff Residences,Johor Bahru,Condominium,420000.0,1098.0,3.0,2.0,0.5826,weighted attribute match (price / size / facility fit),ok
+content_based,Q011,train,14,5.0,59.0,The Garden Residences,Johor Bahru,Condominium,450000.0,1155.0,3.0,2.0,0.5813,weighted attribute match (price / size / facility fit),ok
+content_based,Q012,validation,24,1.0,168.0,Sky Gardens Residences,Johor Bahru,Condominium,400000.0,900.0,3.0,2.0,0.7685,weighted attribute match (price / size / facility fit),ok
+content_based,Q012,validation,24,2.0,320.0,Austin Suites,Johor Bahru,Condominium,395000.0,906.0,2.0,2.0,0.7622,weighted attribute match (price / size / facility fit),ok
+content_based,Q012,validation,24,3.0,303.0,Dedaun Hijau (Greenfield Regency),Johor Bahru,Condominium,470000.0,900.0,3.0,2.0,0.728,weighted attribute match (price / size / facility fit),ok
+content_based,Q012,validation,24,4.0,97.0,Royal Strand @ Country Garden Danga Bay,Johor Bahru,Condominium,470000.0,881.0,2.0,2.0,0.6987,weighted attribute match (price / size / facility fit),ok
+content_based,Q012,validation,24,5.0,289.0,Villa Krystal,Johor Bahru,Condominium,320000.0,990.0,4.0,2.0,0.6759,weighted attribute match (price / size / facility fit),ok
+content_based,Q013,validation,13,1.0,53.0,Sri Wangi Apartment,Johor Bahru,Condominium,330000.0,1004.0,3.0,2.0,0.5806,weighted attribute match (price / size / facility fit),ok
+content_based,Q013,validation,13,2.0,366.0,Zennith Suites Johor Bahru,Johor Bahru,Condominium,450000.0,945.0,3.0,2.0,0.5073,weighted attribute match (price / size / facility fit),ok
+content_based,Q013,validation,13,3.0,121.0,M'Tiara Apartment @ Larkin Idaman,Johor Bahru,Condominium,408000.0,1005.0,3.0,2.0,0.5011,weighted attribute match (price / size / facility fit),ok
+content_based,Q013,validation,13,4.0,321.0,The Aliff Residences,Johor Bahru,Condominium,420000.0,1098.0,3.0,2.0,0.4244,weighted attribute match (price / size / facility fit),ok
+content_based,Q013,validation,13,5.0,260.0,Paradiso Nuova Medini,Johor Bahru,Condominium,480000.0,967.0,2.0,2.0,0.4089,weighted attribute match (price / size / facility fit),ok
+content_based,Q014,test,35,1.0,300.0,Selesa Puteri Condominium,Johor Bahru,Condominium,300000.0,1001.0,3.0,2.0,0.6877,weighted attribute match (price / size / facility fit),ok
+content_based,Q014,test,35,2.0,289.0,Villa Krystal,Johor Bahru,Condominium,320000.0,990.0,4.0,2.0,0.6662,weighted attribute match (price / size / facility fit),ok
+content_based,Q014,test,35,3.0,168.0,Sky Gardens Residences,Johor Bahru,Condominium,400000.0,900.0,3.0,2.0,0.6261,weighted attribute match (price / size / facility fit),ok
+content_based,Q014,test,35,4.0,109.0,Sky Oasis Residences,Johor Bahru,Condominium,450000.0,1003.0,3.0,2.0,0.5721,weighted attribute match (price / size / facility fit),ok
+content_based,Q014,test,35,5.0,28.0,Austin Regency,Johor Bahru,Condominium,460000.0,999.0,3.0,2.0,0.5659,weighted attribute match (price / size / facility fit),ok
+content_based,Q015,train,24,1.0,184.0,Taman Johor Jaya,Johor Bahru,Link Bungalow / Semi-Detached,1100000.0,3000.0,4.0,3.0,0.8817,weighted attribute match (price / size / facility fit),ok
+content_based,Q015,train,24,2.0,265.0,Taman Perling,Johor Bahru,Link Bungalow / Semi-Detached,975000.0,2975.0,5.0,4.0,0.8813,weighted attribute match (price / size / facility fit),ok
+content_based,Q015,train,24,3.0,335.0,Taman Nong Chik,Johor Bahru,Link Bungalow / Semi-Detached,1400000.0,3000.0,4.0,3.0,0.8495,weighted attribute match (price / size / facility fit),ok
+content_based,Q015,train,24,4.0,253.0,Taman Mutiara Mas,Johor Bahru,Link Bungalow / Semi-Detached,1430000.0,3080.0,5.0,5.0,0.8018,weighted attribute match (price / size / facility fit),ok
+content_based,Q015,train,24,5.0,273.0,Horizon Hills,Johor Bahru,Link Bungalow / Semi-Detached,1850000.0,3000.0,5.0,5.0,0.8011,weighted attribute match (price / size / facility fit),ok
+content_based,Q016,train,22,1.0,344.0,Taman Pelangi Indah,Johor Bahru,Link Bungalow / Semi-Detached,988000.0,3200.0,4.0,3.0,0.8001,weighted attribute match (price / size / facility fit),ok
+content_based,Q016,train,22,2.0,243.0,Taman Johor Jaya,Johor Bahru,Link Bungalow / Semi-Detached,1100000.0,3200.0,4.0,3.0,0.7862,weighted attribute match (price / size / facility fit),ok
+content_based,Q016,train,22,3.0,268.0,Taman Sierra Perdana,Johor Bahru,Link Bungalow / Semi-Detached,788000.0,3337.0,4.0,3.0,0.7838,weighted attribute match (price / size / facility fit),ok
+content_based,Q016,train,22,4.0,335.0,Taman Nong Chik,Johor Bahru,Link Bungalow / Semi-Detached,1400000.0,3000.0,4.0,3.0,0.7656,weighted attribute match (price / size / facility fit),ok
+content_based,Q016,train,22,5.0,343.0,Taman Impian Emas,Johor Bahru,Link Bungalow / Semi-Detached,1350000.0,3200.0,6.0,3.0,0.755,weighted attribute match (price / size / facility fit),ok
+content_based,Q017,test,7,1.0,211.0,Taman Rinting,Johor Bahru,Low-Cost House,358000.0,840.0,3.0,2.0,0.6386,weighted attribute match (price / size / facility fit),ok
+content_based,Q017,test,7,2.0,138.0,Jalan Tenang,Johor Bahru,Low-Cost House,368000.0,770.0,2.0,2.0,0.6003,weighted attribute match (price / size / facility fit),ok
+content_based,Q017,test,7,3.0,92.0,Taman Pasir Putih,Johor Bahru,Low-Cost House,328000.0,900.0,3.0,2.0,0.5952,weighted attribute match (price / size / facility fit),ok
+content_based,Q017,test,7,4.0,27.0,Taman Scientex,Johor Bahru,Low-Cost House,345000.0,800.0,3.0,2.0,0.5828,weighted attribute match (price / size / facility fit),ok
+content_based,Q017,test,7,5.0,199.0,Taman Bukit Tiram,Johor Bahru,Low-Cost House,335000.0,770.0,2.0,2.0,0.5411,weighted attribute match (price / size / facility fit),ok
+content_based,Q018,test,5,1.0,27.0,Taman Scientex,Johor Bahru,Low-Cost House,345000.0,800.0,3.0,2.0,0.6209,weighted attribute match (price / size / facility fit),ok
+content_based,Q018,test,5,2.0,199.0,Taman Bukit Tiram,Johor Bahru,Low-Cost House,335000.0,770.0,2.0,2.0,0.5958,weighted attribute match (price / size / facility fit),ok
+content_based,Q018,test,5,3.0,4.0,Taman Desa Cemerlang,Johor Bahru,Low-Cost House,328000.0,700.0,2.0,2.0,0.5194,weighted attribute match (price / size / facility fit),ok
+content_based,Q018,test,5,4.0,44.0,Taman Nusa Damai,Johor Bahru,Low-Cost House,310000.0,1100.0,3.0,2.0,0.2988,weighted attribute match (price / size / facility fit),ok
+content_based,Q018,test,5,5.0,92.0,Taman Pasir Putih,Johor Bahru,Low-Cost House,328000.0,900.0,3.0,2.0,0.2886,weighted attribute match (price / size / facility fit),ok
+content_based,Q019,test,143,1.0,187.0,Ksl @ Puteri Park,Johor Bahru,Terrace House,495000.0,1680.0,3.0,2.0,0.8044,weighted attribute match (price / size / facility fit),ok
+content_based,Q019,test,143,2.0,46.0,Jalan Meranti,Johor Bahru,Terrace House,470000.0,1650.0,3.0,2.0,0.8001,weighted attribute match (price / size / facility fit),ok
+content_based,Q019,test,143,3.0,192.0,Taman Scientex,Johor Bahru,Terrace House,438000.0,1800.0,3.0,3.0,0.7891,weighted attribute match (price / size / facility fit),ok
+content_based,Q019,test,143,4.0,194.0,Taman Johor,Johor Bahru,Terrace House,518000.0,1760.0,4.0,2.0,0.7774,weighted attribute match (price / size / facility fit),ok
+content_based,Q019,test,143,5.0,195.0,Taman Bukit Jaya,Johor Bahru,Terrace House,420000.0,1540.0,3.0,2.0,0.7683,weighted attribute match (price / size / facility fit),ok
+content_based,Q020,validation,144,1.0,267.0,Taman Kota Masai,Johor Bahru,Terrace House,428000.0,1400.0,3.0,2.0,0.7452,weighted attribute match (price / size / facility fit),ok
+content_based,Q020,validation,144,2.0,126.0,Jalan Kancil,Johor Bahru,Terrace House,460000.0,1400.0,4.0,3.0,0.7262,weighted attribute match (price / size / facility fit),ok
+content_based,Q020,validation,144,3.0,149.0,Bandar Seri Alam,Johor Bahru,Terrace House,465000.0,1400.0,4.0,3.0,0.7232,weighted attribute match (price / size / facility fit),ok
+content_based,Q020,validation,144,4.0,234.0,Taman Desa Cemerlang,Johor Bahru,Terrace House,480000.0,1400.0,3.0,2.0,0.7143,weighted attribute match (price / size / facility fit),ok
+content_based,Q020,validation,144,5.0,349.0,Taman Desa Cemerlang,Johor Bahru,Terrace House,480000.0,1400.0,3.0,2.0,0.7143,weighted attribute match (price / size / facility fit),ok
+content_based,Q021,test,28,1.0,304.0,Taman Setia Indah,Johor Bahru,Terrace House,545000.0,1400.0,3.0,2.0,0.7926,weighted attribute match (price / size / facility fit),ok
+content_based,Q021,test,28,2.0,252.0,Taman Bukit Indah,Johor Bahru,Terrace House,600000.0,1400.0,3.0,2.0,0.7717,weighted attribute match (price / size / facility fit),ok
+content_based,Q021,test,28,3.0,367.0,Taman Mutiara Rini,Johor Bahru,Terrace House,625000.0,1400.0,5.0,4.0,0.7622,weighted attribute match (price / size / facility fit),ok
+content_based,Q021,test,28,4.0,267.0,Taman Kota Masai,Johor Bahru,Terrace House,428000.0,1400.0,3.0,2.0,0.7538,weighted attribute match (price / size / facility fit),ok
+content_based,Q021,test,28,5.0,43.0,Eco Tropics,Johor Bahru,Terrace House,580000.0,1400.0,4.0,3.0,0.696,weighted attribute match (price / size / facility fit),ok
+content_based,Q022,train,112,1.0,267.0,Taman Kota Masai,Johor Bahru,Terrace House,428000.0,1400.0,3.0,2.0,0.6603,weighted attribute match (price / size / facility fit),ok
+content_based,Q022,train,112,2.0,126.0,Jalan Kancil,Johor Bahru,Terrace House,460000.0,1400.0,4.0,3.0,0.6349,weighted attribute match (price / size / facility fit),ok
+content_based,Q022,train,112,3.0,149.0,Bandar Seri Alam,Johor Bahru,Terrace House,465000.0,1400.0,4.0,3.0,0.631,weighted attribute match (price / size / facility fit),ok
+content_based,Q022,train,112,4.0,234.0,Taman Desa Cemerlang,Johor Bahru,Terrace House,480000.0,1400.0,3.0,2.0,0.619,weighted attribute match (price / size / facility fit),ok
+content_based,Q022,train,112,5.0,349.0,Taman Desa Cemerlang,Johor Bahru,Terrace House,480000.0,1400.0,3.0,2.0,0.619,weighted attribute match (price / size / facility fit),ok
+content_based,Q023,train,127,1.0,374.0,Taman Gembira,Johor Bahru,Terrace House,430000.0,1540.0,4.0,2.0,0.8296,weighted attribute match (price / size / facility fit),ok
+content_based,Q023,train,127,2.0,195.0,Taman Bukit Jaya,Johor Bahru,Terrace House,420000.0,1540.0,3.0,2.0,0.6667,weighted attribute match (price / size / facility fit),ok
+content_based,Q023,train,127,3.0,372.0,Taman Bestari Indah,Johor Bahru,Terrace House,460000.0,1540.0,3.0,2.0,0.6517,weighted attribute match (price / size / facility fit),ok
+content_based,Q023,train,127,4.0,217.0,Taman Pulai Utama,Johor Bahru,Terrace House,470000.0,1540.0,3.0,2.0,0.6479,weighted attribute match (price / size / facility fit),ok
+content_based,Q023,train,127,5.0,359.0,Taman Flora Heights,Johor Bahru,Terrace House,488000.0,1540.0,4.0,3.0,0.6412,weighted attribute match (price / size / facility fit),ok
+content_based,Q024,train,97,1.0,217.0,Taman Pulai Utama,Johor Bahru,Terrace House,470000.0,1540.0,3.0,2.0,0.7199,weighted attribute match (price / size / facility fit),ok
+content_based,Q024,train,97,2.0,195.0,Taman Bukit Jaya,Johor Bahru,Terrace House,420000.0,1540.0,3.0,2.0,0.6721,weighted attribute match (price / size / facility fit),ok
+content_based,Q024,train,97,3.0,374.0,Taman Gembira,Johor Bahru,Terrace House,430000.0,1540.0,4.0,2.0,0.6663,weighted attribute match (price / size / facility fit),ok
+content_based,Q024,train,97,4.0,337.0,Taman Suria,Johor Bahru,Terrace House,576000.0,1540.0,3.0,2.0,0.6581,weighted attribute match (price / size / facility fit),ok
+content_based,Q024,train,97,5.0,186.0,Taman Ungku Tun Aminah,Johor Bahru,Terrace House,578000.0,1540.0,3.0,2.0,0.657,weighted attribute match (price / size / facility fit),ok
+content_based,Q025,train,5,1.0,3311.0,Cukai,Kemaman,Bungalow / Detached House,450000.0,2250.0,7.0,4.0,0.7273,weighted attribute match (price / size / facility fit),ok
+content_based,Q025,train,5,2.0,3297.0,Kampung Baru Kerteh,Kemaman,Bungalow / Detached House,555000.0,1938.0,4.0,3.0,0.5764,weighted attribute match (price / size / facility fit),ok
+content_based,Q025,train,5,3.0,3336.0,Chukai,Kemaman,Bungalow / Detached House,448000.0,1819.0,4.0,3.0,0.554,weighted attribute match (price / size / facility fit),ok
+content_based,Q025,train,5,4.0,3342.0,Chukai,Kemaman,Bungalow / Detached House,680000.0,2700.0,4.0,3.0,0.5129,weighted attribute match (price / size / facility fit),ok
+content_based,Q025,train,5,5.0,3346.0,Chukai,Kemaman,Bungalow / Detached House,750000.0,2737.0,5.0,4.0,0.4848,weighted attribute match (price / size / facility fit),ok
+content_based,Q026,train,11,1.0,3347.0,Kampung Baru Kertih,Kemaman,Link Bungalow / Semi-Detached,300000.0,1497.0,3.0,3.0,0.6067,weighted attribute match (price / size / facility fit),ok
+content_based,Q026,train,11,2.0,3273.0,Kemaman,Kemaman,Link Bungalow / Semi-Detached,320000.0,1500.0,4.0,2.0,0.5847,weighted attribute match (price / size / facility fit),ok
+content_based,Q026,train,11,3.0,3340.0,Chukai,Kemaman,Link Bungalow / Semi-Detached,330000.0,1500.0,3.0,2.0,0.5754,weighted attribute match (price / size / facility fit),ok
+content_based,Q026,train,11,4.0,3348.0,Kijal,Kemaman,Link Bungalow / Semi-Detached,350000.0,1500.0,4.0,3.0,0.5569,weighted attribute match (price / size / facility fit),ok
+content_based,Q026,train,11,5.0,3269.0,Kemaman,Kemaman,Link Bungalow / Semi-Detached,358000.0,1300.0,4.0,2.0,0.5495,weighted attribute match (price / size / facility fit),ok
+content_based,Q027,test,13,1.0,3340.0,Chukai,Kemaman,Link Bungalow / Semi-Detached,330000.0,1500.0,3.0,2.0,0.5736,weighted attribute match (price / size / facility fit),ok
+content_based,Q027,test,13,2.0,3273.0,Kemaman,Kemaman,Link Bungalow / Semi-Detached,320000.0,1500.0,4.0,2.0,0.5032,weighted attribute match (price / size / facility fit),ok
+content_based,Q027,test,13,3.0,3348.0,Kijal,Kemaman,Link Bungalow / Semi-Detached,350000.0,1500.0,4.0,3.0,0.4645,weighted attribute match (price / size / facility fit),ok
+content_based,Q027,test,13,4.0,3284.0,Kemasik,Kemaman,Link Bungalow / Semi-Detached,340000.0,1540.0,3.0,2.0,0.4589,weighted attribute match (price / size / facility fit),ok
+content_based,Q027,test,13,5.0,3318.0,Kerteh,Kemaman,Link Bungalow / Semi-Detached,380000.0,1551.0,4.0,2.0,0.4021,weighted attribute match (price / size / facility fit),ok
+content_based,Q028,train,1,1.0,3274.0,Kampung Baru Kerteh,Kemaman,Terrace House,300000.0,900.0,5.0,3.0,0.4588,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q029,train,9,1.0,618.0,Pelangi Heights,Klang,Condominium,360000.0,1167.0,3.0,2.0,0.5352,weighted attribute match (price / size / facility fit),ok
+content_based,Q029,train,9,2.0,507.0,Ken Rimba Condominium 1,Klang,Condominium,415000.0,1180.0,3.0,2.0,0.4579,weighted attribute match (price / size / facility fit),ok
+content_based,Q029,train,9,3.0,3248.0,Pangsapuri Damai,Klang,Condominium,350000.0,971.0,3.0,2.0,0.45,weighted attribute match (price / size / facility fit),ok
+content_based,Q029,train,9,4.0,505.0,Ken Rimba Condominium 1,Klang,Condominium,425000.0,1180.0,3.0,2.0,0.4453,weighted attribute match (price / size / facility fit),ok
+content_based,Q029,train,9,5.0,612.0,Ken Rimba Condominium 1,Klang,Condominium,430000.0,1180.0,3.0,2.0,0.439,weighted attribute match (price / size / facility fit),ok
+content_based,Q030,train,8,1.0,618.0,Pelangi Heights,Klang,Condominium,360000.0,1167.0,3.0,2.0,0.6638,weighted attribute match (price / size / facility fit),ok
+content_based,Q030,train,8,2.0,507.0,Ken Rimba Condominium 1,Klang,Condominium,415000.0,1180.0,3.0,2.0,0.6037,weighted attribute match (price / size / facility fit),ok
+content_based,Q030,train,8,3.0,505.0,Ken Rimba Condominium 1,Klang,Condominium,425000.0,1180.0,3.0,2.0,0.5948,weighted attribute match (price / size / facility fit),ok
+content_based,Q030,train,8,4.0,612.0,Ken Rimba Condominium 1,Klang,Condominium,430000.0,1180.0,3.0,2.0,0.5903,weighted attribute match (price / size / facility fit),ok
+content_based,Q030,train,8,5.0,730.0,Ken Rimba Condominium 1,Klang,Condominium,430000.0,1119.0,3.0,2.0,0.5895,weighted attribute match (price / size / facility fit),ok
+content_based,Q031,train,13,1.0,3247.0,Kampung Jalan Kebun,Klang,Terrace House,545000.0,1884.0,4.0,3.0,0.6829,weighted attribute match (price / size / facility fit),ok
+content_based,Q031,train,13,2.0,560.0,Ken Rimba,Klang,Terrace House,650000.0,1840.0,4.0,3.0,0.654,weighted attribute match (price / size / facility fit),ok
+content_based,Q031,train,13,3.0,580.0,Ken Rimba,Klang,Terrace House,701000.0,1800.0,4.0,3.0,0.6499,weighted attribute match (price / size / facility fit),ok
+content_based,Q031,train,13,4.0,553.0,Ken Rimba,Klang,Terrace House,660000.0,1840.0,4.0,3.0,0.649,weighted attribute match (price / size / facility fit),ok
+content_based,Q031,train,13,5.0,574.0,Ken Rimba,Klang,Terrace House,705000.0,1800.0,4.0,3.0,0.6479,weighted attribute match (price / size / facility fit),ok
+content_based,Q032,train,16,1.0,500.0,Berjaya Park (Taman Berjaya),Klang,Terrace House,499000.0,1800.0,4.0,3.0,0.7764,weighted attribute match (price / size / facility fit),ok
+content_based,Q032,train,16,2.0,3247.0,Kampung Jalan Kebun,Klang,Terrace House,545000.0,1884.0,4.0,3.0,0.7645,weighted attribute match (price / size / facility fit),ok
+content_based,Q032,train,16,3.0,560.0,Ken Rimba,Klang,Terrace House,650000.0,1840.0,4.0,3.0,0.732,weighted attribute match (price / size / facility fit),ok
+content_based,Q032,train,16,4.0,553.0,Ken Rimba,Klang,Terrace House,660000.0,1840.0,4.0,3.0,0.7279,weighted attribute match (price / size / facility fit),ok
+content_based,Q032,train,16,5.0,645.0,Kota Kemuning,Klang,Terrace House,670000.0,1900.0,4.0,3.0,0.707,weighted attribute match (price / size / facility fit),ok
+content_based,Q033,train,6,1.0,2948.0,Waikiki Condominium,Kota Kinabalu,Condominium,620000.0,1262.0,3.0,2.0,0.7898,weighted attribute match (price / size / facility fit),ok
+content_based,Q033,train,6,2.0,2906.0,Waikiki Condominium,Kota Kinabalu,Condominium,680000.0,1235.0,3.0,3.0,0.7396,weighted attribute match (price / size / facility fit),ok
+content_based,Q033,train,6,3.0,2884.0,Marina Court,Kota Kinabalu,Condominium,628000.0,1194.0,3.0,2.0,0.7006,weighted attribute match (price / size / facility fit),ok
+content_based,Q033,train,6,4.0,2946.0,Tropicana Landmark,Kota Kinabalu,Condominium,850000.0,1213.0,3.0,2.0,0.6671,weighted attribute match (price / size / facility fit),ok
+content_based,Q033,train,6,5.0,2893.0,1Sulaman Platinum Tower,Kota Kinabalu,Condominium,400000.0,1100.0,3.0,2.0,0.6394,weighted attribute match (price / size / facility fit),ok
+content_based,Q034,train,18,1.0,2913.0,Alam Damai Condominium,Kota Kinabalu,Condominium,575000.0,976.0,3.0,2.0,0.6167,weighted attribute match (price / size / facility fit),ok
+content_based,Q034,train,18,2.0,2986.0,Alam Damai Kondominium,Kota Kinabalu,Condominium,580000.0,976.0,3.0,2.0,0.6146,weighted attribute match (price / size / facility fit),ok
+content_based,Q034,train,18,3.0,2971.0,The Loft @ Kk Times Square,Kota Kinabalu,Condominium,728888.0,892.0,3.0,2.0,0.6119,weighted attribute match (price / size / facility fit),ok
+content_based,Q034,train,18,4.0,2937.0,Ashton Tower,Kota Kinabalu,Condominium,395000.0,870.0,3.0,2.0,0.6089,weighted attribute match (price / size / facility fit),ok
+content_based,Q034,train,18,5.0,2899.0,Alam Damai Condominium,Kota Kinabalu,Condominium,538000.0,1070.0,3.0,2.0,0.5961,weighted attribute match (price / size / facility fit),ok
+content_based,Q035,validation,27,1.0,2884.0,Marina Court,Kota Kinabalu,Condominium,628000.0,1194.0,3.0,2.0,0.7006,weighted attribute match (price / size / facility fit),ok
+content_based,Q035,validation,27,2.0,2940.0,Marina Court,Kota Kinabalu,Condominium,628000.0,1194.0,3.0,2.0,0.7006,weighted attribute match (price / size / facility fit),ok
+content_based,Q035,validation,27,3.0,2932.0,Canggih Heights,Kota Kinabalu,Condominium,580000.0,1146.0,3.0,2.0,0.6847,weighted attribute match (price / size / facility fit),ok
+content_based,Q035,validation,27,4.0,2911.0,Marina Court,Kota Kinabalu,Condominium,650000.0,1216.0,3.0,2.0,0.6823,weighted attribute match (price / size / facility fit),ok
+content_based,Q035,validation,27,5.0,2899.0,Alam Damai Condominium,Kota Kinabalu,Condominium,538000.0,1070.0,3.0,2.0,0.6435,weighted attribute match (price / size / facility fit),ok
+content_based,Q036,test,33,1.0,2953.0,Indah Court,Kota Kinabalu,Condominium,368000.0,1059.0,3.0,2.0,0.7799,weighted attribute match (price / size / facility fit),ok
+content_based,Q036,test,33,2.0,2913.0,Alam Damai Condominium,Kota Kinabalu,Condominium,575000.0,976.0,3.0,2.0,0.7508,weighted attribute match (price / size / facility fit),ok
+content_based,Q036,test,33,3.0,2986.0,Alam Damai Kondominium,Kota Kinabalu,Condominium,580000.0,976.0,3.0,2.0,0.7489,weighted attribute match (price / size / facility fit),ok
+content_based,Q036,test,33,4.0,2941.0,The Peak Suites,Kota Kinabalu,Condominium,580000.0,972.0,3.0,2.0,0.7434,weighted attribute match (price / size / facility fit),ok
+content_based,Q036,test,33,5.0,2887.0,1Sulaman Platinum Tower,Kota Kinabalu,Condominium,498000.0,1000.0,3.0,2.0,0.7297,weighted attribute match (price / size / facility fit),ok
+content_based,Q037,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q038,train,6,1.0,19.0,Taman Sri Saujana,Kota Tinggi,Terrace House,358000.0,1450.0,3.0,2.0,0.3648,weighted attribute match (price / size / facility fit),ok
+content_based,Q038,train,6,2.0,161.0,Taman Sri Saujana,Kota Tinggi,Terrace House,360000.0,1400.0,3.0,2.0,0.3364,weighted attribute match (price / size / facility fit),ok
+content_based,Q038,train,6,3.0,136.0,Taman Kota Jaya 2,Kota Tinggi,Terrace House,368000.0,1173.0,4.0,3.0,0.2083,weighted attribute match (price / size / facility fit),ok
+content_based,Q038,train,6,4.0,213.0,Taman Kota Jaya,Kota Tinggi,Terrace House,350000.0,1760.0,3.0,2.0,0.2036,weighted attribute match (price / size / facility fit),ok
+content_based,Q038,train,6,5.0,182.0,Taman Kota Jaya,Kota Tinggi,Terrace House,429000.0,2600.0,4.0,3.0,0.0007,weighted attribute match (price / size / facility fit),ok
+content_based,Q039,test,10,1.0,213.0,Taman Kota Jaya,Kota Tinggi,Terrace House,350000.0,1760.0,3.0,2.0,0.6616,weighted attribute match (price / size / facility fit),ok
+content_based,Q039,test,10,2.0,214.0,Taman Kota Jaya,Kota Tinggi,Terrace House,465000.0,1936.0,4.0,3.0,0.6538,weighted attribute match (price / size / facility fit),ok
+content_based,Q039,test,10,3.0,19.0,Taman Sri Saujana,Kota Tinggi,Terrace House,358000.0,1450.0,3.0,2.0,0.5383,weighted attribute match (price / size / facility fit),ok
+content_based,Q039,test,10,4.0,131.0,Taman Sri Lalang,Kota Tinggi,Terrace House,330000.0,1400.0,2.0,2.0,0.5374,weighted attribute match (price / size / facility fit),ok
+content_based,Q039,test,10,5.0,161.0,Taman Sri Saujana,Kota Tinggi,Terrace House,360000.0,1400.0,3.0,2.0,0.5179,weighted attribute match (price / size / facility fit),ok
+content_based,Q040,train,21,1.0,3245.0,Setapak Green,Kuala Lumpur,Condominium,570000.0,1362.0,4.0,3.0,0.8833,weighted attribute match (price / size / facility fit),ok
+content_based,Q040,train,21,2.0,1035.0,Casa Ria,Kuala Lumpur,Condominium,430000.0,1116.0,3.0,2.0,0.7838,weighted attribute match (price / size / facility fit),ok
+content_based,Q040,train,21,3.0,3212.0,Aria Luxury Residence,Kuala Lumpur,Condominium,2100000.0,1502.0,3.0,3.0,0.7006,weighted attribute match (price / size / facility fit),ok
+content_based,Q040,train,21,4.0,3180.0,Residensi Platinum Teratai,Kuala Lumpur,Condominium,410000.0,928.0,3.0,2.0,0.6964,weighted attribute match (price / size / facility fit),ok
+content_based,Q040,train,21,5.0,3184.0,Tuan Residency (Residensi Selingsing),Kuala Lumpur,Condominium,450000.0,861.0,3.0,2.0,0.6634,weighted attribute match (price / size / facility fit),ok
+content_based,Q041,test,9,1.0,3193.0,Kiara 1888,Kuala Lumpur,Condominium,650000.0,1263.0,3.0,2.0,0.8541,weighted attribute match (price / size / facility fit),ok
+content_based,Q041,test,9,2.0,3245.0,Setapak Green,Kuala Lumpur,Condominium,570000.0,1362.0,4.0,3.0,0.8502,weighted attribute match (price / size / facility fit),ok
+content_based,Q041,test,9,3.0,1035.0,Casa Ria,Kuala Lumpur,Condominium,430000.0,1116.0,3.0,2.0,0.7855,weighted attribute match (price / size / facility fit),ok
+content_based,Q041,test,9,4.0,3360.0,Nan,Kuala Lumpur,Condominium,379000.0,960.0,3.0,2.0,0.6794,weighted attribute match (price / size / facility fit),ok
+content_based,Q041,test,9,5.0,3180.0,Residensi Platinum Teratai,Kuala Lumpur,Condominium,410000.0,928.0,3.0,2.0,0.6501,weighted attribute match (price / size / facility fit),ok
+content_based,Q042,test,15,1.0,3245.0,Setapak Green,Kuala Lumpur,Condominium,570000.0,1362.0,4.0,3.0,0.8131,weighted attribute match (price / size / facility fit),ok
+content_based,Q042,test,15,2.0,3228.0,Dc Residensi (Damansara City),Kuala Lumpur,Condominium,1880000.0,1668.0,4.0,3.0,0.6949,weighted attribute match (price / size / facility fit),ok
+content_based,Q042,test,15,3.0,3212.0,Aria Luxury Residence,Kuala Lumpur,Condominium,2100000.0,1502.0,3.0,3.0,0.6496,weighted attribute match (price / size / facility fit),ok
+content_based,Q042,test,15,4.0,3227.0,Dc Residensi (Damansara City),Kuala Lumpur,Condominium,1980000.0,1750.0,4.0,3.0,0.6447,weighted attribute match (price / size / facility fit),ok
+content_based,Q042,test,15,5.0,3218.0,Pavilion Damansara Heights,Kuala Lumpur,Condominium,2735000.0,1576.0,4.0,4.0,0.5887,weighted attribute match (price / size / facility fit),ok
+content_based,Q043,test,8,1.0,1224.0,Mutiara Bukit Jalil,Kuala Lumpur,Terrace House,1080000.0,3300.0,6.0,4.0,0.5833,weighted attribute match (price / size / facility fit),ok
+content_based,Q043,test,8,2.0,1066.0,Taman Impian Indah (Paragon Heights),Kuala Lumpur,Terrace House,1080000.0,3388.0,5.0,5.0,0.5648,weighted attribute match (price / size / facility fit),ok
+content_based,Q043,test,8,3.0,1166.0,Taman Impian Indah (Paragon Heights),Kuala Lumpur,Terrace House,1130000.0,3388.0,6.0,5.0,0.5455,weighted attribute match (price / size / facility fit),ok
+content_based,Q043,test,8,4.0,1223.0,Taman Impian Indah (Paragon Heights),Kuala Lumpur,Terrace House,1280000.0,3388.0,5.0,5.0,0.4877,weighted attribute match (price / size / facility fit),ok
+content_based,Q043,test,8,5.0,3192.0,Taman Cheras,Kuala Lumpur,Terrace House,650000.0,1800.0,4.0,3.0,0.4715,weighted attribute match (price / size / facility fit),ok
+content_based,Q044,train,5,1.0,3324.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,615000.0,1800.0,4.0,3.0,0.6058,weighted attribute match (price / size / facility fit),ok
+content_based,Q044,train,5,2.0,3325.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,774000.0,2200.0,4.0,3.0,0.3788,weighted attribute match (price / size / facility fit),ok
+content_based,Q044,train,5,3.0,3251.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,865000.0,2150.0,5.0,5.0,0.3699,weighted attribute match (price / size / facility fit),ok
+content_based,Q044,train,5,4.0,3320.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,830000.0,3000.0,5.0,5.0,0.2211,weighted attribute match (price / size / facility fit),ok
+content_based,Q044,train,5,5.0,3261.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,900000.0,2500.0,5.0,5.0,0.2063,weighted attribute match (price / size / facility fit),ok
+content_based,Q045,train,4,1.0,3314.0,Kuala Terengganu,Kuala Nerus,Bungalow / Detached House,480000.0,2275.0,4.0,3.0,0.6541,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q045,train,4,2.0,3333.0,Kampung Pengkalan Maras,Kuala Nerus,Bungalow / Detached House,320000.0,946.0,4.0,3.0,0.4414,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q045,train,4,3.0,3301.0,Kuala Terengganu,Kuala Nerus,Bungalow / Detached House,550000.0,1650.0,5.0,3.0,0.3504,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q045,train,4,4.0,3343.0,Kuala Terengganu Golf Resort,Kuala Nerus,Bungalow / Detached House,850000.0,3700.0,5.0,5.0,0.1142,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q046,train,2,1.0,2067.0,Taman Bukit@ Forest & Hill,Kuantan,Bungalow / Detached House,1800000.0,3000.0,6.0,4.0,0.6495,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q046,train,2,2.0,2014.0,Taman Pelindung,Kuantan,Bungalow / Detached House,980000.0,8000.0,6.0,6.0,0.2417,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q047,train,6,1.0,1952.0,Tanjung Lumpur/Kampung Kempadang/Kampung Soi,Kuantan,Bungalow / Detached House,335000.0,1800.0,3.0,2.0,0.5122,weighted attribute match (price / size / facility fit),ok
+content_based,Q047,train,6,2.0,1944.0,Pantai Selamat,Kuantan,Bungalow / Detached House,370000.0,1800.0,3.0,3.0,0.4636,weighted attribute match (price / size / facility fit),ok
+content_based,Q047,train,6,3.0,1910.0,Permatang Badak,Kuantan,Bungalow / Detached House,330000.0,1600.0,3.0,4.0,0.4291,weighted attribute match (price / size / facility fit),ok
+content_based,Q047,train,6,4.0,2009.0,Sungai Isap Damai,Kuantan,Bungalow / Detached House,380000.0,1500.0,4.0,4.0,0.3146,weighted attribute match (price / size / facility fit),ok
+content_based,Q047,train,6,5.0,2004.0,Sungai Isap Damai,Kuantan,Bungalow / Detached House,300000.0,1100.0,3.0,2.0,0.25,weighted attribute match (price / size / facility fit),ok
+content_based,Q048,train,10,1.0,1912.0,Timurbay Seafront Residence,Kuantan,Condominium,368000.0,541.0,1.0,1.0,0.5672,weighted attribute match (price / size / facility fit),ok
+content_based,Q048,train,10,2.0,2037.0,Timur Bay,Kuantan,Condominium,380000.0,541.0,1.0,1.0,0.5593,weighted attribute match (price / size / facility fit),ok
+content_based,Q048,train,10,3.0,1956.0,Timurbay Seafront Residence,Kuantan,Condominium,385000.0,541.0,1.0,1.0,0.556,weighted attribute match (price / size / facility fit),ok
+content_based,Q048,train,10,4.0,2059.0,Timur Bay,Kuantan,Condominium,380000.0,536.0,1.0,1.0,0.5467,weighted attribute match (price / size / facility fit),ok
+content_based,Q048,train,10,5.0,1902.0,Timurbay Seafront Residence,Kuantan,Condominium,408000.0,541.0,1.0,1.0,0.5408,weighted attribute match (price / size / facility fit),ok
+content_based,Q049,validation,10,1.0,1912.0,Timurbay Seafront Residence,Kuantan,Condominium,368000.0,541.0,1.0,1.0,0.3908,weighted attribute match (price / size / facility fit),ok
+content_based,Q049,validation,10,2.0,2037.0,Timur Bay,Kuantan,Condominium,380000.0,541.0,1.0,1.0,0.3749,weighted attribute match (price / size / facility fit),ok
+content_based,Q049,validation,10,3.0,2059.0,Timur Bay,Kuantan,Condominium,380000.0,536.0,1.0,1.0,0.3686,weighted attribute match (price / size / facility fit),ok
+content_based,Q049,validation,10,4.0,1956.0,Timurbay Seafront Residence,Kuantan,Condominium,385000.0,541.0,1.0,1.0,0.3683,weighted attribute match (price / size / facility fit),ok
+content_based,Q049,validation,10,5.0,1847.0,Timurbay Seafront Residence,Kuantan,Condominium,375000.0,514.0,1.0,1.0,0.3474,weighted attribute match (price / size / facility fit),ok
+content_based,Q050,train,2,1.0,1885.0,Balok Makmur,Kuantan,Link Bungalow / Semi-Detached,430000.0,1500.0,4.0,2.0,0.6894,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q050,train,2,2.0,1856.0,Bandar Putra,Kuantan,Link Bungalow / Semi-Detached,680000.0,2100.0,4.0,5.0,0.1613,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q051,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q052,train,1,1.0,1885.0,Balok Makmur,Kuantan,Link Bungalow / Semi-Detached,430000.0,1500.0,4.0,2.0,0.4971,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q053,train,18,1.0,1974.0,Taman Gambang Damai/Desa Hijauan,Kuantan,Link Bungalow / Semi-Detached,310000.0,1500.0,4.0,2.0,0.4273,weighted attribute match (price / size / facility fit),ok
+content_based,Q053,train,18,2.0,1992.0,Taman Gambang Damai/Desa Hijauan,Kuantan,Link Bungalow / Semi-Detached,330000.0,1500.0,4.0,2.0,0.4145,weighted attribute match (price / size / facility fit),ok
+content_based,Q053,train,18,3.0,1934.0,Indera Sempurna,Kuantan,Link Bungalow / Semi-Detached,360000.0,1500.0,4.0,2.0,0.3954,weighted attribute match (price / size / facility fit),ok
+content_based,Q053,train,18,4.0,2046.0,Seberang Balok,Kuantan,Link Bungalow / Semi-Detached,360000.0,1500.0,4.0,2.0,0.3954,weighted attribute match (price / size / facility fit),ok
+content_based,Q053,train,18,5.0,1895.0,Permatang Badak,Kuantan,Link Bungalow / Semi-Detached,370000.0,1500.0,4.0,2.0,0.389,weighted attribute match (price / size / facility fit),ok
+content_based,Q054,train,25,1.0,1865.0,Bukit Setongkol,Kuantan,Terrace House,450000.0,1200.0,4.0,3.0,0.7188,weighted attribute match (price / size / facility fit),ok
+content_based,Q054,train,25,2.0,1893.0,Air Putih,Kuantan,Terrace House,460000.0,1200.0,4.0,3.0,0.7125,weighted attribute match (price / size / facility fit),ok
+content_based,Q054,train,25,3.0,1957.0,Bukit Setongkol,Kuantan,Terrace House,450000.0,1100.0,4.0,3.0,0.6536,weighted attribute match (price / size / facility fit),ok
+content_based,Q054,train,25,4.0,1925.0,Seri Teruntum,Kuantan,Terrace House,450000.0,1320.0,4.0,3.0,0.6406,weighted attribute match (price / size / facility fit),ok
+content_based,Q054,train,25,5.0,1905.0,Perumahan Atabara Perdana,Kuantan,Terrace House,428000.0,1000.0,4.0,3.0,0.6023,weighted attribute match (price / size / facility fit),ok
+content_based,Q055,validation,20,1.0,1962.0,Kampung Chengal Lempong,Kuantan,Terrace House,340000.0,1100.0,4.0,3.0,0.4947,weighted attribute match (price / size / facility fit),ok
+content_based,Q055,validation,20,2.0,1953.0,Perumahan Padang Maju,Kuantan,Terrace House,370000.0,1100.0,4.0,3.0,0.4643,weighted attribute match (price / size / facility fit),ok
+content_based,Q055,validation,20,3.0,2003.0,Bandar Damansara Kuantan,Kuantan,Terrace House,300000.0,1100.0,4.0,2.0,0.4198,weighted attribute match (price / size / facility fit),ok
+content_based,Q055,validation,20,4.0,2029.0,Mahkota Permai,Kuantan,Terrace House,300000.0,1000.0,4.0,4.0,0.4198,weighted attribute match (price / size / facility fit),ok
+content_based,Q055,validation,20,5.0,1947.0,Taman Psj Sungai Karang Damai,Kuantan,Terrace House,325000.0,900.0,5.0,4.0,0.4183,weighted attribute match (price / size / facility fit),ok
+content_based,Q056,train,32,1.0,2025.0,Taman Pandan Damai 1,Kuantan,Terrace House,350000.0,1200.0,3.0,2.0,0.7083,weighted attribute match (price / size / facility fit),ok
+content_based,Q056,train,32,2.0,2030.0,Bandar Putra,Kuantan,Terrace House,365000.0,1200.0,5.0,2.0,0.6958,weighted attribute match (price / size / facility fit),ok
+content_based,Q056,train,32,3.0,1907.0,Balok Makmur,Kuantan,Terrace House,370000.0,1200.0,3.0,2.0,0.6917,weighted attribute match (price / size / facility fit),ok
+content_based,Q056,train,32,4.0,1871.0,Taman Perumahan Sungai Soi Jaya (P/Lot 134832),Kuantan,Terrace House,380000.0,1200.0,4.0,2.0,0.6833,weighted attribute match (price / size / facility fit),ok
+content_based,Q056,train,32,5.0,1917.0,Semambu I,Kuantan,Terrace House,398000.0,1200.0,4.0,3.0,0.6683,weighted attribute match (price / size / facility fit),ok
+content_based,Q057,test,1,1.0,1917.0,Semambu I,Kuantan,Terrace House,398000.0,1200.0,4.0,3.0,0.5404,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q058,train,38,1.0,3151.0,P Residence,Kuching,Condominium,520000.0,1226.0,3.0,2.0,0.6627,weighted attribute match (price / size / facility fit),ok
+content_based,Q058,train,38,2.0,3148.0,Eden Heights Condominium,Kuching,Condominium,485000.0,1200.0,3.0,2.0,0.6578,weighted attribute match (price / size / facility fit),ok
+content_based,Q058,train,38,3.0,3100.0,Kuching,Kuching,Condominium,535000.0,1200.0,2.0,2.0,0.6277,weighted attribute match (price / size / facility fit),ok
+content_based,Q058,train,38,4.0,3000.0,Liberty Grove,Kuching,Condominium,550000.0,1307.0,3.0,3.0,0.6117,weighted attribute match (price / size / facility fit),ok
+content_based,Q058,train,38,5.0,3003.0,Skyvilla Condominium,Kuching,Condominium,420000.0,1110.0,3.0,2.0,0.607,weighted attribute match (price / size / facility fit),ok
+content_based,Q059,train,32,1.0,3003.0,Skyvilla Condominium,Kuching,Condominium,420000.0,1110.0,3.0,2.0,0.7897,weighted attribute match (price / size / facility fit),ok
+content_based,Q059,train,32,2.0,3046.0,Skyvilla Condominium,Kuching,Condominium,589911.0,1152.0,3.0,2.0,0.787,weighted attribute match (price / size / facility fit),ok
+content_based,Q059,train,32,3.0,3062.0,The Charlotte @Pending,Kuching,Condominium,527151.0,1127.0,3.0,2.0,0.7796,weighted attribute match (price / size / facility fit),ok
+content_based,Q059,train,32,4.0,3063.0,The Charlotte @Pending,Kuching,Condominium,581000.0,1162.0,3.0,2.0,0.7775,weighted attribute match (price / size / facility fit),ok
+content_based,Q059,train,32,5.0,3148.0,Eden Heights Condominium,Kuching,Condominium,485000.0,1200.0,3.0,2.0,0.7591,weighted attribute match (price / size / facility fit),ok
+content_based,Q060,train,38,1.0,3004.0,Mjc-Upper Sanctuary Condominium,Kuching,Condominium,380000.0,986.0,3.0,2.0,0.8386,weighted attribute match (price / size / facility fit),ok
+content_based,Q060,train,38,2.0,3048.0,Skyvilla Condominium,Kuching,Condominium,472960.0,882.0,2.0,2.0,0.7757,weighted attribute match (price / size / facility fit),ok
+content_based,Q060,train,38,3.0,3154.0,Mjc-Courtyard Sanctuary Apartment,Kuching,Condominium,315000.0,806.0,3.0,2.0,0.7507,weighted attribute match (price / size / facility fit),ok
+content_based,Q060,train,38,4.0,3099.0,Satria Court,Kuching,Condominium,460000.0,839.0,3.0,2.0,0.7364,weighted attribute match (price / size / facility fit),ok
+content_based,Q060,train,38,5.0,3176.0,Skyvilla Condominium,Kuching,Condominium,483593.0,1089.0,3.0,2.0,0.7003,weighted attribute match (price / size / facility fit),ok
+content_based,Q061,train,11,1.0,3080.0,Taman Wangsa 3,Kuching,Link Bungalow / Semi-Detached,699000.0,1378.0,4.0,3.0,0.7957,weighted attribute match (price / size / facility fit),ok
+content_based,Q061,train,11,2.0,3160.0,Taman Kopodims,Kuching,Link Bungalow / Semi-Detached,528000.0,1420.0,3.0,2.0,0.6713,weighted attribute match (price / size / facility fit),ok
+content_based,Q061,train,11,3.0,3024.0,Holmes Avenue @Matang,Kuching,Link Bungalow / Semi-Detached,498000.0,1383.0,3.0,3.0,0.6585,weighted attribute match (price / size / facility fit),ok
+content_based,Q061,train,11,4.0,3041.0,Jalan Matang,Kuching,Link Bungalow / Semi-Detached,498000.0,1383.0,3.0,3.0,0.6585,weighted attribute match (price / size / facility fit),ok
+content_based,Q061,train,11,5.0,3094.0,Taman Kopodims,Kuching,Link Bungalow / Semi-Detached,625000.0,1560.0,3.0,2.0,0.6053,weighted attribute match (price / size / facility fit),ok
+content_based,Q062,train,14,1.0,3123.0,Sunset Villa Tabuan Park,Kuching,Link Bungalow / Semi-Detached,1688000.0,2095.0,4.0,3.0,0.6741,weighted attribute match (price / size / facility fit),ok
+content_based,Q062,train,14,2.0,3051.0,Taman Siburan 2,Kuching,Link Bungalow / Semi-Detached,798000.0,2321.0,4.0,4.0,0.6574,weighted attribute match (price / size / facility fit),ok
+content_based,Q062,train,14,3.0,3094.0,Taman Kopodims,Kuching,Link Bungalow / Semi-Detached,625000.0,1560.0,3.0,2.0,0.4709,weighted attribute match (price / size / facility fit),ok
+content_based,Q062,train,14,4.0,3111.0,Jalan Dogan,Kuching,Link Bungalow / Semi-Detached,828000.0,1500.0,4.0,2.0,0.4025,weighted attribute match (price / size / facility fit),ok
+content_based,Q062,train,14,5.0,3160.0,Taman Kopodims,Kuching,Link Bungalow / Semi-Detached,528000.0,1420.0,3.0,2.0,0.3921,weighted attribute match (price / size / facility fit),ok
+content_based,Q063,train,1,1.0,3101.0,Taman Matang Jaya,Kuching,Terrace House,498000.0,1600.0,4.0,3.0,0.3621,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q064,train,45,1.0,3035.0,Taman Siniawan,Kuching,Terrace House,488000.0,1829.0,4.0,4.0,0.7756,weighted attribute match (price / size / facility fit),ok
+content_based,Q064,train,45,2.0,3086.0,Kasa Kasturi,Kuching,Terrace House,614444.0,1760.0,4.0,3.0,0.716,weighted attribute match (price / size / facility fit),ok
+content_based,Q064,train,45,3.0,3040.0,Taman Wangsa 3,Kuching,Terrace House,648800.0,1780.0,4.0,4.0,0.7097,weighted attribute match (price / size / facility fit),ok
+content_based,Q064,train,45,4.0,3072.0,Rancangan Perumahan Rakyat Sungai Tengah,Kuching,Terrace House,488000.0,1982.0,3.0,2.0,0.7092,weighted attribute match (price / size / facility fit),ok
+content_based,Q064,train,45,5.0,2996.0,Kuching,Kuching,Terrace House,460000.0,2016.0,5.0,5.0,0.7066,weighted attribute match (price / size / facility fit),ok
+content_based,Q065,train,1,1.0,3101.0,Taman Matang Jaya,Kuching,Terrace House,498000.0,1600.0,4.0,3.0,0.4015,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q066,train,1,1.0,3067.0,Westhill Villa @ Matang,Kuching,Terrace House,428000.0,1393.0,3.0,2.0,0.6759,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q067,train,12,1.0,200.0,Taman Wawasan Kelapa Sawit,Kulai,Terrace House,345000.0,1400.0,3.0,2.0,0.7553,weighted attribute match (price / size / facility fit),ok
+content_based,Q067,train,12,2.0,98.0,Bandar Putra Kulai,Kulai,Terrace House,468000.0,1400.0,3.0,2.0,0.6681,weighted attribute match (price / size / facility fit),ok
+content_based,Q067,train,12,3.0,193.0,Taman Scientex Utama,Kulai,Terrace House,460000.0,1540.0,4.0,3.0,0.5071,weighted attribute match (price / size / facility fit),ok
+content_based,Q067,train,12,4.0,36.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1180.0,3.0,2.0,0.4438,weighted attribute match (price / size / facility fit),ok
+content_based,Q067,train,12,5.0,146.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1170.0,3.0,2.0,0.4319,weighted attribute match (price / size / facility fit),ok
+content_based,Q068,train,12,1.0,137.0,Taman Scientex Utama,Kulai,Terrace House,455000.0,1170.0,4.0,3.0,0.6068,weighted attribute match (price / size / facility fit),ok
+content_based,Q068,train,12,2.0,171.0,Taman Scientex Jaya,Kulai,Terrace House,480000.0,1170.0,4.0,3.0,0.5926,weighted attribute match (price / size / facility fit),ok
+content_based,Q068,train,12,3.0,98.0,Bandar Putra Kulai,Kulai,Terrace House,468000.0,1400.0,3.0,2.0,0.3772,weighted attribute match (price / size / facility fit),ok
+content_based,Q068,train,12,4.0,175.0,Bandar Putra Kulai,Kulai,Terrace House,475000.0,1400.0,4.0,2.0,0.3732,weighted attribute match (price / size / facility fit),ok
+content_based,Q068,train,12,5.0,200.0,Taman Wawasan Kelapa Sawit,Kulai,Terrace House,345000.0,1400.0,3.0,2.0,0.3358,weighted attribute match (price / size / facility fit),ok
+content_based,Q069,train,6,1.0,1264.0,Taman Tanjung Minyak Setia (P.Lot Pt 7199),Melaka Tengah,Bungalow / Detached House,393600.0,1500.0,4.0,3.0,0.2856,weighted attribute match (price / size / facility fit),ok
+content_based,Q069,train,6,2.0,1244.0,Taman Paya Rumput Perdana,Melaka Tengah,Bungalow / Detached House,600000.0,4000.0,4.0,2.0,0.2482,weighted attribute match (price / size / facility fit),ok
+content_based,Q069,train,6,3.0,1299.0,One Krubong Lake Garden,Melaka Tengah,Bungalow / Detached House,595000.0,2000.0,4.0,2.0,0.1648,weighted attribute match (price / size / facility fit),ok
+content_based,Q069,train,6,4.0,1302.0,Taman Krubong Perdana,Melaka Tengah,Bungalow / Detached House,595000.0,2000.0,4.0,2.0,0.1648,weighted attribute match (price / size / facility fit),ok
+content_based,Q069,train,6,5.0,1321.0,Taman Bertam Height,Melaka Tengah,Bungalow / Detached House,802500.0,4500.0,4.0,4.0,0.0051,weighted attribute match (price / size / facility fit),ok
+content_based,Q070,validation,3,1.0,1262.0,Taman Ayer Keroh Heights I (Puncak Bukit Bru,Melaka Tengah,Bungalow / Detached House,2400008.0,5600.0,7.0,7.0,0.549,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q070,validation,3,2.0,1255.0,Taman Belia Antarabangsa,Melaka Tengah,Bungalow / Detached House,2400000.0,5600.0,7.0,7.0,0.3615,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q070,validation,3,3.0,1250.0,Taman Belia Antarabangsa,Melaka Tengah,Bungalow / Detached House,1250000.0,1258.0,5.0,3.0,0.3379,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q071,validation,2,1.0,1249.0,Crystal Bay,Melaka Tengah,Link Bungalow / Semi-Detached,400000.0,3757.0,4.0,2.0,0.6154,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q071,validation,2,2.0,1261.0,Taman Tasik Utama,Melaka Tengah,Link Bungalow / Semi-Detached,440000.0,1650.0,5.0,3.0,0.4241,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q072,train,6,1.0,1467.0,Taman Paya Emas,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,0.4369,weighted attribute match (price / size / facility fit),ok
+content_based,Q072,train,6,2.0,1527.0,Taman Batu Berendam Putra,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.3999,weighted attribute match (price / size / facility fit),ok
+content_based,Q072,train,6,3.0,1535.0,Taman Ara Indah,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.3999,weighted attribute match (price / size / facility fit),ok
+content_based,Q072,train,6,4.0,1466.0,Taman Desa Bertam,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,0.3535,weighted attribute match (price / size / facility fit),ok
+content_based,Q072,train,6,5.0,1529.0,Taman Sutera Wangi,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.3166,weighted attribute match (price / size / facility fit),ok
+content_based,Q073,train,10,1.0,1466.0,Taman Desa Bertam,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,0.7105,weighted attribute match (price / size / facility fit),ok
+content_based,Q073,train,10,2.0,1467.0,Taman Paya Emas,Melaka Tengah,Terrace House,475000.0,2800.0,4.0,3.0,0.7105,weighted attribute match (price / size / facility fit),ok
+content_based,Q073,train,10,3.0,1527.0,Taman Batu Berendam Putra,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.5809,weighted attribute match (price / size / facility fit),ok
+content_based,Q073,train,10,4.0,1529.0,Taman Sutera Wangi,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.5809,weighted attribute match (price / size / facility fit),ok
+content_based,Q073,train,10,5.0,1535.0,Taman Ara Indah,Melaka Tengah,Terrace House,545000.0,3000.0,4.0,3.0,0.5809,weighted attribute match (price / size / facility fit),ok
+content_based,Q074,train,5,1.0,1396.0,Taman Bukit Katil Damai 2,Melaka Tengah,Terrace House,482000.0,2800.0,6.0,3.0,0.6732,weighted attribute match (price / size / facility fit),ok
+content_based,Q074,train,5,2.0,1265.0,Taman Tasik Utama,Melaka Tengah,Terrace House,468000.0,2700.0,4.0,3.0,0.6307,weighted attribute match (price / size / facility fit),ok
+content_based,Q074,train,5,3.0,1266.0,Taman Tasik Utama,Melaka Tengah,Terrace House,468000.0,2700.0,4.0,3.0,0.6307,weighted attribute match (price / size / facility fit),ok
+content_based,Q074,train,5,4.0,1283.0,Taman Ayer Keroh Heights I (Puncak Bukit Bru,Melaka Tengah,Terrace House,468000.0,2700.0,4.0,3.0,0.5474,weighted attribute match (price / size / facility fit),ok
+content_based,Q074,train,5,5.0,1254.0,Taman Bachang Baru,Melaka Tengah,Terrace House,340000.0,1850.0,5.0,3.0,0.1904,weighted attribute match (price / size / facility fit),ok
+content_based,Q075,test,4,1.0,2886.0,Taman Penampang Apartment Phase 2T,Penampang,Condominium,320000.0,1043.0,3.0,2.0,0.4474,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q075,test,4,2.0,2983.0,Taman Penampang,Penampang,Condominium,360000.0,1043.0,3.0,2.0,0.3791,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q075,test,4,3.0,2918.0,Rainfield Court Apartment,Penampang,Condominium,360000.0,1063.0,3.0,2.0,0.3743,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q075,test,4,4.0,2981.0,Beverly Hills 3,Penampang,Condominium,350000.0,860.0,3.0,2.0,0.2509,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q076,train,8,1.0,2886.0,Taman Penampang Apartment Phase 2T,Penampang,Condominium,320000.0,1043.0,3.0,2.0,0.8812,weighted attribute match (price / size / facility fit),ok
+content_based,Q076,train,8,2.0,2983.0,Taman Penampang,Penampang,Condominium,360000.0,1043.0,3.0,2.0,0.867,weighted attribute match (price / size / facility fit),ok
+content_based,Q076,train,8,3.0,2918.0,Rainfield Court Apartment,Penampang,Condominium,360000.0,1063.0,3.0,2.0,0.8625,weighted attribute match (price / size / facility fit),ok
+content_based,Q076,train,8,4.0,2981.0,Beverly Hills 3,Penampang,Condominium,350000.0,860.0,3.0,2.0,0.7343,weighted attribute match (price / size / facility fit),ok
+content_based,Q076,train,8,5.0,2898.0,The Gardens Condominium,Penampang,Condominium,460000.0,848.0,3.0,2.0,0.6864,weighted attribute match (price / size / facility fit),ok
+content_based,Q077,validation,15,1.0,963.0,Taman Tasik Prima,Petaling,Bungalow / Detached House,1600000.0,4000.0,6.0,6.0,0.716,weighted attribute match (price / size / facility fit),ok
+content_based,Q077,validation,15,2.0,941.0,Laman Granview,Petaling,Bungalow / Detached House,1800000.0,3940.0,5.0,5.0,0.6886,weighted attribute match (price / size / facility fit),ok
+content_based,Q077,validation,15,3.0,584.0,Casa Idaman,Petaling,Bungalow / Detached House,1860000.0,3760.0,6.0,5.0,0.6467,weighted attribute match (price / size / facility fit),ok
+content_based,Q077,validation,15,4.0,1141.0,Laman Granview,Petaling,Bungalow / Detached House,1930000.0,3800.0,6.0,5.0,0.6417,weighted attribute match (price / size / facility fit),ok
+content_based,Q077,validation,15,5.0,477.0,Casa Idaman,Petaling,Bungalow / Detached House,1900000.0,3720.0,6.0,7.0,0.6328,weighted attribute match (price / size / facility fit),ok
+content_based,Q078,train,16,1.0,963.0,Taman Tasik Prima,Petaling,Bungalow / Detached House,1600000.0,4000.0,6.0,6.0,0.7938,weighted attribute match (price / size / facility fit),ok
+content_based,Q078,train,16,2.0,941.0,Laman Granview,Petaling,Bungalow / Detached House,1800000.0,3940.0,5.0,5.0,0.7859,weighted attribute match (price / size / facility fit),ok
+content_based,Q078,train,16,3.0,1141.0,Laman Granview,Petaling,Bungalow / Detached House,1930000.0,3800.0,6.0,5.0,0.7564,weighted attribute match (price / size / facility fit),ok
+content_based,Q078,train,16,4.0,921.0,Laman Granview,Petaling,Bungalow / Detached House,2230000.0,3940.0,6.0,5.0,0.7371,weighted attribute match (price / size / facility fit),ok
+content_based,Q078,train,16,5.0,584.0,Casa Idaman,Petaling,Bungalow / Detached House,1860000.0,3760.0,6.0,5.0,0.6391,weighted attribute match (price / size / facility fit),ok
+content_based,Q079,validation,37,1.0,821.0,Prima U1,Petaling,Condominium,370000.0,1100.0,3.0,2.0,0.7413,weighted attribute match (price / size / facility fit),ok
+content_based,Q079,validation,37,2.0,447.0,Sri Permata,Petaling,Condominium,385000.0,1100.0,3.0,2.0,0.7308,weighted attribute match (price / size / facility fit),ok
+content_based,Q079,validation,37,3.0,1024.0,Koi Tropika,Petaling,Condominium,330000.0,1018.0,3.0,2.0,0.6976,weighted attribute match (price / size / facility fit),ok
+content_based,Q079,validation,37,4.0,903.0,Residensi Alami,Petaling,Condominium,440000.0,1100.0,3.0,2.0,0.6923,weighted attribute match (price / size / facility fit),ok
+content_based,Q079,validation,37,5.0,656.0,Metia Residence,Petaling,Condominium,430000.0,1111.0,3.0,2.0,0.6897,weighted attribute match (price / size / facility fit),ok
+content_based,Q080,train,116,1.0,1024.0,Koi Tropika,Petaling,Condominium,330000.0,1018.0,3.0,2.0,0.5817,weighted attribute match (price / size / facility fit),ok
+content_based,Q080,train,116,2.0,531.0,Prima U1,Petaling,Condominium,320000.0,980.0,3.0,2.0,0.5635,weighted attribute match (price / size / facility fit),ok
+content_based,Q080,train,116,3.0,595.0,Prima U1 Condominium,Petaling,Condominium,320000.0,980.0,3.0,2.0,0.5635,weighted attribute match (price / size / facility fit),ok
+content_based,Q080,train,116,4.0,465.0,Kemuncak Shah Alam,Petaling,Condominium,365000.0,1033.0,2.0,2.0,0.552,weighted attribute match (price / size / facility fit),ok
+content_based,Q080,train,116,5.0,607.0,Prima U1 Condominium,Petaling,Condominium,335000.0,980.0,3.0,2.0,0.5456,weighted attribute match (price / size / facility fit),ok
+content_based,Q081,train,86,1.0,897.0,Alam Idaman,Petaling,Condominium,310000.0,807.0,2.0,2.0,0.7876,weighted attribute match (price / size / facility fit),ok
+content_based,Q081,train,86,2.0,556.0,Alam Idaman,Petaling,Condominium,318000.0,807.0,2.0,2.0,0.7824,weighted attribute match (price / size / facility fit),ok
+content_based,Q081,train,86,3.0,605.0,Metia Residence,Petaling,Condominium,360000.0,809.0,2.0,2.0,0.7518,weighted attribute match (price / size / facility fit),ok
+content_based,Q081,train,86,4.0,3183.0,Metia Residence,Petaling,Condominium,360000.0,809.0,2.0,2.0,0.7518,weighted attribute match (price / size / facility fit),ok
+content_based,Q081,train,86,5.0,470.0,Suria Jelutong,Petaling,Condominium,349000.0,784.0,2.0,2.0,0.7468,weighted attribute match (price / size / facility fit),ok
+content_based,Q082,train,22,1.0,531.0,Prima U1,Petaling,Condominium,320000.0,980.0,3.0,2.0,0.7372,weighted attribute match (price / size / facility fit),ok
+content_based,Q082,train,22,2.0,595.0,Prima U1 Condominium,Petaling,Condominium,320000.0,980.0,3.0,2.0,0.7372,weighted attribute match (price / size / facility fit),ok
+content_based,Q082,train,22,3.0,607.0,Prima U1 Condominium,Petaling,Condominium,335000.0,980.0,3.0,2.0,0.7261,weighted attribute match (price / size / facility fit),ok
+content_based,Q082,train,22,4.0,638.0,Prima U1 Condominium,Petaling,Condominium,338000.0,980.0,3.0,2.0,0.7238,weighted attribute match (price / size / facility fit),ok
+content_based,Q082,train,22,5.0,910.0,Prima U1,Petaling,Condominium,361000.0,980.0,5.0,2.0,0.7067,weighted attribute match (price / size / facility fit),ok
+content_based,Q083,train,47,1.0,481.0,Kondominium Seri Hijauan,Petaling,Condominium,390000.0,1114.0,3.0,2.0,0.5398,weighted attribute match (price / size / facility fit),ok
+content_based,Q083,train,47,2.0,461.0,Indah Alam Condominium,Petaling,Condominium,380000.0,1149.0,4.0,2.0,0.5293,weighted attribute match (price / size / facility fit),ok
+content_based,Q083,train,47,3.0,844.0,Puri Aiyu,Petaling,Condominium,380000.0,1009.0,3.0,2.0,0.5027,weighted attribute match (price / size / facility fit),ok
+content_based,Q083,train,47,4.0,756.0,Seri Hijauan,Petaling,Condominium,435000.0,1100.0,3.0,2.0,0.4965,weighted attribute match (price / size / facility fit),ok
+content_based,Q083,train,47,5.0,554.0,Alam Idaman,Petaling,Condominium,318000.0,881.0,2.0,2.0,0.4937,weighted attribute match (price / size / facility fit),ok
+content_based,Q084,test,99,1.0,844.0,Puri Aiyu,Petaling,Condominium,380000.0,1009.0,3.0,2.0,0.7512,weighted attribute match (price / size / facility fit),ok
+content_based,Q084,test,99,2.0,737.0,Elaeis 2,Petaling,Condominium,395000.0,958.0,3.0,2.0,0.7006,weighted attribute match (price / size / facility fit),ok
+content_based,Q084,test,99,3.0,706.0,Elaeis 2,Petaling,Condominium,415000.0,1050.0,3.0,2.0,0.6781,weighted attribute match (price / size / facility fit),ok
+content_based,Q084,test,99,4.0,454.0,Alam Sanjung Serviced Apartment,Petaling,Condominium,340000.0,912.0,3.0,2.0,0.6775,weighted attribute match (price / size / facility fit),ok
+content_based,Q084,test,99,5.0,757.0,Elaeis 2,Petaling,Condominium,390000.0,926.0,3.0,2.0,0.6637,weighted attribute match (price / size / facility fit),ok
+content_based,Q085,train,33,1.0,920.0,Laman Granview,Petaling,Link Bungalow / Semi-Detached,1550000.0,3800.0,7.0,5.0,0.7321,weighted attribute match (price / size / facility fit),ok
+content_based,Q085,train,33,2.0,1191.0,Laman Granview,Petaling,Link Bungalow / Semi-Detached,1550000.0,3800.0,6.0,5.0,0.7321,weighted attribute match (price / size / facility fit),ok
+content_based,Q085,train,33,3.0,977.0,Laman Granview,Petaling,Link Bungalow / Semi-Detached,1650000.0,3800.0,6.0,5.0,0.7155,weighted attribute match (price / size / facility fit),ok
+content_based,Q085,train,33,4.0,930.0,Laman Granview,Petaling,Link Bungalow / Semi-Detached,1700000.0,3800.0,6.0,5.0,0.7071,weighted attribute match (price / size / facility fit),ok
+content_based,Q085,train,33,5.0,750.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1680000.0,3500.0,4.0,5.0,0.6734,weighted attribute match (price / size / facility fit),ok
+content_based,Q086,train,19,1.0,3242.0,Avanti Residences,Petaling,Link Bungalow / Semi-Detached,1450000.0,3250.0,8.0,6.0,0.7959,weighted attribute match (price / size / facility fit),ok
+content_based,Q086,train,19,2.0,541.0,Seksyen 7,Petaling,Link Bungalow / Semi-Detached,1400000.0,3200.0,6.0,5.0,0.7909,weighted attribute match (price / size / facility fit),ok
+content_based,Q086,train,19,3.0,535.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1500000.0,3200.0,4.0,5.0,0.7768,weighted attribute match (price / size / facility fit),ok
+content_based,Q086,train,19,4.0,583.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1620000.0,3200.0,4.0,5.0,0.7599,weighted attribute match (price / size / facility fit),ok
+content_based,Q086,train,19,5.0,750.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1680000.0,3500.0,4.0,5.0,0.7034,weighted attribute match (price / size / facility fit),ok
+content_based,Q087,test,35,1.0,541.0,Seksyen 7,Petaling,Link Bungalow / Semi-Detached,1400000.0,3200.0,6.0,5.0,0.6997,weighted attribute match (price / size / facility fit),ok
+content_based,Q087,test,35,2.0,535.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1500000.0,3200.0,4.0,5.0,0.5949,weighted attribute match (price / size / facility fit),ok
+content_based,Q087,test,35,3.0,3242.0,Avanti Residences,Petaling,Link Bungalow / Semi-Detached,1450000.0,3250.0,8.0,6.0,0.5948,weighted attribute match (price / size / facility fit),ok
+content_based,Q087,test,35,4.0,1058.0,Taman Mutiara Indah,Petaling,Link Bungalow / Semi-Detached,738000.0,2000.0,4.0,3.0,0.5813,weighted attribute match (price / size / facility fit),ok
+content_based,Q087,test,35,5.0,583.0,Setia Damai,Petaling,Link Bungalow / Semi-Detached,1620000.0,3200.0,4.0,5.0,0.5692,weighted attribute match (price / size / facility fit),ok
+content_based,Q088,train,106,1.0,651.0,Alam D'16,Petaling,Terrace House,625000.0,2116.0,4.0,3.0,0.6441,weighted attribute match (price / size / facility fit),ok
+content_based,Q088,train,106,2.0,983.0,Taman Tasik Prima,Petaling,Terrace House,628000.0,2200.0,5.0,4.0,0.6134,weighted attribute match (price / size / facility fit),ok
+content_based,Q088,train,106,3.0,3203.0,Setia Impian,Petaling,Terrace House,688000.0,2000.0,4.0,3.0,0.6109,weighted attribute match (price / size / facility fit),ok
+content_based,Q088,train,106,4.0,509.0,Seksyen 7,Petaling,Terrace House,690000.0,1875.0,4.0,3.0,0.6081,weighted attribute match (price / size / facility fit),ok
+content_based,Q088,train,106,5.0,918.0,Taman Tasik Prima,Petaling,Terrace House,538000.0,1650.0,4.0,4.0,0.6068,weighted attribute match (price / size / facility fit),ok
+content_based,Q089,train,82,1.0,699.0,Setia Indah 11,Petaling,Terrace House,595000.0,1800.0,4.0,3.0,0.7957,weighted attribute match (price / size / facility fit),ok
+content_based,Q089,train,82,2.0,528.0,Setia Indah 11,Petaling,Terrace House,625000.0,1800.0,4.0,3.0,0.7854,weighted attribute match (price / size / facility fit),ok
+content_based,Q089,train,82,3.0,532.0,Setia Indah 11,Petaling,Terrace House,670000.0,1800.0,4.0,3.0,0.7699,weighted attribute match (price / size / facility fit),ok
+content_based,Q089,train,82,4.0,918.0,Taman Tasik Prima,Petaling,Terrace House,538000.0,1650.0,4.0,4.0,0.7501,weighted attribute match (price / size / facility fit),ok
+content_based,Q089,train,82,5.0,919.0,Cascadia Lake Vista,Petaling,Terrace House,538000.0,1650.0,4.0,4.0,0.7501,weighted attribute match (price / size / facility fit),ok
+content_based,Q090,train,153,1.0,1020.0,Bk5,Petaling,Terrace House,820000.0,2000.0,4.0,3.0,0.8373,weighted attribute match (price / size / facility fit),ok
+content_based,Q090,train,153,2.0,1042.0,Bk5,Petaling,Terrace House,855000.0,2000.0,4.0,3.0,0.8304,weighted attribute match (price / size / facility fit),ok
+content_based,Q090,train,153,3.0,1211.0,Lakeside Residences,Petaling,Terrace House,865000.0,2000.0,5.0,3.0,0.8284,weighted attribute match (price / size / facility fit),ok
+content_based,Q090,train,153,4.0,1055.0,Taman Mutiara Puchong,Petaling,Terrace House,890000.0,2000.0,4.0,3.0,0.8234,weighted attribute match (price / size / facility fit),ok
+content_based,Q090,train,153,5.0,1168.0,Taman Wawasan,Petaling,Terrace House,899000.0,2000.0,5.0,3.0,0.8216,weighted attribute match (price / size / facility fit),ok
+content_based,Q091,train,82,1.0,651.0,Alam D'16,Petaling,Terrace House,625000.0,2116.0,4.0,3.0,0.7401,weighted attribute match (price / size / facility fit),ok
+content_based,Q091,train,82,2.0,488.0,Alam D'16,Petaling,Terrace House,780000.0,2018.0,4.0,3.0,0.7251,weighted attribute match (price / size / facility fit),ok
+content_based,Q091,train,82,3.0,1020.0,Bk5,Petaling,Terrace House,820000.0,2000.0,4.0,3.0,0.7184,weighted attribute match (price / size / facility fit),ok
+content_based,Q091,train,82,4.0,509.0,Seksyen 7,Petaling,Terrace House,690000.0,1875.0,4.0,3.0,0.7142,weighted attribute match (price / size / facility fit),ok
+content_based,Q091,train,82,5.0,1042.0,Bk5,Petaling,Terrace House,855000.0,2000.0,4.0,3.0,0.7064,weighted attribute match (price / size / facility fit),ok
+content_based,Q092,test,140,1.0,1047.0,Puchong Hartamas,Petaling,Terrace House,800000.0,2100.0,4.0,3.0,0.7053,weighted attribute match (price / size / facility fit),ok
+content_based,Q092,test,140,2.0,1020.0,Bk5,Petaling,Terrace House,820000.0,2000.0,4.0,3.0,0.6983,weighted attribute match (price / size / facility fit),ok
+content_based,Q092,test,140,3.0,3203.0,Setia Impian,Petaling,Terrace House,688000.0,2000.0,4.0,3.0,0.6886,weighted attribute match (price / size / facility fit),ok
+content_based,Q092,test,140,4.0,570.0,Setia Impian,Petaling,Terrace House,690000.0,2100.0,4.0,3.0,0.6879,weighted attribute match (price / size / facility fit),ok
+content_based,Q092,test,140,5.0,1042.0,Bk5,Petaling,Terrace House,855000.0,2000.0,4.0,3.0,0.6862,weighted attribute match (price / size / facility fit),ok
+content_based,Q093,train,172,1.0,983.0,Taman Tasik Prima,Petaling,Terrace House,628000.0,2200.0,5.0,4.0,0.7095,weighted attribute match (price / size / facility fit),ok
+content_based,Q093,train,172,2.0,1036.0,Pu1,Petaling,Terrace House,828000.0,2400.0,4.0,3.0,0.6933,weighted attribute match (price / size / facility fit),ok
+content_based,Q093,train,172,3.0,651.0,Alam D'16,Petaling,Terrace House,625000.0,2116.0,4.0,3.0,0.6863,weighted attribute match (price / size / facility fit),ok
+content_based,Q093,train,172,4.0,1161.0,Pu1,Petaling,Terrace House,850000.0,2400.0,4.0,3.0,0.6852,weighted attribute match (price / size / facility fit),ok
+content_based,Q093,train,172,5.0,929.0,Lakeside Residences,Petaling,Terrace House,800000.0,2300.0,6.0,4.0,0.6748,weighted attribute match (price / size / facility fit),ok
+content_based,Q094,test,151,1.0,570.0,Setia Impian,Petaling,Terrace House,690000.0,2100.0,4.0,3.0,0.8639,weighted attribute match (price / size / facility fit),ok
+content_based,Q094,test,151,2.0,1047.0,Puchong Hartamas,Petaling,Terrace House,800000.0,2100.0,4.0,3.0,0.8422,weighted attribute match (price / size / facility fit),ok
+content_based,Q094,test,151,3.0,969.0,Puchong Hartamas,Petaling,Terrace House,868000.0,2100.0,4.0,3.0,0.8288,weighted attribute match (price / size / facility fit),ok
+content_based,Q094,test,151,4.0,752.0,Setia Indah,Petaling,Terrace House,850000.0,2088.0,4.0,4.0,0.8269,weighted attribute match (price / size / facility fit),ok
+content_based,Q094,test,151,5.0,766.0,Setia Indah 13,Petaling,Terrace House,850000.0,2088.0,4.0,4.0,0.8269,weighted attribute match (price / size / facility fit),ok
+content_based,Q095,train,8,1.0,1684.0,Taman Bayu Indera,Port Dickson,Terrace House,450008.0,2000.0,4.0,3.0,0.5833,weighted attribute match (price / size / facility fit),ok
+content_based,Q095,train,8,2.0,1713.0,Freesia Bandar Springhill,Port Dickson,Terrace House,450008.0,2062.0,4.0,3.0,0.5446,weighted attribute match (price / size / facility fit),ok
+content_based,Q095,train,8,3.0,1797.0,Bandar Dataran Segar,Port Dickson,Terrace House,500008.0,2000.0,4.0,4.0,0.537,weighted attribute match (price / size / facility fit),ok
+content_based,Q095,train,8,4.0,1704.0,Park Residence Springhill,Port Dickson,Terrace House,380008.0,2200.0,4.0,3.0,0.5231,weighted attribute match (price / size / facility fit),ok
+content_based,Q095,train,8,5.0,1739.0,Taman Impian Putra (Taman Crystal),Port Dickson,Terrace House,400008.0,1760.0,4.0,3.0,0.4796,weighted attribute match (price / size / facility fit),ok
+content_based,Q096,train,15,1.0,2608.0,Presint 14,Putrajaya,Bungalow / Detached House,2600000.0,4690.0,6.0,6.0,0.8042,weighted attribute match (price / size / facility fit),ok
+content_based,Q096,train,15,2.0,2582.0,Presint 14,Putrajaya,Bungalow / Detached House,2600000.0,4688.0,6.0,6.0,0.8037,weighted attribute match (price / size / facility fit),ok
+content_based,Q096,train,15,3.0,2871.0,Presint 14,Putrajaya,Bungalow / Detached House,2650000.0,4498.0,6.0,6.0,0.7611,weighted attribute match (price / size / facility fit),ok
+content_based,Q096,train,15,4.0,2745.0,Presint 8,Putrajaya,Bungalow / Detached House,2100000.0,4090.0,6.0,6.0,0.7187,weighted attribute match (price / size / facility fit),ok
+content_based,Q096,train,15,5.0,2678.0,Presint 14,Putrajaya,Bungalow / Detached House,2500000.0,4200.0,6.0,6.0,0.7114,weighted attribute match (price / size / facility fit),ok
+content_based,Q097,train,7,1.0,2745.0,Presint 8,Putrajaya,Bungalow / Detached House,2100000.0,4090.0,6.0,6.0,0.7412,weighted attribute match (price / size / facility fit),ok
+content_based,Q097,train,7,2.0,2611.0,Presint 8,Putrajaya,Bungalow / Detached House,2200000.0,4090.0,6.0,6.0,0.7314,weighted attribute match (price / size / facility fit),ok
+content_based,Q097,train,7,3.0,2678.0,Presint 14,Putrajaya,Bungalow / Detached House,2500000.0,4200.0,6.0,6.0,0.3469,weighted attribute match (price / size / facility fit),ok
+content_based,Q097,train,7,4.0,2607.0,Presint 16,Putrajaya,Bungalow / Detached House,2550000.0,4218.0,6.0,6.0,0.3452,weighted attribute match (price / size / facility fit),ok
+content_based,Q097,train,7,5.0,2608.0,Presint 14,Putrajaya,Bungalow / Detached House,2600000.0,4690.0,6.0,6.0,0.3212,weighted attribute match (price / size / facility fit),ok
+content_based,Q098,train,24,1.0,2793.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.6023,weighted attribute match (price / size / facility fit),ok
+content_based,Q098,train,24,2.0,2864.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.6023,weighted attribute match (price / size / facility fit),ok
+content_based,Q098,train,24,3.0,2665.0,Pangsapuri Putra Damai,Putrajaya,Condominium,245000.0,700.0,3.0,2.0,0.5891,weighted attribute match (price / size / facility fit),ok
+content_based,Q098,train,24,4.0,2783.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.5825,weighted attribute match (price / size / facility fit),ok
+content_based,Q098,train,24,5.0,2829.0,Pangsapuri Putra Damai,Putrajaya,Condominium,250000.0,700.0,3.0,2.0,0.5825,weighted attribute match (price / size / facility fit),ok
+content_based,Q099,train,27,1.0,2585.0,Residensi Sentral @ Presint 7 (Residensi Wilayah),Putrajaya,Condominium,300000.0,850.0,3.0,2.0,0.5646,weighted attribute match (price / size / facility fit),ok
+content_based,Q099,train,27,2.0,2784.0,Pr1Ma Apartment @ Precint 11,Putrajaya,Condominium,325000.0,850.0,3.0,2.0,0.5344,weighted attribute match (price / size / facility fit),ok
+content_based,Q099,train,27,3.0,2793.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.5334,weighted attribute match (price / size / facility fit),ok
+content_based,Q099,train,27,4.0,2864.0,Pangsapuri Putra Damai,Putrajaya,Condominium,235000.0,700.0,3.0,2.0,0.5334,weighted attribute match (price / size / facility fit),ok
+content_based,Q099,train,27,5.0,2665.0,Pangsapuri Putra Damai,Putrajaya,Condominium,245000.0,700.0,3.0,2.0,0.5214,weighted attribute match (price / size / facility fit),ok
+content_based,Q100,validation,18,1.0,2577.0,Saujana Aster,Putrajaya,Condominium,415000.0,1043.0,3.0,2.0,0.6684,weighted attribute match (price / size / facility fit),ok
+content_based,Q100,validation,18,2.0,2832.0,Dwiputra Residences,Putrajaya,Condominium,450000.0,950.0,3.0,2.0,0.6372,weighted attribute match (price / size / facility fit),ok
+content_based,Q100,validation,18,3.0,2663.0,Conezión @ Ioi Resort City,Putrajaya,Condominium,505000.0,986.0,3.0,2.0,0.6334,weighted attribute match (price / size / facility fit),ok
+content_based,Q100,validation,18,4.0,2596.0,Setia Seraya,Putrajaya,Condominium,525000.0,1002.0,3.0,2.0,0.6309,weighted attribute match (price / size / facility fit),ok
+content_based,Q100,validation,18,5.0,2780.0,Dwiputra Residences,Putrajaya,Condominium,470000.0,950.0,3.0,2.0,0.6233,weighted attribute match (price / size / facility fit),ok
+content_based,Q101,train,42,1.0,2682.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,2700.0,5.0,5.0,0.6872,weighted attribute match (price / size / facility fit),ok
+content_based,Q101,train,42,2.0,2776.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,2700.0,5.0,5.0,0.6872,weighted attribute match (price / size / facility fit),ok
+content_based,Q101,train,42,3.0,2587.0,Presint 18,Putrajaya,Link Bungalow / Semi-Detached,1350000.0,3200.0,6.0,5.0,0.6696,weighted attribute match (price / size / facility fit),ok
+content_based,Q101,train,42,4.0,2771.0,Presint 18,Putrajaya,Link Bungalow / Semi-Detached,1650000.0,3000.0,6.0,5.0,0.668,weighted attribute match (price / size / facility fit),ok
+content_based,Q101,train,42,5.0,2687.0,Presint 9,Putrajaya,Link Bungalow / Semi-Detached,1100000.0,3399.0,7.0,7.0,0.6622,weighted attribute match (price / size / facility fit),ok
+content_based,Q102,train,81,1.0,2778.0,Presint 18,Putrajaya,Link Bungalow / Semi-Detached,1700000.0,3600.0,6.0,5.0,0.8172,weighted attribute match (price / size / facility fit),ok
+content_based,Q102,train,81,2.0,2621.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1300000.0,3500.0,6.0,6.0,0.8139,weighted attribute match (price / size / facility fit),ok
+content_based,Q102,train,81,3.0,2691.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1300000.0,3500.0,6.0,6.0,0.8139,weighted attribute match (price / size / facility fit),ok
+content_based,Q102,train,81,4.0,2806.0,Presint 16,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,3500.0,7.0,5.0,0.8032,weighted attribute match (price / size / facility fit),ok
+content_based,Q102,train,81,5.0,2687.0,Presint 9,Putrajaya,Link Bungalow / Semi-Detached,1100000.0,3399.0,7.0,7.0,0.7887,weighted attribute match (price / size / facility fit),ok
+content_based,Q103,train,48,1.0,2612.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.7849,weighted attribute match (price / size / facility fit),ok
+content_based,Q103,train,48,2.0,2686.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.7849,weighted attribute match (price / size / facility fit),ok
+content_based,Q103,train,48,3.0,2727.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1250000.0,2900.0,5.0,5.0,0.776,weighted attribute match (price / size / facility fit),ok
+content_based,Q103,train,48,4.0,2609.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1280000.0,2900.0,5.0,5.0,0.7706,weighted attribute match (price / size / facility fit),ok
+content_based,Q103,train,48,5.0,2768.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1270000.0,2998.0,5.0,5.0,0.7489,weighted attribute match (price / size / facility fit),ok
+content_based,Q104,train,23,1.0,2776.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,2700.0,5.0,5.0,0.6876,weighted attribute match (price / size / facility fit),ok
+content_based,Q104,train,23,2.0,2630.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1350000.0,2800.0,8.0,5.0,0.58,weighted attribute match (price / size / facility fit),ok
+content_based,Q104,train,23,3.0,2667.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1350000.0,2800.0,6.0,5.0,0.58,weighted attribute match (price / size / facility fit),ok
+content_based,Q104,train,23,4.0,2676.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1350000.0,2800.0,5.0,5.0,0.58,weighted attribute match (price / size / facility fit),ok
+content_based,Q104,train,23,5.0,2860.0,Presint 15,Putrajaya,Link Bungalow / Semi-Detached,1350000.0,2800.0,5.0,5.0,0.58,weighted attribute match (price / size / facility fit),ok
+content_based,Q105,train,42,1.0,2617.0,Presint 10,Putrajaya,Link Bungalow / Semi-Detached,1100000.0,2929.0,5.0,3.0,0.74,weighted attribute match (price / size / facility fit),ok
+content_based,Q105,train,42,2.0,2776.0,Presint 8,Putrajaya,Link Bungalow / Semi-Detached,1400000.0,2700.0,5.0,5.0,0.6151,weighted attribute match (price / size / facility fit),ok
+content_based,Q105,train,42,3.0,2612.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.6115,weighted attribute match (price / size / facility fit),ok
+content_based,Q105,train,42,4.0,2686.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,5.0,5.0,0.6115,weighted attribute match (price / size / facility fit),ok
+content_based,Q105,train,42,5.0,2791.0,Presint 14,Putrajaya,Link Bungalow / Semi-Detached,1200000.0,2900.0,4.0,5.0,0.6115,weighted attribute match (price / size / facility fit),ok
+content_based,Q106,test,78,1.0,2792.0,Presint 18,Putrajaya,Terrace House,880000.0,2500.0,5.0,4.0,0.795,weighted attribute match (price / size / facility fit),ok
+content_based,Q106,test,78,2.0,2656.0,Presint 8,Putrajaya,Terrace House,800000.0,2660.0,4.0,3.0,0.7939,weighted attribute match (price / size / facility fit),ok
+content_based,Q106,test,78,3.0,2628.0,Presint 18,Putrajaya,Terrace House,895000.0,2500.0,5.0,4.0,0.7918,weighted attribute match (price / size / facility fit),ok
+content_based,Q106,test,78,4.0,2635.0,Presint 18,Putrajaya,Terrace House,900000.0,2500.0,5.0,4.0,0.7907,weighted attribute match (price / size / facility fit),ok
+content_based,Q106,test,78,5.0,2638.0,Presint 14,Putrajaya,Terrace House,900000.0,2500.0,4.0,3.0,0.7907,weighted attribute match (price / size / facility fit),ok
+content_based,Q107,test,73,1.0,2792.0,Presint 18,Putrajaya,Terrace House,880000.0,2500.0,5.0,4.0,0.6336,weighted attribute match (price / size / facility fit),ok
+content_based,Q107,test,73,2.0,2628.0,Presint 18,Putrajaya,Terrace House,895000.0,2500.0,5.0,4.0,0.6283,weighted attribute match (price / size / facility fit),ok
+content_based,Q107,test,73,3.0,2635.0,Presint 18,Putrajaya,Terrace House,900000.0,2500.0,5.0,4.0,0.6265,weighted attribute match (price / size / facility fit),ok
+content_based,Q107,test,73,4.0,2638.0,Presint 14,Putrajaya,Terrace House,900000.0,2500.0,4.0,3.0,0.6265,weighted attribute match (price / size / facility fit),ok
+content_based,Q107,test,73,5.0,2789.0,Putrajaya,Putrajaya,Terrace House,799000.0,2200.0,4.0,3.0,0.6105,weighted attribute match (price / size / facility fit),ok
+content_based,Q108,train,84,1.0,2787.0,Presint 18,Putrajaya,Terrace House,969000.0,2200.0,5.0,4.0,0.8229,weighted attribute match (price / size / facility fit),ok
+content_based,Q108,train,84,2.0,2841.0,Presint 9,Putrajaya,Terrace House,820000.0,2142.0,5.0,3.0,0.8135,weighted attribute match (price / size / facility fit),ok
+content_based,Q108,train,84,3.0,2748.0,Presint 9,Putrajaya,Terrace House,750000.0,2100.0,5.0,3.0,0.7998,weighted attribute match (price / size / facility fit),ok
+content_based,Q108,train,84,4.0,2637.0,Presint 9,Putrajaya,Terrace House,840000.0,2100.0,5.0,3.0,0.7834,weighted attribute match (price / size / facility fit),ok
+content_based,Q108,train,84,5.0,2590.0,Precinct 11,Putrajaya,Terrace House,850000.0,2100.0,4.0,3.0,0.7815,weighted attribute match (price / size / facility fit),ok
+content_based,Q109,train,77,1.0,2748.0,Presint 9,Putrajaya,Terrace House,750000.0,2100.0,5.0,3.0,0.8563,weighted attribute match (price / size / facility fit),ok
+content_based,Q109,train,77,2.0,2637.0,Presint 9,Putrajaya,Terrace House,840000.0,2100.0,5.0,3.0,0.8391,weighted attribute match (price / size / facility fit),ok
+content_based,Q109,train,77,3.0,2590.0,Precinct 11,Putrajaya,Terrace House,850000.0,2100.0,4.0,3.0,0.8372,weighted attribute match (price / size / facility fit),ok
+content_based,Q109,train,77,4.0,2785.0,Presint 9,Putrajaya,Terrace House,850000.0,2100.0,4.0,3.0,0.8372,weighted attribute match (price / size / facility fit),ok
+content_based,Q109,train,77,5.0,2870.0,Presint 16,Putrajaya,Terrace House,845000.0,2097.0,4.0,3.0,0.8361,weighted attribute match (price / size / facility fit),ok
+content_based,Q110,train,4,1.0,3068.0,Taman Stakan Jaya,Samarahan,Terrace House,657800.0,1875.0,4.0,4.0,0.3165,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q110,train,4,2.0,3030.0,Taman Merlin,Samarahan,Terrace House,688000.0,1841.0,4.0,3.0,0.3096,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q110,train,4,3.0,3069.0,Taman Holmestown,Samarahan,Terrace House,638000.0,1950.0,4.0,4.0,0.2938,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q110,train,4,4.0,2999.0,Uni Garden,Samarahan,Terrace House,620000.0,1.0,4.0,3.0,0.0317,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q111,train,7,1.0,2283.0,Ceria D\' Eco Horizon,Seberang Perai Selatan,Condominium,443800.0,1000.0,3.0,2.0,0.7247,weighted attribute match (price / size / facility fit),ok
+content_based,Q111,train,7,2.0,2170.0,Batu Kawan,Seberang Perai Selatan,Condominium,470000.0,1000.0,3.0,2.0,0.7084,weighted attribute match (price / size / facility fit),ok
+content_based,Q111,train,7,3.0,2309.0,Vertu Resort,Seberang Perai Selatan,Condominium,530000.0,1030.0,3.0,2.0,0.6424,weighted attribute match (price / size / facility fit),ok
+content_based,Q111,train,7,4.0,2471.0,Vertu Resort,Seberang Perai Selatan,Condominium,550000.0,1030.0,3.0,2.0,0.63,weighted attribute match (price / size / facility fit),ok
+content_based,Q111,train,7,5.0,2200.0,Batu Kawan,Seberang Perai Selatan,Condominium,525000.0,912.0,3.0,2.0,0.5897,weighted attribute match (price / size / facility fit),ok
+content_based,Q112,train,12,1.0,2447.0,Avenue Garden,Seberang Perai Selatan,Condominium,380000.0,990.0,3.0,2.0,0.5137,weighted attribute match (price / size / facility fit),ok
+content_based,Q112,train,12,2.0,2283.0,Ceria D\' Eco Horizon,Seberang Perai Selatan,Condominium,443800.0,1000.0,3.0,2.0,0.4418,weighted attribute match (price / size / facility fit),ok
+content_based,Q112,train,12,3.0,2170.0,Batu Kawan,Seberang Perai Selatan,Condominium,470000.0,1000.0,3.0,2.0,0.4088,weighted attribute match (price / size / facility fit),ok
+content_based,Q112,train,12,4.0,2375.0,Versa By Aspen,Seberang Perai Selatan,Condominium,350000.0,703.0,2.0,2.0,0.3122,weighted attribute match (price / size / facility fit),ok
+content_based,Q112,train,12,5.0,2309.0,Vertu Resort,Seberang Perai Selatan,Condominium,530000.0,1030.0,3.0,2.0,0.3083,weighted attribute match (price / size / facility fit),ok
+content_based,Q113,train,17,1.0,2444.0,Taman Tangling Jaya,Seberang Perai Selatan,Terrace House,750000.0,1920.0,4.0,3.0,0.6667,weighted attribute match (price / size / facility fit),ok
+content_based,Q113,train,17,2.0,2100.0,Taman Sintar Indah,Seberang Perai Selatan,Terrace House,530000.0,1800.0,4.0,3.0,0.6648,weighted attribute match (price / size / facility fit),ok
+content_based,Q113,train,17,3.0,2439.0,Taman Puteri Emas,Seberang Perai Selatan,Terrace House,525000.0,2215.0,4.0,3.0,0.6562,weighted attribute match (price / size / facility fit),ok
+content_based,Q113,train,17,4.0,2448.0,Bandar Tasek Mutiara,Seberang Perai Selatan,Terrace House,530000.0,1760.0,4.0,3.0,0.637,weighted attribute match (price / size / facility fit),ok
+content_based,Q113,train,17,5.0,2107.0,Taman Kasawari,Seberang Perai Selatan,Terrace House,350000.0,1600.0,4.0,3.0,0.5926,weighted attribute match (price / size / facility fit),ok
+content_based,Q114,test,11,1.0,2107.0,Taman Kasawari,Seberang Perai Selatan,Terrace House,350000.0,1600.0,4.0,3.0,0.501,weighted attribute match (price / size / facility fit),ok
+content_based,Q114,test,11,2.0,2100.0,Taman Sintar Indah,Seberang Perai Selatan,Terrace House,530000.0,1800.0,4.0,3.0,0.3853,weighted attribute match (price / size / facility fit),ok
+content_based,Q114,test,11,3.0,2439.0,Taman Puteri Emas,Seberang Perai Selatan,Terrace House,525000.0,2215.0,4.0,3.0,0.3852,weighted attribute match (price / size / facility fit),ok
+content_based,Q114,test,11,4.0,2448.0,Bandar Tasek Mutiara,Seberang Perai Selatan,Terrace House,530000.0,1760.0,4.0,3.0,0.3714,weighted attribute match (price / size / facility fit),ok
+content_based,Q114,test,11,5.0,2464.0,Taman Kasawari,Seberang Perai Selatan,Terrace House,350000.0,700.0,4.0,3.0,0.3621,weighted attribute match (price / size / facility fit),ok
+content_based,Q115,train,4,1.0,2432.0,Taman Alma Ria,Seberang Perai Tengah,Bungalow / Detached House,750000.0,1760.0,4.0,3.0,0.3889,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q115,train,4,2.0,2486.0,Taman Seri Juru,Seberang Perai Tengah,Bungalow / Detached House,900000.0,2000.0,5.0,4.0,0.293,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q115,train,4,3.0,2489.0,Juru Heights,Seberang Perai Tengah,Bungalow / Detached House,1250000.0,3360.0,5.0,3.0,0.2646,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q115,train,4,4.0,2392.0,Juru Heights,Seberang Perai Tengah,Bungalow / Detached House,1200000.0,3680.0,5.0,4.0,0.2115,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q116,train,27,1.0,2236.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,300000.0,1100.0,4.0,2.0,0.6739,weighted attribute match (price / size / facility fit),ok
+content_based,Q116,train,27,2.0,2227.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.6685,weighted attribute match (price / size / facility fit),ok
+content_based,Q116,train,27,3.0,2301.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.6685,weighted attribute match (price / size / facility fit),ok
+content_based,Q116,train,27,4.0,2548.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,315000.0,1100.0,4.0,2.0,0.6576,weighted attribute match (price / size / facility fit),ok
+content_based,Q116,train,27,5.0,2435.0,Metropol,Seberang Perai Tengah,Condominium,370000.0,1083.0,2.0,2.0,0.5785,weighted attribute match (price / size / facility fit),ok
+content_based,Q117,test,41,1.0,2359.0,Seberang Jaya,Seberang Perai Tengah,Condominium,310000.0,1010.0,4.0,2.0,0.8003,weighted attribute match (price / size / facility fit),ok
+content_based,Q117,test,41,2.0,2236.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,300000.0,1100.0,4.0,2.0,0.7983,weighted attribute match (price / size / facility fit),ok
+content_based,Q117,test,41,3.0,2227.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.7956,weighted attribute match (price / size / facility fit),ok
+content_based,Q117,test,41,4.0,2301.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,305000.0,1100.0,4.0,2.0,0.7956,weighted attribute match (price / size / facility fit),ok
+content_based,Q117,test,41,5.0,2548.0,Pangsapuri Palma Laguna,Seberang Perai Tengah,Condominium,315000.0,1100.0,4.0,2.0,0.7901,weighted attribute match (price / size / facility fit),ok
+content_based,Q118,train,25,1.0,2359.0,Seberang Jaya,Seberang Perai Tengah,Condominium,310000.0,1010.0,4.0,2.0,0.7042,weighted attribute match (price / size / facility fit),ok
+content_based,Q118,train,25,2.0,2190.0,Casa Residence,Seberang Perai Tengah,Condominium,430000.0,1010.0,3.0,2.0,0.6038,weighted attribute match (price / size / facility fit),ok
+content_based,Q118,train,25,3.0,2416.0,Metropol,Seberang Perai Tengah,Condominium,455000.0,1083.0,3.0,2.0,0.5893,weighted attribute match (price / size / facility fit),ok
+content_based,Q118,train,25,4.0,2293.0,Bm City Suites,Seberang Perai Tengah,Condominium,370000.0,1162.0,3.0,2.0,0.5881,weighted attribute match (price / size / facility fit),ok
+content_based,Q118,train,25,5.0,2298.0,Evoke Residence,Seberang Perai Tengah,Condominium,460000.0,1100.0,3.0,2.0,0.5696,weighted attribute match (price / size / facility fit),ok
+content_based,Q119,train,7,1.0,2466.0,Taman Aman Jaya,Seberang Perai Tengah,Link Bungalow / Semi-Detached,650000.0,2000.0,4.0,3.0,0.7692,weighted attribute match (price / size / facility fit),ok
+content_based,Q119,train,7,2.0,2397.0,Taman Emas,Seberang Perai Tengah,Link Bungalow / Semi-Detached,450000.0,1600.0,5.0,3.0,0.6839,weighted attribute match (price / size / facility fit),ok
+content_based,Q119,train,7,3.0,2108.0,Taman Impian,Seberang Perai Tengah,Link Bungalow / Semi-Detached,688000.0,2500.0,4.0,3.0,0.5604,weighted attribute match (price / size / facility fit),ok
+content_based,Q119,train,7,4.0,2446.0,Taman Bukit Minyak Indah,Seberang Perai Tengah,Link Bungalow / Semi-Detached,840000.0,2000.0,4.0,3.0,0.5142,weighted attribute match (price / size / facility fit),ok
+content_based,Q119,train,7,5.0,2080.0,Taman Impian Murni,Seberang Perai Tengah,Link Bungalow / Semi-Detached,625000.0,1200.0,3.0,3.0,0.4656,weighted attribute match (price / size / facility fit),ok
+content_based,Q120,train,6,1.0,2397.0,Taman Emas,Seberang Perai Tengah,Link Bungalow / Semi-Detached,450000.0,1600.0,5.0,3.0,0.7094,weighted attribute match (price / size / facility fit),ok
+content_based,Q120,train,6,2.0,2466.0,Taman Aman Jaya,Seberang Perai Tengah,Link Bungalow / Semi-Detached,650000.0,2000.0,4.0,3.0,0.6188,weighted attribute match (price / size / facility fit),ok
+content_based,Q120,train,6,3.0,2396.0,Taman Impian Jaya,Seberang Perai Tengah,Link Bungalow / Semi-Detached,680000.0,1360.0,4.0,2.0,0.5011,weighted attribute match (price / size / facility fit),ok
+content_based,Q120,train,6,4.0,2080.0,Taman Impian Murni,Seberang Perai Tengah,Link Bungalow / Semi-Detached,625000.0,1200.0,3.0,3.0,0.4565,weighted attribute match (price / size / facility fit),ok
+content_based,Q120,train,6,5.0,2415.0,Taman Senangin,Seberang Perai Tengah,Link Bungalow / Semi-Detached,510000.0,1000.0,3.0,1.0,0.4565,weighted attribute match (price / size / facility fit),ok
+content_based,Q121,test,20,1.0,2407.0,Taman Pauh Jaya,Seberang Perai Tengah,Terrace House,600000.0,2200.0,4.0,3.0,0.7128,weighted attribute match (price / size / facility fit),ok
+content_based,Q121,test,20,2.0,2430.0,Taman Sri Janggus,Seberang Perai Tengah,Terrace House,480000.0,1800.0,4.0,3.0,0.6884,weighted attribute match (price / size / facility fit),ok
+content_based,Q121,test,20,3.0,2429.0,Taman Tan Sai Gin,Seberang Perai Tengah,Terrace House,520000.0,1800.0,4.0,3.0,0.6717,weighted attribute match (price / size / facility fit),ok
+content_based,Q121,test,20,4.0,2465.0,Tambun Royale City,Seberang Perai Tengah,Terrace House,550000.0,2378.0,4.0,4.0,0.6674,weighted attribute match (price / size / facility fit),ok
+content_based,Q121,test,20,5.0,2437.0,Royale Nova @ Tambun Royale City,Seberang Perai Tengah,Terrace House,560000.0,2378.0,4.0,4.0,0.6632,weighted attribute match (price / size / facility fit),ok
+content_based,Q122,train,1,1.0,2402.0,Jalan Tenggiri,Seberang Perai Tengah,Terrace House,450000.0,2000.0,6.0,3.0,0.3016,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q123,train,5,1.0,2125.0,Sea View Tower,Seberang Perai Utara,Condominium,330000.0,1022.0,3.0,2.0,0.7147,weighted attribute match (price / size / facility fit),ok
+content_based,Q123,train,5,2.0,2399.0,Park View Tower,Seberang Perai Utara,Condominium,340000.0,1077.0,3.0,2.0,0.7075,weighted attribute match (price / size / facility fit),ok
+content_based,Q123,train,5,3.0,2491.0,Ocean View Residences,Seberang Perai Utara,Condominium,355000.0,938.0,3.0,2.0,0.6322,weighted attribute match (price / size / facility fit),ok
+content_based,Q123,train,5,4.0,2395.0,Kondominium Cassia,Seberang Perai Utara,Condominium,380000.0,1166.0,4.0,2.0,0.6092,weighted attribute match (price / size / facility fit),ok
+content_based,Q123,train,5,5.0,2454.0,Taman Bagan Lalang Apartment,Seberang Perai Utara,Condominium,318000.0,856.0,3.0,2.0,0.6008,weighted attribute match (price / size / facility fit),ok
+content_based,Q124,test,3,1.0,2491.0,Ocean View Residences,Seberang Perai Utara,Condominium,355000.0,938.0,3.0,2.0,0.4855,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q124,test,3,2.0,2399.0,Park View Tower,Seberang Perai Utara,Condominium,340000.0,1077.0,3.0,2.0,0.4228,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q124,test,3,3.0,2395.0,Kondominium Cassia,Seberang Perai Utara,Condominium,380000.0,1166.0,4.0,2.0,0.1341,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q125,train,14,1.0,2342.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,326000.0,1004.0,4.0,2.0,0.8235,weighted attribute match (price / size / facility fit),ok
+content_based,Q125,train,14,2.0,2343.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,326000.0,1004.0,4.0,2.0,0.8235,weighted attribute match (price / size / facility fit),ok
+content_based,Q125,train,14,3.0,2161.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,0.8219,weighted attribute match (price / size / facility fit),ok
+content_based,Q125,train,14,4.0,2266.0,Bukit Mertajam,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,0.8219,weighted attribute match (price / size / facility fit),ok
+content_based,Q125,train,14,5.0,2332.0,Taman Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,0.8219,weighted attribute match (price / size / facility fit),ok
+content_based,Q126,train,13,1.0,2266.0,Bukit Mertajam,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,0.6432,weighted attribute match (price / size / facility fit),ok
+content_based,Q126,train,13,2.0,2332.0,Taman Tasek Gelugor,Seberang Perai Utara,Terrace House,342000.0,1000.0,4.0,2.0,0.6432,weighted attribute match (price / size / facility fit),ok
+content_based,Q126,train,13,3.0,2265.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,327800.0,1001.0,3.0,2.0,0.5769,weighted attribute match (price / size / facility fit),ok
+content_based,Q126,train,13,4.0,2342.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,326000.0,1004.0,4.0,2.0,0.5755,weighted attribute match (price / size / facility fit),ok
+content_based,Q126,train,13,5.0,2343.0,Tasek Gelugor,Seberang Perai Utara,Terrace House,326000.0,1004.0,4.0,2.0,0.5755,weighted attribute match (price / size / facility fit),ok
+content_based,Q127,train,35,1.0,1185.0,Taman Putra Prima,Sepang,Terrace House,650000.0,2000.0,4.0,3.0,0.8293,weighted attribute match (price / size / facility fit),ok
+content_based,Q127,train,35,2.0,1117.0,Taman Putra Prima,Sepang,Terrace House,708000.0,2000.0,4.0,3.0,0.8141,weighted attribute match (price / size / facility fit),ok
+content_based,Q127,train,35,3.0,1176.0,Taman Putra Prima,Sepang,Terrace House,725000.0,2000.0,4.0,3.0,0.8096,weighted attribute match (price / size / facility fit),ok
+content_based,Q127,train,35,4.0,924.0,Taman Putra Prima,Sepang,Terrace House,685000.0,1900.0,5.0,3.0,0.7811,weighted attribute match (price / size / facility fit),ok
+content_based,Q127,train,35,5.0,1157.0,Taman Putra Prima,Sepang,Terrace House,699000.0,2100.0,4.0,4.0,0.7774,weighted attribute match (price / size / facility fit),ok
+content_based,Q128,test,57,1.0,948.0,Taman Putra Impiana,Sepang,Terrace House,799000.0,2629.0,5.0,4.0,0.6196,weighted attribute match (price / size / facility fit),ok
+content_based,Q128,test,57,2.0,1226.0,Taman Putra Impiana,Sepang,Terrace House,550000.0,2100.0,4.0,3.0,0.5926,weighted attribute match (price / size / facility fit),ok
+content_based,Q128,test,57,3.0,1119.0,Taman Putra Prima,Sepang,Terrace House,850000.0,2454.0,5.0,4.0,0.5681,weighted attribute match (price / size / facility fit),ok
+content_based,Q128,test,57,4.0,944.0,Taman Putra Impiana,Sepang,Terrace House,898000.0,2500.0,4.0,3.0,0.5614,weighted attribute match (price / size / facility fit),ok
+content_based,Q128,test,57,5.0,1157.0,Taman Putra Prima,Sepang,Terrace House,699000.0,2100.0,4.0,4.0,0.5335,weighted attribute match (price / size / facility fit),ok
+content_based,Q129,train,20,1.0,1157.0,Taman Putra Prima,Sepang,Terrace House,699000.0,2100.0,4.0,4.0,0.7364,weighted attribute match (price / size / facility fit),ok
+content_based,Q129,train,20,2.0,945.0,Taman Putra Prima,Sepang,Terrace House,750000.0,2100.0,4.0,4.0,0.7185,weighted attribute match (price / size / facility fit),ok
+content_based,Q129,train,20,3.0,1094.0,Taman Putra Prima,Sepang,Terrace House,750000.0,2100.0,4.0,3.0,0.7185,weighted attribute match (price / size / facility fit),ok
+content_based,Q129,train,20,4.0,1185.0,Taman Putra Prima,Sepang,Terrace House,650000.0,2000.0,4.0,3.0,0.7173,weighted attribute match (price / size / facility fit),ok
+content_based,Q129,train,20,5.0,1095.0,Taman Putra Prima,Sepang,Terrace House,780000.0,2100.0,4.0,4.0,0.708,weighted attribute match (price / size / facility fit),ok
+content_based,Q130,test,18,1.0,1812.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,760008.0,3160.0,6.0,5.0,0.796,weighted attribute match (price / size / facility fit),ok
+content_based,Q130,test,18,2.0,1807.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,770008.0,3160.0,6.0,4.0,0.7934,weighted attribute match (price / size / facility fit),ok
+content_based,Q130,test,18,3.0,1701.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,800008.0,3160.0,6.0,4.0,0.7855,weighted attribute match (price / size / facility fit),ok
+content_based,Q130,test,18,4.0,1734.0,Taman Bukit Senawang Perdana,Seremban,Bungalow / Detached House,870008.0,3160.0,7.0,4.0,0.7671,weighted attribute match (price / size / facility fit),ok
+content_based,Q130,test,18,5.0,1769.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,890008.0,3160.0,7.0,4.0,0.7618,weighted attribute match (price / size / facility fit),ok
+content_based,Q131,train,21,1.0,1645.0,Taman Bukti,Seremban,Bungalow / Detached House,650000.0,2800.0,9.0,6.0,0.4732,weighted attribute match (price / size / facility fit),ok
+content_based,Q131,train,21,2.0,1592.0,Taman Cenderawasih,Seremban,Bungalow / Detached House,680000.0,3016.0,6.0,3.0,0.4456,weighted attribute match (price / size / facility fit),ok
+content_based,Q131,train,21,3.0,1580.0,Mahkota Hills,Seremban,Bungalow / Detached House,414912.0,1913.0,4.0,2.0,0.3984,weighted attribute match (price / size / facility fit),ok
+content_based,Q131,train,21,4.0,1570.0,Rasah Kemayan,Seremban,Bungalow / Detached House,750000.0,2800.0,5.0,4.0,0.3966,weighted attribute match (price / size / facility fit),ok
+content_based,Q131,train,21,5.0,1755.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,750008.0,3000.0,6.0,4.0,0.3965,weighted attribute match (price / size / facility fit),ok
+content_based,Q132,test,21,1.0,1645.0,Taman Bukti,Seremban,Bungalow / Detached House,650000.0,2800.0,9.0,6.0,0.5583,weighted attribute match (price / size / facility fit),ok
+content_based,Q132,test,21,2.0,1755.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,750008.0,3000.0,6.0,4.0,0.5577,weighted attribute match (price / size / facility fit),ok
+content_based,Q132,test,21,3.0,1575.0,Taman Bukit Citra Pajam,Seremban,Bungalow / Detached House,780000.0,2600.0,5.0,5.0,0.5002,weighted attribute match (price / size / facility fit),ok
+content_based,Q132,test,21,4.0,1812.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,760008.0,3160.0,6.0,5.0,0.4963,weighted attribute match (price / size / facility fit),ok
+content_based,Q132,test,21,5.0,1807.0,Taman Senawang Perdana,Seremban,Bungalow / Detached House,770008.0,3160.0,6.0,4.0,0.4918,weighted attribute match (price / size / facility fit),ok
+content_based,Q133,validation,13,1.0,1800.0,Kiara Court - Nilai Impian,Seremban,Condominium,350008.0,929.0,3.0,2.0,0.5775,weighted attribute match (price / size / facility fit),ok
+content_based,Q133,validation,13,2.0,1794.0,Kiara Court - Nilai Impian,Seremban,Condominium,370008.0,930.0,3.0,2.0,0.5582,weighted attribute match (price / size / facility fit),ok
+content_based,Q133,validation,13,3.0,1664.0,Kondominium Tasik Mewah,Seremban,Condominium,330000.0,1120.0,3.0,2.0,0.5506,weighted attribute match (price / size / facility fit),ok
+content_based,Q133,validation,13,4.0,1637.0,Kalista Residence,Seremban,Condominium,350000.0,957.0,3.0,2.0,0.3736,weighted attribute match (price / size / facility fit),ok
+content_based,Q133,validation,13,5.0,1562.0,Kalista Residence,Seremban,Condominium,320000.0,914.0,3.0,2.0,0.3627,weighted attribute match (price / size / facility fit),ok
+content_based,Q134,train,10,1.0,1577.0,Safira Apartment,Seremban,Condominium,300000.0,873.0,3.0,2.0,0.5162,weighted attribute match (price / size / facility fit),ok
+content_based,Q134,train,10,2.0,1717.0,Kalista 2,Seremban,Condominium,350008.0,926.0,3.0,2.0,0.4398,weighted attribute match (price / size / facility fit),ok
+content_based,Q134,train,10,3.0,1800.0,Kiara Court - Nilai Impian,Seremban,Condominium,350008.0,929.0,3.0,2.0,0.4375,weighted attribute match (price / size / facility fit),ok
+content_based,Q134,train,10,4.0,1539.0,Residensi Lili,Seremban,Condominium,344444.0,735.0,3.0,2.0,0.3411,weighted attribute match (price / size / facility fit),ok
+content_based,Q134,train,10,5.0,1694.0,Mesahill,Seremban,Condominium,340008.0,720.0,2.0,2.0,0.3364,weighted attribute match (price / size / facility fit),ok
+content_based,Q135,train,15,1.0,1557.0,Laman Lavenda,Seremban,Link Bungalow / Semi-Detached,740000.0,2774.0,5.0,3.0,0.8463,weighted attribute match (price / size / facility fit),ok
+content_based,Q135,train,15,2.0,1697.0,Taman Ampangan,Seremban,Link Bungalow / Semi-Detached,751500.0,2731.0,6.0,6.0,0.8228,weighted attribute match (price / size / facility fit),ok
+content_based,Q135,train,15,3.0,1649.0,Taman Bukit Intan,Seremban,Link Bungalow / Semi-Detached,1250000.0,2800.0,5.0,4.0,0.7622,weighted attribute match (price / size / facility fit),ok
+content_based,Q135,train,15,4.0,1719.0,Taman Jayamas I,Seremban,Link Bungalow / Semi-Detached,430008.0,3000.0,7.0,5.0,0.7356,weighted attribute match (price / size / facility fit),ok
+content_based,Q135,train,15,5.0,1746.0,Taman Desa Flora Ii,Seremban,Link Bungalow / Semi-Detached,715008.0,2454.0,5.0,3.0,0.6923,weighted attribute match (price / size / facility fit),ok
+content_based,Q136,train,19,1.0,1719.0,Taman Jayamas I,Seremban,Link Bungalow / Semi-Detached,430008.0,3000.0,7.0,5.0,0.7763,weighted attribute match (price / size / facility fit),ok
+content_based,Q136,train,19,2.0,1557.0,Laman Lavenda,Seremban,Link Bungalow / Semi-Detached,740000.0,2774.0,5.0,3.0,0.7571,weighted attribute match (price / size / facility fit),ok
+content_based,Q136,train,19,3.0,1697.0,Taman Ampangan,Seremban,Link Bungalow / Semi-Detached,751500.0,2731.0,6.0,6.0,0.7344,weighted attribute match (price / size / facility fit),ok
+content_based,Q136,train,19,4.0,1567.0,Taman Desa Saga,Seremban,Link Bungalow / Semi-Detached,680000.0,2588.0,5.0,3.0,0.6929,weighted attribute match (price / size / facility fit),ok
+content_based,Q136,train,19,5.0,1835.0,Taman Tasik Seremban,Seremban,Link Bungalow / Semi-Detached,980000.0,2816.0,5.0,5.0,0.6866,weighted attribute match (price / size / facility fit),ok
+content_based,Q137,train,58,1.0,1813.0,Taman Semarak 2,Seremban,Terrace House,390008.0,1980.0,4.0,3.0,0.7074,weighted attribute match (price / size / facility fit),ok
+content_based,Q137,train,58,2.0,1765.0,Bandar Seremban Selatan,Seremban,Terrace House,350008.0,2000.0,5.0,3.0,0.6691,weighted attribute match (price / size / facility fit),ok
+content_based,Q137,train,58,3.0,1553.0,Taman Rasah Jaya (Fasa 5),Seremban,Terrace House,350000.0,2007.0,4.0,3.0,0.6657,weighted attribute match (price / size / facility fit),ok
+content_based,Q137,train,58,4.0,1623.0,Taman Kemuning,Seremban,Terrace House,360000.0,2000.0,4.0,3.0,0.6618,weighted attribute match (price / size / facility fit),ok
+content_based,Q137,train,58,5.0,1798.0,Taman Bukit Kepayang,Seremban,Terrace House,490008.0,2000.0,4.0,3.0,0.6444,weighted attribute match (price / size / facility fit),ok
+content_based,Q138,train,77,1.0,1735.0,Jalan Rasah,Seremban,Terrace House,352008.0,1650.0,4.0,2.0,0.7464,weighted attribute match (price / size / facility fit),ok
+content_based,Q138,train,77,2.0,1793.0,Taman Desa Jasmin,Seremban,Terrace House,388008.0,1580.0,3.0,2.0,0.7376,weighted attribute match (price / size / facility fit),ok
+content_based,Q138,train,77,3.0,1699.0,Taman Bukit Emas,Seremban,Terrace House,370008.0,1646.0,4.0,2.0,0.7366,weighted attribute match (price / size / facility fit),ok
+content_based,Q138,train,77,4.0,1743.0,Taman Rasah Jaya (Fasa 5),Seremban,Terrace House,370008.0,1650.0,3.0,2.0,0.7347,weighted attribute match (price / size / facility fit),ok
+content_based,Q138,train,77,5.0,1811.0,Taman Seremban Jaya,Seremban,Terrace House,365008.0,1539.0,3.0,2.0,0.7326,weighted attribute match (price / size / facility fit),ok
+content_based,Q139,test,73,1.0,1660.0,Taman Thivy Jaya,Seremban,Terrace House,320000.0,1760.0,4.0,2.0,0.5276,weighted attribute match (price / size / facility fit),ok
+content_based,Q139,test,73,2.0,1656.0,Taman Desa Cempaka,Seremban,Terrace House,300000.0,1680.0,3.0,2.0,0.5189,weighted attribute match (price / size / facility fit),ok
+content_based,Q139,test,73,3.0,1721.0,Taman Punca Emas,Seremban,Terrace House,338008.0,1650.0,3.0,2.0,0.4511,weighted attribute match (price / size / facility fit),ok
+content_based,Q139,test,73,4.0,1791.0,Taman Panchor Jaya,Seremban,Terrace House,360008.0,1700.0,4.0,3.0,0.4431,weighted attribute match (price / size / facility fit),ok
+content_based,Q139,test,73,5.0,1795.0,Taman Tuanku Jaafar,Seremban,Terrace House,380008.0,1760.0,4.0,2.0,0.4425,weighted attribute match (price / size / facility fit),ok
+content_based,Q140,train,70,1.0,1813.0,Taman Semarak 2,Seremban,Terrace House,390008.0,1980.0,4.0,3.0,0.6779,weighted attribute match (price / size / facility fit),ok
+content_based,Q140,train,70,2.0,1765.0,Bandar Seremban Selatan,Seremban,Terrace House,350008.0,2000.0,5.0,3.0,0.6426,weighted attribute match (price / size / facility fit),ok
+content_based,Q140,train,70,3.0,1553.0,Taman Rasah Jaya (Fasa 5),Seremban,Terrace House,350000.0,2007.0,4.0,3.0,0.6393,weighted attribute match (price / size / facility fit),ok
+content_based,Q140,train,70,4.0,1623.0,Taman Kemuning,Seremban,Terrace House,360000.0,2000.0,4.0,3.0,0.6346,weighted attribute match (price / size / facility fit),ok
+content_based,Q140,train,70,5.0,1622.0,Taman Mulia,Seremban,Terrace House,400000.0,2000.0,4.0,4.0,0.6026,weighted attribute match (price / size / facility fit),ok
+content_based,Q141,test,29,1.0,1668.0,Taman Oakland,Seremban,Terrace House,400000.0,1800.0,4.0,3.0,0.7163,weighted attribute match (price / size / facility fit),ok
+content_based,Q141,test,29,2.0,1715.0,Taman Kekwa,Seremban,Terrace House,410008.0,1800.0,4.0,3.0,0.7092,weighted attribute match (price / size / facility fit),ok
+content_based,Q141,test,29,3.0,1576.0,Laman Sendayan,Seremban,Terrace House,425000.0,1815.0,4.0,3.0,0.6847,weighted attribute match (price / size / facility fit),ok
+content_based,Q141,test,29,4.0,1730.0,Taman Iringan Bayu,Seremban,Terrace House,460008.0,1800.0,4.0,3.0,0.6738,weighted attribute match (price / size / facility fit),ok
+content_based,Q141,test,29,5.0,1791.0,Taman Panchor Jaya,Seremban,Terrace House,360008.0,1700.0,4.0,3.0,0.6521,weighted attribute match (price / size / facility fit),ok
+content_based,Q142,validation,88,1.0,1668.0,Taman Oakland,Seremban,Terrace House,400000.0,1800.0,4.0,3.0,0.6943,weighted attribute match (price / size / facility fit),ok
+content_based,Q142,validation,88,2.0,1715.0,Taman Kekwa,Seremban,Terrace House,410008.0,1800.0,4.0,3.0,0.6873,weighted attribute match (price / size / facility fit),ok
+content_based,Q142,validation,88,3.0,1665.0,Taman Oakland,Seremban,Terrace House,430000.0,1800.0,3.0,3.0,0.6733,weighted attribute match (price / size / facility fit),ok
+content_based,Q142,validation,88,4.0,1660.0,Taman Thivy Jaya,Seremban,Terrace House,320000.0,1760.0,4.0,2.0,0.6718,weighted attribute match (price / size / facility fit),ok
+content_based,Q142,validation,88,5.0,1813.0,Taman Semarak 2,Seremban,Terrace House,390008.0,1980.0,4.0,3.0,0.6597,weighted attribute match (price / size / facility fit),ok
+content_based,Q143,train,38,1.0,2525.0,Miami Green,Timur Laut,Condominium,380000.0,1100.0,4.0,2.0,0.7611,weighted attribute match (price / size / facility fit),ok
+content_based,Q143,train,38,2.0,2516.0,Condo Gembira,Timur Laut,Condominium,580000.0,1200.0,3.0,2.0,0.7587,weighted attribute match (price / size / facility fit),ok
+content_based,Q143,train,38,3.0,2135.0,Starhill Luxury Residences,Timur Laut,Condominium,800000.0,1283.0,3.0,2.0,0.7398,weighted attribute match (price / size / facility fit),ok
+content_based,Q143,train,38,4.0,2497.0,The Golden Triangle,Timur Laut,Condominium,580000.0,1165.0,4.0,2.0,0.7376,weighted attribute match (price / size / facility fit),ok
+content_based,Q143,train,38,5.0,2072.0,Quaywest Residence,Timur Laut,Condominium,788000.0,1217.0,3.0,2.0,0.7039,weighted attribute match (price / size / facility fit),ok
+content_based,Q144,train,49,1.0,2490.0,Relau Vista Apartment,Timur Laut,Condominium,350000.0,850.0,3.0,2.0,0.8402,weighted attribute match (price / size / facility fit),ok
+content_based,Q144,train,49,2.0,2412.0,Eden Seaview,Timur Laut,Condominium,342000.0,883.0,3.0,2.0,0.7791,weighted attribute match (price / size / facility fit),ok
+content_based,Q144,train,49,3.0,2425.0,All Seasons Park,Timur Laut,Condominium,490000.0,856.0,3.0,2.0,0.7645,weighted attribute match (price / size / facility fit),ok
+content_based,Q144,train,49,4.0,2153.0,Granito @ Permai,Timur Laut,Condominium,470000.0,864.0,3.0,2.0,0.7579,weighted attribute match (price / size / facility fit),ok
+content_based,Q144,train,49,5.0,2211.0,N Park,Timur Laut,Condominium,350000.0,800.0,3.0,2.0,0.7421,weighted attribute match (price / size / facility fit),ok
+content_based,Q145,train,81,1.0,2516.0,Condo Gembira,Timur Laut,Condominium,580000.0,1200.0,3.0,2.0,0.6799,weighted attribute match (price / size / facility fit),ok
+content_based,Q145,train,81,2.0,2133.0,Scots Pavilion,Timur Laut,Condominium,930000.0,1331.0,4.0,2.0,0.6782,weighted attribute match (price / size / facility fit),ok
+content_based,Q145,train,81,3.0,2525.0,Miami Green,Timur Laut,Condominium,380000.0,1100.0,4.0,2.0,0.6749,weighted attribute match (price / size / facility fit),ok
+content_based,Q145,train,81,4.0,2425.0,All Seasons Park,Timur Laut,Condominium,490000.0,856.0,3.0,2.0,0.6713,weighted attribute match (price / size / facility fit),ok
+content_based,Q145,train,81,5.0,2509.0,Ferringhi Residence 2,Timur Laut,Condominium,600000.0,1208.0,2.0,2.0,0.67,weighted attribute match (price / size / facility fit),ok
+content_based,Q146,train,57,1.0,2516.0,Condo Gembira,Timur Laut,Condominium,580000.0,1200.0,3.0,2.0,0.8314,weighted attribute match (price / size / facility fit),ok
+content_based,Q146,train,57,2.0,2497.0,The Golden Triangle,Timur Laut,Condominium,580000.0,1165.0,4.0,2.0,0.7949,weighted attribute match (price / size / facility fit),ok
+content_based,Q146,train,57,3.0,2525.0,Miami Green,Timur Laut,Condominium,380000.0,1100.0,4.0,2.0,0.7854,weighted attribute match (price / size / facility fit),ok
+content_based,Q146,train,57,4.0,2072.0,Quaywest Residence,Timur Laut,Condominium,788000.0,1217.0,3.0,2.0,0.7532,weighted attribute match (price / size / facility fit),ok
+content_based,Q146,train,57,5.0,2104.0,Villa Ria,Timur Laut,Condominium,810000.0,1163.0,3.0,2.0,0.726,weighted attribute match (price / size / facility fit),ok
+content_based,Q147,train,65,1.0,2525.0,Miami Green,Timur Laut,Condominium,380000.0,1100.0,4.0,2.0,0.8593,weighted attribute match (price / size / facility fit),ok
+content_based,Q147,train,65,2.0,2409.0,Island Resort,Timur Laut,Condominium,425150.0,1100.0,3.0,2.0,0.8425,weighted attribute match (price / size / facility fit),ok
+content_based,Q147,train,65,3.0,2126.0,Mont Residence @ Tanjung Tokong,Timur Laut,Condominium,608000.0,1100.0,3.0,2.0,0.7748,weighted attribute match (price / size / facility fit),ok
+content_based,Q147,train,65,4.0,2320.0,Scots Pavilion,Timur Laut,Condominium,690000.0,1081.0,3.0,2.0,0.7205,weighted attribute match (price / size / facility fit),ok
+content_based,Q147,train,65,5.0,2313.0,Scots Pavilion,Timur Laut,Condominium,690000.0,1080.0,3.0,2.0,0.7192,weighted attribute match (price / size / facility fit),ok
+content_based,Q148,train,107,1.0,2525.0,Miami Green,Timur Laut,Condominium,380000.0,1100.0,4.0,2.0,0.8836,weighted attribute match (price / size / facility fit),ok
+content_based,Q148,train,107,2.0,2409.0,Island Resort,Timur Laut,Condominium,425150.0,1100.0,3.0,2.0,0.8697,weighted attribute match (price / size / facility fit),ok
+content_based,Q148,train,107,3.0,2126.0,Mont Residence @ Tanjung Tokong,Timur Laut,Condominium,608000.0,1100.0,3.0,2.0,0.8137,weighted attribute match (price / size / facility fit),ok
+content_based,Q148,train,107,4.0,2406.0,Seaview Garden,Timur Laut,Condominium,399000.0,1000.0,2.0,2.0,0.8067,weighted attribute match (price / size / facility fit),ok
+content_based,Q148,train,107,5.0,2524.0,Gambier Heights,Timur Laut,Condominium,330000.0,950.0,3.0,2.0,0.7924,weighted attribute match (price / size / facility fit),ok
+content_based,Q149,train,10,1.0,2421.0,Bukit Dumbar Residences,Timur Laut,Terrace House,1790000.0,2792.0,5.0,4.0,0.798,weighted attribute match (price / size / facility fit),ok
+content_based,Q149,train,10,2.0,2560.0,Minden Heights,Timur Laut,Terrace House,1900000.0,2621.0,4.0,4.0,0.7429,weighted attribute match (price / size / facility fit),ok
+content_based,Q149,train,10,3.0,2272.0,8 Babington Residence,Timur Laut,Terrace House,2149000.0,2622.0,5.0,5.0,0.7183,weighted attribute match (price / size / facility fit),ok
+content_based,Q149,train,10,4.0,2533.0,Jalan Chee Seng 1,Timur Laut,Terrace House,1100000.0,3000.0,7.0,6.0,0.7071,weighted attribute match (price / size / facility fit),ok
+content_based,Q149,train,10,5.0,2271.0,8 Babington Residence,Timur Laut,Terrace House,2300000.0,2615.0,5.0,4.0,0.6995,weighted attribute match (price / size / facility fit),ok
+content_based,Q150,train,8,1.0,2533.0,Jalan Chee Seng 1,Timur Laut,Terrace House,1100000.0,3000.0,7.0,6.0,0.6305,weighted attribute match (price / size / facility fit),ok
+content_based,Q150,train,8,2.0,2421.0,Bukit Dumbar Residences,Timur Laut,Terrace House,1790000.0,2792.0,5.0,4.0,0.5646,weighted attribute match (price / size / facility fit),ok
+content_based,Q150,train,8,3.0,2560.0,Minden Heights,Timur Laut,Terrace House,1900000.0,2621.0,4.0,4.0,0.4995,weighted attribute match (price / size / facility fit),ok
+content_based,Q150,train,8,4.0,2167.0,Ferringhi Hills,Timur Laut,Terrace House,1350000.0,3255.0,6.0,5.0,0.4565,weighted attribute match (price / size / facility fit),ok
+content_based,Q150,train,8,5.0,2272.0,8 Babington Residence,Timur Laut,Terrace House,2149000.0,2622.0,5.0,5.0,0.4421,weighted attribute match (price / size / facility fit),ok
+content_based,Q151,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q152,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q153,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q154,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q155,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q156,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q157,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q158,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q159,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q160,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q161,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q162,train,4,1.0,648.0,Sri Mahligai,Petaling,Town House,498000.0,1990.0,4.0,4.0,0.6859,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q162,train,4,2.0,1128.0,Cascadia Lake Vista,Petaling,Town House,550000.0,1650.0,3.0,4.0,0.4938,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q162,train,4,3.0,970.0,Summer Homes,Petaling,Town House,588000.0,1650.0,3.0,3.0,0.4915,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q162,train,4,4.0,3201.0,Taman Tasik Prima,Petaling,Town House,1200000.0,3935.0,5.0,4.0,0.3704,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q163,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q164,train,1,1.0,2005.0,Taman Karak Indah,Bentong,Link Bungalow / Semi-Detached,438000.0,1400.0,5.0,3.0,0.2442,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q165,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q166,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q167,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q168,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q169,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q170,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q171,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q172,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q173,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q174,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q175,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q176,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q177,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q178,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q179,test,2,1.0,1531.0,Taman Batu Berendam Putra,Melaka Tengah,Link Bungalow / Semi-Detached,798000.0,3500.0,4.0,3.0,0.3941,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q179,test,2,2.0,1532.0,Taman Melaka Baru,Melaka Tengah,Link Bungalow / Semi-Detached,798000.0,3500.0,4.0,3.0,0.3941,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q180,train,3,1.0,36.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1180.0,3.0,2.0,0.2405,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q180,train,3,2.0,146.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1170.0,3.0,2.0,0.2405,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q180,train,3,3.0,178.0,Taman Pulai Emas,Kulai,Terrace House,415000.0,1170.0,3.0,2.0,0.2405,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q181,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q182,train,175,1.0,3187.0,Taman Puchong Utama,Petaling,Terrace House,470000.0,1400.0,4.0,3.0,0.9866,weighted attribute match (price / size / facility fit),ok
+content_based,Q182,train,175,2.0,1051.0,Taman Puchong Tekali,Petaling,Terrace House,538000.0,1400.0,4.0,3.0,0.9847,weighted attribute match (price / size / facility fit),ok
+content_based,Q182,train,175,3.0,682.0,Setia Permai 3,Petaling,Terrace House,730000.0,1400.0,4.0,3.0,0.9793,weighted attribute match (price / size / facility fit),ok
+content_based,Q182,train,175,4.0,1004.0,Jalan Ss 14,Petaling,Terrace House,770000.0,1400.0,3.0,2.0,0.9781,weighted attribute match (price / size / facility fit),ok
+content_based,Q182,train,175,5.0,496.0,Setia Impian,Petaling,Terrace House,539000.0,1500.0,4.0,3.0,0.9289,weighted attribute match (price / size / facility fit),ok
+content_based,Q183,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q184,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q185,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q186,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q187,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q188,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q189,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q190,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q191,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q192,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q193,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q194,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q195,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q196,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q197,train,2,1.0,188.0,Taman Nusa Bestari Jaya,Johor Bahru,Town House,598000.0,1765.0,3.0,2.0,0.3448,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q197,train,2,2.0,371.0,Leisure Farm,Johor Bahru,Town House,680000.0,1968.0,4.0,3.0,0.3077,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q198,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q199,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q200,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q201,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q202,train,1,1.0,1853.0,Selesa Hillhomes @ Bukit Tinggi,Bentong,Condominium,370000.0,1200.0,2.0,2.0,0.688,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q203,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q204,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q205,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q206,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q207,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q208,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q209,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q210,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q211,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q212,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q213,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q214,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q215,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q216,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q217,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q218,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q219,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q220,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q221,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q222,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q223,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q224,train,2,1.0,2414.0,Taman Bayu Aman,Seberang Perai Utara,Terrace House,800000.0,2640.0,5.0,4.0,0.4923,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q224,train,2,2.0,2547.0,Bandar Butterworth,Seberang Perai Utara,Terrace House,1200000.0,2680.0,5.0,4.0,0.4308,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q225,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q226,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q227,test,3,1.0,2112.0,Ferringhi Park,Timur Laut,Link Bungalow / Semi-Detached,1900000.0,3745.0,5.0,4.0,0.6404,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q227,test,3,2.0,2149.0,Ayer Itam,Timur Laut,Link Bungalow / Semi-Detached,1100000.0,1300.0,3.0,2.0,0.4462,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q227,test,3,3.0,2119.0,Tanjung Bungah,Timur Laut,Link Bungalow / Semi-Detached,1450000.0,1500.0,4.0,2.0,0.3923,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q228,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q229,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q230,train,2,1.0,1551.0,Nilai Impian,Hulu Langat,Bungalow / Detached House,1200000.0,250.0,5.0,5.0,0.26,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q230,train,2,2.0,3199.0,Taman 1080 Residences,Hulu Langat,Bungalow / Detached House,1780000.0,4600.0,7.0,8.0,0.144,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q231,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q232,train,22,1.0,2767.0,Presint 14,Putrajaya,Bungalow / Detached House,1300000.0,2900.0,5.0,5.0,0.8381,weighted attribute match (price / size / facility fit),ok
+content_based,Q232,train,22,2.0,2745.0,Presint 8,Putrajaya,Bungalow / Detached House,2100000.0,4090.0,6.0,6.0,0.6278,weighted attribute match (price / size / facility fit),ok
+content_based,Q232,train,22,3.0,2611.0,Presint 8,Putrajaya,Bungalow / Detached House,2200000.0,4090.0,6.0,6.0,0.625,weighted attribute match (price / size / facility fit),ok
+content_based,Q232,train,22,4.0,2757.0,Astana Residence,Putrajaya,Bungalow / Detached House,2250000.0,5348.0,6.0,6.0,0.6236,weighted attribute match (price / size / facility fit),ok
+content_based,Q232,train,22,5.0,2756.0,Astana Residence,Putrajaya,Bungalow / Detached House,2330000.0,5763.0,6.0,6.0,0.6213,weighted attribute match (price / size / facility fit),ok
+content_based,Q233,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q234,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q235,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q236,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q237,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q238,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q239,train,35,1.0,284.0,Taman Johor Jaya,Johor Bahru,Terrace House,950000.0,3200.0,4.0,3.0,0.8351,weighted attribute match (price / size / facility fit),ok
+content_based,Q239,train,35,2.0,218.0,Taman Mutiara Rini,Johor Bahru,Terrace House,880000.0,3400.0,6.0,6.0,0.7984,weighted attribute match (price / size / facility fit),ok
+content_based,Q239,train,35,3.0,1.0,Taman Sutera,Johor Bahru,Terrace House,920000.0,2950.0,5.0,3.0,0.7792,weighted attribute match (price / size / facility fit),ok
+content_based,Q239,train,35,4.0,0.0,Taman Sutera,Johor Bahru,Terrace House,1000000.0,2950.0,5.0,4.0,0.7654,weighted attribute match (price / size / facility fit),ok
+content_based,Q239,train,35,5.0,87.0,Taman Sutera Utama,Johor Bahru,Terrace House,1550000.0,3200.0,4.0,5.0,0.7309,weighted attribute match (price / size / facility fit),ok
+content_based,Q240,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q241,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q242,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q243,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q244,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q245,test,0,,,,,,,,,,,,no_eligible_property
+content_based,Q246,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q247,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q248,train,0,,,,,,,,,,,,no_eligible_property
+content_based,Q249,validation,0,,,,,,,,,,,,no_eligible_property
+content_based,Q250,train,2,1.0,1116.0,Bromelia Bukit Puchong,Sepang,Link Bungalow / Semi-Detached,1280000.0,2113.0,5.0,5.0,0.1444,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
+content_based,Q250,train,2,2.0,1178.0,Bromelia Bukit Puchong,Sepang,Link Bungalow / Semi-Detached,1380000.0,2113.0,5.0,5.0,0.1167,weighted attribute match (price / size / facility fit),fewer_than_top_n_eligible
