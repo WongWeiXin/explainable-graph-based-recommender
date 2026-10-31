@@ -1,0 +1,1334 @@
+{
+  "experiment": "location robustness - reduced location precision",
+  "section": "3.14 / Stage 11",
+  "reference_condition": "coords_exact",
+  "catalogue_properties": 2951,
+  "queries": 250,
+  "queries_with_candidates": 161,
+  "ranking_config_id": "RANK-2cac770876",
+  "graph_parameters": {
+    "graph_threshold": 0.75,
+    "neighbour_limit": 10,
+    "retention_rule": "mutual_topk",
+    "min_valid_components": 3,
+    "sigma_loc_km": 5.0,
+    "district_fallback_value": 0.5
+  },
+  "analysis_plan": {
+    "frozen_before_running": true,
+    "primary_metric": "ndcg5_rubric",
+    "secondary_metrics": [
+      "p5_rubric",
+      "recall5_rubric",
+      "mrr_rubric"
+    ],
+    "population": "benchmark_role == 'ranking' (>= 5 eligible properties); the per-query file keeps `partition` for split-restricted reanalysis",
+    "comparison": "each degraded condition vs coords_exact, paired on query_id",
+    "test": "two-sided Wilcoxon signed-rank, zero_method='wilcox'",
+    "alpha": 0.05,
+    "multiplicity": "Holm across the 4 non-reference conditions",
+    "effect_size": "matched-pairs rank-biserial correlation",
+    "uncertainty": "percentile bootstrap, 10000 resamples, seed 20261031",
+    "decision_rule": "report a difference only when p_holm < 0.05",
+    "label_grader": "REL-v1 rubric (query + listing attributes only, no model score) -> 100% of retrieved pairs graded; the frozen pooled label file is a cross-check"
+  },
+  "query_funnel": {
+    "queries_total": 250,
+    "queries_empty_result": 89,
+    "queries_sparse_candidate": 26,
+    "queries_ranking": 135,
+    "ranking_queries_in_eval_splits": 39,
+    "by_partition": {
+      "test": {
+        "empty_result_test": 18,
+        "ranking": 27,
+        "sparse_candidate": 5
+      },
+      "train": {
+        "empty_result_test": 60,
+        "ranking": 96,
+        "sparse_candidate": 19
+      },
+      "validation": {
+        "empty_result_test": 11,
+        "ranking": 12,
+        "sparse_candidate": 2
+      }
+    },
+    "why_not_250": "All 250 frozen queries are executed. 89 have no property passing the 8 hard gates (empty_result_test) and 26 have 1-4 eligible properties, below min_ranking_candidates = 5 (sparse_candidate). Neither has a Top-5 to rank, so only the 135 ranking queries contribute ranking metrics; the 115 non-ranking queries are reported by the eligibility summary."
+  },
+  "measurement_scopes": {
+    "ranking_metrics": "135 ranking-role queries (39 in validation+test)",
+    "neighbour_overlap": "Top-5 candidates of all 161 queries that have candidates, so sparse-result queries are included",
+    "graph_edge_overlap": "all 2951 properties' retained edges, independent of any query",
+    "explanation_metrics": "Top-5 rows of all queries with candidates (732 per condition)"
+  },
+  "label_coverage": {
+    "grader": "REL-v1 rubric applied to every retrieved pair",
+    "grader_coverage_pct": 100.0,
+    "frozen_label_file": "relevance_labels_v2.csv",
+    "frozen_label_pairs": 328,
+    "retrieved_pairs_per_condition": [
+      675,
+      675,
+      675,
+      675,
+      675
+    ],
+    "frozen_coverage_of_retrieved_pct": [
+      25.48,
+      25.48,
+      26.07,
+      25.78,
+      26.07
+    ],
+    "pairs_needing_labels": 699,
+    "pairs_needing_labels_by_split": {
+      "train": 654,
+      "test": 32,
+      "validation": 13
+    },
+    "pairs_needing_labels_eval_splits": 45,
+    "pool_file": "location_robustness_labelling_pool.csv",
+    "note": "Ranking metrics use the rubric grader, which reads only query and listing attributes, so they are not limited by pooled-label coverage. The frozen label file covers the validation+test pairs the baselines retrieved, so its shortfall is concentrated in the train-split queries. Labelling the eval-split pairs still listed in the pool closes the gap on the reporting population; ndcg5_pooled_complete_subset is the cross-check that does not depend on unlabelled items being scored as irrelevant."
+  },
+  "statistics": {
+    "primary_metric": "ndcg5_rubric",
+    "tests": [
+      {
+        "condition": "coords_rounded_3dp",
+        "n_pairs": 135,
+        "n_zero_diff": 132,
+        "mean_paired_diff": -0.0002,
+        "diff_ci95": [
+          -0.0015,
+          0.0005
+        ],
+        "p_wilcoxon": null,
+        "test_status": "not_testable_only_3_nonzero_pairs",
+        "p_holm": null,
+        "effect_rank_biserial": null,
+        "significant": false
+      },
+      {
+        "condition": "coords_rounded_2dp",
+        "n_pairs": 135,
+        "n_zero_diff": 108,
+        "mean_paired_diff": -0.0022,
+        "diff_ci95": [
+          -0.0058,
+          0.0013
+        ],
+        "p_wilcoxon": 0.139517,
+        "test_status": "tested",
+        "p_holm": 0.558068,
+        "effect_rank_biserial": -0.3254,
+        "significant": false
+      },
+      {
+        "condition": "district_only",
+        "n_pairs": 135,
+        "n_zero_diff": 85,
+        "mean_paired_diff": 0.0033,
+        "diff_ci95": [
+          -0.0065,
+          0.0137
+        ],
+        "p_wilcoxon": 0.190575,
+        "test_status": "tested",
+        "p_holm": 0.571725,
+        "effect_rank_biserial": 0.2125,
+        "significant": false
+      },
+      {
+        "condition": "location_none",
+        "n_pairs": 135,
+        "n_zero_diff": 91,
+        "mean_paired_diff": 0.0031,
+        "diff_ci95": [
+          -0.0067,
+          0.0135
+        ],
+        "p_wilcoxon": 0.267496,
+        "test_status": "tested",
+        "p_holm": 0.571725,
+        "effect_rank_biserial": 0.1919,
+        "significant": false
+      }
+    ]
+  },
+  "definitions": {
+    "top5_overlap_at5_mean": "mean |Top-5(ref) ∩ Top-5(cond)| / min(5, sizes), ranking queries",
+    "topk_overlap_at10_mean": "same at K=10, to show stability beyond the recommendation cut",
+    "ndcg5_rubric": "graded NDCG@5, gains 2^rel-1, rel from rubric REL-v1 (100% coverage)",
+    "ndcg5_pooled_complete_subset": "same metric on frozen-file grades, only for queries whose five retrieved items are all labelled",
+    "label_coverage_pct": "share of retrieved pairs covered by the frozen label file",
+    "graph_edge_overlap_vs_reference_pct": "GRAPH-level retained-edge overlap; not a query-qualified neighbour measure",
+    "candidate_neighbour_jaccard_mean": "per Top-5 candidate, Jaccard of the neighbour sets that actually carried graph support vs reference (candidates_compared spans all 161 queries with candidates, while ranking metrics use the 135 ranking queries)",
+    "query_neighbour_pool_jaccard_mean": "per query, Jaccard of the (candidate, neighbour) pairs shown in Top-5 vs reference",
+    "mean_paired_diff": "mean of per-query (condition - reference) NDCG@5",
+    "diff_ci95": "percentile bootstrap CI of that mean paired difference",
+    "p_holm": "Wilcoxon p adjusted across the four non-reference conditions",
+    "effect_rank_biserial": "matched-pairs rank-biserial correlation (+ favours condition)",
+    "district_fallback_pct": "Top-5 rows where a shown comparable was matched by district",
+    "fallback_frequency_pct": "Top-5 rows without full coordinate-level location evidence",
+    "location_disclosure_shown_pct": "share of required limited-location disclosures the Stage 8/9 engine actually emits"
+  },
+  "conditions": [
+    {
+      "condition": "coords_exact",
+      "condition_label": "full coordinates (reference)",
+      "location_mode": "coordinates",
+      "coordinate_round_decimals": null,
+      "similarity_config_id": "SIM-4fdc14c547",
+      "queries_total": 250,
+      "queries_empty_result": 89,
+      "queries_sparse_candidate": 26,
+      "edges": 8495,
+      "density": 0.001952,
+      "isolated_nodes": 223,
+      "isolated_pct": 7.56,
+      "degree_mean": 6.228,
+      "degree_max": 10,
+      "connected_components": 182,
+      "largest_component_pct": 7.896,
+      "candidates_compared": 732,
+      "candidate_neighbour_jaccard_mean": 1.0,
+      "candidates_identical_neighbour_set_pct": 100.0,
+      "neighbours_lost_per_candidate": 0.0,
+      "neighbours_gained_per_candidate": 0.0,
+      "query_neighbour_pool_jaccard_mean": 1.0,
+      "queries_identical_neighbour_pool_pct": 100.0,
+      "ranking_queries": 135,
+      "top5_overlap_at5_mean": 1.0,
+      "topk_overlap_at10_mean": 1.0,
+      "top5_identical_order_pct": 100.0,
+      "queries_with_changed_top5_pct": 0.0,
+      "mean_abs_rank_shift": 0.0,
+      "ndcg5_rubric": 0.9751,
+      "p5_rubric": 0.8178,
+      "recall5_rubric": 0.4348,
+      "mrr_rubric": 0.9391,
+      "ranking_queries_eval": 39,
+      "ndcg5_rubric_eval": 0.978,
+      "label_pairs_retrieved": 675,
+      "label_pairs_covered": 172,
+      "label_coverage_pct": 25.48,
+      "label_pairs_retrieved_eval": 195,
+      "label_pairs_covered_eval": 172,
+      "label_coverage_eval_pct": 88.21,
+      "queries_fully_labelled": 22,
+      "queries_fully_labelled_pct": 16.3,
+      "ndcg5_pooled_complete_subset": 0.9681,
+      "p5_pooled_complete_subset": 0.6636,
+      "queries_fully_labelled_eval": 22,
+      "ndcg5_pooled_eval_complete_subset": 0.9681,
+      "ndcg5_ci95_low": 0.9636,
+      "ndcg5_ci95_high": 0.9851,
+      "n_pairs": 135,
+      "n_zero_diff": 135,
+      "mean_paired_diff": 0.0,
+      "p_wilcoxon": null,
+      "effect_rank_biserial": 0.0,
+      "diff_ci95_low": 0.0,
+      "diff_ci95_high": 0.0,
+      "n_pairs_eval_splits": 39,
+      "mean_paired_diff_eval_splits": 0.0,
+      "explanation_rows": 732,
+      "coordinate_evidence_pct": 88.25,
+      "district_fallback_pct": 0.0,
+      "location_unavailable_pct": 0.0,
+      "no_comparable_evidence_pct": 11.75,
+      "location_disclosure_required_pct": 0.0,
+      "location_disclosure_shown_pct": null,
+      "fallback_frequency_pct": 11.75,
+      "frozen_top5_match_pct": 100.0,
+      "condition_seconds": 24.57
+    },
+    {
+      "condition": "coords_rounded_3dp",
+      "condition_label": "coordinates rounded to 3 dp (~110 m)",
+      "location_mode": "coordinates",
+      "coordinate_round_decimals": 3,
+      "similarity_config_id": "SIM-42a71a7bfb",
+      "queries_total": 250,
+      "queries_empty_result": 89,
+      "queries_sparse_candidate": 26,
+      "edges": 8491,
+      "density": 0.001951,
+      "isolated_nodes": 225,
+      "isolated_pct": 7.62,
+      "degree_mean": 6.23,
+      "degree_max": 10,
+      "connected_components": 183,
+      "largest_component_pct": 7.896,
+      "graph_edge_overlap_vs_reference_pct": 98.87,
+      "candidates_compared": 725,
+      "candidate_neighbour_jaccard_mean": 0.9848,
+      "candidates_identical_neighbour_set_pct": 93.38,
+      "neighbours_lost_per_candidate": 0.037,
+      "neighbours_gained_per_candidate": 0.037,
+      "query_neighbour_pool_jaccard_mean": 0.9737,
+      "queries_identical_neighbour_pool_pct": 79.5,
+      "ranking_queries": 135,
+      "top5_overlap_at5_mean": 0.9896,
+      "topk_overlap_at10_mean": 0.9956,
+      "top5_identical_order_pct": 89.63,
+      "queries_with_changed_top5_pct": 5.19,
+      "mean_abs_rank_shift": 0.056,
+      "ndcg5_rubric": 0.9749,
+      "p5_rubric": 0.8163,
+      "recall5_rubric": 0.4339,
+      "mrr_rubric": 0.9391,
+      "ranking_queries_eval": 39,
+      "ndcg5_rubric_eval": 0.978,
+      "label_pairs_retrieved": 675,
+      "label_pairs_covered": 172,
+      "label_coverage_pct": 25.48,
+      "label_pairs_retrieved_eval": 195,
+      "label_pairs_covered_eval": 172,
+      "label_coverage_eval_pct": 88.21,
+      "queries_fully_labelled": 22,
+      "queries_fully_labelled_pct": 16.3,
+      "ndcg5_pooled_complete_subset": 0.9681,
+      "p5_pooled_complete_subset": 0.6636,
+      "queries_fully_labelled_eval": 22,
+      "ndcg5_pooled_eval_complete_subset": 0.9681,
+      "ndcg5_ci95_low": 0.9632,
+      "ndcg5_ci95_high": 0.985,
+      "n_pairs": 135,
+      "n_zero_diff": 132,
+      "mean_paired_diff": -0.0002,
+      "p_wilcoxon": null,
+      "effect_rank_biserial": null,
+      "test_status": "not_testable_only_3_nonzero_pairs",
+      "diff_ci95_low": -0.0015,
+      "diff_ci95_high": 0.0005,
+      "n_pairs_eval_splits": 39,
+      "mean_paired_diff_eval_splits": 0.0,
+      "explanation_rows": 732,
+      "coordinate_evidence_pct": 87.84,
+      "district_fallback_pct": 0.0,
+      "location_unavailable_pct": 0.0,
+      "no_comparable_evidence_pct": 12.16,
+      "location_disclosure_required_pct": 0.0,
+      "location_disclosure_shown_pct": null,
+      "fallback_frequency_pct": 12.16,
+      "frozen_top5_match_pct": null,
+      "condition_seconds": 24.96
+    },
+    {
+      "condition": "coords_rounded_2dp",
+      "condition_label": "coordinates rounded to 2 dp (~1.1 km)",
+      "location_mode": "coordinates",
+      "coordinate_round_decimals": 2,
+      "similarity_config_id": "SIM-aef2496b40",
+      "queries_total": 250,
+      "queries_empty_result": 89,
+      "queries_sparse_candidate": 26,
+      "edges": 8536,
+      "density": 0.001961,
+      "isolated_nodes": 217,
+      "isolated_pct": 7.35,
+      "degree_mean": 6.244,
+      "degree_max": 10,
+      "connected_components": 172,
+      "largest_component_pct": 10.03,
+      "graph_edge_overlap_vs_reference_pct": 91.35,
+      "candidates_compared": 677,
+      "candidate_neighbour_jaccard_mean": 0.9099,
+      "candidates_identical_neighbour_set_pct": 70.61,
+      "neighbours_lost_per_candidate": 0.25,
+      "neighbours_gained_per_candidate": 0.22,
+      "query_neighbour_pool_jaccard_mean": 0.8309,
+      "queries_identical_neighbour_pool_pct": 44.1,
+      "ranking_queries": 135,
+      "top5_overlap_at5_mean": 0.9185,
+      "topk_overlap_at10_mean": 0.96,
+      "top5_identical_order_pct": 46.67,
+      "queries_with_changed_top5_pct": 31.11,
+      "mean_abs_rank_shift": 0.303,
+      "ndcg5_rubric": 0.973,
+      "p5_rubric": 0.8178,
+      "recall5_rubric": 0.4331,
+      "mrr_rubric": 0.9391,
+      "ranking_queries_eval": 39,
+      "ndcg5_rubric_eval": 0.9723,
+      "label_pairs_retrieved": 675,
+      "label_pairs_covered": 176,
+      "label_coverage_pct": 26.07,
+      "label_pairs_retrieved_eval": 195,
+      "label_pairs_covered_eval": 176,
+      "label_coverage_eval_pct": 90.26,
+      "queries_fully_labelled": 24,
+      "queries_fully_labelled_pct": 17.78,
+      "ndcg5_pooled_complete_subset": 0.9632,
+      "p5_pooled_complete_subset": 0.7333,
+      "queries_fully_labelled_eval": 24,
+      "ndcg5_pooled_eval_complete_subset": 0.9632,
+      "ndcg5_ci95_low": 0.9616,
+      "ndcg5_ci95_high": 0.983,
+      "n_pairs": 135,
+      "n_zero_diff": 108,
+      "mean_paired_diff": -0.0022,
+      "p_wilcoxon": 0.139517,
+      "effect_rank_biserial": -0.3254,
+      "test_status": "tested",
+      "diff_ci95_low": -0.0058,
+      "diff_ci95_high": 0.0013,
+      "n_pairs_eval_splits": 39,
+      "mean_paired_diff_eval_splits": -0.0056,
+      "explanation_rows": 732,
+      "coordinate_evidence_pct": 87.84,
+      "district_fallback_pct": 0.0,
+      "location_unavailable_pct": 0.0,
+      "no_comparable_evidence_pct": 12.16,
+      "location_disclosure_required_pct": 0.0,
+      "location_disclosure_shown_pct": null,
+      "fallback_frequency_pct": 12.16,
+      "frozen_top5_match_pct": null,
+      "condition_seconds": 22.91
+    },
+    {
+      "condition": "district_only",
+      "condition_label": "area-level location (district fallback only)",
+      "location_mode": "district_only",
+      "coordinate_round_decimals": null,
+      "similarity_config_id": "SIM-b74bed1a7b",
+      "queries_total": 250,
+      "queries_empty_result": 89,
+      "queries_sparse_candidate": 26,
+      "edges": 8516,
+      "density": 0.001956,
+      "isolated_nodes": 213,
+      "isolated_pct": 7.22,
+      "degree_mean": 6.221,
+      "degree_max": 10,
+      "connected_components": 154,
+      "largest_component_pct": 7.591,
+      "graph_edge_overlap_vs_reference_pct": 54.67,
+      "candidates_compared": 603,
+      "candidate_neighbour_jaccard_mean": 0.5218,
+      "candidates_identical_neighbour_set_pct": 19.9,
+      "neighbours_lost_per_candidate": 1.204,
+      "neighbours_gained_per_candidate": 1.972,
+      "query_neighbour_pool_jaccard_mean": 0.4514,
+      "queries_identical_neighbour_pool_pct": 14.91,
+      "ranking_queries": 135,
+      "top5_overlap_at5_mean": 0.8089,
+      "topk_overlap_at10_mean": 0.8985,
+      "top5_identical_order_pct": 15.56,
+      "queries_with_changed_top5_pct": 59.26,
+      "mean_abs_rank_shift": 0.774,
+      "ndcg5_rubric": 0.9784,
+      "p5_rubric": 0.8252,
+      "recall5_rubric": 0.435,
+      "mrr_rubric": 0.937,
+      "ranking_queries_eval": 39,
+      "ndcg5_rubric_eval": 0.9708,
+      "label_pairs_retrieved": 675,
+      "label_pairs_covered": 174,
+      "label_coverage_pct": 25.78,
+      "label_pairs_retrieved_eval": 195,
+      "label_pairs_covered_eval": 174,
+      "label_coverage_eval_pct": 89.23,
+      "queries_fully_labelled": 21,
+      "queries_fully_labelled_pct": 15.56,
+      "ndcg5_pooled_complete_subset": 0.9722,
+      "p5_pooled_complete_subset": 0.781,
+      "queries_fully_labelled_eval": 21,
+      "ndcg5_pooled_eval_complete_subset": 0.9722,
+      "ndcg5_ci95_low": 0.9687,
+      "ndcg5_ci95_high": 0.9872,
+      "n_pairs": 135,
+      "n_zero_diff": 85,
+      "mean_paired_diff": 0.0033,
+      "p_wilcoxon": 0.190575,
+      "effect_rank_biserial": 0.2125,
+      "test_status": "tested",
+      "diff_ci95_low": -0.0065,
+      "diff_ci95_high": 0.0137,
+      "n_pairs_eval_splits": 39,
+      "mean_paired_diff_eval_splits": -0.0071,
+      "explanation_rows": 732,
+      "coordinate_evidence_pct": 0.0,
+      "district_fallback_pct": 92.49,
+      "location_unavailable_pct": 0.0,
+      "no_comparable_evidence_pct": 7.51,
+      "location_disclosure_required_pct": 92.49,
+      "location_disclosure_shown_pct": 100.0,
+      "fallback_frequency_pct": 100.0,
+      "frozen_top5_match_pct": null,
+      "condition_seconds": 15.72
+    },
+    {
+      "condition": "location_none",
+      "condition_label": "location unavailable",
+      "location_mode": "none",
+      "coordinate_round_decimals": null,
+      "similarity_config_id": "SIM-ec822c8805",
+      "queries_total": 250,
+      "queries_empty_result": 89,
+      "queries_sparse_candidate": 26,
+      "edges": 9448,
+      "density": 0.002171,
+      "isolated_nodes": 59,
+      "isolated_pct": 2.0,
+      "degree_mean": 6.534,
+      "degree_max": 10,
+      "connected_components": 24,
+      "largest_component_pct": 40.054,
+      "graph_edge_overlap_vs_reference_pct": 39.13,
+      "candidates_compared": 598,
+      "candidate_neighbour_jaccard_mean": 0.481,
+      "candidates_identical_neighbour_set_pct": 21.07,
+      "neighbours_lost_per_candidate": 2.008,
+      "neighbours_gained_per_candidate": 0.587,
+      "query_neighbour_pool_jaccard_mean": 0.3971,
+      "queries_identical_neighbour_pool_pct": 13.66,
+      "ranking_queries": 135,
+      "top5_overlap_at5_mean": 0.8015,
+      "topk_overlap_at10_mean": 0.8978,
+      "top5_identical_order_pct": 14.07,
+      "queries_with_changed_top5_pct": 62.96,
+      "mean_abs_rank_shift": 0.764,
+      "ndcg5_rubric": 0.9783,
+      "p5_rubric": 0.8222,
+      "recall5_rubric": 0.4402,
+      "mrr_rubric": 0.9463,
+      "ranking_queries_eval": 39,
+      "ndcg5_rubric_eval": 0.9728,
+      "label_pairs_retrieved": 675,
+      "label_pairs_covered": 176,
+      "label_coverage_pct": 26.07,
+      "label_pairs_retrieved_eval": 195,
+      "label_pairs_covered_eval": 176,
+      "label_coverage_eval_pct": 90.26,
+      "queries_fully_labelled": 24,
+      "queries_fully_labelled_pct": 17.78,
+      "ndcg5_pooled_complete_subset": 0.9656,
+      "p5_pooled_complete_subset": 0.7333,
+      "queries_fully_labelled_eval": 24,
+      "ndcg5_pooled_eval_complete_subset": 0.9656,
+      "ndcg5_ci95_low": 0.9677,
+      "ndcg5_ci95_high": 0.9876,
+      "n_pairs": 135,
+      "n_zero_diff": 91,
+      "mean_paired_diff": 0.0031,
+      "p_wilcoxon": 0.267496,
+      "effect_rank_biserial": 0.1919,
+      "test_status": "tested",
+      "diff_ci95_low": -0.0067,
+      "diff_ci95_high": 0.0135,
+      "n_pairs_eval_splits": 39,
+      "mean_paired_diff_eval_splits": -0.0052,
+      "explanation_rows": 732,
+      "coordinate_evidence_pct": 0.0,
+      "district_fallback_pct": 0.0,
+      "location_unavailable_pct": 76.91,
+      "no_comparable_evidence_pct": 23.09,
+      "location_disclosure_required_pct": 76.91,
+      "location_disclosure_shown_pct": 100.0,
+      "fallback_frequency_pct": 100.0,
+      "frozen_top5_match_pct": null,
+      "condition_seconds": 8.09
+    }
+  ],
+  "detail": {
+    "coords_exact": {
+      "changed_top5_query_ids": [],
+      "changed_top5_examples": {}
+    },
+    "coords_rounded_3dp": {
+      "changed_top5_query_ids": [
+        "Q003",
+        "Q011",
+        "Q081",
+        "Q090",
+        "Q118",
+        "Q125",
+        "Q144"
+      ],
+      "changed_top5_examples": {
+        "Q003": {
+          "reference": [
+            [
+              2552,
+              0.7052409578
+            ],
+            [
+              2279,
+              0.7017959878
+            ],
+            [
+              2302,
+              0.7014672964
+            ],
+            [
+              2324,
+              0.7002171574
+            ],
+            [
+              2156,
+              0.7000307844
+            ]
+          ],
+          "condition": [
+            [
+              2552,
+              0.7052418999
+            ],
+            [
+              2324,
+              0.7046922316
+            ],
+            [
+              2279,
+              0.7017961289
+            ],
+            [
+              2302,
+              0.7014674263
+            ],
+            [
+              2515,
+              0.6971275253
+            ]
+          ]
+        },
+        "Q011": {
+          "reference": [
+            [
+              289,
+              0.5914011208
+            ],
+            [
+              59,
+              0.5886062981
+            ],
+            [
+              198,
+              0.5746120004
+            ],
+            [
+              312,
+              0.5695946809
+            ],
+            [
+              321,
+              0.5545618003
+            ]
+          ],
+          "condition": [
+            [
+              289,
+              0.5914057185
+            ],
+            [
+              59,
+              0.5886083626
+            ],
+            [
+              198,
+              0.5746028791
+            ],
+            [
+              312,
+              0.5696064615
+            ],
+            [
+              121,
+              0.5526749056
+            ]
+          ]
+        },
+        "Q081": {
+          "reference": [
+            [
+              897,
+              0.7594761562
+            ],
+            [
+              556,
+              0.7508664829
+            ],
+            [
+              643,
+              0.7242890244
+            ],
+            [
+              831,
+              0.7211440475
+            ],
+            [
+              679,
+              0.7199508035
+            ]
+          ],
+          "condition": [
+            [
+              897,
+              0.7603527085
+            ],
+            [
+              556,
+              0.7566292431
+            ],
+            [
+              643,
+              0.7242687897
+            ],
+            [
+              679,
+              0.7199302237
+            ],
+            [
+              518,
+              0.7193959948
+            ]
+          ]
+        }
+      }
+    },
+    "coords_rounded_2dp": {
+      "changed_top5_query_ids": [
+        "Q001",
+        "Q002",
+        "Q003",
+        "Q008",
+        "Q014",
+        "Q016",
+        "Q019",
+        "Q020",
+        "Q022",
+        "Q023",
+        "Q039",
+        "Q056",
+        "Q058",
+        "Q059",
+        "Q060",
+        "Q080",
+        "Q081",
+        "Q083",
+        "Q084",
+        "Q088",
+        "Q089",
+        "Q090",
+        "Q091",
+        "Q092",
+        "Q099",
+        "Q101",
+        "Q109",
+        "Q111",
+        "Q112",
+        "Q121",
+        "Q125",
+        "Q126",
+        "Q133",
+        "Q137",
+        "Q138",
+        "Q139",
+        "Q141",
+        "Q143",
+        "Q144",
+        "Q145",
+        "Q146",
+        "Q148"
+      ],
+      "changed_top5_examples": {
+        "Q001": {
+          "reference": [
+            [
+              2324,
+              0.8180821525
+            ],
+            [
+              2177,
+              0.816634387
+            ],
+            [
+              2325,
+              0.816634387
+            ],
+            [
+              2340,
+              0.816634387
+            ],
+            [
+              2109,
+              0.8098030181
+            ]
+          ],
+          "condition": [
+            [
+              2308,
+              0.804318915
+            ],
+            [
+              2175,
+              0.8043175215
+            ],
+            [
+              2197,
+              0.8043173633
+            ],
+            [
+              2202,
+              0.8043173633
+            ],
+            [
+              2220,
+              0.8043173633
+            ]
+          ]
+        },
+        "Q002": {
+          "reference": [
+            [
+              2324,
+              0.7231338366
+            ],
+            [
+              2177,
+              0.7215594001
+            ],
+            [
+              2325,
+              0.7215594001
+            ],
+            [
+              2340,
+              0.7215594001
+            ],
+            [
+              2109,
+              0.7163524241
+            ]
+          ],
+          "condition": [
+            [
+              2308,
+              0.7108303806
+            ],
+            [
+              2175,
+              0.7108288683
+            ],
+            [
+              2197,
+              0.7108286968
+            ],
+            [
+              2202,
+              0.7108286968
+            ],
+            [
+              2220,
+              0.7108286968
+            ]
+          ]
+        },
+        "Q003": {
+          "reference": [
+            [
+              2552,
+              0.7052409578
+            ],
+            [
+              2279,
+              0.7017959878
+            ],
+            [
+              2302,
+              0.7014672964
+            ],
+            [
+              2324,
+              0.7002171574
+            ],
+            [
+              2156,
+              0.7000307844
+            ]
+          ],
+          "condition": [
+            [
+              2552,
+              0.7049869191
+            ],
+            [
+              2279,
+              0.7017871484
+            ],
+            [
+              2302,
+              0.7014591548
+            ],
+            [
+              2346,
+              0.6969649357
+            ],
+            [
+              2156,
+              0.6932760695
+            ]
+          ]
+        }
+      }
+    },
+    "district_only": {
+      "changed_top5_query_ids": [
+        "Q001",
+        "Q002",
+        "Q003",
+        "Q005",
+        "Q009",
+        "Q012",
+        "Q015",
+        "Q016",
+        "Q019",
+        "Q020",
+        "Q021",
+        "Q022",
+        "Q023",
+        "Q024",
+        "Q026",
+        "Q027",
+        "Q031",
+        "Q034",
+        "Q035",
+        "Q038",
+        "Q040",
+        "Q042",
+        "Q053",
+        "Q054",
+        "Q055",
+        "Q056",
+        "Q058",
+        "Q059",
+        "Q060",
+        "Q062",
+        "Q077",
+        "Q078",
+        "Q079",
+        "Q080",
+        "Q081",
+        "Q082",
+        "Q083",
+        "Q084",
+        "Q086",
+        "Q087",
+        "Q088",
+        "Q089",
+        "Q090",
+        "Q091",
+        "Q092",
+        "Q093",
+        "Q094",
+        "Q096",
+        "Q099",
+        "Q102",
+        "Q105",
+        "Q106",
+        "Q108",
+        "Q109",
+        "Q112",
+        "Q113",
+        "Q118",
+        "Q121",
+        "Q125",
+        "Q126",
+        "Q129",
+        "Q132",
+        "Q133",
+        "Q134",
+        "Q135",
+        "Q136",
+        "Q137",
+        "Q138",
+        "Q139",
+        "Q140",
+        "Q141",
+        "Q143",
+        "Q144",
+        "Q145",
+        "Q146",
+        "Q147",
+        "Q148",
+        "Q149",
+        "Q182",
+        "Q232"
+      ],
+      "changed_top5_examples": {
+        "Q001": {
+          "reference": [
+            [
+              2324,
+              0.8180821525
+            ],
+            [
+              2177,
+              0.816634387
+            ],
+            [
+              2325,
+              0.816634387
+            ],
+            [
+              2340,
+              0.816634387
+            ],
+            [
+              2109,
+              0.8098030181
+            ]
+          ],
+          "condition": [
+            [
+              2308,
+              0.8307437295
+            ],
+            [
+              2197,
+              0.8241558534
+            ],
+            [
+              2324,
+              0.8238733611
+            ],
+            [
+              2202,
+              0.8227207435
+            ],
+            [
+              2220,
+              0.8227207435
+            ]
+          ]
+        },
+        "Q002": {
+          "reference": [
+            [
+              2324,
+              0.7231338366
+            ],
+            [
+              2177,
+              0.7215594001
+            ],
+            [
+              2325,
+              0.7215594001
+            ],
+            [
+              2340,
+              0.7215594001
+            ],
+            [
+              2109,
+              0.7163524241
+            ]
+          ],
+          "condition": [
+            [
+              2308,
+              0.7374772221
+            ],
+            [
+              2197,
+              0.7307349467
+            ],
+            [
+              2202,
+              0.7293494737
+            ],
+            [
+              2220,
+              0.7293494737
+            ],
+            [
+              2324,
+              0.7291763526
+            ]
+          ]
+        },
+        "Q003": {
+          "reference": [
+            [
+              2552,
+              0.7052409578
+            ],
+            [
+              2279,
+              0.7017959878
+            ],
+            [
+              2302,
+              0.7014672964
+            ],
+            [
+              2324,
+              0.7002171574
+            ],
+            [
+              2156,
+              0.7000307844
+            ]
+          ],
+          "condition": [
+            [
+              2552,
+              0.7204391452
+            ],
+            [
+              2325,
+              0.7003343814
+            ],
+            [
+              2340,
+              0.7003343814
+            ],
+            [
+              2177,
+              0.6994814779
+            ],
+            [
+              2515,
+              0.6971275253
+            ]
+          ]
+        }
+      }
+    },
+    "location_none": {
+      "changed_top5_query_ids": [
+        "Q001",
+        "Q002",
+        "Q003",
+        "Q007",
+        "Q008",
+        "Q009",
+        "Q011",
+        "Q012",
+        "Q015",
+        "Q016",
+        "Q019",
+        "Q020",
+        "Q021",
+        "Q022",
+        "Q023",
+        "Q024",
+        "Q026",
+        "Q027",
+        "Q031",
+        "Q035",
+        "Q036",
+        "Q040",
+        "Q042",
+        "Q054",
+        "Q056",
+        "Q058",
+        "Q059",
+        "Q064",
+        "Q067",
+        "Q068",
+        "Q069",
+        "Q077",
+        "Q078",
+        "Q079",
+        "Q080",
+        "Q081",
+        "Q082",
+        "Q083",
+        "Q084",
+        "Q085",
+        "Q086",
+        "Q087",
+        "Q088",
+        "Q089",
+        "Q090",
+        "Q091",
+        "Q092",
+        "Q093",
+        "Q094",
+        "Q096",
+        "Q099",
+        "Q102",
+        "Q105",
+        "Q106",
+        "Q107",
+        "Q108",
+        "Q109",
+        "Q112",
+        "Q113",
+        "Q118",
+        "Q120",
+        "Q121",
+        "Q125",
+        "Q126",
+        "Q128",
+        "Q129",
+        "Q133",
+        "Q134",
+        "Q135",
+        "Q136",
+        "Q137",
+        "Q138",
+        "Q139",
+        "Q140",
+        "Q141",
+        "Q142",
+        "Q143",
+        "Q144",
+        "Q145",
+        "Q146",
+        "Q147",
+        "Q148",
+        "Q149",
+        "Q182",
+        "Q232"
+      ],
+      "changed_top5_examples": {
+        "Q001": {
+          "reference": [
+            [
+              2324,
+              0.8180821525
+            ],
+            [
+              2177,
+              0.816634387
+            ],
+            [
+              2325,
+              0.816634387
+            ],
+            [
+              2340,
+              0.816634387
+            ],
+            [
+              2109,
+              0.8098030181
+            ]
+          ],
+          "condition": [
+            [
+              2308,
+              0.8361140823
+            ],
+            [
+              2175,
+              0.836112761
+            ],
+            [
+              2220,
+              0.8361126137
+            ],
+            [
+              2197,
+              0.8353257844
+            ],
+            [
+              2202,
+              0.8353257844
+            ]
+          ]
+        },
+        "Q002": {
+          "reference": [
+            [
+              2324,
+              0.7231338366
+            ],
+            [
+              2177,
+              0.7215594001
+            ],
+            [
+              2325,
+              0.7215594001
+            ],
+            [
+              2340,
+              0.7215594001
+            ],
+            [
+              2109,
+              0.7163524241
+            ]
+          ],
+          "condition": [
+            [
+              2308,
+              0.7428557355
+            ],
+            [
+              2175,
+              0.7428543006
+            ],
+            [
+              2220,
+              0.7428541408
+            ],
+            [
+              2197,
+              0.7419790419
+            ],
+            [
+              2202,
+              0.7419790419
+            ]
+          ]
+        },
+        "Q003": {
+          "reference": [
+            [
+              2552,
+              0.7052409578
+            ],
+            [
+              2279,
+              0.7017959878
+            ],
+            [
+              2302,
+              0.7014672964
+            ],
+            [
+              2324,
+              0.7002171574
+            ],
+            [
+              2156,
+              0.7000307844
+            ]
+          ],
+          "condition": [
+            [
+              2552,
+              0.7432133838
+            ],
+            [
+              2156,
+              0.7179608586
+            ],
+            [
+              2324,
+              0.700525758
+            ],
+            [
+              2177,
+              0.6987591254
+            ],
+            [
+              2325,
+              0.6987591254
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 108.37
+}
