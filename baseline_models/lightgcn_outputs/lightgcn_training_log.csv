@@ -1,4 +1,4 @@
-seed,epochs_run,early_stopped,best_val_ndcg5_eligibility
-42,271,True,0.39367724644557534
-43,300,False,0.4402753803606918
-44,300,False,0.4641175105867051
+seed,epochs_run,early_stopped,best_val_ndcg5_eligibility,training_seconds,seconds_per_epoch,inference_seconds_all_queries,inference_ms_per_query
+42,271,True,0.39367724644557534,192.34,0.7097,3.437,13.75
+43,300,False,0.4402753803606918,218.65,0.7288,3.162,12.647
+44,300,False,0.4641175105867051,214.6,0.7153,3.218,12.87
