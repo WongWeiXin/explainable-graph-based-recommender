@@ -1,21 +1,21 @@
 {
   "environment": {
-    "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "os": "Windows-10-10.0.26300-SP0",
     "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
-    "logical_cores": 2,
-    "ram_gb": 4.11,
-    "python": "3.10.12",
+    "logical_cores": 16,
+    "ram_gb": 16.54,
+    "python": "3.11.9",
     "packages": {
-      "numpy": "2.2.6",
-      "pandas": "2.3.3",
-      "networkx": "3.4.2",
-      "scikit-learn": "1.7.2",
-      "torch": null,
+      "numpy": "2.4.6",
+      "pandas": "3.1.0",
+      "networkx": "3.6.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1",
       "flask": "3.1.3",
-      "matplotlib": "3.10.9"
+      "matplotlib": "3.11.2"
     },
-    "command": "python experiments/run_efficiency.py --repeats 1",
-    "run_at": "2026-10-30 16:37:18"
+    "command": "python experiments/run_efficiency.py",
+    "run_at": "2026-11-07 01:17:29"
   },
   "graph_construction": {
     "properties": 2951,
@@ -24,46 +24,46 @@
     "similarity_config_id": "SIM-4fdc14c547",
     "edges": 8495,
     "total_seconds": {
-      "mean": 2.3685,
-      "sd": 0.0,
-      "median": 2.3685,
-      "p95": 2.3685,
-      "max": 2.3685,
-      "n": 1
+      "mean": 2.0585,
+      "sd": 0.0127,
+      "median": 2.0615,
+      "p95": 2.0686,
+      "max": 2.0694,
+      "n": 3
     },
     "pairwise_topk_seconds": {
-      "mean": 2.1051,
-      "sd": 0.0,
-      "median": 2.1051,
-      "p95": 2.1051,
-      "max": 2.1051,
-      "n": 1
+      "mean": 1.8314,
+      "sd": 0.0097,
+      "median": 1.8286,
+      "p95": 1.8408,
+      "max": 1.8421,
+      "n": 3
     },
     "retention_seconds": {
-      "mean": 0.0627,
-      "sd": 0.0,
-      "median": 0.0627,
-      "p95": 0.0627,
-      "max": 0.0627,
-      "n": 1
+      "mean": 0.0287,
+      "sd": 0.0048,
+      "median": 0.0284,
+      "p95": 0.0331,
+      "max": 0.0336,
+      "n": 3
     },
     "graph_object_seconds": {
-      "mean": 0.1898,
-      "sd": 0.0,
-      "median": 0.1898,
-      "p95": 0.1898,
-      "max": 0.1898,
-      "n": 1
+      "mean": 0.1889,
+      "sd": 0.0046,
+      "median": 0.1907,
+      "p95": 0.1922,
+      "max": 0.1924,
+      "n": 3
     },
     "pairs_per_second": {
-      "mean": 2067731.685,
-      "sd": 0.0,
-      "median": 2067731.685,
-      "p95": 2067731.685,
-      "max": 2067731.685,
-      "n": 1
+      "mean": 2376777.8345,
+      "sd": 12498.9313,
+      "median": 2380303.5781,
+      "p95": 2386452.0371,
+      "max": 2387135.1992,
+      "n": 3
     },
-    "peak_traced_memory_mb": 47.23
+    "peak_traced_memory_mb": 37.99
   },
   "scaling": {
     "sizes": [
@@ -75,151 +75,151 @@
       2951
     ],
     "median_total_seconds_by_n": {
-      "500": 0.221,
-      "1000": 0.559,
-      "1500": 1.049,
-      "2000": 1.712,
-      "2500": 2.016,
-      "2951": 2.383
+      "500": 0.192,
+      "1000": 0.482,
+      "1500": 0.786,
+      "2000": 1.146,
+      "2500": 1.613,
+      "2951": 2.036
     },
-    "fitted_exponent_pairwise_stage": 1.445
+    "fitted_exponent_pairwise_stage": 1.37
   },
   "query_latency_ms": {
     "cbr": {
       "non_empty_queries": {
         "hard_filter_ms": {
-          "mean": 4.7275,
-          "sd": 0.9484,
-          "median": 4.6226,
-          "p95": 6.4359,
-          "max": 8.2056,
+          "mean": 4.1449,
+          "sd": 0.7338,
+          "median": 4.1456,
+          "p95": 5.3467,
+          "max": 6.3594,
           "n": 161
         },
         "direct_score_ms": {
-          "mean": 4.3249,
-          "sd": 3.4585,
-          "median": 2.8492,
-          "p95": 12.1326,
-          "max": 18.3368,
+          "mean": 3.3557,
+          "sd": 2.6352,
+          "median": 2.2734,
+          "p95": 8.926,
+          "max": 13.7397,
           "n": 161
         },
         "graph_and_ranking_ms": {
-          "mean": 13.766,
-          "sd": 1.2154,
-          "median": 13.4913,
-          "p95": 15.567,
-          "max": 21.2646,
+          "mean": 8.8904,
+          "sd": 0.4393,
+          "median": 8.7994,
+          "p95": 9.5258,
+          "max": 11.4152,
           "n": 161
         },
         "total_ms": {
-          "mean": 22.8184,
-          "sd": 4.1652,
-          "median": 21.3299,
-          "p95": 31.3819,
-          "max": 39.1995,
+          "mean": 16.4426,
+          "sd": 3.0513,
+          "median": 15.345,
+          "p95": 22.3757,
+          "max": 27.768,
           "n": 161
         }
       },
       "empty_queries_total_ms": {
-        "mean": 4.3384,
-        "sd": 1.0682,
-        "median": 4.1086,
-        "p95": 6.6232,
-        "max": 7.71,
+        "mean": 3.2294,
+        "sd": 0.681,
+        "median": 3.2992,
+        "p95": 4.3772,
+        "max": 4.6611,
         "n": 89
       }
     },
     "cpg": {
       "non_empty_queries": {
         "hard_filter_ms": {
-          "mean": 4.7176,
-          "sd": 0.8607,
-          "median": 4.6752,
-          "p95": 6.1534,
-          "max": 7.3776,
+          "mean": 4.1823,
+          "sd": 0.7233,
+          "median": 4.1595,
+          "p95": 5.3912,
+          "max": 6.3443,
           "n": 161
         },
         "direct_score_ms": {
-          "mean": 4.3192,
-          "sd": 3.4904,
-          "median": 2.8007,
-          "p95": 12.5755,
-          "max": 18.9984,
+          "mean": 3.3696,
+          "sd": 2.631,
+          "median": 2.258,
+          "p95": 9.1745,
+          "max": 13.5329,
           "n": 161
         },
         "graph_and_ranking_ms": {
-          "mean": 19.2403,
-          "sd": 5.0812,
-          "median": 17.5791,
-          "p95": 29.4381,
-          "max": 39.1301,
+          "mean": 12.6149,
+          "sd": 3.1721,
+          "median": 11.5013,
+          "p95": 19.9094,
+          "max": 23.5397,
           "n": 161
         },
         "total_ms": {
-          "mean": 28.2771,
-          "sd": 8.694,
-          "median": 25.1899,
-          "p95": 48.3591,
-          "max": 64.1802,
+          "mean": 20.2227,
+          "sd": 5.9429,
+          "median": 18.2007,
+          "p95": 34.1164,
+          "max": 41.4981,
           "n": 161
         }
       },
       "empty_queries_total_ms": {
-        "mean": 4.3202,
-        "sd": 0.94,
-        "median": 4.2224,
-        "p95": 6.0732,
-        "max": 7.169,
+        "mean": 3.2793,
+        "sd": 0.706,
+        "median": 3.2584,
+        "p95": 4.4521,
+        "max": 4.7309,
         "n": 89
       }
     },
     "cpg_market": {
       "non_empty_queries": {
         "hard_filter_ms": {
-          "mean": 4.8258,
-          "sd": 0.9056,
-          "median": 4.7177,
-          "p95": 6.3852,
-          "max": 7.3278,
+          "mean": 4.1582,
+          "sd": 0.7075,
+          "median": 4.1336,
+          "p95": 5.3111,
+          "max": 5.9736,
           "n": 161
         },
         "direct_score_ms": {
-          "mean": 4.336,
-          "sd": 3.5394,
-          "median": 3.0,
-          "p95": 12.4585,
-          "max": 17.2285,
+          "mean": 3.3618,
+          "sd": 2.6149,
+          "median": 2.2336,
+          "p95": 9.1256,
+          "max": 13.5344,
           "n": 161
         },
         "graph_and_ranking_ms": {
-          "mean": 22.1706,
-          "sd": 6.0743,
-          "median": 20.2778,
-          "p95": 34.8099,
-          "max": 65.4324,
+          "mean": 14.8002,
+          "sd": 3.236,
+          "median": 13.6951,
+          "p95": 21.3172,
+          "max": 26.0085,
           "n": 161
         },
         "total_ms": {
-          "mean": 31.3324,
-          "sd": 9.4888,
-          "median": 27.7575,
-          "p95": 52.7186,
-          "max": 84.9986,
+          "mean": 22.3603,
+          "sd": 5.9683,
+          "median": 20.3462,
+          "p95": 34.037,
+          "max": 43.4703,
           "n": 161
         }
       },
       "empty_queries_total_ms": {
-        "mean": 4.2237,
-        "sd": 0.9583,
-        "median": 4.1509,
-        "p95": 6.1562,
-        "max": 6.9352,
+        "mean": 3.228,
+        "sd": 0.6739,
+        "median": 3.2685,
+        "p95": 4.3754,
+        "max": 4.5957,
         "n": 89
       }
     }
   },
-  "cpg_latency_vs_eligible_count_pearson_r": 0.978,
+  "cpg_latency_vs_eligible_count_pearson_r": 0.982,
   "lightgcn": "no timing columns - rerun baseline_models/lightgcn.py to record training/inference time",
-  "repeats": 1,
-  "elapsed_seconds": 29.7
+  "repeats": 3,
+  "elapsed_seconds": 66.4
 }

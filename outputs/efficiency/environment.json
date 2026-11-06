@@ -1,18 +1,18 @@
 {
-  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "os": "Windows-10-10.0.26300-SP0",
   "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
-  "logical_cores": 2,
-  "ram_gb": 4.11,
-  "python": "3.10.12",
+  "logical_cores": 16,
+  "ram_gb": 16.54,
+  "python": "3.11.9",
   "packages": {
-    "numpy": "2.2.6",
-    "pandas": "2.3.3",
-    "networkx": "3.4.2",
-    "scikit-learn": "1.7.2",
-    "torch": null,
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "networkx": "3.6.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1",
     "flask": "3.1.3",
-    "matplotlib": "3.10.9"
+    "matplotlib": "3.11.2"
   },
-  "command": "python experiments/run_efficiency.py --repeats 1",
-  "run_at": "2026-10-30 16:37:18"
+  "command": "python experiments/run_efficiency.py",
+  "run_at": "2026-11-07 01:17:29"
 }
