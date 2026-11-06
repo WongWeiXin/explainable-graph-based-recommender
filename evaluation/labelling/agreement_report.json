@@ -12,7 +12,6 @@
   "disagreements": 46,
   "disagreements_after_a1_revision": 46,
   "after_a1_revision_NOT_independent_agreement": {
-    "note": "A1's latest grades, which include revisions made after A1 saw A2's grades. Not an inter-assessor agreement statistic; report the original-label figures above.",
     "kappa_linear_weighted": 0.653,
     "exact_agreement_pct": 68.28
   },
@@ -21,30 +20,10 @@
     "2": 1
   },
   "confusion_matrix_rows_A1_cols_A2": [
-    [
-      7,
-      2,
-      0,
-      0
-    ],
-    [
-      3,
-      11,
-      6,
-      0
-    ],
-    [
-      1,
-      13,
-      42,
-      16
-    ],
-    [
-      0,
-      0,
-      5,
-      39
-    ]
+    [7, 2, 0, 0],
+    [3, 11, 6, 0],
+    [1, 13, 42, 16],
+    [0, 0, 5, 39]
   ],
   "grade_counts_A1_all_pairs": {
     "0": 14,
