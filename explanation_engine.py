@@ -28,12 +28,22 @@ Stage 9 (faithfulness checks)
     location-disclosure accuracy).
 
 Run ``python explanation_engine.py`` to self-test the engine on synthetic records.
+
+Save a list of built records to one JSON file (default ``outputs/explanation_records.json``):
+
+    from explanation_engine import save_explanation_records
+    save_explanation_records(records)
 """
 from __future__ import annotations
 
+import json
+import math
 import sys
+from pathlib import Path
 
 ENGINE_VERSION = "EXPL-1.0"
+OUTPUTS_DIR = Path(__file__).resolve().parent / "outputs"
+RECORDS_PATH = OUTPUTS_DIR / "explanation_records.json"
 DEFAULT_MAX_NEIGHBOURS = 8
 SPARSE_NEIGHBOUR_THRESHOLD = 2
 DISTANCE_PRECISION_DP = 1
@@ -1433,6 +1443,41 @@ def summarise_explanations(records: list) -> dict:
         },
         "disclosure_counts": dict(sorted(disclosure_counts.items())),
     }
+
+
+def _json_clean(value):
+    """Convert numpy/pandas scalars and non-finite floats into JSON-safe values."""
+    if isinstance(value, dict):
+        return {str(key): _json_clean(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple, set)):
+        return [_json_clean(item) for item in value]
+    if value is None or isinstance(value, (str, bool, int)):
+        return value
+    if isinstance(value, float):
+        return value if math.isfinite(value) else None
+    item = getattr(value, "item", None)
+    if callable(item):
+        try:
+            return _json_clean(item())
+        except (TypeError, ValueError):
+            pass
+    return str(value)
+
+
+def save_explanation_records(records, path=RECORDS_PATH) -> Path:
+    """Write Stage 8 explanation records to one JSON file and return its path.
+
+    ``records`` is a list of ``build_explanation`` outputs (a single record is also
+    accepted). Numpy/pandas scalars become plain numbers and non-finite floats
+    become ``null``, so the file is valid JSON even when a record was assembled
+    from a pandas row.
+    """
+    payload = [records] if isinstance(records, dict) else list(records or [])
+    payload = [_json_clean(record) for record in payload if record]
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    return path
 
 
 # ------------------------------------------------------------------------ self-test
